@@ -1550,8 +1550,8 @@
   },
   "source_pdf_pages": 224,
   "source_taxonomy_sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
-  "catalog_sha256": "1d15197c663ae008c5a3c3c5c8daecf2374bc6feb9cd3f61f32fef05cbb1f088",
-  "generator_sha256": "0b6b248cb369293195aefe27850cd0a217cf6efb1ab1efd0dc1e150af735456b",
+  "catalog_sha256": "9738b3b9e885d0d9d9f7eedf03e9f79962158b007914b2791af9e1f40f421c11",
+  "generator_sha256": "84bfe332b5eaf1f373124d9d557f004dc529fb3336758b6a4df3793551d924fd",
   "source_counts": {
     "major": 63,
     "general_leaf": 503,
@@ -1867,5 +1867,8 @@
     "97U10"
   ],
   "title_processing": "Full PDF headings; routing cross-references removed; line-end word breaks restored; genuine lexical hyphens preserved; NFC Unicode normalization; per-code mathematical typography restored from source pages with verification provenance in the title cache. No title-length truncation. Cache hashes check integrity and source identity, not legal permission or independent authentication.",
-  "scope": "Complete mathematical writing catalog only; not a declaration of completed textbook chapters or source-text reuse rights."
+  "scope": "Complete mathematical writing catalog only; not a declaration of completed textbook chapters or source-text reuse rights.",
+  "catalog_language": "zh-CN",
+  "chinese_translation_count": 6603,
+  "chinese_translation_file_sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
 }

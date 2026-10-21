@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "translated_heading_count": 6603,
+  "parts": 63,
+  "chapters": 534,
+  "sections": 6006,
+  "all_source_codes_and_hierarchy_preserved": true,
+  "all_original_math_fragments_preserved": true,
+  "untranslated_english_prose_titles": 0,
+  "retained_mathematical_labels": [
+    {
+      "code": "03B47",
+      "mathematical_labels": [
+        "BCI",
+        "BCK"
+      ]
+    },
+    {
+      "code": "03C64",
+      "mathematical_labels": [
+        "o"
+      ]
+    },
+    {
+      "code": "06F35",
+      "mathematical_labels": [
+        "BCI",
+        "BCK"
+      ]
+    },
+    {
+      "code": "11F41",
+      "mathematical_labels": [
+        "GL"
+      ]
+    },
+    {
+      "code": "13D07",
+      "mathematical_labels": [
+        "Ext",
+        "Tor"
+      ]
+    },
+    {
+      "code": "14F10",
+      "mathematical_labels": [
+        "D"
+      ]
+    },
+    {
+      "code": "16E30",
+      "mathematical_labels": [
+        "Ext",
+        "Tor"
+      ]
+    },
+    {
+      "code": "18G15",
+      "mathematical_labels": [
+        "Ext",
+        "Tor"
+      ]
+    },
+    {
+      "code": "18M85",
+      "mathematical_labels": [
+        "PROP"
+      ]
+    },
+    {
+      "code": "19D35",
+      "mathematical_labels": [
+        "NK",
+        "Nil"
+      ]
+    },
+    {
+      "code": "19K33",
+      "mathematical_labels": [
+        "Ext"
+      ]
+    },
+    {
+      "code": "22D55",
+      "mathematical_labels": [
+        "T"
+      ]
+    },
+    {
+      "code": "22E27",
+      "mathematical_labels": [
+        "I"
+      ]
+    },
+    {
+      "code": "37D20",
+      "mathematical_labels": [
+        "A"
+      ]
+    },
+    {
+      "code": "46A04",
+      "mathematical_labels": [
+        "DF"
+      ]
+    },
+    {
+      "code": "46A13",
+      "mathematical_labels": [
+        "LB",
+        "LF"
+      ]
+    },
+    {
+      "code": "52A30",
+      "mathematical_labels": [
+        "m",
+        "n"
+      ]
+    }
+  ],
+  "selected_qualifier_checks": 369,
+  "translation_sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7",
+  "limits": "Every heading has a per-code translation. Code/formula checks are exhaustive; independent semantic second review is sampled. Chinese terminology is this book's translation, not an official Chinese MSC edition.",
+  "visual_review": {
+    "status": "sampled_pages_visually_inspected",
+    "catalogue_pages": [
+      1,
+      2,
+      51,
+      52,
+      78,
+      101,
+      114,
+      148,
+      151,
+      193,
+      218
+    ],
+    "full_resolution_catalogue_pages": [
+      2,
+      78,
+      218
+    ],
+    "main_book_pages": [
+      4
+    ],
+    "chapter_review_pages": [
+      28
+    ],
+    "result": "Chinese titles, mathematical symbols, line wrapping and page layout passed visual inspection on these pages.",
+    "screenshots": "build/catalog_translation/screenshots/"
+  }
+}

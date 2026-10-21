@@ -464,6 +464,7 @@ def main() -> None:
     parser.add_argument('--output', type=Path, default=ROOT/'dist/综合数学_完整数学目录.md')
     parser.add_argument('--validation', type=Path, default=ROOT/'data/catalog_validation.json')
     parser.add_argument('--cache', type=Path, default=ROOT/'data/catalog_titles.json')
+    parser.add_argument('--translations', type=Path, default=ROOT/'data/catalog_titles_zh.json')
     args = parser.parse_args()
     taxonomy = json.loads(args.taxonomy.read_text(encoding='utf-8'))
     records = taxonomy['entries']
@@ -474,6 +475,22 @@ def main() -> None:
     if counts != EXPECTED:
         raise ValueError(f'Unexpected taxonomy counts: {counts}')
     titles, cache, verification_mode = checked_titles(args, taxonomy, records)
+    translated = json.loads(args.translations.read_text(encoding='utf-8'))
+    if translated['source_title_cache_sha256'] != file_hash(args.cache):
+        raise ValueError('Chinese translation source cache does not match current source')
+    translation_rows = translated['entries']
+    if len(translation_rows) != len(records) or {r['code'] for r in translation_rows} != set(source_codes):
+        raise ValueError('Incomplete or duplicate Chinese heading translations')
+    display_titles = {r['code']: r['title_zh'] for r in translation_rows}
+    parents = {r['code']:r['parent_code'] for r in records}
+    for item in translation_rows:
+        code = item['code']
+        if item['title_en'] != titles[code] or item['parent_code'] != parents[code]:
+            raise ValueError(f'Translation source or hierarchy mismatch: {code}')
+        if not re.search(r'[\u4e00-\u9fff]', item['title_zh']):
+            raise ValueError(f'Missing Chinese title: {code}')
+        if re.findall(r'\$[^$]+\$', titles[code]) != re.findall(r'\$[^$]+\$', item['title_zh']):
+            raise ValueError(f'Mathematical notation changed in translation: {code}')
     children = defaultdict(list)
     for row in records:
         children[row['parent_code']].append(row)
@@ -483,9 +500,10 @@ def main() -> None:
         '503 个通用文献类型节项直接列在各部分开头，其后按原有 534 个中级类别列章，并列出 5503 个专门主题节项。'
         '不为通用条目虚构章节。', '',
         '本目录按 MSC2020 分类顺序编排，保留全部代码及归属；现按作者要求作为逐章编写目录。'
-        '部分采用已有中文类名；经作者同意，第1章使用“绪论：一般与综合专题”，对应原名 General and miscellaneous specific topics（00Axx）。其余中级类别及节项保留附件原文标题，不冒称已完成中文翻译。'
+        '各级标题均采用中文；经作者同意，第1章使用“绪论：一般与综合专题”，对应00Axx。'
+        '中文标题为本书译名，英文对照保存在伴生台账中；数学记号与分类代码保留。'
         '标题仅保留分类名称，去除交叉检索提示并恢复换行断词及经原页核验的数学排版，不含大段原文或新增教材内容。', '',
-        '分类依据：Mathematical Reviews 与 zbMATH 编制的 MSC2020，用户提供的 224 页附件。'
+        '分类依据：《数学评论》与《数学文摘》编制的MSC2020，用户提供的224页附件。'
         '本目录属于分类定位索引，不构成对原始 PDF 或其他来源正文的开放授权；不随目录重发原始 PDF。', ''
     ]
     part_number = chapter_number = section_number = 0
@@ -502,24 +520,24 @@ def main() -> None:
         if major['level'] != 'major' or not major.get('title_zh'):
             raise ValueError(f'Invalid major classification: {major}')
         part_number += 1
-        text += [f"# 第{part_number}部分 {major['title_zh']}（MSC {major['code']}）", '']
+        text += [f"# 第{part_number}部分 {display_titles[major['code']]}（MSC {major['code']}）", '']
         direct = children[major['code']]
         for item in direct:
             if item['level'] != 'general_leaf':
                 continue
             section_number += 1
-            text += [f"### 第{section_number}节 {titles[item['code']]}（{item['code']}）", '']
+            text += [f"### 第{section_number}节 {display_titles[item['code']]}（{item['code']}）", '']
         for chapter in direct:
             if chapter['level'] != 'intermediate':
                 continue
             chapter_number += 1
-            chapter_title = "绪论：一般与综合专题" if chapter["code"] == "00Axx" else titles[chapter["code"]]
+            chapter_title = "绪论：一般与综合专题" if chapter["code"] == "00Axx" else display_titles[chapter["code"]]
             text += [f"## 第{chapter_number}章 {chapter_title}（{chapter['code']}）", '']
             for item in children[chapter['code']]:
                 if item['level'] != 'subject_leaf':
                     raise ValueError(f'Unexpected child: {item}')
                 section_number += 1
-                text += [f"### 第{section_number}节 {titles[item['code']]}（{item['code']}）", '']
+                text += [f"### 第{section_number}节 {display_titles[item['code']]}（{item['code']}）", '']
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text('\n'.join(text), encoding='utf-8')
     checks = verify_catalog(args.output, records)
@@ -542,6 +560,9 @@ def main() -> None:
         'reflowed_or_restored_title_codes': reflowed,
         'title_processing': 'Full PDF headings; routing cross-references removed; line-end word breaks restored; genuine lexical hyphens preserved; NFC Unicode normalization; per-code mathematical typography restored from source pages with verification provenance in the title cache. No title-length truncation. Cache hashes check integrity and source identity, not legal permission or independent authentication.',
         'scope': 'Complete mathematical writing catalog only; not a declaration of completed textbook chapters or source-text reuse rights.',
+        'catalog_language': 'zh-CN',
+        'chinese_translation_count': len(display_titles),
+        'chinese_translation_file_sha256': file_hash(args.translations),
     }
     args.validation.parent.mkdir(parents=True, exist_ok=True)
     args.validation.write_text(json.dumps(validation, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')

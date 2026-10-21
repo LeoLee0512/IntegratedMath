@@ -16,31 +16,53 @@
   "artifacts": {
     "综合数学_第一章审阅版": {
       "pages": 29,
-      "sha256": "4d12159abfca9bebffc1547464c228c5a7b097098799214fe5889c5b900617df",
+      "sha256": "45ea2d0f04bf7a916967f8691c5246e232dd88aa981f80162cc267f24f93ce03",
       "page_boundary_overflow": [],
       "question_answer_links": 14,
       "answer_question_links": 14,
       "all_pages_rendered": true
     },
     "综合数学": {
-      "pages": 272,
-      "sha256": "70d1ddd0b7794ae783e03548e3fa41a0f89b75c8e60cdb435a77200e21c4d915",
+      "pages": 246,
+      "sha256": "8b9f8110bf4723e0febf615a3527d01a253707a62681eb7fc4fc971fb5147a60",
       "page_boundary_overflow": [],
       "question_answer_links": 14,
       "answer_question_links": 14
     },
     "综合数学_完整数学目录": {
-      "pages": 244,
-      "sha256": "34ddbf1fd79564c21ab7755ae38ffd9f45f5411390f9b793e5a5764fd0421997",
+      "pages": 218,
+      "sha256": "bdcd45463101fa56fe497a8f8606ffd93bbca001e335991b63ffb4d8742671bc",
       "page_boundary_overflow": []
     }
   },
   "visual_review": {
-    "status": "inspected_changed_page",
-    "review_pdf_full_resolution_pages": [
-      5
+    "status": "sampled_pages_visually_inspected",
+    "catalogue_pages": [
+      1,
+      2,
+      51,
+      52,
+      78,
+      101,
+      114,
+      148,
+      151,
+      193,
+      218
     ],
-    "findings": "Inspected the revised opening paragraph: the redundant author sentence is removed, Chinese text and the figure render correctly. This edit changes no mathematical content; previous full-layout review remains recorded in the previous commit."
+    "full_resolution_catalogue_pages": [
+      2,
+      78,
+      218
+    ],
+    "main_book_pages": [
+      4
+    ],
+    "chapter_review_pages": [
+      28
+    ],
+    "result": "Chinese titles, mathematical symbols, line wrapping and page layout passed visual inspection on these pages.",
+    "screenshots": "build/catalog_translation/screenshots/"
   },
   "limits": "Automated checks and independent manuscript review do not constitute formal proof verification."
 }

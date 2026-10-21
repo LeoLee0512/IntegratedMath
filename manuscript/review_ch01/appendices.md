@@ -19,7 +19,7 @@
 
 **[S3]** Mathematical Reviews 与 zbMATH，*Mathematics Subject Classification 2020*，用户提供的224页附件。用于核对分类代码与归属，原始PDF不随本书公开分发。
 
-来源访问时间、状态、哈希和许可依据见伴生文件 `research/ch01_source_checks.json`。第一章的分类名称在原MSC标题基础上作中文教学表达；目录除经作者确认的第1章名外，仍保留未审定翻译的原文名称。
+来源访问时间、状态、哈希和许可依据见伴生文件 `research/ch01_source_checks.json`。目录各级标题已译为中文，保留原MSC代码、归属和数学记号；英文原名与中文译名对照保存在伴生文件 `data/catalog_titles_zh.json` 中。
 
 # 附录四 第21节模拟代码 {#simulation-code}
 
