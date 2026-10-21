@@ -1,0 +1,83 @@
+{
+  "status": "automated_checks_passed",
+  "catalog_counts": {
+    "parts": 63,
+    "chapters": 534,
+    "sections": 6006
+  },
+  "current_chapters": 1,
+  "part_general_items": 2,
+  "chapter_sections": 21,
+  "exercises": 14,
+  "figures": 4,
+  "math_nodes": 196,
+  "exact_computation_checks": "passed",
+  "missing_glyph_warnings": [],
+  "artifacts": {
+    "综合数学_第一章审阅版": {
+      "pages": 29,
+      "sha256": "86e9fb1bd30179ea68c4987e6609e1d40e4b0f8c1fb16f65d2e8dff0d5e57520",
+      "page_boundary_overflow": [],
+      "question_answer_links": 14,
+      "answer_question_links": 14,
+      "all_pages_rendered": true
+    },
+    "综合数学": {
+      "pages": 272,
+      "sha256": "720d71304acc2026c584bce948e8cc411d748cc516aa326ef3952dee60fb0fbf",
+      "page_boundary_overflow": [],
+      "question_answer_links": 14,
+      "answer_question_links": 14
+    },
+    "综合数学_完整数学目录": {
+      "pages": 244,
+      "sha256": "ba928f87da7c1c14e56a452e7907d6b09f5f89e2199ce9be5866ab407d1dfa8d",
+      "page_boundary_overflow": []
+    }
+  },
+  "visual_review": {
+    "status": "inspected",
+    "review_pdf_contact_sheet_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "review_pdf_full_resolution_pages": [
+      7,
+      15,
+      20,
+      21
+    ],
+    "findings": "Viewed all 29 review pages in three contact sheets; full-size review of stepwise derivation, rhythm illustration, separate exercises and answer appendix. Formulas are rendered, CJK labels readable, no broken figures observed. Contact sheets are layout inspection, not full-resolution inspection of every page.",
+    "full_book_catalog_full_resolution_pages": [
+      4
+    ]
+  },
+  "limits": "Automated checks and independent manuscript review do not constitute formal proof verification."
+}

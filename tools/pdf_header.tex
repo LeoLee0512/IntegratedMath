@@ -1,0 +1,41 @@
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\emergencystretch=3em
+\usepackage{fvextra}
+\usepackage{newunicodechar}
+\newfontfamily\cataloglatinfont{DejaVu Serif}
+\newunicodechar{ć}{{\cataloglatinfont\char"0107}}
+\newunicodechar{ő}{{\cataloglatinfont\char"0151}}
+\newunicodechar{ń}{{\cataloglatinfont\char"0144}}
+\newunicodechar{Č}{{\cataloglatinfont\char"010C}}
+\newunicodechar{ĭ}{{\cataloglatinfont\char"012D}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\AtBeginDocument{\renewcommand{\contentsname}{目录}}
+\AddToHook{cmd/section/before}{\clearpage}
+\renewcommand{\maketitle}{%
+\begin{titlepage}
+\centering
+\vspace*{45mm}
+{\sffamily\fontsize{38}{50}\selectfont 综合数学\par}
+\vspace{20mm}
+{\sffamily\fontsize{18}{28}\selectfont 学习\qquad 实践\qquad 成长\par}
+\vspace{34mm}
+{\fontsize{17}{26}\selectfont Leo Lee\par}
+\vspace{8mm}
+{\fontsize{12}{20}\selectfont 一个喜欢数学的普通人写的\par}
+\vfill
+{\small 第一批工作稿\quad ·\quad 全书持续编写与审校中\par}
+\vspace{8mm}
+{\large 二〇二六年\par}
+\end{titlepage}
+\begin{titlepage}
+\centering
+\vspace*{76mm}
+{\fontsize{15}{28}\selectfont
+献给每一位愿意从问题出发、追问理由的读者。\par
+\vspace{10mm}
+愿每一个定义都有来处，\par
+每一步推理都有依据。\par}
+\vfill
+\end{titlepage}
+}
