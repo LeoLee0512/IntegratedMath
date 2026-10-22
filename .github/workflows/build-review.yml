@@ -1,0 +1,31 @@
+name: Build chapter review
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-latex-extra texlive-fonts-recommended fonts-noto-cjk fonts-dejavu poppler-utils
+          python -m pip install -r requirements-build.txt
+      - name: Build and validate
+        run: |
+          python tools/build_ch01_review.py
+          python tools/validate_catalog_chinese.py
+          python tools/validate_ch01_review.py
+      - name: Save artifacts awaiting visual inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter-review-pending-visual-inspection
+          retention-days: 14
+          path: |
+            dist/
+            build/review_ch01/
+            data/ch01_validation.json

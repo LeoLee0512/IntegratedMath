@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Rectangle, Ellipse
 
 ROOT = Path(__file__).resolve().parents[1]
+(ROOT / 'figures').mkdir(exist_ok=True)
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import Text
 FONT_PATH = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'

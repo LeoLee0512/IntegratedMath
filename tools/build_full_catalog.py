@@ -16,7 +16,7 @@ import subprocess
 import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_PDF = Path('/workspace/attachments/6f8b7bbe-7b78-4c95-8f71-e0b02c106745/MSC_2020.pdf')
+DEFAULT_PDF = ROOT / 'local-inputs/MSC_2020.pdf'
 HEADING = re.compile(r'^\s*(\d{2}-XX|\d{2}[A-Z]xx|\d{2}[A-Z]\d{2}|\d{2}-\d{2})\s+(.+)$')
 OUTPUT_HEADING = re.compile(r'^(#{1,3}) 第(\d+)(部分|章|节) (.+)（(?:MSC )?([0-9A-Zx-]+)）$')
 # These are lexical hyphens actually split at line endings in the supplied PDF.
@@ -499,7 +499,8 @@ def main() -> None:
         '本目录列出全书的编写范围，含 63 个部分、534 个章节、6006 个节项；不表示这些内容已全部写成教材。'
         '503 个通用文献类型节项直接列在各部分开头，其后按原有 534 个中级类别列章，并列出 5503 个专门主题节项。'
         '不为通用条目虚构章节。', '',
-        '本目录按 MSC2020 分类顺序编排，保留全部代码及归属；现按作者要求作为逐章编写目录。'
+        '本目录按 MSC2020 分类顺序编排，保留全部代码及归属，作为主题定位与编写范围索引。'
+        '分类顺序不等于学习顺序，各节可按完整教学、专题展开或导读定位编写；先修路径另行安排。'
         '各级标题均采用中文；经作者同意，第1章使用“绪论：一般与综合专题”，对应00Axx。'
         '中文标题为本书译名，英文对照保存在伴生台账中；数学记号与分类代码保留。'
         '标题仅保留分类名称，去除交叉检索提示并恢复换行断词及经原页核验的数学排版，不含大段原文或新增教材内容。', '',

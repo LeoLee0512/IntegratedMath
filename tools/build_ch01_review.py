@@ -4,6 +4,7 @@ import json
 import os
 import shutil
 import subprocess
+from review_artifacts import source_hashes
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / 'manuscript/review_ch01'
@@ -34,14 +35,15 @@ def main():
     BUILD.mkdir(parents=True, exist_ok=True)
     os.environ['XDG_CACHE_HOME'] = str(BUILD / 'fontcache')
     (BUILD / 'fontcache').mkdir(exist_ok=True)
-    (OUT / 'figures').mkdir(exist_ok=True)
+    (OUT / 'figures').mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ROOT / 'tools/style.css', OUT / 'style.css')
     run(['python', 'tools/build_full_catalog.py'])
     run(['python', 'tools/draw_ch01_figures.py'])
     for p in (ROOT / 'figures').glob('ch01_*.png'):
         shutil.copy2(p, OUT / 'figures' / p.name)
     metadata = '---\ntitle: 综合数学\nauthor: Leo Lee\nlang: zh-CN\n---\n\n'
     notice = ('本稿供逐章审阅，正文仅包含第一部分开篇和第1章（00Axx）。'
-              '全书仍以63部分、534章、6006节为编写范围；本次不写第2章。'
+              '全书仍以63部分、534章、6006节为分类覆盖范围，各节按声明深度编写；本次不写第2章。'
               '节号沿用完整目录：第1、2节直属部分，第3—23节属于第1章。\n\n')
     body = '\n\n'.join((SRC / n).read_text() for n in
                           ['part_opening.md', 'chapter.md', 'answers.md'])
@@ -87,6 +89,7 @@ def main():
                                        for line in html_path.read_text().splitlines()) + '\n')
     from ch01_simulation import simulate
     (ROOT / 'data/ch01_simulation.json').write_text(json.dumps(simulate(), indent=2)+'\n')
+    (BUILD / 'build_inputs.json').write_text(json.dumps(source_hashes(), ensure_ascii=False, indent=2)+'\n')
 
 
 if __name__ == '__main__':
