@@ -4,7 +4,8 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-STALE_STATUS = re.compile(r'(?:尚未|仍未|还未|未|等待|待)\s*(?:上传|发布).{0,12}(?:资产|产物)|\bTODO\b|待填写', re.I)
+# Known phrases only: passing this check does not establish a release's state.
+STALE_STATUS = re.compile(r'(?:尚未|仍未|还未|未|等待|待)\s*(?:上传|发布)|\bTODO\b|待填写', re.I)
 
 
 def check_notes(text):

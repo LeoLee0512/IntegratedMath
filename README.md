@@ -2,11 +2,12 @@
 
 著作人：Leo Lee。全书保留63部分、534章、6006节的 MSC 分类范围与中文标题，按先修依赖安排学习路径，按节的教学目标确定深度。目录列齐不代表教材已写完。
 
-当前只有第一部分开篇和第1章“绪论：一般与综合专题”（00Axx）草稿：2节直属部分、21节属于第1章，14道题与答案双向链接，4张代码绘制插图。按当前目标分为2节完整教学、13节专题展开、8节导读定位，均待作者审阅；其余5983节尚未逐项规划。第2章正文未开始。
+当前有第一部分开篇、第1章“绪论：一般与综合专题”（00Axx），以及第2章的先修声明和第24节“讲座摘要汇编”导读草稿。已写24节按目标分为2节完整教学、13节专题展开、9节导读定位，均待作者审阅；第25—33节共9节已规划待写，其余5973节尚未逐项规划。第1章保留14道题的题答双向链接及4张代码绘制插图。
 
 ## 阅读入口
 
 - [第一部分开篇](manuscript/review_ch01/part_opening.md)、[第1章源稿](manuscript/review_ch01/chapter.md)、[答案](manuscript/review_ch01/answers.md)、[附录](manuscript/review_ch01/appendices.md)
+- [第2章起步草稿：先修声明与第24节](manuscript/review_ch02/chapter.md)；其余九节待写。第一章发布产物仍以第一章为范围，第二章另供审阅。
 - [编辑约定：先修、引用、深度与篇幅](EDITORIAL_POLICY.md)
 - [基础干线与深造支线](LEARNING_PATH.md)、[逐节范围和进度](data/editorial_plan.json)
 - [GitHub Releases 下载入口](https://github.com/LeoLee0512/IntegratedMath/releases)：本轮完成源文件迁移与发布工具，尚未上传新发布资产；现阶段可阅读源稿或按下述命令本地构建。
@@ -22,7 +23,11 @@ python -m pip install -r requirements-build.txt
 python tools/build_ch01_review.py
 python tools/validate_catalog_chinese.py
 python tools/validate_ch01_review.py
+python tools/build_ch02_review.py
+python tools/validate_ch02_review.py
 ```
+
+`dist/综合数学_第二章起步审阅版.*` 包含第一章供先修回查，在PDF与离线HTML内可直接跳转到00-02、00A15、00A17；文件总页数不代表第二章正文页数。源码页面也有独立的显式链接锚点。
 
 干净检出无需预先存在 `dist/`、`build/` 或图片；样式源位于 `tools/style.css`，图片由代码重建。没有原始MSC PDF时，目录生成器使用经完整性校验的 `data/catalog_titles.json`；英文对照、中文标题与归属保存在 `data/catalog_titles_zh.json`。
 
