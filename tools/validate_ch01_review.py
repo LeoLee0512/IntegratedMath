@@ -9,12 +9,14 @@ import fitz
 from PIL import Image, ImageDraw
 from sympy import symbols, expand, solveset, S, FiniteSet
 from ch01_simulation import simulate
+from review_artifacts import artifact_hashes, check_build_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'dist'
 BUILD = ROOT / 'build/review_ch01'
 SCREEN = BUILD / 'screenshots'
 SCREEN.mkdir(exist_ok=True)
+check_build_inputs()
 for old in list(SCREEN.glob('page-*.png')) + list(BUILD.glob('contact-*.png')):
     old.unlink()
 md = (OUT / '综合数学_第一章审阅版.md').read_text()
@@ -124,6 +126,7 @@ for name in ['综合数学_第一章审阅版','综合数学','综合数学_完�
 report={'status':'automated_checks_passed','catalog_counts':{'parts':63,'chapters':534,'sections':6006},
         'current_chapters':1,'part_general_items':2,'chapter_sections':21,'exercises':14,'figures':4,
         'math_nodes':counts['Math'],'exact_computation_checks':'passed','missing_glyph_warnings':missing,
+        'artifact_sha256':artifact_hashes(),
         'artifacts':reports,'visual_review':'pending_actual_image_inspection',
         'limits':'Automated checks and independent manuscript review do not constitute formal proof verification.'}
 (ROOT/'data/ch01_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

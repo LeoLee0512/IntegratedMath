@@ -1,0 +1,12 @@
+# Rebuildable artifacts; authored sources and review records remain tracked.
+/dist/
+/build/
+/local-inputs/
+/figures/ch01_*.png
+/data/catalog_validation.json
+/data/catalog_chinese_validation.json
+/data/ch01_validation.json
+/data/ch01_simulation.json
+/data/ch01_release_hashes.json
+__pycache__/
+*.py[cod]
