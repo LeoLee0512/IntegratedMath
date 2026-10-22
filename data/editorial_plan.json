@@ -52,10 +52,23 @@
     {
       "number": 4,
       "code": "00A06",
-      "depth": "S",
+      "depth": "T",
       "status": "待作者审阅",
       "scope": "一元加法方程的候选、代回与唯一性",
-      "source": "manuscript/review_ch01/chapter.md#sec-00A06"
+      "source": "manuscript/review_ch01/chapter.md#sec-00A06",
+      "depth_reason": "B0首次完整教授候选、代回、存在性与唯一性的检查方法，供B1起反复引用。",
+      "learning_targets": [
+        "从任意解出发推出唯一候选，区分必要性与充分性",
+        "将候选代回原方程并检查变量范围",
+        "结合两向论证说明存在性、唯一性与解的完整性"
+      ],
+      "prerequisite_sources": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "exercise_sources": [
+        "manuscript/review_ch01/chapter.md#question-01",
+        "manuscript/review_ch01/answers.md#answer-01"
+      ]
     },
     {
       "number": 5,
@@ -132,10 +145,24 @@
     {
       "number": 14,
       "code": "00A35",
-      "depth": "S",
+      "depth": "T",
       "status": "待作者审阅",
       "scope": "变形的可逆性与分情况",
-      "source": "manuscript/review_ch01/chapter.md#sec-00A35"
+      "source": "manuscript/review_ch01/chapter.md#sec-00A35",
+      "depth_reason": "B0首次完整教授可逆性、非零除法条件和穷尽分情况的方法，供后续代数与分析证明反复引用。",
+      "learning_targets": [
+        "区分单向推出与等价，以乘零反例识别信息丢失",
+        "在除法前分别处理除数为零与非零的情况",
+        "逐一代回并说明各分支穷尽全部候选"
+      ],
+      "prerequisite_sources": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A06"
+      ],
+      "exercise_sources": [
+        "manuscript/review_ch01/chapter.md#question-07",
+        "manuscript/review_ch01/answers.md#answer-07"
+      ]
     },
     {
       "number": 15,

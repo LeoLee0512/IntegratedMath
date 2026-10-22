@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 names=[
     'README.md','EDITORIAL_POLICY.md','LEARNING_PATH.md','RELEASING.md','发布说明.md','requirements-build.txt',
     '.gitignore','.github/workflows/build-review.yml','data/editorial_plan.json','tools/style.css','tools/review_artifacts.py',
-    'tools/publish_ch01_release.sh','build/review_ch01/build_inputs.json',
+    'tools/publish_ch01_release.sh','tools/check_release_notes.py','build/review_ch01/build_inputs.json',
     'tools/build_ch01_review.py','tools/draw_ch01_figures.py','tools/ch01_simulation.py',
     'tools/validate_ch01_review.py','tools/package_ch01_review.py',
     'tools/build_full_catalog.py','tools/pdf_header.tex',

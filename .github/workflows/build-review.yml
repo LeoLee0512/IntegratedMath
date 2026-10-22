@@ -5,6 +5,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -17,6 +18,7 @@ jobs:
           python -m pip install -r requirements-build.txt
       - name: Build and validate
         run: |
+          python tools/check_release_notes.py
           python tools/build_ch01_review.py
           python tools/validate_catalog_chinese.py
           python tools/validate_ch01_review.py

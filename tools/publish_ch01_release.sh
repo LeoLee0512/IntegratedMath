@@ -6,6 +6,7 @@ release_tag="${1:?Usage: bash tools/publish_ch01_release.sh review-ch01-YYYY-MM-
 [[ "$release_tag" == review-* ]] || { echo 'Use a new review-* tag.' >&2; exit 1; }
 git check-ref-format "refs/tags/$release_tag"
 git diff --quiet && git diff --cached --quiet || { echo 'Commit source changes before releasing.' >&2; exit 1; }
+python tools/check_release_notes.py
 gh auth status
 release_commit="$(git rev-parse HEAD)"
 remote_commit="$(gh api "repos/LeoLee0512/IntegratedMath/commits/$release_commit" --jq .sha)"
