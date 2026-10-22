@@ -18,10 +18,12 @@ jobs:
           python -m pip install -r requirements-build.txt
       - name: Build and validate
         run: |
+          python -m unittest discover -s tests -v
           python tools/check_release_notes.py
           python tools/build_ch01_review.py
           python tools/validate_catalog_chinese.py
           python tools/validate_ch01_review.py
+          python tools/build_ch02_preview.py
       - name: Save artifacts awaiting visual inspection
         uses: actions/upload-artifact@v4
         with:
@@ -30,4 +32,5 @@ jobs:
           path: |
             dist/
             build/review_ch01/
+            build/review_ch02/
             data/ch01_validation.json

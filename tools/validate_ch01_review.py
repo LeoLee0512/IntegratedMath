@@ -27,8 +27,8 @@ assert len(re.findall(r'^## 第\d+部分 ', full, re.M)) == 63
 assert len(re.findall(r'^### 第\d+章 ', full, re.M)) == 534
 assert len(re.findall(r'^- 第\d+节 ', full, re.M)) == 6006
 assert len(re.findall(r'^# 第\d+章 ', md, re.M)) == 1
-assert '第1章 绪论：一般与综合专题（00Axx）' in md
-sections = re.findall(r'^## 第(\d+)节 .+（([^）]+)）', md, re.M)
+assert '第1章 绪论：一般与综合专题' in md
+sections = re.findall(r'^## 第(\d+)节 .+ \{#sec-([^}]+)\}', md, re.M)
 assert [int(n) for n, c in sections] == list(range(1,24))
 taxonomy = json.loads((ROOT / 'data/msc_taxonomy.json').read_text())['entries']
 expected = [e['code'] for e in taxonomy if e['parent_code'] == '00-XX' and e['level']=='general_leaf']
