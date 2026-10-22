@@ -15,7 +15,7 @@ names=[
     'build/review_ch01/build_inputs.json',
     'tools/build_ch01_review.py','tools/draw_ch01_figures.py','tools/ch01_simulation.py',
     'tools/validate_ch01_review.py','tools/package_ch01_review.py',
-    'tools/build_full_catalog.py','tools/pdf_header.tex',
+    'tools/build_full_catalog.py','tools/pdf_header.tex','tools/manuscript_format.py',
     'tools/merge_catalog_chinese.py','tools/validate_catalog_chinese.py',
     'data/msc_taxonomy.json','data/catalog_titles.json','data/catalog_validation.json',
     'data/catalog_titles_zh.json','data/catalog_chinese_validation.json',

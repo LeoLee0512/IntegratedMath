@@ -9,16 +9,13 @@ import subprocess
 import zipfile
 
 import fitz
+from manuscript_format import pandoc_headings
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / 'build/review_ch02'
 OUT = ROOT / 'dist'
 SOURCE = ROOT / 'manuscript/review_ch02/chapter.md'
 STEM = '综合数学_第二章单节导读'
-
-
-def strip_github_anchors(text):
-    return re.sub(r'^<a id="[^"]+"></a>\n\n', '', text, flags=re.M)
 
 
 def assemble():
@@ -28,21 +25,20 @@ def assemble():
     assert entry['depth'] == 'G' and entry['status'] == '待作者审阅'
     assert len(plan['sections']) + plan['unlisted_sections']['count'] == 6006
     assert Counter(s['depth'] for s in plan['sections']) == {'T': 2, 'S': 13, 'G': 9}
-    assert re.findall(r'^## 第(\d+)节 .+（([^）]+)）', source, re.M) == [('24', '00B05')]
+    assert re.findall(r'^## 第(\d+)节 ', source, re.M) == ['24']
     titles = json.loads((ROOT / 'data/catalog_titles_zh.json').read_text())['entries']
     title = next(e['title_zh'] for e in titles if e['code'] == '00B05')
-    assert f'第24节 {title}（00B05）' in source
-    body = strip_github_anchors(source)
+    assert f'第24节 {title}' in source
+    body = pandoc_headings(source)
     excerpts = []
     for link in entry['prerequisite_sources']:
         path, anchor = link.split('#')
         original = (ROOT / path).read_text()
         assert original.count(f'<a id="{anchor}"></a>') == 1, link
-        assert original.count('{#' + anchor + '}') == 1, link
         relative = os.path.relpath(ROOT / path, SOURCE.parent) + '#' + anchor
         assert '](' + relative + ')' in source, link
         body = body.replace('](' + relative + ')', '](#' + anchor + ')')
-        headings = re.split(r'(?=^## )', strip_github_anchors(original), flags=re.M)
+        headings = re.split(r'(?=^## )', pandoc_headings(original), flags=re.M)
         excerpts.append(next(h for h in headings if '{#' + anchor + '}' in h.split('\n')[0]))
     body += '\n\n# 先修摘录（原文回看，不计入本节篇幅）\n\n'
     body += '以下摘录来自本次源码中的第一部分开篇及第1章，保留原节号；均待作者审阅。\n\n'
@@ -90,8 +86,8 @@ def main():
                 assert 0 <= target < len(doc)
                 destinations.add(target)
         page.get_pixmap(matrix=fitz.Matrix(1.1, 1.1)).save(BUILD / f'page-{index+1:02}.png')
-    for code in ['00-02', '00A15', '00A17']:
-        assert any(code in page_texts[p].replace('‑', '-') for p in destinations), code
+    for title in ['第2节数学总论的研究性阐述', '第8节数学总论书目', '第9节外部书评']:
+        assert any(title in ''.join(page_texts[p].split()) for p in destinations), title
     section_page = next(i for i, t in enumerate(page_texts) if '第24节讲座摘要汇编' in ''.join(t.split()))
     appendix_page = next(i for i, t in enumerate(page_texts) if '先修摘录' in t)
     report = {'status': 'automated_checks_passed', 'pages': len(doc),
@@ -106,6 +102,7 @@ def main():
     # Preview bundle is explicitly not a release or an author-approved manuscript.
     paths = [SOURCE, md, pdf, html, report_path, ROOT / 'data/editorial_plan.json',
              ROOT / 'tools/build_ch02_preview.py', ROOT / 'tools/pdf_header.tex',
+             ROOT / 'tools/manuscript_format.py',
              ROOT / 'tools/style.css', ROOT / 'requirements-build.txt',
              ROOT / 'data/catalog_titles_zh.json',
              ROOT / 'research/ch02_review.md']
