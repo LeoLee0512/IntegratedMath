@@ -217,6 +217,8 @@ $$
 
 ![两组共有一个成员。直接相加会把中间的白算两次。](figures/ch01_overlap.png){width=82%}
 
+<a id="source-sec-00A15"></a>
+
 ## 第8节 数学总论书目（00A15） {#sec-00A15}
 
 书目是供查找材料的记录，不是证明。一个可核对的记录应有作者、题名、版本或年份、出版机构或项目、稳定网址，以及具体使用的位置。本书的出处编号只用于定位资料，不代替定理的条件。
@@ -224,6 +226,8 @@ $$
 本章采用的等式运算可以在公开的 OpenStax《Elementary Algebra 2e》“Solve Equations Using the Subtraction and Addition Properties of Equality”（模块 m82463）与“Division and Multiplication Properties of Equality”（模块 m82464）对照阅读，见附录的来源记录 [S1]。书中的卡片例题、排列题、图和推导组织在本稿中独立编写，不从该书复制题干或答案。
 
 记下一个网页链接还不够。读者日后核验时，需要知道引用的是哪一版、哪一节；如果网页改版，记录的题名与节名仍有助于定位。关于来源的阅读说明不增加一个数学假设，也不会使一个错误的推理因为“有引用”而正确。
+
+<a id="source-sec-00A17"></a>
 
 ## 第9节 外部书评（00A17） {#sec-00A17}
 

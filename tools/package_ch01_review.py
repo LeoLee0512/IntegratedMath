@@ -11,7 +11,8 @@ ROOT=Path(__file__).resolve().parents[1]
 names=[
     'README.md','EDITORIAL_POLICY.md','LEARNING_PATH.md','RELEASING.md','发布说明.md','requirements-build.txt',
     '.gitignore','.github/workflows/build-review.yml','data/editorial_plan.json','tools/style.css','tools/review_artifacts.py',
-    'tools/publish_ch01_release.sh','tools/check_release_notes.py','build/review_ch01/build_inputs.json',
+    'tools/publish_ch01_release.sh','tools/check_release_notes.py','tools/render_release_notes.py','build/review_ch01/build_inputs.json',
+    'tools/build_ch02_review.py','tools/validate_ch02_review.py','research/ch02_pilot_review.md',
     'tools/build_ch01_review.py','tools/draw_ch01_figures.py','tools/ch01_simulation.py',
     'tools/validate_ch01_review.py','tools/package_ch01_review.py',
     'tools/build_full_catalog.py','tools/pdf_header.tex',
@@ -27,7 +28,7 @@ names=[
     'dist/综合数学_完整数学目录.md','dist/综合数学_完整数学目录.pdf',
 ]
 files=[ROOT/n for n in names]
-for folder,pattern in [('manuscript/review_ch01','*.md'),('figures','ch01_*.png'),
+for folder,pattern in [('manuscript/review_ch01','*.md'),('manuscript/review_ch02','*.md'),('figures','ch01_*.png'),
                        ('dist/figures','ch01_*.png'),('build/review_ch01','contact-*.png'),
                        ('build/review_ch01/screenshots','*.png'),('build/review_ch01','*.log'),
                        ('build/review_ch01/catalog-screenshots','*.png')]:
