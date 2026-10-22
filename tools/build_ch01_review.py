@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import os
+import re
 import shutil
 import subprocess
 from review_artifacts import source_hashes
@@ -43,10 +44,12 @@ def main():
         shutil.copy2(p, OUT / 'figures' / p.name)
     metadata = '---\ntitle: 综合数学\nauthor: Leo Lee\nlang: zh-CN\n---\n\n'
     notice = ('本稿供逐章审阅，正文仅包含第一部分开篇和第1章（00Axx）。'
-              '全书仍以63部分、534章、6006节为分类覆盖范围，各节按声明深度编写；本次不写第2章。'
+              '全书仍以63部分、534章、6006节为分类覆盖范围，各节按声明深度编写；第2章的单节导读另作独立预览，不收入本包。'
               '节号沿用完整目录：第1、2节直属部分，第3—23节属于第1章。\n\n')
     body = '\n\n'.join((SRC / n).read_text() for n in
                           ['part_opening.md', 'chapter.md', 'answers.md'])
+    # GitHub needs explicit HTML anchors; Pandoc uses the existing heading IDs.
+    body = re.sub(r'^<a id="[^"]+"></a>\n\n', '', body, flags=re.M)
     first_heading, remainder = body.split('\n', 1)
     body = first_heading + '\n\n' + notice + remainder
     body += '\n\n' + (SRC / 'appendices.md').read_text()
