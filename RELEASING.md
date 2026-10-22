@@ -38,7 +38,7 @@ python tools/validate_ch01_review.py
 bash tools/publish_ch01_release.sh review-ch01-2026-10-22
 ```
 
-标签名必须是新版本号。脚本在联网前检查并渲染说明，然后检查包和当前快照，创建指向当前提交的 **draft Release**，上传三个PDF、两个离线HTML、三个Markdown、伴生zip及 `SHA256SUMS.txt`；既有同名 Release 不覆盖。渲染预览不会创建标签；实际创建 Release 时才由 GitHub 将新标签关联到已核验的提交。发布前在 GitHub 检查资产与生成说明，并逐个打开标签链接确认文件和版本，再将草稿发布。
+标签名必须是新版本号。脚本在联网前检查并渲染说明，然后检查包和当前快照，创建指向当前提交的 **draft Release**，上传三个PDF、两个离线HTML、三个Markdown、伴生zip及 `SHA256SUMS.txt`；既有同名 Release 不覆盖。渲染预览不会创建标签，Release命令通过 `--target` 指定已核验的提交。发布前检查草稿资产、生成说明及该提交中的目标文件；草稿的新标签尚未公开时，不把标签URL暂时不可访问误认为源码缺失。将草稿发布后，再逐个打开标签链接确认文件和版本。
 
 若需修订已有草稿说明，保持原标签不动，更新说明模板后运行 `python tools/render_release_notes.py --tag <原标签> --output build/release-notes.md`，再执行 `gh release edit <原标签> --repo LeoLee0512/IntegratedMath --notes-file build/release-notes.md`。核对所链接文件在该标签下确实存在；不能通过移动标签让它追上新稿。发布成功后再将 README 的迁移状态更新为真实版本链接，不能把尚未存在的 Release 写成可下载版本。
 
