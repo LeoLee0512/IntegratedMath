@@ -14,7 +14,7 @@
   "unlisted_sections": {
     "depth": null,
     "status": "未规划",
-    "count": 5983
+    "count": 5982
   },
   "current_chapter": {
     "code": "00Axx",
@@ -235,18 +235,36 @@
       "status": "待作者审阅",
       "scope": "跨类主题与论证检查顺序",
       "source": "manuscript/review_ch01/chapter.md#sec-00A99"
+    },
+    {
+      "number": 24,
+      "code": "00B05",
+      "depth": "G",
+      "status": "待作者审阅",
+      "scope": "讲座摘要汇编的定位、阅读与核验边界，不证明专业定理",
+      "source": "manuscript/review_ch02/chapter.md#sec-00B05",
+      "prerequisite_sources": [
+        "manuscript/review_ch01/part_opening.md#sec-00-02",
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch01/chapter.md#sec-00A17"
+      ],
+      "estimated_body_pages": [
+        1,
+        2
+      ]
     }
   ],
   "next_chapter_proposal": {
     "code": "00Bxx",
     "suggested_depth": "G",
-    "status": "正文未开始",
+    "status": "第24节G级草稿待作者审阅，其余9节正文未开始",
     "prerequisite_sections": [
       "00-02",
       "00A15",
       "00A17"
     ],
-    "purpose": "文集类型、用途与核验，不承担基础运算教学"
+    "purpose": "文集类型、用途与核验，不承担基础运算教学",
+    "source": "manuscript/review_ch02/chapter.md#chapter-00Bxx"
   },
   "completion_note": "按声明深度逐项审阅后才记完成；全部现稿仍待作者审阅，导读不得计为完整教学。"
 }

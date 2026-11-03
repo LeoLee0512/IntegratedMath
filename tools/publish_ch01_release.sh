@@ -6,7 +6,9 @@ release_tag="${1:?Usage: bash tools/publish_ch01_release.sh review-ch01-YYYY-MM-
 [[ "$release_tag" == review-* ]] || { echo 'Use a new review-* tag.' >&2; exit 1; }
 git check-ref-format "refs/tags/$release_tag"
 git diff --quiet && git diff --cached --quiet || { echo 'Commit source changes before releasing.' >&2; exit 1; }
-python tools/check_release_notes.py
+release_notes="$(mktemp)"
+trap 'rm -f "$release_notes"' EXIT
+python tools/check_release_notes.py --release-tag "$release_tag" --output "$release_notes"
 gh auth status
 release_commit="$(git rev-parse HEAD)"
 remote_commit="$(gh api "repos/LeoLee0512/IntegratedMath/commits/$release_commit" --jq .sha)"
@@ -31,7 +33,7 @@ Path('dist/SHA256SUMS.txt').write_text(''.join(
 PY
 gh release create "$release_tag" \
   --repo LeoLee0512/IntegratedMath --target "$release_commit" \
-  --draft --title "综合数学 第一章审阅稿 $release_tag" --notes-file 发布说明.md \
+  --draft --title "综合数学 第一章审阅稿 $release_tag" --notes-file "$release_notes" \
   dist/综合数学.pdf dist/综合数学.md dist/综合数学.html \
   dist/综合数学_第一章审阅版.pdf dist/综合数学_第一章审阅版.md dist/综合数学_第一章审阅版.html \
   dist/综合数学_完整数学目录.pdf dist/综合数学_完整数学目录.md \

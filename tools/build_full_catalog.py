@@ -14,11 +14,12 @@ from pathlib import Path
 import re
 import subprocess
 import unicodedata
+from manuscript_format import reader_title
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PDF = ROOT / 'local-inputs/MSC_2020.pdf'
 HEADING = re.compile(r'^\s*(\d{2}-XX|\d{2}[A-Z]xx|\d{2}[A-Z]\d{2}|\d{2}-\d{2})\s+(.+)$')
-OUTPUT_HEADING = re.compile(r'^(#{1,3}) 第(\d+)(部分|章|节) (.+)（(?:MSC )?([0-9A-Zx-]+)）$')
+OUTPUT_HEADING = re.compile(r'^(#{1,3}) 第(\d+)(部分|章|节) (.+)$')
 # These are lexical hyphens actually split at line endings in the supplied PDF.
 # Other end-of-line hyphens in its headings are typographical word breaks.
 KEEP_WRAPPED_HYPHEN = {'infinite', 'information', 'time', 'initial', 'non'}
@@ -309,7 +310,7 @@ def read_pdf_headings(pdf: Path) -> tuple[dict[str, str], dict[str, int]]:
     return {code: join_title(lines) for code, lines in fragments.items()}, pages
 
 
-def verify_catalog(path: Path, records: list[dict]) -> dict:
+def verify_catalog(path: Path, records: list[dict], display_titles: dict) -> dict:
     """Parse the emitted Markdown independently of the rendering loop."""
     source = {row['code']: row for row in records}
     seen = []
@@ -321,10 +322,14 @@ def verify_catalog(path: Path, records: list[dict]) -> dict:
         match = OUTPUT_HEADING.fullmatch(line)
         if not match:
             raise ValueError(f'Unexpected catalog heading at line {line_number}: {line}')
-        marks, number, unit, _title, code = match.groups()
-        if code not in source:
-            raise ValueError(f'Invented classification code: {code}')
-        row = source[code]
+        marks, number, unit, title = match.groups()
+        if len(seen) >= len(records):
+            raise ValueError('Unexpected extra catalog heading')
+        row = records[len(seen)]
+        code = row['code']
+        expected_title = '绪论：一般与综合专题' if code == '00Axx' else display_titles[code]
+        if title != expected_title:
+            raise ValueError(f'Wrong title or ordering for {code}: {title}')
         level = row['level']
         expected_unit = '部分' if level == 'major' else '章' if level == 'intermediate' else '节'
         expected_marks = '#' if level == 'major' else '##' if level == 'intermediate' else '###'
@@ -481,7 +486,8 @@ def main() -> None:
     translation_rows = translated['entries']
     if len(translation_rows) != len(records) or {r['code'] for r in translation_rows} != set(source_codes):
         raise ValueError('Incomplete or duplicate Chinese heading translations')
-    display_titles = {r['code']: r['title_zh'] for r in translation_rows}
+    raw_titles = {r['code']: r['title_zh'] for r in translation_rows}
+    display_titles = {code: reader_title(title, raw_titles) for code, title in raw_titles.items()}
     parents = {r['code']:r['parent_code'] for r in records}
     for item in translation_rows:
         code = item['code']
@@ -499,10 +505,10 @@ def main() -> None:
         '本目录列出全书的编写范围，含 63 个部分、534 个章节、6006 个节项；不表示这些内容已全部写成教材。'
         '503 个通用文献类型节项直接列在各部分开头，其后按原有 534 个中级类别列章，并列出 5503 个专门主题节项。'
         '不为通用条目虚构章节。', '',
-        '本目录按 MSC2020 分类顺序编排，保留全部代码及归属，作为主题定位与编写范围索引。'
+        '本目录按 MSC2020 分类顺序编排，保留全部分类及归属，分类代码仅存内部台账，作为主题定位与编写范围索引。'
         '分类顺序不等于学习顺序，各节可按完整教学、专题展开或导读定位编写；先修路径另行安排。'
-        '各级标题均采用中文；经作者同意，第1章使用“绪论：一般与综合专题”，对应00Axx。'
-        '中文标题为本书译名，英文对照保存在伴生台账中；数学记号与分类代码保留。'
+        '各级标题均采用中文；经作者同意，第1章使用“绪论：一般与综合专题”。'
+        '中文标题为本书译名，英文对照保存在伴生台账中；数学记号保留，阅读标题不显示分类代码。'
         '标题仅保留分类名称，去除交叉检索提示并恢复换行断词及经原页核验的数学排版，不含大段原文或新增教材内容。', '',
         '分类依据：《数学评论》与《数学文摘》编制的MSC2020，用户提供的224页附件。'
         '本目录属于分类定位索引，不构成对原始 PDF 或其他来源正文的开放授权；不随目录重发原始 PDF。', ''
@@ -521,27 +527,27 @@ def main() -> None:
         if major['level'] != 'major' or not major.get('title_zh'):
             raise ValueError(f'Invalid major classification: {major}')
         part_number += 1
-        text += [f"# 第{part_number}部分 {display_titles[major['code']]}（MSC {major['code']}）", '']
+        text += [f"# 第{part_number}部分 {display_titles[major['code']]}", '']
         direct = children[major['code']]
         for item in direct:
             if item['level'] != 'general_leaf':
                 continue
             section_number += 1
-            text += [f"### 第{section_number}节 {display_titles[item['code']]}（{item['code']}）", '']
+            text += [f"### 第{section_number}节 {display_titles[item['code']]}", '']
         for chapter in direct:
             if chapter['level'] != 'intermediate':
                 continue
             chapter_number += 1
             chapter_title = "绪论：一般与综合专题" if chapter["code"] == "00Axx" else display_titles[chapter["code"]]
-            text += [f"## 第{chapter_number}章 {chapter_title}（{chapter['code']}）", '']
+            text += [f"## 第{chapter_number}章 {chapter_title}", '']
             for item in children[chapter['code']]:
                 if item['level'] != 'subject_leaf':
                     raise ValueError(f'Unexpected child: {item}')
                 section_number += 1
-                text += [f"### 第{section_number}节 {display_titles[item['code']]}（{item['code']}）", '']
+                text += [f"### 第{section_number}节 {display_titles[item['code']]}", '']
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text('\n'.join(text), encoding='utf-8')
-    checks = verify_catalog(args.output, records)
+    checks = verify_catalog(args.output, records, display_titles)
     validation = {
         'status': 'passed', 'source_pdf_sha256': cache['source_pdf_sha256'],
         'verification_mode': verification_mode,

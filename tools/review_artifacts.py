@@ -13,7 +13,7 @@ def hashes(paths):
 
 def source_hashes():
     names = ['requirements-build.txt', 'tools/build_ch01_review.py',
-             'tools/build_full_catalog.py', 'tools/draw_ch01_figures.py',
+             'tools/manuscript_format.py', 'tools/build_full_catalog.py', 'tools/draw_ch01_figures.py',
              'tools/ch01_simulation.py', 'tools/pdf_header.tex', 'tools/style.css',
              'data/msc_taxonomy.json', 'data/catalog_titles.json',
              'data/catalog_titles_zh.json']

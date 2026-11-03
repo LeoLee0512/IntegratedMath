@@ -4,6 +4,7 @@ from collections import Counter
 import hashlib
 import json
 import re
+from manuscript_format import reader_title
 
 ROOT=Path(__file__).resolve().parents[1]
 # These are mathematical object/type names or variables, not English prose.
@@ -34,11 +35,15 @@ for row in rows:
             qualifier_count+=1
             assert re.search(pattern,zh),(code,term,zh)
 catalog=(ROOT/'dist/综合数学_完整数学目录.md').read_text()
-headings=re.findall(r'^(#{1,3}) 第(\d+)(部分|章|节) (.+)（(?:MSC )?([0-9A-Zx-]+)）$',catalog,re.M)
+headings=re.findall(r'^(#{1,3}) 第(\d+)(部分|章|节) (.+)$',catalog,re.M)
 assert len(headings)==6603
 lookup={row['code']:row for row in rows}
-for level,num,kind,title,code in headings:
-    expected='绪论：一般与综合专题' if code=='00Axx' else lookup[code]['title_zh']
+title_lookup={row['code']:row['title_zh'] for row in rows}
+taxonomy=json.loads((ROOT/'data/msc_taxonomy.json').read_text())['entries']
+assert len(taxonomy)==len(headings)
+for (level,num,kind,title), record in zip(headings,taxonomy):
+    code=record['code']
+    expected='绪论：一般与综合专题' if code=='00Axx' else reader_title(lookup[code]['title_zh'], title_lookup)
     assert title==expected,(code,title,expected)
 assert Counter(h[2] for h in headings)=={'部分':63,'章':534,'节':6006}
 report={'status':'passed','translated_heading_count':6603,'parts':63,'chapters':534,'sections':6006,
