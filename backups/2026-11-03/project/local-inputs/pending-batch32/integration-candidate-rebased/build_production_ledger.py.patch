@@ -1,0 +1,210 @@
+--- a/tools/build_production_ledger.py
++++ b/tools/build_production_ledger.py
+@@ -144,7 +144,11 @@
+           'manuscript/foundations/real_sequences_order.md',
+           'manuscript/foundations/real_sequences_order_answers.md',
+           'manuscript/foundations/real_subsequences_bw.md',
+-          'manuscript/foundations/real_subsequences_bw_answers.md']
++          'manuscript/foundations/real_subsequences_bw_answers.md',
++          'manuscript/foundations/real_sequences_cauchy.md',
++          'manuscript/foundations/real_sequences_cauchy_answers.md',
++          'manuscript/foundations/real_function_limits.md',
++          'manuscript/foundations/real_function_limits_answers.md']
+ # Each tuple: module id, stage, title, prerequisite module ids, MSC locating tags.
+ MODULES = [
+  ('reading','B0','阅读数学与核查论证',[],['00']),
+@@ -280,7 +284,7 @@
+                    'number-systems':BRIDGE[82:108:2],
+                    'real-algebra-equations':BRIDGE[108:110:2],
+                    'real-plane-geometry':BRIDGE[110:118:2],
+-                   'single-analysis':BRIDGE[118:126:2]}.get(mid,[])
++                   'single-analysis':BRIDGE[118:130:2]}.get(mid,[])
+         modules.append({'id': mid, 'stage': stage, 'title': title, 'prerequisites': deps,
+                         'msc_tags': tags, 'source_files': existing(root, planned),
+                         'implementation_status': 'partial_draft' if existing(root, planned) else 'unwritten',
+@@ -396,16 +400,18 @@
+         if mid == 'single-analysis':
+             modules[-1]['coverage'] = {
+                 'scope': 'registered_sequence_entry_units_draft' if existing(root, planned) else 'none',
+-                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限', '最终比较、夹逼及上下确界单调收敛', '确定性单调子列、实数数列BW及有界子列判别'] if existing(root, planned) else [],
+-                'unwritten_topics': ['柯西判据、上/下极限及其他完备性等价', '无穷级数', '函数极限、连续、微分与积分'],
++                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限', '最终比较、夹逼及上下确界单调收敛', '确定性单调子列、实数数列BW及有界子列判别', '双指标柯西判据与实数数列柯西完备性', '聚点穿孔域与直接函数点极限及实际商域'] if existing(root, planned) else [],
++                'unwritten_topics': ['上/下极限及其他完备性等价', '无穷级数', '函数极限序列刻画、复合极限、左右极限、连续、微分与积分'],
+                 'completed': False,
+-                'note': 'B4.1—B4.4仅为限定数列入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
++                'note': 'B4.1—B4.6仅为限定数列与函数点极限入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
+             modules[-1]['definition_and_theorem_anchors'] = [
+                 anchor_ref(root, path, a) for path, names in [
+                     (BRIDGE[118], ['seq-definition','seq-uniqueness','seq-basic-limits','seq-tails']),
+                     (BRIDGE[120], ['seqlaw-bounded','seqlaw-linear-absolute','seqlaw-product','seqlaw-reciprocal-quotient']),
+                     (BRIDGE[122], ['seqorder-comparison','seqorder-squeeze','seqorder-monotone-bounds','seqorder-monotone-convergence']),
+-                    (BRIDGE[124], ['subseq-indices','subseq-monotone','subseq-bolzano-weierstrass','subseq-criterion'])]
++                    (BRIDGE[124], ['subseq-indices','subseq-monotone','subseq-bolzano-weierstrass','subseq-criterion']),
++                    (BRIDGE[126], ['seqcauchy-definition','seqcauchy-bounded','seqcauchy-subsequence','seqcauchy-criterion']),
++                    (BRIDGE[128], ['funlimit-domain-definition','funlimit-unique-examples','funlimit-locality','funlimit-algebra'])]
+                 for a in names]
+             modules[-1]['scope_boundary'] = {
+                 'entry_domain': '从已写函数、自然规则、实数域、绝对值与阿基米德性质直接进入；不依赖二维几何',
+@@ -2735,7 +2741,7 @@
+              ('SL4', 'seq-tails', '最终相同、尾移与余数交替例')],
+   'questions': 'seq-q',
+   'answer_prefix': 'seq-a',
+-  'not_covered': ['B3自然数形式构造与递归原则证明', '单调收敛、子列及级数', '函数极限、连续、微分与积分', '任意实数的数值实现或无限测试'],
++  'not_covered': ['B3自然数形式构造与递归原则证明', '单调收敛、子列及级数', '函数极限序列刻画、复合极限、左右极限、连续、微分与积分', '任意实数的数值实现或无限测试'],
+   'prerequisites': [('manuscript/foundations/dedekind_addition.md', 'cutadd-rational'),
+                     ('manuscript/foundations/dedekind_additive_order.md',
+                      'cutgroup-negation-subtraction'),
+@@ -2797,7 +2803,7 @@
+              ('SA4', 'seqlaw-reciprocal-quotient', '最终非零、早期填值及合法商')],
+   'questions': 'seqlaw-q',
+   'answer_prefix': 'seqlaw-a',
+-  'not_covered': ['B3自然数形式构造与递归原则证明', '单调收敛、子列及级数', '函数极限、连续、微分与积分', '任意实数的数值实现或无限测试'],
++  'not_covered': ['B3自然数形式构造与递归原则证明', '单调收敛、子列及级数', '函数极限序列刻画、复合极限、左右极限、连续、微分与积分', '任意实数的数值实现或无限测试'],
+   'prerequisites': [('manuscript/foundations/dedekind_addition.md', 'cutadd-rational'),
+                     ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'),
+                     ('manuscript/foundations/dedekind_additive_order.md',
+@@ -2955,6 +2961,121 @@
+                        ('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
+ 
+ 
++UNIT_SPECS += [{'parent_code': '40Axx',
++  'parent_chapter_number': 242,
++  'part_code': '40-XX',
++  'msc_leaf_codes': ['40A05'],
++  'msc_cross_reference_codes': ['26A03', '97I30'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.5',
++  'number': 64,
++  'title': '实数数列的柯西判据',
++  'anchor': 'seqcauchy-unit',
++  'body': 'manuscript/foundations/real_sequences_cauchy.md',
++  'answers': 'manuscript/foundations/real_sequences_cauchy_answers.md',
++  'goals': ['区分双尾指标和对角条件', '用任意全列的前缀界避免有界性循环', '固定一次合法子列项覆盖全尾', '依已有BW建立柯西判据并说明形式基础边界'],
++  'definitions': ['seqcauchy-definition',
++                  'seqcauchy-bounded',
++                  'seqcauchy-subsequence',
++                  'seqcauchy-criterion'],
++  'proved': [('CA1', 'seqcauchy-definition', '双指标柯西条件与完整否定'),
++             ('CA2', 'seqcauchy-bounded', '收敛必要性与非循环全列界'),
++             ('CA3', 'seqcauchy-subsequence', '固定子列项控制全尾'),
++             ('CA4', 'seqcauchy-criterion', 'BW推出实数柯西判据与最终相同')],
++  'questions': 'seqcauchy-q',
++  'answer_prefix': 'seqcauchy-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明',
++                  '上/下极限、一般紧致性与多维完备性',
++                  '无穷级数、函数极限序列刻画、复合极限、左右极限、连续与微积分',
++                  '任意实数候选集的无限选点原则'],
++  'prerequisites': [('manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-translation'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-definition'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-order'),
++                    ('manuscript/foundations/dedekind_inverse.md', 'cutinv-rational-identities'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'),
++                    ('manuscript/foundations/division_remainder.md', 'div-quotient-remainder'),
++                    ('manuscript/foundations/division_remainder.md', 'div-theorem'),
++                    ('manuscript/foundations/functions_composition.md', 'fc-composition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-pairs'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-induction'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-recursion-principle'),
++                    ('manuscript/foundations/natural_order.md', 'ord-addition-order'),
++                    ('manuscript/foundations/natural_order.md', 'ord-definition'),
++                    ('manuscript/foundations/natural_order.md', 'ord-successor-comparison'),
++                    ('manuscript/foundations/natural_order.md', 'ord-trichotomy'),
++                    ('manuscript/foundations/place_value.md', 'b1-multiplication-commutative'),
++                    ('manuscript/foundations/place_value.md', 'b1-multiplication-units'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-products-triangle'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-embedding'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-natural-bound'),
++                    ('manuscript/foundations/real_sequences_algebra.md', 'seqlaw-bounded'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-basic-limits'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-definition'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-tails'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-uniqueness'),
++                    ('manuscript/foundations/real_subsequences_bw.md', 'subseq-bolzano-weierstrass'),
++                    ('manuscript/foundations/real_subsequences_bw.md', 'subseq-indices')],
++  'adopted_external': [('manuscript/foundations/natural_numbers.md',
++                        'b1-induction',
++                        '公开采用自然归纳规则，未宣称B3课程完成'),
++                       ('manuscript/foundations/natural_numbers.md',
++                        'b1-recursion-principle',
++                        '公开采用固定更新递归原则'),
++                       ('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]},
++ {'parent_code': '26Axx',
++  'parent_chapter_number': 146,
++  'part_code': '26-XX',
++  'msc_leaf_codes': ['26A03'],
++  'msc_cross_reference_codes': ['97I20'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.6',
++  'number': 65,
++  'title': '实函数的点极限',
++  'anchor': 'funlimit-unit',
++  'body': 'manuscript/foundations/real_function_limits.md',
++  'answers': 'manuscript/foundations/real_function_limits_answers.md',
++  'goals': ['先核域聚点再写穿孔极限量词', '用有限正半径合并及实际见证证明唯一性', '区分局部条件和全域或中心值', '在真实非零子域先证聚点再作倒数商估计'],
++  'definitions': ['funlimit-domain-definition',
++                  'funlimit-unique-examples',
++                  'funlimit-locality',
++                  'funlimit-algebra'],
++  'proved': [('FL1', 'funlimit-domain-definition', '聚点穿孔定义与固定候选否定'),
++             ('FL2', 'funlimit-unique-examples', '共同输入唯一性与直接基本例'),
++             ('FL3', 'funlimit-locality', '局部相同、穿孔近域界与非零下界'),
++             ('FL4', 'funlimit-algebra', '直接运算与实际商域聚点')],
++  'questions': 'funlimit-q',
++  'answer_prefix': 'funlimit-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明',
++                  '上/下极限、一般紧致性与多维完备性',
++                  '无穷级数、函数极限序列刻画、复合极限、左右极限、连续与微积分',
++                  '任意实数候选集的无限选点原则'],
++  'prerequisites': [('manuscript/foundations/dedekind_addition.md', 'cutadd-rational'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'),
++                    ('manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-translation'),
++                    ('manuscript/foundations/dedekind_cuts_order.md', 'cut-order-embedding'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-definition'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-equations'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-order'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-multiplication-order'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-associative'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-rational-zero'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-signs'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-products-triangle'),
++                    ('manuscript/foundations/real_square_roots.md', 'realsqrt-square-order')],
++  'adopted_external': [('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
++
++
+ def anchor_ref(root, path, anchor):
+     text = (root/path).read_text() if (root/path).is_file() else ''
+     found = '{#'+anchor+'}' in text or 'id="'+anchor+'"' in text
+@@ -3069,7 +3190,9 @@
+             'research/production/real_sequences_sources_2026-10-30.md',
+             'research/production/real_sequences_sources_2026-10-30.json'] if spec['number'] >= 60 else []) + ([
+             'research/production/real_sequences_order_subsequences_sources_2026-10-30.md',
+-            'research/production/real_sequences_order_subsequences_sources_2026-10-30.json'] if spec['number'] >= 62 else []))
++            'research/production/real_sequences_order_subsequences_sources_2026-10-30.json'] if spec['number'] >= 62 else []) + ([
++            'research/production/real_cauchy_function_limits_sources_2026-10-30.md',
++            'research/production/real_cauchy_function_limits_sources_2026-10-30.json'] if spec['number'] >= 64 else []))
+         units.append(unit)
+     return units
+ 
+@@ -3419,7 +3542,10 @@
+                 if code=='40Axx':
+                     chapter['learning_entry'].update(status='sequence_entry_defined_chapter_pending',
+                         module_ids=['single-analysis'])
+-                    chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.4实数数列收敛定义、唯一性、基本例、尾移、有界、四则极限、比较夹逼、单调收敛、单调子列、实数数列BW及有界子列判别；柯西判据、上/下极限、级数及其余无穷极限主题待写，整章未完成'
++                    chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.5实数数列收敛定义、唯一性、基本例、尾移、有界、四则极限、比较夹逼、单调收敛、单调子列、实数数列BW、有界子列判别及柯西判据；上/下极限、级数及其余无穷极限主题待写，整章未完成'
++                if code=='26Axx':
++                    chapter['learning_entry'].update(status='function_limit_entry_defined_chapter_pending', module_ids=['single-analysis'])
++                    chapter['coverage']['unwritten_topics'] = '仅登记B4.6聚点、穿孔点极限、唯一性、局部性及实际商域的直接误差证明；序列刻画、复合极限、左右极限、连续、微分与积分及其他一元函数主题待写，整章未完成'
+                 chapters.append(chapter)
+                 for leaf in children[code]:
+                     has_anchor = code=='00Axx' and '{#sec-'+leaf['code']+'}' in ch01_text

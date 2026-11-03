@@ -1,0 +1,249 @@
+{
+  "status": "Independent concept and actual public-source conditions audit; no new manuscript or formal repository edits",
+  "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+  "reviewer": "/root/plan_multiplication",
+  "plan_path": "/tmp/real_lines_projection_plan.md",
+  "plan_sha256": "01769481f01991d42a97ce3d76317f2f87791dd8dd9f4997cd90dfa52051f2ec",
+  "network": {
+    "new_http_requests": 4,
+    "http200": 4,
+    "failed_requests": 0,
+    "excluded_off_scope_candidates": 1,
+    "policy": "restricted/enforced; observations_current true; VPN false; inherited proxy and TLS verification preserved",
+    "skills_read": [
+      "cloud-environment-runtime/SKILL.md",
+      "references/networking.md"
+    ],
+    "policy_file": "/etc/codex/network-policy.json"
+  },
+  "discovery": {
+    "url": "https://github.com/rbeezer/fcla/tree/347f27fe909b54b26970bcc0fcbf69c7e853c766/src",
+    "original_fetch_at_utc": "2026-10-29T16:33:31.370843+00:00",
+    "cache_path": "/tmp/linear-source-audit/beezer_src",
+    "sha256": "665c27938848fca6094a1e413eff040080a5be4eeace68d762ade09c426a6973",
+    "current_read": "parsed embedded JSON tree, confirming section-O.xml and section-OD.xml paths at fixed commit; no new request"
+  },
+  "sources": [
+    {
+      "id": "beezer_orthogonality",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-O.xml",
+      "fetched_at_utc": "2026-10-30T03:43:07.253907+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-O.xml",
+      "cache_path": "/tmp/real-lines-projection-source-audit/beezer_orthogonality.xml",
+      "bytes": 55371,
+      "sha256": "4c114a96867fa2f301ad26640958ee289028146fe68ef502e14a0082e7c7db40",
+      "title": "A First Course in Linear Algebra, Section O: Orthogonality",
+      "author": "Robert A. Beezer",
+      "version": "version 3.50; commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no invariant sections or front/back cover texts",
+      "disposition": "accepted for factual and hypothesis comparison",
+      "actual_read_locations": [
+        "103-117: complex conjugate inner product definition",
+        "166-266: additivity, conjugate scalar linearity and conjugate symmetry",
+        "328-382: norm-square identity, nonnegative self-inner product and zero criterion",
+        "542-550: orthogonality definition",
+        "715-795: Gram-Schmidt subtraction coefficient and nonzero-denominator condition"
+      ],
+      "role": "Compare component inner product, orthogonality and subtraction of directional component. Source uses complex m-tuples and general Gram-Schmidt; book re-proves real two-coordinate symmetry, bilinearity and line projection explicitly.",
+      "limitations": [
+        "No copied examples, exercises, proof prose or code.",
+        "Not a source for a claimed exact planar point-to-line theorem or nearest-point uniqueness proof.",
+        "Source PIP prose says every square term is positive; book must retain nonnegative terms and handle the zero vector explicitly."
+      ],
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "new public HTTPS HTTP200; cached bytes read and SHA-256/size verified"
+    },
+    {
+      "id": "beezer_orthogonal_decomposition",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-OD.xml",
+      "fetched_at_utc": "2026-10-30T03:43:07.255863+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-OD.xml",
+      "cache_path": "/tmp/real-lines-projection-source-audit/beezer_orthogonal_decomposition.xml",
+      "bytes": 41625,
+      "sha256": "6e6cc0e07bcd7b27416707f257317366c4f9267de91e8d3ac782f26582a205b6",
+      "title": "A First Course in Linear Algebra, Section OD: Orthonormal Diagonalization",
+      "author": "Robert A. Beezer",
+      "version": "version 3.50; same fixed commit",
+      "license": "GFDL-1.2-or-later",
+      "disposition": "excluded off-scope search candidate",
+      "actual_read_locations": [
+        "1-3: actual section title",
+        "36-37,108-109,314-315: actual theorem titles about triangular matrices and diagonalization"
+      ],
+      "role": "None in textbook proof support. Initial search identifier guessed orthogonal decomposition; actual retrieved title is orthonormal diagonalization. Retained to avoid hiding the unsuccessful candidate.",
+      "limitations": [
+        "Do not cite this file as projection, closest-point or orthogonal-decomposition evidence."
+      ],
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "new public HTTPS HTTP200; cached bytes read and SHA-256/size verified"
+    },
+    {
+      "id": "mathlib_euclidean_projection",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Geometry/Euclidean/Projection.lean",
+      "fetched_at_utc": "2026-10-30T03:44:28.124662+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Geometry/Euclidean/Projection.lean",
+      "cache_path": "/tmp/real-lines-projection-source-audit/mathlib_euclidean_projection.lean",
+      "bytes": 30666,
+      "sha256": "24d79cc964f1ba8643bd61f15a1b469872d8ef70266d703d00c37ece9f7ce965",
+      "title": "Mathlib.Geometry.Euclidean.Projection",
+      "author": "Joseph Myers; Manuel Candales",
+      "version": "mathlib v4.24.0",
+      "license": "Apache-2.0",
+      "disposition": "accepted for factual and hypothesis comparison",
+      "actual_read_locations": [
+        "1-35: license, authors and ambient real inner-product/metric affine torsor assumptions",
+        "39-93: nonempty affine subspace and direction.HasOrthogonalProjection; membership and residual orthogonality",
+        "203-243: projection equals original point iff membership; zero distance iff membership",
+        "302-331: Pythagorean distance decomposition and infDist identification"
+      ],
+      "role": "Compare affine point/vector type separation, orthogonal foot, zero-residual branch and squared distance decomposition.",
+      "limitations": [
+        "General affine/inner-product-space APIs and projection-existence instances are not book prerequisites.",
+        "The book proves existence with an explicit positive-denominator formula and defines attained minimum, not imported infDist.",
+        "Lean source read only; no Lean build, no formal verification claim."
+      ],
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "new public HTTPS HTTP200; cached bytes read and SHA-256/size verified"
+    },
+    {
+      "id": "mathlib_inner_projection",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Analysis/InnerProductSpace/Projection/Basic.lean",
+      "fetched_at_utc": "2026-10-30T03:44:28.125126+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Analysis/InnerProductSpace/Projection/Basic.lean",
+      "cache_path": "/tmp/real-lines-projection-source-audit/mathlib_inner_projection.lean",
+      "bytes": 33796,
+      "sha256": "01f276aab18bcf5d5fc56e0ac19ae3ba37d7a7ccf0b469a2d0bb124026ae9776",
+      "title": "Mathlib.Analysis.InnerProductSpace.Projection.Basic",
+      "author": "Zhouhang Zhou; Frédéric Dupuis; Heather Macbeth",
+      "version": "mathlib v4.24.0",
+      "license": "Apache-2.0",
+      "disposition": "accepted for factual and hypothesis comparison",
+      "actual_read_locations": [
+        "1-54: metadata, RCLike/inner product assumptions, HasOrthogonalProjection and complete-subspace instance",
+        "100-122: residual orthogonality and uniqueness in the subspace",
+        "258-264: starProjection_minimal with HasOrthogonalProjection hypothesis",
+        "579-595: projection Pythagorean theorem"
+      ],
+      "role": "Compare nonzero/orthogonality conditions, uniqueness and nearest-point structure; completeness-based construction not imported.",
+      "limitations": [
+        "No use of infinite-dimensional projection, Hilbert-space completeness or infimum machinery as book proof steps.",
+        "No source code, external exercises or solutions copied.",
+        "No Lean execution."
+      ],
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "new public HTTPS HTTP200; cached bytes read and SHA-256/size verified"
+    },
+    {
+      "id": "beezer_copying",
+      "title": "COPYING.txt license grant",
+      "author": "Robert A. Beezer",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_copying.txt",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "bytes": 740,
+      "original_fetch_at_utc": "2026-10-29T16:33:31.372978+00:00",
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "reused actual cache; bytes/sha verified; no new HTTP request",
+      "role": "Metadata/license evidence only",
+      "actual_read_locations": [
+        "entire 740-byte permission notice"
+      ]
+    },
+    {
+      "id": "beezer_bookinfo",
+      "title": "Book metadata and license grant",
+      "author": "Robert A. Beezer",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_bookinfo.xml",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "bytes": 77493,
+      "original_fetch_at_utc": "2026-10-29T16:33:44.811224+00:00",
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "reused actual cache; bytes/sha verified; no new HTTP request",
+      "role": "Metadata/license evidence only",
+      "actual_read_locations": [
+        "1-30: title, author, version, copyright and permission summary"
+      ]
+    },
+    {
+      "id": "mathlib_license",
+      "title": "mathlib LICENSE",
+      "author": "mathlib contributors",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "checked_at_utc": "2026-10-30T03:48:44.911385+00:00",
+      "current_check": "reused actual cache; bytes/sha verified; no new HTTP request",
+      "role": "Metadata/license evidence only",
+      "actual_read_locations": [
+        "entire Apache 2.0 license text"
+      ]
+    }
+  ],
+  "actual_book_interfaces": {
+    "real_plane_affine.md": {
+      "path": "/tmp/real_plane_affine.md",
+      "sha256": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383"
+    },
+    "real_plane_affine_answers.md": {
+      "path": "/tmp/real_plane_affine_answers.md",
+      "sha256": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae"
+    },
+    "real_plane_distance.md": {
+      "path": "/tmp/real_plane_distance.md",
+      "sha256": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2"
+    },
+    "real_plane_distance_answers.md": {
+      "path": "/tmp/real_plane_distance_answers.md",
+      "sha256": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+    },
+    "dedekind_division_field.md": {
+      "path": "/tmp/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610"
+    },
+    "real_absolute_distance.md": {
+      "path": "/tmp/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823"
+    },
+    "real_square_roots.md": {
+      "path": "/tmp/real_square_roots.md",
+      "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf"
+    }
+  },
+  "taxonomy": {
+    "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+    "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "actual_records": [
+      {
+        "code": "51N10",
+        "title": "Affine analytic geometry"
+      },
+      {
+        "code": "51N20",
+        "title": "Euclidean analytic geometry"
+      },
+      {
+        "code": "97G70",
+        "title": "Analytic geometry, vector algebra (educational aspects)"
+      }
+    ]
+  },
+  "coverage_limitations": [
+    "No external source asserted to prove all of PL1-PL4 in exactly the book model; those are independent elementary two-coordinate derivations.",
+    "External definitions assume richer existing structures; no substitution for book prerequisites.",
+    "No source code, external prose, figures, examples, exercises or answers copied into distributable manuscripts.",
+    "This is not formal integration, source-page acceptance, manuscript review, PDF inspection or Lean verification."
+  ]
+}

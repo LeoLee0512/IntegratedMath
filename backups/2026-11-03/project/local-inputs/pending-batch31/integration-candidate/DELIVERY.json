@@ -1,0 +1,108 @@
+{
+  "status": "READY_for_root_review_and_integration",
+  "checked_at_utc": "2026-10-30T04:37:12.843486+00:00",
+  "files": {
+    "tools/build_learning_batch.py": "53950390fbb0b7e7a9f588c2b81863844f860ec9d29b2b362c407301df584a26",
+    "tools/build_production_ledger.py": "4c86a38e2b8d966f93071eb0372c5e62b167800712b29e28ebf2e079f3745190",
+    "tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "tools/validate_learning_batch.py": "21b44db39936ea1f1caa530538c8d3873a32821b3046406c38887b8083de0e38",
+    "LEARNING_PATH.md.patch": "90b3f7799053a86b51411e0795bc0e9a8f47b5af3bc7ff79025699900b365162",
+    "README.md.patch": "dde30ae362a782c327e55765332f80ff3ca2b274fa0929bf248362ca4be0f644",
+    "build_learning_batch.py.patch": "dca5aaa4533090ba70717639d325c49366d116707c6142c837aeb446e37ca81d",
+    "build_production_ledger.py.patch": "4c076c9ceb927d1728ccf898e87f1e31f5eac10c57a77bfcc89561b3e4d68132",
+    "validate_learning_batch.py.patch": "3d14461ebaabe1dab967eca7b33e34034d0bdd8eb3afca7e49dfe8d8bf9c4a33",
+    "research/production/real_sequences_order_subsequences_sources_2026-10-30.json": "67314163cfd6a786402b012be3fecf7c46664ee2da1c3aef399a594452c29c62",
+    "research/production/real_sequences_order_subsequences_sources_2026-10-30.md": "6affdecc3667d70b58e1deefc1148fb21bf9cd1cd7276eaa9c6bd239ed9ded0d",
+    "structural_check.json": "24e61c5983b0c55d736f4aff59f821b35e4b2a05046dc28d9680025283203975",
+    "baseline_tools_sha256.json": "f55e1566b0c72158e59b83359c61f4c4442c1092a33b4110c62a35c11f61beab",
+    "metadata/LEARNING_PATH.md": "36034684e2b69ad9c36c00feb6a07bba4c0bb3ecc009542b3f54d588aa364a5d",
+    "metadata/README.md": "c2fa458c3cdb84ccba14104862515a8ce08694a5b34b2505b582c5481ce5330a",
+    "metadata_baseline_sha256.json": "9f38f9769eca9c2f5f8f1a548b4960498266da97c3716cd68872cd5a98728599",
+    "freeze_inputs.json": "85cb9ea8e13e8bf9ff51815f430918eaac1045d746ed704ca1cfd17a3cdc8386",
+    "install31.py": "5a5f3c8b8a4ca53d9cb1efa188f5e7a9445c1fc4e45808eb4fdfb986d5a2df47",
+    "base_tools/build_learning_batch.py": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353",
+    "base_tools/build_production_ledger.py": "559c8c56aac5e584f083452b72a9e605307c889fb055c3d6cca16e67fe2d23b8",
+    "base_tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "base_tools/validate_learning_batch.py": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c"
+  },
+  "structural_result": {
+    "status": "isolated_structural_checks_passed",
+    "counts": {
+      "units": 63,
+      "foundation_exercises": 504,
+      "intro_exercises": 14,
+      "total_exercises": 518,
+      "figures": 21,
+      "numbered_appendices": 28,
+      "draft_chapters": 7,
+      "draft_leaves": 31,
+      "completed_chapters": 0
+    },
+    "html": {
+      "math_nodes": 32022,
+      "source_math_nodes": 32026,
+      "image_alt_math_nodes": 4,
+      "images": 21,
+      "exercise_pairs": 518,
+      "html_ids": 3331,
+      "html_internal_links": 4252
+    },
+    "new_units": [
+      {
+        "code": "B4.3",
+        "stage": "draft",
+        "prerequisites_verified": 26
+      },
+      {
+        "code": "B4.4",
+        "stage": "draft",
+        "prerequisites_verified": 30
+      }
+    ],
+    "input_sha256": {
+      "manuscript/foundations/real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+      "manuscript/foundations/real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582",
+      "manuscript/foundations/real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+      "manuscript/foundations/real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+    },
+    "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+    "new_numerical_code": "none; drawing module unchanged",
+    "new_figures": 0,
+    "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch31 candidate preparation.",
+    "checked_candidate_tool_sha256": {
+      "build_learning_batch.py": "53950390fbb0b7e7a9f588c2b81863844f860ec9d29b2b362c407301df584a26",
+      "build_production_ledger.py": "4c86a38e2b8d966f93071eb0372c5e62b167800712b29e28ebf2e079f3745190",
+      "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+      "validate_learning_batch.py": "21b44db39936ea1f1caa530538c8d3873a32821b3046406c38887b8083de0e38"
+    },
+    "source_audit_sha256": {
+      "md": "6affdecc3667d70b58e1deefc1148fb21bf9cd1cd7276eaa9c6bd239ed9ded0d",
+      "json": "67314163cfd6a786402b012be3fecf7c46664ee2da1c3aef399a594452c29c62"
+    },
+    "all_63_unit_chapter_segment_placements_verified": true,
+    "original_source_object_preserved": true,
+    "final_source_binding_metadata_preserves_composed_bytes": true,
+    "post_audit_changes": "Only source-audit final manuscript/report/planning/hash bindings appended. All four tools and both metadata byte-identical to isolated run; final full compose_body bytes unchanged."
+  },
+  "formal_installation_verified": false,
+  "approval_registered": false,
+  "baseline30_vs_formal": "All four tools and two metadata bind the frozen30 candidate, not the currently building formal29. Installer demands installed30 exact equality; a subsequent minimal30 change requires explicit rebase and new checks.",
+  "baseline30_delivery_sha256": "85b81a2caa1895bac05e028ecacaec0458799791491ff247193d662fb867f235",
+  "installation_script": {
+    "path": "/tmp/install31.py",
+    "candidate_copy": "install31.py",
+    "sha256": "5a5f3c8b8a4ca53d9cb1efa188f5e7a9445c1fc4e45808eb4fdfb986d5a2df47",
+    "executed_by_preparer": false,
+    "requires": "Root full review; batch30 clean committed worktree and actual six-file snapshot hashes;122 prior text reviews;all candidate/base/input/source and current installed prerequisite hashes preflight before mutations."
+  },
+  "notes": [
+    "Three exact tool patches against frozen30 plus two metadata patches. Fourth drawing module unchanged byte-for-byte. No new numerical code, figures, numbered appendices or mirror tests.",
+    "Part28 40-XX, chapter242 40Axx, primary40A05 continues with B4.3/B4.4 numbered62/63. Cross26A03/97I30 adds no primary coverage.63units518questions(504+14),21figures28appendices;7draftchapters31draftleaves0complete.",
+    "Existing single-analysis module now four partial units; preserves functions/induction-counting/number-systems dependencies. B3 remains unwritten. B4.3/B4.4 have26/30 exact prerequisites, no geometry dependency or backward unit edge. B4.4 cites existing full ord-a07 proof, SO1/SO3/SO4.",
+    "Actual isolated Pandoc plus original audit_book:32022visibleMath+4image-alt=32026sourceMath;518exercise pairs;21embeddedPNG;3331uniqueIDs4252internalLinks. All63 chapter placements and28appendices, real source anchor, original acyclic ledger checks passed. No formal build or PDF acceptance.",
+    "Plan/source JSON all fields/concept/three reports and four final manuscripts900lines16solutions read in full. Frozen math512893da…/344ec137… and pedfc56cda6… bound without rewriting original missing-anchor history; current source title recorded separately.",
+    "Three Lebl public caches and original HTTP objects rechecked, integration0requests. Exact prior retrieval timestamps preserved. Primary BW source proof uses limsup; book independently develops natural-minimum fixed-state monotone subsequences then SO4 then BW. Standard peak idea credited. Source assumesR and does not prove book real construction. Cauchy ranges read for future scope only.",
+    "Current book and metadata explain comparison/squeeze/monotone convergence/subsequences/BW now written while30 reference entry remains explicitly scoped to B4.1/B4.2. Historical source audits untouched; Cauchy/limsup/liminf/functionlimits/series and B3 formal foundations remain outside this batch.",
+    "install31.py syntax parsed only, never executed. Following root full review and30 snapshot, it would register4text records122→126 and separate actual byte installation from later build/PDF acceptance. No acceptance records written by preparer."
+  ]
+}

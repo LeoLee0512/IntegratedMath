@@ -1,0 +1,50 @@
+{
+  "status": "Draft frozen for independent full-text mathematical and pedagogical review; not formal integration or PDF acceptance",
+  "files": [
+    {
+      "path": "/tmp/real_continuity.md",
+      "sha256": "328b1782b55447f050c93470128b707cd499e4bca0cf14a33e784a75257d9450",
+      "lines": 306,
+      "bytes": 18581,
+      "anchors": 15,
+      "math_nodes": 376,
+      "unresolved": [
+        "real-continuity-intermediate-sources"
+      ],
+      "pandoc_stderr": ""
+    },
+    {
+      "path": "/tmp/real_continuity_answers.md",
+      "sha256": "98628922f1f7848aacaee663a66fab63667fc57f67d1770bfe94fa9e7ff3e408",
+      "lines": 279,
+      "bytes": 14874,
+      "anchors": 9,
+      "math_nodes": 339,
+      "unresolved": [],
+      "pandoc_stderr": ""
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "/tmp/real_continuity_intermediate_plan.md",
+      "sha256": "94768df4de045f1b1ea5567cdf680e03e537298ec9f33da47b2a9355d3373a15"
+    },
+    {
+      "path": "/tmp/real_continuity_intermediate_sources.json",
+      "sha256": "499c023e290e8797bdfba32a5849ce678337d779c2e49d2e65dd3dc58db7e59d"
+    },
+    {
+      "path": "/tmp/real_continuity_intermediate_concept_review.md",
+      "sha256": "3f85a4871b6095f3f41e6d972661b4663012a1ee478f18df9214cf921554192a"
+    },
+    {
+      "path": "/tmp/real_function_limits.md",
+      "sha256": "3b71dc172ab18a73bedd72e7cc9036ae7d053699ade02db83e77f2f531993ce8"
+    },
+    {
+      "path": "/tmp/real_function_limits_answers.md",
+      "sha256": "532ed11bd537ed577bf73ba713ff38cdfbdf18f9dd946449c3c8d4ffc942d37a"
+    }
+  ],
+  "checks": "Both full texts reread; 8 questions and 8 full answers with reciprocal links; math parsed; all precision prerequisite targets found; only source target awaits integration."
+}

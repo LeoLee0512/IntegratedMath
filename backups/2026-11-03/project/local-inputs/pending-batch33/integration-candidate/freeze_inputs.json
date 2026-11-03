@@ -1,0 +1,66 @@
+{
+  "manuscripts": {
+    "real_continuity.md": "328b1782b55447f050c93470128b707cd499e4bca0cf14a33e784a75257d9450",
+    "real_continuity_answers.md": "98628922f1f7848aacaee663a66fab63667fc57f67d1770bfe94fa9e7ff3e408",
+    "real_intermediate_value.md": "2b5e8bbd9edadcdd25f1cf52ccd3f6d80bc7f6909aa103d45c34f370100e865c",
+    "real_intermediate_value_answers.md": "a54ce0ab274908f01e7c5deddf94f8d1e348f5500c8eeb08f9cbb010714745ed"
+  },
+  "review_reports": [
+    {
+      "observed_path": "/tmp/real_continuity_math_review.md",
+      "sha256": "22351ade077c6f41bd4384b7745fa0e539d6b2a0c5f807e3a0d2f248f0b1203a",
+      "bytes": 6923,
+      "intended_repository_path": "research/production/real_continuity_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/plan_multiplication",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_intermediate_value_math_review.md",
+      "sha256": "d4d6917ca6d8dbac1e8ae8c171c456ec077e3bf0f34c8e92044c334ef0e6a5b9",
+      "bytes": 6729,
+      "intended_repository_path": "research/production/real_intermediate_value_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/plan_multiplication",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_continuity_intermediate_pedagogy_review.md",
+      "sha256": "25e4f1452948fedc7e5f06d59a7663cc2b43d23af07db7e4223b6fdd3c5594cf",
+      "bytes": 9767,
+      "intended_repository_path": "research/production/real_continuity_intermediate_pedagogy_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/visual21_front",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    }
+  ],
+  "planning_evidence": [
+    {
+      "observed_path": "/tmp/real_continuity_intermediate_plan.md",
+      "sha256": "94768df4de045f1b1ea5567cdf680e03e537298ec9f33da47b2a9355d3373a15",
+      "bytes": 18875,
+      "intended_repository_path": "research/production/real_continuity_intermediate_plan.md",
+      "installation_status": "pending_root_integration",
+      "role": "plan_real_next, C author; planning only"
+    },
+    {
+      "observed_path": "/tmp/real_continuity_intermediate_concept_review.md",
+      "sha256": "3f85a4871b6095f3f41e6d972661b4663012a1ee478f18df9214cf921554192a",
+      "bytes": 10827,
+      "intended_repository_path": "research/production/real_continuity_intermediate_concept_review.md",
+      "installation_status": "pending_root_integration",
+      "role": "independent nonauthor plan_multiplication; concept review only"
+    },
+    {
+      "observed_path": "/tmp/real_continuity_intermediate_author_source_mapping.md",
+      "sha256": "8f36747e9fd34d50c7c427c859809cd135e400e4838f5e24f8e2bc62e8bf44a3",
+      "bytes": 7621,
+      "intended_repository_path": "research/production/real_continuity_intermediate_author_source_mapping.md",
+      "installation_status": "pending_root_integration",
+      "role": "review22, IV author; author-side source mapping, not independent IV math review; C answers only hashed, not read by mapper"
+    }
+  ]
+}

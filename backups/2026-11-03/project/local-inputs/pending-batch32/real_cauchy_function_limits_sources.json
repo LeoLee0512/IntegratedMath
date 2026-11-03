@@ -1,0 +1,165 @@
+{
+  "checked_at_utc": "2026-10-30T04:33:04.000134+00:00",
+  "reviewer": "/root/review22",
+  "status": "Scoped public-source and author concept check; not independent review of future B4.5 manuscript, integration or PDF acceptance",
+  "new_http_requests": 1,
+  "source_anchor": "real-cauchy-function-limits-sources",
+  "sources": [
+    {
+      "id": "lebl_sequences",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis I, Sequences and Series",
+      "version": "6.3, fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+      "cache_path": "/tmp/real-sequences-source-audit/lebl_sequences.tex",
+      "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+      "bytes": 165039,
+      "retrieved_at_utc": "2026-10-30T03:58:03.768311+00:00",
+      "http_status": 200,
+      "raw_http_record": "/tmp/real-sequences-source-audit/http.json",
+      "role": "Standard definitions and theorem conditions checked; independent original textbook proofs planned",
+      "actual_read_locators": [
+        "2681-2908 Cauchy definition, examples, boundedness, convergence equivalence, completeness and adjacent-difference warning"
+      ],
+      "actual_bytes": 165039,
+      "reuse_note": "Original HTTP timestamp retained; no new request for this cache in batch32.",
+      "route_difference": "Book starts at 0, uses SA1 fixed-state prefix bound and SS3 BW + one-subsequence estimate; source starts at 1, assumes finite maximum and uses liminf/limsup. No harmonic-series example imported."
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 18862,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "reuse_note": "Original HTTP timestamp retained; no new request for this cache in batch32.",
+      "actual_read_locators": [
+        "280-295 author/title",
+        "378-458 version6.3, copyright and dual license grant"
+      ]
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 467,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "reuse_note": "Original HTTP timestamp retained; no new request for this cache in batch32.",
+      "actual_read_locators": [
+        "1-15 entire LICENSE.md"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex",
+      "effective_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex",
+      "retrieved_at_utc": "2026-10-30T04:28:49.987178+00:00",
+      "bytes": 119775,
+      "sha256": "3fe56fe7261f3db0dfb0dbabe8e807b0781c41255c2b9cb463f4868fbb13c14d",
+      "cache_path": "/tmp/real-cauchy-function-limits-source-audit/lebl_function_limits.tex",
+      "id": "lebl_function_limits",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis I, Continuous Functions: Limits of functions",
+      "version": "6.3; fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "http_status": 200,
+      "raw_http_record": "/tmp/real-cauchy-function-limits-source-audit/function_http.json",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "actual_read_locators": [
+        "1-252 chapter opening, cluster points, punctured limit, uniqueness, basic examples, sequential criterion",
+        "320-501 comparison/algebra via sequences and direct restriction/locality proof"
+      ],
+      "critical_conditions": {
+        "cluster": "24-35; p need not belong to D",
+        "definition": "80-115; punctured domain, candidate limit, value at p irrelevant",
+        "choice_excluded": "51-76 and 203-252 choose a real point for each reciprocal radius; book does not use sequential criterion",
+        "algebra": "323-438 uses sequential criterion, with some proofs left as exercises; book writes direct epsilon-delta proofs",
+        "quotient": "395-426 assumes g nonzero on entire punctured source domain; book instead defines D_g and proves cluster property",
+        "locality": "440-501 direct epsilon-delta restriction result"
+      },
+      "role": "Definition and condition cross-check only; no exercise, proof prose or figure copied/adapted"
+    }
+  ],
+  "snapshot": [
+    {
+      "path": "/tmp/real_cauchy_function_limits_plan.md",
+      "sha256": "6a56e655f0c3d9859c644226eec232ff91e08fba33463413e1d9902464053e53"
+    },
+    {
+      "path": "/tmp/real_sequences_limits.md",
+      "sha256": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8"
+    },
+    {
+      "path": "/tmp/real_sequences_algebra.md",
+      "sha256": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89"
+    },
+    {
+      "path": "/tmp/real_sequences_order.md",
+      "sha256": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5"
+    },
+    {
+      "path": "/tmp/real_subsequences_bw.md",
+      "sha256": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292"
+    },
+    {
+      "path": "/tmp/real_subsequences_bw_answers.md",
+      "sha256": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/catalog_titles_zh.json",
+      "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/production/chapters.json",
+      "sha256": "98329f5e5fd88bc028d65f3514a52fe468a4da9cc5702287d6997ebeb9841b7b"
+    }
+  ],
+  "classification": {
+    "B4.5": {
+      "chapter": 242,
+      "code": "40A05",
+      "scope": "real sequences, no series",
+      "cross": [
+        "26A03",
+        "97I30"
+      ]
+    },
+    "B4.6": {
+      "chapter": 146,
+      "code": "26A03",
+      "scope": "real function point limits by direct epsilon-delta only",
+      "cross": [
+        "97I20"
+      ]
+    }
+  },
+  "rights": "Standard mathematical facts and assumptions checked. No source prose, exercises, solutions or graphics copied/adapted. Preserve attribution and actual dual-license status; cache retrieval does not grant public-domain status.",
+  "excluded": [
+    "limsup/liminf",
+    "uncertified infinite choices of real points",
+    "sequential criterion for function limits",
+    "composition limit without puncture conditions",
+    "series, real powers, calculus"
+  ],
+  "repository_mutations": false
+}

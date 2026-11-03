@@ -1,0 +1,49 @@
+[
+  {
+    "stem": "综合数学_基础续写审阅版",
+    "pages": 919,
+    "sha256": "0d60530203978d74f0062caa96d40cbe2feb03894e9f6cbb1ff648becb0c102f",
+    "page_boundary_overflow": [
+      {
+        "page": 858,
+        "text": "6.3，固定提交e21ec524ca7d54f800c693b948020c188d21"
+      },
+      {
+        "page": 918,
+        "text": "完整依赖及函数如下。输出b2_real_sequence_epsilon.png；构建入口调用draw_real_sequence_epsilon(out)。"
+      }
+    ]
+  },
+  {
+    "stem": "综合数学",
+    "pages": 1133,
+    "sha256": "b253d61f2df011f81739133e397752d0a3c96a420af9e07358fd70bd387ac348",
+    "page_boundary_overflow": [
+      {
+        "page": 1072,
+        "text": "6.3，固定提交e21ec524ca7d54f800c693b948020c188d21"
+      },
+      {
+        "page": 1132,
+        "text": "完整依赖及函数如下。输出b2_real_sequence_epsilon.png；构建入口调用draw_real_sequence_epsilon(out)。"
+      }
+    ]
+  },
+  {
+    "stem": "综合数学_第一章审阅版",
+    "pages": 31,
+    "sha256": "53254c1d606eb037eb1dba3b856d254924debec51c3fe56283f5c9f4a606d1bd",
+    "page_boundary_overflow": []
+  },
+  {
+    "stem": "综合数学_完整数学目录",
+    "pages": 218,
+    "sha256": "6cb12ea75b3c38217ab3e6a86004fc07400cae1bac31236355b3be9766881b55",
+    "page_boundary_overflow": []
+  }
+]
+Traceback (most recent call last):
+  File "/tmp/recover30_pdf_precheck.py", line 18, in <module>
+    assert all(not r['page_boundary_overflow'] for r in reports)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

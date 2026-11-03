@@ -1,0 +1,32 @@
+{
+  "source_commit": "0b77f671424a5c705358734518325e9385427ba9",
+  "pdf_pages": 99,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "43f4f97c20b042dfae8ebba7a9578b275867ed1b0fcb309278da3b964a5bbbc5",
+      "bytes": 719129
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "c971d328295c5aae6ab453f2b93aed000423e44d02e5938eae873cb077a4a473",
+      "bytes": 198925
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "1d43f01a46d68534ffae2d36cf88723249c5c641a98a8523f0f11fbecf0272ed",
+      "bytes": 23992128
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "30822f43eb9eda4404bcf18769f2756e0f9da0e84fa4bef3c6c360796c8d74f6",
+      "bytes": 5992
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "132b83e8c9b04f691f88d338ae75a9de5cb7a44940f80baf1f0c2e95c7b6c780",
+      "bytes": 200307
+    },
+    "data/production/package_validation.json": {
+      "sha256": "4933ffa0acdf719725a529c4b053414f9eb85566bdfdb836b4d819589ebf0a48",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "Library unavailable; no upload attempted; no library_file_id.",
+  "package_scope": "PDF includes accepted B1.1–B1.5. Companion work package may also include explicitly unaccepted next-batch draft sources; see checkpoint."
+}

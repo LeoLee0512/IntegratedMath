@@ -1,0 +1,32 @@
+{
+  "source_commit": "6836ad6aa59eda4b6a2999271f1cbb1a6c836e8b",
+  "pdf_pages": 478,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "bytes": 2462886,
+      "sha256": "248feef685387dfb074d375cea25b4a75599a666f4ee9af6d356cfcbe3da931c"
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "bytes": 1134955,
+      "sha256": "e25130208003a7158152c187308148afea06c43372d172122adf6281bf652934"
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "bytes": 113353508,
+      "sha256": "92f91a63d42da819b008edeea1586005778ffc0548996a3f3568de93004d5195"
+    },
+    "BATCH_CHECKPOINT.md": {
+      "bytes": 7554,
+      "sha256": "75be611edd747381761443efa7e8fec8a12b5312f6731c0cd3378f07b0d70034"
+    },
+    "data/production/batch_validation.json": {
+      "bytes": 658124,
+      "sha256": "34efbe63d8b4f53398958aead49078acde88d3f6acd976ea4edeb2dcfa47ffaf"
+    },
+    "data/production/package_validation.json": {
+      "bytes": 252,
+      "sha256": "f4f6852377ec051a18d3268c73285cd606765ec5140a659de96c873db7c5ee60"
+    }
+  },
+  "delivery_status": "Local snapshot verified; no supported mobile attachment tool available. No publication.",
+  "created_at": "2026-10-29T17:39:01.988688+00:00"
+}

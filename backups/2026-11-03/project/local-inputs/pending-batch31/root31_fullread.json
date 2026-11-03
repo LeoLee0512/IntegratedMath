@@ -1,0 +1,14 @@
+{
+  "scope": "root fully read all four manuscripts 900 lines and 16 complete solutions plus all three reviews; no proof blocker found",
+  "files": {
+    "real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+    "real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582",
+    "real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+    "real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+  },
+  "review_reports": {
+    "real_sequences_order_math_review.md": "512893da9f135d72320e8b299b73593390ed0d8347f157046ea24cdd3522a764",
+    "real_subsequences_bw_math_review.md": "344ec137f89a73db34ba4962e9d3fa3aca93f50681a971696d756b2783eb80fc",
+    "real_sequences_order_subsequences_pedagogy_review.md": "fc56cda681b872a14eb10f35d06debddcfe5a75192123d9f0a17e4e2731ea085"
+  }
+}

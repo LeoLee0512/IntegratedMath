@@ -1,0 +1,14 @@
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\emergencystretch=3em
+\usepackage{fvextra}
+\usepackage{newunicodechar}
+\newfontfamily\cataloglatinfont{DejaVu Serif}
+\newunicodechar{ć}{{\cataloglatinfont\char"0107}}
+\newunicodechar{ő}{{\cataloglatinfont\char"0151}}
+\newunicodechar{ń}{{\cataloglatinfont\char"0144}}
+\newunicodechar{Č}{{\cataloglatinfont\char"010C}}
+\newunicodechar{ĭ}{{\cataloglatinfont\char"012D}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\AtBeginDocument{\renewcommand{\contentsname}{目录}}
+\AddToHook{cmd/section/before}{\clearpage}

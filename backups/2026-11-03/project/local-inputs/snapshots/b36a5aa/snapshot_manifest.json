@@ -1,0 +1,31 @@
+{
+  "source_commit": "b36a5aac2746a8db502b9a71e90fd28f5a0bc92f",
+  "pdf_pages": 57,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "27fb664383b639b9b7d7faf1e325071c177d39d84ce3c246d8e1f6c867e831b0",
+      "bytes": 543475
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "10739fd4d4419b7a6cb24ddb033c1e58b40234b8a1d7edf3d1956685f0f4a2a1",
+      "bytes": 100813
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "1a5c10beb347040da485b7d6b953e0a66d423935362a50cc8602665ae15e6045",
+      "bytes": 15424752
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "64d9804eef8ecb77e7eef5e2aca63678ec316a5afe19df8d11c93beefe44b3a1",
+      "bytes": 8160
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "8b59ff47e58abd6e95f6ccf6c4d3c2750f253449bcde3dc3c59fdb69a9d09b8e",
+      "bytes": 152851
+    },
+    "data/production/package_validation.json": {
+      "sha256": "ba0890a674ec94a6d809290c87c9e365646bdd29c9807561c48516e595b346bc",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "Unavailable: no Library/save-to-Library tool in callable catalog and no Library skill in the complete available cloud-skill catalog. No upload attempted; no library_file_id exists."
+}

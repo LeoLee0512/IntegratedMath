@@ -1,0 +1,42 @@
+[
+  {
+    "id": "beezer_orthogonality",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-O.xml",
+    "fetched_at_utc": "2026-10-30T03:43:07.253907+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-O.xml",
+    "cache_path": "/tmp/real-lines-projection-source-audit/beezer_orthogonality.xml",
+    "bytes": 55371,
+    "sha256": "4c114a96867fa2f301ad26640958ee289028146fe68ef502e14a0082e7c7db40"
+  },
+  {
+    "id": "beezer_orthogonal_decomposition",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-OD.xml",
+    "fetched_at_utc": "2026-10-30T03:43:07.255863+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-OD.xml",
+    "cache_path": "/tmp/real-lines-projection-source-audit/beezer_orthogonal_decomposition.xml",
+    "bytes": 41625,
+    "sha256": "6e6cc0e07bcd7b27416707f257317366c4f9267de91e8d3ac782f26582a205b6"
+  },
+  {
+    "id": "mathlib_euclidean_projection",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Geometry/Euclidean/Projection.lean",
+    "fetched_at_utc": "2026-10-30T03:44:28.124662+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Geometry/Euclidean/Projection.lean",
+    "cache_path": "/tmp/real-lines-projection-source-audit/mathlib_euclidean_projection.lean",
+    "bytes": 30666,
+    "sha256": "24d79cc964f1ba8643bd61f15a1b469872d8ef70266d703d00c37ece9f7ce965"
+  },
+  {
+    "id": "mathlib_inner_projection",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Analysis/InnerProductSpace/Projection/Basic.lean",
+    "fetched_at_utc": "2026-10-30T03:44:28.125126+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Analysis/InnerProductSpace/Projection/Basic.lean",
+    "cache_path": "/tmp/real-lines-projection-source-audit/mathlib_inner_projection.lean",
+    "bytes": 33796,
+    "sha256": "01f276aab18bcf5d5fc56e0ac19ae3ba37d7a7ccf0b469a2d0bb124026ae9776"
+  }
+]

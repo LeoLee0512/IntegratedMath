@@ -1,0 +1,22 @@
+{
+  "read_at": "2026-10-30T05:10:03.857964+00:00",
+  "read": "Full plan/source JSON and independent concept check, not manuscript acceptance",
+  "files": [
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch34/real_extrema_uniform_plan.md",
+      "sha256": "0f6d5690bcfb0d1d7ace3d63fa8556dd91ce8a810eb4988e0df540b374e31d29"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch34/real_extrema_uniform_sources.json",
+      "sha256": "1eeb6ba2420237a21a0b2dab5b7a168c9ed9b434aa1539d8d8dd8c07dca5d7e7"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch34/real_extrema_uniform_scope_review.md",
+      "sha256": "c529dbdaa9aca8fc3847cae156237fbf9dbb25d111b87d9212520b223cc79481"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch34/real_extrema_uniform_concept_review.md",
+      "sha256": "eb57f07889936e3dffcdd29f99e7fdfeb99bf582bd32659b3c44f663d905f7b6"
+    }
+  ]
+}

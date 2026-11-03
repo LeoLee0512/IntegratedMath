@@ -1,0 +1,29 @@
+{
+  "status": "planned_with_verified_original_figure_not_manuscript_acceptance",
+  "records": [
+    {
+      "name": "real_sequences_plan.md",
+      "sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca"
+    },
+    {
+      "name": "real_sequences_sources.json",
+      "sha256": "3d257c4d99f86c9461120fe832cc0786906d5079956bb87e572ff96db94c5d21"
+    },
+    {
+      "name": "real_sequences_concept_review.md",
+      "sha256": "21098a791cf8dc7c60b50feb71115b74e3ff1dcd20ab02933d7db88684e5b797"
+    },
+    {
+      "name": "draw_real_sequence_epsilon.py",
+      "sha256": "3f3c84d5b74024510af609abbf4037ae8cf27afe3a27f2625359eb548c117b74"
+    },
+    {
+      "name": "real_sequence_epsilon_figure_review.md",
+      "sha256": "b7f7921eb769b9d5058bd008db88eead7841f5c2ae56f16d2aa1dc9ad44cb683"
+    },
+    {
+      "name": "real_sequence_epsilon_figure_root_review.md",
+      "sha256": "0d6f22430ec3b9e515e8267da9dc3249d072ca517849c738dd5e9cd2c76f7b06"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "reviewer": "/root/plan_multiplication",
+  "checked_at_utc": "2026-10-30T04:13:26.978228+00:00",
+  "status": "Detailed candidate plan and actual cached public source conditions audit only; no manuscripts authored or formal changes",
+  "plan_path": "/tmp/real_sequences_order_subsequences_plan.md",
+  "plan_sha256": "04f6cf5cc02646b72391f05e6f0604186283aa2e91136984ea10e3c78abf30db",
+  "baseline_path": "/tmp/real_sequences_plan.md",
+  "baseline_sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca",
+  "new_http_requests": 0,
+  "sources": [
+    {
+      "id": "lebl_sequences",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis I, Sequences and Series",
+      "version": "6.3, fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+      "cache_path": "/tmp/real-sequences-source-audit/lebl_sequences.tex",
+      "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+      "bytes": 165039,
+      "retrieved_at_utc": "2026-10-30T03:58:03.768311+00:00",
+      "http_status": 200,
+      "raw_http_record": "/tmp/real-sequences-source-audit/http.json",
+      "role": "Compare theorem hypotheses and proof routes for B4.3/B4.4; Cauchy passages only scope future B4.5",
+      "actual_read_locators": [
+        "283-368: monotone definition, upper-supremum convergence, decreasing proof left as exercise, one-sided bounds",
+        "554-630: subsequence definition, inheritance, index growth left as exercise, distinct subsequential limits",
+        "823-986: squeeze, order preservation, closed-interval corollaries, strict inequality failure",
+        "1764-1850: bounded tail suprema/infima route overview and definitions; not imported into proposed batch",
+        "2115-2170: context and bounded-sequence convergent-subsequence criterion; source leaves proof as exercise",
+        "2171-2264: real-sequence BW, limsup-based proof, interval bisection alternative, monotone-subsequence claim",
+        "2510-2564: bounded infinite set version and selection hint, peak exercise, stronger subsequence criterion; scope checks",
+        "2681-2908: Cauchy definition/boundedness/equivalence/completeness and warning, used only for next-batch boundary"
+      ],
+      "current_check_at_utc": "2026-10-30T04:13:26.978228+00:00",
+      "current_access": "existing public fixed-commit cache read and bytes/hash verified; no new HTTP request"
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 18862,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "current_check_at_utc": "2026-10-30T04:13:26.978228+00:00",
+      "current_access": "existing public fixed-commit cache read and bytes/hash verified; no new HTTP request",
+      "actual_read_locators": [
+        "372-409: author, version 6.3, copyright years"
+      ]
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 467,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "current_check_at_utc": "2026-10-30T04:13:26.978228+00:00",
+      "current_access": "existing public fixed-commit cache read and bytes/hash verified; no new HTTP request",
+      "actual_read_locators": [
+        "entire 467-byte dual-license grant"
+      ]
+    }
+  ],
+  "actual_book_interfaces": [
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_numbers.md",
+      "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+      "actual_check_scope": "78-98 fixed-state recursion principle; induction and successor anchors",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "actual_check_scope": "157-211 mixed transitivity/successor comparison; order and strong-induction anchors",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order_answers.md",
+      "sha256": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8",
+      "actual_check_scope": "169-183 complete nonempty natural subset minimum existence and uniqueness proof, ord-a07",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_subtraction.md",
+      "sha256": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247",
+      "actual_check_scope": "definition anchor located; natural difference interface already established",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "actual_check_scope": "sets/functions/pairs anchors located",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+      "actual_check_scope": "fc-composition and associativity anchors located; existing function composition interface",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "actual_check_scope": "277-327 real ordered field and unchanged Dedekind supremum property",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "actual_check_scope": "cut-supremum and set-background anchors located; already established real cut supremum",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_archimedean_density.md",
+      "sha256": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e",
+      "actual_check_scope": "natural embedding and strict natural bound anchors located; density not needed",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+      "actual_check_scope": "absolute value and ordered real interfaces, existing established prerequisites",
+      "status": "existing formal file; no edits"
+    },
+    {
+      "path": "/tmp/real_sequences_limits.md",
+      "sha256": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+      "actual_check_scope": "SL1 definition/negation; SL4 full final-equality/tail-shift/alternating proof; exact four anchors",
+      "status": "author manuscript under active writing, not frozen or independently accepted; answers not reviewed"
+    },
+    {
+      "path": "/tmp/real_sequences_algebra.md",
+      "sha256": "c45af68491c8170abd4b3a32a8d5315cda56ff4b997ea7cd5b478c01e9dd50b1",
+      "actual_check_scope": "SA1 fixed-state finite prefix/boundedness; SA2 full algebra; SA3 both-convergent condition and estimates; SA4 relevant hypotheses/legal reciprocal passages; exact anchors",
+      "status": "author manuscript under active writing, not frozen or independently accepted; answers not reviewed"
+    }
+  ],
+  "taxonomy": {
+    "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+    "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "actual_matching_records": [
+      {
+        "code": "26A03",
+        "level": "subject_leaf",
+        "parent_code": "26Axx",
+        "pdf_page": 65,
+        "title_short": "Foundations: limits and generalizations, elementary topology of the line",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      },
+      {
+        "code": "40A05",
+        "level": "subject_leaf",
+        "parent_code": "40Axx",
+        "pdf_page": 109,
+        "title_short": "Convergence and divergence of series and sequences",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      },
+      {
+        "code": "97I30",
+        "level": "subject_leaf",
+        "parent_code": "97Ixx",
+        "pdf_page": 222,
+        "title_short": "Sequences and series (educational aspects)",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      }
+    ]
+  },
+  "route_differences": [
+    "Source indices start at 1; book indices start at 0 with explicit natural-to-real embedding.",
+    "Source decreasing monotone proof and k_j >= j are left as exercises; book must prove both fully.",
+    "Source main BW uses limsup; interval-bisection alternative uses shrinking intervals and geometric lengths. Neither apparatus is assumed in this bounded batch.",
+    "Source explicitly presents peak idea as a challenging exercise at 2530s; no complete selection proof there. Book independently supplies least-natural-element deterministic total update functions.",
+    "Tail peaks are partitioned by natural-index unboundedness versus its exact negation, avoiding unproved cardinality/choice assertions.",
+    "Source bounded infinite set accumulation theorem selection hint not imported; only sequence BW is planned.",
+    "Source bounded convergent-subsequence criterion is stated without proof; book uses explicit bad-index recursion and composition.",
+    "Cauchy passages actually read for future boundary only; no Cauchy theorem claimed proved here. Future route uses BW plus one convergent subsequence, not source limsup/liminf."
+  ],
+  "rights": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0 actual repository grant checked. Only mathematical facts/conditions and proof strategy compared; no external prose, exercises, solutions, figures or source code copied/adapted into textbook. Cache not automatically redistributed.",
+  "scope_limitations": [
+    "No full Lebl chapter read claimed",
+    "No new HTTP retrieval claimed",
+    "No B4.1/2 final mathematical acceptance claimed",
+    "No interval nesting or countable choice assumed",
+    "No formal repository writes or PDF build"
+  ]
+}

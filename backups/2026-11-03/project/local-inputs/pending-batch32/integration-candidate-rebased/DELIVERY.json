@@ -1,0 +1,115 @@
+{
+  "status": "READY_for_root_review_and_integration",
+  "checked_at_utc": "2026-10-30T04:57:17.198550+00:00",
+  "files": {
+    "tools/build_learning_batch.py": "c50d4f6a3d33d0ff0638658ccb3dc7e7eeb5fb66fdce6658236be5da3f37c4ab",
+    "tools/build_production_ledger.py": "a6869bbd13d6e1d3241b05143fc70e73c2519c17ad12feddb99e31026dff2a49",
+    "tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "tools/validate_learning_batch.py": "df827cfea5bbb9b0405ef94dd0facb17909f0b315e2c4fa424638bf7b6c66fbf",
+    "LEARNING_PATH.md.patch": "7acb41c2f93010f802e9373ac3957c282170eb9990adc0dd9d2fafd28111e10f",
+    "README.md.patch": "8313cf89e213d7599161884673d292ade55634837370e9070900654ec1514ea1",
+    "build_learning_batch.py.patch": "da5726697fec2d441ca6dcdd0a6b1ffb5302e90a003c8d3f670fd06278cad275",
+    "build_production_ledger.py.patch": "8df57cb721c4b23e47da859c498ed3ea2da74edc2fed2da104e49f52deb6de6f",
+    "changes_since_before_layout.patch": "95cd34593030de57ad2db1a926bc45e8c2662484fbc12e58396aff556626425d",
+    "layout_rebase.patch": "bf584fb8a6cc50c1de9ec144d3a9017a689a4ab2e9e272e19dde1b580664ada2",
+    "scope_guard_rebase.patch": "863cd7bb6b1fa3b59099cbef6ec7da0e44150cb9dc11c507159496e6c73fdf1a",
+    "validate_learning_batch.py.patch": "d338722c357369a8644800f7682f0dfe05dfcebc799fcecf567b85a5a97319ca",
+    "research/production/real_cauchy_function_limits_sources_2026-10-30.json": "6d787fcafcfd0a33e1b3c45834947e3492cbe5e224b03a395a4d433080519728",
+    "research/production/real_cauchy_function_limits_sources_2026-10-30.md": "efd09731efef563182baba2d331daeac2b4c25ec875f51528f33b5ce0b32c428",
+    "structural_check.json": "dc8d1c013404fa69866a07685844a7e3eea2c3484245c18eb5aea4568d01005f",
+    "baseline_tools_sha256.json": "03223ee03c3f4fbdb3d206aa618235f0a76b08c0010b401cae77f1d02914494a",
+    "metadata/LEARNING_PATH.md": "0a5b970bddaed9c2f4a0aa257bd65bc066f06aae1e3ed4a8c50ed70f5c49c850",
+    "metadata/README.md": "478c31cac242bdc5f9d2cdc048fa899c53f1497a2f5e437b6bcebe2436926928",
+    "metadata_baseline_sha256.json": "2a46d931787980bc91d3f9079e09da6fd88eac3785e8357fd6a9f3cc3614a1e9",
+    "freeze_inputs.json": "e21c7470c96043121ef23af6498d29542a76c86517df55260bf4d6e1d5d87f68",
+    "install32.py": "7852ab1e321d1efc78c819457d8455cb25bf3f098dfe6d10c24d1d8a03f94f90",
+    "layout_rebase.json": "737852aafe7686175c29a4674cedad9a61a405d34683436ad924bbca0b648c6a",
+    "base_tools/build_learning_batch.py": "ccfbcf44dcdb9811ac53704d0e54a905b190e1c01358c08d463df4ede4063465",
+    "base_tools/build_production_ledger.py": "4c86a38e2b8d966f93071eb0372c5e62b167800712b29e28ebf2e079f3745190",
+    "base_tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "base_tools/validate_learning_batch.py": "12b2cadd2f4b6da7cd4fd36403756498785e25ca659f5116daa1326f332d8231"
+  },
+  "structural_result": {
+    "status": "isolated_structural_checks_passed",
+    "counts": {
+      "units": 65,
+      "foundation_exercises": 520,
+      "intro_exercises": 14,
+      "total_exercises": 534,
+      "figures": 21,
+      "numbered_appendices": 28,
+      "draft_chapters": 8,
+      "draft_leaves": 32,
+      "completed_chapters": 0
+    },
+    "html": {
+      "math_nodes": 33201,
+      "source_math_nodes": 33205,
+      "image_alt_math_nodes": 4,
+      "images": 21,
+      "exercise_pairs": 534,
+      "html_ids": 3382,
+      "html_internal_links": 4335
+    },
+    "new_units": [
+      {
+        "code": "B4.5",
+        "stage": "draft",
+        "prerequisites_verified": 31
+      },
+      {
+        "code": "B4.6",
+        "stage": "draft",
+        "prerequisites_verified": 18
+      }
+    ],
+    "input_sha256": {
+      "manuscript/foundations/real_sequences_cauchy.md": "03dcdda8e456244ae0ddce055f3cf57cdab9b843c5bf4f7fb3ed12a1c62d5b93",
+      "manuscript/foundations/real_sequences_cauchy_answers.md": "346a6225efd2652d09c38f47f577a823155668b2f48dc2b8e277461bf776565c",
+      "manuscript/foundations/real_function_limits.md": "3b71dc172ab18a73bedd72e7cc9036ae7d053699ade02db83e77f2f531993ce8",
+      "manuscript/foundations/real_function_limits_answers.md": "532ed11bd537ed577bf73ba713ff38cdfbdf18f9dd946449c3c8d4ffc942d37a"
+    },
+    "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+    "new_numerical_code": "none; drawing module unchanged",
+    "new_figures": 0,
+    "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch32 candidate preparation.",
+    "production_scope_phrase_guards_verified": true,
+    "prior31_final_source_bindings_synced_and_ledger_rechecked": true,
+    "checked_candidate_tool_sha256": {
+      "build_learning_batch.py": "c50d4f6a3d33d0ff0638658ccb3dc7e7eeb5fb66fdce6658236be5da3f37c4ab",
+      "build_production_ledger.py": "a6869bbd13d6e1d3241b05143fc70e73c2519c17ad12feddb99e31026dff2a49",
+      "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+      "validate_learning_batch.py": "df827cfea5bbb9b0405ef94dd0facb17909f0b315e2c4fa424638bf7b6c66fbf"
+    },
+    "source_audit_sha256": {
+      "md": "efd09731efef563182baba2d331daeac2b4c25ec875f51528f33b5ce0b32c428",
+      "json": "6d787fcafcfd0a33e1b3c45834947e3492cbe5e224b03a395a4d433080519728"
+    },
+    "all_65_unit_chapter_segment_placements_verified": true,
+    "original_source_object_preserved": true,
+    "final_source_binding_metadata_preserves_composed_bytes": true,
+    "post_audit_changes": "Root layout repair was propagated and full isolated checks rerun. Only source-audit final manuscript/report/planning/hash bindings appended; final31 source snapshots synced and isolated ledger rechecked. All four tools and both metadata byte-identical to isolated run; final full compose_body bytes unchanged."
+  },
+  "formal_installation_verified": false,
+  "approval_registered": false,
+  "baseline31_vs_formal": "Four tools and two metadata bind the rebased frozen31 candidate; formal31 installation not assumed. Root30 layout fix inherited identically. Original pre-rebase history retained. Installer demands exact installed31 equality.",
+  "baseline31_delivery_sha256": "d6f6f078736b981d97b998b32f3b30c57b5ad8df20855a616fb6c734444c14df",
+  "installation_script": {
+    "path": "/tmp/install32.py",
+    "candidate_copy": "install32.py",
+    "sha256": "7852ab1e321d1efc78c819457d8455cb25bf3f098dfe6d10c24d1d8a03f94f90",
+    "executed_by_preparer": false,
+    "requires": "Root full review; batch31 clean committed worktree and actual six-file snapshot hashes;126 prior text reviews;all candidate/baseline/source/current prerequisite byte checks before mutations."
+  },
+  "notes": [
+    "Three exact tool patches against rebased frozen31 plus two metadata patches. Fourth drawing module remains byte-identical. No new numerical code, figures, numbered appendices or mirror tests.",
+    "B4.5 number64 continues part28/ch242/40A05; B4.6 number65 enters actual part18 26-XX/ch146 26Axx/26A03, cross97I20. Body parts1/7/63/28/18 follow prerequisites without renumbering MSC.65units534questions(520+14),21figures28appendices;8draftchapters32draftleaves0complete.",
+    "Existing single-analysis retains functions/induction-counting/number-systems module dependencies and remains partial; B3 unwritten. CA has31 exact prerequisites, FL18. FL has no sequence/CA theorem prerequisite, no false adjacency edge. New primary26A03 coverage comes from FL text, never prior crossrefs.",
+    "Actual isolated Pandoc plus original audit_book and ledger passed after propagating root30 layout fixes: see exact structural_result counts.534exercise pairs21embeddedPNG,65chapter placements28appendices,part18/ch146 and source anchor verified. No formal build or PDF acceptance.",
+    "All1128lines16solutions and three final reports read. Math eb4cfbae…/d924a09b… both independently by nonauthors plan_multiplication; pedagogy1cbaf142… by visual21_front. Original missing-anchor history preserved; current title separately verified.",
+    "Four public caches plus original HTTP objects verified. Author source review made one real function-chapter request, integrator0. Prior timestamps and complete original JSON preserved. Independent concept604eaabb… restored original bytes kept distinct from author source report75d73821…; source reviewer review22 is CA author, never mislabeled independent CA math reviewer.",
+    "CA uses arbitrary-sequence prefix bounds, BW and a fixed subsequence term; source uses liminf/limsup. FL directly proves punctured epsilon-delta conditions and actual quotient-domain cluster property, source routes through sequential characterization and assumes entire punctured-domain denominator nonzero. Book uses neither arbitrary infinite real-point selection nor preexisting real-construction proof from that source.",
+    "Current book historical B2.29/30 and B2.31/32 scope paragraphs now explicitly locate later roots/sequence Cauchy/function limits;30/31 references scoped historically. Earlier source audits untouched. B3,limsup/liminf,series,sequential characterization,composition/one-sided limits,continuity/calculus remain outside this batch.",
+    "install32.py syntax parsed only, never executed. Afterrootreview/31snapshot it would register4textrecords126→130 and separate actual installation from later build/PDF acceptance. No formal writes or acceptance registration by preparer."
+  ]
+}

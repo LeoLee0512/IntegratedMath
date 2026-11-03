@@ -1,0 +1,16 @@
+{
+  "data/catalog_titles.json": "bbb3ab5bf9fb7b07dad10dd5b61a5582fce61a61f1a401c72850cc6bf20240e7",
+  "data/catalog_titles_zh.json": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7",
+  "data/msc_taxonomy.json": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+  "manuscript/review_ch01/answers.md": "f7024788076d124be60f9cb101bade80d592a24f2b9216a1baca4ff62458244a",
+  "manuscript/review_ch01/appendices.md": "1fe9c2d9ae018a188b76162ebb156227ad76d09358e44cb97b4d657d0494cb8e",
+  "manuscript/review_ch01/chapter.md": "90e91150cc1e54e74a2a0466753086090021b65c1c9ce76fb0fd890c49a0b1a2",
+  "manuscript/review_ch01/part_opening.md": "0256f5d41b512ecb09ee3f843947a820ce911ad4e3ca4cfdac037792e06080c1",
+  "requirements-build.txt": "b81cafa3ebc6c48dd90a1b44c6f82235ae6ffebc852c885406b4ab908cebc86b",
+  "tools/build_ch01_review.py": "382403a44e3573531849b390d9c74e4d612446f7615e6f696185268cc4d9e69f",
+  "tools/build_full_catalog.py": "614710c1406f878b32115f8ca6965ba9ae946ab47a6f7a5419984c2044b4302a",
+  "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+  "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56",
+  "tools/pdf_header.tex": "50259c347f8a858a94e432639b4cae8a549b6a1e7e9fb9a5a488db7507fd90b5",
+  "tools/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c"
+}

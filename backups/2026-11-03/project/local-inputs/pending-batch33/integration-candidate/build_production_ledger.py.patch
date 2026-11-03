@@ -1,0 +1,178 @@
+--- a/tools/build_production_ledger.py
++++ b/tools/build_production_ledger.py
+@@ -148,7 +148,11 @@
+           'manuscript/foundations/real_sequences_cauchy.md',
+           'manuscript/foundations/real_sequences_cauchy_answers.md',
+           'manuscript/foundations/real_function_limits.md',
+-          'manuscript/foundations/real_function_limits_answers.md']
++          'manuscript/foundations/real_function_limits_answers.md',
++          'manuscript/foundations/real_continuity.md',
++          'manuscript/foundations/real_continuity_answers.md',
++          'manuscript/foundations/real_intermediate_value.md',
++          'manuscript/foundations/real_intermediate_value_answers.md']
+ # Each tuple: module id, stage, title, prerequisite module ids, MSC locating tags.
+ MODULES = [
+  ('reading','B0','阅读数学与核查论证',[],['00']),
+@@ -284,7 +288,7 @@
+                    'number-systems':BRIDGE[82:108:2],
+                    'real-algebra-equations':BRIDGE[108:110:2],
+                    'real-plane-geometry':BRIDGE[110:118:2],
+-                   'single-analysis':BRIDGE[118:130:2]}.get(mid,[])
++                   'single-analysis':BRIDGE[118:134:2]}.get(mid,[])
+         modules.append({'id': mid, 'stage': stage, 'title': title, 'prerequisites': deps,
+                         'msc_tags': tags, 'source_files': existing(root, planned),
+                         'implementation_status': 'partial_draft' if existing(root, planned) else 'unwritten',
+@@ -400,10 +404,10 @@
+         if mid == 'single-analysis':
+             modules[-1]['coverage'] = {
+                 'scope': 'registered_sequence_entry_units_draft' if existing(root, planned) else 'none',
+-                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限', '最终比较、夹逼及上下确界单调收敛', '确定性单调子列、实数数列BW及有界子列判别', '双指标柯西判据与实数数列柯西完备性', '聚点穿孔域与直接函数点极限及实际商域'] if existing(root, planned) else [],
+-                'unwritten_topics': ['上/下极限及其他完备性等价', '无穷级数', '函数极限序列刻画、复合极限、左右极限、连续、微分与积分'],
++                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限', '最终比较、夹逼及上下确界单调收敛', '确定性单调子列、实数数列BW及有界子列判别', '双指标柯西判据与实数数列柯西完备性', '聚点穿孔域与直接函数点极限及实际商域', '含中心连续、局部符号、四则与直接复合', '严格负值集上确界介值、区间像与缺条件反例'] if existing(root, planned) else [],
++                'unwritten_topics': ['上/下极限及其他完备性等价', '无穷级数', '函数极限序列刻画、复合极限、左右极限、极值、一致连续、微分与积分'],
+                 'completed': False,
+-                'note': 'B4.1—B4.6仅为限定数列与函数点极限入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
++                'note': 'B4.1—B4.8仅为限定数列、函数点极限、连续与介值入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
+             modules[-1]['definition_and_theorem_anchors'] = [
+                 anchor_ref(root, path, a) for path, names in [
+                     (BRIDGE[118], ['seq-definition','seq-uniqueness','seq-basic-limits','seq-tails']),
+@@ -411,7 +415,9 @@
+                     (BRIDGE[122], ['seqorder-comparison','seqorder-squeeze','seqorder-monotone-bounds','seqorder-monotone-convergence']),
+                     (BRIDGE[124], ['subseq-indices','subseq-monotone','subseq-bolzano-weierstrass','subseq-criterion']),
+                     (BRIDGE[126], ['seqcauchy-definition','seqcauchy-bounded','seqcauchy-subsequence','seqcauchy-criterion']),
+-                    (BRIDGE[128], ['funlimit-domain-definition','funlimit-unique-examples','funlimit-locality','funlimit-algebra'])]
++                    (BRIDGE[128], ['funlimit-domain-definition','funlimit-unique-examples','funlimit-locality','funlimit-algebra']),
++                    (BRIDGE[130], ['continuity-definition','continuity-local-restriction','continuity-algebra','continuity-composition']),
++                    (BRIDGE[132], ['intermediate-intervals','intermediate-zero-supremum','intermediate-values','intermediate-applications'])]
+                 for a in names]
+             modules[-1]['scope_boundary'] = {
+                 'entry_domain': '从已写函数、自然规则、实数域、绝对值与阿基米德性质直接进入；不依赖二维几何',
+@@ -3076,6 +3082,106 @@
+   'adopted_external': [('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
+ 
+ 
++UNIT_SPECS += [{'parent_code': '26Axx',
++  'parent_chapter_number': 146,
++  'part_code': '26-XX',
++  'msc_leaf_codes': ['26A15'],
++  'msc_cross_reference_codes': ['97I20'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.7',
++  'number': 66,
++  'title': '实函数的连续性',
++  'anchor': 'continuity-unit',
++  'body': 'manuscript/foundations/real_continuity.md',
++  'answers': 'manuscript/foundations/real_continuity_answers.md',
++  'goals': ['区分含中心连续与穿孔极限', '处理孤立中心及限制域的反向失败', '在真实商域证明直接误差与非零下界', '逐核函数类型并允许内函数命中中心像'],
++  'definitions': ['continuity-definition',
++                  'continuity-local-restriction',
++                  'continuity-algebra',
++                  'continuity-composition'],
++  'proved': [('C1', 'continuity-definition', '含中心连续、否定与孤立聚点'),
++             ('C2', 'continuity-local-restriction', '局部相等、限制与符号间隔'),
++             ('C3', 'continuity-algebra', '含中心四则与真实商域'),
++             ('C4', 'continuity-composition', '类型匹配的直接两级半径复合')],
++  'questions': 'continuity-q',
++  'answer_prefix': 'continuity-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明',
++                  '极值、一致连续、连续模、半连续与一般紧致性',
++                  '函数极限序列刻画、复合极限、左右极限、微积分和无穷级数',
++                  '任意实数候选集的无限选点原则'],
++  'prerequisites': [('manuscript/foundations/dedekind_addition.md', 'cutadd-rational'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'),
++                    ('manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-translation'),
++                    ('manuscript/foundations/dedekind_cuts_order.md', 'cut-order-embedding'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-definition'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-equations'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-order'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-multiplication-order'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-associative'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-rational-zero'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-signs'),
++                    ('manuscript/foundations/functions_composition.md', 'fc-composition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-products-triangle'),
++                    ('manuscript/foundations/real_function_limits.md', 'funlimit-domain-definition'),
++                    ('manuscript/foundations/real_function_limits.md', 'funlimit-unique-examples')],
++  'adopted_external': [('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]},
++ {'parent_code': '26Axx',
++  'parent_chapter_number': 146,
++  'part_code': '26-XX',
++  'msc_leaf_codes': ['26A15'],
++  'msc_cross_reference_codes': ['26A03'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.8',
++  'number': 67,
++  'title': '区间上的介值定理',
++  'anchor': 'intermediate-unit',
++  'body': 'manuscript/foundations/real_intermediate_value.md',
++  'answers': 'manuscript/foundations/real_intermediate_value_answers.md',
++  'goals': ['核实区间及相对连续的全部前提', '逐核上确界两支和全部负值成员', '处理端点退化并由两个原像推出区间像', '区分存在与唯一并完整验证缺条件反例'],
++  'definitions': ['intermediate-intervals',
++                  'intermediate-zero-supremum',
++                  'intermediate-values',
++                  'intermediate-applications'],
++  'proved': [('IV1', 'intermediate-intervals', '区间成员条件与相对端点连续'),
++             ('IV2', 'intermediate-zero-supremum', '严格负值集上确界的两支有限扰动'),
++             ('IV3', 'intermediate-values', '全部介值分支与区间像'),
++             ('IV4', 'intermediate-applications', '限定区间唯一零点与缺条件反例')],
++  'questions': 'intermediate-q',
++  'answer_prefix': 'intermediate-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明',
++                  '极值、一致连续、连续模、半连续与一般紧致性',
++                  '函数极限序列刻画、复合极限、左右极限、微积分和无穷级数',
++                  '任意实数候选集的无限选点原则'],
++  'prerequisites': [('manuscript/foundations/dedekind_addition.md', 'cutadd-rational'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'),
++                    ('manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-translation'),
++                    ('manuscript/foundations/dedekind_cuts_order.md', 'cut-order-embedding'),
++                    ('manuscript/foundations/dedekind_cuts_order.md', 'cut-supremum'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-definition'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-order'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-multiplication-order'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-associative'),
++                    ('manuscript/foundations/dedekind_signed_product.md', 'cutsigned-rational-zero'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-image'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_continuity.md', 'continuity-algebra'),
++                    ('manuscript/foundations/real_continuity.md', 'continuity-definition'),
++                    ('manuscript/foundations/real_continuity.md', 'continuity-local-restriction'),
++                    ('manuscript/foundations/real_square_roots.md', 'realsqrt-square-order')],
++  'adopted_external': [('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
++
++
+ def anchor_ref(root, path, anchor):
+     text = (root/path).read_text() if (root/path).is_file() else ''
+     found = '{#'+anchor+'}' in text or 'id="'+anchor+'"' in text
+@@ -3192,7 +3298,9 @@
+             'research/production/real_sequences_order_subsequences_sources_2026-10-30.md',
+             'research/production/real_sequences_order_subsequences_sources_2026-10-30.json'] if spec['number'] >= 62 else []) + ([
+             'research/production/real_cauchy_function_limits_sources_2026-10-30.md',
+-            'research/production/real_cauchy_function_limits_sources_2026-10-30.json'] if spec['number'] >= 64 else []))
++            'research/production/real_cauchy_function_limits_sources_2026-10-30.json'] if spec['number'] >= 64 else []) + ([
++            'research/production/real_continuity_intermediate_sources_2026-10-30.md',
++            'research/production/real_continuity_intermediate_sources_2026-10-30.json'] if spec['number'] >= 66 else []))
+         units.append(unit)
+     return units
+ 
+@@ -3544,8 +3652,8 @@
+                         module_ids=['single-analysis'])
+                     chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.5实数数列收敛定义、唯一性、基本例、尾移、有界、四则极限、比较夹逼、单调收敛、单调子列、实数数列BW、有界子列判别及柯西判据；上/下极限、级数及其余无穷极限主题待写，整章未完成'
+                 if code=='26Axx':
+-                    chapter['learning_entry'].update(status='function_limit_entry_defined_chapter_pending', module_ids=['single-analysis'])
+-                    chapter['coverage']['unwritten_topics'] = '仅登记B4.6聚点、穿孔点极限、唯一性、局部性及实际商域的直接误差证明；序列刻画、复合极限、左右极限、连续、微分与积分及其他一元函数主题待写，整章未完成'
++                    chapter['learning_entry'].update(status='function_limit_continuity_intermediate_entries_defined_chapter_pending', module_ids=['single-analysis'])
++                    chapter['coverage']['unwritten_topics'] = '仅登记B4.6主26A03的聚点穿孔极限、局部性及实际商域，B4.7—B4.8主26A15的含中心连续、运算复合、上确界介值及区间像；连续模、半连续、极值、一致连续、函数极限序列刻画、复合极限、左右极限、微分积分及其他一元函数主题待写，整章未完成'
+                 chapters.append(chapter)
+                 for leaf in children[code]:
+                     has_anchor = code=='00Axx' and '{#sec-'+leaf['code']+'}' in ch01_text

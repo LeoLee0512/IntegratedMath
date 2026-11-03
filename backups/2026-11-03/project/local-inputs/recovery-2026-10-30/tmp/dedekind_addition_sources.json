@@ -1,0 +1,957 @@
+{
+  "schema_version": 1,
+  "status": "batch22_source_preflight_only",
+  "citation_anchor": "dedekind-addition-sources",
+  "checked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+  "scope": "B2.23 DA1–DA4 rational grid witnesses / exact cut sums / strict negative cut / rational compatibility; B2.24 DG1–DG4 additive laws / inverse / order translation / subtraction. No formal batch22 edits or acceptance.",
+  "plan": {
+    "path": "/tmp/dedekind_addition_plan.md",
+    "sha256": "23d82dd8789052273135d20c5514e0b6352cd2dab590282091ac298458f22b4d",
+    "concept_review_path": "/tmp/dedekind_addition_concept_review.md",
+    "concept_review_sha256": "bc12184c29ce758faf96ee1571d1edac826ed8c48a92e03c05d6a47905d044ec",
+    "primary_msc": "97F50",
+    "chapter": 526,
+    "cross_references": [
+      "06F20",
+      "06A05"
+    ]
+  },
+  "access": {
+    "policy": "Current inherited restricted/enforced public HTTPS proxy context from batch21; no changes or bypass. raw.githubusercontent.com is allowed.",
+    "new_http_requests": 1,
+    "new_http_200": 1,
+    "new_git_queries": 0,
+    "reused_cache_records": 10,
+    "new_fetch_for_reused_records": 0,
+    "new_request_log": "/tmp/dedekind-addition-source-audit/requests.json",
+    "new_request_log_sha256": "b5d6abed1534a2daf137c2c973c57773987d368faf743afb834c39d394a5aa12",
+    "reason_for_one_new_request": "Previously inspected mathlib directory showed Algebra/Order/UpperLower.lean; needed actual text for pointwise operation/endpoint assumptions; no repeated blind search"
+  },
+  "new_requests": [
+    {
+      "request_id": "mathlib_order_upperlower",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/UpperLower.lean",
+      "checked_at_utc": "2026-10-29T20:07:23.186892+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/UpperLower.lean",
+      "access_status": "verified_http_200",
+      "bytes": 7938,
+      "sha256": "41bc0117344f1ec0c8d45bd2e3b08766551bce730a778b81eef6f8f58194ac41",
+      "cache_path": "/tmp/dedekind-addition-source-audit/mathlib_order_upperlower"
+    }
+  ],
+  "reused_requests": [
+    {
+      "request_id": "mathlib_lower_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/Basic.lean",
+      "checked_at_utc": "2026-10-29T19:52:19.118716+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/Basic.lean",
+      "access_status": "verified_http_200",
+      "bytes": 14011,
+      "sha256": "7d752b38fba8f5bed0be3fd70a1fa97497dfb3fe6c4add8ade66783b229caa43",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_lower_basic",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "mathlib_field_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "checked_at_utc": "2026-10-29T19:52:19.119904+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "access_status": "verified_http_200",
+      "bytes": 31120,
+      "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "mathlib_archim_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "checked_at_utc": "2026-10-29T19:51:08.957096+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "access_status": "verified_http_200",
+      "bytes": 25104,
+      "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "mathlib_group_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.670992+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+      "bytes": 52245,
+      "sha256": "5fe7a3a3f0827d6f50ea422574316731b470631308fe5a5d4faf8a5f97b9d885",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_group_defs",
+      "reused_from_log": "/tmp/powers-polynomials-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "reused_from_log": "/tmp/powers-polynomials-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "dedekind_tex",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "checked_at_utc": "2026-10-29T19:51:08.612324+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "access_status": "verified_http_200",
+      "bytes": 243143,
+      "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "dedekind_license",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "checked_at_utc": "2026-10-29T19:51:08.612777+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "access_status": "verified_http_200",
+      "bytes": 17504,
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "dedekind_metadata",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "checked_at_utc": "2026-10-29T19:52:19.458448+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "access_status": "verified_http_200",
+      "bytes": 1216,
+      "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "lebl_reals",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "checked_at_utc": "2026-10-29T19:51:08.613314+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "access_status": "verified_http_200",
+      "bytes": 80337,
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    },
+    {
+      "request_id": "lebl_license",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "access_status": "verified_http_200",
+      "bytes": 467,
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "reused_from_log": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "cache_rechecked_at_utc": "2026-10-29T20:11:44.459067+00:00",
+      "new_network_fetch_this_batch": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "mathlib_lower_basic",
+      "title": "Order/UpperLower/Basic.lean",
+      "author": "Yaël Dillies; Sara Rousta",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_lower_basic",
+      "sha256": "7d752b38fba8f5bed0be3fd70a1fa97497dfb3fe6c4add8ade66783b229caa43",
+      "bytes": 14011,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.118716+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "mathlib_field_basic",
+      "title": "Algebra/Order/Field/Basic.lean",
+      "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic",
+      "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+      "bytes": 31120,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.119904+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "mathlib_archim_basic",
+      "title": "Algebra/Order/Archimedean/Basic.lean",
+      "author": "Mario Carneiro",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic",
+      "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+      "bytes": 25104,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.957096+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "mathlib_group_defs",
+      "title": "Mathlib/Algebra/Group/Defs.lean",
+      "author": "Jeremy Avigad; Leonardo de Moura; Simon Hudon; Mario Carneiro",
+      "version": "mathlib v4.24.0",
+      "license": "Apache-2.0",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_group_defs",
+      "sha256": "5fe7a3a3f0827d6f50ea422574316731b470631308fe5a5d4faf8a5f97b9d885",
+      "bytes": 52245,
+      "original_fetch_at_utc": "2026-10-29T17:29:05.670992+00:00",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Additive structure definitions; the listed laws are assumptions until constructed and proved for cuts",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "mathlib_license",
+      "title": "mathlib LICENSE",
+      "author": "mathlib contributors",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "License evidence reused without a new network request",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "dedekind_tex",
+      "title": "Essays on the Theory of Numbers, Part I: Continuity and Irrational Numbers",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex",
+      "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+      "bytes": 243143,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612324+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Historical date and two-sided cut comparison; different perturbation formula",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "dedekind_license",
+      "title": "Project Gutenberg License",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "bytes": 17504,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612777+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Distribution/trademark license evidence",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "dedekind_metadata",
+      "title": "GITenberg metadata.yaml",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata",
+      "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+      "bytes": 1216,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.458448+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Public-domain-in-USA declaration, translator and ebook provenance",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "lebl_reals",
+      "title": "Basic Analysis I, chapter The Real Numbers",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "bytes": 80337,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "License evidence",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    },
+    {
+      "id": "mathlib_order_upperlower",
+      "title": "Mathlib/Algebra/Order/UpperLower.lean",
+      "author": "Yaël Dillies",
+      "version": "mathlib v4.24.0",
+      "license": "Apache-2.0; file header plus reused LICENSE",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/UpperLower.lean",
+      "cache_path": "/tmp/dedekind-addition-source-audit/mathlib_order_upperlower",
+      "sha256": "41bc0117344f1ec0c8d45bd2e3b08766551bce730a778b81eef6f8f58194ac41",
+      "bytes": 7938,
+      "original_fetch_at_utc": "2026-10-29T20:07:23.186892+00:00",
+      "reused_cached_bytes": false,
+      "previous_role_as_recorded": "Pointwise lower-set operations and reflection; crucial closed-endpoint zero differs from book cuts",
+      "use_this_batch": "Version/conditions comparison only; no passage, exercise, diagram or Lean code copied into book."
+    }
+  ],
+  "checked_source_locators": [
+    {
+      "id": "strict_lower",
+      "planned_group": "DA1–DA3",
+      "source_id": "mathlib_lower_basic",
+      "start_line": 323,
+      "end_line": 338,
+      "actual_locator": "isLowerSet_iff_forall_lt / isLowerSet_iff_Iio_subset",
+      "source_assumptions": "PartialOrder; weak closure is equivalent to strict closure via equality case.",
+      "book_difference_and_obligation": "Book lower closure is strict q<a; this matches after checking equality separately. Nonempty/proper/no-max are additional conditions, not consequences of lower closure."
+    },
+    {
+      "id": "complement",
+      "planned_group": "DA3",
+      "source_id": "mathlib_lower_basic",
+      "start_line": 38,
+      "end_line": 52,
+      "actual_locator": "IsLowerSet.compl / IsUpperSet.compl",
+      "source_assumptions": "Set complement of a lower set is an upper set, for the existing ambient order.",
+      "book_difference_and_obligation": "Complement alone is not a negative cut. Reflection turns upper into lower but does not remove a possible maximum."
+    },
+    {
+      "id": "midpoint",
+      "planned_group": "DA3",
+      "source_id": "mathlib_field_basic",
+      "start_line": 23,
+      "end_line": 25,
+      "actual_locator": "LinearOrderedSemifield assumptions",
+      "source_assumptions": "Already given ordered semifield structure.",
+      "book_difference_and_obligation": "Applicable to established Q, not to not-yet-constructed cut arithmetic."
+    },
+    {
+      "id": "midpoint_bounds",
+      "planned_group": "DA3",
+      "source_id": "mathlib_field_basic",
+      "start_line": 132,
+      "end_line": 134,
+      "actual_locator": "left_lt_add_div_two / add_div_two_lt_right",
+      "source_assumptions": "Given a<b, midpoint strictly between; no completeness.",
+      "book_difference_and_obligation": "For q<−r choose (q−r)/2, keeping the same complement witness; this proves no maximum for the strict negative cut."
+    },
+    {
+      "id": "rational_natural_bound",
+      "planned_group": "DA1",
+      "source_id": "mathlib_archim_basic",
+      "start_line": 358,
+      "end_line": 400,
+      "actual_locator": "archimedean_iff_nat_lt and Archimedean Q",
+      "source_assumptions": "Field/order structure; library rational proof uses rational ceiling in an intermediary step.",
+      "book_difference_and_obligation": "Book already has QG1 explicit rational-record bound; use it on (b0−a0)/δ to get a natural exit bound, without real Archimedean property, floor or cut arithmetic."
+    },
+    {
+      "id": "pointwise_ambient_assumptions",
+      "planned_group": "DA2/DG1",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 38,
+      "end_line": 46,
+      "actual_locator": "OrderedCommGroup variable block, translation image",
+      "source_assumptions": "CommGroup, PartialOrder, IsOrderedMonoid; multiplicative text marked to_additive.",
+      "book_difference_and_obligation": "Read source annotations only, no Lean elaboration/compilation. The additive specialization may be applied to Q whose additive laws are proved. It does not assume or prove that newly constructed cuts form a group."
+    },
+    {
+      "id": "pointwise_lower_closure",
+      "planned_group": "DA2",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 53,
+      "end_line": 67,
+      "actual_locator": "IsLowerSet.mul_left / mul_right with to_additive",
+      "source_assumptions": "Pointwise operation on arbitrary subsets; lower closure when the indicated factor is lower, in the prior ordered-group context.",
+      "book_difference_and_obligation": "Book proves exact-sum lower closure using a′=p−b; it must separately prove nonempty, proper and no maximum. Do not treat library lower closure as cut closure."
+    },
+    {
+      "id": "reflection",
+      "planned_group": "DA3",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 69,
+      "end_line": 73,
+      "actual_locator": "IsUpperSet.inv / IsLowerSet.inv with to_additive",
+      "source_assumptions": "Reflection/inverse changes upper to lower and lower to upper in an ordered group.",
+      "book_difference_and_obligation": "Source guarantees only lower closure of reflected complement. Book N(A)={q:∃r∉A,q<−r} has an additional strict rounding step. For A=i(0), raw reflected complement is {q≤0} and fails no-maximum."
+    },
+    {
+      "id": "exact_pointwise_sum",
+      "planned_group": "DA2",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 153,
+      "end_line": 173,
+      "actual_locator": "LowerSet One / Mul / coe_mul, to_additive annotations",
+      "source_assumptions": "Bundled lower sets use image2 of ambient operation; all lower sets allowed.",
+      "book_difference_and_obligation": "Image2 corresponds to exact rational sum witnesses, but neither the restricted type nor its zero is the book type. Exact and strict sum witness equivalence must be proved from no-max/downward closure."
+    },
+    {
+      "id": "closed_zero_trap",
+      "planned_group": "DG1",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 155,
+      "end_line": 157,
+      "actual_locator": "LowerSet One defined by Iic 1, to_additive",
+      "source_assumptions": "Additive translation of this definition gives the CLOSED lower segment Iic 0.",
+      "book_difference_and_obligation": "Book 0_R=i(0)=Iio(0) excludes rational zero. Cannot cite library zero/unit proof as the book proof; use an internal larger a and z=q−a<0 in the reverse inclusion."
+    },
+    {
+      "id": "lower_monoid",
+      "planned_group": "DG1/DG2",
+      "source_id": "mathlib_order_upperlower",
+      "start_line": 188,
+      "end_line": 206,
+      "actual_locator": "LowerSet commSemigroup / one_mul / CommMonoid, to_additive",
+      "source_assumptions": "Commutative monoid of all lower sets, with closed principal unit. No cut inverse construction here.",
+      "book_difference_and_obligation": "Only a comparison for inherited associativity/commutativity. Book nested witness proofs establish these on restricted cuts; DA1 is still required for inverse reverse inclusion. Arbitrary lower sets do not all have additive inverses."
+    },
+    {
+      "id": "group_associative_commutative",
+      "planned_group": "DG1",
+      "source_id": "mathlib_group_defs",
+      "start_line": 187,
+      "end_line": 209,
+      "actual_locator": "AddSemigroup and AddCommMagma declarations",
+      "source_assumptions": "add_assoc and add_comm are fields required of structures.",
+      "book_difference_and_obligation": "They name obligations, not automatic theorems of the new cut operation. Prove by two-direction witness regrouping using only old Q laws."
+    },
+    {
+      "id": "group_inverse",
+      "planned_group": "DG2",
+      "source_id": "mathlib_group_defs",
+      "start_line": 1095,
+      "end_line": 1103,
+      "actual_locator": "AddGroup declaration and neg_add_cancel field",
+      "source_assumptions": "Existing SubNegMonoid plus a neg_add_cancel proof; subtraction convention discussed.",
+      "book_difference_and_obligation": "Book must prove A⊕N(A)=0_R in both directions before using inverse uniqueness, double negation or cancellation."
+    },
+    {
+      "id": "commutative_group_name",
+      "planned_group": "DG2–DG4",
+      "source_id": "mathlib_group_defs",
+      "start_line": 1167,
+      "end_line": 1168,
+      "actual_locator": "AddCommGroup declaration",
+      "source_assumptions": "AddGroup plus AddCommMonoid.",
+      "book_difference_and_obligation": "After the laws are proved, the name describes the concrete structure. It is not a prior abstract axiom or a claim of ordered field / multiplication."
+    },
+    {
+      "id": "modern_cut_context",
+      "planned_group": "DA1–DA4",
+      "source_id": "lebl_reals",
+      "start_line": 1053,
+      "end_line": 1067,
+      "actual_locator": "exercise:Dedekind",
+      "source_assumptions": "Existing complete R, lower rational subset bounded above, sup_R A not a member.",
+      "book_difference_and_obligation": "This source characterizes cuts after R already exists. Do not obtain small rational boundary gaps from an assumed real supremum/density. Book uses Q grid and natural least index instead."
+    },
+    {
+      "id": "reject_complete_real_route",
+      "planned_group": "DA1",
+      "source_id": "lebl_reals",
+      "start_line": 693,
+      "end_line": 723,
+      "actual_locator": "thm:arch and proof",
+      "source_assumptions": "Real Archimedean property is proved using sup_R N; Q density in R is subsequently derived.",
+      "book_difference_and_obligation": "This route would assume the target ambient real structure. Book needs Q-only Archimedean bound and least natural index, and does not call cut-supremum either."
+    },
+    {
+      "id": "history_addition",
+      "planned_group": "DA2/history",
+      "source_id": "dedekind_tex",
+      "start_line": 1006,
+      "end_line": 1025,
+      "actual_locator": "Part I §VI Operations with Real Numbers",
+      "source_assumptions": "Two-sided historical cuts; C1 membership uses c≤a1+b1; endpoint may be assigned to the first side.",
+      "book_difference_and_obligation": "Not literally the modern strict-cut definition. For BOOK cuts, exact, ≤-witness and <-witness versions can be connected by lower closure and no maximum; the historical endpoint convention cannot simply be dropped."
+    },
+    {
+      "id": "history_rational_compatibility",
+      "planned_group": "DA4",
+      "source_id": "dedekind_tex",
+      "start_line": 1025,
+      "end_line": 1045,
+      "actual_locator": "§VI rational addition compatibility and halving positive gap",
+      "source_assumptions": "Rational endpoints and two-sided cuts; splits positive p into two halves to produce members.",
+      "book_difference_and_obligation": "Book independently uses h=(r+s−q)/2 and exact witnesses r−h,s−h; prove both inclusions for strict principal lower sets."
+    },
+    {
+      "id": "history_not_full_proof",
+      "planned_group": "DG2–DG4 exclusion",
+      "source_id": "dedekind_tex",
+      "start_line": 1047,
+      "end_line": 1062,
+      "actual_locator": "§VI statement about other operations",
+      "source_assumptions": "Author says other operations may likewise be defined and discusses scope, without supplying this book strict-negation/grid inverse proof.",
+      "book_difference_and_obligation": "Do not cite this paragraph as a complete proof of strict negative cuts, ε-grid lemma, inverse law, order translation, or subsequent multiplication/root existence."
+    }
+  ],
+  "existing_prerequisite_anchors": [
+    {
+      "anchor": "cut-set-background",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "line": 9,
+      "heading": "### 1. 先说明允许形成哪些集合 {#cut-set-background}",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "cut-definition",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "line": 25,
+      "heading": "### 2. 分割与有理数的下段 {#cut-definition}",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "cut-order-embedding",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "line": 74,
+      "heading": "### 3. 包含为什么在这些对象上成为全序 {#cut-order-embedding}",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "cut-supremum",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "line": 213,
+      "heading": "### 5. 非空有上界的分割族：并集就是上确界 {#cut-supremum}",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "qgap-density-archimedean",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rational_gaps_bounds.md",
+      "line": 28,
+      "heading": "### 2. 中点、无端点与自然数界 {#qgap-density-archimedean}",
+      "sha256": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "pow-compatibility",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rational_powers.md",
+      "line": 240,
+      "heading": "### 7. 新定义怎样接上旧自然数幂 {#pow-compatibility}",
+      "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "int-order-laws",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/integers_addition_order.md",
+      "line": 471,
+      "heading": "### 11. 次序的性质与平移 {#int-order-laws}",
+      "sha256": "bd18f2b22e9a8b2ef116c5835140eb79beacc4499e489dbfc8e6a38c89778672",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-integers",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 141,
+      "heading": "### 6. 整数原有次序与分子的符号 {#rord-integers}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "ord-predecessor",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "line": 19,
+      "heading": "#### 命题 O1：每个自然数是零，或是唯一的后继 {#ord-predecessor}",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "ord-successor-comparison",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "line": 163,
+      "heading": "### 命题 O6：后继和严格比较的转换 {#ord-successor-comparison}",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "ord-trichotomy",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "line": 217,
+      "heading": "### 命题 O7：任意两个自然数可以比较，且恰有一种结果 {#ord-trichotomy}",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "ord-a07",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order_answers.md",
+      "line": 169,
+      "heading": "### 题7答案：不把最小元素结论放在强归纳之前 {#ord-a07}",
+      "sha256": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "ord-strong-induction",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "line": 336,
+      "heading": "#### 命题 O10：强归纳原理 {#ord-strong-induction}",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "radd-laws",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_addition.md",
+      "line": 99,
+      "heading": "### 4. 加零、交换与结合，都从整数代表中证明 {#radd-laws}",
+      "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "radd-opposite",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_addition.md",
+      "line": 163,
+      "heading": "### 5. 相反数：先给代表规则，再证明和为零 {#radd-opposite}",
+      "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "radd-cancellation",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_addition.md",
+      "line": 239,
+      "heading": "### 7. 相反数唯一、加法消去与和的相反数 {#radd-cancellation}",
+      "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "radd-subtraction",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_addition.md",
+      "line": 284,
+      "heading": "### 8. 减法的定义，以及加法方程的唯一解 {#radd-subtraction}",
+      "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rmul-laws",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_multiplication.md",
+      "line": 104,
+      "heading": "### 4. 乘一、乘零、交换与结合 {#rmul-laws}",
+      "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rmul-distributive",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_multiplication.md",
+      "line": 148,
+      "heading": "### 5. 分配律：两边代表不同，仍可能是同一个类 {#rmul-distributive}",
+      "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rdiv-division",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_division.md",
+      "line": 130,
+      "heading": "### 5. 定义除法，并完整分类乘法方程的解 {#rdiv-division}",
+      "sha256": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rdiv-cancellation",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_division.md",
+      "line": 260,
+      "heading": "### 8. 约去共同因子的条件与不能划掉的加项 {#rdiv-cancellation}",
+      "sha256": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-laws",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 99,
+      "heading": "### 5. 序律、三歧性及严格比较的联系 {#rord-laws}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-translation",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 179,
+      "heading": "### 7. 给两边加同一个有理数，保持并反映比较 {#rord-translation}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-negation",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 230,
+      "heading": "### 8. 取相反数会反转次序 {#rord-negation}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-multiplication",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 260,
+      "heading": "### 9. 乘法比较必须区分因子的三种符号 {#rord-multiplication}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "rord-division",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/rationals_order.md",
+      "line": 330,
+      "heading": "### 11. 除法比较按除数符号决定方向 {#rord-division}",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "fun-sets",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "line": 25,
+      "heading": "### 2. 集合由元素决定：成员、子集与空集 {#fun-sets}",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "fun-pairs",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "line": 85,
+      "heading": "### 3. 有序对与两个集合的全部配对 {#fun-pairs}",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "fun-definition",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "line": 145,
+      "heading": "### 5. 正式定义函数及求值记号 {#fun-definition}",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "fc-equality",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+      "line": 17,
+      "heading": "### 2. 函数相等：三项数据与逐点判据 {#fc-equality}",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+      "actual_location_status": "formal_manuscript"
+    },
+    {
+      "anchor": "inv-two-sided",
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_inverse.md",
+      "line": 51,
+      "heading": "### 3. 两次往返都回到起点：双侧逆及唯一性 {#inv-two-sided}",
+      "sha256": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+      "actual_location_status": "formal_manuscript"
+    }
+  ],
+  "independent_derivation_observations": [
+    {
+      "item": "ord-a07 actual proof",
+      "path": "manuscript/foundations/natural_order_answers.md",
+      "start_line": 169,
+      "end_line": 185,
+      "conclusion": "Nonempty natural set has unique least element, proved by strong induction and classical contradiction; not a newly adopted axiom."
+    },
+    {
+      "item": "grid proof mapping",
+      "source_status": "independent derivation from actual QG1, ord-a07 and rational arithmetic; no exact external theorem claimed",
+      "claim": "0<v−u<epsilon with one interior and one exterior rational"
+    },
+    {
+      "item": "strict negative-cut source gap",
+      "source_status": "no inspected external source gives the complete exact N(A) construction plus endpoint check and inverse proof",
+      "claim": "Book must carry the full four-condition and epsilon-grid proof; related library reflection proves only closure direction"
+    },
+    {
+      "item": "ordered cut group laws",
+      "source_status": "independent construction proof; abstract source declarations only describe required laws",
+      "claim": "Do not use an already-given OrderedAddCommGroup instance to establish the structure being constructed"
+    }
+  ],
+  "book_proof_obligations": [
+    {
+      "group": "DA1",
+      "anchor": "cutadd-grid",
+      "obligation": "Separate each internal a from external b by rational trichotomy and lower closure. For epsilon>0 set delta=epsilon/2; choose a0∈A,b0∉A and QG1 positive natural N with eta(N)delta>b0−a0. E={n:a0+eta(n)delta∉A} is nonempty, excludes 0. Use ord-a07 least m; m=k+1 gives k∉E. Then u in, v out, v−u=delta strictly between 0 and epsilon. No cut arithmetic, cut supremum, real density or simultaneous choices."
+    },
+    {
+      "group": "DA1 computational boundary",
+      "anchor": "cutadd-grid",
+      "obligation": "Well-ordering yields a least member of a specified nonempty natural set under classical logic. An arbitrary cut supplies no decidable membership predicate, so no general executable first-exit search, computed real boundary, or terminating cut API is inferred. A rational principal-cut example may have an independent decision procedure."
+    },
+    {
+      "group": "DA2 closure",
+      "anchor": "cutadd-definition",
+      "obligation": "A⊕B={q:∃a∈A,b∈B,q=a+b}. Internal a0+b0 gives nonempty; external r+s is outside because all a+b<r+s; p<q=a+b uses a′=p−b<a; increasing a gives no maximum. Only after four conditions declare R×R→R, with exterior equality giving a unique output subset."
+    },
+    {
+      "group": "DA2 witness conventions",
+      "anchor": "cutadd-definition",
+      "obligation": "For book cuts, q=a+b can be strengthened to q<a1+b by increasing a. Conversely q<a+b gives exact q=(q−b)+b with q−b<a. A weak q≤a+b version also needs equality or lower closure. Historical cuts that admit endpoint maxima are not silently equivalent to this restricted convention."
+    },
+    {
+      "group": "DA3",
+      "anchor": "cutadd-negation",
+      "obligation": "N(A)={q:∃r∉A,q<−r}. External r0 gives −r0−1 inside; internal a0 makes −a0 outside; same external witness gives lower closure; midpoint (q−r)/2 gives no maximum. Do not identify it with raw −A or raw reflection of complement. For i(0), raw reflected complement {q≤0} has maximum 0."
+    },
+    {
+      "group": "DA4 addition",
+      "anchor": "cutadd-rational",
+      "obligation": "i(r)⊕i(s)=i(r+s): forward sum of strict inequalities; backward q<r+s, h=(r+s−q)/2>0, a=r−h,b=s−h, a+b=q. Covers negative and zero endpoints with exact rational arithmetic."
+    },
+    {
+      "group": "DA4 negation",
+      "anchor": "cutadd-rational",
+      "obligation": "N(i(r))=i(−r): external t means t≥r so q<−t≤−r; converse use external t=r. Principal compatibility does not prove all-cut laws since nonprincipal cuts exist."
+    },
+    {
+      "group": "DG1",
+      "anchor": "cutgroup-laws",
+      "obligation": "Exchange witnesses; expand both nested sum memberships before using rational associativity. A⊕i(0)⊆A follows from z<0. Reverse uses q<a∈A then z=q−a<0; rational zero is NOT in i(0)."
+    },
+    {
+      "group": "DG2 inverse existence",
+      "anchor": "cutgroup-inverses",
+      "obligation": "Forward q=a+c with c<−r, r∉A, a<r gives q<a−r<0. Reverse any x<0: DA1 with epsilon=−x yields v−u<−x, hence c=x−u<−v, so c∈N(A) and x=u+c. A nonstrict gap may yield equality and fail the negative-cut witness; strictness is essential."
+    },
+    {
+      "group": "DG2 consequences",
+      "anchor": "cutgroup-inverses",
+      "obligation": "After both inverse inclusions, use already established association, commutation and unit to prove inverse uniqueness. Then N(N(A))=A, cancellation, and group terminology. Do not assume any of these in DA1 or in inverse existence."
+    },
+    {
+      "group": "DG3",
+      "anchor": "cutgroup-translation",
+      "obligation": "Weak monotonicity follows from member inclusion. Reflection requires adding N(C) after inverse law. Strict preservation follows from weak preservation plus equality cancellation; strict reflection similarly excludes equality. Translation T_C has two-sided inverse T_N(C), a function on established cut set R."
+    },
+    {
+      "group": "DG4",
+      "anchor": "cutgroup-negation-subtraction",
+      "obligation": "A⊆B gives r∉B⇒r∉A, hence N(B)⊆N(A). Reflection uses double negation only after DG2. Prove inverse of sum by actual parenthesized rearrangement and uniqueness. Define A⊖B=A⊕N(B), then solve A⊕X=B uniquely and derive order-by-difference from translation."
+    },
+    {
+      "group": "Background and endpoint scope",
+      "anchor": "cutadd-unit/cutgroup-unit",
+      "obligation": "Use existing Q and cut-set P(Q) background, products and conditional subsets. No new unrestricted object collection or choice axiom. All witnesses are selected for one given input/claim; no global choice function. No real multiplication, inverse/division, roots, limits, or complete ordered-field claim."
+    }
+  ],
+  "adopted_vs_proved": {
+    "adopted": "Only prior explicit classical logic and set background including batch21 P(Q), products and conditional subsets; no new Archimedean/completeness or group axiom for cuts.",
+    "proved_before_use": "QG1 and ord-a07 must be linked to their actual files; book proves cut closure, unit, inverse and order laws before using them.",
+    "not_adopted": [
+      "Existing complete real field or rational density in it",
+      "mathlib full lower-set closed zero Iic(0)",
+      "Historical two-sided endpoint identification without translation",
+      "Decidable membership or a first-exit algorithm for arbitrary cuts",
+      "Choice functions, cut multiplication, real square roots or limits"
+    ]
+  },
+  "critical_mismatches": [
+    "Book strict i(0)=Iio(0) versus library all-LowerSet additive zero Iic(0).",
+    "Historical C1 uses weak sum witness and allows endpoint allocation; book exact/strict sum equivalence uses no maximum.",
+    "Pointwise reflection of complement can include a largest endpoint; the book strict q<−r definition removes it.",
+    "Abstract group laws and already-built R sources cannot be premises of the same cut construction."
+  ],
+  "source_availability": "All listed bytes actually read and SHA checked. One new public 200; ten cached records reused at original fetch dates. Exact grid and strict-negation inverse proof not located externally in inspected sources and explicitly recorded as independent book derivation.",
+  "licenses": "Mathlib Apache-2.0. Lebl dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0. Dedekind ebook metadata: public domain in USA, with Project Gutenberg license; no global public-domain claim. License caches and metadata preserve original URLs and hashes.",
+  "use": "Original factual/condition summaries only; no external proof prose, exercises, diagrams or Lean source copied into manuscript. Latin-1 for Dedekind TeX as declared inputenc; hashes use original bytes. No Lean compilation.",
+  "limits": [
+    "Plan/concept/source review is not manuscript acceptance.",
+    "No claim of direct external textual evidence for exact epsilon-grid or strict negative-cut inverse argument.",
+    "No general cut API, member-decision algorithm, real multiplication, ordered-field completion or root existence."
+  ],
+  "repo_mutations": [],
+  "classification_check": {
+    "path": "data/msc_taxonomy.json",
+    "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "entries": [
+      {
+        "code": "06A05",
+        "level": "subject_leaf",
+        "parent_code": "06Axx",
+        "pdf_page": 14,
+        "title_short": "Total orders",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      },
+      {
+        "code": "06F20",
+        "level": "subject_leaf",
+        "parent_code": "06Fxx",
+        "pdf_page": 16,
+        "title_short": "Ordered abelian groups, Riesz groups, ordered linear spaces",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      },
+      {
+        "code": "97F50",
+        "level": "subject_leaf",
+        "parent_code": "97Fxx",
+        "pdf_page": 221,
+        "title_short": "Real numbers, complex numbers (educational aspects)",
+        "title_truncated": false,
+        "title_zh": "",
+        "writing_status": "not_written"
+      }
+    ],
+    "scope": "97F50 is primary; 06F20 and 06A05 are cross references only; no extra classification coverage claimed"
+  }
+}

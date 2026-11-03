@@ -1,0 +1,60 @@
+{
+  "status": "isolated_structural_checks_passed",
+  "counts": {
+    "units": 67,
+    "foundation_exercises": 536,
+    "intro_exercises": 14,
+    "total_exercises": 550,
+    "figures": 21,
+    "numbered_appendices": 28,
+    "draft_chapters": 8,
+    "draft_leaves": 33,
+    "completed_chapters": 0
+  },
+  "html": {
+    "math_nodes": 34618,
+    "source_math_nodes": 34622,
+    "image_alt_math_nodes": 4,
+    "images": 21,
+    "exercise_pairs": 550,
+    "html_ids": 3431,
+    "html_internal_links": 4409
+  },
+  "new_units": [
+    {
+      "code": "B4.7",
+      "stage": "draft",
+      "prerequisites_verified": 20
+    },
+    {
+      "code": "B4.8",
+      "stage": "draft",
+      "prerequisites_verified": 20
+    }
+  ],
+  "input_sha256": {
+    "manuscript/foundations/real_continuity.md": "328b1782b55447f050c93470128b707cd499e4bca0cf14a33e784a75257d9450",
+    "manuscript/foundations/real_continuity_answers.md": "98628922f1f7848aacaee663a66fab63667fc57f67d1770bfe94fa9e7ff3e408",
+    "manuscript/foundations/real_intermediate_value.md": "2b5e8bbd9edadcdd25f1cf52ccd3f6d80bc7f6909aa103d45c34f370100e865c",
+    "manuscript/foundations/real_intermediate_value_answers.md": "a54ce0ab274908f01e7c5deddf94f8d1e348f5500c8eeb08f9cbb010714745ed"
+  },
+  "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+  "new_numerical_code": "none; drawing module unchanged",
+  "new_figures": 0,
+  "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch33 candidate preparation.",
+  "production_scope_phrase_guards_verified": true,
+  "checked_candidate_tool_sha256": {
+    "build_learning_batch.py": "71cdc845982bd2295bcb4a796829601b721f4360558de594960546cd7544130f",
+    "build_production_ledger.py": "e33af7e1ccf3e84c914c7408945bd97a8e9c79e8886eaa271d0c99f58a1fff2e",
+    "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "validate_learning_batch.py": "94767715fe2c17cc216999696a6f65dda7f19f2aa9d4bc4318ece025c9965dad"
+  },
+  "source_audit_sha256": {
+    "md": "3859d1dedcd42967707f54d051a05191a8763207f9c5c91ac4f7b35f7b860314",
+    "json": "683b12faad815670c1fa55d12614568ca252cf046c9afea6eb5d11102657055f"
+  },
+  "all_67_unit_chapter_segment_placements_verified": true,
+  "original_source_object_preserved": true,
+  "final_source_binding_metadata_preserves_composed_bytes": true,
+  "post_audit_changes": "No manuscript, tool or metadata changes after isolated run. Final source bindings were present before the run; final compose_body remains byte-identical. Prior31/32 source snapshots retained."
+}

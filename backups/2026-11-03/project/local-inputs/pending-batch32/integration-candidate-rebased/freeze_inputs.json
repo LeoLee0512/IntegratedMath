@@ -1,0 +1,66 @@
+{
+  "manuscripts": {
+    "real_sequences_cauchy.md": "03dcdda8e456244ae0ddce055f3cf57cdab9b843c5bf4f7fb3ed12a1c62d5b93",
+    "real_sequences_cauchy_answers.md": "346a6225efd2652d09c38f47f577a823155668b2f48dc2b8e277461bf776565c",
+    "real_function_limits.md": "3b71dc172ab18a73bedd72e7cc9036ae7d053699ade02db83e77f2f531993ce8",
+    "real_function_limits_answers.md": "532ed11bd537ed577bf73ba713ff38cdfbdf18f9dd946449c3c8d4ffc942d37a"
+  },
+  "review_reports": [
+    {
+      "observed_path": "/tmp/real_sequences_cauchy_math_review.md",
+      "sha256": "eb4cfbae7fa43a013c23721ba6cb13531d818800961c47c407e6ba6f0a56a7f1",
+      "bytes": 7682,
+      "intended_repository_path": "research/production/real_sequences_cauchy_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/plan_multiplication",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_function_limits_math_review.md",
+      "sha256": "d924a09b851ffe540ee950677c1e90fc54d784e8160de437187a2753a7b04af9",
+      "bytes": 8437,
+      "intended_repository_path": "research/production/real_function_limits_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/plan_multiplication",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_cauchy_function_limits_pedagogy_review.md",
+      "sha256": "1cbaf1421839e0e55ef1b70c3b52fe77f1d1aa5f1cccd83cae09ff40638a34fc",
+      "bytes": 9580,
+      "intended_repository_path": "research/production/real_cauchy_function_limits_pedagogy_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/visual21_front",
+      "scope_as_reported": "Independent full final text and solutions review; not source/build/PDF acceptance",
+      "current_manuscript_hashes_present": true
+    }
+  ],
+  "planning_evidence": [
+    {
+      "observed_path": "/tmp/real_cauchy_function_limits_plan.md",
+      "sha256": "6a56e655f0c3d9859c644226eec232ff91e08fba33463413e1d9902464053e53",
+      "bytes": 14237,
+      "intended_repository_path": "research/production/real_cauchy_function_limits_plan.md",
+      "installation_status": "pending_root_integration",
+      "role": "plan by review22, future CA author; planning only"
+    },
+    {
+      "observed_path": "/tmp/real_cauchy_function_limits_concept_review.md",
+      "sha256": "604eaabbfafcee2f9abcfd05770c27c04aad173ac7cfb19c323bb8cd9cea0459",
+      "bytes": 10035,
+      "intended_repository_path": "research/production/real_cauchy_function_limits_concept_review.md",
+      "installation_status": "pending_root_integration",
+      "role": "independent concept reviewer /root/plan_multiplication; restored original bytes"
+    },
+    {
+      "observed_path": "/tmp/real_cauchy_function_limits_source_review.md",
+      "sha256": "75d73821da501975736097c1de6879a7b470ff3f9ca87d94527f6bb18cacceb9",
+      "bytes": 6084,
+      "intended_repository_path": "research/production/real_cauchy_function_limits_source_review.md",
+      "installation_status": "pending_root_integration",
+      "role": "review22 author source/obligation review; NOT independent review of own CA manuscript"
+    }
+  ]
+}

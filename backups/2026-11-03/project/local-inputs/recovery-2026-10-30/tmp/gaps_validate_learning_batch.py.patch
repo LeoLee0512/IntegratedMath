@@ -1,0 +1,75 @@
+--- a/tools/validate_learning_batch.py
++++ b/tools/validate_learning_batch.py
+@@ -29,7 +29,7 @@
+                                  RATIONAL_INEQUALITIES_REPORT, RATIONAL_AFFINE_REPORT, RATIONAL_POWERS_SUMS_REPORT,
+                                  RATIONAL_POLYNOMIAL_BASIC_REPORT, RATIONAL_POLYNOMIAL_PRODUCT_REPORT,
+                                  RATIONAL_POLYNOMIAL_LINEAR_DIVISION_REPORT, RATIONAL_QUADRATICS_REPORT, source_hashes, artifact_hashes,
+-                                 hashes)
++                                 hashes, rational_gap_figure_source)
+ 
+ REPORT = ROOT / "data/production/batch_validation.json"
+ SCREEN = BUILD / "screenshots"
+@@ -359,6 +359,7 @@
+                     or "基础单元B2.15" in text or "基础单元B2.16" in text
+                     or "基础单元B2.17" in text or "基础单元B2.18" in text
+                     or "基础单元B2.19" in text or "基础单元B2.20" in text
++                    or "基础单元B2.21" in text or "基础单元B2.22" in text
+                     or "附录十五有限双射" in text
+                     or "附录十六有理数一次方程" in text
+                     or "附录十七有理数不等式" in text
+@@ -368,6 +369,7 @@
+                     or "附录二十一多项式乘法" in text
+                     or "附录二十二一次除式" in text
+                     or "附录二十三有理平方" in text
++                    or "附录二十四有理缺口" in text
+                     or "附录一全部课后题参考答案" in text
+                     or "基础单元B1.1自然数" in text or "基础单元B1.2乘法" in text):
+                 selected.add(index)
+@@ -2545,20 +2547,20 @@
+     require(len(re.findall(r"^### 第\d+章 ", full, re.M)) == 534, "Catalogue chapters mismatch")
+     require(len(re.findall(r"^- 第\d+节 ", full, re.M)) == 6006, "Catalogue sections mismatch")
+     for text in [full, review]:
+-        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "26", "526", "529", "528", "529", "528"],
+-                "Teaching chapter order must follow prerequisites, with chapters 529 and 528 continued")
++        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "26", "526", "529", "528", "529", "528", "526"],
++                "Teaching chapter order must follow prerequisites, with chapters 529, 528 and 526 continued")
+         require(re.findall(r"^# 第(\d+)部分 ", text, re.M) == ["1", "7", "63"],
+                 "Teaching parts must be 1, 7 and 63")
+         require(re.findall(r"^## 第(\d+)节 ", text, re.M) == [str(i) for i in range(1, 24)], "First chapter section numbering changed")
+-        require(re.findall(r"^# 附录(二十三|二十二|二十一|二十|十九|十八|十七|十六|十五|十四|十三|十二|十一|十|[一二三四五六七八九]) ", text, re.M)
+-                == ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三"],
++        require(re.findall(r"^# 附录(二十四|二十三|二十二|二十一|二十|十九|十八|十七|十六|十五|十四|十三|十二|十一|十|[一二三四五六七八九]) ", text, re.M)
++                == ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三", "二十四"],
+                 "Appendix numbering conflict")
+         answers = text.index("# 附录一 ")
+         require(all(text.index("{#" + anchor + "}") < answers for _stem, anchor, *_ in UNITS),
+                 "Answers interleaved with teaching prose")
+         require(all(text.index("{#" + q + "}") < answers < text.index("{#" + a + "}") for q, a in PAIRS),
+                 "Exercise/answer separation failed")
+-        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation"]
++        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation", "526-continuation"]
+         chapter_starts = {segment: text.index("{#chapter-" + segment + "}") for segment in teaching_order}
+         chapter_ends = {segment: chapter_starts[teaching_order[i + 1]]
+                         if i + 1 < len(teaching_order) else answers
+@@ -2569,15 +2571,19 @@
+             segment = "529-continuation" if anchor in ("coord-unit", "affgraph-unit") else str(parent)
+             if anchor in ("pow-unit", "sum-unit", "polyrec-unit", "polyops-unit", "polymul-unit", "polyprod-unit", "polydiv-unit", "polyroot-unit", "sqrat-unit", "quad-unit"):
+                 segment = "528-continuation"
++            if anchor in ("qgap-unit", "cut-unit"):
++                segment = "526-continuation"
+             require(int(segment.split("-")[0]) == parent
+                     and chapter_starts[segment] < position < chapter_ends[segment],
+                     "Unit assigned to the wrong teaching chapter: " + anchor)
+         for phrase in ["第26章仅有部分单元", "第526章未完成", "第529章未完成", "第528章未完成",
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+-                       "第529章续写，不新增分类章或节",
+-                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "十六张插图"]:
++                       "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",
++                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "十七张插图"]:
+             require(phrase in text, "Missing scope/figure disclosure: " + phrase)
++        require(rational_gap_figure_source().strip() in text,
++                "Rational gap appendix does not contain the current complete figure function")
+         require("本轮共发出" not in text and "HTTP 404" not in text, "Research request transcript leaked into book")
+     book_reports = {stem: audit_book(stem, len(FIGURES), PAIRS) for stem in NEW_STEMS}
+     book_reports["综合数学_第一章审阅版"] = audit_book("综合数学_第一章审阅版", 4, PAIRS[:14])

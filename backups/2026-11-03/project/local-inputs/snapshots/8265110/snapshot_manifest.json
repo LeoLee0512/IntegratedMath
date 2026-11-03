@@ -1,0 +1,33 @@
+{
+  "source_commit": "8265110265558b9d73ef8294a5edc0951d882355",
+  "pdf_pages": 243,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "51f33b0a213a56895cb49e3bc95486e4771fa414680eae199dc306c401ca6270",
+      "bytes": 1208264
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "ef5d5d6748e8abd6b5cdaac8833d90f8b6577ec3614117f540292db100a9568e",
+      "bytes": 537803
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "beab36a21908f1363e3e206534a0e5e4d5756888f63145bc01fd5749d6fd0e41",
+      "bytes": 53701556
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "267b8d4e094bed89fd488269b86422e291d0159fb626c92ad5014b92cf7796a8",
+      "bytes": 10746
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "d63aca0d27b48e5474d8ebda127a8543fb6935f7348625d3cf17eed973f560fa",
+      "bytes": 381250
+    },
+    "data/production/package_validation.json": {
+      "sha256": "d5c36e7d17aa6c790ae140a454e21df659592c36a1e984e26bb1a16737b46649",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "No Library/upload capability available; no upload attempted; no library_file_id.",
+  "created_at": "2026-10-27T16:14:15.217566+00:00",
+  "scope": "B1.1–B1.15 and chapter-one draft; 134 exercises; chapter 26 partial; next batch rational multiplication and nonzero reciprocal"
+}

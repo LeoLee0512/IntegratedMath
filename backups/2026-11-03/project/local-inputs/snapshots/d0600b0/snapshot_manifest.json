@@ -1,0 +1,32 @@
+{
+  "source_commit": "d0600b03e2446e0a36fda031d9dfd77b0ee85bb8",
+  "pdf_pages": 114,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "645639ca5dd232da82a7cfb4fc5eb3ae0833f9a3a1c9342c5e089886c4f84f4d",
+      "bytes": 775531
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "4bb996cb70c691c019194989adb659d0a01417f7d2847f19baef093704b44eb7",
+      "bytes": 232960
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "4479ad31c462c839a1d3ae654edaf19e2772ff08b6771c761f90d854c6c02d14",
+      "bytes": 26972148
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "c53141de110bba9312d7da6e8c9958549a1f91f66f67e4ec1c5b897ef2c817b2",
+      "bytes": 7991
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "2cc371a1e0ec2c1dd171a9758b23f73d5ced69db106f0d61eb6b1f124327b79f",
+      "bytes": 218329
+    },
+    "data/production/package_validation.json": {
+      "sha256": "3604b7ed81d7ea80c6be370e8212005922164c3cbfa282b39d3915080a6f470d",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "Library tooling unavailable; no upload attempted; no library_file_id.",
+  "scope": "Chapter 1 and foundation units B1.1–B1.6 only; chapter 26 and whole book incomplete."
+}

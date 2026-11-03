@@ -1,0 +1,58 @@
+{
+  "status": "drafts_math_reviewed_pedagogy_build_pending_not_batch_acceptance",
+  "saved_at": "2026-10-29T20:04:44.311098+00:00",
+  "files": {
+    "rational_gaps_cuts_plan.md": {
+      "sha256": "3f9e500c20aa899fd2e6fa26619bac604cc49fc78ba4ea3004e80d9ca1bf2492",
+      "bytes": 18977
+    },
+    "rational_gaps_cuts_concept_review.md": {
+      "sha256": "93e7731af6b637c7edddfc9b9ea8f926db8650fe16283e76e30f9075b7002e63",
+      "bytes": 6720
+    },
+    "rational_gaps_bounds.md": {
+      "sha256": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+      "bytes": 16885
+    },
+    "rational_gaps_bounds_answers.md": {
+      "sha256": "80cdf0a274ae73e0ed7546c4be8345534671f64bef1d441dca7b54507ad33675",
+      "bytes": 12017
+    },
+    "dedekind_cuts_order.md": {
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "bytes": 19705
+    },
+    "dedekind_cuts_order_answers.md": {
+      "sha256": "cf5de337b8698a917fbabb0cef6d17e66db10227c05fc75179f3d41bfd0bac3c",
+      "bytes": 16508
+    },
+    "rational_gaps_bounds_math_review.md": {
+      "sha256": "03aa4916f29209d6c733f2ee97ef0a27c77caf0525800c6956beb268eb310554",
+      "bytes": 7338
+    },
+    "dedekind_cuts_order_math_review.md": {
+      "sha256": "3976abb58d942ae6c6b12e92fcf83a4c9a4651958de670e3cbe9e0110043363a",
+      "bytes": 10555
+    },
+    "rational_gaps_cuts_sources.md": {
+      "sha256": "a0640b04ff3e045250d55066fba58d8178d946ab13b92305cf6624a4ef6d9db3",
+      "bytes": 28458
+    },
+    "rational_gaps_cuts_sources.json": {
+      "sha256": "f3716babcc2017d5c0ba37899e85c118002c6413e5682d5b595a5e0e5bb69e27",
+      "bytes": 54981
+    },
+    "rational_gap_figure.py": {
+      "sha256": "057b33b5c518d498bdbe37f026048494cdc1887c5142e52de8b20f4622bbf278",
+      "bytes": 2290
+    },
+    "b2_rational_gap.png": {
+      "sha256": "d86ad3a6737614ac2ee439abf34c61913bb224220e4e48728783947002762667",
+      "bytes": 74066
+    },
+    "rational_gap_figure_review.md": {
+      "sha256": "cc83851df4e2223e58d153ec00dfe062a625749ad634992845eda4dcfc3ce978",
+      "bytes": 10162
+    }
+  }
+}

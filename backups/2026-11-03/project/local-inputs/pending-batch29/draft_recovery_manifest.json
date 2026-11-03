@@ -1,0 +1,32 @@
+[
+  {
+    "observed": "/tmp/real_lines_projection_plan.md",
+    "saved": "/workspace/IntegratedMath-book/local-inputs/pending-batch29/real_lines_projection_plan.md",
+    "sha256": "01769481f01991d42a97ce3d76317f2f87791dd8dd9f4997cd90dfa52051f2ec",
+    "status": "candidate_not_accepted"
+  },
+  {
+    "observed": "/tmp/draw_real_projection.py",
+    "saved": "/workspace/IntegratedMath-book/local-inputs/pending-batch29/draw_real_projection.py",
+    "sha256": "946ee7170d623a1b78f827e0522902df63bf8be227dbd6fd9b46cfe7257e88eb",
+    "status": "candidate_not_accepted"
+  },
+  {
+    "observed": "/tmp/real_projection_figure_review.md",
+    "saved": "/workspace/IntegratedMath-book/local-inputs/pending-batch29/real_projection_figure_review.md",
+    "sha256": "bc4679f9fa99e568f9d0e6cab7e82cfe85a5452f4a6d451adea7ed316c59d90b",
+    "status": "candidate_not_accepted"
+  },
+  {
+    "observed": "/tmp/real-projection-figure/b2_real_plane_projection.png",
+    "saved": "/workspace/IntegratedMath-book/local-inputs/pending-batch29/b2_real_plane_projection.png",
+    "sha256": "c87af30fb2f0479e016176d938d242ef9e22c17877d0d6bccfff6d6d5057c59c",
+    "status": "candidate_not_accepted"
+  },
+  {
+    "observed": "/tmp/real_plane_lines.md",
+    "saved": "/workspace/IntegratedMath-book/local-inputs/pending-batch29/real_plane_lines.md",
+    "sha256": "d60c35c2551eda31559795f8e1d63d2f81c2cb0a28d0ed857cf1aed8f31f70bb",
+    "status": "candidate_not_accepted"
+  }
+]

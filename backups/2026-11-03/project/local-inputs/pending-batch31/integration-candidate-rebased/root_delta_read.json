@@ -1,0 +1,6 @@
+{
+  "time": "2026-10-30T04:55:07.437541+00:00",
+  "reviewer": "root",
+  "scope": "Prior candidate full-read retained; actual full read of changes_since_before_layout.patch, layout_rebase, sourceMD new paragraph and all changed JSON fields. All 26 delivery hashes match. No installation yet.",
+  "delivery_sha256": "d6f6f078736b981d97b998b32f3b30c57b5ad8df20855a616fb6c734444c14df"
+}

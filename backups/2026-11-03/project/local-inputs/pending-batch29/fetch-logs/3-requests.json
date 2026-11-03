@@ -1,0 +1,199 @@
+[
+  {
+    "request_id": "openstax_collection",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+    "checked_at_utc": "2026-10-29T17:29:05.315711+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+    "bytes": 5642,
+    "sha256": "993990c353220be879928579c1393ced90c8b54764b4ba1182ba660b54e8ce32",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_exponents",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81382/index.cnxml",
+    "checked_at_utc": "2026-10-29T17:29:05.316253+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81382/index.cnxml",
+    "bytes": 1568,
+    "sha256": "64ad32f8d264f3389e6a1869504e67360c9e9ac5fa0df2c3ce79f08d9af41001",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_powers",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+    "checked_at_utc": "2026-10-29T17:29:05.316848+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+    "bytes": 179034,
+    "sha256": "5a0a6cd939b20eabbbc13d7c8cc7ac047c9bdeb29ffec2be064af5f7dcbaf9d8",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_products",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+    "checked_at_utc": "2026-10-29T17:29:05.317599+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+    "bytes": 311916,
+    "sha256": "023e5187687bc3426e13ce1a6c93d1b3cc8ea7764cc35d552327a4cafe36456d",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_license",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+    "checked_at_utc": "2026-10-29T17:29:05.318025+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+    "bytes": 21442,
+    "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_preface",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+    "checked_at_utc": "2026-10-29T17:29:05.658317+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+    "bytes": 23553,
+    "sha256": "f4d01bced59370e726f637a3d5b846ad77aa3536dba5a838cb00ceeadebd3033",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_group_defs",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+    "checked_at_utc": "2026-10-29T17:29:05.670992+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+    "bytes": 52245,
+    "sha256": "5fe7a3a3f0827d6f50ea422574316731b470631308fe5a5d4faf8a5f97b9d885",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_group_basic",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Basic.lean",
+    "checked_at_utc": "2026-10-29T17:29:05.795981+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Basic.lean",
+    "bytes": 38946,
+    "sha256": "897682a769e0862a2ea040b604015588a465a98da46a1294334beb193c3d085a",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_finsum",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+    "checked_at_utc": "2026-10-29T17:29:05.901676+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+    "bytes": 49194,
+    "sha256": "48d917421143e1e0a03fbe5e3ec2b035a8670c53c3a9f0e17f71dad80f789ecc",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_ringsum",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Ring/Finset.lean",
+    "checked_at_utc": "2026-10-29T17:29:05.947271+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Ring/Finset.lean",
+    "bytes": 15876,
+    "sha256": "5e370608955962fd9b3666c3a4dd5a4c085ce422fc39b6bd20898954f7dc31d1",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_polynomial",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+    "checked_at_utc": "2026-10-29T17:29:06.149199+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+    "bytes": 43310,
+    "sha256": "58729bca673d44ea3694f7c3edc292b01da80e777a90faf15fdbe2ef4ce7ba23",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_eval",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+    "checked_at_utc": "2026-10-29T17:29:06.154298+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+    "bytes": 24376,
+    "sha256": "a623faee92573a0123e1af4abbdaf13316d409b5cd8693bf63a6d9d93e38b8b4",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_degree",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Defs.lean",
+    "checked_at_utc": "2026-10-29T17:29:06.199942+00:00",
+    "http_status": 404,
+    "access_status": "http_error"
+  },
+  {
+    "request_id": "mathlib_license",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+    "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+    "bytes": 11357,
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_multiply",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+    "checked_at_utc": "2026-10-29T17:30:13.350355+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+    "bytes": 208873,
+    "sha256": "83d265c9ba9fc274e90c27e3d660dfc5677371986abeaf1fc99eb8114a286133",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_degree_definitions",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+    "checked_at_utc": "2026-10-29T17:30:13.351003+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+    "bytes": 20441,
+    "sha256": "d3d0fd4d898113bfb7316bd4484d9dee8455f04aa5d1a038d1b23e0c3e63665f",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_coeff",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+    "checked_at_utc": "2026-10-29T17:30:13.351388+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+    "bytes": 13849,
+    "sha256": "9c393b82f87e98e16d38f71007eddd2ed2d0a712c728996a9ae14191c46d961f",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_finsum_defs",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean",
+    "checked_at_utc": "2026-10-29T17:30:13.356856+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean",
+    "bytes": 34237,
+    "sha256": "b1e0e38c64a3ad5252bcec93c568646279af5821e16c9dc24edbe42e8420be8c",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_finsupp_defs",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+    "checked_at_utc": "2026-10-29T17:30:13.357368+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+    "bytes": 16938,
+    "sha256": "7efe21a1f4a910c84ec21238d4a55e5e3e1c7889c1eb08a4437f7d1f843da007",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "mathlib_fubini",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.lean",
+    "checked_at_utc": "2026-10-29T17:30:50.004224+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.lean",
+    "bytes": 6437,
+    "sha256": "973065e7327db3b86ef53ef814c3212c1723b8b51bf517eb624438ab68b7c1dc",
+    "access_status": "verified_http_200"
+  }
+]

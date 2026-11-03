@@ -1,0 +1,53 @@
+{
+  "status": "text_reviewed_candidates_not_build_accepted",
+  "files": [
+    {
+      "file": "real_plane_lines.md",
+      "sha256": "1bdff1e97eef46b6e3580c571911102774451f4e8c3069fe23d05684cb7b42be"
+    },
+    {
+      "file": "real_plane_lines_answers.md",
+      "sha256": "e1972719fda1dc291fc3b7f14a35491b0cc5f3553d267364e0cf5e4cd4a8a2b2"
+    },
+    {
+      "file": "real_plane_projection.md",
+      "sha256": "ebb277469fdcbdc34241420d122a6809c424d23fe6629a2c00b7b149f01f21c4"
+    },
+    {
+      "file": "real_plane_projection_answers.md",
+      "sha256": "bdf1d68ae934cc6465642ee53f704951432fea857fccda12b6a662f2708d21ab"
+    },
+    {
+      "file": "real_plane_lines_math_review.md",
+      "sha256": "620cfede76c88123e438d760deb2be039593dfdee349c80864e858a31d40d982"
+    },
+    {
+      "file": "real_plane_projection_math_review.md",
+      "sha256": "45b70031a6f6fbfe421a45fbaee5390d64c25e978dcf8c7c2ec937fffee32817"
+    },
+    {
+      "file": "real_lines_projection_pedagogy_review.md",
+      "sha256": "91aa60bb33f5e726eb6912d6ec7d7a70bb91c0822589de845a99a5ad7b82dbbb"
+    },
+    {
+      "file": "real_lines_projection_sources.json",
+      "sha256": "2f42318a0db28be721655b4fc2b4bc2797efa9ccffaecd496de5a8c38fd2602e"
+    },
+    {
+      "file": "real_lines_projection_plan.md",
+      "sha256": "01769481f01991d42a97ce3d76317f2f87791dd8dd9f4997cd90dfa52051f2ec"
+    },
+    {
+      "file": "real_lines_projection_concept_review.md",
+      "sha256": "6f973d34517a605771a90d220a8b68f7bfcc761719f25fc71c266c3baa7f4c60"
+    },
+    {
+      "file": "draw_real_projection.py",
+      "sha256": "946ee7170d623a1b78f827e0522902df63bf8be227dbd6fd9b46cfe7257e88eb"
+    },
+    {
+      "file": "real_projection_figure_review.md",
+      "sha256": "bc4679f9fa99e568f9d0e6cab7e82cfe85a5452f4a6d451adea7ed316c59d90b"
+    }
+  ]
+}

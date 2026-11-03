@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2684, in <module>
+    main()
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2626, in main
+    pdf_reports = {stem: audit_pdf(stem) for stem in PDF_STEMS}
+                         ^^^^^^^^^^^^^^^
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 449, in audit_pdf
+    require(not overflow, f"{stem}: page-boundary overflow {overflow[:8]}")
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 43, in require
+    raise ValueError(message)
+ValueError: 综合数学_基础续写审阅版: page-boundary overflow [{'page': 660, 'text': "ax.text(pos,y,str(x),ha='center',va='center',fontsize=21,color=color,bbox=dict(boxstyle='round,pad=.35'"}, {'page': 660, 'text': "fig.tight_layout();fig.savefig(out/'b2_rational_gap.png',dpi=180,bbox_inches='tight',facecolor='white')"}]

@@ -1,0 +1,33 @@
+{
+  "source_commit": "d67328fee6f724c4df7a32e37639d67a266c52eb",
+  "pdf_pages": 216,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "2e4c900a3cdf3e970cdbf22f4633dd8b369210bda26401044e602968f1c6f4f4",
+      "bytes": 1122989
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "8092d0a14b36246b6e0506310ac0be0ea8ba10d558fc10d1dbe4e67a4b278ed9",
+      "bytes": 471461
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "d8283e9e362488296c816798aa407bf35ce4b2c98ce3b1cf81331ebe776d46c7",
+      "bytes": 47756619
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "050bb4379aedca1c241ca58dfe255dc6adb8a76b478bb998367986143553d2b1",
+      "bytes": 9242
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "51bd2321f9c5a3d2a3ab48b08ce165b54131dc502cf6ec6ffba5e7f36727ba23",
+      "bytes": 343950
+    },
+    "data/production/package_validation.json": {
+      "sha256": "113ed3ff3624f3932659713a0ccb41af125bf37245c5ce36e3df5a201715197b",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "No Library/upload capability available; no upload attempted; no library_file_id.",
+  "created_at": "2026-10-27T15:52:23.839877+00:00",
+  "scope": "B1.1–B1.13 and chapter-one draft; 118 exercises; chapter 26 partial; next batch rational construction"
+}

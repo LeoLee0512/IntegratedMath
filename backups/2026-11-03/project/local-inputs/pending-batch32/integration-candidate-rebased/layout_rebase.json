@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-30T04:46:46.264438+00:00",
+  "status": "explicit_root_layout_and_scope_rebase_verified_by_fresh_isolated_structure",
+  "root_change_observed_path": "/workspace/IntegratedMath-book/tools/build_learning_batch.py",
+  "root_change_sha256": "d18da64c7a6a984d09ec2557e0f4fd2cffa9f99d54f269c99f29874d1330ec05",
+  "old_root_builder_sha256": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353",
+  "changes": "Exact three line-edit blocks: split long source paragraph; replace Unicode subscript prose with math; separate output filename and entry prose. No drawing function or mathematical manuscript changes.",
+  "history_directory": "/tmp/batch32-integration/history-before-30-layout-rebase",
+  "candidate_builder_sha256": "c39998cc8470362a1685806f349b83332257f952d95ee63057cef2f0482db12b",
+  "new_baseline_builder_sha256": "6b3031549edcb05e317452ee693c643b9d44088dceba28e4b59393a4afedd8e5",
+  "formal_writes": false,
+  "validator_scope_rebase": {
+    "old_root_validator_sha256": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c",
+    "new_root_validator_sha256": "3793778d12cbbc69953f0a47aac3b1063a786314aa370a3d94d320ae0a8d558a",
+    "candidate_validator_sha256": "df827cfea5bbb9b0405ef94dd0facb17909f0b315e2c4fa424638bf7b6c66fbf",
+    "exact_guard": "\"第26章、第242章仅有部分单元，第146章也只开始有限入口\"",
+    "scope": "Strengthens exact truthful partial-chapter phrase; original audit_book unchanged."
+  },
+  "proactive_new_reference_paragraph_layout": {
+    "status": "applied",
+    "scope": "New31 source version / fixed40-character commit / link explanation split into three paragraphs;32 inherits31 and applies same structure to new32 citation. No proof/source factual changes.32 chapter introduction uses Chinese 误差—半径.",
+    "candidate_builder_sha256": "c50d4f6a3d33d0ff0638658ccb3dc7e7eeb5fb66fdce6658236be5da3f37c4ab",
+    "verified": true
+  }
+}

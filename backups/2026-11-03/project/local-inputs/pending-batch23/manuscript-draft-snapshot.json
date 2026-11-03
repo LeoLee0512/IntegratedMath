@@ -1,0 +1,21 @@
+{
+  "status": "unaccepted_drafts_under_review",
+  "files": [
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch23/dedekind_nonnegative_product.md",
+      "sha256": "73e77200fa17f9c5cf8861b0655c3529075a8ce3d4c7dbe309db0527fd0f2be7"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch23/dedekind_nonnegative_product_answers.md",
+      "sha256": "2fbb1afebf2dd314fa065a92aaae326d13d2928d086b60daa2b9a30e0ed3d511"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch23/dedekind_nonnegative_laws.md",
+      "sha256": "6ca365cfcc014cb07b862802a236fd1ae921a3a94ea7c725072e9174c9f80b55"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch23/dedekind_nonnegative_laws_answers.md",
+      "sha256": "d7b17f64f3b95b0e8f3606536ffd9be9538d91ef5e8d127b7b69146b4db2346c"
+    }
+  ]
+}

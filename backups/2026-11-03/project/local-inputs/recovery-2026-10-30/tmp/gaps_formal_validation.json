@@ -1,0 +1,30 @@
+{
+  "status": "formal_inputs_preflight_passed_no_pdf_build",
+  "units": 43,
+  "pairs": 358,
+  "figures": 17,
+  "visible_math": 21625,
+  "alt_math": 4,
+  "internal_links": 3089,
+  "appendices": 24,
+  "catalog": [
+    63,
+    534,
+    6006
+  ],
+  "old_manuscripts_unchanged": 82,
+  "sources": 183,
+  "artifacts": 47,
+  "figure_function_exact": true,
+  "sha256": {
+    "manuscript/foundations/rational_gaps_bounds.md": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+    "manuscript/foundations/rational_gaps_bounds_answers.md": "80cdf0a274ae73e0ed7546c4be8345534671f64bef1d441dca7b54507ad33675",
+    "manuscript/foundations/dedekind_cuts_order.md": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+    "manuscript/foundations/dedekind_cuts_order_answers.md": "cf5de337b8698a917fbabb0cef6d17e66db10227c05fc75179f3d41bfd0bac3c",
+    "research/production/rational_gaps_cuts_sources_2026-10-29.md": "34af76f666d36e751686a593047f84d99d2926e686e5ed24f37cf3ffe56823af",
+    "research/production/rational_gaps_cuts_sources_2026-10-29.json": "56d835daf8d9728dfd12346624efe4ca189f446daf3e49a9deec3a801a34dd01",
+    "tools/build_learning_batch.py": "69cba7f8d1fe813443a94471802a6ec9876080e8248fa690b9ef932a83add931",
+    "tools/validate_learning_batch.py": "757a0a572908734ccd7a6528b32609e6f7fdbf0f96108d3122f413b3e3432e4e",
+    "tools/draw_foundations_batch.py": "e6b56a2012456974d17802aac31f785eb1bcd182cc4dc98afeddcd12e4aaab82"
+  }
+}

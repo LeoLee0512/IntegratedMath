@@ -1,0 +1,295 @@
+--- a/tools/build_learning_batch.py
++++ b/tools/build_learning_batch.py
+@@ -36,7 +36,7 @@
+ FIGURES = ["ch01_disjoint.png", "ch01_overlap.png", "ch01_rhythm.png",
+            "ch01_square.png", "b1_place_value.png", "b1_rational_distance.png", "b1_ratio_allocation.png",
+            "b2_function_mapping.png", "b2_inverse_mapping.png", "b2_elimination_steps.png",
+-           "b2_absolute_bounds.png", "b2_affine_coordinates.png", "b2_finite_sum.png", "b2_polynomial_records.png", "b2_polynomial_product.png", "b2_quadratic_bound.png"]
++           "b2_absolute_bounds.png", "b2_affine_coordinates.png", "b2_finite_sum.png", "b2_polynomial_records.png", "b2_polynomial_product.png", "b2_quadratic_bound.png", "b2_rational_gap.png"]
+ UNITS = [
+     ("natural_numbers", "b1-natural-numbers", "b1", "natural_number"),
+     ("place_value", "b1-place-value", "b1-pv", "place_value"),
+@@ -79,6 +79,8 @@
+     ("polynomial_roots_identity", "polyroot-unit", "polyroot", "polynomial_roots_identity"),
+     ("rational_square_equations", "sqrat-unit", "sqrat", "rational_square_equations"),
+     ("rational_quadratic_equations", "quad-unit", "quad", "rational_quadratic_equations"),
++    ("rational_gaps_bounds", "qgap-unit", "qgap", "rational_gaps_bounds"),
++    ("dedekind_cuts_order", "cut-unit", "cut", "dedekind_cuts_order"),
+ ]
+ EDUCATION_UNITS = {
+     "ratio-unit": {"chapter": 526, "code": "97Fxx", "section": "97F80"},
+@@ -103,6 +105,8 @@
+     "polyroot-unit": {"chapter": 528, "code": "97Hxx", "section": "97H20"},
+     "sqrat-unit": {"chapter": 528, "code": "97Hxx", "section": "97H30"},
+     "quad-unit": {"chapter": 528, "code": "97Hxx", "section": "97H30"},
++    "qgap-unit": {"chapter": 526, "code": "97Fxx", "section": "97F50"},
++    "cut-unit": {"chapter": 526, "code": "97Fxx", "section": "97F50"},
+ }
+ WRITTEN_REPORT = ROOT / "research/production/written_arithmetic_validation.json"
+ INTEGER_REPORT = ROOT / "research/production/integer_pairs_validation.json"
+@@ -214,7 +218,9 @@
+               ROOT / "research/production/polynomial_linear_division_sources_2026-10-29.md",
+               ROOT / "research/production/polynomial_linear_division_sources_2026-10-29.json",
+               ROOT / "research/production/rational_quadratic_sources_2026-10-29.md",
+-              ROOT / "research/production/rational_quadratic_sources_2026-10-29.json"]
++              ROOT / "research/production/rational_quadratic_sources_2026-10-29.json",
++              ROOT / "research/production/rational_gaps_cuts_sources_2026-10-29.md",
++              ROOT / "research/production/rational_gaps_cuts_sources_2026-10-29.json"]
+     return hashes(paths)
+ 
+ 
+@@ -301,6 +307,9 @@
+     text = text.replace(
+         "](../../research/production/rational_quadratic_sources_2026-10-29.md)",
+         "](#rational-quadratic-sources)")
++    text = text.replace(
++        "](../../research/production/rational_gaps_cuts_sources_2026-10-29.md)",
++        "](#rational-gaps-cuts-sources)")
+     # A bare attribute after bold paragraph text is NOT a Pandoc identifier.
+     # Make question labels real headings in the assembled document only.
+     return re.sub(r"^\*\*(题[^*\n]+)\*\* (\{#[^}]+\})$", r"#### \1 \2", text, flags=re.M)
+@@ -894,14 +903,103 @@
+     return text + (ROOT / "tools/rational_quadratics.py").read_text() + "\n```\n"
+ 
+ 
++def rational_gaps_cuts_reference_addition():
++    evidence = (ROOT / "research/production/rational_gaps_cuts_sources_2026-10-29.md").read_text()
++    for identifier in ["e21ec524ca7d54f800c693b948020c188d21d01f",
++                       "7a0bcaf5e279121cb675058d7e323556343087d0", "LowerSet"]:
++        if identifier not in evidence:
++            raise ValueError("Rational gaps/cuts evidence changed: review curated citations")
++    return r"""
++## 有理数缺口与戴德金分割次序参考资料 {#rational-gaps-cuts-sources}
++
++本批正文、证明、题答、见证公式与图示独立编写。以下来源用于核查定义版本、定理条件及历史事实，不移植第三方段落、习题、图像或源码。
++
++**[GAP-LEBL]** Jiří Lebl，*Basic Analysis I*，第6.3版。
++
++固定提交：
++
++`e21ec524ca7d54f800c693b948020c188d21d01f`。
++
++[实数章节的界定义与分割练习](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex)及[许可](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md)已核。该项目提供CC BY-SA 4.0与CC BY-NC-SA 4.0双许可；此处不改编其文字或图像。来源已经具备实数与实数上确界，再用实数上确界刻画有理下集。本书不能沿用这一证明起点，而先在有理数内证明稠密、显式自然数界及平方缺口，再独立构造分割的次序。来源中的实数稠密性与阿基米德证明也不充作本书未写的先修。
++
++**[GAP-DEDEKIND]** Richard Dedekind，*Continuity and Irrational Numbers*（1872）；Wooster Woodruff Beman英译，收入 *Essays on the Theory of Numbers*。Project Gutenberg电子书21016于2007年发布，电子版日期与原作历史日期分开记录。
++
++GITenberg固定提交：
++
++`7a0bcaf5e279121cb675058d7e323556343087d0`。
++
++[译本源码](https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/blob/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex)、[元数据](https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/blob/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml)及[许可](https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/blob/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE)已核。元数据声明在美国属公有领域，并有Project Gutenberg许可及所在地法律条件，不能改写成全球无条件公有领域。原著采用两侧分割并讨论有理端点归入哪一侧；本书采用非空、非全体、下闭、无最大元的现代单侧下集约定，不把四条件逐字归作原著定义。原著改进缺口两侧的有理公式与本书公式不同，本书的 $f(q)=(2q+2)/(q+2)$ 由正文独立推导，不冒称历史原式。
++
++**[GAP-MATHLIB]** mathlib项目，v4.24.0，Apache 2.0许可。[有序域中的中点](https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean)、[阿基米德条件](https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean)、[下集定义](https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Order/UpperLower/Basic.lean)与[下集的并及序结构](https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Order/UpperLower/CompleteLattice.lean)用于条件交叉核查。库中的全部 `LowerSet` 包括空集与全体，并形成完整格；本书分割排除这两者，还要求无最大元。因此本书只证明非空、有分割上界的分割族之并仍为分割并给出上确界，不能照搬库的完整格名称或不带条件的任意族结论。库的有理数阿基米德实例所用取整结构也不作为额外先修，本书直接从合法有理记录给出自然数界。
++
++逐条访问时间、固定位置、作者、许可及字节哈希见伴生审计。目录为 `research/production/`。
++
++文件为 `rational_gaps_cuts_sources_2026-10-29.json`。
++
++只读核对源码，未编译Lean或形式化书稿。分割集合的形成公开采用有理数幂集存在的背景；不声称从集合论公理重新证明它。分割算术、有序域结构、实数开方和极限尚未建立。有限见证绘图的完整函数见[附录二十四](#rational-gap-figure-code)。
++
++"""
++
++
++def rational_gap_figure_source():
++    """Publish the exact complete function used by the current figure script."""
++    import ast
++    source = (ROOT / "tools/draw_foundations_batch.py").read_text()
++    functions = [node for node in ast.parse(source).body
++                 if isinstance(node, ast.FunctionDef) and node.name == "draw_rational_gap"]
++    if len(functions) != 1:
++        raise ValueError("Expected exactly one complete rational gap drawing function")
++    node = functions[0]
++    return "\n".join(source.splitlines()[node.lineno-1:node.end_lineno]) + "\n"
++
++
++def rational_gap_figure_appendix():
++    text = r"""
++
++# 附录二十四 有理缺口的有限见证绘图 {#rational-gap-figure-code}
++
++本附录完整列出绘图脚本 `tools/draw_foundations_batch.py` 中的 `draw_rational_gap(out)`，包括其局部更新函数、精确计算、有限断言与绘图步骤；源码直接从当前脚本提取。它只生成[有理数缺口单元](#qgap-unit)的一张有限见证图，不是任意实数或分割的数值实现，不提供通用求极限、求上确界或分割判等接口。
++
++**计算对象与依据。** 正文QG3先对每个非负有理数证明分母 $q+2>0$，并由有理运算逐项推出
++
++$$
++f(q)=\frac{2q+2}{q+2},\qquad f(q)>0.
++$$
++
++$$
++f(q)-q=\frac{2-q^2}{q+2}.
++$$
++
++$$
++f(q)^2-2=\frac{2(q^2-2)}{(q+2)^2}.
++$$
++
++从一开始只更新两次，得到 $1,4/3,7/5$；从二开始同样只更新两次，得到 $2,3/2,10/7$。六个分数与平方都用 `Fraction` 精确计算。前一行的平方依次为 $1,16/9,49/25$，均小于二，数值严格增加；后一行平方依次为 $4,9/4,100/49$，均大于二，数值严格减少。程序对四次更新检查上述两条恒等式，并核对各行符号和次序。
++
++后一行的每个值是 $S$ 的有理上界，不只是图中前三个样本的上界：正文已证，对任意非负有理 $u$，若 $u^2>2$，任意 $s\in S$ 都满足 $s^2<2<u^2$，由非负平方比较反射得到 $s<u$。有限断言仅核对这六个实例；任意成员、任意上界的结论由正文证明承担。
++
++图中方框、箭头和文字位置是布局坐标，不是数轴间距，不表示全部有理数或极限过程；图没有引入一个未定义的实数平方根。它也不枚举或决定[戴德金分割](#cut-unit)。正文的分割对象和条件上确界证明不依赖绘图。
++
++**依赖与入口。** 完整函数复用绘图脚本头已经导入的 `plt`、`FontProperties`、`Text`：分别来自 `matplotlib.pyplot`、`matplotlib.font_manager`、`matplotlib.text`。该脚本使用Matplotlib的Agg后端，并采用指定的Noto中文字体；数学样本在图形渲染前以精确分数计算，字体与布局仅影响显示。脚本头还用 `from fractions import Fraction as F` 导入精确分数类型；参数 `out` 是已经存在的输出目录路径。构建入口执行绘图脚本的 `main()`，它建立 `dist/figures` 后调用本函数，并生成 `b2_rational_gap.png`。
++
++下面列出完整函数；其中断言是固定样本的诊断，不作为外部输入校验接口或全称证明。
++
++```python
++"""
++    return (text + "from fractions import Fraction as F\n\n" + rational_gap_figure_source() + "\n```\n\n"
++            "在脚本的 `main()` 已建立输出目录 `out` 后，入口调用为：\n\n"
++            "```python\ndraw_rational_gap(out)\n```\n")
++
++
+ def compose_body():
+     opening = (CHAPTER / "part_opening.md").read_text()
+-    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章补强稿，以及四十一个基础桥接单元。"
++    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章补强稿，以及四十三个基础桥接单元。"
+               "B1.1—B1.19归入第7部分第26章；B1.20—B1.21归入第63部分第526章的数学教育主题。"
+               "B2.1—B2.4归入同部分第529章的函数教学桥接。"
+               "B2.5—B2.8归入同部分第528章的方程与不等式教学桥接。"
+               "B2.9—B2.10在这些先修之后续写第529章的有理坐标与仿射函数图像教学。"
+               "B2.11—B2.20随后续写第528章的有理数幂、有限和、多项式系数记录、运算、一次除式商余、有理根与恒等识别、有理平方及二次方程。"
++              "B2.21—B2.22再续写第526章97F50的有理数缺口、戴德金分割次序及非空有上界分割族的上确界。"
+               "第26章仅有部分单元，第526章、第529章和第528章也只有部分教学桥接，不等于相应整章或分类条目完成；本次没有第2章教学正文。"
+               "本稿教学正文按先修关系接续，不能把这一学习顺序说成MSC分类顺序。"
+               "全目录仍为63部分、534章、6006节。自然数单元明确采用佩亚诺规则、归纳与递归原则，"
+@@ -973,6 +1071,16 @@
+ 以下B2.11有理数幂、B2.12有限和、B2.13多项式系数记录、B2.14多项式加法和数乘、B2.15多项式乘法、B2.16乘法的结合、求值和次数、B2.17一次除式商余与B2.18因式定理及恒等识别接续当前学习路径，归入97H20初等代数教学主题；随后B2.19有理平方与平方方程、B2.20配方与有理二次方程主属97H30，交叉关联97H20，始终以有理数为定义域。这是[第528章前段](#chapter-528)之后的同一分类章续写，不新增分类章或节，第528章仍未完成。这里复用已建立的有理数运算和自然数递归、归纳规则，依次说明重复乘法、有限项相加、规范系数记录、线性运算、有限卷积乘法、一次除式商余及不同有理根数界；不提前引入分数指数、无限求和、收敛理论、一般多项式长除法或插值。
+ 
+ 章号继续保留完整分类目录编号，先修学习顺序在第529章续写之后回到第528章，不表示分类次序或历史先后发生改变。
++
++"""
++        if stem == "rational_gaps_bounds":
++            teaching += """
++
++# 第526章 算术与数论教育（97Fxx，续） {#chapter-526-continuation}
++
++以下B2.21有理数的稠密、界与平方缺口，B2.22戴德金分割、次序与上确界，接在第528章续写的有理平方与二次方程之后。两单元主属97F50“实数、复数（教育方面）”，交叉关联06A05与03E20；本次只处理有理数缺口和实数构造的集合、次序部分，不涉及复数。这是[第526章前段](#chapter-526)之后的第526章续写，不新增分类章或节。第526章未完成；教学先修次序不改变完整分类目录的63部分、534章、6006节。
++
++先在有理数内证明中点、显式自然数界及一个非空有界集合没有有理上确界，再公开采用有理数幂集存在的集合背景，构造非空、非全体、下闭且无最大元的有理下段。只在这些分割组成的集合上证明包含全序、有理数保序嵌入以及非空有上界分割族的并集上确界。分割加法、乘法、有序域结构、实数平方根及收敛结论均须另行建立，不能由有限见证图或名称自动获得。
+ 
+ """
+         teaching += "\n\n" + (FOUNDATIONS / (stem + ".md")).read_text()
+@@ -989,9 +1097,9 @@
+     answers += "\n\n" + "\n\n".join((FOUNDATIONS / (stem + "_answers.md")).read_text()
+                                       for stem, *_ in UNITS)
+     appendices = (CHAPTER / "appendices.md").read_text()
+-    appendices = appendices.replace("本审阅稿所用四张插图", "本批审阅稿所用十六张插图")
++    appendices = appendices.replace("本审阅稿所用四张插图", "本批审阅稿所用十七张插图")
+     appendices = appendices.replace("生成代码为 `tools/draw_ch01_figures.py`；",
+-                                    "前四张生成代码为 `tools/draw_ch01_figures.py`，后十二张为 `tools/draw_foundations_batch.py`；")
++                                    "前四张生成代码为 `tools/draw_ch01_figures.py`，后十三张为 `tools/draw_foundations_batch.py`；")
+     figure_row = "| ch01_square.png | 第17节 | 四个单位格组成的正方形 |"
+     if figure_row not in appendices:
+         raise ValueError("Original figure appendix changed; inspect before assembly")
+@@ -1008,6 +1116,8 @@
+         "\n| b2_polynomial_records.png | 基础单元B2.13 | 尾零规范化与中间零位置示意；不以有限取值判定一般多项式相等 |"
+         "\n| b2_polynomial_product.png | 基础单元B2.15 | 同一目标指标的系数贡献示意；只作有限实例，不替代全指标卷积及表示无关证明 |"
+         "\n| b2_quadratic_bound.png | 基础单元B2.20 | 有理二次式的有限采样与界；不画实数连续曲线，不以样本替代一般配方证明 |"
++        "\n| b2_rational_gap.png | 基础单元B2.21 | 六个有理见证和四次显式更新；不表示极限、全部有理数或任意分割的数值实现 |"
++        "\n\n图 `b2_rational_gap.png` 的分数、平方和比较先以精确有理数计算；框和箭头仅安排六个有限样本，完整函数见附录二十四。"
+         "\n\n图 `b2_quadratic_bound.png` 的采样值先用精确有理数计算；浮点转换只用于绘图位置，不参与数学判断。"
+         "\n\n新图 `b2_affine_coordinates.png` 的样本值先用 `Fraction` 精确计算，再转换为Matplotlib绘图所需的浮点坐标。转换只用于渲染位置，不用于数学判断；计算模块的精确有理数输入与结果，不意味着绘图软件也全程使用有理数。"
+         "图 `b2_finite_sum.png` 的项值、前缀和及两段和也先用 `Fraction` 精确计算，再以分数文本显示；框、箭头与文字位置使用绘图坐标，只安排版面，不参与求和或数学判断。"
+@@ -1025,7 +1135,8 @@
+                                     + coordinates_affine_reference_addition() + powers_sums_reference_addition()
+                                     + polynomial_basic_reference_addition() + polynomial_product_reference_addition()
+                                     + polynomial_linear_division_reference_addition()
+-                                    + rational_quadratic_reference_addition() + appendix_four)
++                                    + rational_quadratic_reference_addition()
++                                    + rational_gaps_cuts_reference_addition() + appendix_four)
+     appendices += "\n\n```python\n" + (ROOT / "tools/ch01_simulation.py").read_text() + "```\n"
+     appendices += algorithm_appendix()
+     appendices += written_arithmetic_appendix()
+@@ -1046,6 +1157,7 @@
+     appendices += rational_polynomial_product_appendix()
+     appendices += rational_polynomial_linear_division_appendix()
+     appendices += rational_quadratics_appendix()
++    appendices += rational_gap_figure_appendix()
+     return localize_book_links(teaching + "\n\n" + answers + "\n\n" + appendices)
+ 
+ 
+@@ -2077,7 +2189,7 @@
+                 "legacy_snapshot_sha256": hashlib.sha256((BUILD / "legacy_validation_snapshot.json").read_bytes()).hexdigest(),
+                 "rational_quadratics_validation": {"mode": "matching_source_report_reuse" if quadratic_reused else "executed",
+                     "report_sha256": hashes([RATIONAL_QUADRATICS_REPORT]), "source_sha256": quadratic_dependencies},
+-                "scope": "chapter 1; B1.1 through B1.19 in partial chapter 26; B1.20 and B1.21 in partial chapter 526 (97Fxx); B2.1 through B2.4 in partial chapter 529 (97Ixx); B2.5 through B2.8 in partial chapter 528 (97Hxx); B2.9 and B2.10 continue partial chapter 529 after those prerequisites; B2.11 through B2.18 continue partial chapter 528 (97H20); B2.19 and B2.20 continue that chapter (main 97H30, cross 97H20), over Q; teaching prerequisite order is not MSC or historical order"}
++                "scope": "chapter 1; B1.1 through B1.19 in partial chapter 26; B1.20 and B1.21 in partial chapter 526 (97Fxx); B2.1 through B2.4 in partial chapter 529 (97Ixx); B2.5 through B2.8 in partial chapter 528 (97Hxx); B2.9 and B2.10 continue partial chapter 529 after those prerequisites; B2.11 through B2.18 continue partial chapter 528 (97H20); B2.19 and B2.20 continue that chapter (main 97H30, cross 97H20), over Q; B2.21 and B2.22 continue partial chapter 526 (97F50) with rational gaps and cut order, not cut arithmetic; teaching prerequisite order is not MSC or historical order"}
+     (BUILD / "build_inputs.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+     print(json.dumps({"status": "built", "artifacts": NEW_STEMS,
+                       "next": "python tools/validate_learning_batch.py"}, ensure_ascii=False))
+--- a/tools/validate_learning_batch.py
++++ b/tools/validate_learning_batch.py
+@@ -29,7 +29,7 @@
+                                  RATIONAL_INEQUALITIES_REPORT, RATIONAL_AFFINE_REPORT, RATIONAL_POWERS_SUMS_REPORT,
+                                  RATIONAL_POLYNOMIAL_BASIC_REPORT, RATIONAL_POLYNOMIAL_PRODUCT_REPORT,
+                                  RATIONAL_POLYNOMIAL_LINEAR_DIVISION_REPORT, RATIONAL_QUADRATICS_REPORT, source_hashes, artifact_hashes,
+-                                 hashes)
++                                 hashes, rational_gap_figure_source)
+ 
+ REPORT = ROOT / "data/production/batch_validation.json"
+ SCREEN = BUILD / "screenshots"
+@@ -359,6 +359,7 @@
+                     or "基础单元B2.15" in text or "基础单元B2.16" in text
+                     or "基础单元B2.17" in text or "基础单元B2.18" in text
+                     or "基础单元B2.19" in text or "基础单元B2.20" in text
++                    or "基础单元B2.21" in text or "基础单元B2.22" in text
+                     or "附录十五有限双射" in text
+                     or "附录十六有理数一次方程" in text
+                     or "附录十七有理数不等式" in text
+@@ -368,6 +369,7 @@
+                     or "附录二十一多项式乘法" in text
+                     or "附录二十二一次除式" in text
+                     or "附录二十三有理平方" in text
++                    or "附录二十四有理缺口" in text
+                     or "附录一全部课后题参考答案" in text
+                     or "基础单元B1.1自然数" in text or "基础单元B1.2乘法" in text):
+                 selected.add(index)
+@@ -2545,20 +2547,20 @@
+     require(len(re.findall(r"^### 第\d+章 ", full, re.M)) == 534, "Catalogue chapters mismatch")
+     require(len(re.findall(r"^- 第\d+节 ", full, re.M)) == 6006, "Catalogue sections mismatch")
+     for text in [full, review]:
+-        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "26", "526", "529", "528", "529", "528"],
+-                "Teaching chapter order must follow prerequisites, with chapters 529 and 528 continued")
++        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "26", "526", "529", "528", "529", "528", "526"],
++                "Teaching chapter order must follow prerequisites, with chapters 529, 528 and 526 continued")
+         require(re.findall(r"^# 第(\d+)部分 ", text, re.M) == ["1", "7", "63"],
+                 "Teaching parts must be 1, 7 and 63")
+         require(re.findall(r"^## 第(\d+)节 ", text, re.M) == [str(i) for i in range(1, 24)], "First chapter section numbering changed")
+-        require(re.findall(r"^# 附录(二十三|二十二|二十一|二十|十九|十八|十七|十六|十五|十四|十三|十二|十一|十|[一二三四五六七八九]) ", text, re.M)
+-                == ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三"],
++        require(re.findall(r"^# 附录(二十四|二十三|二十二|二十一|二十|十九|十八|十七|十六|十五|十四|十三|十二|十一|十|[一二三四五六七八九]) ", text, re.M)
++                == ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三", "二十四"],
+                 "Appendix numbering conflict")
+         answers = text.index("# 附录一 ")
+         require(all(text.index("{#" + anchor + "}") < answers for _stem, anchor, *_ in UNITS),
+                 "Answers interleaved with teaching prose")
+         require(all(text.index("{#" + q + "}") < answers < text.index("{#" + a + "}") for q, a in PAIRS),
+                 "Exercise/answer separation failed")
+-        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation"]
++        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation", "526-continuation"]
+         chapter_starts = {segment: text.index("{#chapter-" + segment + "}") for segment in teaching_order}
+         chapter_ends = {segment: chapter_starts[teaching_order[i + 1]]
+                         if i + 1 < len(teaching_order) else answers
+@@ -2569,15 +2571,19 @@
+             segment = "529-continuation" if anchor in ("coord-unit", "affgraph-unit") else str(parent)
+             if anchor in ("pow-unit", "sum-unit", "polyrec-unit", "polyops-unit", "polymul-unit", "polyprod-unit", "polydiv-unit", "polyroot-unit", "sqrat-unit", "quad-unit"):
+                 segment = "528-continuation"
++            if anchor in ("qgap-unit", "cut-unit"):
++                segment = "526-continuation"
+             require(int(segment.split("-")[0]) == parent
+                     and chapter_starts[segment] < position < chapter_ends[segment],
+                     "Unit assigned to the wrong teaching chapter: " + anchor)
+         for phrase in ["第26章仅有部分单元", "第526章未完成", "第529章未完成", "第528章未完成",
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+-                       "第529章续写，不新增分类章或节",
+-                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "十六张插图"]:
++                       "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",
++                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "十七张插图"]:
+             require(phrase in text, "Missing scope/figure disclosure: " + phrase)
++        require(rational_gap_figure_source().strip() in text,
++                "Rational gap appendix does not contain the current complete figure function")
+         require("本轮共发出" not in text and "HTTP 404" not in text, "Research request transcript leaked into book")
+     book_reports = {stem: audit_book(stem, len(FIGURES), PAIRS) for stem in NEW_STEMS}
+     book_reports["综合数学_第一章审阅版"] = audit_book("综合数学_第一章审阅版", 4, PAIRS[:14])

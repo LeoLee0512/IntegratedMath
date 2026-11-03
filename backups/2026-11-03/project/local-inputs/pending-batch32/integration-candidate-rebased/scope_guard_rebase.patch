@@ -1,0 +1,11 @@
+--- before30/tools/validate_learning_batch.py
++++ after30/tools/validate_learning_batch.py
+@@ -2594,7 +2594,7 @@
+             require(int(segment.split("-")[0]) == parent
+                     and chapter_starts[segment] < position < chapter_ends[segment],
+                     "Unit assigned to the wrong teaching chapter: " + anchor)
+-        for phrase in ["第26章仅有部分单元", "第526章未完成", "第529章未完成", "第528章未完成",
++        for phrase in ["第26章、第242章仅有部分单元", "第526章未完成", "第529章未完成", "第528章未完成",
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+                        "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",

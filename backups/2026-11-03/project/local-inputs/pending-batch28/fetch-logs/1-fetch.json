@@ -1,0 +1,10 @@
+{
+  "id": "lebl_metric",
+  "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+  "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+  "http_status": 200,
+  "fetched_at_utc": "2026-10-30T03:19:56.836393+00:00",
+  "cache_path": "/tmp/real-plane-metric-source-audit/lebl_metric.tex",
+  "bytes": 131868,
+  "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a"
+}

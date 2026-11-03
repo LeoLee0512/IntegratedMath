@@ -1,0 +1,49 @@
+{
+  "status": "text-reviewed; formal integration and source finalization/build/visual pending",
+  "files": [
+    {
+      "path": "dedekind_nonnegative_product.md",
+      "sha256": "73e77200fa17f9c5cf8861b0655c3529075a8ce3d4c7dbe309db0527fd0f2be7"
+    },
+    {
+      "path": "dedekind_nonnegative_product_answers.md",
+      "sha256": "2fbb1afebf2dd314fa065a92aaae326d13d2928d086b60daa2b9a30e0ed3d511"
+    },
+    {
+      "path": "dedekind_nonnegative_laws.md",
+      "sha256": "7a9a8f60774bc3f950efd42be40cc875b6f2c0f698fc0488a1f9f9824cc27c3a"
+    },
+    {
+      "path": "dedekind_nonnegative_laws_answers.md",
+      "sha256": "d7b17f64f3b95b0e8f3606536ffd9be9538d91ef5e8d127b7b69146b4db2346c"
+    },
+    {
+      "path": "dedekind_nonnegative_product_math_review.md",
+      "sha256": "839e102818454424dfd7d856b991c5b951086374a708d7d6aeb26420383196bf"
+    },
+    {
+      "path": "dedekind_nonnegative_laws_math_review.md",
+      "sha256": "579f64c2006f1c9ffde2210aec6d6f9762e207f450c851732faf89e9a3d88616"
+    },
+    {
+      "path": "dedekind_nonnegative_pedagogy_review.md",
+      "sha256": "6ede215fbed85e049d650aaab2a0bc87143f07a9e6460154e669c9a31f04aa05"
+    },
+    {
+      "path": "dedekind_multiplication_plan.md",
+      "sha256": "4c91fead6ca077a852c7f2621737ce5709dde48f55a4d408c180ddcf221751d1"
+    },
+    {
+      "path": "dedekind_multiplication_sources.md",
+      "sha256": "695c9bd0ba21d5a49cc94896a64fbdda591ebd9dd27c53cd249f497b44490367"
+    },
+    {
+      "path": "dedekind_multiplication_sources.json",
+      "sha256": "23ce36ac68704413e08fe14766850418b67b6387ed4d40a5bf758289012d691b"
+    },
+    {
+      "path": "dedekind_multiplication_concept_review.md",
+      "sha256": "766d1ef66c54d5f01db4d713ac945fcd3e0ea546387ab7223e9a884305d89cd1"
+    }
+  ]
+}

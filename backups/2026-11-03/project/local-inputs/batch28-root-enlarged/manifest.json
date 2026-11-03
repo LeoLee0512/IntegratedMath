@@ -1,0 +1,103 @@
+{
+  "pdf_sha256": "309b4466315ac8dd99c0404ce7f5544417107c3f286cabb75189024056c28d4e",
+  "pages": [
+    454,
+    456,
+    458,
+    460,
+    462,
+    464,
+    466,
+    468,
+    469,
+    771,
+    774,
+    777,
+    780,
+    785,
+    858,
+    859
+  ],
+  "images": [
+    {
+      "page": 454,
+      "path": "/tmp/root28-pages/page-454.png",
+      "sha256": "88d0286424a169262acbc8b5ed692b5d972b60ee8f104fc185f354a8daf2dd7d"
+    },
+    {
+      "page": 456,
+      "path": "/tmp/root28-pages/page-456.png",
+      "sha256": "931a0896248adbac3972b249e796503142a3a09c3182bcea4f0ab405d139feef"
+    },
+    {
+      "page": 458,
+      "path": "/tmp/root28-pages/page-458.png",
+      "sha256": "78cb3b1667b0ba4dfa536a5a86e23a860bec9304283bed72fd8db0d155caef68"
+    },
+    {
+      "page": 460,
+      "path": "/tmp/root28-pages/page-460.png",
+      "sha256": "830dadf1d79c3158b19681b147bdb60f86896881461088597ef0f2eba75f9434"
+    },
+    {
+      "page": 462,
+      "path": "/tmp/root28-pages/page-462.png",
+      "sha256": "d5f49371bbb9f3be76b1ecacedc2ef44bf3437437a0ab393909304b427cfb7df"
+    },
+    {
+      "page": 464,
+      "path": "/tmp/root28-pages/page-464.png",
+      "sha256": "f36bb363c9fff543da34d2923c827a91b7d1a66888d8f9e9c14320b447670cab"
+    },
+    {
+      "page": 466,
+      "path": "/tmp/root28-pages/page-466.png",
+      "sha256": "2bb206067ede3c76c43f7c623e867d38d8bc5010ee81ef78182680e59da2afb0"
+    },
+    {
+      "page": 468,
+      "path": "/tmp/root28-pages/page-468.png",
+      "sha256": "f157ad5d80d1fa489ce0741e8f45d50407b583d253c7d74345736bf9398d7890"
+    },
+    {
+      "page": 469,
+      "path": "/tmp/root28-pages/page-469.png",
+      "sha256": "9ef1c7236afcd9713943b55031573efb158af583b25a618a306eea0844268e71"
+    },
+    {
+      "page": 771,
+      "path": "/tmp/root28-pages/page-771.png",
+      "sha256": "43f71e8c37a2feb540341f4b997fdcd6072f5a72dbbf31f8aa94ce797031fe5b"
+    },
+    {
+      "page": 774,
+      "path": "/tmp/root28-pages/page-774.png",
+      "sha256": "c9dc273db2314ee5cd9b2038d4425932955ed41f8cd916d6e2d52d303e26f6d8"
+    },
+    {
+      "page": 777,
+      "path": "/tmp/root28-pages/page-777.png",
+      "sha256": "cb900ef15f949819d41b1da1229497a296d880e8c105bfbcf4900d70fb55070a"
+    },
+    {
+      "page": 780,
+      "path": "/tmp/root28-pages/page-780.png",
+      "sha256": "74cc18c93034ddf4b7efb0d183604be4330faab18b6faf579ec69cac04c7d8e4"
+    },
+    {
+      "page": 785,
+      "path": "/tmp/root28-pages/page-785.png",
+      "sha256": "13d47effe850ae305baf45042f400714a52ec77a411a14867d065636dc94b8e1"
+    },
+    {
+      "page": 858,
+      "path": "/tmp/root28-pages/page-858.png",
+      "sha256": "fc16f81760e12fa319aae9af1f74fc47ff8c2ee5cc5f2336df4f68eaeb3de1cc"
+    },
+    {
+      "page": 859,
+      "path": "/tmp/root28-pages/page-859.png",
+      "sha256": "6401800f5acb2c70ef4e523d2163e84505fd1942efffb3e0cad30876294e86ed"
+    }
+  ]
+}

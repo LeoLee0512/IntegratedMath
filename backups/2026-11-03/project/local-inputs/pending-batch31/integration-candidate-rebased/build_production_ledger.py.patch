@@ -1,0 +1,190 @@
+--- a/tools/build_production_ledger.py
++++ b/tools/build_production_ledger.py
+@@ -140,7 +140,11 @@
+           'manuscript/foundations/real_sequences_limits.md',
+           'manuscript/foundations/real_sequences_limits_answers.md',
+           'manuscript/foundations/real_sequences_algebra.md',
+-          'manuscript/foundations/real_sequences_algebra_answers.md']
++          'manuscript/foundations/real_sequences_algebra_answers.md',
++          'manuscript/foundations/real_sequences_order.md',
++          'manuscript/foundations/real_sequences_order_answers.md',
++          'manuscript/foundations/real_subsequences_bw.md',
++          'manuscript/foundations/real_subsequences_bw_answers.md']
+ # Each tuple: module id, stage, title, prerequisite module ids, MSC locating tags.
+ MODULES = [
+  ('reading','B0','阅读数学与核查论证',[],['00']),
+@@ -276,7 +280,7 @@
+                    'number-systems':BRIDGE[82:108:2],
+                    'real-algebra-equations':BRIDGE[108:110:2],
+                    'real-plane-geometry':BRIDGE[110:118:2],
+-                   'single-analysis':BRIDGE[118:122:2]}.get(mid,[])
++                   'single-analysis':BRIDGE[118:126:2]}.get(mid,[])
+         modules.append({'id': mid, 'stage': stage, 'title': title, 'prerequisites': deps,
+                         'msc_tags': tags, 'source_files': existing(root, planned),
+                         'implementation_status': 'partial_draft' if existing(root, planned) else 'unwritten',
+@@ -392,14 +396,16 @@
+         if mid == 'single-analysis':
+             modules[-1]['coverage'] = {
+                 'scope': 'registered_sequence_entry_units_draft' if existing(root, planned) else 'none',
+-                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限'] if existing(root, planned) else [],
+-                'unwritten_topics': ['单调收敛、子列与完备性定理', '无穷级数', '函数极限、连续、微分与积分'],
++                'written_topics': ['实数数列与收敛量词、唯一性、基本例及尾移', '固定递归前缀界与收敛有界', '线性、绝对值、乘积及合法倒数商的极限', '最终比较、夹逼及上下确界单调收敛', '确定性单调子列、实数数列BW及有界子列判别'] if existing(root, planned) else [],
++                'unwritten_topics': ['柯西判据、上/下极限及其他完备性等价', '无穷级数', '函数极限、连续、微分与积分'],
+                 'completed': False,
+-                'note': 'B4.1—B4.2仅为入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
++                'note': 'B4.1—B4.4仅为限定数列入口；广义先修induction-counting仍未写，自然归纳与固定递归按前文公开采用。'}
+             modules[-1]['definition_and_theorem_anchors'] = [
+                 anchor_ref(root, path, a) for path, names in [
+                     (BRIDGE[118], ['seq-definition','seq-uniqueness','seq-basic-limits','seq-tails']),
+-                    (BRIDGE[120], ['seqlaw-bounded','seqlaw-linear-absolute','seqlaw-product','seqlaw-reciprocal-quotient'])]
++                    (BRIDGE[120], ['seqlaw-bounded','seqlaw-linear-absolute','seqlaw-product','seqlaw-reciprocal-quotient']),
++                    (BRIDGE[122], ['seqorder-comparison','seqorder-squeeze','seqorder-monotone-bounds','seqorder-monotone-convergence']),
++                    (BRIDGE[124], ['subseq-indices','subseq-monotone','subseq-bolzano-weierstrass','subseq-criterion'])]
+                 for a in names]
+             modules[-1]['scope_boundary'] = {
+                 'entry_domain': '从已写函数、自然规则、实数域、绝对值与阿基米德性质直接进入；不依赖二维几何',
+@@ -2831,6 +2837,124 @@
+                        ('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
+ 
+ 
++UNIT_SPECS += [{'parent_code': '40Axx',
++  'parent_chapter_number': 242,
++  'part_code': '40-XX',
++  'msc_leaf_codes': ['40A05'],
++  'msc_cross_reference_codes': ['26A03', '97I30'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.3',
++  'number': 62,
++  'title': '数列比较、夹逼与单调收敛',
++  'anchor': 'seqorder-unit',
++  'body': 'manuscript/foundations/real_sequences_order.md',
++  'answers': 'manuscript/foundations/real_sequences_order_answers.md',
++  'goals': ['合并最终比较与两份误差阈值并保留严格号边界', '不预设中间列收敛地给误差控制', '由相邻单调归纳全指标比较并构造下确界', '先证极限存在再以已证规律识别递归列极限'],
++  'definitions': ['seqorder-comparison',
++                  'seqorder-squeeze',
++                  'seqorder-monotone-bounds',
++                  'seqorder-monotone-convergence'],
++  'proved': [('SO1', 'seqorder-comparison', '最终比较与弱极限序'),
++             ('SO2', 'seqorder-squeeze', '夹逼、误差界与有界因子乘零极限'),
++             ('SO3', 'seqorder-monotone-bounds', '全指标单调与取反下确界'),
++             ('SO4', 'seqorder-monotone-convergence', '上确界单调收敛与非增转换')],
++  'questions': 'seqorder-q',
++  'answer_prefix': 'seqorder-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明', '柯西判据、上/下极限、区间套、一般紧致性与多维BW', '无穷级数、函数极限与微积分', '任意自然子集成员的可执行判定算法'],
++  'prerequisites': [('manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'),
++                    ('manuscript/foundations/dedekind_additive_order.md', 'cutgroup-translation'),
++                    ('manuscript/foundations/dedekind_cuts_order.md', 'cut-supremum'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-complete-field'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-definition'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-equations'),
++                    ('manuscript/foundations/dedekind_division_field.md', 'cutdiv-order'),
++                    ('manuscript/foundations/dedekind_ring_order.md', 'cutring-multiplication-order'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-induction'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-recursion-principle'),
++                    ('manuscript/foundations/natural_order.md', 'ord-addition-order'),
++                    ('manuscript/foundations/natural_order.md', 'ord-definition'),
++                    ('manuscript/foundations/natural_order.md', 'ord-trichotomy'),
++                    ('manuscript/foundations/natural_subtraction.md', 'sub-definition'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-products-triangle'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-embedding'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-natural-bound'),
++                    ('manuscript/foundations/real_sequences_algebra.md', 'seqlaw-bounded'),
++                    ('manuscript/foundations/real_sequences_algebra.md', 'seqlaw-linear-absolute'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-basic-limits'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-definition'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-tails'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-uniqueness')],
++  'adopted_external': [('manuscript/foundations/natural_numbers.md',
++                        'b1-induction',
++                        '公开采用自然归纳规则，未宣称B3课程完成'),
++                       ('manuscript/foundations/natural_numbers.md',
++                        'b1-recursion-principle',
++                        '公开采用固定更新递归原则'),
++                       ('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]},
++ {'parent_code': '40Axx',
++  'parent_chapter_number': 242,
++  'part_code': '40-XX',
++  'msc_leaf_codes': ['40A05'],
++  'msc_cross_reference_codes': ['26A03', '97I30'],
++  'module_ids': ['single-analysis'],
++  'code': 'B4.4',
++  'number': 63,
++  'title': '子列、单调子列与博尔查诺—魏尔斯特拉斯定理',
++  'anchor': 'subseq-unit',
++  'body': 'manuscript/foundations/real_subsequences_bw.md',
++  'answers': 'manuscript/foundations/real_subsequences_bw_answers.md',
++  'goals': ['区分指标严格性与项值并证明复合合法', '逐状态用最小自然元定义确定性更新', '单调子列结合已有单调收敛证明实数数列BW', '构造坏子列和再子列说明有界条件的作用'],
++  'definitions': ['subseq-indices', 'subseq-monotone', 'subseq-bolzano-weierstrass', 'subseq-criterion'],
++  'proved': [('SS1', 'subseq-indices', '严格指标增长、继承与复合'),
++             ('SS2', 'subseq-monotone', '尾峰二分与全域固定更新'),
++             ('SS3', 'subseq-bolzano-weierstrass', '有界实数数列的收敛子列存在'),
++             ('SS4', 'subseq-criterion', '有界固定目标子列判别与真空反例')],
++  'questions': 'subseq-q',
++  'answer_prefix': 'subseq-a',
++  'not_covered': ['B3自然数形式构造与递归原则证明', '柯西判据、上/下极限、区间套、一般紧致性与多维BW', '无穷级数、函数极限与微积分', '任意自然子集成员的可执行判定算法'],
++  'prerequisites': [('manuscript/foundations/functions_composition.md', 'fc-composition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-definition'),
++                    ('manuscript/foundations/functions_definition.md', 'fun-sets'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-addition-associative'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-addition-commutative'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-induction'),
++                    ('manuscript/foundations/natural_numbers.md', 'b1-recursion-principle'),
++                    ('manuscript/foundations/natural_order.md', 'ord-addition-order'),
++                    ('manuscript/foundations/natural_order.md', 'ord-definition'),
++                    ('manuscript/foundations/natural_order.md', 'ord-multiplication-order'),
++                    ('manuscript/foundations/natural_order.md', 'ord-partial-order'),
++                    ('manuscript/foundations/natural_order.md', 'ord-strict-equivalence'),
++                    ('manuscript/foundations/natural_order.md', 'ord-successor-comparison'),
++                    ('manuscript/foundations/natural_order.md', 'ord-trichotomy'),
++                    ('manuscript/foundations/natural_order_answers.md', 'ord-a07'),
++                    ('manuscript/foundations/natural_subtraction.md', 'sub-definition'),
++                    ('manuscript/foundations/place_value.md', 'b1-multiplication-commutative'),
++                    ('manuscript/foundations/place_value.md', 'b1-multiplication-units'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-definition-bounds'),
++                    ('manuscript/foundations/real_absolute_distance.md', 'realabs-products-triangle'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-embedding'),
++                    ('manuscript/foundations/real_archimedean_density.md', 'realarch-natural-bound'),
++                    ('manuscript/foundations/real_sequences_algebra.md', 'seqlaw-bounded'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-basic-limits'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-definition'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-tails'),
++                    ('manuscript/foundations/real_sequences_limits.md', 'seq-uniqueness'),
++                    ('manuscript/foundations/real_sequences_order.md', 'seqorder-comparison'),
++                    ('manuscript/foundations/real_sequences_order.md', 'seqorder-monotone-bounds'),
++                    ('manuscript/foundations/real_sequences_order.md', 'seqorder-monotone-convergence')],
++  'adopted_external': [('manuscript/foundations/natural_numbers.md',
++                        'b1-induction',
++                        '公开采用自然归纳规则，未宣称B3课程完成'),
++                       ('manuscript/foundations/natural_numbers.md',
++                        'b1-recursion-principle',
++                        '公开采用固定更新递归原则'),
++                       ('manuscript/foundations/functions_definition.md', 'fun-sets', '沿用条件子集与外延相等背景')]}]
++
++
+ def anchor_ref(root, path, anchor):
+     text = (root/path).read_text() if (root/path).is_file() else ''
+     found = '{#'+anchor+'}' in text or 'id="'+anchor+'"' in text
+@@ -2943,7 +3067,9 @@
+             'research/production/real_lines_projection_sources_2026-10-30.md',
+             'research/production/real_lines_projection_sources_2026-10-30.json'] if spec['number'] >= 58 else []) + ([
+             'research/production/real_sequences_sources_2026-10-30.md',
+-            'research/production/real_sequences_sources_2026-10-30.json'] if spec['number'] >= 60 else []))
++            'research/production/real_sequences_sources_2026-10-30.json'] if spec['number'] >= 60 else []) + ([
++            'research/production/real_sequences_order_subsequences_sources_2026-10-30.md',
++            'research/production/real_sequences_order_subsequences_sources_2026-10-30.json'] if spec['number'] >= 62 else []))
+         units.append(unit)
+     return units
+ 
+@@ -3293,7 +3419,7 @@
+                 if code=='40Axx':
+                     chapter['learning_entry'].update(status='sequence_entry_defined_chapter_pending',
+                         module_ids=['single-analysis'])
+-                    chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.2实数数列收敛定义、唯一性、基本例、尾移、有界及四则极限；单调收敛、子列、级数及其余无穷极限主题待写，整章未完成'
++                    chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.4实数数列收敛定义、唯一性、基本例、尾移、有界、四则极限、比较夹逼、单调收敛、单调子列、实数数列BW及有界子列判别；柯西判据、上/下极限、级数及其余无穷极限主题待写，整章未完成'
+                 chapters.append(chapter)
+                 for leaf in children[code]:
+                     has_anchor = code=='00Axx' and '{#sec-'+leaf['code']+'}' in ch01_text

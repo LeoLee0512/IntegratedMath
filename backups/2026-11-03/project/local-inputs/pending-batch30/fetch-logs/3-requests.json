@@ -1,0 +1,233 @@
+[
+  {
+    "request_id": "mathlib_rat_archimedean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Archimedean.lean",
+    "checked_at_utc": "2026-10-29T19:50:22.545180+00:00",
+    "http_status": 404,
+    "error_text": "HTTP Error 404: Not Found",
+    "access_status": "http_error",
+    "bytes": 14,
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_rat_archimedean.error"
+  },
+  {
+    "request_id": "openlogic_tree",
+    "url": "https://github.com/OpenLogicProject/OpenLogic/tree/master/content",
+    "checked_at_utc": "2026-10-29T19:50:22.545666+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/OpenLogicProject/OpenLogic/tree/master/content",
+    "access_status": "verified_http_200",
+    "bytes": 217352,
+    "sha256": "778df92aff3722024c012410e3846afdd2a223e82d54eb38a607d422c11090c6",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/openlogic_tree"
+  },
+  {
+    "request_id": "gutenberg_dedekind_tree",
+    "url": "https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016",
+    "checked_at_utc": "2026-10-29T19:50:22.546096+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016",
+    "access_status": "verified_http_200",
+    "bytes": 244441,
+    "sha256": "351a0de99f9bb9d868703ca45193f794c7dd08a914502440efbebd956799d101",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/gutenberg_dedekind_tree"
+  },
+  {
+    "request_id": "mathlib_rat_tree",
+    "url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Data/Rat",
+    "checked_at_utc": "2026-10-29T19:50:29.588300+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Data/Rat",
+    "access_status": "verified_http_200",
+    "bytes": 209627,
+    "sha256": "81d42a259c0a4f0c74ecbf7d2191a10fb96015280822520269d58248b0f58400",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_rat_tree"
+  },
+  {
+    "request_id": "mathlib_order_tree",
+    "url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Order",
+    "checked_at_utc": "2026-10-29T19:50:29.588938+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Order",
+    "access_status": "verified_http_200",
+    "bytes": 436433,
+    "sha256": "97c6b9e6ebcdca640edbf4a7576eaeaab3d15675b5cf7ec185f70af35abeffdc",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_order_tree"
+  },
+  {
+    "request_id": "openlogic_set_tree",
+    "url": "https://github.com/OpenLogicProject/OpenLogic/tree/master/content/set-theory",
+    "checked_at_utc": "2026-10-29T19:50:37.393633+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/OpenLogicProject/OpenLogic/tree/master/content/set-theory",
+    "access_status": "verified_http_200",
+    "bytes": 194435,
+    "sha256": "5d5366f079e3c91fba5ccf436ef71d6455ff6ed8d405bad0c5d6ed520a1f6f37",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/openlogic_set_tree"
+  },
+  {
+    "request_id": "gutenberg_tex_tree",
+    "url": "https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/tree/master/21016-t",
+    "checked_at_utc": "2026-10-29T19:50:37.394490+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/tree/master/21016-t",
+    "access_status": "verified_http_200",
+    "bytes": 170768,
+    "sha256": "b7484c079893abc3ee08589b039bddea44c2d7d5baf42d45fe5d0741dd414ec8",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/gutenberg_tex_tree"
+  },
+  {
+    "request_id": "lebl_tree",
+    "url": "https://github.com/jirilebl/ra",
+    "checked_at_utc": "2026-10-29T19:50:52.112044+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/jirilebl/ra",
+    "access_status": "verified_http_200",
+    "bytes": 313452,
+    "sha256": "769d7357756089a3c72825dee52fb56c10d4576edd2f15bba03ece40c4e85973",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_tree"
+  },
+  {
+    "request_id": "mathlib_archim_tree",
+    "url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Algebra/Order/Archimedean",
+    "checked_at_utc": "2026-10-29T19:50:52.112650+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Algebra/Order/Archimedean",
+    "access_status": "verified_http_200",
+    "bytes": 198266,
+    "sha256": "bb92b1fcf53a71609a5dd3e375076f8521369a0862d013e2cedfa90d5efa0e2e",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_tree"
+  },
+  {
+    "request_id": "dedekind_tex",
+    "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+    "checked_at_utc": "2026-10-29T19:51:08.612324+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+    "access_status": "verified_http_200",
+    "bytes": 243143,
+    "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex"
+  },
+  {
+    "request_id": "dedekind_license",
+    "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+    "checked_at_utc": "2026-10-29T19:51:08.612777+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+    "access_status": "verified_http_200",
+    "bytes": 17504,
+    "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license"
+  },
+  {
+    "request_id": "lebl_reals",
+    "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+    "checked_at_utc": "2026-10-29T19:51:08.613314+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+    "access_status": "verified_http_200",
+    "bytes": 80337,
+    "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals"
+  },
+  {
+    "request_id": "lebl_license",
+    "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+    "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+    "access_status": "verified_http_200",
+    "bytes": 467,
+    "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+  },
+  {
+    "request_id": "mathlib_archim_basic",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+    "checked_at_utc": "2026-10-29T19:51:08.957096+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+    "access_status": "verified_http_200",
+    "bytes": 25104,
+    "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic"
+  },
+  {
+    "request_id": "mathlib_rat_floor",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Floor.lean",
+    "checked_at_utc": "2026-10-29T19:51:08.979068+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Floor.lean",
+    "access_status": "verified_http_200",
+    "bytes": 13275,
+    "sha256": "1082c98d820a0cb72e00c0ec515555fc364ff330c806345756963a1420df16bd",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_rat_floor"
+  },
+  {
+    "request_id": "mathlib_lower_tree",
+    "url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Order/UpperLower",
+    "checked_at_utc": "2026-10-29T19:51:54.423731+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0/Mathlib/Order/UpperLower",
+    "access_status": "verified_http_200",
+    "bytes": 207484,
+    "sha256": "d653e2cc4c385a60feff59a7bea2bb7bfcbe96a5092f85657ceaf8b869781346",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_lower_tree"
+  },
+  {
+    "request_id": "lebl_front",
+    "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+    "checked_at_utc": "2026-10-29T19:51:54.424412+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+    "access_status": "verified_http_200",
+    "bytes": 18862,
+    "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front"
+  },
+  {
+    "request_id": "mathlib_lower_basic",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/Basic.lean",
+    "checked_at_utc": "2026-10-29T19:52:19.118716+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/Basic.lean",
+    "access_status": "verified_http_200",
+    "bytes": 14011,
+    "sha256": "7d752b38fba8f5bed0be3fd70a1fa97497dfb3fe6c4add8ade66783b229caa43",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_lower_basic"
+  },
+  {
+    "request_id": "mathlib_lower_complete",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/CompleteLattice.lean",
+    "checked_at_utc": "2026-10-29T19:52:19.119395+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/UpperLower/CompleteLattice.lean",
+    "access_status": "verified_http_200",
+    "bytes": 18724,
+    "sha256": "1fb3d369d1c13a9758e2f989defafbd0b983d703c73943540bab2b51c7016b0e",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_lower_complete"
+  },
+  {
+    "request_id": "mathlib_field_basic",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+    "checked_at_utc": "2026-10-29T19:52:19.119904+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+    "access_status": "verified_http_200",
+    "bytes": 31120,
+    "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic"
+  },
+  {
+    "request_id": "dedekind_metadata",
+    "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+    "checked_at_utc": "2026-10-29T19:52:19.458448+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+    "access_status": "verified_http_200",
+    "bytes": 1216,
+    "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+    "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata"
+  }
+]

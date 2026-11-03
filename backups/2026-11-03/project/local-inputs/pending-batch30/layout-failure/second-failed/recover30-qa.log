@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2734, in <module>
+    main()
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2602, in main
+    require(phrase in text, "Missing scope/figure disclosure: " + phrase)
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 43, in require
+    raise ValueError(message)
+ValueError: Missing scope/figure disclosure: 第26章仅有部分单元

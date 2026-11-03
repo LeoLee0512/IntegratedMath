@@ -1,0 +1,32 @@
+{
+  "source_commit": "8b12a7b8d0680703221cfabd9c194c748aa90af7",
+  "pdf_pages": 416,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "edcb3c82a79b87134182fcc7a896ae0f1204e219cadd37bd9d8db45a1a2e1881",
+      "bytes": 2107852
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "a9ed280016340569c78f54b343cdaaa0c67d652145e35cae1ce1fb406981fed2",
+      "bytes": 963567
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "cb72e1517c4515a3829a540c3a6795c8c61c23d8975c74a6e5220ec10db9fe68",
+      "bytes": 96121186
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "c7fb03de1ad8f72908a05b48439be2c305293a37fc8afdb9535b329a815ead39",
+      "bytes": 7729
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "b1ffcc6203a94632ffbfc8cb62cef84a2674d864cac2dcbd6ef390af6b8fd45a",
+      "bytes": 593243
+    },
+    "data/production/package_validation.json": {
+      "sha256": "e02141a5b3e3be86619beda2659cf6b022df21a03155b5be4a2d0af865c0869b",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "Local verified snapshot; attachment interface unavailable; no complete top-level part, push not due.",
+  "created_at": "2026-10-29T16:53:57.260052+00:00"
+}

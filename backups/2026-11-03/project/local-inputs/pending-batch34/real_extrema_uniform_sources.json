@@ -1,0 +1,160 @@
+{
+  "checked_at_utc": "2026-10-30T05:05:36.880669+00:00",
+  "planner_and_source_reviewer": "/root/plan_multiplication",
+  "status": "Batch34 finite plan and actual source reuse only; awaiting independent root concept approval; no manuscripts authored",
+  "new_http_requests": 0,
+  "plan_path": "/tmp/real_extrema_uniform_plan.md",
+  "plan_sha256": "0f6d5690bcfb0d1d7ace3d63fa8556dd91ce8a810eb4988e0df540b374e31d29",
+  "source_anchor_proposed": "real-extrema-uniform-sources",
+  "sources": [
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author/version/rights evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 18862,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "reuse_note": "Batch34 actual cache byte/hash recheck and indicated ranges reread; zero new HTTP requests; original retrieval retained.",
+      "actual_read_locators": [
+        "378-458 author, version 6.3, copyright, dual license and derivative marking"
+      ],
+      "current_check_at_utc": "2026-10-30T05:05:36.880669+00:00"
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "License evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 467,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained",
+      "reuse_note": "Batch34 actual cache byte/hash recheck and indicated ranges reread; zero new HTTP requests; original retrieval retained.",
+      "actual_read_locators": [
+        "entire 467-byte license declaration"
+      ],
+      "current_check_at_utc": "2026-10-30T05:05:36.880669+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex",
+      "effective_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex",
+      "retrieved_at_utc": "2026-10-30T04:28:49.987178+00:00",
+      "bytes": 119775,
+      "sha256": "3fe56fe7261f3db0dfb0dbabe8e807b0781c41255c2b9cb463f4868fbb13c14d",
+      "cache_path": "/tmp/real-cauchy-function-limits-source-audit/lebl_function_limits.tex",
+      "id": "lebl_function_limits",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis I, Continuous Functions: extrema and uniform continuity",
+      "version": "6.3; fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "http_status": 200,
+      "raw_http_record": "/tmp/real-cauchy-function-limits-source-audit/function_http.json",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "actual_read_locators": [
+        "1391-1567 boundedness, extreme value theorem, complete source sequence/BW proofs and hypothesis counterexamples",
+        "1997-2193 uniform definition, square/reciprocal examples, closed-interval sequence/BW proof, direct Cauchy-preservation lemma at beginning of extension subsection"
+      ],
+      "role": "Definition/conditions and proof-route comparison; source proof is not the planned direct supremum proof",
+      "actual_bytes": 119775,
+      "reuse_note": "Batch34 actual cache byte/hash recheck and indicated ranges reread; zero new HTTP requests; original retrieval retained.",
+      "current_check_at_utc": "2026-10-30T05:05:36.880669+00:00",
+      "route_difference": "Source boundedness/extrema/uniform-interval theorem selects sequences of real points and uses BW. Planned book independently proves prefix-supremum boundedness, reciprocal contradiction for attainment, and fixed-epsilon prefix-supremum uniform continuity; no claim these direct proofs occur in this source."
+    }
+  ],
+  "classification": {
+    "part": 18,
+    "part_title": "实函数",
+    "chapter": 146,
+    "chapter_title": "一元函数",
+    "primary_both_units": "26A15",
+    "leaf_title_en": "Continuity and related questions (modulus of continuity, semicontinuity, discontinuities, etc.) for real functions in one variable",
+    "leaf_title_zh": "一元实函数的连续性及相关问题（连续模、半连续性、间断性等）",
+    "optional_cross": {
+      "B4.9": [
+        "26A03"
+      ],
+      "B4.10": [
+        "97I20"
+      ]
+    },
+    "coverage_boundary": "Only extrema and uniform-continuity finite units; no whole code/chapter/part completion"
+  },
+  "snapshot": [
+    {
+      "path": "/tmp/real_extrema_uniform_plan.md",
+      "sha256": "0f6d5690bcfb0d1d7ace3d63fa8556dd91ce8a810eb4988e0df540b374e31d29"
+    },
+    {
+      "path": "/tmp/real_extrema_uniform_scope_review.md",
+      "sha256": "c529dbdaa9aca8fc3847cae156237fbf9dbb25d111b87d9212520b223cc79481"
+    },
+    {
+      "path": "/tmp/real_continuity.md",
+      "sha256": "328b1782b55447f050c93470128b707cd499e4bca0cf14a33e784a75257d9450"
+    },
+    {
+      "path": "/tmp/real_continuity_answers.md",
+      "sha256": "98628922f1f7848aacaee663a66fab63667fc57f67d1770bfe94fa9e7ff3e408"
+    },
+    {
+      "path": "/tmp/real_continuity_math_review.md",
+      "sha256": "22351ade077c6f41bd4384b7745fa0e539d6b2a0c5f807e3a0d2f248f0b1203a"
+    },
+    {
+      "path": "/tmp/real_intermediate_value.md",
+      "sha256": "2b5e8bbd9edadcdd25f1cf52ccd3f6d80bc7f6909aa103d45c34f370100e865c"
+    },
+    {
+      "path": "/tmp/real_intermediate_value_answers.md",
+      "sha256": "a54ce0ab274908f01e7c5deddf94f8d1e348f5500c8eeb08f9cbb010714745ed"
+    },
+    {
+      "path": "/tmp/real_intermediate_value_math_review.md",
+      "sha256": "d4d6917ca6d8dbac1e8ae8c171c456ec077e3bf0f34c8e92044c334ef0e6a5b9"
+    },
+    {
+      "path": "/tmp/real-cauchy-function-limits-source-audit/function_http.json",
+      "sha256": "3e4c1c65b59f2b2a5fea8ea207a90963f79a37c68a1866097c4da51c7cc64cee"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/catalog_titles_zh.json",
+      "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+    }
+  ],
+  "proof_obligations": [
+    "Boundedness prefix supremum must yield endpoint membership, not only supremum equal to endpoint",
+    "Attainment uses reciprocal of strictly positive supremum gap and K=B+1>0; infimum via negation",
+    "Uniform-continuity prefix set fixes epsilon before taking supremum; complete crossing-point-pair case",
+    "No undeclared simultaneous or countable selection of arbitrary real witnesses",
+    "All degenerate intervals, zero coefficients, zero absolute bounds and constant inner functions explicit"
+  ],
+  "rights": "Lebl dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, not public domain. Mathematical conditions/routes compared; no copied/adapted expressive prose, problems, solutions or figures. Any future expressive adaptation must satisfy selected license attribution/share-alike/marking requirements. Cache not automatically distributed.",
+  "source_read_limits": [
+    "Only listed ranges actually read this time; no whole chapter audit",
+    "Extension subsection read only through direct Cauchy-preservation lemma and opening extension sentence; neither Cauchy preservation nor extension included in final finite plan",
+    "No external source falsely attributed the independent direct supremum routes"
+  ],
+  "unchanged_prior_batch_records": true,
+  "formal_repo_mutations": false
+}

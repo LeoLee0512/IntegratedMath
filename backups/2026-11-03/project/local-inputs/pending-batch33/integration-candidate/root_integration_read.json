@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-30T05:11:25.407016+00:00",
+  "status": "Full patch review including truncated ranges reread; all source JSON fields/source MD, metadata changes, installer and DELIVERY actually read; original source object preserved; hashes verified; pending actual32 snapshot, installation and PDF acceptance",
+  "delivery_sha256": "afc33e9eeaf2dd3a6f16ec84781fdb5d8a2fcf5cdc67138b3206828e1a688b93",
+  "files_verified": 22
+}

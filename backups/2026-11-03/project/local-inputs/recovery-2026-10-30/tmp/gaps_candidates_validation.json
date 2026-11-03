@@ -1,0 +1,20 @@
+{
+  "status": "candidate_checks_passed_not_formally_installed",
+  "units": 43,
+  "pairs": 358,
+  "figures": 17,
+  "visible_math": 21625,
+  "alt_math": 4,
+  "internal_links": 3089,
+  "appendices": 24,
+  "catalog": [
+    63,
+    534,
+    6006
+  ],
+  "figure_function_exact": true,
+  "candidates": {
+    "/tmp/gaps_build_learning_batch.py": "69cba7f8d1fe813443a94471802a6ec9876080e8248fa690b9ef932a83add931",
+    "/tmp/gaps_validate_learning_batch.py": "757a0a572908734ccd7a6528b32609e6f7fdbf0f96108d3122f413b3e3432e4e"
+  }
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "request_id": "openstax_repo",
+    "url": "https://github.com/openstax/osbooks-prealgebra",
+    "checked_at_utc": "2026-10-29T16:33:07.338233+00:00",
+    "http_status": 404,
+    "access_status": "http_error"
+  },
+  {
+    "request_id": "beezer_repo",
+    "url": "https://github.com/rbeezer/fcla",
+    "checked_at_utc": "2026-10-29T16:33:07.338787+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/rbeezer/fcla",
+    "bytes": 217996,
+    "sha256": "134e49a785d779ea19653c0a7980499db626ab101e1cbe88d9bd2956f6771d5c",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_repo_bundle",
+    "url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+    "checked_at_utc": "2026-10-29T16:33:31.370218+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+    "bytes": 228800,
+    "sha256": "1f230bc2bbcdff305ccad7303b71bb0c566e2a2c7f3a8e65e423922338c04237",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_src",
+    "url": "https://github.com/rbeezer/fcla/tree/347f27fe909b54b26970bcc0fcbf69c7e853c766/src",
+    "checked_at_utc": "2026-10-29T16:33:31.370843+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/rbeezer/fcla/tree/347f27fe909b54b26970bcc0fcbf69c7e853c766/src",
+    "bytes": 304723,
+    "sha256": "665c27938848fca6094a1e413eff040080a5be4eeace68d762ade09c426a6973",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_copying",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+    "checked_at_utc": "2026-10-29T16:33:31.372978+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+    "bytes": 740,
+    "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_readme",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/README.md",
+    "checked_at_utc": "2026-10-29T16:33:31.373396+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/README.md",
+    "bytes": 187,
+    "sha256": "0767b3fc1e8507402aad67b595f4b6ca1e54cd85c7924e6713d5cd7b092e13f6",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_license",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+    "checked_at_utc": "2026-10-29T16:33:44.810046+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+    "bytes": 21442,
+    "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_collections",
+    "url": "https://github.com/openstax/osbooks-prealgebra-bundle/tree/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections",
+    "checked_at_utc": "2026-10-29T16:33:44.810464+00:00",
+    "http_status": 200,
+    "final_url": "https://github.com/openstax/osbooks-prealgebra-bundle/tree/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections",
+    "bytes": 177049,
+    "sha256": "bc243033068a0798d2bdfe34bedeb4f496d1a24d9e538a35ab7b53c379dcffa6",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_bookinfo",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+    "checked_at_utc": "2026-10-29T16:33:44.811224+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+    "bytes": 77493,
+    "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_ssle",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-SSLE.xml",
+    "checked_at_utc": "2026-10-29T16:33:44.811667+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-SSLE.xml",
+    "bytes": 55142,
+    "sha256": "b3ec019bb8c2a24fc83ff6fe3a70e66358a02f1a4a04c442e69226da8738a5f7",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_rref",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-RREF.xml",
+    "checked_at_utc": "2026-10-29T16:33:44.811991+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-RREF.xml",
+    "bytes": 93570,
+    "sha256": "249a0a8529d7656092e74aee9022773b669cee010975bf3e818d3107a0bbf63b",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "beezer_tss",
+    "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-TSS.xml",
+    "checked_at_utc": "2026-10-29T16:33:45.163825+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-TSS.xml",
+    "bytes": 60410,
+    "sha256": "439c4b83a2cc1ecc8d410cbc4d5d119aec7f068928ab1644a3adf450490bd9e1",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_elementary_collection",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/elementary-algebra-2e.collection.xml",
+    "checked_at_utc": "2026-10-29T16:34:00.737827+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/elementary-algebra-2e.collection.xml",
+    "bytes": 5256,
+    "sha256": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_prealgebra_collection",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml",
+    "checked_at_utc": "2026-10-29T16:34:00.738389+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml",
+    "bytes": 5043,
+    "sha256": "309fa072672372d1e46d52031167c21d9a120d1cdfdf3001548e1ca2975077a2",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82462",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82462/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:42.997819+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82462/index.cnxml",
+    "bytes": 1147,
+    "sha256": "7f29e8b9558d6d37553e5991cfffc7cc27c320e2a92ed98db563e76a90e8a51e",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82463",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82463/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:42.998358+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82463/index.cnxml",
+    "bytes": 122749,
+    "sha256": "b6345a5a6a99108f9d32d6518445a4ae70a6b0c54a258021dffc6f2b77b8278a",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82464",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82464/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:42.998814+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82464/index.cnxml",
+    "bytes": 133732,
+    "sha256": "099aae173772040a83d8c9160980922315352fc2a699af7c6f25ddc594a0c0bc",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82465",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82465/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:42.999209+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82465/index.cnxml",
+    "bytes": 102020,
+    "sha256": "320496fe179611ea5e34e8bbf62a28317385e19a2c8038f304183a9dd5847692",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82494",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82494/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:42.999631+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82494/index.cnxml",
+    "bytes": 141877,
+    "sha256": "836da96585f90b9b47f649a87b35f4b3f8923b970915d4be191c35d6fc320fa0",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82537",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82537/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:43.350999+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82537/index.cnxml",
+    "bytes": 97437,
+    "sha256": "6e5710c2c08e928a0f8e7430d246c7ccced8cf8775d27182289c683ed713fb58",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82467",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82467/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:57.720526+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82467/index.cnxml",
+    "bytes": 155541,
+    "sha256": "ba8c5d2d4c0fed618bbf37ebf94d4f18681672d2563b3ae670bd07fad52de7b5",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82495",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82495/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:57.721495+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82495/index.cnxml",
+    "bytes": 129411,
+    "sha256": "767efb1f3c810c3deddb19378ef7249d4cec101836fd1377410b8c389ef4e411",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82538",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82538/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:57.722003+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82538/index.cnxml",
+    "bytes": 133666,
+    "sha256": "1a5d7b8911af41869d4c8a82c3922a6b806b83a6aca8aef6ebb6837de62dfe4d",
+    "access_status": "verified_http_200"
+  },
+  {
+    "request_id": "openstax_m82630",
+    "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82630/index.cnxml",
+    "checked_at_utc": "2026-10-29T16:34:57.722379+00:00",
+    "http_status": 200,
+    "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82630/index.cnxml",
+    "bytes": 22483,
+    "sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b",
+    "access_status": "verified_http_200"
+  }
+]

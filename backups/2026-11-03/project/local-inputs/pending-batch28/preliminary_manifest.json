@@ -1,0 +1,33 @@
+{
+  "status": "pending drafts and figure evidence; not accepted manuscript/PDF",
+  "files": [
+    {
+      "file": "real_plane_metric_plan.md",
+      "sha256": "d17da8816a8f17f5e6a20cad8929d2502e7626e2f7d5f3ee5898d893f826a940"
+    },
+    {
+      "file": "real_plane_metric_concept_review.md",
+      "sha256": "9c8bd6d72f20a2ac697eca47c5d390b51c5d46b9daa4a1dd9dc4b71e815feea0"
+    },
+    {
+      "file": "real_plane_metric_sources.json",
+      "sha256": "71e6982051f1b9bf8748b181506d3cb4b33305d72c2f6ed42e3238d109ddde25"
+    },
+    {
+      "file": "draw_real_plane.py",
+      "sha256": "112748c017d7f30fb19900b6644946943ab2c8e41f0bf4bc56061ab70d686a0d"
+    },
+    {
+      "file": "real_plane_figure_review.md",
+      "sha256": "b9d1aa9a3458136edfb261019d20131188cbf567cca26ce301129fa65a874fcc"
+    },
+    {
+      "file": "real_plane_figure_math_review.md",
+      "sha256": "c8ba4a033c3bfe42142a5d9179751fff812de3307545f4d4da8dfc4735a71454"
+    },
+    {
+      "file": "b2_real_plane_model.png",
+      "sha256": "d6804131be3393ab7309d1d86715c5cec95d087c62e2ae632ce40c142f215a20"
+    }
+  ]
+}

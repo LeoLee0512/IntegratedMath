@@ -1,0 +1,33 @@
+{
+  "source_commit": "197b4bda191ac6ba5fab3151f1e1324fcb44da88",
+  "pdf_pages": 272,
+  "files": {
+    "dist/综合数学_基础续写审阅版.pdf": {
+      "sha256": "5fb3831c2e0875e7d85cf68134d178b0193fa5ff98d2bb6e5f19335be2bc74f5",
+      "bytes": 1287907
+    },
+    "dist/综合数学_基础续写审阅版.md": {
+      "sha256": "d6221fd9cd5f1bf3a0fbe77705346671277ded9a8ee5eda5cb7f206c01c00927",
+      "bytes": 599753
+    },
+    "dist/综合数学_基础续写_伴生文件.zip": {
+      "sha256": "7e03294cd916be4981309711c4370bc5f63759838ba79e06cda153460235742c",
+      "bytes": 59028020
+    },
+    "BATCH_CHECKPOINT.md": {
+      "sha256": "547d45c50e80d007ead7045d77d276ec86ec1adda4982f206445527b8b80debe",
+      "bytes": 10517
+    },
+    "data/production/batch_validation.json": {
+      "sha256": "e978d7872fa143a3076ddcdc30575c8c3670817e1ef665effa8f226b44b9bfff",
+      "bytes": 418599
+    },
+    "data/production/package_validation.json": {
+      "sha256": "2a18462b19f8287febfba207fd97c2a89e65fe0d60e1bade59ac9d63b5a467be",
+      "bytes": 251
+    }
+  },
+  "delivery_status": "Local verified snapshot; no available Library/upload tool; no upload or library_file_id.",
+  "created_at": "2026-10-27T16:34:30.162592+00:00",
+  "scope": "B1.1–B1.17 plus existing ch1 draft; 150 exercises. Chapter26 partial; whole book incomplete."
+}

@@ -1,0 +1,173 @@
+--- a/tools/build_learning_batch.py
++++ b/tools/build_learning_batch.py
+@@ -101,6 +101,8 @@
+     ("real_sequences_algebra", "seqlaw-unit", "seqlaw", "real_sequences_algebra"),
+     ("real_sequences_order", "seqorder-unit", "seqorder", "real_sequences_order"),
+     ("real_subsequences_bw", "subseq-unit", "subseq", "real_subsequences_bw"),
++    ("real_sequences_cauchy", "seqcauchy-unit", "seqcauchy", "real_sequences_cauchy"),
++    ("real_function_limits", "funlimit-unit", "funlimit", "real_function_limits"),
+ ]
+ EDUCATION_UNITS = {
+     "ratio-unit": {"chapter": 526, "code": "97Fxx", "section": "97F80"},
+@@ -149,6 +151,8 @@
+     "seqlaw-unit": {"chapter": 242, "code": "40Axx", "section": "40A05"},
+     "seqorder-unit": {"chapter": 242, "code": "40Axx", "section": "40A05"},
+     "subseq-unit": {"chapter": 242, "code": "40Axx", "section": "40A05"},
++    "seqcauchy-unit": {"chapter": 242, "code": "40Axx", "section": "40A05"},
++    "funlimit-unit": {"chapter": 146, "code": "26Axx", "section": "26A03"},
+ }
+ CLASSIFIED_UNITS = {**EDUCATION_UNITS, **ANALYSIS_UNITS}
+ WRITTEN_REPORT = ROOT / "research/production/written_arithmetic_validation.json"
+@@ -283,7 +287,9 @@
+               ROOT / "research/production/real_sequences_sources_2026-10-30.md",
+               ROOT / "research/production/real_sequences_sources_2026-10-30.json",
+               ROOT / "research/production/real_sequences_order_subsequences_sources_2026-10-30.md",
+-              ROOT / "research/production/real_sequences_order_subsequences_sources_2026-10-30.json"]
++              ROOT / "research/production/real_sequences_order_subsequences_sources_2026-10-30.json",
++              ROOT / "research/production/real_cauchy_function_limits_sources_2026-10-30.md",
++              ROOT / "research/production/real_cauchy_function_limits_sources_2026-10-30.json"]
+     return hashes(paths)
+ 
+ 
+@@ -403,6 +409,9 @@
+     text = text.replace(
+         "](../../research/production/real_sequences_order_subsequences_sources_2026-10-30.md)",
+         "](#real-sequences-order-subsequences-sources)")
++    text = text.replace(
++        "](../../research/production/real_cauchy_function_limits_sources_2026-10-30.md)",
++        "](#real-cauchy-function-limits-sources)")
+     # A bare attribute after bold paragraph text is NOT a Pandoc identifier.
+     # Make question labels real headings in the assembled document only.
+     return re.sub(r"^\*\*(题[^*\n]+)\*\* (\{#[^}]+\})$", r"#### \1 \2", text, flags=re.M)
+@@ -1265,7 +1274,7 @@
+ 
+ **[CUTINV-LEBL]** Jiří Lebl，*Basic Analysis: Introduction to Real Analysis*，第一卷，第6.3版。[固定提交实数章](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex)、[前言署名与版本](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex)及[许可](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md)已核。来源采用CC BY-SA 4.0与CC BY-NC-SA 4.0双许可，不是公有领域。
+ 
+-该书从假定具有所需性质的实数集出发；域公理包括非零逆元存在，有序域再要求加法保序和正积为正。本书把它作为结构义务对照，先完成IR2—IR3的实际逆元存在证明，才在DQ4命名域。其最小上界性质要求集合非空且有上界，称为Dedekind完备性。本书所说“完备”仅指这一性质：底层分割集合及包含序没有因加入运算而改变，故已有DC4给同一序中的上确界为条件并集。这里没有另证柯西完备、唯一同构或根的存在。
++该书从假定具有所需性质的实数集出发；域公理包括非零逆元存在，有序域再要求加法保序和正积为正。本书把它作为结构义务对照，先完成IR2—IR3的实际逆元存在证明，才在DQ4命名域。其最小上界性质要求集合非空且有上界，称为Dedekind完备性。B2.29—B2.30此处所说“完备”仅指这一性质：底层分割集合及包含序没有因加入运算而改变，故已有DC4给同一序中的上确界为条件并集。本组尚未证明柯西完备、唯一同构或根的存在；后续B2.32另证非负平方根，B4.5再证实数数列柯西完备性，唯一同构仍待写。
+ 
+ **[CUTINV-DEDEKIND]** Richard Dedekind，*Continuity and Irrational Numbers*（1872），第VI节；Wooster Woodruff Beman英译，收入 *Essays on the Theory of Numbers*，Gutenberg电子书21016于2007年发布。
+ 
+@@ -1299,7 +1308,7 @@
+ 
+ 逐项RA1—RA4、RS1—RS4条件、源码行号、作者、许可与真实缓存记录见 `research/production/real_arch_sqrt_sources_2026-10-30.json`。五项固定版本缓存全部复用，保留原抓取日期与字节哈希，不把复核日期写成新抓取。书内二不是有理平方的证明直接使用已写先修；平方根存在先成立，随后才由有理嵌入单射说明二的根不是有理像。
+ 
+-本组两单元主97F50，交叉06A05与已有12J15有序域接口，不新增26A03覆盖。B2.32的平方根证明只依赖已建有序域和上确界性质，不以B2.31的阿基米德性或稠密性为前提。根函数每次给一个非负值，平方方程的全部解另按目标符号分类；它们不提供几何长度定理。一般实数幂、n次根、极限、柯西完备等价及唯一同构仍待建立；后续B2.35—B2.36已另证实坐标与欧氏距离模型。没有新图、数值模块、浮点开方或代码附录，也不提供任意分割的成员判定算法。
++本组两单元主97F50，交叉06A05与已有12J15有序域接口，不新增26A03覆盖。B2.32的平方根证明只依赖已建有序域和上确界性质，不以B2.31的阿基米德性或稠密性为前提。根函数每次给一个非负值，平方方程的全部解另按目标符号分类；它们不提供几何长度定理。一般实数幂、n次根、一般完备性等价及唯一同构仍待建立；本组未涉及的数列极限和实数数列柯西判据已由后续B4.1—B4.5建立，函数点极限在B4.6独立建立。后续B2.35—B2.36已另证实坐标与欧氏距离模型。没有新图、数值模块、浮点开方或代码附录，也不提供任意分割的成员判定算法。
+ 
+ """
+ 
+@@ -1464,7 +1473,7 @@
+ 
+ 本组B4.1—B4.2只建立实数数列入口：SL1的全函数与量词，SL2的唯一性，SL3的常数和倒数例，SL4的最终相同与固定尾移；SA1的全列界，SA2的线性和绝对值，SA3的乘积，SA4的最终非零及合法倒数和商。来源从自然数1起；本书从0起，以ν(n)+1保证倒数全列合法。来源直接调用有限最大值；本书用固定状态、固定更新的已采用递归原则证明前缀界，保留空前缀。乘积使用已有全列界的两项估计；倒数先得最终正下界，再对早期显式填值，不能把极限非零误当全部分母非零。原全列商仍须各分母非零，未定义1/0。所有严格比较都区分零误差的弱式。
+ 
+-Lebl使用已给定实数，只核标准定义和条件，不替代前文分割构造、域、绝对值或阿基米德性质的书内证明。B3形式基础仍未写；自然归纳及固定递归依前文公开采用。图仅画15个有理样点，固定误差的全尾界与任意误差收敛证明分开，完整函数见[附录二十八](#real-sequence-epsilon-figure-code)。单调收敛与子列不在本组B4.1—B4.2范围，后续B4.3—B4.4另行建立；级数、函数极限、连续与微积分仍未写。
++Lebl使用已给定实数，只核标准定义和条件，不替代前文分割构造、域、绝对值或阿基米德性质的书内证明。B3形式基础仍未写；自然归纳及固定递归依前文公开采用。图仅画15个有理样点，固定误差的全尾界与任意误差收敛证明分开，完整函数见[附录二十八](#real-sequence-epsilon-figure-code)。单调收敛与子列不在本组B4.1—B4.2范围，后续B4.3—B4.4另行建立；函数点极限由后续B4.6独立建立；级数、连续与微积分仍未写。
+ 
+ """
+ 
+@@ -1517,27 +1526,51 @@
+ 
+ 固定提交：`e21ec524ca7d54f800c693b948020c188d21d01f`。
+ 
+-[Sequences and Series](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex)实际核283—368行单调定义、上确界收敛与单边界，554—630行严格指标和继承，823—986行夹逼、比较保弱序与闭区间，2115—2170行有界且固定候选极限的子列判别，2171—2264行实数数列BW与备选证明，2510—2564行尾峰提示及相邻范围。1764—1850行上/下极限路线和2681—2908行柯西内容仅作范围核对，不纳入本批。front matter署名、6.3版本与LICENSE全文已核，双许可为CC-BY-SA4.0或CC-BY-NC-SA4.0。三缓存的原HTTP日期及SHA完整保留于 `research/production/real_sequences_order_subsequences_sources_2026-10-30.json`；规划和整合均零新请求。
++[Sequences and Series](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex)实际核283—368行单调定义、上确界收敛与单边界，554—630行严格指标和继承，823—986行夹逼、比较保弱序与闭区间，2115—2170行有界且固定候选极限的子列判别，2171—2264行实数数列BW与备选证明，2510—2564行尾峰提示及相邻范围。1764—1850行上/下极限路线和2681—2908行柯西内容仅作本组B4.3—B4.4范围核对，后续B4.5另据该段核查柯西条件。front matter署名、6.3版本与LICENSE全文已核，双许可为CC-BY-SA4.0或CC-BY-NC-SA4.0。三缓存的原HTTP日期及SHA完整保留于 `research/production/real_sequences_order_subsequences_sources_2026-10-30.json`；规划和整合均零新请求。
+ 
+ 本组B4.3—B4.4独立展开SO1最终比较、SO2夹逼及有界因子乘趋零列、SO3全指标单调与取反下确界、SO4上确界单调收敛；再给SS1严格指标归纳与复合、SS2单调子列、SS3实数数列BW、SS4有界且指定L的子列判别。来源从1索引，本书从0索引并保留自然数与实数嵌入类型。来源递减证明及指标增长留给读者，本书均完整证明；最终比较另外合并条件起点。C=0与M=0不做非法除法。
+ 
+ 尾峰二分是来源明确提示的标准思路，不是本书首次发现。来源主BW证明用limsup，备选用二分区间与几何衰减；本书不借这些未教对象，而对自然序无界集合逐状态取唯一最小后继，状态分别为尾峰集合P或已证无峰的尾域X。最小元来自已写[完整答案](#ord-a07)，固定更新递归仍公开采用；数学指定函数不意味着任意集合成员可计算。先取得单调子列，再用SO4得到BW，最后构造坏子列、用BW及复合指标证明限定判别，依赖无循环。
+ 
+-本文、16题解独立编写，没有复制来源表达、题解或图；本批不新增图或代码附录。范围仅实数数列，保留零界、不同子列极限及无界自然嵌入的真空反例。无限集合聚点版、更强判别、区间套、一般紧致性、多维BW、柯西判据及级数仍未写；源书已给定实数不替代本书此前分割构造。B3形式基础及single-analysis整模块仍未完成。
++本文、16题解独立编写，没有复制来源表达、题解或图；本批不新增图或代码附录。范围仅实数数列，保留零界、不同子列极限及无界自然嵌入的真空反例。无限集合聚点版、更强判别、区间套、一般紧致性、多维BW及级数仍未写；柯西判据超出本组B4.3—B4.4范围，由后续B4.5建立；源书已给定实数不替代本书此前分割构造。B3形式基础及single-analysis整模块仍未完成。
++
++"""
++
++
++
++def real_cauchy_function_limits_reference_addition():
++    evidence = (ROOT / "research/production/real_cauchy_function_limits_sources_2026-10-30.md").read_text()
++    for identifier in ["Jiří Lebl", "e21ec524ca7d54f800c693b948020c188d21d01f", "CA4", "FL4", "CC-BY-SA4.0", "D_g"]:
++        if identifier not in evidence:
++            raise ValueError("Cauchy/function-limit source evidence changed: review citations")
++    return r"""
++## 柯西判据与实函数点极限参考资料 {#real-cauchy-function-limits-sources}
++
++**[CAUCHY-FUNCTION-LEBL]** Jiří Lebl，*Basic Analysis I*，version6.3。
++
++固定提交：`e21ec524ca7d54f800c693b948020c188d21d01f`。
++
++[Sequences and Series](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex)实际核2681—2908行柯西定义、有界、收敛等价与相邻差边界；[Limits of functions](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex)实际核1—252及320—501行聚点、穿孔极限、唯一性、序列刻画、运算和限制域。front matter作者、版本、版权与LICENSE全文已核，双许可CC-BY-SA4.0或CC-BY-NC-SA4.0。作者来源核查新增一次真实函数章请求，本次整合零新请求；四缓存的原HTTP日期、完整原对象和SHA保留于 `research/production/real_cauchy_function_limits_sources_2026-10-30.json`。
++
++B4.5独立展开CA1双指标定义及完整否定、CA2必要性与全列界、CA3一个收敛子列项控制全尾、CA4实数柯西判据。来源从1索引，有限前缀直接取最大值，充分性经liminf/limsup；本书从0索引，调用SA1对任意全列建立的固定状态前缀界并处理N=0，再用已有SS3的BW及一次固定子列项估计，不引上/下极限或调和级数。实数数列意义下的柯西完备性至此才由证明链得到，不由名称跳步。
++
++B4.6独立建立FL1聚点、穿孔条件与完整量词，FL2共同正半径的实际输入和唯一性，FL3局部相同、穿孔近域界与非零下界，FL4直接误差运算。源书51—76及203—252行从每个半径任取实点，运算随后依序列刻画且部分留练习；本书不采用该无限选点路线，有限个正半径逐对合并，每次只用一个存在见证。源书商要求整个原穿孔域分母非零；本书定义实际商域D_g，先以近域非零证明其聚点，再证倒数及限制后的乘积，零分子误差保留弱比较。
++
++来源使用已给定实数，不替代本书先前分割构造。正文与16题解独立编写，没有复制外部表达、题解、图或代码。本批无新图或编号附录。函数极限不依赖柯西判据；序列刻画、复合极限、左右极限、连续性、微积分与级数仍待后续。B3自然数形式基础及single-analysis整模块未完成。
+ 
+ """
+ 
+ 
+ def compose_body():
+     opening = (CHAPTER / "part_opening.md").read_text()
+-    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章补强稿，以及六十三个基础桥接单元。"
++    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章补强稿，以及六十五个基础桥接单元。"
+               "B1.1—B1.19归入第7部分第26章；B1.20—B1.21归入第63部分第526章的数学教育主题。"
+               "B2.1—B2.4归入同部分第529章的函数教学桥接。"
+               "B2.5—B2.8归入同部分第528章的方程与不等式教学桥接。"
+               "B2.9—B2.10在这些先修之后续写第529章的有理坐标与仿射函数图像教学。"
+               "B2.11—B2.20随后续写第528章的有理数幂、有限和、多项式系数记录、运算、一次除式商余、有理根与恒等识别、有理平方及二次方程。"
+               "B2.21—B2.32再续写第526章97F50的有理数缺口、戴德金分割次序、非空有上界分割族的上确界、分割加法、有序交换加法群、非负分割乘积规律、全符号乘法的有序交换环、非零倒数与除法，汇总同一包含序下具上确界性质的完备有序域，再建立实数阿基米德性质、有理像稠密及非负平方根。B2.33继续第526章的实数绝对值与线距，B2.34再回到第528章的实数二次方程与配方界。"
+-              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.4随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛及实数数列BW。第26章、第242章仅有部分单元，第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；本次没有第2章教学正文。"
++              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.4随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛及实数数列BW。B4.5补齐实数数列的柯西判据，B4.6再进入第18部分第146章26A03的直接函数点极限。第26章、第242章仅有部分单元，第146章也只开始有限入口，第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；本次没有第2章教学正文。"
+               "本稿教学正文按先修关系接续，不能把这一学习顺序说成MSC分类顺序。"
+               "全目录仍为63部分、534章、6006节。自然数单元明确采用佩亚诺规则、归纳与递归原则，"
+               "尚未进行集合论中的自然数形式构造，也未形式证明递归原则。所有课后题答案统一置于全部教学正文之后；例题解答随文保留。\n\n")
+@@ -1617,7 +1650,7 @@
+ 
+ 以下B2.21有理数的稠密、界与平方缺口，B2.22戴德金分割、次序与上确界，接在第528章续写的有理平方与二次方程之后。随后B2.23分割的有理逼近、加法与相反数、B2.24分割加法的群律与次序平移接续于此。接着B2.25非负分割的乘积与有理相容、B2.26非负乘积的结合、分配与严格比较建立非负输入上的乘法规律。随后B2.27全部分割的乘法、符号与结合，B2.28全分配律、乘法比较与消去建立全符号乘法及有序交换环。随后B2.29分割的非零倒数与唯一性、B2.30分割除法与有序域接口补齐非零逆元，连接同一包含序上的上确界性质。随后B2.31建立实数自然数界、阿基米德性质与有理像稠密，B2.32独立从有序域和上确界性质建立非负平方根。随后B2.33从实数次序定义绝对值，证明线距与误差条件。十三单元主属97F50“实数、复数（教育方面）”；B2.21—B2.22交叉关联06A05与03E20，处理有理数缺口和实数构造的集合、次序部分；B2.23—B2.24交叉关联06F20与06A05，建立加法、相反数及次序平移；B2.25—B2.26交叉关联06A05，限于非负分割乘积；B2.27交叉关联06A05，B2.28另交叉06F25“有序环、有序代数、有序模”，B2.29—B2.30同样交叉06A05与06F25，B2.30另交叉12J15“有序域”；B2.31—B2.32交叉06A05与12J15，不新增26A03覆盖；B2.33交叉54E35只定位实数线的具体度量实例，不登记一般度量或度量化理论；均不涉及复数。这是[第526章前段](#chapter-526)之后的第526章续写，不新增分类章或节。第526章未完成；教学先修次序不改变完整分类目录的63部分、534章、6006节。
+ 
+-先在有理数内证明中点、显式自然数界及一个非空有界集合没有有理上确界，再公开采用有理数幂集存在的集合背景，构造非空、非全体、下闭且无最大元的有理下段。只在这些分割组成的集合上证明包含全序、有理数保序嵌入以及非空有上界分割族的并集上确界。B2.23—B2.24再从有理网格见证建立分割加法、相反数及有序交换加法群。B2.25—B2.26再以正有理成员见证和独立负支定义非负乘积，先证明闭合、零与正性、单位和有理相容，再证明结合、两侧分配及正因子比较与消去。B2.27—B2.28再以互斥符号分支定义全部分割上的乘法，证明结合、全分配、各符号因子的比较与非零消去，建立有序交换环。B2.29—B2.30以正有理外点和严格跨界见证构造正倒数，再扩至全部非零分割，定义非零分母除法并证明方程、比较及域规律；同一包含序已有上确界性质，因此得到本书意义的完备有序域。B2.31直接由分割见证建立实数自然数界和有理像稠密，再用已证除法给倍率与定量夹逼。B2.32只依赖已有有序域和上确界性质，经平方规律与双侧扰动证明非负平方根存在唯一，并分类平方方程全部解；它不以B2.31为证明先修。B2.33接着从次序与运算建立实数绝对值、三角与反三角、线距四性质和全部半径分支；末段才把绝对值与平方根连接。后续B2.35—B2.36另行建立实坐标与欧氏距离；一般实数幂、n次根、唯一同构、角度和面积仍须另行建立；实数数列极限入口在后文B4.1—B4.2建立，函数极限尚未建立，不能由有限见证图或名称自动获得。
++先在有理数内证明中点、显式自然数界及一个非空有界集合没有有理上确界，再公开采用有理数幂集存在的集合背景，构造非空、非全体、下闭且无最大元的有理下段。只在这些分割组成的集合上证明包含全序、有理数保序嵌入以及非空有上界分割族的并集上确界。B2.23—B2.24再从有理网格见证建立分割加法、相反数及有序交换加法群。B2.25—B2.26再以正有理成员见证和独立负支定义非负乘积，先证明闭合、零与正性、单位和有理相容，再证明结合、两侧分配及正因子比较与消去。B2.27—B2.28再以互斥符号分支定义全部分割上的乘法，证明结合、全分配、各符号因子的比较与非零消去，建立有序交换环。B2.29—B2.30以正有理外点和严格跨界见证构造正倒数，再扩至全部非零分割，定义非零分母除法并证明方程、比较及域规律；同一包含序已有上确界性质，因此得到本书意义的完备有序域。B2.31直接由分割见证建立实数自然数界和有理像稠密，再用已证除法给倍率与定量夹逼。B2.32只依赖已有有序域和上确界性质，经平方规律与双侧扰动证明非负平方根存在唯一，并分类平方方程全部解；它不以B2.31为证明先修。B2.33接着从次序与运算建立实数绝对值、三角与反三角、线距四性质和全部半径分支；末段才把绝对值与平方根连接。后续B2.35—B2.36另行建立实坐标与欧氏距离；一般实数幂、n次根、唯一同构、角度和面积仍须另行建立；实数数列极限入口在后文B4.1—B4.2建立，B4.5再证数列柯西完备，B4.6独立建立函数点极限；这些结论均不能由有限见证图或名称自动获得。
+ 
+ """
+         if stem == "real_quadratic_equations":
+@@ -1647,7 +1680,19 @@
+ 
+ # 第242章 无穷极限过程的收敛与发散（40Axx） {#chapter-242}
+ 
+-B4.1建立全函数数列、严格误差量词、唯一性、基本例及固定尾移，B4.2证明全列界及带非零条件的四则极限。主叶40A05“级数与数列的收敛与发散”；交叉26A03和97I30只作定位，不重复计为新主叶。B4.3继续最终比较、夹逼、下确界与单调收敛，B4.4以严格指标和确定性最小元更新建立单调子列、实数数列BW及有界子列判别。这里只写四个实数数列单元，第242章及single-analysis模块均未完成；柯西判据、上/下极限、无穷级数、函数极限、连续和微积分仍待后续。
++B4.1建立全函数数列、严格误差量词、唯一性、基本例及固定尾移，B4.2证明全列界及带非零条件的四则极限。主叶40A05“级数与数列的收敛与发散”；交叉26A03和97I30只作定位，不重复计为新主叶。B4.3继续最终比较、夹逼、下确界与单调收敛，B4.4以严格指标和确定性最小元更新建立单调子列、实数数列BW及有界子列判别。B4.5再由任意前缀界、BW及固定子列项估计证明实数柯西判据。这里只写五个实数数列单元，第242章及single-analysis模块均未完成；上/下极限、无穷级数及其余无穷极限过程仍待后续。函数点极限在下一第146章单独建立，不作为这些数列证明的先修。
++
++"""
++        if stem == "real_function_limits":
++            teaching += """
++
++# 第18部分 实函数（MSC 26-XX） {#part-26}
++
++教学路线从数列转入实函数，按先修顺序回到原分类第18部分，分类编号不变。以下直接使用实数域、绝对值与函数域，不将相邻的柯西判据设为逻辑先修。
++
++# 第146章 一元函数（26Axx） {#chapter-146}
++
++B4.6主属26A03“基础：极限及其推广、直线上的初等拓扑”，交叉97I20只定位函数域与类型的教学接口。先定义域聚点和穿孔点极限，再以直接误差—半径证明唯一性、局部条件及同域运算，商在实际非零子域上另证聚点。这里只写一个限定入口，第146章未完成，不登记26A06微积分或一般拓扑完成。序列刻画、复合极限、左右极限、连续性和微积分仍待后续。
+ 
+ """
+         teaching += "\n\n" + (FOUNDATIONS / (stem + ".md")).read_text()
+@@ -1721,7 +1766,8 @@
+                                     + real_plane_metric_reference_addition()
+                                     + real_lines_projection_reference_addition()
+                                     + real_sequences_reference_addition()
+-                                    + real_sequences_order_subsequences_reference_addition() + appendix_four)
++                                    + real_sequences_order_subsequences_reference_addition()
++                                    + real_cauchy_function_limits_reference_addition() + appendix_four)
+     appendices += "\n\n```python\n" + (ROOT / "tools/ch01_simulation.py").read_text() + "```\n"
+     appendices += algorithm_appendix()
+     appendices += written_arithmetic_appendix()
+@@ -2778,7 +2824,7 @@
+                 "legacy_snapshot_sha256": hashlib.sha256((BUILD / "legacy_validation_snapshot.json").read_bytes()).hexdigest(),
+                 "rational_quadratics_validation": {"mode": "matching_source_report_reuse" if quadratic_reused else "executed",
+                     "report_sha256": hashes([RATIONAL_QUADRATICS_REPORT]), "source_sha256": quadratic_dependencies},
+-                "scope": "chapter 1; B1.1 through B1.19 in partial chapter 26; B1.20 and B1.21 in partial chapter 526 (97Fxx); B2.1 through B2.4 in partial chapter 529 (97Ixx); B2.5 through B2.8 in partial chapter 528 (97Hxx); B2.9 and B2.10 continue partial chapter 529 after those prerequisites; B2.11 through B2.18 continue partial chapter 528 (97H20); B2.19 and B2.20 continue that chapter (main 97H30, cross 97H20), over Q; B2.21 and B2.22 continue partial chapter 526 (97F50) with rational gaps and cut order; B2.23 and B2.24 continue chapter 526 (97F50; cross 06F20/06A05) with cut addition and ordered abelian additive group; B2.25 and B2.26 continue chapter 526 (97F50; cross 06A05) with nonnegative cut products, associativity, distributivity and positive-factor comparison/cancellation, B2.27 and B2.28 continue chapter 526 (97F50; cross 06A05, additionally 06F25 for B2.28) with signed multiplication and an ordered commutative ring, including full distributivity and nonzero cancellation, B2.29 and B2.30 continue chapter 526 (97F50; cross 06A05/06F25, additionally 12J15 for B2.30) with constructed nonzero inverses, partial division and an ordered field complete in the previously proved least-upper-bound sense; B2.31 and B2.32 continue chapter 526 (97F50; cross 06A05/12J15) with real Archimedean bounds, rational-image density and nonnegative square roots; the square-root proof is independent of B2.31; B2.33 continues chapter526 (97F50;cross54E35) with real absolute value and real-line distance; B2.34 returns to chapter528 (97H30;cross97H20) with real quadratic equations and attained bounds, independently of B2.31/B2.33; B2.35/B2.36 enter chapter527 (97G70) with real coordinate points, affine parameters and a proved Euclidean metric; B2.37/B2.38 continue chapter527 with line equations/intersection classification and algebraic orthogonal projection/unique nearest points (cross51N10/51N20); angle measurement and area remain outside scope; B4.1/B4.2 enter part28 chapter242 (40A05; cross26A03/97I30) with sequence limits and algebra; B4.3/B4.4 continue with eventual comparison, squeeze, monotone convergence, deterministic monotone subsequences, real-sequence BW and bounded fixed-target subsequence criterion; B3 foundations, Cauchy criterion, limsup/liminf, series and function limits remain outside scope; no general real powers, nth roots, function limits, Cauchy-completeness equivalence, uniqueness-isomorphism theorem or complete Euclidean axiom-system treatment; teaching prerequisite order is not MSC or historical order"}
++                "scope": "chapter 1; B1.1 through B1.19 in partial chapter 26; B1.20 and B1.21 in partial chapter 526 (97Fxx); B2.1 through B2.4 in partial chapter 529 (97Ixx); B2.5 through B2.8 in partial chapter 528 (97Hxx); B2.9 and B2.10 continue partial chapter 529 after those prerequisites; B2.11 through B2.18 continue partial chapter 528 (97H20); B2.19 and B2.20 continue that chapter (main 97H30, cross 97H20), over Q; B2.21 and B2.22 continue partial chapter 526 (97F50) with rational gaps and cut order; B2.23 and B2.24 continue chapter 526 (97F50; cross 06F20/06A05) with cut addition and ordered abelian additive group; B2.25 and B2.26 continue chapter 526 (97F50; cross 06A05) with nonnegative cut products, associativity, distributivity and positive-factor comparison/cancellation, B2.27 and B2.28 continue chapter 526 (97F50; cross 06A05, additionally 06F25 for B2.28) with signed multiplication and an ordered commutative ring, including full distributivity and nonzero cancellation, B2.29 and B2.30 continue chapter 526 (97F50; cross 06A05/06F25, additionally 12J15 for B2.30) with constructed nonzero inverses, partial division and an ordered field complete in the previously proved least-upper-bound sense; B2.31 and B2.32 continue chapter 526 (97F50; cross 06A05/12J15) with real Archimedean bounds, rational-image density and nonnegative square roots; the square-root proof is independent of B2.31; B2.33 continues chapter526 (97F50;cross54E35) with real absolute value and real-line distance; B2.34 returns to chapter528 (97H30;cross97H20) with real quadratic equations and attained bounds, independently of B2.31/B2.33; B2.35/B2.36 enter chapter527 (97G70) with real coordinate points, affine parameters and a proved Euclidean metric; B2.37/B2.38 continue chapter527 with line equations/intersection classification and algebraic orthogonal projection/unique nearest points (cross51N10/51N20); angle measurement and area remain outside scope; B4.1/B4.2 enter part28 chapter242 (40A05; cross26A03/97I30) with sequence limits and algebra; B4.3/B4.4 continue with eventual comparison, squeeze, monotone convergence, deterministic monotone subsequences, real-sequence BW and bounded fixed-target subsequence criterion; B4.5 adds the real-sequence Cauchy criterion; B4.6 enters part18 chapter146 (26A03; cross97I20) with direct punctured-domain function limits, independently of B4.5; B3 foundations, limsup/liminf, series, sequential characterization of function limits, composition limits and continuity remain outside scope; no general real powers, nth roots, general completeness equivalences, uniqueness-isomorphism theorem or complete Euclidean axiom-system treatment; teaching prerequisite order is not MSC or historical order"}
+     (BUILD / "build_inputs.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+     print(json.dumps({"status": "built", "artifacts": NEW_STEMS,
+                       "next": "python tools/validate_learning_batch.py"}, ensure_ascii=False))

@@ -1,0 +1,72 @@
+{
+  "pdf_sha256": "63e80e2de25315277176d49ff8630fc68f2188048f61d7a569a05cabf2957f25",
+  "pages": {
+    "485": {
+      "path": "/tmp/root30-pages/page-485.png",
+      "sha256": "1034032377f6156a876d0a9589008f073ba61615776dad2248a25c638d8905b0"
+    },
+    "487": {
+      "path": "/tmp/root30-pages/page-487.png",
+      "sha256": "402e2dc7cd3c099b89f34bf256f91a15914e5c8ae3e2ac39b2fb18a0c457333d"
+    },
+    "488": {
+      "path": "/tmp/root30-pages/page-488.png",
+      "sha256": "10a1452bb37861c2548e227dc2d7af7771b7fda6b6ba499688d92d8e59faeade"
+    },
+    "490": {
+      "path": "/tmp/root30-pages/page-490.png",
+      "sha256": "41d15d651aa62490d586c61f450d72cbcd44b6f7860ac2ea9c2d6de931a58c7f"
+    },
+    "491": {
+      "path": "/tmp/root30-pages/page-491.png",
+      "sha256": "471dbba98d361ed4ae26998104f3f19c6b556c7b5d343e43d47b621faf70fa91"
+    },
+    "492": {
+      "path": "/tmp/root30-pages/page-492.png",
+      "sha256": "382e545614beecbd68a99982fe34fae2bffa2a184744d4bb031a7bfe24090958"
+    },
+    "494": {
+      "path": "/tmp/root30-pages/page-494.png",
+      "sha256": "f03ece4fde734300edcb4e4521c8ad8dd49dca6b6a0d982d88d9798dc26ec35b"
+    },
+    "495": {
+      "path": "/tmp/root30-pages/page-495.png",
+      "sha256": "82bacd5e1b2c7fdb7565422b9ea57cd9a6b4f8af512d9b264864055d3df00159"
+    },
+    "831": {
+      "path": "/tmp/root30-pages/page-831.png",
+      "sha256": "922c31005b2311f7ea80e8cc22e3100831cf973191841878f5cf81481a4abc59"
+    },
+    "834": {
+      "path": "/tmp/root30-pages/page-834.png",
+      "sha256": "7684c017cf35f7157d11a334b6b0cc68d09d211f73e88e132575f4b9aa87f7de"
+    },
+    "837": {
+      "path": "/tmp/root30-pages/page-837.png",
+      "sha256": "faf8ff7628475c1a8227c47fda7bf4a13d7a7941187a2a9b5138adb736f82de4"
+    },
+    "840": {
+      "path": "/tmp/root30-pages/page-840.png",
+      "sha256": "765f5124fdf9ba0acc17a760abae0ab9aceb050340d4a144b3375abf06342362"
+    },
+    "858": {
+      "path": "/tmp/root30-pages/page-858.png",
+      "sha256": "7e2f247cb8615baccb0d61c589716d7e124a5c865c69df8619cf7b19cdede6b5"
+    },
+    "918": {
+      "path": "/tmp/root30-pages/page-918.png",
+      "sha256": "acb202946d3d329836c680f726150ca758ed4e45cd0d51504ceb3230683de280"
+    },
+    "919": {
+      "path": "/tmp/root30-pages/page-919.png",
+      "sha256": "4cf6aeeab1d5025c5d08fff9bcd7820cb610524f8b175d75f1f9ceb21c1ceb53"
+    },
+    "493": {
+      "path": "/tmp/root30-pages/page-493.png",
+      "sha256": "f2a038e16bbed261e347b137d722dc6420117f27d6fbab935c9214cb882e10e4"
+    }
+  },
+  "previous_pdf_sha256": "df878ca5f51010ce3d0a4751c10c93b92e114fcf5996c41e7d80dcff7435186c",
+  "rebind_note": "All 16 images from final rebuilt PDF re-rendered and byte-compared identical to the 16 actually viewed images. PDF bytes changed; actual image evidence did not.",
+  "rebind_at": "2026-10-30T04:56:14.804966+00:00"
+}

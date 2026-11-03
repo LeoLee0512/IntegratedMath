@@ -1,0 +1,206 @@
+{
+  "time": "2026-10-30T01:45:31.054513+00:00",
+  "head": "9962388ecc5add1d55ec32c3b6df06927e2292ee",
+  "files": [
+    {
+      "source": "/tmp/dedekind_addition_math_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_math_review.md",
+      "sha256": "0bed2b10625c5fe4463fea63b4fc00f488dd4308707d6e244940047f03db4348"
+    },
+    {
+      "source": "/tmp/dedekind_additive_order_math_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_additive_order_math_review.md",
+      "sha256": "2d6c9a8e80aa26bac933015992b8d6a03afe780627fc72a510e056102cf06f1b"
+    },
+    {
+      "source": "/tmp/dedekind_grid_figure_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_grid_figure_review.md",
+      "sha256": "71e69b364f5cc653cd6c7d35400203a998cabd55be558aa80b550ed8b35e0b94"
+    },
+    {
+      "source": "/tmp/dedekind_grid_figure_independent_output.json",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_grid_figure_independent_output.json",
+      "sha256": "7a5e959d4214d46f8a1bc59a09cfae30aaf4ba241704fd0ddecfa04367466f54"
+    },
+    {
+      "source": "/tmp/check_dedekind_grid_figure_independent.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/check_dedekind_grid_figure_independent.py",
+      "sha256": "02af536860e5dab5135ddb5d983885bc121a462eb850f6058abd777c6160a2aa"
+    },
+    {
+      "source": "/tmp/dedekind_addition_answers.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_answers.md",
+      "sha256": "101f40c877fb114ecde5220a5069d7dd0572769116b667c16ab6ff3d598fdf29"
+    },
+    {
+      "source": "/tmp/b2_dedekind_grid.png",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/b2_dedekind_grid.png",
+      "sha256": "635c8f35e9dc1d6e91d69efbff36fa0815bbf51faea53ed2335d2b8f1b4926a1"
+    },
+    {
+      "source": "/tmp/dedekind_grid_figure.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_grid_figure.py",
+      "sha256": "cd1e360adda174f42682309b3d3851fe99d3146eb0ab979dee09e06f13ac3b90"
+    },
+    {
+      "source": "/tmp/dedekind_additive_order_answers.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_additive_order_answers.md",
+      "sha256": "fd2768da65f5a8dda44c463b6b9c65a5066e67ca8e04922bf101a3c3c296f46c"
+    },
+    {
+      "source": "/tmp/dedekind_addition.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition.md",
+      "sha256": "73a44e3b905eb11cb0f2ed14f543a6a7dc0722ae8ff82de807452cb63f965371"
+    },
+    {
+      "source": "/tmp/dedekind_addition_sources.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_sources.md",
+      "sha256": "9b35692eaee574bc5ccbc648a0af3f6305138741258426ba66886a0328c15856"
+    },
+    {
+      "source": "/tmp/dedekind_addition_sources.json",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_sources.json",
+      "sha256": "9e741561321e14342b5b6919e2ac44da884d5a118562abfafe63ffa23d50377f"
+    },
+    {
+      "source": "/tmp/write_dedekind_addition_sources.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/write_dedekind_addition_sources.py",
+      "sha256": "7c29921236e87558c2f5bb1c1741c2a982146248f4452338acef0581d3428d1f"
+    },
+    {
+      "source": "/tmp/dedekind_additive_order.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003"
+    },
+    {
+      "source": "/tmp/dedekind_addition_plan.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_plan.md",
+      "sha256": "23d82dd8789052273135d20c5514e0b6352cd2dab590282091ac298458f22b4d"
+    },
+    {
+      "source": "/tmp/dedekind_addition_concept_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_addition_concept_review.md",
+      "sha256": "fed63b4b9c306b4b974ad793614cf9ab13a8ac674efb0cb36cb122403d0cd9ab"
+    },
+    {
+      "source": "/tmp/dedekind_cuts_order_math_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_cuts_order_math_review.md",
+      "sha256": "3976abb58d942ae6c6b12e92fcf83a4c9a4651958de670e3cbe9e0110043363a"
+    },
+    {
+      "source": "/tmp/dedekind_cuts_order_answers.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_cuts_order_answers.md",
+      "sha256": "cf5de337b8698a917fbabb0cef6d17e66db10227c05fc75179f3d41bfd0bac3c"
+    },
+    {
+      "source": "/tmp/dedekind_cuts_order.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4"
+    },
+    {
+      "source": "/tmp/gaps-code-overflow-660.png",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps-code-overflow-660.png",
+      "sha256": "2484504e91e1fb0becdc7b32e41a7711d411fe915dbe8e001fd0340701f64e78"
+    },
+    {
+      "source": "/tmp/integratedmath-gaps-cuts-qa.log",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/integratedmath-gaps-cuts-qa.log",
+      "sha256": "3952b5b5b1e2581c78b5dbe8127f47f403273cfa73fade2497d79a5436904aba"
+    },
+    {
+      "source": "/tmp/integratedmath-gaps-cuts-build.log",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/integratedmath-gaps-cuts-build.log",
+      "sha256": "76d917920bf8bb2f16269dbe29f27a7f18e0d87272ec47202107643a8fa4d03a"
+    },
+    {
+      "source": "/tmp/gaps_formal_validation.json",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_formal_validation.json",
+      "sha256": "49769f6a539f4a19776f832cd5ac16eda8c021dea5c6463f98c4986030b873ba"
+    },
+    {
+      "source": "/tmp/rational_gaps_cuts_pedagogy_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_cuts_pedagogy_review.md",
+      "sha256": "691b2c844959698a02fb3641f86b5c96e60a372d22e7d8b54dd4b7a211878d78"
+    },
+    {
+      "source": "/tmp/rational-gaps-cuts-checkpoint.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational-gaps-cuts-checkpoint.md",
+      "sha256": "f5d7028ea4527038470dbff8075e0d1d685afbfd01e3d2e31a151516f4200545"
+    },
+    {
+      "source": "/tmp/gaps_candidates_validation.json",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_candidates_validation.json",
+      "sha256": "246258b15fe5c7ee882a5def1a308d43da962613a59e56f83f6a28049a471d39"
+    },
+    {
+      "source": "/tmp/gaps_build_validator.patch",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_build_validator.patch",
+      "sha256": "fa5dc943a51d30452a6414c91b20dd9793735b2cde8e6d0c70d9a301bf9d15ab"
+    },
+    {
+      "source": "/tmp/gaps_validate_learning_batch.py.patch",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_validate_learning_batch.py.patch",
+      "sha256": "62f9a0192db92f280448d99c6ae25ccbaf610c73433293595ef2f917d16f8c6c"
+    },
+    {
+      "source": "/tmp/gaps_build_learning_batch.py.patch",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_build_learning_batch.py.patch",
+      "sha256": "b4c1f31d8abb82c33870fb8403e6f0e9c2cda92d8b41deadd40461d51e8dfb91"
+    },
+    {
+      "source": "/tmp/gaps_appendix_functions.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_appendix_functions.py",
+      "sha256": "b0676340f0ce67c0713cf16051087791a71e1ec2d91292ea47b043d346643ec4"
+    },
+    {
+      "source": "/tmp/gaps_validate_learning_batch.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_validate_learning_batch.py",
+      "sha256": "757a0a572908734ccd7a6528b32609e6f7fdbf0f96108d3122f413b3e3432e4e"
+    },
+    {
+      "source": "/tmp/gaps_build_learning_batch.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/gaps_build_learning_batch.py",
+      "sha256": "69cba7f8d1fe813443a94471802a6ec9876080e8248fa690b9ef932a83add931"
+    },
+    {
+      "source": "/tmp/rational_gaps_bounds_math_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_bounds_math_review.md",
+      "sha256": "03aa4916f29209d6c733f2ee97ef0a27c77caf0525800c6956beb268eb310554"
+    },
+    {
+      "source": "/tmp/rational_gaps_cuts_sources.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_cuts_sources.md",
+      "sha256": "a0640b04ff3e045250d55066fba58d8178d946ab13b92305cf6624a4ef6d9db3"
+    },
+    {
+      "source": "/tmp/rational_gaps_cuts_sources.json",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_cuts_sources.json",
+      "sha256": "f3716babcc2017d5c0ba37899e85c118002c6413e5682d5b595a5e0e5bb69e27"
+    },
+    {
+      "source": "/tmp/write_rational_gaps_cuts_sources.py",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/write_rational_gaps_cuts_sources.py",
+      "sha256": "f04569bde098a6c436147877f5ae4fbad18875e426eac4481dc1baf18b264aad"
+    },
+    {
+      "source": "/tmp/rational_gaps_bounds_answers.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_bounds_answers.md",
+      "sha256": "80cdf0a274ae73e0ed7546c4be8345534671f64bef1d441dca7b54507ad33675"
+    },
+    {
+      "source": "/tmp/rational_gaps_bounds.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_bounds.md",
+      "sha256": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3"
+    },
+    {
+      "source": "/tmp/rational_gaps_cuts_plan.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_cuts_plan.md",
+      "sha256": "3f9e500c20aa899fd2e6fa26619bac604cc49fc78ba4ea3004e80d9ca1bf2492"
+    },
+    {
+      "source": "/tmp/rational_gaps_cuts_concept_review.md",
+      "saved": "local-inputs/recovery-2026-10-30/tmp/rational_gaps_cuts_concept_review.md",
+      "sha256": "93e7731af6b637c7edddfc9b9ea8f926db8650fe16283e76e30f9075b7002e63"
+    }
+  ]
+}

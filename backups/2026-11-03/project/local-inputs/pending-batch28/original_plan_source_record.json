@@ -1,0 +1,260 @@
+{
+  "status": "Independent plan/source conditions audit only; no unit manuscript or formal changes in this audit",
+  "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+  "plan_path": "/tmp/real_plane_metric_plan.md",
+  "plan_sha256": "d17da8816a8f17f5e6a20cad8929d2502e7626e2f7d5f3ee5898d893f826a940",
+  "network": {
+    "new_http_requests": 2,
+    "http200": 2,
+    "policy": "restricted/enforced; observations_current true; default inherited proxy retained; vpn false",
+    "discovery": "existing public fixed-commit textbook metadata, actual local root chapter include and repository listing; no broad web crawl"
+  },
+  "sources": [
+    {
+      "id": "lebl_metric",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "http_status": 200,
+      "fetched_at_utc": "2026-10-30T03:19:56.836393+00:00",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_metric.tex",
+      "bytes": 131868,
+      "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis: Introduction to Real Analysis, chapter Metric Spaces",
+      "version": "commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "actual_read_locations": [
+        "31–68: four metric axioms",
+        "169–181: R^n Cartesian product and point notation",
+        "193–239: Cauchy–Schwarz statement and sum-of-squares proof",
+        "241–319: Euclidean metric and triangle via Cauchy–Schwarz"
+      ],
+      "role": "Fact/condition comparison; source assumes existing real field, square roots and increasing sqrt; book must prove needed root-order/product identities using RS. No external prose/exercises copied.",
+      "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+    },
+    {
+      "id": "beezer_vector_operations",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+      "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+      "http_status": 200,
+      "fetched_at_utc": "2026-10-30T03:20:43.730446+00:00",
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_vector_operations.xml",
+      "bytes": 38273,
+      "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8",
+      "author": "Robert A. Beezer",
+      "title": "A First Course in Linear Algebra, Section VO: Vector Operations",
+      "version": "version 3.50; commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "actual_read_locations": [
+        "12–33: ambient complex tuples and real-coordinate specialization",
+        "105–117: component equality",
+        "145–158: component addition",
+        "178–194: component scalar multiplication",
+        "267–356: ten laws and component proof of scalar-addition distributivity"
+      ],
+      "role": "Fact/condition comparison; source mostly C^m, book R^2 only. Source proves one law in detail and leaves others; book must explicitly prove each required two-coordinate law. No examples/exercises/Sage code copied.",
+      "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author, title/version and copyright evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_front.tex",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_bytes": 18862,
+      "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "actual_read_locations": [
+        "front: 289 author; 291 title; 401 copyright; 435–456 dual license"
+      ]
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "License evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_license.md",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_bytes": 467,
+      "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "actual_read_locations": [
+        "1–13 full license declaration"
+      ]
+    },
+    {
+      "id": "beezer_copying",
+      "author": "Robert A. Beezer",
+      "title": "COPYING.txt license grant",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "original_fetch_at_utc": "2026-10-29T16:33:31.372978+00:00",
+      "original_http_status": 200,
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_copying.txt",
+      "original_cache_path": "/tmp/linear-source-audit/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "bytes": 740,
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_read_locations": [
+        "full 7-line COPYING grant"
+      ],
+      "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+    },
+    {
+      "id": "beezer_bookinfo",
+      "author": "Robert A. Beezer",
+      "title": "Book metadata and license grant",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "original_fetch_at_utc": "2026-10-29T16:33:44.811224+00:00",
+      "original_http_status": 200,
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_bookinfo.xml",
+      "original_cache_path": "/tmp/linear-source-audit/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "bytes": 77493,
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_read_locations": [
+        "1–20: version/title/author/copyright/shortlicense"
+      ],
+      "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+    }
+  ],
+  "prerequisites": [
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "anchors_verified": [
+        "fun-sets",
+        "fun-pairs",
+        "fun-definition",
+        "fun-image"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_bijections.md",
+      "sha256": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+      "anchors_verified": [
+        "bij-injective",
+        "bij-surjective"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_inverse.md",
+      "sha256": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+      "anchors_verified": [
+        "inv-two-sided"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+      "anchors_verified": [
+        "cutgroup-laws",
+        "cutgroup-inverses",
+        "cutgroup-translation",
+        "cutgroup-negation-subtraction"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/dedekind_signed_product.md",
+      "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+      "anchors_verified": [
+        "cutsigned-signs",
+        "cutsigned-associative",
+        "cutsigned-rational-zero"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+      "anchors_verified": [
+        "cutring-distributive",
+        "cutring-multiplication-order",
+        "cutring-cancellation"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "anchors_verified": [
+        "cutdiv-definition",
+        "cutdiv-equations",
+        "cutdiv-order"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/real_square_roots.md",
+      "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+      "anchors_verified": [
+        "realsqrt-square-order",
+        "realsqrt-function",
+        "realsqrt-equations-irrational"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    },
+    {
+      "path": "/tmp/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+      "anchors_verified": [
+        "realabs-definition-bounds",
+        "realabs-products-triangle",
+        "realabs-error-root"
+      ],
+      "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+    }
+  ],
+  "classification": {
+    "taxonomy_path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+    "taxonomy_sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "chapters_path": "/workspace/IntegratedMath-book/data/production/chapters.json",
+    "chapters_sha256": "f9c3c095b4d65261a269b9865397d9bdd9cb3ab09e966b622685bbdfa5430774",
+    "main": {
+      "chapter": 527,
+      "chapter_code": "97Gxx",
+      "leaf": "97G70",
+      "actual_english_title": "Analytic geometry, vector algebra (educational aspects)"
+    },
+    "cross_refs": [
+      {
+        "code": "51N10",
+        "title": "Affine analytic geometry",
+        "scope": "RP3 affine parameter line and RP4 segment/midpoint only"
+      },
+      {
+        "code": "54E35",
+        "title": "Metric spaces, metrizability",
+        "scope": "One fully verified Euclidean-plane metric example; no general metrizability theory"
+      }
+    ],
+    "counting": "No actual installation/ledger regeneration done; proposed future increments not independently certified"
+  },
+  "rights": "Only mathematical facts and condition comparisons used. External prose, proofs, exercises, images and code not copied into manuscript. Caches are evidence, not automatically distributed. License grants recorded with source and version; full legal texts beyond recorded license declarations were not independently re-audited."
+}

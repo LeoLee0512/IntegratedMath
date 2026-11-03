@@ -1,0 +1,44 @@
+--- a/tools/validate_learning_batch.py
++++ b/tools/validate_learning_batch.py
+@@ -371,6 +371,7 @@
+                     or "基础单元B4.1" in text or "基础单元B4.2" in text
+                     or "基础单元B4.3" in text or "基础单元B4.4" in text
+                     or "基础单元B4.5" in text or "基础单元B4.6" in text
++                    or "基础单元B4.7" in text or "基础单元B4.8" in text
+                     or "附录十五有限双射" in text
+                     or "附录十六有理数一次方程" in text
+                     or "附录十七有理数不等式" in text
+@@ -2522,8 +2523,8 @@
+ 
+ 
+ def main():
+-    require(len(UNITS) == 65 and len(PAIRS) == 534 and len(FIGURES) == 21,
+-            "Batch 32 registration counts must be 65 units, 534 exercise pairs and 21 figures")
++    require(len(UNITS) == 67 and len(PAIRS) == 550 and len(FIGURES) == 21,
++            "Batch 33 registration counts must be 67 units, 550 exercise pairs and 21 figures")
+     REPORT.parent.mkdir(parents=True, exist_ok=True)
+     # Immediately invalidate an earlier acceptance, including if this run later fails.
+     REPORT.write_text(json.dumps({"status": "validation_in_progress",
+@@ -2596,11 +2597,11 @@
+             require(int(segment.split("-")[0]) == parent
+                     and chapter_starts[segment] < position < chapter_ends[segment],
+                     "Unit assigned to the wrong teaching chapter: " + anchor)
+-        for phrase in ["第26章、第242章仅有部分单元，第146章也只开始有限入口", "第526章未完成", "第529章未完成", "第528章未完成",
++        for phrase in ["第26章、第242章、第146章仅有部分单元", "第526章未完成", "第529章未完成", "第528章未完成",
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+                        "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",
+-                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "六十五个基础桥接单元", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
++                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "六十七个基础桥接单元", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
+             require(phrase in text, "Missing scope/figure disclosure: " + phrase)
+         require(rational_gap_figure_source().strip() in text,
+                 "Rational gap appendix does not contain the current complete figure function")
+@@ -2638,6 +2639,8 @@
+                 "Sequence order/subsequence references missing/duplicated")
+         require(text.count("{#real-cauchy-function-limits-sources}") == 1,
+                 "Cauchy/function-limit references missing/duplicated")
++        require(text.count("{#real-continuity-intermediate-sources}") == 1,
++                "Continuity/intermediate-value references missing/duplicated")
+         require("本轮共发出" not in text and "HTTP 404" not in text, "Research request transcript leaked into book")
+     book_reports = {stem: audit_book(stem, len(FIGURES), PAIRS) for stem in NEW_STEMS}
+     book_reports["综合数学_第一章审阅版"] = audit_book("综合数学_第一章审阅版", 4, PAIRS[:14])

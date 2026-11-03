@@ -1,0 +1,110 @@
+{
+  "status": "READY_for_root_review_and_integration",
+  "checked_at_utc": "2026-10-30T05:10:42.829671+00:00",
+  "files": {
+    "tools/build_learning_batch.py": "71cdc845982bd2295bcb4a796829601b721f4360558de594960546cd7544130f",
+    "tools/build_production_ledger.py": "e33af7e1ccf3e84c914c7408945bd97a8e9c79e8886eaa271d0c99f58a1fff2e",
+    "tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "tools/validate_learning_batch.py": "94767715fe2c17cc216999696a6f65dda7f19f2aa9d4bc4318ece025c9965dad",
+    "LEARNING_PATH.md.patch": "35197fc88b0f19716dea16576f313b063cda6217407d55a00ba4b3249b162467",
+    "README.md.patch": "77155db483ab001eb6c2bed94636ff48cd0b19544913362e3d7354fe93278bdc",
+    "build_learning_batch.py.patch": "1b969c639b8153fbf13a146f2a2a181d3aefb6230de18a755dffcd40d124c5e5",
+    "build_production_ledger.py.patch": "3290d770ea5fb47bc8758d02b7f39cf0ff8caf1c9f7610a8df060210d710943a",
+    "validate_learning_batch.py.patch": "303d01e82dfd2147fb85778207122b720ce41526daf044c433469e0a34b730b2",
+    "research/production/real_continuity_intermediate_sources_2026-10-30.json": "683b12faad815670c1fa55d12614568ca252cf046c9afea6eb5d11102657055f",
+    "research/production/real_continuity_intermediate_sources_2026-10-30.md": "3859d1dedcd42967707f54d051a05191a8763207f9c5c91ac4f7b35f7b860314",
+    "structural_check.json": "800e6798dfd0d536fb7753eb1c3ff80c144b81b9a99cb580c81e51bce8e4323e",
+    "baseline_tools_sha256.json": "3ad53b935198d9d48c19b14fc65a1df7a59f98906f1d10332096fda36f7c4d58",
+    "metadata/LEARNING_PATH.md": "51835f12813ba7ad51a77c6e8052d402609116d7dd023ddd0d83d0b92e177ce5",
+    "metadata/README.md": "f1fdf3a716ecaced941f478063f7b25e7e9b2ee9a1b4dc8f0ca42136f00f6f68",
+    "metadata_baseline_sha256.json": "22b2f0c2f17316c5c0d59ccc01b01f4545918e68b45b9ba0ae4fd25abf7f2909",
+    "freeze_inputs.json": "8f488a4233587fada150afc1c4a308c60142ca6c5f47c70fbcc3b76f2782244d",
+    "install33.py": "fec7b3d28b675455867c47773779dceed12737e9cebe36bed3c12b071690e267",
+    "base_tools/build_learning_batch.py": "c50d4f6a3d33d0ff0638658ccb3dc7e7eeb5fb66fdce6658236be5da3f37c4ab",
+    "base_tools/build_production_ledger.py": "a6869bbd13d6e1d3241b05143fc70e73c2519c17ad12feddb99e31026dff2a49",
+    "base_tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "base_tools/validate_learning_batch.py": "df827cfea5bbb9b0405ef94dd0facb17909f0b315e2c4fa424638bf7b6c66fbf"
+  },
+  "structural_result": {
+    "status": "isolated_structural_checks_passed",
+    "counts": {
+      "units": 67,
+      "foundation_exercises": 536,
+      "intro_exercises": 14,
+      "total_exercises": 550,
+      "figures": 21,
+      "numbered_appendices": 28,
+      "draft_chapters": 8,
+      "draft_leaves": 33,
+      "completed_chapters": 0
+    },
+    "html": {
+      "math_nodes": 34618,
+      "source_math_nodes": 34622,
+      "image_alt_math_nodes": 4,
+      "images": 21,
+      "exercise_pairs": 550,
+      "html_ids": 3431,
+      "html_internal_links": 4409
+    },
+    "new_units": [
+      {
+        "code": "B4.7",
+        "stage": "draft",
+        "prerequisites_verified": 20
+      },
+      {
+        "code": "B4.8",
+        "stage": "draft",
+        "prerequisites_verified": 20
+      }
+    ],
+    "input_sha256": {
+      "manuscript/foundations/real_continuity.md": "328b1782b55447f050c93470128b707cd499e4bca0cf14a33e784a75257d9450",
+      "manuscript/foundations/real_continuity_answers.md": "98628922f1f7848aacaee663a66fab63667fc57f67d1770bfe94fa9e7ff3e408",
+      "manuscript/foundations/real_intermediate_value.md": "2b5e8bbd9edadcdd25f1cf52ccd3f6d80bc7f6909aa103d45c34f370100e865c",
+      "manuscript/foundations/real_intermediate_value_answers.md": "a54ce0ab274908f01e7c5deddf94f8d1e348f5500c8eeb08f9cbb010714745ed"
+    },
+    "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+    "new_numerical_code": "none; drawing module unchanged",
+    "new_figures": 0,
+    "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch33 candidate preparation.",
+    "production_scope_phrase_guards_verified": true,
+    "checked_candidate_tool_sha256": {
+      "build_learning_batch.py": "71cdc845982bd2295bcb4a796829601b721f4360558de594960546cd7544130f",
+      "build_production_ledger.py": "e33af7e1ccf3e84c914c7408945bd97a8e9c79e8886eaa271d0c99f58a1fff2e",
+      "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+      "validate_learning_batch.py": "94767715fe2c17cc216999696a6f65dda7f19f2aa9d4bc4318ece025c9965dad"
+    },
+    "source_audit_sha256": {
+      "md": "3859d1dedcd42967707f54d051a05191a8763207f9c5c91ac4f7b35f7b860314",
+      "json": "683b12faad815670c1fa55d12614568ca252cf046c9afea6eb5d11102657055f"
+    },
+    "all_67_unit_chapter_segment_placements_verified": true,
+    "original_source_object_preserved": true,
+    "final_source_binding_metadata_preserves_composed_bytes": true,
+    "post_audit_changes": "No manuscript, tool or metadata changes after isolated run. Final source bindings were present before the run; final compose_body remains byte-identical. Prior31/32 source snapshots retained."
+  },
+  "formal_installation_verified": false,
+  "approval_registered": false,
+  "baseline32_vs_formal": "Four tools and two metadata bind the final frozen32 candidate; formal32 installation not assumed. Root30 layout/scope repairs and31/32 proactive citation paragraph fixes inherited identically. Installer demands exact installed32 equality.",
+  "baseline32_delivery_sha256": "dd6e7d4447abf3b5ee6e97a4fece3bea4252daf91892d0439da023f0542a6e55",
+  "installation_script": {
+    "path": "/tmp/install33.py",
+    "candidate_copy": "install33.py",
+    "sha256": "fec7b3d28b675455867c47773779dceed12737e9cebe36bed3c12b071690e267",
+    "executed_by_preparer": false,
+    "requires": "Root full review; batch32 clean committed worktree and actual six-file snapshot hashes;130 prior text reviews;all candidate/baseline/source/current prerequisite byte checks before mutations."
+  },
+  "notes": [
+    "Three exact tool patches against frozen32 plus two metadata patches. Fourth drawing module remains byte-identical. No new numerical code, figures, numbered appendices or mirror tests.",
+    "B4.7 number66 and B4.8 number67 both continue actual part18 26-XX/ch146 26Axx/26A15, cross97I20 and26A03 respectively. Body parts1/7/63/28/18 follow prerequisites without renumbering MSC.67units550questions(536+14),21figures28appendices;8draftchapters33draftleaves0complete. Only new primary26A15 is counted once; crossreferences do not create coverage.",
+    "Existing single-analysis retains functions/induction-counting/number-systems module dependencies and remains partial; B3 unwritten. C/IV each have20 exact prerequisites. Neither depends on sequences/BW/Cauchy; C has no backward IV edge. IV explicitly uses DC4 and C1/C2/C3.",
+    "Actual isolated Pandoc plus original audit_book and ledger passed: see exact structural_result counts.550exercise pairs21embeddedPNG,67chapter placements28appendices,part18/ch146 and source anchor verified. Exact complete production scope phrase guard list executed. No formal build or PDF acceptance.",
+    "All1155lines16solutions and three final reports read. Math22351ade…/d4d6917c… independently by nonauthor plan_multiplication; pedagogy25e4f145… by visual21_front, including actual later candidate-anchor reading. Original missing-anchor histories preserved; current title separately verified.",
+    "Three public caches plus original HTTP objects verified; planning, author mapping and integrator0newHTTP. Original timestamps and every original JSON field preserved. Current source critical_conditions inherited from32 are historical, current33 actual_read_locators specify reread ranges. Independent concept3f85a487… distinct from IV-author mapping8f36747e…; mapper read Cbody but only hashed Canswers, never relabeled an independent C/IV full-solution review.",
+    "C uses centered direct epsilon-delta continuity and direct typed composition; source gives arithmetic with everywhere-nonzero original denominator and composition via sequential continuity. IV uses one supremum of strict negative values and finite perturbations, source uses bisection/monotone convergence. Directsup proof and explicit counterexample solutions are book-original, not attributed to absent source arguments. Source assumes real numbers, not a source for prior real construction.",
+    "Historical book-only source references for B4.1/2 and B4.5/6 now locate later continuity/IV rather than saying these remain unwritten; original audit files untouched. Chapter146, global scope, manifest and module coverage accurately state finite new content and unfinished extrema/uniform continuity/continuity modulus/semicontinuity/calculus. README opening and LEARNING_PATH current summary/history updated. New reference version, fixed commit and links separated in three paragraphs.",
+    "install33.py syntax parsed only, never executed. After root review/32snapshot it would register4textrecords130→134 and separate actual installation from later build/PDF acceptance. No formal writes or acceptance registration by preparer."
+  ]
+}

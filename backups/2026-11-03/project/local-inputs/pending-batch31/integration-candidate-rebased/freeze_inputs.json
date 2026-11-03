@@ -1,0 +1,56 @@
+{
+  "manuscripts": {
+    "real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+    "real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582",
+    "real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+    "real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+  },
+  "review_reports": [
+    {
+      "observed_path": "/tmp/real_sequences_order_math_review.md",
+      "sha256": "512893da9f135d72320e8b299b73593390ed0d8347f157046ea24cdd3522a764",
+      "bytes": 7057,
+      "intended_repository_path": "research/production/real_sequences_order_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "review22",
+      "scope_as_reported": "SO1—SO4及8解独立全文数学审；只作20步有限递归诊断，不代替全称证明",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_subsequences_bw_math_review.md",
+      "sha256": "344ec137f89a73db34ba4962e9d3fa3aca93f50681a971696d756b2783eb80fc",
+      "bytes": 9608,
+      "intended_repository_path": "research/production/real_subsequences_bw_math_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/plan_multiplication",
+      "scope_as_reported": "SS1—SS4及8解独立全文数学审；此审者写B4.3，只独立审非自著B4.4",
+      "current_manuscript_hashes_present": true
+    },
+    {
+      "observed_path": "/tmp/real_sequences_order_subsequences_pedagogy_review.md",
+      "sha256": "fc56cda681b872a14eb10f35d06debddcfe5a75192123d9f0a17e4e2731ea085",
+      "bytes": 7896,
+      "intended_repository_path": "research/production/real_sequences_order_subsequences_pedagogy_review.md",
+      "installation_status": "pending_root_integration",
+      "reviewer_as_reported": "/root/visual21_front",
+      "scope_as_reported": "四稿900行16解独立教学审；最小元与固定更新、指标类型及边界；不代签来源/PDF",
+      "current_manuscript_hashes_present": true
+    }
+  ],
+  "planning_evidence": [
+    {
+      "observed_path": "/tmp/real_sequences_order_subsequences_plan.md",
+      "sha256": "04f6cf5cc02646b72391f05e6f0604186283aa2e91136984ea10e3c78abf30db",
+      "bytes": 23558,
+      "intended_repository_path": "research/production/real_sequences_order_subsequences_plan.md",
+      "installation_status": "pending_root_integration"
+    },
+    {
+      "observed_path": "/tmp/real_sequences_order_subsequences_concept_review.md",
+      "sha256": "53d835a057d5276412380e4af209588af314b29dd3dbb0b91653934f2e74c8c3",
+      "bytes": 4851,
+      "intended_repository_path": "research/production/real_sequences_order_subsequences_concept_review.md",
+      "installation_status": "pending_root_integration"
+    }
+  ]
+}

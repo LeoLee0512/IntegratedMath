@@ -1,0 +1,14 @@
+{
+  "scope": "root inspected all four incremental tool patches, both metadata changes, full source Markdown/JSON, installer, final four texts and three reports; not formal installation or PDF acceptance",
+  "files": {
+    "build_learning_batch.py.patch": "2864722b4857163bb90617ec364ab4d3518cb9ef2dcb8039bd7a9bad67c89c8d",
+    "build_production_ledger.py.patch": "25e8cc0ea5d9a371afc4c420cd6b3d0cc20f03e85ee5ded0ed1b465c1aad0ce8",
+    "draw_foundations_batch.py.patch": "8e97d20fa93525454ca1ba9508aaefe7c75d5ea65c623ee3b4754f73354b114a",
+    "validate_learning_batch.py.patch": "e5553b1745134c9b344137e7c409e61a7619ed20987fd90607354edda54aadcb",
+    "README.md.patch": "0f8cbea7c5605947b11a7e7a7209ef0f6a68298aacdeb0bbc1de4e09812c7c78",
+    "LEARNING_PATH.md.patch": "ed9f667538478854ce0f80c9af351ecfc8c8d19dad10c038781688b5c7d24b13",
+    "research/production/real_sequences_sources_2026-10-30.md": "9a3c72e1bfab0b44ec080e29c63bbc32713cefdd41cd4135b9bf7606be2f21c7",
+    "research/production/real_sequences_sources_2026-10-30.json": "cb4cfc29126d9b58efa14fcf802c556122e61491b6a0187d8ec5fb57c062ce06",
+    "install30.py": "7b046b7367a4971314bee4abe3f46d7b45be751852646a8aa2dea03b883831a6"
+  }
+}

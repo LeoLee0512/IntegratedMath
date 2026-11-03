@@ -1,0 +1,9 @@
+{
+  "reviewer": "root",
+  "scope": "Actual full read of CA math and both-unit pedagogy reports; all four manuscripts previously full-read",
+  "reports": {
+    "real_sequences_cauchy_math_review.md": "eb4cfbae7fa43a013c23721ba6cb13531d818800961c47c407e6ba6f0a56a7f1",
+    "real_cauchy_function_limits_pedagogy_review.md": "1cbaf1421839e0e55ef1b70c3b52fe77f1d1aa5f1cccd83cae09ff40638a34fc"
+  },
+  "pdf_status": "not yet integrated or accepted"
+}

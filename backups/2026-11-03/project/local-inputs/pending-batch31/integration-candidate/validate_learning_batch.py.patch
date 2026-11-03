@@ -1,0 +1,39 @@
+--- a/tools/validate_learning_batch.py
++++ b/tools/validate_learning_batch.py
+@@ -369,6 +369,7 @@
+                     or "基础单元B2.35" in text or "基础单元B2.36" in text
+                     or "基础单元B2.37" in text or "基础单元B2.38" in text
+                     or "基础单元B4.1" in text or "基础单元B4.2" in text
++                    or "基础单元B4.3" in text or "基础单元B4.4" in text
+                     or "附录十五有限双射" in text
+                     or "附录十六有理数一次方程" in text
+                     or "附录十七有理数不等式" in text
+@@ -2520,8 +2521,8 @@
+ 
+ 
+ def main():
+-    require(len(UNITS) == 61 and len(PAIRS) == 502 and len(FIGURES) == 21,
+-            "Batch 30 registration counts must be 61 units, 502 exercise pairs and 21 figures")
++    require(len(UNITS) == 63 and len(PAIRS) == 518 and len(FIGURES) == 21,
++            "Batch 31 registration counts must be 63 units, 518 exercise pairs and 21 figures")
+     REPORT.parent.mkdir(parents=True, exist_ok=True)
+     # Immediately invalidate an earlier acceptance, including if this run later fails.
+     REPORT.write_text(json.dumps({"status": "validation_in_progress",
+@@ -2598,7 +2599,7 @@
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+                        "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",
+-                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "六十一个基础桥接单元", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
++                       "学习顺序说成MSC分类顺序", "没有第2章教学正文", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "六十三个基础桥接单元", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
+             require(phrase in text, "Missing scope/figure disclosure: " + phrase)
+         require(rational_gap_figure_source().strip() in text,
+                 "Rational gap appendix does not contain the current complete figure function")
+@@ -2632,6 +2633,8 @@
+                 "Real sequences references or code anchor missing/duplicated")
+         require(real_sequence_epsilon_figure_source().strip() in text,
+                 "Sequence appendix omits current complete function")
++        require(text.count("{#real-sequences-order-subsequences-sources}") == 1,
++                "Sequence order/subsequence references missing/duplicated")
+         require("本轮共发出" not in text and "HTTP 404" not in text, "Research request transcript leaked into book")
+     book_reports = {stem: audit_book(stem, len(FIGURES), PAIRS) for stem in NEW_STEMS}
+     book_reports["综合数学_第一章审阅版"] = audit_book("综合数学_第一章审阅版", 4, PAIRS[:14])

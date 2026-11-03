@@ -1,0 +1,10 @@
+{
+  "scope": "root fully read CA226+287 and FL307+308 lines, all16 complete solutions; no proof blocker found; FL independent math report full read; CA independent math and joint pedagogy still pending",
+  "files": {
+    "real_sequences_cauchy.md": "03dcdda8e456244ae0ddce055f3cf57cdab9b843c5bf4f7fb3ed12a1c62d5b93",
+    "real_sequences_cauchy_answers.md": "346a6225efd2652d09c38f47f577a823155668b2f48dc2b8e277461bf776565c",
+    "real_function_limits.md": "3b71dc172ab18a73bedd72e7cc9036ae7d053699ade02db83e77f2f531993ce8",
+    "real_function_limits_answers.md": "532ed11bd537ed577bf73ba713ff38cdfbdf18f9dd946449c3c8d4ffc942d37a",
+    "real_function_limits_math_review.md": "d924a09b851ffe540ee950677c1e90fc54d784e8160de437187a2753a7b04af9"
+  }
+}

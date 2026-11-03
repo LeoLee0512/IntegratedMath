@@ -1,0 +1,59 @@
+{
+  "status": "isolated_structural_checks_passed",
+  "counts": {
+    "units": 63,
+    "foundation_exercises": 504,
+    "intro_exercises": 14,
+    "total_exercises": 518,
+    "figures": 21,
+    "numbered_appendices": 28,
+    "draft_chapters": 7,
+    "draft_leaves": 31,
+    "completed_chapters": 0
+  },
+  "html": {
+    "math_nodes": 32034,
+    "source_math_nodes": 32038,
+    "image_alt_math_nodes": 4,
+    "images": 21,
+    "exercise_pairs": 518,
+    "html_ids": 3331,
+    "html_internal_links": 4252
+  },
+  "new_units": [
+    {
+      "code": "B4.3",
+      "stage": "draft",
+      "prerequisites_verified": 26
+    },
+    {
+      "code": "B4.4",
+      "stage": "draft",
+      "prerequisites_verified": 30
+    }
+  ],
+  "input_sha256": {
+    "manuscript/foundations/real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+    "manuscript/foundations/real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582",
+    "manuscript/foundations/real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+    "manuscript/foundations/real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+  },
+  "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+  "new_numerical_code": "none; drawing module unchanged",
+  "new_figures": 0,
+  "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch31 candidate preparation.",
+  "checked_candidate_tool_sha256": {
+    "build_learning_batch.py": "ccfbcf44dcdb9811ac53704d0e54a905b190e1c01358c08d463df4ede4063465",
+    "build_production_ledger.py": "4c86a38e2b8d966f93071eb0372c5e62b167800712b29e28ebf2e079f3745190",
+    "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "validate_learning_batch.py": "12b2cadd2f4b6da7cd4fd36403756498785e25ca659f5116daa1326f332d8231"
+  },
+  "source_audit_sha256": {
+    "md": "28ecdd82630ee57eb2546ab2bb98659c4f3f724fd22e0e72729fd238f540e5f1",
+    "json": "964b2a8278a7a2e4da1a6eee03f8be0b6dbddb43566f560da8f011eae2a7bbaf"
+  },
+  "all_63_unit_chapter_segment_placements_verified": true,
+  "original_source_object_preserved": true,
+  "final_source_binding_metadata_preserves_composed_bytes": true,
+  "post_audit_changes": "Root layout repair was propagated and full isolated checks rerun. Only source-audit final manuscript/report/planning/hash bindings appended. All four tools and both metadata byte-identical to isolated run; final full compose_body bytes unchanged."
+}

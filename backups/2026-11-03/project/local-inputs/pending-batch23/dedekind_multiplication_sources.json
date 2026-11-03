@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "status": "plan source verification only; no manuscript acceptance",
+  "citation_anchor": "dedekind-multiplication-sources",
+  "checked_at_utc": "2026-10-30T01:54:44.561126+00:00",
+  "scope": "B2.25–B2.28, two bounded batches; inverse route only future planning",
+  "access": "Runtime skill and networking read; enforced restricted policy inspected; normal inherited proxy to permitted raw.githubusercontent.com only; no login or access circumvention",
+  "sources": [
+    {
+      "id": "mathlib_field_basic",
+      "title": "Algebra/Order/Field/Basic.lean",
+      "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic",
+      "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+      "bytes": 31120,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.119904+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "use_this_batch": "Historical scope or established Q/abstract algebra comparison only; no external prose, exercises or code copied."
+    },
+    {
+      "id": "mathlib_license",
+      "title": "mathlib LICENSE",
+      "author": "mathlib contributors",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "License evidence reused without a new network request",
+      "use_this_batch": "Historical scope or established Q/abstract algebra comparison only; no external prose, exercises or code copied."
+    },
+    {
+      "id": "dedekind_tex",
+      "title": "Essays on the Theory of Numbers, Part I: Continuity and Irrational Numbers",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex",
+      "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+      "bytes": 243143,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612324+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Historical date and two-sided cut comparison; different perturbation formula",
+      "use_this_batch": "Historical scope or established Q/abstract algebra comparison only; no external prose, exercises or code copied."
+    },
+    {
+      "id": "dedekind_license",
+      "title": "Project Gutenberg License",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "bytes": 17504,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612777+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Distribution/trademark license evidence",
+      "use_this_batch": "Historical scope or established Q/abstract algebra comparison only; no external prose, exercises or code copied."
+    },
+    {
+      "id": "dedekind_metadata",
+      "title": "GITenberg metadata.yaml",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata",
+      "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+      "bytes": 1216,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.458448+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Public-domain-in-USA declaration, translator and ebook provenance",
+      "use_this_batch": "Historical scope or established Q/abstract algebra comparison only; no external prose, exercises or code copied."
+    },
+    {
+      "id": "mathlib_ring_defs",
+      "author": "Jeremy Avigad; Leonardo de Moura; Floris van Doorn; Yury Kudryashov; Neil Strickland",
+      "title": "Mathlib/Algebra/Ring/Defs.lean",
+      "version": "mathlib v4.24.0, textual source only, no Lean compilation",
+      "license": "Apache-2.0; file header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Ring/Defs.lean",
+      "cache_path": "/tmp/dedekind-multiplication-source-audit/mathlib_ring_defs",
+      "sha256": "862a43694ab1713c95776f08634b9bd4697536c76ee80aa26127caadb6e30c72",
+      "bytes": 14951,
+      "original_fetch_at_utc": "2026-10-30T01:47:32.455340+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Definition and hypothesis comparison; not a construction of Dedekind arithmetic."
+    },
+    {
+      "id": "mathlib_order_ring_defs",
+      "author": "Jeremy Avigad; Leonardo de Moura; Mario Carneiro; Yaël Dillies; Yuyang Zhao",
+      "title": "Mathlib/Algebra/Order/Ring/Defs.lean",
+      "version": "mathlib v4.24.0, textual source only, no Lean compilation",
+      "license": "Apache-2.0; file header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Defs.lean",
+      "cache_path": "/tmp/dedekind-multiplication-source-audit/mathlib_order_ring_defs",
+      "sha256": "ce16d26f079c7ec0323d98c20d1a8d078a758b230d673abb4f6641ee93192bfd",
+      "bytes": 19592,
+      "original_fetch_at_utc": "2026-10-30T01:47:32.782039+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Definition and hypothesis comparison; not a construction of Dedekind arithmetic."
+    },
+    {
+      "id": "mathlib_order_ring_basic",
+      "author": "Jeremy Avigad; Robert Y. Lewis",
+      "title": "Mathlib/Algebra/Order/Ring/Basic.lean",
+      "version": "mathlib v4.24.0, textual source only, no Lean compilation",
+      "license": "Apache-2.0; file header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Basic.lean",
+      "cache_path": "/tmp/dedekind-multiplication-source-audit/mathlib_order_ring_basic",
+      "sha256": "e974bbf6c2d1385964f9aae9dda7959b528c3c93ba58cd6c9b6c6b25bdb8488c",
+      "bytes": 9056,
+      "original_fetch_at_utc": "2026-10-30T01:47:33.144381+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Definition and hypothesis comparison; not a construction of Dedekind arithmetic."
+    }
+  ],
+  "read_locations": [
+    {
+      "id": "mathlib_ring_defs",
+      "lines": "59–96, 116–143, 375",
+      "finding": "Distrib requires both quantified distributive laws; semiring/ring/commutative ring names bundle stated obligations.",
+      "book_obligation": "NP/NL/SP/SR must prove these cut operations separately before using the structure names; full distributivity is only reached in B2.28."
+    },
+    {
+      "id": "mathlib_ring_defs",
+      "lines": "308–327",
+      "finding": "Within an already assumed NonUnitalNonAssocRing, neg_mul and mul_neg are derived using distributivity; mul_sub/add_sub identities then follow.",
+      "book_obligation": "This dependency cannot be imported for SP2: our signs are first verified directly from the cut sign definition; full distributivity is later proved using these signs. Only after SR2 may the difference identities be used."
+    },
+    {
+      "id": "mathlib_order_ring_defs",
+      "lines": "115–137",
+      "finding": "Nonnegative factors preserve weak order; positive factors preserve strict order. An algebraic semiring and ordered addition are prior assumptions.",
+      "book_obligation": "Weak monotonicity first follows directly from P witnesses; strict monotonicity NL4 uses already proved nonnegative distributivity and D=B⊖A>0."
+    },
+    {
+      "id": "mathlib_order_ring_defs",
+      "lines": "147–161",
+      "finding": "IsOrderedRing.of_mul_nonneg and IsStrictOrderedRing.of_mul_pos derive order multiplication from positivity of a difference product, assuming Ring.",
+      "book_obligation": "Use as dependency comparison. The actual book SR3 calculation must explicitly invoke earlier SR2 distribution and DG4 difference order; no circular use of an abstract ring before SR2."
+    },
+    {
+      "id": "mathlib_order_ring_basic",
+      "lines": "1–29",
+      "finding": "Basic ordered-ring lemmas start with existing algebra and order assumptions; IsSquare.nonneg assumes Semiring, LinearOrder and monotone multiplication.",
+      "book_obligation": "Reviewed only to reject it as a construction source or proof of missing cut roots. No theorem from this file is needed by the four planned units."
+    },
+    {
+      "id": "mathlib_field_basic",
+      "lines": "23–25,132–134",
+      "finding": "Midpoint inequalities under existing ordered-field/semifield assumptions.",
+      "book_obligation": "Apply only to the established rational numbers. Explicit rational midpoint witnesses prove P closure, identity, rational compatibility and NL association; no real completeness used."
+    },
+    {
+      "id": "dedekind_tex",
+      "lines": "1006–1062,1080–1090",
+      "finding": "Part I §VI gives addition and says other elementary operations can be defined; distributivity is discussed through continuity rather than supplying this plan’s modern strict one-sided cut proof.",
+      "book_obligation": "Historical attribution only. Do not attribute our P formula, zero branch, common witness, signed distributivity or rational reciprocal proof to an exact passage not found. These are independent book derivations."
+    }
+  ],
+  "prerequisites": [
+    {
+      "path": "/tmp/dedekind_addition.md",
+      "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24"
+    },
+    {
+      "path": "/tmp/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003"
+    }
+  ],
+  "independent_derivations": [
+    "P positive rational witnesses with explicit negative branch",
+    "four cut closure checks including zero",
+    "identity rational midpoint witnesses and principal-cut product",
+    "nested triple product witnesses and nonnegative distributivity with common maximum witness",
+    "signed product and full mixed-sign distributivity from ordered additive group",
+    "positive reciprocal cut future route, not claimed proved"
+  ],
+  "validation_boundary": "No Lean compilation, no copied proofs/exercises, no claim of constructed ordered field or square-root existence"
+}

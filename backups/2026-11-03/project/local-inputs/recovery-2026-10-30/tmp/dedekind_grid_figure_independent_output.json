@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "method": "integer-pair formulas and positive-denominator cross products; no drawing rerun or Fraction oracle",
+  "input_sha256": {
+    "/tmp/dedekind_grid_figure.py": "cd1e360adda174f42682309b3d3851fe99d3146eb0ab979dee09e06f13ac3b90",
+    "/tmp/b2_dedekind_grid.png": "635c8f35e9dc1d6e91d69efbff36fa0815bbf51faea53ed2335d2b8f1b4926a1",
+    "/tmp/dedekind_addition_sources.md": "9b35692eaee574bc5ccbc648a0af3f6305138741258426ba66886a0328c15856",
+    "/tmp/dedekind_addition_sources.json": "9e741561321e14342b5b6919e2ac44da884d5a118562abfafe63ffa23d50377f"
+  },
+  "image_metadata": {
+    "format": "PNG",
+    "size": [
+      1883,
+      666
+    ],
+    "mode": "RGBA"
+  },
+  "points": [
+    [
+      1,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      9,
+      4
+    ]
+  ],
+  "inside": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false
+  ],
+  "first_exit_index": 2,
+  "nonempty_exit_set_witness_index": 5,
+  "N_is_first_exit": false,
+  "u": [
+    5,
+    4
+  ],
+  "v": [
+    3,
+    2
+  ],
+  "gap": "1/4",
+  "epsilon": "1/2",
+  "endpoint_is_outside": true,
+  "scope": "six points for the specified decidable principal cut only; no general cut membership or exit-search algorithm"
+}

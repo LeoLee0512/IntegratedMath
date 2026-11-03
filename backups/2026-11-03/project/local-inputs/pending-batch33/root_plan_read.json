@@ -1,0 +1,24 @@
+{
+  "reviewer": "root",
+  "actual_full_read": true,
+  "adopted_scope": "Two bounded units continuity and IVT, direct epsilon-delta and supremum route; no source sequential/bisection route copied",
+  "proof_check": "Supremum lies in domain; each contradiction excludes appropriate endpoint before positive perturbation; lower upper bound covers every negative-value member; weak/reversed endpoints included",
+  "files": {
+    "real_continuity_intermediate_plan.md": "94768df4de045f1b1ea5567cdf680e03e537298ec9f33da47b2a9355d3373a15",
+    "real_continuity_intermediate_sources.json": "499c023e290e8797bdfba32a5849ce678337d779c2e49d2e65dd3dc58db7e59d"
+  },
+  "independent_concept_report_full_read": "3f85a4871b6095f3f41e6d972661b4663012a1ee478f18df9214cf921554192a",
+  "root_actual_source_read": {
+    "cache": "/tmp/real-cauchy-function-limits-source-audit/lebl_function_limits.tex",
+    "sha256": "3fe56fe7261f3db0dfb0dbabe8e807b0781c41255c2b9cb463f4868fbb13c14d",
+    "ranges": [
+      "730-795",
+      "999-1026",
+      "1567-1691"
+    ],
+    "next_scope_exploration_only": [
+      "1391-1567",
+      "1900-1980"
+    ]
+  }
+}

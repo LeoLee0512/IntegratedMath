@@ -1,0 +1,170 @@
+{
+  "checked_at_utc": "2026-10-30T04:02:12.793709+00:00",
+  "reviewer": "/root/plan_real_next",
+  "status": "independent concept and public source review only; no manuscript authored or final acceptance",
+  "new_http_requests": 1,
+  "sources": [
+    {
+      "id": "lebl_sequences",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis I, Sequences and Series",
+      "version": "6.3, fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+      "cache_path": "/tmp/real-sequences-source-audit/lebl_sequences.tex",
+      "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+      "bytes": 165039,
+      "retrieved_at_utc": "2026-10-30T03:58:03.768311+00:00",
+      "http_status": 200,
+      "raw_http_record": "/tmp/real-sequences-source-audit/http.json",
+      "role": "Standard definitions and theorem conditions checked; independent original textbook proofs planned",
+      "actual_read_locators": [
+        "17-39 sequence function and boundedness",
+        "78-144 convergence quantifiers and threshold dependence",
+        "147-245 constant, reciprocal, alternating, uniqueness, boundedness",
+        "435-520 tail equivalence",
+        "990-1182 algebra including all-denominators-nonzero and nonzero limit",
+        "1184-1195 constant corollaries",
+        "1232-1252 absolute value and reverse triangle"
+      ]
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 18862,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained"
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Version and licensing evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 467,
+      "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained"
+    }
+  ],
+  "classification": {
+    "primary_chapter": 242,
+    "primary_code": "40A05",
+    "chapter_title_zh": "无穷极限过程的收敛与发散",
+    "leaf_title_zh": "级数与数列的收敛与发散",
+    "leaf_title_en": "Convergence and divergence of series and sequences",
+    "cross": [
+      "26A03",
+      "97I30"
+    ],
+    "module_id_actual": "single-analysis",
+    "module_title": "极限、连续、微分与积分",
+    "module_stage": "B4",
+    "module_current_status": "unwritten",
+    "module_prerequisites": [
+      "functions",
+      "induction-counting",
+      "number-systems"
+    ],
+    "scope": "Two introductory sequence units only; broad module and formal B3 prerequisites are not declared completed"
+  },
+  "rights": "No source prose, exercise solution or figure copied/adapted. Fixed commit and dual-license attribution retained; any later adaptation must satisfy chosen applicable attribution/share-alike license. Cache is not automatically redistributed.",
+  "differences_to_preserve": [
+    "Lebl indices begin at 1, textbook N starts at 0",
+    "Lebl finite maximum used without this books fixed-state recursive construction",
+    "Lebl leaves subtraction/absolute-value details to reader; textbook requires complete proof",
+    "No reference used to assume the current theorem or claim entire chapter read"
+  ],
+  "snapshot": [
+    {
+      "path": "/tmp/real_sequences_plan.md",
+      "sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/catalog_titles_zh.json",
+      "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/production/chapters.json",
+      "sha256": "4337270dde4427da24cd5a3dad43eb0a12e9499ae1a8931c75033280db666861"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/data/production/prerequisites.json",
+      "sha256": "5103220cc324b9e813ea7d696bf714d178cddf5558d761a30345242800b1611c"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/LEARNING_PATH.md",
+      "sha256": "c17bc63b3ca25de7b2ccc1b3b491d028818522e0773ac4796e6937dddbe4ef51"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_numbers.md",
+      "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_subtraction.md",
+      "sha256": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/division_remainder.md",
+      "sha256": "4cb1a890810f4ca4f073fe8e93d12505dc4c0e286e5f7f0fcc36c405fe544354"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_archimedean_density.md",
+      "sha256": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495"
+    }
+  ],
+  "report_path": "/tmp/real_sequences_concept_review.md",
+  "repository_mutations": false,
+  "plan_revision": {
+    "initial_sha256": "28278d3b07375a44bc27f5be662134d1095a6a11f86094d85d4dcaa8a4ae6ac9",
+    "final_sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca",
+    "changes": [
+      "exact Chinese leaf title",
+      "actual single-analysis module and incomplete B3 scope",
+      "fixed-state prefix-bound recursion"
+    ],
+    "approved_by": "root explicit instruction"
+  }
+}

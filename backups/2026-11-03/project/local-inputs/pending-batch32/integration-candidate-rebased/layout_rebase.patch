@@ -1,0 +1,30 @@
+--- before30/tools/build_learning_batch.py
++++ after30/tools/build_learning_batch.py
+@@ -1447,7 +1447,11 @@
+     return r"""
+ ## 实数数列参考资料 {#real-sequences-sources}
+ 
+-**[SEQUENCES-LEBL]** Jiří Lebl，*Basic Analysis I*，version 6.3，固定提交 `e21ec524ca7d54f800c693b948020c188d21d01f`。[Sequences and Series](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex)实际核17—39行全函数与有界定义、78—144行收敛量词、147—245行常数倒数例与唯一性有界性、435—520行固定尾移、990—1182行四则及非零条件、1184—1195行常数推论、1232—1252行绝对值。front matter的署名与version 6.3及LICENSE全文已核；许可为CC-BY-SA4.0或CC-BY-NC-SA4.0。三缓存、原取回日期与SHA保留于 `research/production/real_sequences_sources_2026-10-30.json`；整合零新请求。正文、16题解与图独立编写，未复制或翻译来源材料。
++**[SEQUENCES-LEBL]** Jiří Lebl，*Basic Analysis I*，version 6.3。
++
++固定提交：`e21ec524ca7d54f800c693b948020c188d21d01f`。
++
++[Sequences and Series](https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex)实际核17—39行全函数与有界定义、78—144行收敛量词、147—245行常数倒数例与唯一性有界性、435—520行固定尾移、990—1182行四则及非零条件、1184—1195行常数推论、1232—1252行绝对值。front matter的署名与version 6.3及LICENSE全文已核；许可为CC-BY-SA4.0或CC-BY-NC-SA4.0。三缓存、原取回日期与SHA保留于 `research/production/real_sequences_sources_2026-10-30.json`；整合零新请求。正文、16题解与图独立编写，未复制或翻译来源材料。
+ 
+ 本组B4.1—B4.2只建立实数数列入口：SL1的全函数与量词，SL2的唯一性，SL3的常数和倒数例，SL4的最终相同与固定尾移；SA1的全列界，SA2的线性和绝对值，SA3的乘积，SA4的最终非零及合法倒数和商。来源从自然数1起；本书从0起，以ν(n)+1保证倒数全列合法。来源直接调用有限最大值；本书用固定状态、固定更新的已采用递归原则证明前缀界，保留空前缀。乘积使用已有全列界的两项估计；倒数先得最终正下界，再对早期显式填值，不能把极限非零误当全部分母非零。原全列商仍须各分母非零，未定义1/0。所有严格比较都区分零误差的弱式。
+ 
+@@ -1473,9 +1477,11 @@
+ 
+ # 附录二十八 数列严格误差阈值的有限绘图 {#real-sequence-epsilon-figure-code}
+ 
+-以下完整函数从当前绘图模块直接提取。取ε=1/4，画自然下标0至14的有理值1/(n+1)；这些有理值在正文代表相应实数嵌入像，指标进入实数式时用ν。先用Fraction检查边界b₃=1/4不满足严格条件、b₄=1/5满足及所画样点，再转换float安排画布。任意自然n≥4的全尾界由正倒数比较得到；n=3同时排除全部N≤3。一个ε的全尾界不是任意ε的收敛证明，也没有执行无穷多次断言。
+-
+-完整依赖及函数如下。输出b2_real_sequence_epsilon.png；构建入口调用draw_real_sequence_epsilon(out)。
++以下完整函数从当前绘图模块直接提取。取 $\varepsilon=1/4$，画自然下标 $0$ 至 $14$ 的有理值 $1/(n+1)$；这些有理值在正文代表相应实数嵌入像，指标进入实数式时用 $\nu$。先用 `Fraction` 检查边界 $b_3=1/4$ 不满足严格条件、$b_4=1/5$ 满足及所画样点，再转换 `float` 安排画布。任意自然数 $n\ge4$ 的全尾界由正倒数比较得到；$n=3$ 同时排除全部 $N\le3$。一个 $\varepsilon$ 的全尾界不是任意 $\varepsilon$ 的收敛证明，也没有执行无穷多次断言。
++
++输出文件：`b2_real_sequence_epsilon.png`。
++
++完整函数与所需依赖如下；入口调用列在代码之后。
+ 
+ ```python
+ from pathlib import Path
