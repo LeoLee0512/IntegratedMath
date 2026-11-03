@@ -1,0 +1,3 @@
+# Preserve exact backup bytes even when a reader uses autocrlf.
+project/** -text
+objects/** -text -diff
