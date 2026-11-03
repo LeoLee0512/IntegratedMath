@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-27T14:27:17.566414+00:00",
+  "result": "pass",
+  "scope": {
+    "bases": [
+      2,
+      3,
+      10,
+      16
+    ],
+    "left_value_inclusive_range": [
+      0,
+      60
+    ],
+    "right_value_inclusive_range": [
+      0,
+      60
+    ],
+    "input_layout": "Left input has one additional leading zero; right is canonical.",
+    "expected_results": "Independent Python integer arithmetic and divmod digit conversion.",
+    "invalid_case_labels": [
+      "empty_left",
+      "empty_right",
+      "boolean_digit",
+      "negative_digit",
+      "digit_equal_to_base",
+      "base_one",
+      "boolean_base",
+      "floating_digit"
+    ],
+    "checks_input_immutability": true,
+    "checks_canonical_output": true
+  },
+  "counts": {
+    "addition": 14884,
+    "nonnegative_subtraction": 7564,
+    "negative_subtraction_rejected": 7320,
+    "invalid_input_rejected": 16,
+    "input_immutability": 29773,
+    "manuscript_examples": 5
+  },
+  "manuscript_examples": [
+    {
+      "case": "1002 - 587",
+      "base": 10,
+      "left": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "right": [
+        5,
+        8,
+        7
+      ],
+      "expected_canonical_result": [
+        4,
+        1,
+        5
+      ],
+      "actual": [
+        4,
+        1,
+        5
+      ],
+      "result": "pass"
+    },
+    {
+      "case": "1000 - 46",
+      "base": 10,
+      "left": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        4,
+        6
+      ],
+      "expected_canonical_result": [
+        9,
+        5,
+        4
+      ],
+      "actual": [
+        9,
+        5,
+        4
+      ],
+      "result": "pass"
+    },
+    {
+      "case": "758 + 486",
+      "base": 10,
+      "left": [
+        7,
+        5,
+        8
+      ],
+      "right": [
+        4,
+        8,
+        6
+      ],
+      "expected_canonical_result": [
+        1,
+        2,
+        4,
+        4
+      ],
+      "actual": [
+        1,
+        2,
+        4,
+        4
+      ],
+      "result": "pass"
+    },
+    {
+      "case": "999 + 1",
+      "base": 10,
+      "left": [
+        9,
+        9,
+        9
+      ],
+      "right": [
+        1
+      ],
+      "expected_canonical_result": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "case": "11010 - 01011 in base 2",
+      "base": 2,
+      "left": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "right": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "expected_canonical_result": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "result": "pass"
+    }
+  ],
+  "arithmetic_and_negative_rejection_checks": 29768,
+  "source_sha256": {
+    "tools/written_arithmetic.py": "25904ce7c88f969fc6a06d968f7c29c93ec179728b3e6f416174220be4bc16da",
+    "tools/natural_algorithms.py": "630c87b88312bee1014bf0cd3c18f087cdf4381ccdbd609fded5052fe7e04715",
+    "tools/validate_written_arithmetic.py": "78433d0b1b7b447d194126bfd1e9179f5d8aa97ac0679fa6e8e95a028d13e69c"
+  },
+  "limitations": [
+    "Finite implementation checks are not proofs for all natural numbers or bases.",
+    "The manuscript mathematical review is separate.",
+    "This validation does not certify PDF rendering or computational efficiency."
+  ],
+  "reproduce": "python tools/validate_written_arithmetic.py"
+}

@@ -1,0 +1,36 @@
+{
+  "commit": "ef2e026016ce223ad79473a2cc07164bfb7091fc",
+  "status": "verified_local_snapshot",
+  "files": [
+    {
+      "path": "dist/综合数学_基础续写审阅版.pdf",
+      "sha256": "309b4466315ac8dd99c0404ce7f5544417107c3f286cabb75189024056c28d4e",
+      "bytes": 4167214
+    },
+    {
+      "path": "dist/综合数学_基础续写审阅版.md",
+      "sha256": "7b7d0f3e3663422189ad1e46e726fb144b510ab0abe1714b953b446c79c5fcc8",
+      "bytes": 2055733
+    },
+    {
+      "path": "dist/综合数学_基础续写_伴生文件.zip",
+      "sha256": "2dd367452954c45742214b569510b9be43e88b7991752b40599d5503cc2d019c",
+      "bytes": 210056993
+    },
+    {
+      "path": "BATCH_CHECKPOINT.md",
+      "sha256": "df95f18fec09bc835371e7a09d946e4aad21b47f31939c89224ba18ca609f5ff",
+      "bytes": 3998
+    },
+    {
+      "path": "data/production/batch_validation.json",
+      "sha256": "f39e6b5d7fb91f8d370c5752a12a0c9ddcdefacd54a91a40f5690b62de08c924",
+      "bytes": 1136670
+    },
+    {
+      "path": "data/production/package_validation.json",
+      "sha256": "8fe24a15a97cc1266dd4c71c746d1c842824542c532bc476c1e04d7497de9503",
+      "bytes": 253
+    }
+  ]
+}

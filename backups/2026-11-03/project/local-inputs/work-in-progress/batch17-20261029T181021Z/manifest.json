@@ -1,0 +1,21 @@
+{
+  "status": "work_in_progress_not_accepted",
+  "created_at": "20261029T181021Z",
+  "files": {
+    "polynomial_records.md": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5",
+    "polynomial_records_answers.md": "81a61101bd3382311ec4a460f6b9153279adc08c8f58e947589131c93a3783be",
+    "polynomial_linear_operations.md": "1b8b52c74fba8a8c30eb979cd80f7481a3857aa4556a5e95f448e99f92ebc872",
+    "rational_polynomial_basic.py": "4ab57898877c291e338241126e36ed79d4aeef8723c23e647f3591afbcf2243d",
+    "validate_rational_polynomial_basic.py": "ee02896ff2505b910187073da021e1b97e0d0306c1951f931e52bf1f5e564877",
+    "polynomial-basic-qa.json": "3f3ea2540862f93e31904dea46baddb3abb63150489b646b89b82656a1298004",
+    "polynomial_basic_sources_2026-10-29.json": "c7421337ea7e5ab531f024c4254142acdb88ffca929132696c7d9aa9275c6087",
+    "polynomial_basic_sources_2026-10-29.md": "63fec14429121afffa7d6af8f489c1c73ef3f37532e836807958150150abef7e",
+    "polynomials-plan.md": "4a589138b5ced313f5222ae999c0e5ef81867fa66edde18943291432af1e1f91",
+    "polynomials-math-checklist.md": "f190e6dabf4e5f305690816d692f50e17bd1ded8139e57c23d5d81e157c28567",
+    "polynomials-astra-api-review.md": "4651390baf2355b78d8fe02f8ee7a0db13c604f498948d4f3a7aa22a745459d7",
+    "polynomials_astra_oracle.py": "169c00d1e965cd69a2f204620e38b5ea3b570c0aa261492b9ad971e2bef6fa33",
+    "polynomials_astra_api_validation.json": "96583d603f28b9826a89cdee0f2ed1cf921f330c458a72959d5373d15e7caaee",
+    "polynomial_figure_function.py": "8edf7e27bb41683090a262cb2af380e0230925965058968833fb1dd0f8c78293",
+    "b2_polynomial_records.png": "3b70551785518d621aa1c64421efba5b8c7415364965b1ad3ed86a1e7ba86083"
+  }
+}

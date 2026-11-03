@@ -1,0 +1,14 @@
+{
+  "status": "restored_original_bytes",
+  "restored_at_utc": "2026-10-30T03:54:33.829757+00:00",
+  "file": "/workspace/IntegratedMath-book/manuscript/foundations/real_square_roots.md",
+  "expected_sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+  "actual_sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+  "cause": "Source binder reused p for current prerequisite paths, then wrote source audit JSON and Markdown to last prerequisite path. Fixed with explicit audit_json_path variable.",
+  "scope": "One formal prerequisite file transiently overwritten, restored from verified original tmp manuscript. No permission to change mathematical content; no accepted-output regeneration performed.",
+  "formal_source_manifest_qa_equal": true,
+  "source_file_count": 219,
+  "current_artifacts_match_qa": true,
+  "restored_file_git_diff_empty": true,
+  "write_target_audit": "All current script write/copy destinations read and enumerated; generators target batch28 tmp paths; staging destinations isolated. Binder fixed explicit audit_json_path and md path. Only this last-prerequisite p was ever written outside tmp in the observed incident."
+}

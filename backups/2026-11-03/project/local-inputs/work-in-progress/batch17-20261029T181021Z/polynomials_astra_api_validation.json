@@ -1,0 +1,52 @@
+{
+  "status": "passed_temporary_API_only_not_manuscript_acceptance",
+  "oracle": "sparse nonzero-coefficient dictionary plus unreduced integer numerator/denominator Horner evaluation",
+  "counts": {
+    "coefficients": 6050,
+    "evaluation_linearity": 72075,
+    "evaluations": 5460,
+    "input_immutability": 780,
+    "padding": 3900,
+    "pairs": 24025,
+    "records": 780,
+    "rejected": 274,
+    "scalar_laws": 1500,
+    "scalings": 3900,
+    "triples": 1728,
+    "zero_degree_rejected": 10
+  },
+  "sha256": {
+    "/tmp/rational_polynomial_basic.py": "4ab57898877c291e338241126e36ed79d4aeef8723c23e647f3591afbcf2243d",
+    "/tmp/validate_rational_polynomial_basic.py": "ee02896ff2505b910187073da021e1b97e0d0306c1951f931e52bf1f5e564877",
+    "/tmp/polynomials_astra_oracle.py": "169c00d1e965cd69a2f204620e38b5ea3b570c0aa261492b9ad971e2bef6fa33",
+    "/workspace/IntegratedMath-book/tools/rational_powers_sums.py": "fad8cf2a22151b4d584ba09ea3464526668cf34d2737afdf0374f241f16cfda4",
+    "/workspace/IntegratedMath-book/tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "scope": {
+    "coefficient_values": [
+      "-2",
+      "-1/2",
+      "0",
+      "1/3",
+      "2"
+    ],
+    "record_lengths": [
+      1,
+      4
+    ],
+    "pair_record_lengths": [
+      1,
+      3
+    ],
+    "points": [
+      "-3",
+      "-1",
+      "-1/2",
+      "0",
+      "1/2",
+      "1",
+      "3"
+    ]
+  },
+  "limits": "Finite implementation evidence; no polynomial multiplication; all mathematical manuscript reviews remain separate."
+}

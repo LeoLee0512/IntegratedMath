@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "status": "batch25_source_conditions_and_final_reviewed_text_snapshot_verified_pending_integration",
+  "citation_anchor": "dedekind-inverse-sources",
+  "checked_at_utc": "2026-10-30T02:46:28.825523+00:00",
+  "actor": "/root/prepare22_build",
+  "formal_repository_writes": false,
+  "new_network_requests": 0,
+  "scope": "B2.29 IR1–IR4 and B2.30 DQ1–DQ4 current reviewed text snapshot: positive inverse existence, signed nonzero inverse, partial quotient and an ordered field with the previous same-order least-upper-bound property. Recording existing reports does not issue new manuscript or aggregate acceptance.",
+  "sources": [
+    {
+      "id": "mathlib_field_basic",
+      "title": "Algebra/Order/Field/Basic.lean",
+      "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic",
+      "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+      "bytes": 31120,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.119904+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/mathlib_field_basic"
+    },
+    {
+      "id": "mathlib_license",
+      "title": "mathlib LICENSE",
+      "author": "mathlib contributors",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "License evidence reused without a new network request",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "author_role_note": "Repository attribution, not authorship of standard Apache license text.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/mathlib_license"
+    },
+    {
+      "id": "dedekind_tex",
+      "title": "Essays on the Theory of Numbers, Part I: Continuity and Irrational Numbers",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex",
+      "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+      "bytes": 243143,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612324+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Historical date and two-sided cut comparison; different perturbation formula",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/dedekind_tex"
+    },
+    {
+      "id": "dedekind_license",
+      "title": "Project Gutenberg License",
+      "author": "Project Gutenberg (license publisher; no individual license-text author asserted)",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "bytes": 17504,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.612777+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Distribution/trademark license evidence",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "original_author_field_as_recorded": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "author_role_note": "Dedekind and Beman identify the work author and translator, not authors of the license text.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/dedekind_license"
+    },
+    {
+      "id": "dedekind_metadata",
+      "title": "GITenberg metadata.yaml",
+      "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+      "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+      "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata",
+      "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+      "bytes": 1216,
+      "original_fetch_at_utc": "2026-10-29T19:52:19.458448+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Public-domain-in-USA declaration, translator and ebook provenance",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "author_role_note": "Work author and translator, not asserted authorship of metadata text.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/dedekind_metadata"
+    },
+    {
+      "id": "lebl_reals",
+      "title": "Basic Analysis I, chapter The Real Numbers",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "bytes": 80337,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/lebl_reals"
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": true,
+      "previous_role_as_recorded": "License evidence",
+      "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code.",
+      "author_role_note": "Work attribution and repository license notice; no claim Lebl authored the standard Creative Commons license.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/lebl_license"
+    },
+    {
+      "id": "mathlib_field_defs",
+      "author": "Robert Y. Lewis; Leonardo de Moura; Johannes Hölzl; Mario Carneiro; Yaël Dillies",
+      "title": "Mathlib/Algebra/Field/Defs.lean",
+      "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+      "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Field/Defs.lean",
+      "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_field_defs",
+      "sha256": "8fc4e2e1a3464f05fa92bc4f6d31daece2f70a508f1094e5fda3c21957dac151",
+      "bytes": 10439,
+      "original_fetch_at_utc": "2026-10-30T02:26:34.910028+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/mathlib_field_defs"
+    },
+    {
+      "id": "mathlib_groupzero_defs",
+      "author": "Johan Commelin",
+      "title": "Mathlib/Algebra/GroupWithZero/Defs.lean",
+      "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+      "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean",
+      "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_groupzero_defs",
+      "sha256": "3a89c91ad2f605c40378e23926fe4046668b6a1d5a00109f6472397d948ce00e",
+      "bytes": 13280,
+      "original_fetch_at_utc": "2026-10-30T02:26:35.180309+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/mathlib_groupzero_defs"
+    },
+    {
+      "id": "mathlib_order_field_defs",
+      "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+      "title": "Mathlib/Algebra/Order/Field/Defs.lean",
+      "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+      "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Defs.lean",
+      "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_order_field_defs",
+      "sha256": "8af25639e0ca0a462258eec35ea35ce97f629cc9e17b1dfc70790f78d443a3f3",
+      "bytes": 1508,
+      "original_fetch_at_utc": "2026-10-30T02:26:35.455785+00:00",
+      "access_status": "verified_http_200",
+      "reused_cached_bytes": false,
+      "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction.",
+      "batch25_integration_reused_cache": true,
+      "durable_local_cache_path": "local-inputs/pending-batch25/source-cache/mathlib_order_field_defs"
+    }
+  ],
+  "read_locations": [
+    {
+      "id": "mathlib_field_defs",
+      "lines": "102–117,166–176",
+      "finding": "DivisionRing requires nontrivial ring and inverse law for nonzero inputs; it also imposes totalized inv_zero=0. Field extends CommRing and DivisionRing.",
+      "obligation": "IR3 must construct each nonzero cut inverse and prove the identity before DQ4 names a field. Book Inv has domain R^× and does not adopt totalized zero inversion or division. Source inv_zero is a convention, not 0·0=1."
+    },
+    {
+      "id": "mathlib_groupzero_defs",
+      "lines": "197–219,242–250",
+      "finding": "GroupWithZero includes a total inverse with inv_zero=0, and mul_inv_cancel only under a≠0. Multiplication/division cancellation lemmas explicitly preserve nonzero hypotheses.",
+      "obligation": "Use as a definition/condition comparison only. IR3 and DQ1/2 write all domain/nonzero checks and prove identities with cut associativity. Do not import a GroupWithZero instance before providing inverse witnesses."
+    },
+    {
+      "id": "mathlib_order_field_defs",
+      "lines": "11–16,26–36",
+      "finding": "Ordered-field obligations: ordered addition, positive products and 0<1; old combined structures are deprecated in this tag in favor of separate Field/LinearOrder/IsStrictOrderedRing assumptions.",
+      "obligation": "DQ4 lists proved cut field and order obligations. Do not infer any missing inverse existence from an order structure. No Lean instance or compilation claimed."
+    },
+    {
+      "id": "mathlib_field_basic",
+      "lines": "23–25,73–93,132–134",
+      "finding": "Existing ordered semifield assumptions precede positive reciprocal order statements and midpoint inequalities.",
+      "obligation": "IR1/2 use only Q, whose corresponding arithmetic has already been proved. DQ3 reciprocal order for cuts comes later from constructed inverses and SR3, not from these field-assuming source lemmas."
+    },
+    {
+      "id": "lebl_reals",
+      "lines": "121–130",
+      "finding": "Least-upper-bound property requires every nonempty upper-bounded subset to have a least upper bound; called Dedekind completeness.",
+      "obligation": "DQ4 explicitly uses this meaning only and preserves both nonempty and bounded hypotheses; no Cauchy completeness or uniqueness theorem is thereby supplied."
+    },
+    {
+      "id": "lebl_reals",
+      "lines": "165–234,249–262",
+      "finding": "Field axiom list includes 1≠0, nonzero inverse existence, and distributivity; ordered field adds ordered translation and positive product.",
+      "obligation": "Source begins axiomatically; book must prove IR2/3 rather than assume source M5. Use as precise structure checklist after cut construction."
+    },
+    {
+      "id": "dedekind_tex",
+      "lines": "1047–1062",
+      "finding": "Historical §VI says quotients and other elementary operations can be defined, without giving this strict one-sided positive outer-point reciprocal and complete ε witness proof.",
+      "obligation": "History only. I(A), ε=a0(1−q) and q=0 case are independent book derivations, not claimed quotations or externally supplied full proofs."
+    }
+  ],
+  "source_recheck": {
+    "ten_original_caches_verified": true,
+    "checks": [
+      {
+        "source_id": "mathlib_field_basic",
+        "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+        "bytes": 31120,
+        "matches_original": true,
+        "author_evidence_line": 4,
+        "author_evidence": "Authors: Robert Y. Lewis, Leonardo de Moura, Mario Carneiro, Floris van Doorn"
+      },
+      {
+        "source_id": "mathlib_license",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "bytes": 11357,
+        "matches_original": true
+      },
+      {
+        "source_id": "dedekind_tex",
+        "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+        "bytes": 243143,
+        "matches_original": true
+      },
+      {
+        "source_id": "dedekind_license",
+        "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+        "bytes": 17504,
+        "matches_original": true
+      },
+      {
+        "source_id": "dedekind_metadata",
+        "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+        "bytes": 1216,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_reals",
+        "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "bytes": 80337,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "matches_original": true
+      },
+      {
+        "source_id": "mathlib_field_defs",
+        "sha256": "8fc4e2e1a3464f05fa92bc4f6d31daece2f70a508f1094e5fda3c21957dac151",
+        "bytes": 10439,
+        "matches_original": true,
+        "author_evidence_line": 4,
+        "author_evidence": "Authors: Robert Y. Lewis, Leonardo de Moura, Johannes Hölzl, Mario Carneiro, Yaël Dillies"
+      },
+      {
+        "source_id": "mathlib_groupzero_defs",
+        "sha256": "3a89c91ad2f605c40378e23926fe4046668b6a1d5a00109f6472397d948ce00e",
+        "bytes": 13280,
+        "matches_original": true,
+        "author_evidence_line": 4,
+        "author_evidence": "Authors: Johan Commelin"
+      },
+      {
+        "source_id": "mathlib_order_field_defs",
+        "sha256": "8af25639e0ca0a462258eec35ea35ce97f629cc9e17b1dfc70790f78d443a3f3",
+        "bytes": 1508,
+        "matches_original": true,
+        "author_evidence_line": 4,
+        "author_evidence": "Authors: Robert Y. Lewis, Leonardo de Moura, Mario Carneiro, Floris van Doorn"
+      }
+    ],
+    "historical_seven_reused_request_logs": [
+      {
+        "path": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d",
+        "matching_original_source_records": [
+          {
+            "request_id": "mathlib_field_basic",
+            "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+            "checked_at_utc": "2026-10-29T19:52:19.119904+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+            "access_status": "verified_http_200",
+            "bytes": 31120,
+            "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic"
+          },
+          {
+            "request_id": "dedekind_tex",
+            "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+            "checked_at_utc": "2026-10-29T19:51:08.612324+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+            "access_status": "verified_http_200",
+            "bytes": 243143,
+            "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex"
+          },
+          {
+            "request_id": "dedekind_license",
+            "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+            "checked_at_utc": "2026-10-29T19:51:08.612777+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+            "access_status": "verified_http_200",
+            "bytes": 17504,
+            "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license"
+          },
+          {
+            "request_id": "dedekind_metadata",
+            "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+            "checked_at_utc": "2026-10-29T19:52:19.458448+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+            "access_status": "verified_http_200",
+            "bytes": 1216,
+            "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata"
+          },
+          {
+            "request_id": "lebl_reals",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "checked_at_utc": "2026-10-29T19:51:08.613314+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "access_status": "verified_http_200",
+            "bytes": 80337,
+            "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals"
+          },
+          {
+            "request_id": "lebl_license",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "access_status": "verified_http_200",
+            "bytes": 467,
+            "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+          }
+        ]
+      },
+      {
+        "path": "/tmp/powers-polynomials-source-audit/requests.json",
+        "sha256": "2024f56d9263f4d1797e9c501db4e72d5ee62a79c5f09ea1670fee88778b7af6",
+        "matching_original_source_records": [
+          {
+            "request_id": "mathlib_license",
+            "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+            "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+            "bytes": 11357,
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+            "access_status": "verified_http_200"
+          }
+        ]
+      }
+    ],
+    "historical_three_request_log": {
+      "path": "/tmp/dedekind-inverse-source-audit/fetch.json",
+      "sha256": "8126fd35a3ca2db8d2516d40c1ba5f6ab3ef399cecfae0bcc7865fe398714f70",
+      "records": [
+        {
+          "id": "mathlib_field_defs",
+          "path": "/tmp/dedekind-inverse-source-audit/mathlib_field_defs",
+          "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Field/Defs.lean",
+          "http_status": 200,
+          "sha256": "8fc4e2e1a3464f05fa92bc4f6d31daece2f70a508f1094e5fda3c21957dac151",
+          "bytes": 10439,
+          "fetched_at_utc": "2026-10-30T02:26:34.910028+00:00"
+        },
+        {
+          "id": "mathlib_groupzero_defs",
+          "path": "/tmp/dedekind-inverse-source-audit/mathlib_groupzero_defs",
+          "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean",
+          "http_status": 200,
+          "sha256": "3a89c91ad2f605c40378e23926fe4046668b6a1d5a00109f6472397d948ce00e",
+          "bytes": 13280,
+          "fetched_at_utc": "2026-10-30T02:26:35.180309+00:00"
+        },
+        {
+          "id": "mathlib_order_field_defs",
+          "path": "/tmp/dedekind-inverse-source-audit/mathlib_order_field_defs",
+          "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Defs.lean",
+          "http_status": 200,
+          "sha256": "8af25639e0ca0a462258eec35ea35ce97f629cc9e17b1dfc70790f78d443a3f3",
+          "bytes": 1508,
+          "fetched_at_utc": "2026-10-30T02:26:35.455785+00:00"
+        }
+      ]
+    },
+    "request_history_note": "The three new-source fetches are the preserved2026-10-30 02:26 records. Seven older entries retain original2026-10-29 fetch dates. This integration made no request and reused allten.",
+    "supplementary_author_version_evidence": {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author, title/version and copyright evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:46:28.825523+00:00",
+      "author_line": 289,
+      "version_line": 382,
+      "copyright_line": 401,
+      "note": "Previously fetched front matter, separately rehashed; supports Lebl attribution/version without new network request."
+    },
+    "dedekind_attribution_evidence": {
+      "source_id": "dedekind_metadata",
+      "author_line": 16,
+      "translator_line": 5,
+      "publisher_line": 35,
+      "rights_line": 36
+    }
+  },
+  "classification": {
+    "primary": "97F50",
+    "existing_cross": [
+      "06A05",
+      "06F25"
+    ],
+    "title_zh": "有序域",
+    "taxonomy_evidence": [
+      {
+        "path": "data/msc_taxonomy.json",
+        "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+      },
+      {
+        "path": "data/catalog_titles_zh.json",
+        "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+      }
+    ],
+    "coverage_note": "Actual IR/DQ text and independent review reports now bound;12J15 is a B2.30 cross-reference only, not drafted/completed primary leaf coverage.",
+    "current_cross": {
+      "B2.29": [
+        "06A05",
+        "06F25"
+      ],
+      "B2.30": [
+        "06A05",
+        "06F25",
+        "12J15"
+      ]
+    }
+  },
+  "manuscript_binding": {
+    "status": "current_tmp_files_match_final_freeze_notifications_and_report_hashes",
+    "checked_at_utc": "2026-10-30T02:54:14.151883+00:00",
+    "manuscripts": [
+      {
+        "observed_path": "/tmp/dedekind_inverse.md",
+        "sha256": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a",
+        "bytes": 16182,
+        "intended_repository_path": "manuscript/foundations/dedekind_inverse.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_inverse_answers.md",
+        "sha256": "a95b6e48978c4c00c3d3269063555777764152515d205270aa0dd1a003f6cac3",
+        "bytes": 12165,
+        "intended_repository_path": "manuscript/foundations/dedekind_inverse_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_division_field.md",
+        "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+        "bytes": 18843,
+        "intended_repository_path": "manuscript/foundations/dedekind_division_field.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_division_field_answers.md",
+        "sha256": "cd5b266feb27187daa74131d6a2484042729b401667aabf072ca1a8522f27dc1",
+        "bytes": 15196,
+        "intended_repository_path": "manuscript/foundations/dedekind_division_field_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      }
+    ],
+    "review_reports": [
+      {
+        "observed_path": "/tmp/dedekind_inverse_math_review.md",
+        "sha256": "82d114bb99c237c4d79cf62c973df3593aa6694018b4d659c9a534136e6fb08f",
+        "bytes": 6351,
+        "intended_repository_path": "research/production/dedekind_inverse_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "review22",
+        "scope_as_reported": "Independent full B2.29 IR1–IR4 and all eight complete answers; final four prerequisite links rechecked",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_division_field_math_review.md",
+        "sha256": "025f6c7ed0c884e74385ac00797d5785344887cb11e967900e4c869b6665e088",
+        "bytes": 8849,
+        "intended_repository_path": "research/production/dedekind_division_field_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/plan_multiplication",
+        "scope_as_reported": "Independent full B2.30 DQ1–DQ4 and all eight complete answers; final body and answer read in full",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_inverse_pedagogy_review.md",
+        "sha256": "bfecfd659900f7f478244e5b8d6363d591ab43b71f8cfb6296396b52e470d2f6",
+        "bytes": 10019,
+        "intended_repository_path": "research/production/dedekind_inverse_pedagogy_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "Independent pedagogy and prerequisite review of both bodies and all sixteen complete answers; final links and object statement verified",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      }
+    ],
+    "planning_evidence": [
+      {
+        "observed_path": "/tmp/dedekind_inverse_plan.md",
+        "sha256": "6570cc36c11365cc6dfa0eb8c76aeb4c2407edaedfef0ef6c18b5d04b88a7209",
+        "bytes": 18771,
+        "intended_repository_path": "research/production/dedekind_inverse_plan.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      },
+      {
+        "observed_path": "/tmp/dedekind_inverse_concept_review.md",
+        "sha256": "84ebef24238f95d49a36be65ec98fff05e1acd3923a96ce8f8556e80c98df035",
+        "bytes": 6027,
+        "intended_repository_path": "research/production/dedekind_inverse_concept_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T02:55:42.165386+00:00"
+      }
+    ],
+    "formal_installation_verified": true,
+    "aggregate_approval_claim": false,
+    "note": "Actual current bytes and reports scopes only. Mathematical and pedagogy decisions remain those of the named reports. No final production/visual evidence is embedded, avoiding circular downstream hashes."
+  },
+  "planning_snapshot": {
+    "path": "/tmp/dedekind_inverse_plan.md",
+    "sha256": "6570cc36c11365cc6dfa0eb8c76aeb4c2407edaedfef0ef6c18b5d04b88a7209",
+    "note": "Observed planning snapshot only; final concept review and any plan edits must be bound later."
+  },
+  "original_plan_source_record": {
+    "schema_version": 1,
+    "status": "B2.29/B2.30 plan source audit only; manuscripts not yet written",
+    "citation_anchor": "dedekind-inverse-sources",
+    "checked_at_utc": "2026-10-30T02:34:38.772992+00:00",
+    "plan_path": "/tmp/dedekind_inverse_plan.md",
+    "plan_sha256": "6570cc36c11365cc6dfa0eb8c76aeb4c2407edaedfef0ef6c18b5d04b88a7209",
+    "access": "Runtime and networking skill read; enforced restricted policy inspected earlier in same task; three new public HTTP200 requests to permitted raw.githubusercontent.com via inherited proxy; no login, TLS bypass or blocked-host circumvention.",
+    "sources": [
+      {
+        "id": "mathlib_field_basic",
+        "title": "Algebra/Order/Field/Basic.lean",
+        "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+        "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+        "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_field_basic",
+        "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+        "bytes": 31120,
+        "original_fetch_at_utc": "2026-10-29T19:52:19.119904+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "Mathematical conditions and structural comparison; no Lean code copied into book",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "mathlib_license",
+        "title": "mathlib LICENSE",
+        "author": "mathlib contributors",
+        "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+        "license": "Apache-2.0",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+        "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "bytes": 11357,
+        "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "License evidence reused without a new network request",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "dedekind_tex",
+        "title": "Essays on the Theory of Numbers, Part I: Continuity and Irrational Numbers",
+        "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+        "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+        "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+        "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_tex",
+        "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+        "bytes": 243143,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.612324+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "Historical date and two-sided cut comparison; different perturbation formula",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "dedekind_license",
+        "title": "Project Gutenberg License",
+        "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+        "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+        "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+        "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_license",
+        "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+        "bytes": 17504,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.612777+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "Distribution/trademark license evidence",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "dedekind_metadata",
+        "title": "GITenberg metadata.yaml",
+        "author": "Richard Dedekind; English translator Wooster Woodruff Beman",
+        "version": "Gutenberg ebook 21016 released 2007-04-08; GITenberg commit 7a0bcaf5e279121cb675058d7e323556343087d0",
+        "license": "Metadata states Public domain in the USA; Project Gutenberg license and local-law caveat apply; no global public-domain claim",
+        "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/dedekind_metadata",
+        "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+        "bytes": 1216,
+        "original_fetch_at_utc": "2026-10-29T19:52:19.458448+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "Public-domain-in-USA declaration, translator and ebook provenance",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "lebl_reals",
+        "title": "Basic Analysis I, chapter The Real Numbers",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+        "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "bytes": 80337,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "lebl_license",
+        "title": "Basic Analysis LICENSE.md",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": true,
+        "previous_role_as_recorded": "License evidence",
+        "use_this_batch": "Historical or axiomatic condition comparison only; no copied proof, exercise, illustration or source code."
+      },
+      {
+        "id": "mathlib_field_defs",
+        "author": "Robert Y. Lewis; Leonardo de Moura; Johannes Hölzl; Mario Carneiro; Yaël Dillies",
+        "title": "Mathlib/Algebra/Field/Defs.lean",
+        "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+        "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Field/Defs.lean",
+        "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_field_defs",
+        "sha256": "8fc4e2e1a3464f05fa92bc4f6d31daece2f70a508f1094e5fda3c21957dac151",
+        "bytes": 10439,
+        "original_fetch_at_utc": "2026-10-30T02:26:34.910028+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": false,
+        "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction."
+      },
+      {
+        "id": "mathlib_groupzero_defs",
+        "author": "Johan Commelin",
+        "title": "Mathlib/Algebra/GroupWithZero/Defs.lean",
+        "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+        "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean",
+        "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_groupzero_defs",
+        "sha256": "3a89c91ad2f605c40378e23926fe4046668b6a1d5a00109f6472397d948ce00e",
+        "bytes": 13280,
+        "original_fetch_at_utc": "2026-10-30T02:26:35.180309+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": false,
+        "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction."
+      },
+      {
+        "id": "mathlib_order_field_defs",
+        "author": "Robert Y. Lewis; Leonardo de Moura; Mario Carneiro; Floris van Doorn",
+        "title": "Mathlib/Algebra/Order/Field/Defs.lean",
+        "version": "mathlib v4.24.0; actual source read, no Lean compilation",
+        "license": "Apache-2.0; source header and fixed-tag LICENSE inspected",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Defs.lean",
+        "cache_path": "/tmp/dedekind-inverse-source-audit/mathlib_order_field_defs",
+        "sha256": "8af25639e0ca0a462258eec35ea35ce97f629cc9e17b1dfc70790f78d443a3f3",
+        "bytes": 1508,
+        "original_fetch_at_utc": "2026-10-30T02:26:35.455785+00:00",
+        "access_status": "verified_http_200",
+        "reused_cached_bytes": false,
+        "use_this_batch": "Abstract algebra/order obligation and convention comparison; not a cut inverse construction."
+      }
+    ],
+    "read_locations": [
+      {
+        "id": "mathlib_field_defs",
+        "lines": "102–117,166–176",
+        "finding": "DivisionRing requires nontrivial ring and inverse law for nonzero inputs; it also imposes totalized inv_zero=0. Field extends CommRing and DivisionRing.",
+        "obligation": "IR3 must construct each nonzero cut inverse and prove the identity before DQ4 names a field. Book Inv has domain R^× and does not adopt totalized zero inversion or division. Source inv_zero is a convention, not 0·0=1."
+      },
+      {
+        "id": "mathlib_groupzero_defs",
+        "lines": "197–219,242–250",
+        "finding": "GroupWithZero includes a total inverse with inv_zero=0, and mul_inv_cancel only under a≠0. Multiplication/division cancellation lemmas explicitly preserve nonzero hypotheses.",
+        "obligation": "Use as a definition/condition comparison only. IR3 and DQ1/2 write all domain/nonzero checks and prove identities with cut associativity. Do not import a GroupWithZero instance before providing inverse witnesses."
+      },
+      {
+        "id": "mathlib_order_field_defs",
+        "lines": "11–16,26–36",
+        "finding": "Ordered-field obligations: ordered addition, positive products and 0<1; old combined structures are deprecated in this tag in favor of separate Field/LinearOrder/IsStrictOrderedRing assumptions.",
+        "obligation": "DQ4 lists proved cut field and order obligations. Do not infer any missing inverse existence from an order structure. No Lean instance or compilation claimed."
+      },
+      {
+        "id": "mathlib_field_basic",
+        "lines": "23–25,73–93,132–134",
+        "finding": "Existing ordered semifield assumptions precede positive reciprocal order statements and midpoint inequalities.",
+        "obligation": "IR1/2 use only Q, whose corresponding arithmetic has already been proved. DQ3 reciprocal order for cuts comes later from constructed inverses and SR3, not from these field-assuming source lemmas."
+      },
+      {
+        "id": "lebl_reals",
+        "lines": "121–130",
+        "finding": "Least-upper-bound property requires every nonempty upper-bounded subset to have a least upper bound; called Dedekind completeness.",
+        "obligation": "DQ4 explicitly uses this meaning only and preserves both nonempty and bounded hypotheses; no Cauchy completeness or uniqueness theorem is thereby supplied."
+      },
+      {
+        "id": "lebl_reals",
+        "lines": "165–234,249–262",
+        "finding": "Field axiom list includes 1≠0, nonzero inverse existence, and distributivity; ordered field adds ordered translation and positive product.",
+        "obligation": "Source begins axiomatically; book must prove IR2/3 rather than assume source M5. Use as precise structure checklist after cut construction."
+      },
+      {
+        "id": "dedekind_tex",
+        "lines": "1047–1062",
+        "finding": "Historical §VI says quotients and other elementary operations can be defined, without giving this strict one-sided positive outer-point reciprocal and complete ε witness proof.",
+        "obligation": "History only. I(A), ε=a0(1−q) and q=0 case are independent book derivations, not claimed quotations or externally supplied full proofs."
+      }
+    ],
+    "independent_proofs": [
+      "I(A) strict upper reciprocal witness set and four cut conditions",
+      "positive inverse reverse inclusion with ε=a0(1−q), v>a0 and u>qv including q=0",
+      "signed inverse and uniqueness on R^×",
+      "partial quotient domain and complete coefficient-zero equation classification",
+      "same-cut-order link to previously proved supremum union"
+    ],
+    "validation_boundary": "No Lean compilation, no PDF or formal integration, no claim of already constructed field by this plan"
+  },
+  "original_source_record_files": [
+    {
+      "path": "/tmp/dedekind_inverse_sources.md",
+      "sha256": "f415bdf484b884543511fe3cdd7a60e1c0a4350471b25148a9a193a52d72c787"
+    },
+    {
+      "path": "/tmp/dedekind_inverse_sources.json",
+      "sha256": "9689c38b5c7142bc92d0b2bbf0c2b2c0976ea3b11742425016eecfcff505b8b6"
+    }
+  ],
+  "figures_and_code": {
+    "new_figures": 0,
+    "total_figures_expected": 18,
+    "new_numerical_code": false,
+    "new_numbered_code_appendix": false,
+    "numbered_appendices_expected": 25
+  },
+  "validation_boundary": "Source byte/author/license/hypothesis and current IR/DQ scope checks plus actual text/report byte binding only; no copied proofs/exercises/code, Lean compilation, general cut algorithm, new mathematical approval, production build or PDF acceptance.",
+  "current_batch25_obligations": [
+    {
+      "group": "IR1",
+      "anchor": "cutinv-positive-definition",
+      "obligation": "Only A>0: I(A) consists of rational q below1/r for a positive rational exterior r. Positive exterior witnesses place all q≤0 inside; a positive interior a0 gives exterior1/a0 using a0<r. Prove downward closure and no greatest member with rational midpoints, then positivity and positive-domain function closure."
+    },
+    {
+      "group": "IR2",
+      "anchor": "cutinv-positive-inverse",
+      "obligation": "Prove both member inclusions P(A,I(A))=i(1). Reverse q<0 uses P negative branch; for0≤q<1 choose ε=a0(1−q)>0 and DA1 u∈A,v∉A with gap<ε. Interior/exterior separation gives v>a0>0, not u≥a0. Strict chain gives u>qv≥0, includingq=0; rational b betweenq/u and1/v supplies legal positive product witnesses. No cut inverse, real Archimedean theorem, limit or supremum is assumed."
+    },
+    {
+      "group": "IR3",
+      "anchor": "cutinv-signed-unique",
+      "obligation": "Inv defined only on nonzero cuts. Negative branch N(I(N(A))) has legal positive I input and is negative; positive branch positive. Prove both inverse products, then uniqueness from associativity and an already constructed inverse. Zero has no inverse because0≠1; do not import a totalized inv_zero convention."
+    },
+    {
+      "group": "IR4",
+      "anchor": "cutinv-rational-identities",
+      "obligation": "Use rational inverse identity and SP4 before uniqueness to obtain Inv(i(r))=i(1/r), onlyr≠0. Check each domain for inverse of1, inverse of inverse and inverse of negation. Examples do not replace all-cut proof."
+    },
+    {
+      "group": "DQ1",
+      "anchor": "cutdiv-definition",
+      "obligation": "Define quotient onlyR×R_nonzero→R as A⊗Inv(B). Derive both multiplication-back identities explicitly from inverse/associativity, handle zero numerator, prohibit zero denominator, and prove rational compatibility fors≠0."
+    },
+    {
+      "group": "DQ2",
+      "anchor": "cutdiv-equations",
+      "obligation": "Declare solution sets with candidate domainR and R-valued sides. ForC⊗X=D, prove existence and necessity whenC≠0 and both coefficient-zero branches(allR or empty). Show actual two-sided inverse of fixed nonzero multiplication map, then affine equation reduction and its three parameter branches."
+    },
+    {
+      "group": "DQ3",
+      "anchor": "cutdiv-order",
+      "obligation": "Only nonzero denominators: Inv(C) has the same sign, so apply priorSR3 to explicit quotient definitions, with full weak/strict two-way positive and negative chains. For positiveA,B, a positive common inverse product yields reciprocal reversal; do not claim uniform reversal acrosszero. Division byzero remains undefined."
+    },
+    {
+      "group": "DQ4",
+      "anchor": "cutdiv-complete-field",
+      "obligation": "AfterIR3 exists, match all nontrivial commutative-ring and inverse obligations before naming a field; retain same cut set and inclusion order for ordered-field laws. Completeness means exactly existingDC4 nonempty bounded-above subset supremum as union, with conditions and rational member formula explicit. No Cauchy equivalence, uniqueness isomorphism, root existence, real Archimedean theorem or limits is implied."
+    }
+  ],
+  "remaining_integration": [
+    "Final build and current-artifact automatic validation; then independent actual PDF page inspection and packaging."
+  ],
+  "root_integration": {
+    "actor": "/root",
+    "checked_at_utc": "2026-10-30T02:55:42.165386+00:00",
+    "candidate_json_sha256": "082722f6eb3e0f93a356303103117c28b58d29878da9aec68bff047007dc769d",
+    "candidate_markdown_sha256": "b583a35ba3bcf539abc034446dc1e6ef1869193f2204b969c329b8fac0571ac3",
+    "three_tools": {
+      "tools/build_learning_batch.py": "2a41791fcfcd43f27df5d1129b8a19829893441a9d7e6a9f186d3e208a9c322a",
+      "tools/build_production_ledger.py": "a19132e2bb662353b2510e7966fd701bbabb2b799c4336b10e33fbdb1f65f355",
+      "tools/validate_learning_batch.py": "35a746732c9d5ba88247cf233369da264510beb26b9b7caf098b3660c6dd3530"
+    },
+    "new_network_requests": 0,
+    "scope": "Actual formal installation and cache byte check; no build acceptance.",
+    "actual_compose_body_checks": {
+      "units": 51,
+      "exercise_pairs": 422,
+      "figures": 18,
+      "numbered_appendices": 25,
+      "new_source_anchor_count": 1
+    }
+  }
+}

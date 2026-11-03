@@ -1,0 +1,581 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-27T15:45:07.899932+00:00",
+  "source_sha256": {
+    "tools/extended_euclidean.py": "a76970f7e8883073476be72dac9635e788030761c3154931756b77f30970dcd9",
+    "tools/validate_extended_euclidean.py": "7edea4afefbef06dfb2317f00101192fd765626cda84ffbb052ccca3e289d2fa",
+    "tools/integer_euclidean.py": "1059fa4bb23e44c6e6fbbc57006b3f2f072211790114226576587f1ca47ad01f",
+    "tools/natural_algorithms.py": "630c87b88312bee1014bf0cd3c18f087cdf4381ccdbd609fded5052fe7e04715"
+  },
+  "scope": {
+    "gcd_inputs": [
+      -30,
+      30
+    ],
+    "equation_ab": [
+      -8,
+      8
+    ],
+    "equation_c": [
+      -12,
+      12
+    ],
+    "equation_witness_box": [
+      -12,
+      12
+    ],
+    "record_a": [
+      -12,
+      12
+    ],
+    "record_b": [
+      1,
+      12
+    ],
+    "coprime_abc": [
+      -8,
+      8
+    ],
+    "sign_of_zero": 1
+  },
+  "counts": {
+    "gcd_pairs": 3721,
+    "invariant_rows": 10968,
+    "coefficient_shift_checks": 18605,
+    "linear_equations": 7225,
+    "reduced_records": 300,
+    "equivalent_record_pairs": 1008,
+    "coprime_cancellation_cases": 1176,
+    "coprime_product_cases": 4913,
+    "invalid_rejections": 58
+  },
+  "examples": [
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        48,
+        18
+      ],
+      "result": {
+        "g": 6,
+        "x": -1,
+        "y": 3,
+        "trace": [
+          {
+            "u": 48,
+            "v": 18,
+            "x": 1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 2,
+            "r": 12,
+            "next_x": 1,
+            "next_y": -2
+          },
+          {
+            "u": 18,
+            "v": 12,
+            "x": 0,
+            "y": 1,
+            "X": 1,
+            "Y": -2,
+            "q": 1,
+            "r": 6,
+            "next_x": -1,
+            "next_y": 3
+          },
+          {
+            "u": 12,
+            "v": 6,
+            "x": 1,
+            "y": -2,
+            "X": -1,
+            "Y": 3,
+            "q": 2,
+            "r": 0,
+            "next_x": 3,
+            "next_y": -8
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        -48,
+        18
+      ],
+      "result": {
+        "g": 6,
+        "x": 1,
+        "y": 3,
+        "trace": [
+          {
+            "u": 48,
+            "v": 18,
+            "x": -1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 2,
+            "r": 12,
+            "next_x": -1,
+            "next_y": -2
+          },
+          {
+            "u": 18,
+            "v": 12,
+            "x": 0,
+            "y": 1,
+            "X": -1,
+            "Y": -2,
+            "q": 1,
+            "r": 6,
+            "next_x": 1,
+            "next_y": 3
+          },
+          {
+            "u": 12,
+            "v": 6,
+            "x": -1,
+            "y": -2,
+            "X": 1,
+            "Y": 3,
+            "q": 2,
+            "r": 0,
+            "next_x": -3,
+            "next_y": -8
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        0,
+        -7
+      ],
+      "result": {
+        "g": 7,
+        "x": 0,
+        "y": -1,
+        "trace": [
+          {
+            "u": 0,
+            "v": 7,
+            "x": 1,
+            "y": 0,
+            "X": 0,
+            "Y": -1,
+            "q": 0,
+            "r": 0,
+            "next_x": 1,
+            "next_y": 0
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        -7,
+        0
+      ],
+      "result": {
+        "g": 7,
+        "x": -1,
+        "y": 0,
+        "trace": []
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        0,
+        0
+      ],
+      "result": {
+        "g": 0,
+        "x": 1,
+        "y": 0,
+        "trace": []
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        6,
+        10
+      ],
+      "result": {
+        "g": 2,
+        "x": 2,
+        "y": -1,
+        "trace": [
+          {
+            "u": 6,
+            "v": 10,
+            "x": 1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 0,
+            "r": 6,
+            "next_x": 1,
+            "next_y": 0
+          },
+          {
+            "u": 10,
+            "v": 6,
+            "x": 0,
+            "y": 1,
+            "X": 1,
+            "Y": 0,
+            "q": 1,
+            "r": 4,
+            "next_x": -1,
+            "next_y": 1
+          },
+          {
+            "u": 6,
+            "v": 4,
+            "x": 1,
+            "y": 0,
+            "X": -1,
+            "Y": 1,
+            "q": 1,
+            "r": 2,
+            "next_x": 2,
+            "next_y": -1
+          },
+          {
+            "u": 4,
+            "v": 2,
+            "x": -1,
+            "y": 1,
+            "X": 2,
+            "Y": -1,
+            "q": 2,
+            "r": 0,
+            "next_x": -5,
+            "next_y": 3
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        84,
+        30
+      ],
+      "result": {
+        "g": 6,
+        "x": -1,
+        "y": 3,
+        "trace": [
+          {
+            "u": 84,
+            "v": 30,
+            "x": 1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 2,
+            "r": 24,
+            "next_x": 1,
+            "next_y": -2
+          },
+          {
+            "u": 30,
+            "v": 24,
+            "x": 0,
+            "y": 1,
+            "X": 1,
+            "Y": -2,
+            "q": 1,
+            "r": 6,
+            "next_x": -1,
+            "next_y": 3
+          },
+          {
+            "u": 24,
+            "v": 6,
+            "x": 1,
+            "y": -2,
+            "X": -1,
+            "Y": 3,
+            "q": 4,
+            "r": 0,
+            "next_x": 5,
+            "next_y": -14
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        -84,
+        30
+      ],
+      "result": {
+        "g": 6,
+        "x": 1,
+        "y": 3,
+        "trace": [
+          {
+            "u": 84,
+            "v": 30,
+            "x": -1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 2,
+            "r": 24,
+            "next_x": -1,
+            "next_y": -2
+          },
+          {
+            "u": 30,
+            "v": 24,
+            "x": 0,
+            "y": 1,
+            "X": -1,
+            "Y": -2,
+            "q": 1,
+            "r": 6,
+            "next_x": 1,
+            "next_y": 3
+          },
+          {
+            "u": 24,
+            "v": 6,
+            "x": -1,
+            "y": -2,
+            "X": 1,
+            "Y": 3,
+            "q": 4,
+            "r": 0,
+            "next_x": -5,
+            "next_y": -14
+          }
+        ]
+      }
+    },
+    {
+      "operation": "extended_gcd",
+      "inputs": [
+        30,
+        18
+      ],
+      "result": {
+        "g": 6,
+        "x": -1,
+        "y": 2,
+        "trace": [
+          {
+            "u": 30,
+            "v": 18,
+            "x": 1,
+            "y": 0,
+            "X": 0,
+            "Y": 1,
+            "q": 1,
+            "r": 12,
+            "next_x": 1,
+            "next_y": -1
+          },
+          {
+            "u": 18,
+            "v": 12,
+            "x": 0,
+            "y": 1,
+            "X": 1,
+            "Y": -1,
+            "q": 1,
+            "r": 6,
+            "next_x": -1,
+            "next_y": 2
+          },
+          {
+            "u": 12,
+            "v": 6,
+            "x": 1,
+            "y": -1,
+            "X": -1,
+            "Y": 2,
+            "q": 2,
+            "r": 0,
+            "next_x": 3,
+            "next_y": -5
+          }
+        ]
+      }
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        6,
+        10,
+        14
+      ],
+      "result": [
+        14,
+        -7
+      ]
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        6,
+        10,
+        7
+      ],
+      "result": null
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        0,
+        0,
+        0
+      ],
+      "result": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        0,
+        0,
+        1
+      ],
+      "result": null
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        48,
+        18,
+        30
+      ],
+      "result": [
+        -5,
+        15
+      ]
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        48,
+        18,
+        31
+      ],
+      "result": null
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        30,
+        18,
+        42
+      ],
+      "result": [
+        -7,
+        14
+      ]
+    },
+    {
+      "operation": "linear_solution",
+      "inputs": [
+        30,
+        18,
+        41
+      ],
+      "result": null
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        -12,
+        18
+      ],
+      "result": [
+        -2,
+        3
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        0,
+        9
+      ],
+      "result": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        14,
+        21
+      ],
+      "result": [
+        2,
+        3
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        -42,
+        30
+      ],
+      "result": [
+        -7,
+        5
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        -14,
+        10
+      ],
+      "result": [
+        -7,
+        5
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        12,
+        18
+      ],
+      "result": [
+        2,
+        3
+      ]
+    },
+    {
+      "operation": "reduced_record",
+      "inputs": [
+        0,
+        7
+      ],
+      "result": [
+        0,
+        1
+      ]
+    }
+  ],
+  "independent_models": "Exhaustive positive-factor gcd; bounded integer-equation witness search; exact cross products and positive-factor gcd for primitive records.",
+  "limits": "Finite implementation and theorem-instance checks only; not an infinite existence proof, formal verification, coefficient uniqueness claim or performance guarantee."
+}

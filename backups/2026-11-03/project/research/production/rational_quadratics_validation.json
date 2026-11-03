@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "validated_at": "2026-10-29T19:28:55.453262+00:00",
+  "source_sha256": {
+    "tools/rational_quadratics.py": "b2311b7df377f4e2ae1cd3742bd752e69cebc3068cef25182e772a386a195663",
+    "tools/validate_rational_quadratics.py": "448465721944a2dde4556b1af57cd9711fe42e54c3bb63fcb4f024a5d37fb752",
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "scope": {
+    "integer_range": [
+      0,
+      4095
+    ],
+    "large_integer_cases": 6,
+    "fraction_numerators": [
+      -80,
+      80
+    ],
+    "fraction_denominators": [
+      1,
+      19
+    ],
+    "quadratic_coefficients": [
+      "-2",
+      "-1",
+      "-3/4",
+      "-1/2",
+      "0",
+      "1/2",
+      "2/3",
+      "1",
+      "2"
+    ]
+  },
+  "counts": {
+    "integer_bounds": 4102,
+    "rational_squares": 3059,
+    "quadratics": 729,
+    "all": 1,
+    "none": 522,
+    "finite_one": 96,
+    "finite_two": 110,
+    "rejections": 35
+  },
+  "examples": [
+    {
+      "name": "square_zero",
+      "operation": "rational_square_root",
+      "inputs": [
+        "0"
+      ],
+      "output": "0"
+    },
+    {
+      "name": "square_reduced",
+      "operation": "rational_square_root",
+      "inputs": [
+        "4/9"
+      ],
+      "output": "2/3"
+    },
+    {
+      "name": "square_nonsquare",
+      "operation": "rational_square_root",
+      "inputs": [
+        "2"
+      ],
+      "output": null
+    },
+    {
+      "name": "linear",
+      "operation": "solve_quadratic",
+      "inputs": [
+        0,
+        2,
+        -6
+      ],
+      "output": {
+        "kind": "finite",
+        "roots": [
+          "3"
+        ]
+      }
+    },
+    {
+      "name": "quadratic_two",
+      "operation": "solve_quadratic",
+      "inputs": [
+        "3/2",
+        -1,
+        "-1/2"
+      ],
+      "output": {
+        "kind": "finite",
+        "roots": [
+          "-1/3",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "quadratic_repeated",
+      "operation": "solve_quadratic",
+      "inputs": [
+        1,
+        -3,
+        "9/4"
+      ],
+      "output": {
+        "kind": "finite",
+        "roots": [
+          "3/2"
+        ]
+      }
+    },
+    {
+      "name": "quadratic_all",
+      "operation": "solve_quadratic",
+      "inputs": [
+        0,
+        0,
+        0
+      ],
+      "output": {
+        "kind": "all"
+      }
+    },
+    {
+      "name": "quadratic_negative_leading",
+      "operation": "solve_quadratic",
+      "inputs": [
+        -1,
+        3,
+        -2
+      ],
+      "output": {
+        "kind": "finite",
+        "roots": [
+          "1",
+          "2"
+        ]
+      }
+    }
+  ],
+  "oracle": "Python math.isqrt and SymPy 1.14.0 Poly QQ ground_roots",
+  "limits": "Finite exact implementation checks only; not universal proof, formal verification or final manuscript/build acceptance."
+}

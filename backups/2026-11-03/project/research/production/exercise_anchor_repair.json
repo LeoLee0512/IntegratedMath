@@ -1,0 +1,9 @@
+{
+  "change": "Eight exercise label paragraphs converted to level-four headings with identical IDs. Mathematical and exercise wording unchanged.",
+  "count": 8,
+  "before_sha256": "df14a565d971d97e2f7fda39a8c44e21f08253e5a9102587d6ac46692959024f",
+  "after_sha256": "93c1182d304b216a0a3b73cf4e4b2fd23dd370f31a9db8ffcd85c08eadf0fb45",
+  "scope": "formatting_only; make explicit Markdown/PDF question anchors real",
+  "verified_by": "root",
+  "verification": "regex changed only bold heading markers and prefixed #### on eight exact label lines"
+}

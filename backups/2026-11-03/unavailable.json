@@ -1,0 +1,51 @@
+{
+  "scope": "Known previously saved temporary files absent after environment recovery; not an exhaustive historical /tmp inventory",
+  "files": [
+    {
+      "previous_path": "/tmp/real_extreme_values.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_extreme_values_answers.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_uniform_continuity.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_uniform_continuity_answers.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_extreme_values_math_review.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_extreme_values_author_source_check.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_uniform_continuity_freeze.json",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/real_derivatives_scope_plan.md",
+      "status": "not_found_in_restored_workspace",
+      "reason": "Previously existed only in ephemeral /tmp; no recovered persistent copy found"
+    },
+    {
+      "previous_path": "/tmp/root31-pages/manifest.json and its enlarged-page images",
+      "status": "not_found_in_restored_workspace",
+      "reason": "No persistent batch31 enlarged-page copy recovered; other manifests do not replace this evidence"
+    }
+  ],
+  "other_unrecovered": "Some batch31 enlarged-page images and batch34 candidate integration files also lived in /tmp; surviving artifacts are exhaustively indexed by manifest.json"
+}

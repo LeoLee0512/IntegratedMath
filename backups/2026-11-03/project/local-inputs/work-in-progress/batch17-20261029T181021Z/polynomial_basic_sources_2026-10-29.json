@@ -1,0 +1,804 @@
+{
+  "schema_version": 1,
+  "status": "temporary_source_audit_and_planned_interfaces_not_registered",
+  "checked_at_utc": "2026-10-29T17:36:24.461240+00:00",
+  "cache_reviewed_at_utc": "2026-10-29T17:59:57.433129+00:00",
+  "repository_modified": false,
+  "citation_anchor": "poly-basic-sources",
+  "scope": "仅拟B2.13规范系数记录/非零次数/求值及B2.14加法/缩放/求值兼容；乘法与环公理等未收入。",
+  "cache_reuse": {
+    "origin": "/tmp/powers-polynomials-source-audit/requests.json",
+    "origin_plan": "/tmp/powers-polynomials-sources-plan.json",
+    "selected_requests": 14,
+    "new_fetches": 0,
+    "note": "全部选用原公开访问成功保存的字节或原404状态，逐成功响应重新核SHA-256。checked_at_utc是原来源核查时刻，cache_reviewed_at_utc是本次本地重读，不是新网络访问。"
+  },
+  "prior_fetch_network_context": {
+    "runtime_skill_and_network_reference_previously_read": true,
+    "network_policy_file": "/etc/codex/network-policy.json",
+    "policy_version": 1,
+    "mode": "restricted",
+    "observations_current": true,
+    "observed_phase": "running",
+    "network_state": "enforced",
+    "hosts_used": [
+      "raw.githubusercontent.com"
+    ],
+    "method": "继承代理并验证TLS，公开只读；无认证、凭据或远程git操作。"
+  },
+  "requests": [
+    {
+      "request_id": "openstax_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-29T17:29:05.315711+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "bytes": 5642,
+      "sha256": "993990c353220be879928579c1393ced90c8b54764b4ba1182ba660b54e8ce32",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_powers",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.316848+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+      "bytes": 179034,
+      "sha256": "5a0a6cd939b20eabbbc13d7c8cc7ac047c9bdeb29ffec2be064af5f7dcbaf9d8",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_products",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.317599+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+      "bytes": 311916,
+      "sha256": "023e5187687bc3426e13ce1a6c93d1b3cc8ea7764cc35d552327a4cafe36456d",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:05.318025+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.658317+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "bytes": 23553,
+      "sha256": "f4d01bced59370e726f637a3d5b846ad77aa3536dba5a838cb00ceeadebd3033",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_finsum",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.901676+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "bytes": 49194,
+      "sha256": "48d917421143e1e0a03fbe5e3ec2b035a8670c53c3a9f0e17f71dad80f789ecc",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_polynomial",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.149199+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+      "bytes": 43310,
+      "sha256": "58729bca673d44ea3694f7c3edc292b01da80e777a90faf15fdbe2ef4ce7ba23",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_eval",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.154298+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "bytes": 24376,
+      "sha256": "a623faee92573a0123e1af4abbdaf13316d409b5cd8693bf63a6d9d93e38b8b4",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_degree",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.199942+00:00",
+      "http_status": 404,
+      "access_status": "http_error"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_multiply",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:30:13.350355+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+      "bytes": 208873,
+      "sha256": "83d265c9ba9fc274e90c27e3d660dfc5677371986abeaf1fc99eb8114a286133",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_degree_definitions",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.351003+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "bytes": 20441,
+      "sha256": "d3d0fd4d898113bfb7316bd4484d9dee8455f04aa5d1a038d1b23e0c3e63665f",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_coeff",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.351388+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+      "bytes": 13849,
+      "sha256": "9c393b82f87e98e16d38f71007eddd2ed2d0a712c728996a9ae14191c46d961f",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_finsupp_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.357368+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+      "bytes": 16938,
+      "sha256": "7efe21a1f4a910c84ec21238d4a55e5e3e1c7889c1eb08a4437f7d1f843da007",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 14,
+    "http200": 13,
+    "http404": 1,
+    "independent_source_series": 2
+  },
+  "access_failures": [
+    {
+      "request_id": "mathlib_degree",
+      "status": 404,
+      "requested_path": "Mathlib/Algebra/Polynomial/Degree/Defs.lean",
+      "note": "候选路径不存在；原下载器只记HTTP状态，未保存错误响应正文/异常字符串，故不补造错误原文。正确Definitions.lean另有实际200记录。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "POLY-OPENSTAX",
+      "title": "Intermediate Algebra 2e",
+      "authors": [
+        "Lynn Marecek",
+        "Andrea Honeycutt Mathis"
+      ],
+      "version": "osbooks-prealgebra-bundle commit ad40c7e3c9a909cde81a24c526f52fe26a51fb14",
+      "license": {
+        "name": "CC-BY-NC-SA-4.0",
+        "evidence": [
+          "openstax_collection",
+          "openstax_preface",
+          "openstax_license"
+        ],
+        "use": "只核数学条件与术语；原创正文题答不复制外部问题、连续段落或图像。许可不可误写CC BY，图片例外未采用。"
+      },
+      "checks": [
+        {
+          "request_id": "openstax_powers",
+          "location": "modules/m81383/index.cnxml，行51–76",
+          "locator": "m81383，Monomial / Polynomials",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml#L51",
+          "finding": "来源按有限项表达式及非负整数指数介绍多项式；本书另以非空有限系数记录的唯一规范代表定义对象，不把未定义的多项式乘方混入入口。"
+        },
+        {
+          "request_id": "openstax_powers",
+          "location": "modules/m81383/index.cnxml，行117–124",
+          "locator": "m81383，Degree of a Polynomial",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml#L117",
+          "finding": "来源笼统写常数次数0以及最高项次数，没有在此区分零多项式。书稿只对非零规范记录定义次数，零次数未定义；不能将原文常数措辞直接用于零。"
+        },
+        {
+          "request_id": "openstax_powers",
+          "location": "modules/m81383/index.cnxml，行232–234",
+          "locator": "m81383，同类项",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml#L232",
+          "finding": "同变量同指数位置的系数相加减；书稿用补零系数公式精确表达，不能删中间零或把记录长度当次数。"
+        },
+        {
+          "request_id": "openstax_powers",
+          "location": "modules/m81383/index.cnxml，行337–338",
+          "locator": "m81383，多项式加减",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml#L337",
+          "finding": "来源以交换律重排同类项；本书不借未经证明的一般有限重排，而在共同正长度上逐系数定义并用前缀和线性律证明求值兼容。"
+        },
+        {
+          "request_id": "openstax_powers",
+          "location": "modules/m81383/index.cnxml，行609–615",
+          "locator": "m81383，Polynomial Function",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml#L609",
+          "finding": "多项式可给出求值函数；本书正式对象相等由系数判据决定。正式相等推出Q→Q求值函数相等，反向本批未证，不错误宣称反向为假。"
+        },
+        {
+          "request_id": "openstax_multiply",
+          "location": "modules/m81385/index.cnxml，行132–134",
+          "locator": "m81385，Distributive Property",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml#L132",
+          "finding": "来源一般单项式乘多项式的分配说明，只核常数缩放的代数动机；本批不引入多项式乘法。"
+        },
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行401–412",
+          "locator": "m81384，Zero Exponent Property",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L401",
+          "finding": "来源的零指数限定非零底数；本书已在B2.11明确所有有理底数的离散零次幂为1。因此t=0求值时常数项用0^0=1，由本书定义而非来源扩大条件。"
+        }
+      ]
+    },
+    {
+      "id": "POLY-MATHLIB",
+      "title": "mathlib formal polynomial coefficients, scalar operations, degrees and evaluation",
+      "authors_by_file": {
+        "mathlib_finsum": [
+          "Johannes Hölzl"
+        ],
+        "mathlib_polynomial": [
+          "Chris Hughes",
+          "Johannes Hölzl",
+          "Kim Morrison",
+          "Jens Wagemaker"
+        ],
+        "mathlib_eval": [
+          "Chris Hughes",
+          "Johannes Hölzl",
+          "Kim Morrison",
+          "Jens Wagemaker"
+        ],
+        "mathlib_degree_definitions": [
+          "Chris Hughes",
+          "Johannes Hölzl",
+          "Kim Morrison",
+          "Jens Wagemaker"
+        ],
+        "mathlib_coeff": [
+          "Chris Hughes",
+          "Johannes Hölzl",
+          "Kim Morrison",
+          "Jens Wagemaker"
+        ],
+        "mathlib_finsupp_defs": [
+          "Johannes Hölzl",
+          "Kim Morrison"
+        ]
+      },
+      "version": "mathlib4 v4.24.0",
+      "license": {
+        "name": "Apache-2.0",
+        "evidence": [
+          "mathlib_license"
+        ],
+        "use": "只读源码核验条件，不复制实现，未编译Lean，未把本书形式化；to_additive对应按源注解阅读。"
+      },
+      "checks": [
+        {
+          "request_id": "mathlib_finsupp_defs",
+          "location": "Mathlib/Data/Finsupp/Defs.lean，行84–94",
+          "locator": "Finsupp结构",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Finsupp/Defs.lean#L84",
+          "finding": "源以函数加有限非零支持记录系数；本书以非空有限记录及规范化表示。两模型数学相容，但不照搬有限支持抽象定义、任意有限集合最大元或库中全部实例作为先修。"
+        },
+        {
+          "request_id": "mathlib_polynomial",
+          "location": "Mathlib/Algebra/Polynomial/Basic.lean，行61–65",
+          "locator": "Polynomial结构",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean#L61",
+          "finding": "形式多项式包装AddMonoidAlgebra R N，已带Semiring R背景。此结构不直接是R→R求值函数；本书不因引用它而宣布多项式环已构造。"
+        },
+        {
+          "request_id": "mathlib_polynomial",
+          "location": "Mathlib/Algebra/Polynomial/Basic.lean，行569–582",
+          "locator": "coeff / coeff_injective / coeff_inj",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean#L569",
+          "finding": "系数函数决定形式多项式；书稿用补零函数c_A:N→Q与规范代表唯一证明对应结论。"
+        },
+        {
+          "request_id": "mathlib_polynomial",
+          "location": "Mathlib/Algebra/Polynomial/Basic.lean，行703–710",
+          "locator": "ext_iff / ext",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean#L703",
+          "finding": "形式相等逐系数判断；不是在有限几个输入处取值相同的判据，也未借此证明任意系数域上的求值函数映射单射。"
+        },
+        {
+          "request_id": "mathlib_degree_definitions",
+          "location": "Mathlib/Algebra/Polynomial/Degree/Definitions.lean，行44–53",
+          "locator": "degree / natDegree",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean#L44",
+          "finding": "degree采用WithBot N，零为⊥；natDegree则把零另置0。书稿只定义非零多项式次数，不能在零对象处混用两接口。"
+        },
+        {
+          "request_id": "mathlib_degree_definitions",
+          "location": "Mathlib/Algebra/Polynomial/Degree/Definitions.lean，行75–89",
+          "locator": "degree_zero / natDegree_zero / degree_eq_bot",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean#L75",
+          "finding": "再次核明零次数两接口；本书空非零系数位置集合没有最大者，零不能套非零最大指标定义。"
+        },
+        {
+          "request_id": "mathlib_degree_definitions",
+          "location": "Mathlib/Algebra/Polynomial/Degree/Definitions.lean，行148–149",
+          "locator": "degree_C",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean#L148",
+          "finding": "非零常数degree为0，声明明确a≠0；对应书稿非零一项记录次数0。"
+        },
+        {
+          "request_id": "mathlib_coeff",
+          "location": "Mathlib/Algebra/Polynomial/Coeff.lean，行34–46",
+          "locator": "coeff_add / coeff_smul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean#L34",
+          "finding": "加法逐系数；数乘在SMulZeroClass条件下逐系数。书稿专取Q数值缩放，通过有理乘法及零律证明，不借库的模或半环实例给书稿省略论证。"
+        },
+        {
+          "request_id": "mathlib_coeff",
+          "location": "Mathlib/Algebra/Polynomial/Coeff.lean，行48–52",
+          "locator": "support_smul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean#L48",
+          "finding": "缩放不创造原来为零的位置；非零有理标量保持最高非零系数还需本书零乘积判据，不把包含关系误读为无条件支持相等。"
+        },
+        {
+          "request_id": "mathlib_eval",
+          "location": "Mathlib/Algebra/Polynomial/Eval/Defs.lean，行237–245",
+          "locator": "eval / eval_eq_sum",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean#L237",
+          "finding": "求值是独立操作，按系数与输入自然幂作有限和；本书用有限记录长度与SUM1/5证明尾零和代表选择无关。"
+        },
+        {
+          "request_id": "mathlib_eval",
+          "location": "Mathlib/Algebra/Polynomial/Eval/Defs.lean，行270–300",
+          "locator": "eval_C / eval_monomial / eval_zero / eval_add / eval_one",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean#L270",
+          "finding": "常数、零、一及加法求值关系；书稿用既有有理幂、有限和及逐系数式独立证明，不复制库的更强代数结构。"
+        },
+        {
+          "request_id": "mathlib_eval",
+          "location": "Mathlib/Algebra/Polynomial/Eval/Defs.lean，行302–306",
+          "locator": "eval_C_mul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean#L302",
+          "finding": "库把常数倍写成常数多项式的乘积，并证明求值可提取常数。本书尚无多项式乘法，仅用逐系数数乘和SUM2证明相同数值事实，不以此条引入乘法对象。"
+        },
+        {
+          "request_id": "mathlib_coeff",
+          "location": "Mathlib/Algebra/Polynomial/Coeff.lean，行317–317",
+          "locator": "smul_eq_C_mul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean#L317",
+          "finding": "库中数乘与常数多项式乘积相等，是已建乘法后的联系；本书本批只定义前者，不使用后者作为定义或先修。"
+        },
+        {
+          "request_id": "mathlib_degree_definitions",
+          "location": "Mathlib/Algebra/Polynomial/Degree/Definitions.lean，行325–335",
+          "locator": "degree_add_le",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean#L325",
+          "finding": "库在含底元素的次数类型上无条件给上界；本书零次数未定义，先分P=0、Q=0、P+Q=0，再在有定义范围写最大次数上界。"
+        },
+        {
+          "request_id": "mathlib_finsum",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean，行522–552",
+          "locator": "prod_range_succ / eventually_constant_prod / prod_range_add，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean#L522",
+          "finding": "有限前缀后继、零尾稳定与拼接的加法对应供复核；本书实际先修是已写SUM1—5，不调用一般双索引重排。"
+        }
+      ]
+    }
+  ],
+  "classification": {
+    "status": "planned",
+    "primary_leaf": "97H20",
+    "parent_code": "97Hxx",
+    "parent_chapter_number": 528,
+    "part_code": "97-XX",
+    "part_number": 63,
+    "cross_tags_only": [
+      "12E05"
+    ],
+    "taxonomy_rows": [
+      {
+        "code": "12E05",
+        "level": "subject_leaf",
+        "parent_code": "12Exx",
+        "title_en": "Polynomials in general fields (irreducibility, etc.)",
+        "title_zh": "一般域上的多项式（不可约性等）",
+        "translation_method": "algebra_logic"
+      },
+      {
+        "code": "97Hxx",
+        "level": "intermediate",
+        "parent_code": "97-XX",
+        "title_en": "Algebra education",
+        "title_zh": "代数教育",
+        "translation_method": "root"
+      },
+      {
+        "code": "97H20",
+        "level": "subject_leaf",
+        "parent_code": "97Hxx",
+        "title_en": "Elementary algebra (educational aspects)",
+        "title_zh": "初等代数（教育方面）",
+        "translation_method": "root"
+      }
+    ],
+    "completed": false,
+    "note": "12E05只作后续一般域上多项式联系，不增加主正文覆盖；不登记13F20或完整多项式环。"
+  },
+  "representation_boundary": "本书拟采用非空有限记录的唯一规范代表；mathlib采用有限支撑N→R且已具备更强代数结构。只对照系数/求值事实；规范化及良定义由本书有限归纳独立证明，不搬运环或模公理。",
+  "planned_ledger_interfaces": [
+    {
+      "code": "B2.13",
+      "number": 34,
+      "main_anchor": "polyrec-unit",
+      "answer_anchor": "polyrec-answers",
+      "body_path": null,
+      "answer_path": null,
+      "path_status": "pending_author_filename",
+      "primary_leaf": "97H20",
+      "parent_chapter_number": 528,
+      "cross_tags_only": [
+        "12E05"
+      ],
+      "module_ids": [
+        "functions"
+      ],
+      "definition_anchors": [
+        "polyrec-records",
+        "polyrec-definition",
+        "polyrec-degree"
+      ],
+      "proved": [
+        {
+          "proposition": "PR1",
+          "anchor": "polyrec-equivalence",
+          "title": "尾零等价与共同补零",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PR2",
+          "anchor": "polyrec-last-index",
+          "title": "非零记录最大非零指标存在唯一",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PR3",
+          "anchor": "polyrec-normalization",
+          "title": "规范代表存在唯一",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PR4",
+          "anchor": "polyrec-equality",
+          "title": "正式相等与全部补零系数一致",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PR5",
+          "anchor": "polyrec-evaluation",
+          "title": "求值与记录代表无关",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PR6",
+          "anchor": "polyrec-special-values",
+          "title": "零输入及一输入的求值",
+          "status": "planned_not_manuscript_acceptance"
+        }
+      ],
+      "precise_prerequisites_present": [
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-sets",
+          "status": "present",
+          "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-pairs",
+          "status": "present",
+          "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-definition",
+          "status": "present",
+          "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present",
+          "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-induction",
+          "status": "present",
+          "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-trichotomy",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-successor-comparison",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-indices",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-definition",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-extensionality",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-concatenation",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-padding",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-constant",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-definition",
+          "status": "present",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-zero",
+          "status": "present",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        }
+      ],
+      "question_prefix": "polyrec-q",
+      "answer_prefix": "polyrec-a",
+      "exercise_count": 8,
+      "status": "planned_only"
+    },
+    {
+      "code": "B2.14",
+      "number": 35,
+      "main_anchor": "polyops-unit",
+      "answer_anchor": "polyops-answers",
+      "body_path": null,
+      "answer_path": null,
+      "path_status": "pending_author_filename",
+      "primary_leaf": "97H20",
+      "parent_chapter_number": 528,
+      "cross_tags_only": [
+        "12E05"
+      ],
+      "module_ids": [
+        "functions"
+      ],
+      "definition_anchors": [
+        "polyops-definition",
+        "polyops-subtraction",
+        "polyops-scalars"
+      ],
+      "proved": [
+        {
+          "proposition": "PO1",
+          "anchor": "polyops-definition",
+          "title": "共同正长度下加法/缩放良定义与系数公式",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PO2",
+          "anchor": "polyops-addition",
+          "title": "交换结合零与唯一相反数",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PO3",
+          "anchor": "polyops-scalars",
+          "title": "标量单位零复合与两分配",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PO4",
+          "anchor": "polyops-evaluation",
+          "title": "求值保加/缩放/差",
+          "status": "planned_not_manuscript_acceptance"
+        },
+        {
+          "proposition": "PO5",
+          "anchor": "polyops-degree",
+          "title": "全零分支后的次数上界、异度和及缩放条件",
+          "status": "planned_not_manuscript_acceptance"
+        }
+      ],
+      "precise_prerequisites_present": [
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-linearity",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-extensionality",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-padding",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-opposite",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-cancellation",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-subtraction",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-zero-product",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-signs",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-trichotomy",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        }
+      ],
+      "planned_prerequisites": [
+        "polyrec-records",
+        "polyrec-equivalence",
+        "polyrec-normalization",
+        "polyrec-equality",
+        "polyrec-degree",
+        "polyrec-evaluation"
+      ],
+      "question_prefix": "polyops-q",
+      "answer_prefix": "polyops-a",
+      "exercise_count": 8,
+      "status": "planned_only"
+    }
+  ],
+  "independent_derivation_checks": [
+    "原记录(A,n)要求n≥1，A:I_n→Q，I_n={i∈N:i<n}。补零系数c_A(i)在i<n取A(i)，在i≥n取0，分支覆盖并互斥。函数三数据仍保存声明域/目标；原记录(1,2)与(1,2,0)长度不同，不能作为原记录强行说相等。",
+    "全体有限有理记录组成集合是公开采用的背景；规范记录可从该集合按条件选取。各个固定长度记录的可构造性不能冒充全体记录集合已从前文集合公理证明。采用唯一规范代表模型，不另引入商集。",
+    "A~B定义为∀i∈N,c_A(i)=c_B(i)。反身、对称、传递逐位置证。令L=max(n,m)（只比较两个自然数），i<L时核对应项，i≥L时两侧0；严格覆盖i=L，不能写成仅i>L。较短者补L−n个零只在n≤L下使用自然差。",
+    "对非空记录长度从1开始归纳，证明它或全零，或有唯一最大非零指标。后继末项非零则取新末指标；末项零且前缀非零沿用归纳指标；全零前缀加零仍全零。不得无依据取任意非空集合最大元；若辅助证明允许0长度，明确那不是合法原多项式记录。",
+    "norm(A)：全零返回(0)，否则截到最大非零指标d。逐位置证明补零系数不变。两个规范记录等价时先分零；非零且末指标不同，在较大指标处一侧非零另一侧补零矛盾；所以长度相同，所有项相同。由此A~B iff norm(A)=norm(B)，并得规范化幂等。",
+    "正式多项式就是规范记录P。P=Q iff全部补零系数相同。零为(0)，常数a为(a)；非零常数次数0，非零P的次数为末非零指标，零次数不定义。中间或开头的零保留位置，不可像尾零一样删掉。",
+    "E_A(t)=Σ_(i∈I_n) c_A(i)t^i，t∈Q，所有幂与有限和已定义。补零只添0·t^i，SUM5保持值；任意等价记录先补同一正长度，再由SUM1得逐点值同。因此E_P:Q→Q合法且与原始表示无关；不用选择或根数界。",
+    "t=0时第0项为c_P(0)·0^0=c_P(0)，所有正指数项为0；用SUM4把首项与尾段分开，再用零和公式。t=1时每个1^i=1，得系数总和。P是记录，c_P(i)是第i系数，E_P(t)是输入处取值，三者不同；常数系数记号不可混为未定义的多项式函数值。",
+    "正式相等推出标准求值函数相等（同域同目标Q）。全Q上的反向识别实际上成立，但本批不证明，不能谎称不同Q系数多项式可能在全Q处处同值；有限样本相同则用明确反例说明不足，不借非零多项式根数上界。",
+    "B2.14共同长度L≥max(n,m)，所以L≥1；数乘也取L≥原正长度。若仅要求非零系数指标<L，两零对象会允许L=0，生成非法空记录。先逐项形成候选再规范化，分别核i<L和i≥L的系数公式。",
+    "不同共同正长度、不同尾零表示给出的加法/数乘候选逐补零系数相同，规范唯一保证同一正式结果。证明c_(P+Q)(i)=c_P(i)+c_Q(i)、c_(λP)(i)=λc_P(i)覆盖全部i；定义−P=(-1)P、P−Q=P+(−Q)。",
+    "加法交换/结合/零/唯一相反数、标量1/0与复合和两分配，逐个系数化为Q规律再用正式相等判据。三多项式加法结合时可先取统一正长度，也可直接用已证全部系数公式，不能仅写因函数值相同而正式相等。",
+    "求值保加、数乘、差只需共同正长度、SUM2与有理分配结合；先证明未经规范化的候选值，再用B2.13求值代表无关转回正式多项式。不涉及双重索引，也不构造多项式乘法。",
+    "次数分支：先分P、Q和P+Q是否零。非零输入及非零和才写deg(P+Q)≤max(degP,degQ)；异次数时较高位不会抵消，所以和非零且度数等于较大者。同次数最高系数抵消后可能为零或降次，二者分开；非零λ与非零P时最高系数乘积非零，度数保持。λ=0或P=0归零，不计算deg0。",
+    "本批形式X可定义为(0,1)，但X^i在多项式乘法尚未定义时只能是明确说明的记录记号，最好延后。数值t^i已合法。不得声称建立多项式环、一般向量空间、乘法卷积、因式定理、根数上界、二项式定理或多项式函数反向识别定理。"
+  ],
+  "finite_diagnostics": {
+    "inputs": "120个非空记录：长度1…4，每系数−1/0/1；输入−2,−1,0,1/2,2；标量−1,0,1/2,2，全部Fraction精确值",
+    "counts": {
+      "normalization": 120,
+      "tail_evaluation": 600,
+      "equality_criterion": 14400,
+      "addition_evaluation": 72000,
+      "scaling_evaluation": 2400,
+      "degree_cases": 14880
+    },
+    "status": "passed",
+    "limitation": "仅临时模型与公式的有限诊断，不是尚未定稿文本或伴生实现的验收，不替代一般证明。"
+  },
+  "future_counts_if_written": {
+    "units": 35,
+    "foundation_questions": 280,
+    "ch01_questions": 14,
+    "total_questions": 294,
+    "draft_chapters": 5,
+    "draft_leaves": 28,
+    "modules": 43,
+    "completed_parts": 0,
+    "push_status": "not_due",
+    "note": "仅后续实际成稿并验收后的预期，未改当前台账。"
+  },
+  "not_established": [
+    "当前正文、题答、构建或视觉已通过",
+    "一般多项式乘法/卷积/环/模公理",
+    "非零多项式根数上界、因式定理、插值或全Q求值反向识别",
+    "任意双三索引重排",
+    "零多项式具有本书定义的次数"
+  ],
+  "remaining_gates": [
+    "当前幂和批正式构建快照后才按授权登记repo",
+    "作者/tmp草稿范围及锚实际核验",
+    "独立数学教学审阅",
+    "正式构建与实际视觉验收"
+  ]
+}

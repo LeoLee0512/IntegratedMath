@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "oracle": "SymPy 1.14.0 Poly over QQ from independent coefficient dictionary",
+  "counts": {
+    "records": 120,
+    "coefficients": 786,
+    "evaluations": 600,
+    "padding": 480,
+    "scalings": 360,
+    "pairs": 1521,
+    "evaluation_linearity": 7605,
+    "triples": 1728,
+    "rejected_inputs": 91,
+    "input_immutability": 120
+  },
+  "limits": "Finite examples support the implementation; not general proofs or a formalization of the manuscript."
+}

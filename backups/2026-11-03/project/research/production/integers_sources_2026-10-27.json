@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-27T14:46:42.649112+00:00",
+  "scope": "下一整数基础批次：自然数对与等价、加法/取负/乘法/序的良定义、符号律及零和负因子比较条件。",
+  "prior_ledgers_read": [
+    "research/ch01_source_checks.json",
+    "research/production/foundations_sources_2026-10-27.json"
+  ],
+  "method": "使用 cloud-environment-runtime 技能，读取 networking 参考及 /etc/codex/network-policy.json 后，经继承代理与TLS验证做公开、无登录HTTPS只读请求。不提取凭证、不绕过限制、不检索未知预印本。只保存元数据、许可短摘、独立摘要与审查结论。",
+  "network_context": {
+    "policy_version": 1,
+    "startup_http_mode": "restricted",
+    "vpn_configured": false,
+    "runtime_observations_current": true,
+    "runtime_network_state": "unknown",
+    "permitted_hosts_used": [
+      "github.com",
+      "raw.githubusercontent.com"
+    ],
+    "interpretation": "unknown 不构成执行状态已验证；具体可访问性由逐URL实际响应记录说明。"
+  },
+  "sources": [
+    {
+      "id": "INT-JUDSON",
+      "title": "Abstract Algebra: Theory and Applications",
+      "authors": [
+        "Thomas W. Judson"
+      ],
+      "additional_credit": "Robert A. Beezer：Sage Exercises for Abstract Algebra；非本次所用等价关系正文作者替代项。",
+      "version": "Annual Edition 2026；前言日期 August 4, 2026；本次固定提交 3069910e3ded72ff5e18837a97a0e810c92790e2",
+      "public_url": "https://github.com/twjudson/aata",
+      "author_version_evidence_request_ids": [
+        "judson_front",
+        "judson_bookinfo",
+        "judson_tree"
+      ],
+      "license": {
+        "verified": true,
+        "declared": "GNU Free Documentation License；共同兼容范围为 GFDL-1.3-or-later",
+        "evidence_request_ids": [
+          "judson_copying",
+          "judson_front",
+          "judson_readme"
+        ],
+        "short_evidence": "Version 1.3 or any later version; no Invariant Sections",
+        "discrepancy": "COPYING 写 1.3 或以后版本；活动前言 shortlicense 写 1.2 或以后版本。两处都无不变章节、前封面及后封面文字；本次不隐去差异，1.3 或以后版本同时在两处授权范围内。",
+        "not_public_domain": true
+      },
+      "checks": [
+        {
+          "topic": "等价关系、等价类与划分",
+          "evidence_request_ids": [
+            "judson_sets"
+          ],
+          "location": "src/sets.xml，sets-subsection-equivalence-relations，源码行 1125–1157、1270–1329",
+          "finding_zh": "活动正文列出自反、对称、传递三条；定义等价类，并证明等价类构成划分。可核对本书先定义关系、再定义整数等价类的逻辑次序。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "整数自然数对构造的证据边界",
+          "evidence_request_ids": [
+            "judson_sets",
+            "judson_integers"
+          ],
+          "location": "src/sets.xml 与 src/integers.xml，本次检索范围",
+          "finding_zh": "本次取得章节没有被确认为自然数对整数构造及其全部运算良定义的直接来源；不将这一教材泛化为已经核验本书完整构造。",
+          "status": "scope_limit"
+        }
+      ],
+      "reuse_decision": "只核对标准定义、条件与证明义务并作引用；不复制或改编外部题目、答案、插图或连续正文，不向书稿分发包收入第三方全文。"
+    },
+    {
+      "id": "INT-LEAN",
+      "title": "Lean 4 core: Init.Data.Int.Basic, Init.Data.Int.Lemmas, Init.Data.Int.Order",
+      "authors": [
+        "Jeremy Avigad",
+        "Leonardo de Moura",
+        "Deniz Aydin",
+        "Floris van Doorn",
+        "Mario Carneiro"
+      ],
+      "author_scope": "Basic 文件头：Jeremy Avigad、Leonardo de Moura；Lemmas 和 Order 文件头：Jeremy Avigad、Deniz Aydin、Floris van Doorn、Mario Carneiro。",
+      "version": "v4.24.0，固定发布标签；不是声称截至核查日期的最新版本",
+      "public_url": "https://github.com/leanprover/lean4/tree/v4.24.0/src/Init/Data/Int",
+      "license": {
+        "verified": true,
+        "declared": "Apache-2.0",
+        "evidence_request_ids": [
+          "lean_license",
+          "lean_basic",
+          "lean_order",
+          "lean_lemmas"
+        ],
+        "short_evidence": "Released under Apache 2.0 license as described in the file LICENSE."
+      },
+      "checks": [
+        {
+          "topic": "整数表示边界",
+          "evidence_request_ids": [
+            "lean_basic"
+          ],
+          "location": "Basic.lean，inductive Int，行 45–56",
+          "finding_zh": "官方 Int 用 ofNat 和 negSucc 两类构造。它是独立的整数表示参照，不是自然数对商集构造的直接实现。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "取负、零积与乘法符号律",
+          "evidence_request_ids": [
+            "lean_lemmas"
+          ],
+          "location": "Lemmas.lean：Int.neg_neg（102），Int.mul_zero/zero_mul（461/463），Int.neg_mul/mul_neg/neg_mul_neg（524/528/531）",
+          "finding_zh": "双重取负恢复原数；任意整数与零相乘等于零；单一负号可移至积外，两个负号消去。所述代数恒等式本身不要求因子非零。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "同加与取负的序关系",
+          "evidence_request_ids": [
+            "lean_order"
+          ],
+          "location": "Order.lean：Int.add_le_add_iff_left/right（275/278），Int.neg_le_neg_iff（297），Int.neg_lt_neg_iff（323）",
+          "finding_zh": "同加一个整数保留并反映非严格比较；取负反转非严格或严格比较。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "零、正、负因子的比较条件",
+          "evidence_request_ids": [
+            "lean_order"
+          ],
+          "location": "Order.lean：mul_lt_mul_of_pos_left/right（501/507），mul_le_mul_of_nonneg_left/right（514/524），mul_le_mul_of_nonpos_right/left（542/548），mul_lt_mul_of_neg_left/right（1156/1163）",
+          "finding_zh": "非负因子保留非严格比较，正因子保留严格比较；非正因子反转非严格比较，负因子反转严格比较。零因子两边均为零，因此不能保留严格比较或反映原比较。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "严格与非严格符号结论",
+          "evidence_request_ids": [
+            "lean_order"
+          ],
+          "location": "Order.lean：mul_nonneg（490），mul_pos（495），mul_neg_of_pos_of_neg（1143），mul_neg_of_neg_of_pos（1147），mul_nonneg_of_nonpos_of_nonpos（1151），mul_pos_of_neg_of_neg（1170）",
+          "finding_zh": "两个严格负数的积严格为正；两个非正数的积只能保证非负，零情形不能遗漏。",
+          "status": "verified_source_reading"
+        }
+      ],
+      "verification_limit": "仅阅读公开源码与定理条件；未安装、编译或运行本书对应 Lean 证明，不声明本书已获形式化验证。",
+      "reuse_decision": "只核对标准定义、条件与证明义务并作引用；不复制或改编外部题目、答案、插图或连续正文，不向书稿分发包收入第三方全文。"
+    },
+    {
+      "id": "INT-MATHLIB",
+      "title": "mathlib: MonoidLocalization.Basic and GrothendieckGroup",
+      "authors": [
+        "Amelia Livingston",
+        "Alex J. Best",
+        "Yaël Dillies"
+      ],
+      "author_scope": "Basic.lean 文件头作者 Amelia Livingston；GrothendieckGroup.lean 文件头作者 Alex J. Best、Yaël Dillies。",
+      "version": "master 活动源码，2026-10-27 实际下载快照；未固定提交，精确版本以逐文件 SHA-256 标识，不声称已读取整个一致构建。",
+      "public_url": "https://github.com/leanprover-community/mathlib4/tree/master/Mathlib/GroupTheory/MonoidLocalization",
+      "license": {
+        "verified": true,
+        "declared": "Apache-2.0",
+        "evidence_request_ids": [
+          "mathlib_license",
+          "mathlib_basic",
+          "mathlib_groth"
+        ],
+        "short_evidence": "Released under Apache 2.0 license as described in the file LICENSE."
+      },
+      "checks": [
+        {
+          "topic": "自然数对构造的群完备化参照",
+          "evidence_request_ids": [
+            "mathlib_groth",
+            "mathlib_basic"
+          ],
+          "location": "GrothendieckGroup.lean：GrothendieckGroup、of_injective；Basic.lean：r_iff_exists（191），mk_eq_mk_iff'（798），其前置 IsCancelMul 假设（791）",
+          "finding_zh": "群完备化取全子幺半群处的局部化，源码包含 to_additive 对应。一般关系保留额外见证因子；消去条件才允许约成两边交叉相等。对自然数加法这一可消去结构，独立翻译得 (a,b) 等价于 (c,d) 当且仅当 a+d=c+b。该特化为人工数学核对，不声称已运行生成的加法 Lean 定义。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "代表元无关是定义下降到等价类的前提",
+          "evidence_request_ids": [
+            "mathlib_basic"
+          ],
+          "location": "Basic.lean：liftOn（280），liftOn₂（303），源码行 272–308",
+          "finding_zh": "单输入定义须在等价代表元上同值；双输入须对两个输入分别更换代表元后同值。仅写出代表元公式不能代替这项证明。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "嵌入需消去条件",
+          "evidence_request_ids": [
+            "mathlib_groth"
+          ],
+          "location": "GrothendieckGroup.lean：of 文档及 of_injective",
+          "finding_zh": "源码明确一般交换幺半群映射至群完备化不自动单射；自然数嵌入的证明应使用已建立的自然数加法消去，而非把任意商映射当作单射。",
+          "status": "verified_source_reading"
+        }
+      ],
+      "verification_limit": "此来源核对一般群完备化及良定义框架；不直接证明本书自然数对整数的乘法与序关系。该两项在下列独立数学审查中逐项核对。未运行 Lean/mathlib 编译或形式证明。",
+      "reuse_decision": "只核对标准定义、条件与证明义务并作引用；不复制或改编外部题目、答案、插图或连续正文，不向书稿分发包收入第三方全文。"
+    }
+  ],
+  "independent_mathematical_checks": [
+    {
+      "id": "IC01",
+      "topic": "等价关系传递性",
+      "finding": "若 a+d=c+b 且 c+f=e+d，则 a+d+f=c+b+f=e+d+b。用自然数结合/交换律重排，再消去同一 d，得 a+f=e+b。不使用尚未定义的整数减法。"
+    },
+    {
+      "id": "IC02",
+      "topic": "加法良定义",
+      "finding": "设 a+b'=a'+b，c+d'=c'+d。两式相加并重排，得 (a+c)+(b'+d')=(a'+c')+(b+d)。因此按分量相加的结果等价。"
+    },
+    {
+      "id": "IC03",
+      "topic": "取负良定义",
+      "finding": "(a,b) 的负元取 (b,a)。由 a+b'=a'+b，经交换对称得 b+a'=b'+a，所以更换代表元不改变负元等价类。"
+    },
+    {
+      "id": "IC04",
+      "topic": "乘法良定义",
+      "finding": "乘法代表元公式为 (a,b)(c,d)=(ac+bd,ad+bc)。先只换第一对，假设 a+b'=a'+b。待证的交叉和左侧 ac+bd+a'd+b'c=c(a+b')+d(b+a')，右侧 a'c+b'd+ad+bc=c(a'+b)+d(b'+a)，两侧由假设及其对称式相等。再利用自然数交换律直接核对代表元乘法交换，便可同样更换第二对；等价关系传递性合并两次更换。没有使用整数乘法已良定义或整数分配律。"
+    },
+    {
+      "id": "IC05",
+      "topic": "序关系良定义",
+      "finding": "定义 [(a,b)]≤[(c,d)] 当且仅当 a+d≤c+b。若 a+b'=a'+b、c+d'=c'+d，在原比较两边同加 b'+d'，重排替换后得到 (a'+d')+(b+d)≤(c'+b')+(b+d)。自然数同加的保留与反映允许消去共同 b+d，得新代表元的比较。逆向同理。严格比较亦使用自然数严格序的同加反映。"
+    },
+    {
+      "id": "IC06",
+      "topic": "零因子与负因子边界",
+      "finding": "正因子保留严格比较；负因子反转严格比较。非负/非正因子只能分别保证保留/反转非严格比较。零因子使两边同时为零，因此不能从乘后相等、≤或≥反推出原比较，也不能把严格不等式保持为严格不等式。两个非正数的积非负；若要严格正，两个因子都须严格负。"
+    },
+    {
+      "id": "IC07",
+      "topic": "符号律证明依赖",
+      "finding": "先建立整数运算良定义、加法逆元唯一性与分配律；由 x(-y)+xy=x((-y)+y)=0，才推出 x(-y)=-(xy)。双负乘积由该式及双重取负推出。不能用“负负得正”作为乘法良定义的依据再反向援引它。"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "lean_basic",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Basic.lean",
+      "checked_at_utc": "2026-10-27T14:42:19.952899+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Basic.lean",
+      "bytes": 12478,
+      "sha256": "8cc0f7dd682be29c06b2f33e14a998087e02d0b4f9eb1b5f7739f1828e49d083",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_order",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Order.lean",
+      "checked_at_utc": "2026-10-27T14:42:19.953577+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Order.lean",
+      "bytes": 59747,
+      "sha256": "1b3b31b6097a4c2e7109f95b3d68b0d5e638628e89d0f21a90645851237dc20e",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_license",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-27T14:42:19.954108+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "bytes": 9160,
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_readme",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/master/README.md",
+      "checked_at_utc": "2026-10-27T14:42:19.954469+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/master/README.md",
+      "bytes": 445,
+      "sha256": "103a09088e2c074d7c7f8e1d67c8b0a83bf7e035c97f242424b9a6db68e8318b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_license",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/master/LICENSE",
+      "checked_at_utc": "2026-10-27T14:42:20.354647+00:00",
+      "http_status": 404,
+      "access_status": "http_error",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "request_id": "judson_tree",
+      "url": "https://github.com/twjudson/aata/tree/master",
+      "checked_at_utc": "2026-10-27T14:42:31.329869+00:00",
+      "http_status": 200,
+      "final_url": "https://github.com/twjudson/aata/tree/master",
+      "bytes": 267329,
+      "sha256": "cd6fac2f4043221862e23cf3239471d186d99bd3e5921c9729cef635a0898672",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_src",
+      "url": "https://github.com/twjudson/aata/tree/master/src",
+      "checked_at_utc": "2026-10-27T14:42:39.214748+00:00",
+      "http_status": 200,
+      "final_url": "https://github.com/twjudson/aata/tree/master/src",
+      "bytes": 288490,
+      "sha256": "8d59a8d7528b9c981335d399864e3d32e2ec32154135a9dea5ec9967cedb16f1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_sets",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml",
+      "checked_at_utc": "2026-10-27T14:42:54.411196+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml",
+      "bytes": 97708,
+      "sha256": "fa1d972edf851618fd869a7a1e5ff1dbcf7a9e5135f603087aff4bc418131b15",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_integers",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/integers.xml",
+      "checked_at_utc": "2026-10-27T14:42:54.411935+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/integers.xml",
+      "bytes": 63296,
+      "sha256": "0a01f88637265349a34cd2aac96aa6170deae6a42fa0dd5c91f9694bdcafe8a1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_front",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/frontmatter.xml",
+      "checked_at_utc": "2026-10-27T14:42:54.412652+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/frontmatter.xml",
+      "bytes": 12931,
+      "sha256": "addf82ea52f863a28a6cf9372e7a42945c77cf36448ed99ce709a53dab6cfa23",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_copying",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/COPYING",
+      "checked_at_utc": "2026-10-27T14:42:54.413434+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/COPYING",
+      "bytes": 427,
+      "sha256": "b7d47749512a424173f6a20daeea7b00f36b9f5ef95c25930fdbc3bd549b8983",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_bookinfo",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/bookinfo.xml",
+      "checked_at_utc": "2026-10-27T14:42:54.750854+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/bookinfo.xml",
+      "bytes": 3289,
+      "sha256": "22595213d6307f7e31d0f7a07b26908786e9ee865f6114f61f0f5bafa2c0d1ea",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_lemmas",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Lemmas.lean",
+      "checked_at_utc": "2026-10-27T14:42:54.786019+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Int/Lemmas.lean",
+      "bytes": 26132,
+      "sha256": "b58b2cbf8e8310b49d950d3d634eb133dc688752b1b263cccde42960eb480034",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_groth",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/Mathlib/GroupTheory/MonoidLocalization/GrothendieckGroup.lean",
+      "checked_at_utc": "2026-10-27T14:43:32.583399+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/Mathlib/GroupTheory/MonoidLocalization/GrothendieckGroup.lean",
+      "bytes": 3622,
+      "sha256": "fc8a0d15f6d72486f8c05ffe8ff7ca523bb10d0ea8781befb26bc1cc53e31712",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/LICENSE",
+      "checked_at_utc": "2026-10-27T14:43:32.583933+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/Mathlib/GroupTheory/MonoidLocalization/Basic.lean",
+      "checked_at_utc": "2026-10-27T14:43:45.860228+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/master/Mathlib/GroupTheory/MonoidLocalization/Basic.lean",
+      "bytes": 41731,
+      "sha256": "a28224156f8d73ff6b8c86265c210809085da9faef8462ab5279c33141a33590",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "200": 15,
+    "404": 1
+  },
+  "failed_requests_note": "judson_license 是对根 LICENSE 的一次404；随后按公开目录找到 COPYING，不是绕过访问限制。其余访问按逐条记录报告。",
+  "not_established": [
+    "未运行 Lean 或 mathlib 编译、证明检查；不宣称书稿形式化验证完成。",
+    "未核验任何外部习题及答案并收入书稿。",
+    "未取得出版PDF，不猜测页码；定位使用XML标识、定理名和实际下载源码行号。",
+    "mathlib 群完备化不是本书整数乘法和序关系证明的直接替代；本书须自足写出相关证明。",
+    "Judson 本次只用于等价关系/等价类框架，不声称所读整数章包含全部自然数对构造。"
+  ],
+  "distribution_boundary": "第三方全文仅在 /tmp/integratedmath-integers-audit 暂存供核查，不写入仓库或最终分发包。永久产物仅本JSON及配套Markdown。"
+}

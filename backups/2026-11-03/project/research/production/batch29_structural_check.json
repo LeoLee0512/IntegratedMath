@@ -1,0 +1,58 @@
+{
+  "status": "isolated_structural_checks_passed",
+  "counts": {
+    "units": 59,
+    "foundation_exercises": 472,
+    "intro_exercises": 14,
+    "total_exercises": 486,
+    "figures": 20,
+    "numbered_appendices": 27,
+    "draft_chapters": 6,
+    "draft_leaves": 30,
+    "completed_chapters": 0
+  },
+  "html": {
+    "math_nodes": 29870,
+    "source_math_nodes": 29874,
+    "image_alt_math_nodes": 4,
+    "images": 20,
+    "exercise_pairs": 486,
+    "html_ids": 3143,
+    "html_internal_links": 3973
+  },
+  "new_units": [
+    {
+      "code": "B2.37",
+      "stage": "draft",
+      "prerequisites_verified": 17
+    },
+    {
+      "code": "B2.38",
+      "stage": "draft",
+      "prerequisites_verified": 25
+    }
+  ],
+  "input_sha256": {
+    "manuscript/foundations/real_plane_lines.md": "c0dcbed5cae920f8f5736b31d9a59a4e9b111c249e588fcf76010e073b0fa1eb",
+    "manuscript/foundations/real_plane_lines_answers.md": "e1972719fda1dc291fc3b7f14a35491b0cc5f3553d267364e0cf5e4cd4a8a2b2",
+    "manuscript/foundations/real_plane_projection.md": "ebb277469fdcbdc34241420d122a6809c424d23fe6629a2c00b7b149f01f21c4",
+    "manuscript/foundations/real_plane_projection_answers.md": "bdf1d68ae934cc6465642ee53f704951432fea857fccda12b6a662f2708d21ab"
+  },
+  "module_graph": "acyclic;existing real-plane-geometry depends on functions and number-systems;no reverse edge",
+  "new_numerical_code": "only exact finite witnesses inside drawing function; no new numerical API",
+  "new_figures": 1,
+  "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch29 candidate preparation.",
+  "checked_candidate_tool_sha256": {
+    "build_learning_batch.py": "e0bb0e2c84b1ab02b0bcfcc8f806fa29cb2254f77ea4e5d2474074856d2df976",
+    "build_production_ledger.py": "271e0b4f1bd1594ddb2b100095ce518b5be4375a0a26d5d812706d42d45f23ec",
+    "draw_foundations_batch.py": "c36e107fa822fa3e19e64efc308e41dfe2885af786cd38cab563eaa6d7163479",
+    "validate_learning_batch.py": "81adde55f2f0be77a39853f0c66979f269ba74f357b42335da32a36f23b416ad"
+  },
+  "source_audit_sha256": {
+    "md": "1b06533f18200dee5de93f9202294e9f115ab98806ddac5128be8ba85ecc4805",
+    "json": "aa3ef445545d6e79c69c9dc2bf88e77dcbc3650b162f65bcb4d23e89568a23df"
+  },
+  "all_59_unit_chapter_segment_placements_verified": true,
+  "original_source_object_preserved": true,
+  "final_source_binding_metadata_preserves_composed_bytes": true
+}
