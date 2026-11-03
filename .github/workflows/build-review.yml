@@ -19,9 +19,12 @@ jobs:
       - name: Build and validate
         run: |
           python tools/check_release_notes.py
+          python tools/render_release_notes.py --tag review-ci-preview --output build/release-notes-preview.md
           python tools/build_ch01_review.py
           python tools/validate_catalog_chinese.py
           python tools/validate_ch01_review.py
+          python tools/build_ch02_review.py
+          python tools/validate_ch02_review.py
       - name: Save artifacts awaiting visual inspection
         uses: actions/upload-artifact@v4
         with:
@@ -30,4 +33,5 @@ jobs:
           path: |
             dist/
             build/review_ch01/
+            build/review_ch02/
             data/ch01_validation.json

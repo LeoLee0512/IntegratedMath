@@ -14,7 +14,7 @@
   "unlisted_sections": {
     "depth": null,
     "status": "未规划",
-    "count": 5983
+    "count": 5973
   },
   "current_chapter": {
     "code": "00Axx",
@@ -235,18 +235,88 @@
       "status": "待作者审阅",
       "scope": "跨类主题与论证检查顺序",
       "source": "manuscript/review_ch01/chapter.md#sec-00A99"
+    },
+    {
+      "number": 24,
+      "code": "00B05",
+      "depth": "G",
+      "status": "待作者审阅",
+      "scope": "讲座摘要汇编的定位、阅读记录和核验边界",
+      "source": "manuscript/review_ch02/chapter.md#sec-00B05",
+      "prerequisite_sources": [
+        "manuscript/review_ch01/part_opening.md#source-sec-00-02",
+        "manuscript/review_ch01/chapter.md#source-sec-00A15",
+        "manuscript/review_ch01/chapter.md#source-sec-00A17"
+      ]
     }
   ],
-  "next_chapter_proposal": {
+  "completion_note": "按声明深度逐项审阅后才记完成；全部现稿仍待作者审阅，导读不得计为完整教学。",
+  "planned_sections": [
+    {
+      "number": 25,
+      "code": "00B10",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 26,
+      "code": "00B15",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 27,
+      "code": "00B20",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 28,
+      "code": "00B25",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 29,
+      "code": "00B30",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 30,
+      "code": "00B50",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 31,
+      "code": "00B55",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 32,
+      "code": "00B60",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    },
+    {
+      "number": 33,
+      "code": "00B99",
+      "depth": "G",
+      "status": "已规划，正文待写"
+    }
+  ],
+  "chapter_02": {
     "code": "00Bxx",
-    "suggested_depth": "G",
-    "status": "正文未开始",
+    "depth": "G",
+    "status": "第24节草稿待作者审阅，其余九节待写",
     "prerequisite_sections": [
       "00-02",
       "00A15",
       "00A17"
     ],
-    "purpose": "文集类型、用途与核验，不承担基础运算教学"
-  },
-  "completion_note": "按声明深度逐项审阅后才记完成；全部现稿仍待作者审阅，导读不得计为完整教学。"
+    "source": "manuscript/review_ch02/chapter.md#chapter-02",
+    "purpose": "以文献导读实际使用章首先修声明和跨章链接，不承担基础运算教学"
+  }
 }

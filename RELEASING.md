@@ -30,7 +30,7 @@ python tools/validate_ch01_review.py
 
 ## 上传 GitHub Releases
 
-**发布前先刷新发布说明。** 编辑 `发布说明.md`，核对本版内容、T/S/G 数量、实际验证结果与作者审阅状态；删除“尚未上传新发布资产”等上传前状态和待填占位文字，改用“本版产物包括……”等发布前后均成立的描述。上传状态保留在 README 或工作记录，不能提前改成“已发布”。仓库内的相对链接也要改成 Release 页面可用的链接。`发布说明.md` 会原样作为 `--notes-file` 传给 GitHub，创建草稿后再改仓库文件不会自动更新已有 Release 说明。
+**发布前先刷新发布说明。** 编辑 `发布说明.md`，核对本版内容、T/S/G 数量、实际验证结果与作者审阅状态；删除“尚未上传新发布资产”等上传前状态和待填占位文字，改用“本版产物包括……”等发布前后均成立的描述。上传状态保留在 README 或工作记录，不能提前改成“已发布”。源码链接保留仓库相对路径，不能写会漂移的分支URL。脚本用本次标签生成 `build/release-notes.md`，将相对源码链接固定为 `https://github.com/LeoLee0512/IntegratedMath/blob/<标签>/<文件>`，并保留锚点；外部网址保持原样。实际传给 `--notes-file` 的是生成文件，源模板不会被改写。
 
 运行 `python tools/check_release_notes.py` 检查已知过期表述与占位文字，再提交本轮源码和已刷新的发布说明，推送当前工作分支，确保该提交已在远端。使用有本仓库写入权限的 `gh` 登录，在源码无未提交修改时运行：
 
@@ -38,7 +38,11 @@ python tools/validate_ch01_review.py
 bash tools/publish_ch01_release.sh review-ch01-2026-10-22
 ```
 
-标签名必须是新版本号。脚本在联网前再次检查发布说明，然后检查包和当前快照，创建指向当前提交的 **draft Release**，上传三个PDF、两个离线HTML、三个Markdown、伴生zip及 `SHA256SUMS.txt`；既有同名 Release 不覆盖。发布前在 GitHub 检查已上传的资产和草稿说明，写清仍待作者审阅的状态，再将草稿发布。若需修改已创建草稿的说明，先更新并提交源文件，再显式运行 `gh release edit <标签> --repo LeoLee0512/IntegratedMath --notes-file 发布说明.md` 并复查页面。发布成功后再将 README 的迁移状态更新为真实版本链接；发布说明保持描述本版内容的稳定文字。不能把尚未存在的 Release 写成可下载版本。
+标签名必须是新版本号。脚本在联网前检查并渲染说明，然后检查包和当前快照，创建指向当前提交的 **draft Release**，上传三个PDF、两个离线HTML、三个Markdown、伴生zip及 `SHA256SUMS.txt`；既有同名 Release 不覆盖。渲染预览不会创建标签，Release命令通过 `--target` 指定已核验的提交。发布前检查草稿资产、生成说明及该提交中的目标文件；草稿的新标签尚未公开时，不把标签URL暂时不可访问误认为源码缺失。将草稿发布后，再逐个打开标签链接确认文件和版本。
+
+若需修订已有草稿说明，保持原标签不动，更新说明模板后运行 `python tools/render_release_notes.py --tag <原标签> --output build/release-notes.md`，再执行 `gh release edit <原标签> --repo LeoLee0512/IntegratedMath --notes-file build/release-notes.md`。核对所链接文件在该标签下确实存在；不能通过移动标签让它追上新稿。发布成功后再将 README 的迁移状态更新为真实版本链接，不能把尚未存在的 Release 写成可下载版本。
+
+`check_release_notes.py` 是已知表述检查，覆盖“待发布”“尚未上传”等以及少数占位词；它不理解全部同义改写、否定或引用语境，更不是发布状态机。通过检查不表示已经上传、文案正确或所有链接有效；可能误报的引文需人工改写或判断。本轮用两个不同标签渲染同一模板，核对链接随标签变化且模板不变，并检查独立“待发布”也会被拒绝。
 
 本轮云环境 `gh` 认证不可用，连接器不提供 Release 上传接口；工具与产物已准备，不据此声称上传成功。该限制不影响源码编辑与构建。
 
