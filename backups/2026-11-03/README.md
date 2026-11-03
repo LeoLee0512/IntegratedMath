@@ -31,4 +31,4 @@ python3 restore.py --output /path/to/new/IntegratedMath-restored
 
 环境恢复后原 `/tmp` 内容已消失。此前仅存于该临时目录、未复制到持久工作区的第34批极值/一致连续四份正文与答案、其部分审稿和来源自查、第35批导数候选计划及当时部分放大页面记录，本次未能恢复。它们没有被冒充为已备份内容；具体已知缺失项见 [unavailable.json](unavailable.json)。第34批持久化的计划与概念审仍在。
 
-上传与核验结果单独登记；本说明不预先宣称远端推送成功。此后按用户要求暂停写作。
+备份载荷提交 `27fb63f0cffc2f61bb66e61fd5d296aba9ab0775` 已推送并核对远端，32,582个载荷文件与该提交树一致；从GitHub实际下载的两个主要PDF、清单和当时说明均与本地散列一致。见 [远端核验记录](REMOTE_VERIFICATION.json) 与 [逐批推送记录](TRANSFER_COMMITS.json)。本次后续提交只补这些记录和本段说明。`manifest.json` 与 `LOCAL_VERIFICATION.json` 保留上传前的准备时间和状态，不改写历史；上传结果以后续远端记录为准。GitHub API返回Forbidden，无法确认CI运行结果，不宣称通过。已按用户要求暂停正文写作。
