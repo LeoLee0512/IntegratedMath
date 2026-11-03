@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "translated_heading_count": 6603,
+  "parts": 63,
+  "chapters": 534,
+  "sections": 6006,
+  "all_source_codes_and_hierarchy_preserved": true,
+  "all_original_math_fragments_preserved": true,
+  "untranslated_english_prose_titles": 0,
+  "selected_qualifier_checks": 369,
+  "translation_sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7",
+  "limits": "Every heading has a per-code translation. Code/formula checks are exhaustive; independent semantic second review is sampled. Chinese terminology is this book's translation, not an official Chinese MSC edition."
+}

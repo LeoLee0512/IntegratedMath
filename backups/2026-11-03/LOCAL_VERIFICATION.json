@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-03T15:23:43.546129+00:00",
+  "status": "all_2668_manifest_entries_exact_hash_verified_locally",
+  "original_bytes": 4353000459,
+  "manifest_sha256": "7f23e0ae8989430e59964cd17a2d60a26cbbfb4e81ae81cc372787de392c12d1",
+  "max_git_blob_bytes": 17464085,
+  "credential_pattern_scan": "No configured private-key/GitHub-token/AWS-key/OpenAI-token patterns found in included files or decompressed ZIP entries; heuristic scan, not formal proof",
+  "zip_reconstruction": "All original file SHA-256 hashes verified by streaming exact chunks; ZIP entries CRC checked while reading; no recompression",
+  "git_bundle": "git bundle verify passed; committed history only, configuration excluded",
+  "current_pdf_status": "939-page PDF automatic checks passed; actual image inspection pending",
+  "accepted_baseline": "a9363f607a818f69d77e8723ac3d3e5666ca4026, 919-page PDF",
+  "excluded_files": 109,
+  "unavailable": "See unavailable.json; not included or claimed recovered",
+  "ci": "GitHub API access returned Forbidden; no CI pass claimed",
+  "remote_upload": "not_yet_attempted"
+}

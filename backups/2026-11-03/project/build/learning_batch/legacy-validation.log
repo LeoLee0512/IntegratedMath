@@ -1,0 +1,55 @@
+{
+  "status": "automated_checks_passed",
+  "catalog_counts": {
+    "parts": 63,
+    "chapters": 534,
+    "sections": 6006
+  },
+  "current_chapters": 1,
+  "part_general_items": 2,
+  "chapter_sections": 21,
+  "exercises": 14,
+  "figures": 4,
+  "math_nodes": 229,
+  "exact_computation_checks": "passed",
+  "missing_glyph_warnings": [],
+  "artifact_sha256": {
+    "dist/figures/ch01_disjoint.png": "e5c540eaa457bc3f5abd960e6cb139a18e9309d142a238eaabb7bca740a4bbae",
+    "dist/figures/ch01_overlap.png": "e83c66be6d000753bc2a47f0aa80a1a1da5ce1721cc1b314de4bba423fcf66b1",
+    "dist/figures/ch01_rhythm.png": "e2d57333a2a64be90a324df5e66e7bc8fe830987a2f427c522c69dbd90342840",
+    "dist/figures/ch01_square.png": "bbde875aff34cc2b765dbb1beb50b65643b6c7329513a14546ae22f5a29197c8",
+    "dist/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c",
+    "dist/综合数学.html": "a3635bf6f1af97324ccccd8d4aa4c66adcd3f1d5069b4a2746cda49baaca1fab",
+    "dist/综合数学.md": "1dc338c60eacdef807fd51f6231d11048888d9001b0a1eb7dcb175c9324e5490",
+    "dist/综合数学.pdf": "b2b5aebacaf0326aaf03735dbdda29071fc83e6155b82feea16069f03a071d92",
+    "dist/综合数学_完整数学目录.md": "cce6a593789d96bd1ba663f8bbf2dee520239891a9d1cfb497aee10de3141cb8",
+    "dist/综合数学_完整数学目录.pdf": "6cb12ea75b3c38217ab3e6a86004fc07400cae1bac31236355b3be9766881b55",
+    "dist/综合数学_第一章审阅版.html": "95044f7dbd1ff149723512173cdda730b937086bec220869ac096dcdae71415e",
+    "dist/综合数学_第一章审阅版.md": "09e2584b6290ccec675d40ed890bc66f318cc10b75cd83a3691c62691e126535",
+    "dist/综合数学_第一章审阅版.pdf": "53254c1d606eb037eb1dba3b856d254924debec51c3fe56283f5c9f4a606d1bd"
+  },
+  "artifacts": {
+    "综合数学_第一章审阅版": {
+      "pages": 31,
+      "sha256": "53254c1d606eb037eb1dba3b856d254924debec51c3fe56283f5c9f4a606d1bd",
+      "page_boundary_overflow": [],
+      "question_answer_links": 14,
+      "answer_question_links": 14,
+      "all_pages_rendered": true
+    },
+    "综合数学": {
+      "pages": 248,
+      "sha256": "b2b5aebacaf0326aaf03735dbdda29071fc83e6155b82feea16069f03a071d92",
+      "page_boundary_overflow": [],
+      "question_answer_links": 14,
+      "answer_question_links": 14
+    },
+    "综合数学_完整数学目录": {
+      "pages": 218,
+      "sha256": "6cb12ea75b3c38217ab3e6a86004fc07400cae1bac31236355b3be9766881b55",
+      "page_boundary_overflow": []
+    }
+  },
+  "visual_review": "pending_actual_image_inspection",
+  "limits": "Automated checks and independent manuscript review do not constitute formal proof verification."
+}

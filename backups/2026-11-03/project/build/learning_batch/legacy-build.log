@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "output": "/workspace/IntegratedMath-book/dist/综合数学_完整数学目录.md",
+  "parts": 63,
+  "chapters": 534,
+  "sections": 6006,
+  "restored_truncated_titles": 3,
+  "catalog_sha256": "cce6a593789d96bd1ba663f8bbf2dee520239891a9d1cfb497aee10de3141cb8"
+}
+[WARNING] Could not load translations for zh-CN
+  data file translations/zh.yaml not found
+[WARNING] The term Abstract has no translation defined.
+[WARNING] Could not load translations for zh-CN
+  data file translations/zh.yaml not found
+[WARNING] The term Abstract has no translation defined.
