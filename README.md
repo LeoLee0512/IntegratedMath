@@ -33,3 +33,8 @@ python tools/validate_ch01_review.py
 此前35章历史稿保留在 [history/35-chapter-draft](https://github.com/LeoLee0512/IntegratedMath/tree/history/35-chapter-draft)，对应提交 `818bc3c77023b76dac56fb3b4a3ca3b6eee0ce39`；迁移前的第一章版本保留在 [history/ch01-before-editorial-policy](https://github.com/LeoLee0512/IntegratedMath/tree/history/ch01-before-editorial-policy)。历史稿不混入当前构建。
 
 迁移前当前分支实际有5条提交；本轮新增提交，不压缩、不重写旧历史。解除二进制追踪只阻止后续增长，不会让旧 Git 对象消失。发布标签、历史分支与审校快照的维护规则见 [发布流程](RELEASING.md)。
+
+
+## 第一部分新审阅入口
+
+[第一部分正文、独立答案与本地构建说明](PART1_REVIEW.md)。第一部分已按T2/S13/G18声明目标完成生产验收；作者审阅仍待进行。全书其余部分未完成，旧备份保持不变。

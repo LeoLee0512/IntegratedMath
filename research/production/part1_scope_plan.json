@@ -1,0 +1,1070 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "authors": [
+    "/root",
+    "/root/part1_chapter2"
+  ],
+  "chapter_codes": [
+    "00Axx",
+    "00Bxx"
+  ],
+  "source_files": [
+    "manuscript/review_ch01/part_opening.md",
+    "manuscript/review_ch01/chapter.md",
+    "manuscript/review_ch01/answers.md",
+    "manuscript/review_ch01/appendices.md",
+    "manuscript/review_ch02/chapter.md",
+    "manuscript/review_ch02/answers.md",
+    "tools/ch01_simulation.py",
+    "tools/draw_ch01_figures.py"
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "parent_code": "00-XX",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/part_opening.md",
+      "anchor": "sec-00-01",
+      "objectives": [
+        {
+          "id": "00-01-1",
+          "text": "入门材料的阅读方法"
+        }
+      ],
+      "prerequisites": [],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00-02",
+      "parent_code": "00-XX",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/part_opening.md",
+      "anchor": "sec-00-02",
+      "objectives": [
+        {
+          "id": "00-02-1",
+          "text": "研究材料的核验边界"
+        }
+      ],
+      "prerequisites": [],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00A05",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A05",
+      "objectives": [
+        {
+          "id": "00A05-1",
+          "text": "有限计数、符号与采用规则"
+        }
+      ],
+      "prerequisites": [],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00A06",
+      "parent_code": "00Axx",
+      "depth": "T",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A06",
+      "objectives": [
+        {
+          "id": "00A06-1",
+          "text": "从任意解出发推出唯一候选，区分必要性与充分性"
+        },
+        {
+          "id": "00A06-2",
+          "text": "将候选代回原方程并检查变量范围"
+        },
+        {
+          "id": "00A06-3",
+          "text": "结合两向论证说明存在性、唯一性与解的完整性"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-01",
+          "answer": "manuscript/review_ch01/answers.md#answer-01"
+        }
+      ]
+    },
+    {
+      "code": "00A07",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A07",
+      "objectives": [
+        {
+          "id": "00A07-1",
+          "text": "题目条件与解的范围"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A06"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-02",
+          "answer": "manuscript/review_ch01/answers.md#answer-02"
+        }
+      ]
+    },
+    {
+      "code": "00A08",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A08",
+      "objectives": [
+        {
+          "id": "00A08-1",
+          "text": "三张卡片排列的穷尽枚举"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-04",
+          "answer": "manuscript/review_ch01/answers.md#answer-04"
+        }
+      ]
+    },
+    {
+      "code": "00A09",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A09",
+      "objectives": [
+        {
+          "id": "00A09-1",
+          "text": "有重叠集合的计数"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-03",
+          "answer": "manuscript/review_ch01/answers.md#answer-03"
+        }
+      ]
+    },
+    {
+      "code": "00A15",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A15",
+      "objectives": [
+        {
+          "id": "00A15-1",
+          "text": "书目提供哪些定位信息"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00A17",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A17",
+      "objectives": [
+        {
+          "id": "00A17-1",
+          "text": "书评与原始论证的区别"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-05",
+          "answer": "manuscript/review_ch01/answers.md#answer-05"
+        }
+      ]
+    },
+    {
+      "code": "00A20",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A20",
+      "objectives": [
+        {
+          "id": "00A20-1",
+          "text": "术语范围、反例与一致性"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00A22",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A22",
+      "objectives": [
+        {
+          "id": "00A22-1",
+          "text": "平方展开与公式的适用条件"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-06",
+          "answer": "manuscript/review_ch01/answers.md#answer-06"
+        }
+      ]
+    },
+    {
+      "code": "00A27",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A27",
+      "objectives": [
+        {
+          "id": "00A27-1",
+          "text": "未解问题的表述与核验边界"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": []
+    },
+    {
+      "code": "00A30",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A30",
+      "objectives": [
+        {
+          "id": "00A30-1",
+          "text": "数学陈述与认识边界"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-08",
+          "answer": "manuscript/review_ch01/answers.md#answer-08"
+        }
+      ]
+    },
+    {
+      "code": "00A35",
+      "parent_code": "00Axx",
+      "depth": "T",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A35",
+      "objectives": [
+        {
+          "id": "00A35-1",
+          "text": "区分单向推出与等价，以乘零反例识别信息丢失"
+        },
+        {
+          "id": "00A35-2",
+          "text": "在除法前分别处理除数为零与非零的情况"
+        },
+        {
+          "id": "00A35-3",
+          "text": "逐一代回并说明各分支穷尽全部候选"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A06"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-07",
+          "answer": "manuscript/review_ch01/answers.md#answer-07"
+        }
+      ]
+    },
+    {
+      "code": "00A64",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A64",
+      "objectives": [
+        {
+          "id": "00A64-1",
+          "text": "语言表达与量词"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A30"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-08",
+          "answer": "manuscript/review_ch01/answers.md#answer-08"
+        }
+      ]
+    },
+    {
+      "code": "00A65",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A65",
+      "objectives": [
+        {
+          "id": "00A65-1",
+          "text": "同一拍的等分"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-09",
+          "answer": "manuscript/review_ch01/answers.md#answer-09"
+        }
+      ]
+    },
+    {
+      "code": "00A66",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A66",
+      "objectives": [
+        {
+          "id": "00A66-1",
+          "text": "单位格与面积"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-10",
+          "answer": "manuscript/review_ch01/answers.md#answer-10"
+        }
+      ]
+    },
+    {
+      "code": "00A67",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A67",
+      "objectives": [
+        {
+          "id": "00A67-1",
+          "text": "周长、面积与量纲"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A66"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-10",
+          "answer": "manuscript/review_ch01/answers.md#answer-10"
+        }
+      ]
+    },
+    {
+      "code": "00A69",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A69",
+      "objectives": [
+        {
+          "id": "00A69-1",
+          "text": "固定单价下的总价模型"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-11",
+          "answer": "manuscript/review_ch01/answers.md#answer-11"
+        }
+      ]
+    },
+    {
+      "code": "00A71",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A71",
+      "objectives": [
+        {
+          "id": "00A71-1",
+          "text": "离散水量模型及容量限制"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-12",
+          "answer": "manuscript/review_ch01/answers.md#answer-12"
+        }
+      ]
+    },
+    {
+      "code": "00A72",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A72",
+      "objectives": [
+        {
+          "id": "00A72-1",
+          "text": "精确递推模拟与证明的区别"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A71"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-12",
+          "answer": "manuscript/review_ch01/answers.md#answer-12"
+        }
+      ]
+    },
+    {
+      "code": "00A79",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A79",
+      "objectives": [
+        {
+          "id": "00A79-1",
+          "text": "匀速模型与单位"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05"
+      ],
+      "adopted_rules": [
+        "第3节明示采用的运算规则；不声称本章已完成数系构造"
+      ],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-13",
+          "answer": "manuscript/review_ch01/answers.md#answer-13"
+        }
+      ]
+    },
+    {
+      "code": "00A99",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A99",
+      "objectives": [
+        {
+          "id": "00A99-1",
+          "text": "跨类主题与论证检查顺序"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch01/chapter.md#sec-00A71"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-14",
+          "answer": "manuscript/review_ch01/answers.md#answer-14"
+        }
+      ]
+    },
+    {
+      "code": "00B05",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B05",
+      "objectives": [
+        {
+          "id": "00B05-1",
+          "text": "辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "完整论文证明",
+        "报告人与完整作者名单的未经核验等同"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+        }
+      ]
+    },
+    {
+      "code": "00B10",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B10",
+      "objectives": [
+        {
+          "id": "00B10-1",
+          "text": "区分单篇文章与汇编载体，分别记录作者、编者和使用位置"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch02/chapter.md#sec-00B05"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "统一规定所有引文格式",
+        "把广泛主题解释成全称数学结论"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-02",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-02"
+        }
+      ]
+    },
+    {
+      "code": "00B15",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B15",
+      "objectives": [
+        {
+          "id": "00B15-1",
+          "text": "从专题目录选择具体问题并记录不同文章的定义和先修条件"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "任何具体专题的深层数学理论",
+        "因同册出版而默认术语相同"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-05",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-05"
+        }
+      ]
+    },
+    {
+      "code": "00B20",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B20",
+      "objectives": [
+        {
+          "id": "00B20-1",
+          "text": "区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch02/chapter.md#sec-00B05"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "保证同行评议状态",
+        "将DOI或ISBN当作数学正确性证明"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-02",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-02"
+        }
+      ]
+    },
+    {
+      "code": "00B25",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B25",
+      "objectives": [
+        {
+          "id": "00B25-1",
+          "text": "追踪专题文章的具体引用链，逐项检查适用条件并辨认无起点的循环引用"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch02/chapter.md#sec-00B15"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "证明特定专题的研究结论",
+        "把相互引用一概判为循环论证"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-06",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-06"
+        }
+      ]
+    },
+    {
+      "code": "00B30",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B30",
+      "objectives": [
+        {
+          "id": "00B30-1",
+          "text": "区分纪念文集的回忆、历史评价与研究主张并选择相应证据"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "裁定真实成果优先权",
+        "人物生平的完整考证"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-05",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-05"
+        }
+      ]
+    },
+    {
+      "code": "00B50",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B50",
+      "objectives": [
+        {
+          "id": "00B50-1",
+          "text": "记录原作者、译者与译文所据版本，核对更正和量词顺序"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A30",
+        "manuscript/review_ch02/chapter.md#sec-00B05"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "保证译文全部准确",
+        "从免费可读推断转载许可"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-03",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-03"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-04",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-04"
+        }
+      ]
+    },
+    {
+      "code": "00B55",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B55",
+      "objectives": [
+        {
+          "id": "00B55-1",
+          "text": "对照专题译文的术语、定义与版本，明确数学先修和翻译核验边界"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch02/chapter.md#sec-00B15",
+        "manuscript/review_ch02/chapter.md#sec-00B50"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "系统教授专业术语或外语",
+        "未经原文核验而补造原词"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-03",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-03"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-04",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-04"
+        }
+      ]
+    },
+    {
+      "code": "00B60",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B60",
+      "objectives": [
+        {
+          "id": "00B60-1",
+          "text": "区分原发、重印与修订，核对分页和更正并识别同源传播"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch02/chapter.md#sec-00B05"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "据重印次数认定独立证明",
+        "授予外文献再分发许可"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-06",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-06"
+        }
+      ]
+    },
+    {
+      "code": "00B99",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B99",
+      "objectives": [
+        {
+          "id": "00B99-1",
+          "text": "综合生成文章核验卡并明确未知项，描述混合材料而不滥用其他类目"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch02/chapter.md#sec-00B05",
+        "manuscript/review_ch02/chapter.md#sec-00B20",
+        "manuscript/review_ch02/chapter.md#sec-00B50",
+        "manuscript/review_ch02/chapter.md#sec-00B60"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "专业编目规则的完备体系",
+        "凭卡片核验虚构全文证明"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-02",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-02"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-03",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-03"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-05",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-05"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-06",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-06"
+        }
+      ]
+    }
+  ],
+  "planning_status": "scope_declared_pending_independent_reviews",
+  "author_review": "pending"
+}
