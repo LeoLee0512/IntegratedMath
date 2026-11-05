@@ -5,15 +5,15 @@
   "scope": "complete_part",
   "status": "automated_checks_passed",
   "command": "python tools/build_part1_review.py --plan research/production/part1_scope_plan.json && python tools/validate_part1_review.py --package",
-  "built_at": "2026-11-05T08:24:30.985119+00:00",
-  "plan_sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+  "built_at": "2026-11-05T10:07:52.954723+00:00",
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
   "source_sha256": {
-    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
-    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
-    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
-    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
-    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
-    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
     "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
     "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
   },
@@ -26,13 +26,13 @@
     "figures/ch01_overlap.png": "e83c66be6d000753bc2a47f0aa80a1a1da5ce1721cc1b314de4bba423fcf66b1",
     "figures/ch01_rhythm.png": "e2d57333a2a64be90a324df5e66e7bc8fe830987a2f427c522c69dbd90342840",
     "figures/ch01_square.png": "bbde875aff34cc2b765dbb1beb50b65643b6c7329513a14546ae22f5a29197c8",
-    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
-    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
-    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
-    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
-    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
-    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
-    "research/production/part1_scope_plan.json": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
     "tools/build_part1_review.py": "065fe80c5d26116b76ce64a2e6dc281f28fd25ab9026ef432826b33ba4de76dd",
     "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
     "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56",
@@ -84,18 +84,18 @@
     "dist/part1/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c",
     "dist/part1/综合数学_完整数学目录.html": "60d4f6094da43fa6a6dc2e76ff91ba8eec0aa575357e715a927a32f86dc56071",
     "dist/part1/综合数学_完整数学目录.md": "f614a34e066de05b6cf8cdf788f2f37673495031a8b2a5eaac3b53294fb6c368",
-    "dist/part1/综合数学_完整数学目录.pdf": "40bbd608ab29aa447879845cfee6c16cfd00358d3acd89928270811684631a86",
-    "dist/part1/综合数学_第一部分完整目录版.html": "6e4bc66f9817ed03990bf4262df26fb3a41d6b968a3858762975ca8a6b548beb",
-    "dist/part1/综合数学_第一部分完整目录版.md": "39e1e2e43a9242f61c53075a3cba6a03821481630e76d39a1e8192293b37688c",
-    "dist/part1/综合数学_第一部分完整目录版.pdf": "d50e020230b8135b754d621a105f3aeeae27a8a9bf37917dae59c894c46aaf9d",
-    "dist/part1/综合数学_第一部分审阅版.html": "c9e544d5bdee6a6e40848114718fa8cca80bdb3bad93749a4b8cf12aeb2d768c",
-    "dist/part1/综合数学_第一部分审阅版.md": "1f8ac1b681294f4e138486862db61a6d159a54392c443aea2881d3a839c2af9c",
-    "dist/part1/综合数学_第一部分审阅版.pdf": "675702c557243fc32d40f2a8edd9036ce7f185748909f052c769ea75f16da645",
-    "dist/part1/综合数学_第一部分伴生文件.zip": "4be47814e1a880e11c29063cb9bee9d50a161cfc8123d9b1bbde1d37ce7c9a5b"
+    "dist/part1/综合数学_完整数学目录.pdf": "cc4e45a20c3ca1e23d4991ab4cc5b4ec3966ea0abd9d7853025ea73f2c485c67",
+    "dist/part1/综合数学_第一部分完整目录版.html": "5e33efde5e2290e87f14bfea870b3a21f6e7c18e59b4d424bf837281214e8cb4",
+    "dist/part1/综合数学_第一部分完整目录版.md": "ac2363056ef76c0dba41bb9d11ce133d7822a2904d56d29f360b53f3f95dd262",
+    "dist/part1/综合数学_第一部分完整目录版.pdf": "89aeceee7142a04b383c472ee4bf45eca887ae4c06b63e81b14596b665677759",
+    "dist/part1/综合数学_第一部分审阅版.html": "748f789eb69c94aeec71031f024d1af52cc5cae8109d022340235d3d750b93e3",
+    "dist/part1/综合数学_第一部分审阅版.md": "f417450b3d279df2c6b0d775e32f0f58786c831b216b177c5ef35dff9a05fc74",
+    "dist/part1/综合数学_第一部分审阅版.pdf": "4ebb795defe39df97ff59236dd827c0bfc7dd7b5b4d807395fe696fb6dfb8b9e",
+    "dist/part1/综合数学_第一部分伴生文件.zip": "6d7f070ec62ceb13032065eb81d1c85c7b93f65dc6d8bb584f420f88953eb7ed"
   },
   "pdf_page_counts": {
-    "dist/part1/综合数学_第一部分完整目录版.pdf": 257,
-    "dist/part1/综合数学_第一部分审阅版.pdf": 40,
+    "dist/part1/综合数学_第一部分完整目录版.pdf": 267,
+    "dist/part1/综合数学_第一部分审阅版.pdf": 50,
     "dist/part1/综合数学_完整数学目录.pdf": 218
   },
   "checks": {
@@ -111,11 +111,11 @@
   "evidence": [
     {
       "path": "build/part1/manifest.json",
-      "sha256": "b02e63c769c10abb7693de21d8a1ed116b445340974322203b39c819f171f25c"
+      "sha256": "0e701c482a2bc0f74498402f20223af58100d2ff83395a8f794e7ee7a65ccdd6"
     },
     {
       "path": "build/part1/validation.json",
-      "sha256": "8ab57a1c24b814aec0aecc8573fdbbd97bbf7ba8afe92209f5ac0d640e19a005"
+      "sha256": "bed1c6abda9ede0b4e1f3390658f42e4bd6773191a5b2e8b628b9e48602be383"
     }
   ]
 }

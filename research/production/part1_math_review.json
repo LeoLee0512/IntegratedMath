@@ -5,25 +5,25 @@
   "scope": "complete_part",
   "review_kind": "math",
   "status": "accepted",
-  "reviewer": "/root/part1_ch01_review",
-  "reviewed_at": "2026-11-05T08:23:26.004298+00:00",
+  "reviewer": "/root/part1_pedagogy",
+  "reviewed_at": "2026-11-05T09:56:06.541568+00:00",
   "independent_of_authors": true,
-  "plan_sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
   "source_sha256": {
-    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
-    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
-    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
-    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
-    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
-    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
     "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
     "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
   },
   "blocking_issues": [],
   "evidence": [
     {
-      "path": "research/production/part1_math_review.md",
-      "sha256": "36065e2bbd2637cbb7aa1b70c20475a3ba7dd6518342557a31f14b8592616ea4"
+      "path": "research/production/part1_revision_independent_review.md",
+      "sha256": "73733af1118ade6b062f810811e27338f9f685588add9daaca72d0d46a92343c"
     }
   ],
   "sections": [
@@ -60,7 +60,9 @@
       "objective_ids": [
         "00A06-1",
         "00A06-2",
-        "00A06-3"
+        "00A06-3",
+        "00A06-4",
+        "00A06-5"
       ],
       "status": "accepted",
       "blocking_issues": []
@@ -152,7 +154,9 @@
       "objective_ids": [
         "00A35-1",
         "00A35-2",
-        "00A35-3"
+        "00A35-3",
+        "00A35-4",
+        "00A35-5"
       ],
       "status": "accepted",
       "blocking_issues": []
@@ -323,10 +327,28 @@
       "code": "00B99",
       "depth": "G",
       "objective_ids": [
-        "00B99-1"
+        "00B99-1",
+        "00B99-2"
       ],
       "status": "accepted",
       "blocking_issues": []
     }
+  ],
+  "acceptance_boundary": "仅数学/逻辑阶段；来源14个G仍pending，完整部分不accepted。",
+  "source_gate_pending_sections": [
+    "00-02",
+    "00A17",
+    "00A27",
+    "00A30",
+    "00A64",
+    "00B05",
+    "00B15",
+    "00B20",
+    "00B25",
+    "00B30",
+    "00B50",
+    "00B55",
+    "00B60",
+    "00B99"
   ]
 }

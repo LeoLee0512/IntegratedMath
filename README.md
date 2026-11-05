@@ -2,11 +2,12 @@
 
 著作人：Leo Lee。全书保留63部分、534章、6006节的 MSC 分类范围与中文标题，按先修依赖安排学习路径，按节的教学目标确定深度。目录列齐不代表教材已写完。
 
-当前只有第一部分开篇和第1章“绪论：一般与综合专题”（00Axx）草稿：2节直属部分、21节属于第1章，14道题与答案双向链接，4张代码绘制插图。按当前目标分为2节完整教学、13节专题展开、8节导读定位，均待作者审阅；其余5983节尚未逐项规划。第2章正文未开始。
+当前第一部分正文已有两章、33节和27道课后题及独立答案，保留4张原创图；深度计划为T2/S13/G18。复审已撤回此前完整验收声明：外部书评、未解问题清单、数学哲学、数学与文学等专题来源仍需补核。正文写成、数学/教学检查、来源和构建状态分别记录，不能把某一项通过当成全部分完成。
 
 ## 阅读入口
 
 - [第一部分开篇](manuscript/review_ch01/part_opening.md)、[第1章源稿](manuscript/review_ch01/chapter.md)、[答案](manuscript/review_ch01/answers.md)、[附录](manuscript/review_ch01/appendices.md)
+- [第2章源稿](manuscript/review_ch02/chapter.md)、[第2章独立答案](manuscript/review_ch02/answers.md)
 - [编辑约定：先修、引用、深度与篇幅](EDITORIAL_POLICY.md)
 - [基础干线与深造支线](LEARNING_PATH.md)、[逐节范围和进度](data/editorial_plan.json)
 - [GitHub Releases 下载入口](https://github.com/LeoLee0512/IntegratedMath/releases)：本轮完成源文件迁移与发布工具，尚未上传新发布资产；现阶段可阅读源稿或按下述命令本地构建。
@@ -19,14 +20,15 @@ PDF、合成Markdown、离线HTML与伴生zip生成在 `dist/`，不再提交 Gi
 
 ```sh
 python -m pip install -r requirements-build.txt
-python tools/build_ch01_review.py
-python tools/validate_catalog_chinese.py
-python tools/validate_ch01_review.py
+python tools/build_full_catalog.py
+python tools/draw_ch01_figures.py
+python tools/build_part1_review.py
+python tools/validate_part1_review.py --package
 ```
 
 干净检出无需预先存在 `dist/`、`build/` 或图片；样式源位于 `tools/style.css`，图片由代码重建。没有原始MSC PDF时，目录生成器使用经完整性校验的 `data/catalog_titles.json`；英文对照、中文标题与归属保存在 `data/catalog_titles_zh.json`。
 
-检查生成PDF的截图，按 [发布流程](RELEASING.md)记录实际视觉检查，再运行 `python tools/package_ch01_review.py`。打包器拒绝未检查、已变更或与构建源稿不对应的产物。自动生成截图不等于人工看过，程序通过也不是全书形式化验证。CI 仅生成待视觉检查的构建产物。
+第一部分输出在 `dist/part1/`，全页截图在 `build/part1/`。打包成功只代表自动检查；还须实际查看页面并按新的来源门槛复核 `tools/validate_part1_acceptance.py`。缺来源时完整部分状态应为pending，不能为使程序变绿而跳过门槛。CI仅生成待视觉和来源复核的构建产物，不执行Release发布。
 
 ## 版本历史
 
@@ -37,4 +39,4 @@ python tools/validate_ch01_review.py
 
 ## 第一部分新审阅入口
 
-[第一部分正文、独立答案与本地构建说明](PART1_REVIEW.md)。第一部分已按T2/S13/G18声明目标完成生产验收；作者审阅仍待进行。全书其余部分未完成，旧备份保持不变。
+[第一部分正文、独立答案与本地构建说明](PART1_REVIEW.md)。第一部分为已补强正文的修订审阅稿，完整验收因专题来源缺口保持pending；作者审阅仍待进行。全书其余部分未完成，旧备份保持不变。

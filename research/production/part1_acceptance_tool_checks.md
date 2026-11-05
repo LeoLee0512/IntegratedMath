@@ -1,3 +1,5 @@
+> **历史记录（de08a8a及之前）**：下文描述当时稿件与验收方案，不是本轮最终状态。当前修订、来源缺口及验收结论以 `part1_revision_disposition.md` 和 `part1_acceptance.json` 为准；原样记录已归档 `history/de08a8a/`。
+
 # 第一部分验收器与台账接入检查记录
 
 检查者：`/root/part1_audit`。时间：2026-11-05T08:21:46.966806+00:00

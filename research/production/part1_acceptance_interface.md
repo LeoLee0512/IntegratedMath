@@ -1,3 +1,5 @@
+> **历史记录（de08a8a及之前）**：下文描述当时稿件与验收方案，不是本轮最终状态。当前修订、来源缺口及验收结论以 `part1_revision_disposition.md` 和 `part1_acceptance.json` 为准；原样记录已归档 `history/de08a8a/`。
+
 # 第一部分全范围验收接口 v1
 
 日期：2026-11-05。对应独立工具 `tools/validate_part1_acceptance.py`。该工具验证范围、证据完整性和文件身份，不自动判定数学真理，不替代实际审读或查看页面。

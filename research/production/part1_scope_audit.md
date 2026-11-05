@@ -1,3 +1,5 @@
+> **历史记录（de08a8a及之前）**：下文描述当时稿件与验收方案，不是本轮最终状态。当前修订、来源缺口及验收结论以 `part1_revision_disposition.md` 和 `part1_acceptance.json` 为准；原样记录已归档 `history/de08a8a/`。
+
 # 第一部分范围与验收缺口审计
 
 审计日期：2026-11-05。审计者：part1_audit。此文件是只读调查的落盘报告，不改变正文、分级或完成台账。调查基准为此次打开的EDITORIAL_POLICY.md、data/editorial_plan.json、data/production/{parts,chapters,sections}.json及第一章全部相关源稿与历史审读；后续新增稿应重新审读，不能以此报告领取验收。

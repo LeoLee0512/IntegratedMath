@@ -1,0 +1,31 @@
+{
+  "commit": "de08a8a92dc04feeacf088c7566e4b79b2bc32fa",
+  "files": {
+    "research/production/part1_acceptance.json": "6fb858541e5911006269e8829394bcbe28c718b8104189d18e4ae551aad0f7f4",
+    "research/production/part1_visual_catalog.json": "51e0ca31345f4096f849c61818f5fdaa8eb6e0fdb3e550b71220f36482718fb5",
+    "research/production/part1_scope_plan.json": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+    "research/production/part1_resume_inventory_2026-11-05.json": "8527cbb0cef2cbaa21246d7e1eaab7790d1486346989c4c147fcd8c27a39677c",
+    "research/production/part1_acceptance_tool_checks.md": "a7aec84c236c1ad45be22b52a02dd5666bed5b85cc1c143d48a3da7a3b57ce95",
+    "research/production/part1_publication_preflight.md": "7fa2ecf113d2b1d0e3279423b80d1b95905fa65e7cbebb0793313e78097bd8e0",
+    "research/production/part1_visual_root.md": "58171ca1ff2adef5a9976cabaad767d78183fb2045c6e34d16ab657b0e283ae0",
+    "research/production/part1_ch02_draft_scope.md": "89ef9e1a5aac6c7b44f4a7d902a57a2f2942230dc68deb7d690d3432a7c3a226",
+    "research/production/part1_sources_2026-11-05.json": "87649912281ab0e0e8790858b00d40463beaf5057dd531c2ddac255fdae2d372",
+    "research/production/part1_ch01_independent_review.md": "52730db5bec6e9377951cca3066847e185b40ab93b423410e36308f65d5bccb7",
+    "research/production/part1_visual_catalog.md": "1cd437efaf34732be276f6a74e9cf00ec5f9eeaf7a4d55151af85f1cd330d2b1",
+    "research/production/part1_visual_full.md": "e69296e556ea11b04ed151e917672cf4fbab1ffab471b191bab992d689095b01",
+    "research/production/part1_visual_full.json": "186e7da28420055fd2fb1db6349263a59b70494f4e17b33d33d78f34577ceac6",
+    "research/production/part1_scope_audit.md": "ce36518eb4c70d09673da94bf04fe3eb5ec5405d9e84ab04f0adccc2b4370c7c",
+    "research/production/part1_math_review.md": "36065e2bbd2637cbb7aa1b70c20475a3ba7dd6518342557a31f14b8592616ea4",
+    "research/production/part1_build_review.json": "123fc49eb945ad285531ab1c7de378ea1c441739ff768a2eaf815c9148eca627",
+    "research/production/part1_visual_review.json": "d7ca1a2e556b4e903a50464e70c004878b7a3f1849ec391c1b525e3357b4a3c1",
+    "research/production/part1_sources_2026-11-05.md": "f2c73c98e86ef559ab229a6179c516d610e78ae8f03e27038b3014cafe71c405",
+    "research/production/part1_pedagogy_review.json": "4d8a90bc08c836b3db195c5a2fad1ac63bcb4ddefd3f4a9bf32ad9eb923a4686",
+    "research/production/part1_visual_root.json": "8a835d069ecc2bff602a6f2e9c8f04458179c0dc55ba9cdc92f66530afa43f5f",
+    "research/production/part1_pedagogy_review.md": "f4fcd6b8a62b1a051feaf5c1e838d7a631cb38422111c2d37b61a9d44f4d2419",
+    "research/production/part1_source_distribution.json": "4d389cdead1ff6f2fdea424778f567c878e00d6b33d8ddabc00221f849d2cfc2",
+    "research/production/part1_math_review.json": "270b1ca5307a32d64ab925b258e3bda466d3a00944a2b8d0798acd804fc7d300",
+    "research/production/part1_acceptance_interface.md": "52702456e6f6afd7dfe3a3ab983ec8c8bd02665490326d6e05c8c0f6c9908067",
+    "PART1_REVIEW.md": "b348302c0c3a9c4ce175487fbcc953835ff440c31dcc36a087fa75ff162a4a0b",
+    "data/editorial_plan.json": "486ab0afb8b9037a380bef3158d1daf508c280402f4d13422d43a4c1afe14408"
+  }
+}

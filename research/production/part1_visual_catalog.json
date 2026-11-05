@@ -6,20 +6,20 @@
   "review_kind": "visual",
   "status": "accepted",
   "reviewer": "/root/part1_pedagogy",
-  "reviewed_at": "2026-11-05T08:27:13.764907+00:00",
-  "plan_sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+  "reviewed_at": "2026-11-05T10:04:05.150940+00:00",
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
   "source_sha256": {
-    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
-    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
-    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
-    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
-    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
-    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
     "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
     "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
   },
   "artifact_sha256": {
-    "dist/part1/综合数学_完整数学目录.pdf": "40bbd608ab29aa447879845cfee6c16cfd00358d3acd89928270811684631a86"
+    "dist/part1/综合数学_完整数学目录.pdf": "cc4e45a20c3ca1e23d4991ab4cc5b4ec3966ea0abd9d7853025ea73f2c485c67"
   },
   "pdf_page_counts": {
     "dist/part1/综合数学_完整数学目录.pdf": 218
@@ -404,7 +404,8 @@
       ],
       "path": "build/part1/screenshots/综合数学_完整数学目录/page-002.png",
       "sha256": "6dcab15ce9c92a9d0a46ade7a98bfc2bbf31b97515be7c2d6ccd09a887552d81",
-      "inspected": true
+      "inspected": true,
+      "observation": "目录范围说明、中文层次、第一部分长标题与首章条目；排版清晰。"
     },
     {
       "pdf": "dist/part1/综合数学_完整数学目录.pdf",
@@ -413,7 +414,8 @@
       ],
       "path": "build/part1/screenshots/综合数学_完整数学目录/page-018.png",
       "sha256": "2cde059339fb0547adf546bf290242546a3e82c1a4d00c33fcb5ea086698e958",
-      "inspected": true
+      "inspected": true,
+      "observation": "数论长条目、多行换行、页脚间距；无裁切或重叠。"
     },
     {
       "pdf": "dist/part1/综合数学_完整数学目录.pdf",
@@ -422,7 +424,8 @@
       ],
       "path": "build/part1/screenshots/综合数学_完整数学目录/page-114.png",
       "sha256": "e3f9ecd35a6331a080eb7593eea940da35deea56dd92368821b99d9597dc94ec",
-      "inspected": true
+      "inspected": true,
+      "observation": "拓扑线性空间密集中文、拉丁和希腊符号、长行与底部条目；无缺字方框、越界。"
     },
     {
       "pdf": "dist/part1/综合数学_完整数学目录.pdf",
@@ -431,7 +434,8 @@
       ],
       "path": "build/part1/screenshots/综合数学_完整数学目录/page-178.png",
       "sha256": "43351a5250a1d016cbd9abf06806fa94d58b09377636361f0603d6e5cad3010d",
-      "inspected": true
+      "inspected": true,
+      "observation": "两行章标题及其后条目保持同页，中文长括注完整。"
     },
     {
       "pdf": "dist/part1/综合数学_完整数学目录.pdf",
@@ -440,7 +444,8 @@
       ],
       "path": "build/part1/screenshots/综合数学_完整数学目录/page-218.png",
       "sha256": "6e13a45d99d2fce34e38e6e7a9fdf6cb1b23ad9d2fd809488e871887d78988e1",
-      "inspected": true
+      "inspected": true,
+      "observation": "末两章、末节6006与97U99、页码218和末页留白正常。"
     }
   ],
   "blocking_issues": [],
@@ -455,7 +460,12 @@
   "evidence": [
     {
       "path": "research/production/part1_visual_catalog.md",
-      "sha256": "1cd437efaf34732be276f6a74e9cf00ec5f9eeaf7a4d55151af85f1cd330d2b1"
+      "sha256": "7d6ee8c3c147cbfd63a578f645fc4af2a8c8a6d93cc9555793a07f58ae6823f3"
     }
+  ],
+  "review_method": "All 19 contact sheets actually viewed; all 218 pages covered; pages 2,18,114,178,218 additionally viewed at single-page scale.",
+  "limitations": [
+    "Visual review only; not a line-by-line specialist translation audit.",
+    "14 G topic-source gates remain pending; visual acceptance is not whole-part acceptance."
   ]
 }

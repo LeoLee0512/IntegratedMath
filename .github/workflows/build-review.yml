@@ -1,4 +1,4 @@
-name: Build chapter review
+name: Build first-part review
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -19,15 +19,16 @@ jobs:
       - name: Build and validate
         run: |
           python tools/check_release_notes.py
-          python tools/build_ch01_review.py
-          python tools/validate_catalog_chinese.py
-          python tools/validate_ch01_review.py
+          python -m unittest discover -s tools/tests -p 'test_*.py' -v
+          python tools/build_full_catalog.py
+          python tools/draw_ch01_figures.py
+          python tools/build_part1_review.py
+          python tools/validate_part1_review.py --package
       - name: Save artifacts awaiting visual inspection
         uses: actions/upload-artifact@v4
         with:
-          name: chapter-review-pending-visual-inspection
+          name: first-part-review-pending-visual-and-source-review
           retention-days: 14
           path: |
             dist/
-            build/review_ch01/
-            data/ch01_validation.json
+            build/part1/

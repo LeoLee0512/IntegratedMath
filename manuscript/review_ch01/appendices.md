@@ -11,6 +11,8 @@
 
 # 附录三 本章参考资料 {#sources}
 
+**复审状态。** 原完整部分验收声明已撤回。00A17、00A27、00A30、00A64仍缺本专题的已核验参考入口；S2的逻辑知识和S3的分类代码不能替代这些入口。本轮具体访问和内容核验见`research/production/part1_revision_sources.json`及同名说明，当前来源门槛另记，不因数学例子正确而自动通过。
+
 本章数学说明、例题、练习和答案独立撰写。下列资料用于核对基础规则与证明方法；没有复制或翻译其中的题干、解答、插图或连续正文。公开访问不等于无条件再分发，所列许可是所核验版本的许可。
 
 **[S1]** OpenStax, Rice University，*Elementary Algebra 2e*。核对模块 m82463（等式同加同减）和 m82464（等式乘除及非零限制）。[官方教材项目](https://github.com/openstax/osbooks-prealgebra-bundle)，[同加同减章节](https://github.com/openstax/osbooks-prealgebra-bundle/blob/main/modules/m82463/index.cnxml)，[乘除章节](https://github.com/openstax/osbooks-prealgebra-bundle/blob/main/modules/m82464/index.cnxml)。本次访问的仓库许可及该书元数据为 CC BY-NC-SA 4.0，不能据此声称允许无条件商业转载。

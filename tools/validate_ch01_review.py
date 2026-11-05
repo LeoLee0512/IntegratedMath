@@ -34,10 +34,10 @@ taxonomy = json.loads((ROOT / 'data/msc_taxonomy.json').read_text())['entries']
 expected = [e['code'] for e in taxonomy if e['parent_code'] == '00-XX' and e['level']=='general_leaf']
 expected += [e['code'] for e in taxonomy if e['parent_code'] == '00Axx']
 assert [c for n,c in sections] == expected
-assert len(re.findall(r'\{#question-\d+\}',md)) == 14
-assert len(re.findall(r'\{#answer-\d+\}',md)) == 14
-assert md.count('[参考答案](#answer-') == 14
-assert md.count('[返回题目](#question-') == 14
+assert len(re.findall(r'\{#question-\d+\}',md)) == 20
+assert len(re.findall(r'\{#answer-\d+\}',md)) == 20
+assert md.count('[参考答案](#answer-') == 20
+assert md.count('[返回题目](#question-') == 20
 images = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)',md)
 assert len(images) == 4
 assert all('原创' not in label and (OUT/path).is_file() for label,path in images)
@@ -105,7 +105,7 @@ for name in ['综合数学_第一章审阅版','综合数学','综合数学_完�
                 else:
                     assert '参考答案' in texts[dest]
                     back.append([i+1,dest+1])
-        assert len(forward)==len(back)==14,(name,forward,back)
+        assert len(forward)==len(back)==20,(name,forward,back)
         report['question_answer_links']=len(forward)
         report['answer_question_links']=len(back)
     if name=='综合数学_第一章审阅版':
@@ -124,7 +124,7 @@ for name in ['综合数学_第一章审阅版','综合数学','综合数学_完�
             sheet.save(BUILD/f'contact-{start+1:03}.png')
     reports[name]=report
 report={'status':'automated_checks_passed','catalog_counts':{'parts':63,'chapters':534,'sections':6006},
-        'current_chapters':1,'part_general_items':2,'chapter_sections':21,'exercises':14,'figures':4,
+        'current_chapters':1,'part_general_items':2,'chapter_sections':21,'exercises':20,'figures':4,
         'math_nodes':counts['Math'],'exact_computation_checks':'passed','missing_glyph_warnings':missing,
         'artifact_sha256':artifact_hashes(),
         'artifacts':reports,'visual_review':'pending_actual_image_inspection',

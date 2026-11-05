@@ -1,3 +1,5 @@
+> **历史记录（de08a8a及之前）**：下文描述当时稿件与验收方案，不是本轮最终状态。当前修订、来源缺口及验收结论以 `part1_revision_disposition.md` 和 `part1_acceptance.json` 为准；原样记录已归档 `history/de08a8a/`。
+
 # 第一部分验收：开篇与第一章独立审校
 
 日期：2026-11-05（UTC）。审校者：`part1_ch01_review` 独立代理。

@@ -1,3 +1,5 @@
+> **历史记录（de08a8a及之前）**：下文描述当时稿件与验收方案，不是本轮最终状态。当前修订、来源缺口及验收结论以 `part1_revision_disposition.md` 和 `part1_acceptance.json` 为准；原样记录已归档 `history/de08a8a/`。
+
 # 第2章00Bxx草稿范围与接入说明
 
 日期：2026-11-05。撰写代理：/root/part1_chapter2。状态：可审校草稿；未自行授予独立审阅、构建、视觉验收或完成状态。

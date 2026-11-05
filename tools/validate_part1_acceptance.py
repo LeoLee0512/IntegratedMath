@@ -13,6 +13,7 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 import sys
+from urllib.parse import urlsplit
 import zipfile
 
 
@@ -22,6 +23,7 @@ BUILD_CHECKS = {"scope_33_sections", "formula_rendering", "images",
                 "cross_references", "exercise_answer_pairs", "offline_html",
                 "source_bundle", "page_boundaries"}
 VISUAL_CHECKS = {"formulas", "chinese", "figures", "toc", "pagination"}
+DEFAULT_SOURCE_REVIEW = "research/production/part1_topic_sources.json"
 
 
 def require(condition, message):
@@ -62,6 +64,9 @@ class Validator:
         self.reviews = {}
         self.build = None
         self.build_hash = None
+        self.topic_source_results = {}
+        self.source_review_path = None
+        self.source_review_hash = None
 
     def path(self, name):
         require(nonempty(name), "Missing file path")
@@ -216,6 +221,158 @@ class Validator:
         self.reports(doc.get("evidence"))
         self.reviews[kind] = doc
 
+    def verified_topic_source(self, source, code, requirement):
+        """Check an explicit content attestation, never infer it from HTTP status.
+
+        Relevance is still a human judgment: the verifier checks a named,
+        located, hash-bound claim, not the semantic truth of that claim.
+        """
+        for field in ["title", "author_or_publisher", "version", "public_url"]:
+            require(nonempty(source.get(field)), "Source bibliography missing " + field)
+        url = urlsplit(source["public_url"])
+        require(url.scheme in {"http", "https"} and bool(url.netloc), "Public source URL missing")
+        access = source.get("access")
+        require(isinstance(access, dict), "Source access record missing")
+        require(access.get("status") in {"retrieved", "available_local"},
+                "Source content has not been obtained")
+        require(access.get("method") in {"public_https", "local_cache", "user_provided"},
+                "Source access method is not declared")
+        iso_date(access.get("retrieved_at"), "source retrieved_at")
+        content_hash = access.get("document_sha256")
+        require(isinstance(content_hash, str) and re.fullmatch(r"[0-9a-f]{64}", content_hash),
+                "Obtained content SHA-256 required")
+        self.reports(access.get("evidence"))
+        review = source.get("content_review")
+        require(isinstance(review, dict) and review.get("status") == "verified",
+                "Actual source content review missing; URL availability is insufficient")
+        require(nonempty(review.get("reviewer")), "Named source content reviewer required")
+        iso_date(review.get("reviewed_at"), "source reviewed_at")
+        require(review.get("document_sha256") == content_hash,
+                "Source content review addresses a different retrieved document")
+        self.reports(review.get("evidence"))
+        access_paths = {e["path"] for e in access["evidence"]}
+        require(all(e["path"] not in access_paths for e in review["evidence"]),
+                "Access metadata cannot serve as its own content review")
+        coverage = review.get("coverage")
+        require(isinstance(coverage, list) and all(isinstance(x, dict) for x in coverage),
+                "Source content coverage missing")
+        matches = [x for x in coverage if x.get("section_code") == code
+                   and x.get("requirement_id") == requirement["id"]]
+        require(bool(matches), "Source does not address this section's topic requirement")
+        errors = []
+        for match in matches:
+            try:
+                require(match.get("relevance") == requirement["relevance"],
+                        "General method source cannot replace topic-specific evidence")
+                objectives = strings(match.get("objective_ids"), "source coverage objectives")
+                require(set(objectives) == set(requirement["objective_ids"]),
+                        "Source content coverage does not match required objectives")
+                for field in ["source_location", "verified_claim", "limitations"]:
+                    require(nonempty(match.get(field)), "Source content review missing " + field)
+                return
+            except (ValueError, TypeError) as exc:
+                errors.append(str(exc))
+        raise ValueError("; ".join(errors))
+
+    def topic_source_section(self, planned, reviewed, sources):
+        code = planned["code"]
+        requirements = planned.get("source_requirements")
+        require(isinstance(requirements, list)
+                and all(isinstance(r, dict) for r in requirements),
+                "Explicit source_requirements missing")
+        external_claims = planned.get("external_source_claims", [])
+        require(isinstance(external_claims, list) and all(isinstance(c, dict) for c in external_claims),
+                "external_source_claims must be a list of declared external facts")
+        if not requirements:
+            require(planned["depth"] in {"T", "S"}, "G requires nonempty topic-specific source requirements")
+            require(not external_claims, "External source claims cannot use the original-work exemption")
+            original_status = "original_work_reviewed_separately"
+            require(planned.get("topic_source_status") == original_status
+                    and reviewed.get("topic_source_status") == original_status,
+                    "Original T/S work must explicitly use the separate math/pedagogy review status")
+            require(reviewed.get("requirements") == [], "Original-work record must have no source requirements")
+            return {"status": original_status, "source_ids": [], "blocking_issues": [],
+                    "review_basis": "independent_math_and_pedagogy_gates",
+                    "external_sources_verified": False}
+        ids = strings([r.get("id") for r in requirements], "source requirement IDs")
+        objective_ids = {o["id"] for o in planned["objectives"]}
+        covered_objectives = set()
+        for requirement in requirements:
+            require(nonempty(requirement.get("topic")), "Source requirement topic missing")
+            refs = strings(requirement.get("objective_ids"), "required source objectives")
+            require(set(refs) <= objective_ids, "Source requirement points outside this section")
+            covered_objectives.update(refs)
+            require(requirement.get("relevance") in {"topic_specific", "general_method"},
+                    "Source relevance requirement missing")
+            require(planned["depth"] != "G" or requirement["relevance"] == "topic_specific",
+                    "G requires topic-specific sources; general logic cannot substitute")
+        if planned["depth"] == "G":
+            require(covered_objectives == objective_ids, "G source requirements omit declared objectives")
+        # Original derivations need not occur in an external textbook. Only
+        # actual external dependencies of T/S work need source requirements.
+        requirement_index = {r["id"]: r for r in requirements}
+        for claim in external_claims:
+            require(nonempty(claim.get("claim")), "Declared external fact is missing its statement")
+            require(claim.get("requirement_id") in requirement_index,
+                    "Declared external fact lacks a matching source requirement")
+            claim_objectives = strings(claim.get("objective_ids"), "external fact objectives")
+            require(set(claim_objectives) <= set(requirement_index[claim["requirement_id"]]["objective_ids"]),
+                    "External fact objectives are not covered by its source requirement")
+        require(planned.get("topic_source_status") == "verified",
+                "Scope plan topic_source_status is not verified")
+        require(reviewed.get("topic_source_status") == "verified",
+                "Reviewed topic_source_status is not verified")
+        records = reviewed.get("requirements")
+        require(isinstance(records, list) and all(isinstance(r, dict) for r in records),
+                "Per-requirement source review missing")
+        actual_ids = strings([r.get("requirement_id") for r in records], "reviewed source requirement IDs")
+        require(set(actual_ids) == set(ids), "Reviewed source requirements do not match scope")
+        index = {r["requirement_id"]: r for r in records}
+        verified_ids = []
+        for requirement in requirements:
+            record = index[requirement["id"]]
+            require(record.get("status") == "verified", "Source requirement is still pending")
+            candidates = strings(record.get("source_ids"), "supporting source IDs")
+            failures = []
+            for identifier in candidates:
+                try:
+                    require(identifier in sources, "Unknown source ID: " + identifier)
+                    self.verified_topic_source(sources[identifier], code, requirement)
+                    verified_ids.append(identifier)
+                    break
+                except Exception as exc:
+                    failures.append(identifier + ": " + str(exc))
+            else:
+                raise ValueError(requirement["id"] + ": " + "; ".join(failures))
+        return {"status": "verified", "source_ids": sorted(set(verified_ids)), "blocking_issues": []}
+
+    def source_review(self, name):
+        self.source_review_path = name
+        doc = self.load(name)
+        self.source_review_hash = digest(self.path(name))
+        self.source_binding(doc)
+        source_list = doc.get("sources")
+        require(isinstance(source_list, list) and all(isinstance(s, dict) for s in source_list),
+                "Topic source registry missing")
+        strings([s.get("id") for s in source_list], "topic source IDs", True)
+        sources = {s["id"]: s for s in source_list}
+        sections = doc.get("sections")
+        require(isinstance(sections, list) and all(isinstance(s, dict) for s in sections),
+                "Topic source section records missing")
+        self.codes([s.get("code") for s in sections], "topic source coverage")
+        records = {s["code"]: s for s in sections}
+        for code, planned in self.section_plans.items():
+            try:
+                self.topic_source_results[code] = self.topic_source_section(planned, records[code], sources)
+            except Exception as exc:
+                self.topic_source_results[code] = {"status": "pending", "source_ids": [],
+                                                   "blocking_issues": [str(exc)]}
+        satisfied = {"verified", "original_work_reviewed_separately"}
+        pending = [c for c, r in self.topic_source_results.items() if r["status"] not in satisfied]
+        require(not pending, "Unverified topic sources in sections: " + ", ".join(pending))
+        require(doc.get("status") in {"verified", "requirements_satisfied"},
+                "Whole-part source requirements are not satisfied")
+
     def build_review(self, name):
         doc = self.load(name)
         self.source_binding(doc)
@@ -313,16 +470,21 @@ class Validator:
         checks["scope_plan_valid"] = self.step("scope_plan", self.scope_plan, args.plan)
         checks["full_scope_math_accepted"] = self.step("math", self.review, args.math_review, "math")
         checks["full_scope_pedagogy_accepted"] = self.step("pedagogy", self.review, args.pedagogy_review, "pedagogy")
+        checks["full_scope_sources_accepted"] = self.step(
+            "sources", self.source_review, getattr(args, "source_review", DEFAULT_SOURCE_REVIEW))
         built = self.step("build", self.build_review, args.build_review)
         if built:
             self.build_hash = digest(self.path(args.build_review))
         visual = self.step("visual", self.visual_review, args.visual_review)
+        checks["full_scope_build_accepted"] = built
+        checks["full_scope_visual_accepted"] = visual
         checks["full_scope_build_and_visual_accepted"] = built and visual
         accepted = all(checks.values())
         checks["all_chapters_completed"] = accepted
         checks["all_direct_sections_completed"] = accepted
         section_results = [{"code": c, "parent_code": p,
                             "depth": self.section_plans.get(c, {}).get("depth"),
+                            "topic_source_status": self.topic_source_results.get(c, {}).get("status", "pending"),
                             "status": "completed_at_declared_depth" if accepted else "pending"}
                            for c, p in self.expected.items()]
         return {**COMMON, "status": "accepted" if accepted else "pending",
@@ -335,10 +497,14 @@ class Validator:
                                     for c in ["00Axx", "00Bxx"]],
                 "plan_sha256": self.plan_hash, "source_sha256": self.sources,
                 "artifact_sha256": self.build["artifact_sha256"] if self.build else {},
+                "source_review": {"status": "requirements_satisfied" if checks["full_scope_sources_accepted"] else "pending",
+                                  "path": self.source_review_path, "sha256": self.source_review_hash,
+                                  "sections": self.topic_source_results,
+                                  "boundary": "取得或HTTP成功不等于内容核验；专题相关性仍由实际阅读者负责。"},
                 "evidence": self.evidence, "blocking_issues": self.errors,
                 "author_review": {"status": "pending", "independent_of_production_acceptance": True},
                 "push_succeeded": False,
-                "completion_note": "按逐项目标及T/S/G声明深度验收；G完成不是完整数学教学，且不宣称穷尽MSC领域。"}
+                "completion_note": "按逐项目标及T/S/G声明深度验收；专题来源缺证阻断全范围通过，其他审阅阶段分别记账。G完成不是完整数学教学，且不宣称穷尽MSC领域。"}
 
 
 def main(argv=None):
@@ -348,6 +514,7 @@ def main(argv=None):
                              ("pedagogy-review", "part1_pedagogy_review"),
                              ("build-review", "part1_build_review"), ("visual-review", "part1_visual_review")]:
         parser.add_argument("--" + option, default="research/production/" + filename + ".json")
+    parser.add_argument("--source-review", default=DEFAULT_SOURCE_REVIEW)
     parser.add_argument("--output", default="research/production/part1_acceptance.json")
     args = parser.parse_args(argv)
     validator = Validator(args.root)
@@ -360,7 +527,7 @@ def main(argv=None):
         require(not Path(args.output).is_absolute() and output.is_relative_to(args.root.resolve()),
                 "Output must be inside repository")
         input_paths = {validator.root / getattr(args, field) for field in
-                       ["plan", "math_review", "pedagogy_review", "build_review", "visual_review"]}
+                       ["plan", "math_review", "pedagogy_review", "source_review", "build_review", "visual_review"]}
         protected = {p.resolve() for p in input_paths} | {validator.root / p for p in validator.sources}
         protected |= {validator.root / e["path"] for e in validator.evidence}
         if validator.build:
