@@ -1,0 +1,43 @@
+[
+  {
+    "commit": "f66813476860600e2784beb0c0485c845b5e3496",
+    "status": "remote_verified",
+    "stage": "sources_and_PDFs"
+  },
+  {
+    "commit": "ce9bdc4526ff94d6c74bd4a2b13b4684828b5a7b",
+    "status": "remote_verified",
+    "stage": "chunks 1",
+    "at": "2026-11-07T10:23:46.153608+00:00"
+  },
+  {
+    "commit": "ae847f6c8838e3d15269dec600f1e21ed2940d3c",
+    "status": "remote_verified",
+    "stage": "chunks 2",
+    "at": "2026-11-07T10:24:00.269186+00:00"
+  },
+  {
+    "commit": "53160eaad36ee2e7792a5a9a3131c38084bd5b52",
+    "status": "remote_verified",
+    "stage": "chunks 3",
+    "at": "2026-11-07T10:24:13.296743+00:00"
+  },
+  {
+    "commit": "c0390dfd2f045a09eeaa8ba9e34f33e8b0fba942",
+    "status": "remote_verified",
+    "stage": "chunks 4",
+    "at": "2026-11-07T10:24:27.519385+00:00"
+  },
+  {
+    "commit": "782a237fe0606e14cb0111a0803d65589e06ccdf",
+    "status": "remote_verified",
+    "stage": "chunks 5",
+    "at": "2026-11-07T10:24:42.902347+00:00"
+  },
+  {
+    "commit": "77445726057025de43b75681059068a9f2266d60",
+    "status": "remote_verified",
+    "stage": "chunks 6",
+    "at": "2026-11-07T10:24:51.078447+00:00"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-07T10:25:34.035699+00:00",
+  "payload_commit": "77445726057025de43b75681059068a9f2266d60",
+  "remote_head": "77445726057025de43b75681059068a9f2266d60",
+  "branch": "draft/first-batch-2026-10-20",
+  "git_tree_files_verified": 2025,
+  "readme_correction_pending": true,
+  "downloads": [
+    {
+      "path": "manifest.json",
+      "url": "https://raw.githubusercontent.com/LeoLee0512/IntegratedMath/77445726057025de43b75681059068a9f2266d60/backups/2026-11-07/manifest.json",
+      "http_status": 200,
+      "bytes": 756592,
+      "sha256": "82cb0325c1ae2b75df5b30946c7ba8b9982bd4c50504fd942de085324df867dc"
+    },
+    {
+      "path": "project/dist/综合数学_基础续写审阅版.pdf",
+      "url": "https://raw.githubusercontent.com/LeoLee0512/IntegratedMath/77445726057025de43b75681059068a9f2266d60/backups/2026-11-07/project/dist/%E7%BB%BC%E5%90%88%E6%95%B0%E5%AD%A6_%E5%9F%BA%E7%A1%80%E7%BB%AD%E5%86%99%E5%AE%A1%E9%98%85%E7%89%88.pdf",
+      "http_status": 200,
+      "bytes": 5208221,
+      "sha256": "ef3a6b395a59b7e1c5d95abb46d598cc12589252b9bce02dffa45e17e50080e1"
+    },
+    {
+      "path": "project/dist/综合数学.pdf",
+      "url": "https://raw.githubusercontent.com/LeoLee0512/IntegratedMath/77445726057025de43b75681059068a9f2266d60/backups/2026-11-07/project/dist/%E7%BB%BC%E5%90%88%E6%95%B0%E5%AD%A6.pdf",
+      "http_status": 200,
+      "bytes": 5653355,
+      "sha256": "5bda3f8c4c0df37504e5ca51f617d8b8032f9a5b6932430158483a9f0c356941"
+    }
+  ],
+  "CI": "not_confirmed; API domain remains unavailable under existing policy; no success claimed",
+  "status": "payload_remote_verified"
+}

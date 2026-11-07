@@ -1,0 +1,40 @@
+{
+  "files": 1980,
+  "bytes": 834269070,
+  "restore_verification": "passed_read_only",
+  "suspicious_paths": [],
+  "credential_pattern_matches_paths": [],
+  "archives": [
+    {
+      "path": "dist/part1/综合数学_第一部分伴生文件.zip",
+      "members": 689,
+      "suspicious_names": [],
+      "screenshot_members": 537
+    },
+    {
+      "path": "dist/综合数学_基础续写_伴生文件.zip",
+      "members": 2204,
+      "suspicious_names": [],
+      "screenshot_members": 1273
+    },
+    {
+      "path": "local-inputs/snapshots/batch34-logic-sets-finite-counting-20261105T185448Z/dist/综合数学_基础续写_伴生文件.zip",
+      "members": 2204,
+      "suspicious_names": [],
+      "screenshot_members": 1273
+    }
+  ],
+  "limits": "Pattern scanning cannot prove absence of every secret; bundled history is compressed and not bytewise secret-scanned. Incremental git bundle needs declared a9363f6 prior history. No claim of remote upload verification.",
+  "history_bundle": {
+    "prerequisite": "a9363f607a818f69d77e8723ac3d3e5666ca4026",
+    "tip": "cb072287651e4d08f452e8f4a5aee923066f27b2",
+    "root_verification": "Parent reports full book repo GIT_NO_LAZY_FETCH=1 git bundle verify passed; not independently repeated",
+    "partial_clone_attempt": "git bundle verify unexpectedly invoked lazy fetch for absent prerequisite and failed; no further attempt made"
+  },
+  "readme_findings": [
+    "34 companion ZIP and35 PDF properly distinguished;35 middle visual/final acceptance pending explicit.",
+    "incremental bundle prerequisite explicit; direct manuscript recovery does not depend on bundle.",
+    "Excluded loose screenshots wording should explicitly retain existing screenshots inside historical ZIPs.",
+    "Other snapshots remain local; unpreserved /tmp FEX andFLI math report explicitly unavailable."
+  ]
+}
