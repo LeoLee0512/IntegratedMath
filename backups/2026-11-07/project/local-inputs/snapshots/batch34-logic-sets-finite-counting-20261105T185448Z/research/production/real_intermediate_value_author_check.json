@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "author": "/root",
+  "checked_at": "2026-11-05T16:25:35.454289+00:00",
+  "status": "author_self_check_not_independent_acceptance",
+  "source_sha256": {
+    "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+    "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+  },
+  "exercise_pairs": 8,
+  "build_registered": false,
+  "checks": [
+    "sup set nonempty and bounded before invoking completeness",
+    "strict endpoint cases exclude sup=a and sup=b before perturbation",
+    "sup witness can equal c; continuous definition includes center",
+    "negative endpoint ordering uses established continuous -f",
+    "degenerate interval and equal endpoint targets separate",
+    "square-root alternative uses IVT built without prior square-root existence; exercise8 cites exercise7",
+    "Answer5 inclusion function renamed U to distinguish from scalar roots u<v after pedagogy suggestion"
+  ],
+  "source_read": {
+    "path": "local-inputs/function-limits-source-cache/ch-contfunc.tex",
+    "sha256": "3fe56fe7261f3db0dfb0dbabe8e807b0781c41255c2b9cb463f4868fbb13c14d",
+    "lines": [
+      1567,
+      1694
+    ],
+    "finding": "Lebl uses bisection sequences and sequential continuity; this draft gives an independently written supremum proof, not a translation of that proof."
+  },
+  "limits": [
+    "No numerical root approximations or algorithm claims",
+    "No completion of chapter146 or part18",
+    "Independent math and pedagogy passed for exact hashes; build unregistered and unverified"
+  ],
+  "supporting_symbolic_checks": {
+    "tool": "sympy.expand",
+    "identities": [
+      "(v-u)*(v*v+v*u+u*u)-(v**3-u**3)",
+      "(a+1)**2-a-(a*a+a+1)",
+      "x*(x*x-1)-x*(x-1)*(x+1)"
+    ],
+    "residuals": [
+      0,
+      0,
+      0
+    ],
+    "limit": "Checks polynomial expansions only; does not verify inequalities, existence, continuity or completeness proofs."
+  },
+  "independent_reviews": [
+    {
+      "path": "research/production/real_intermediate_value_math_review.md",
+      "sha256": "3250e9a62d86ada59b3353577987e33ea45260e1ac4e16da6da512349ebc0c41"
+    },
+    {
+      "path": "research/production/intermediate_value_pedagogy_source_review.md",
+      "sha256": "1900a3b4593c756ae2f350ebe39e6d1e5ed90c205beda67fbbf77eff3d1d18eb"
+    }
+  ]
+}

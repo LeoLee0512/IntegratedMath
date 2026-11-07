@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "status": "proposal_only_no_formal_gate_change",
+  "created_at": "2026-11-05T18:52:12.053564+00:00",
+  "reviewer": "/root/part1_sources",
+  "network_requests_this_round": 0,
+  "network_context": "restricted/enforced policy and runtime networking instructions read; only existing native public GITenberg cache read; no blocked-domain retry or mirror bypass",
+  "baseline": {
+    "scope_path": "/workspace/IntegratedMath-book/research/production/part1_scope_plan.json",
+    "scope_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "ledger_path": "/workspace/IntegratedMath-book/research/production/part1_topic_sources.json",
+    "ledger_sha256": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+    "formal_counts": {
+      "G_topic_verified": 8,
+      "G_topic_pending": 10,
+      "T_S_original_work_reviewed_separately": 15
+    }
+  },
+  "source_identity": {
+    "proposed_source_id": "SRC-C2-DEDEKIND-ESSAYS",
+    "title": "Essays on the Theory of Numbers",
+    "author": "Richard Dedekind",
+    "translator": "Wooster Woodruff Beman",
+    "english_imprint": "The Open Court Publishing Company, Chicago, 1901",
+    "pieces": [
+      "Continuity and Irrational Numbers",
+      "The Nature and Meaning of Numbers"
+    ],
+    "archive": "GITenberg/Essays-on-the-Theory-of-Numbers_21016",
+    "commit": "7a0bcaf5e279121cb675058d7e323556343087d0",
+    "gutenberg_release_date": "2007-04-08",
+    "metadata_version": "0.1.0",
+    "identity_boundary": "Single-author two-essay English translated volume; not a multi-author conference proceedings, no peer-review claim, no authoritative MSC cataloguing claim."
+  },
+  "documents": [
+    {
+      "id": "dedekind_tex",
+      "cache_path": "/workspace/IntegratedMath-book/local-inputs/pending-batch24/source-cache/dedekind_tex",
+      "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+      "bytes": 243143,
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/21016-t/21016-t.tex",
+      "retrieved_at": "2026-10-29T19:51:08.612324+00:00",
+      "http_status_at_retrieval": 200,
+      "acquisition_evidence": "/workspace/IntegratedMath-book/research/production/rational_gaps_cuts_sources_2026-10-29.json",
+      "actual_read_line_ranges": [
+        [
+          94,
+          119
+        ],
+        [
+          205,
+          330
+        ],
+        [
+          342,
+          543
+        ],
+        [
+          685,
+          758
+        ],
+        [
+          1228,
+          1278
+        ],
+        [
+          1535,
+          1760
+        ],
+        [
+          1818,
+          1885
+        ]
+      ],
+      "read_at": "2026-11-05T18:52:12.053564+00:00",
+      "reading_mode": "local cached source; not refreshed over network"
+    },
+    {
+      "id": "dedekind_metadata",
+      "cache_path": "/workspace/IntegratedMath-book/local-inputs/pending-batch24/source-cache/dedekind_metadata",
+      "sha256": "fa7d92b7841e4b84a3ce2c7f603a17c37b74afe5112aa868e1520c17ebd147f2",
+      "bytes": 1216,
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/metadata.yaml",
+      "retrieved_at": "2026-10-29T19:52:19.458448+00:00",
+      "http_status_at_retrieval": 200,
+      "acquisition_evidence": "/workspace/IntegratedMath-book/research/production/rational_gaps_cuts_sources_2026-10-29.json",
+      "actual_read_line_ranges": [
+        [
+          1,
+          43
+        ]
+      ],
+      "read_at": "2026-11-05T18:52:12.053564+00:00",
+      "reading_mode": "local cached source; not refreshed over network"
+    },
+    {
+      "id": "dedekind_license",
+      "cache_path": "/workspace/IntegratedMath-book/local-inputs/pending-batch24/source-cache/dedekind_license",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "bytes": 17504,
+      "url": "https://raw.githubusercontent.com/GITenberg/Essays-on-the-Theory-of-Numbers_21016/7a0bcaf5e279121cb675058d7e323556343087d0/LICENSE",
+      "retrieved_at": "2026-10-29T19:51:08.612777+00:00",
+      "http_status_at_retrieval": 200,
+      "acquisition_evidence": "/workspace/IntegratedMath-book/research/production/rational_gaps_cuts_sources_2026-10-29.json",
+      "actual_read_line_ranges": [
+        [
+          1,
+          38
+        ],
+        [
+          89,
+          97
+        ]
+      ],
+      "read_at": "2026-11-05T18:52:12.053564+00:00",
+      "reading_mode": "local cached source; not refreshed over network"
+    }
+  ],
+  "rights": {
+    "metadata_statement": "Public domain in the USA.",
+    "license_segments_read": [
+      "1.A–1.E.8 opening",
+      "Section 5 ending and starred-clause applicability note"
+    ],
+    "geographical_boundary": "No claim of public domain outside the USA. License 1.D explicitly defers to local law. Generic starred copyrighted-work clause is qualified by the final note; do not override work-specific metadata by treating boilerplate as a new rights finding.",
+    "use": "Fixed source links, necessary bibliographic facts and original reading guidance only; no external source text or original files copied into proposal or distributed book."
+  },
+  "proposed_mapping": {
+    "requirement_id": "00B15-topic-source",
+    "objective_ids": [
+      "00B15-1"
+    ],
+    "existing_objective": "从专题目录选择具体问题并记录不同文章的定义和先修条件",
+    "proposal_status": "ready_for_independent_mapping_review",
+    "gate_status_now": "pending",
+    "basis": [
+      "The volume contents identifies two essays on foundations of number, with distinct internal topic lists.",
+      "First essay I explicitly presupposes rational arithmetic and uses R for rational numbers; IV defines an ordered two-class cut.",
+      "Second essay I paragraphs 1–3 defines thing/system/part, explicitly excludes empty systems in this exposition; II paragraph 21 defines transformation using those earlier objects.",
+      "A reader can choose a shared question about starting objects, definitions and assumptions, then record each essay separately without assuming a single modern convention."
+    ],
+    "classification_boundary": "A mere bound volume would not suffice. Here contents, shared foundations-of-number theme and actual differing starting conventions support the stated reading objective. Its additional translated-volume identity does not certify translation accuracy or make it conference proceedings. This is an instructional example, not a formal reclassification of the historical volume.",
+    "proposed_count_if_later_approved_only": {
+      "G_verified": 9,
+      "G_pending": 9,
+      "original_work_reviewed_separately": 15
+    },
+    "no_new_exercise_pair": "Original short guided-reading paragraph only; existing objective and question count unchanged."
+  },
+  "remaining_items": [
+    {
+      "code": "00A17",
+      "objectives": [
+        {
+          "id": "00A17-1",
+          "text": "书评与原始论证的区别"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "No completed external mathematical book review newly obtained. Prior JOSE pre-review rejection is not a book review."
+    },
+    {
+      "code": "00A27",
+      "objectives": [
+        {
+          "id": "00A27-1",
+          "text": "未解问题的表述与核验边界"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "No new actual open-problem source read; no current open status certified."
+    },
+    {
+      "code": "00B15",
+      "objectives": [
+        {
+          "id": "00B15-1",
+          "text": "从专题目录选择具体问题并记录不同文章的定义和先修条件"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "New bounded local reading supports a proposal for the existing thematic-contents/definitions/prerequisites objective; requires root independent source reading and mapping review before any gate change."
+    },
+    {
+      "code": "00B20",
+      "objectives": [
+        {
+          "id": "00B20-1",
+          "text": "区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "Prior cached check retained: no article-specific official event/date association for LieGroups. Did not repeat that check; no reuse of Urschel or Lean event dates."
+    },
+    {
+      "code": "00B25",
+      "objectives": [
+        {
+          "id": "00B25-1",
+          "text": "追踪专题文章的具体引用链，逐项检查适用条件并辨认无起点的循环引用"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "No referenced results and applicability conditions freshly checked as a conference-paper citation chain. A Dedekind internal cross-reference is not such a proceedings source."
+    },
+    {
+      "code": "00B30",
+      "objectives": [
+        {
+          "id": "00B30-1",
+          "text": "区分纪念文集的回忆、历史评价与研究主张并选择相应证据"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "No commemorative collection with recollection/history/research claims actually read in this round."
+    },
+    {
+      "code": "00B50",
+      "objectives": [
+        {
+          "id": "00B50-1",
+          "text": "记录原作者、译者与译文所据版本，核对更正和量词顺序"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "Dedekind author/translator/English imprint verified, but exact German source editions, corrections and bilingual quantifier alignment not verified; not a complete match."
+    },
+    {
+      "code": "00B55",
+      "objectives": [
+        {
+          "id": "00B55-1",
+          "text": "对照专题译文的术语、定义与版本，明确数学先修和翻译核验边界"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "English thematic definitions and historical conventions newly read. No German counterpart/version comparison read; retain pending rather than fabricate original terminology equivalence."
+    },
+    {
+      "code": "00B60",
+      "objectives": [
+        {
+          "id": "00B60-1",
+          "text": "区分原发、重印与修订，核对分页和更正并识别同源传播"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "English volume, electronic-release and archive version distinguished; no source-to-reprint pagination/correction collation. Second-edition preface is author testimony, not an independently checked unchanged-text certificate."
+    },
+    {
+      "code": "00B99",
+      "objectives": [
+        {
+          "id": "00B99-1",
+          "text": "综合生成文章核验卡并明确未知项，描述混合材料而不滥用其他类目"
+        },
+        {
+          "id": "00B99-2",
+          "text": "实际核对真实历史元数据文档的版本、角色、日期、更新和许可字段，并明确未核验论文证明"
+        }
+      ],
+      "formal_status": "pending",
+      "finding": "Historical metadata exercise already covered separately; no new complete mixed-material/other-category mapping established."
+    }
+  ],
+  "boundaries": [
+    "No full-volume proof audit.",
+    "No German original accessed, no translation fidelity or original-edition matching certified.",
+    "The preface statements and philosophical claims are historical author positions, not current consensus.",
+    "The commented TeX contents preserves source-page labels; not newly rendered PDF pagination.",
+    "The empty-system exclusion is historical exposition-specific and must not replace current book definitions.",
+    "All formal manuscripts, scope, source ledger and batch34/35 candidates remain unchanged."
+  ],
+  "previous_reports_reused_not_rerequested": [
+    "research/production/part1_remaining_sources_followup_2026-11-05.md",
+    "/tmp/part1_00B20_cached_recheck.md"
+  ],
+  "acquisition_evidence_path": "/tmp/part1-dedekind-00B15-proposed/evidence.json",
+  "content_review_evidence_path": "/tmp/part1-dedekind-00B15-proposed/content_review.md",
+  "content_review_sha256": "4a85379ffba19d9003f3515ceb21d9361c4cd617f7f24b4f7e241ce8e5e775d3",
+  "cache_equivalence_checked": {
+    "path": "/workspace/IntegratedMath-book/local-inputs/pending-batch25/source-cache/dedekind_tex",
+    "sha256": "f837b8376cbbfca11690cea3bc0fac14fffecb88ae669e4f15158f096c915f44",
+    "same_bytes_as_read_batch24": true
+  }
+}

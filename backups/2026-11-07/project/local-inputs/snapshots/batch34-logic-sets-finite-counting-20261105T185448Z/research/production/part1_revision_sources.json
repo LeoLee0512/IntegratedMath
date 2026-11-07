@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-11-05T09:40:07.315262+00:00",
+  "workspace": "/workspace/IntegratedMath-part1-publish",
+  "baseline_commit": "de08a8a92dc04feeacf088c7566e4b79b2bc32fa",
+  "scope": "用户审查发现2/5的来源补核与真实文档实践建议；不修改chapter正文，不改原book工作区。",
+  "policy": {
+    "file": "EDITORIAL_POLICY.md",
+    "requirement_quote": "交代研究对象、典型问题、先修入口、与邻近主题的区别和已核验参考入口；明确本节不提供哪些证明",
+    "interpretation": "已核验参考入口应与相应专题实质相关；缩窄讲解为量词例题不能把逻辑教材转换为数学哲学/文学的真实专题来源。"
+  },
+  "network": {
+    "networking_reference_read": true,
+    "policy_path": "/etc/codex/network-policy.json",
+    "policy_type": "restricted",
+    "vpn_configured": false,
+    "runtime_observations_current": true,
+    "runtime_network_policy_state": "enforced",
+    "method": "每个原候选入口一次正常公开HTTPS GET，继承代理、启用TLS校验；未登录、未读取凭据、未换镜像、未绕过限制。"
+  },
+  "requests": [
+    {
+      "id": "MSC2020",
+      "url": "https://www.ams.org/msc/msc2020.html",
+      "checked_at_utc": "2026-11-05T09:36:39.494399+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403
+    },
+    {
+      "id": "MAA-REVIEWS",
+      "url": "https://maa.org/press/maa-reviews",
+      "checked_at_utc": "2026-11-05T09:36:39.531515+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403
+    },
+    {
+      "id": "CLAY-MILLENNIUM",
+      "url": "https://www.claymath.org/millennium-problems/",
+      "checked_at_utc": "2026-11-05T09:36:39.540008+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403
+    },
+    {
+      "id": "SEP-MATH",
+      "url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+      "checked_at_utc": "2026-11-05T09:36:39.551364+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403
+    },
+    {
+      "id": "MATH-FICTION",
+      "url": "https://math.cofc.edu/faculty/kasman/MATHFICT/",
+      "checked_at_utc": "2026-11-05T09:36:39.569121+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403
+    },
+    {
+      "id": "CROSSREF-FORMAT",
+      "url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/api_format.md",
+      "checked_at_utc": "2026-11-05T09:36:39.581792+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/api_format.md",
+      "bytes": 10677,
+      "sha256": "70aa9d3fc20bbf8d2f4d35e756f40e65e8e1ebaaecec2eaf1e6e1098996ed5c1",
+      "access_status": "retrieved"
+    },
+    {
+      "id": "CROSSREF-README",
+      "url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/README.md",
+      "checked_at_utc": "2026-11-05T09:36:39.966989+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/README.md",
+      "bytes": 45347,
+      "sha256": "7c1d9010cacd833645f7019ea6a8825b70fb3f33b5db98907c5d0637eec4663a",
+      "access_status": "retrieved"
+    }
+  ],
+  "confirmed_topic_source_gaps": [
+    {
+      "code": "00A17",
+      "topic": "外部书评",
+      "request_id": "MAA-REVIEWS",
+      "existing_support": "S2支持反例逻辑，正文平方为一例为原创假设性评论。",
+      "missing": "未取得一篇真实外部书评，缺所评书的可核对版次、评论者、评论内容定位。",
+      "required_repair": "取得可公开阅读的真实书评及基本书目，说明一项可追溯的评价依据；不以自己虚构的评论替代。",
+      "status": "pending_topic_source_verification",
+      "completed_at_declared_depth": false
+    },
+    {
+      "code": "00A27",
+      "topic": "未解问题清单",
+      "request_id": "CLAY-MILLENNIUM",
+      "existing_support": "S2支持反例/全称逻辑，S3证明存在此分类。",
+      "missing": "未取得真实问题清单/状态记录内容，不能核验具体问题的表述、记录时间和状态。",
+      "required_repair": "取得真实问题清单或权威状态记录，明确此次实际核对的问题、版本和日期。未核最新文献时保留状态核验边界，不把旧页面当全学科实时状态。",
+      "status": "pending_topic_source_verification",
+      "completed_at_declared_depth": false
+    },
+    {
+      "code": "00A30",
+      "topic": "数学哲学",
+      "request_id": "SEP-MATH",
+      "existing_support": "S2支持量词次序示例，S3支持分类定位。",
+      "missing": "未取得数学哲学专题来源；逻辑反例不是关于数学对象、真理、公理地位之争的文献入口。",
+      "required_repair": "读取真实数学哲学专题概览的相关部分，核对题名、作者/机构、版本及具体议题，原创说明其问题与逻辑技术的区别。",
+      "status": "pending_topic_source_verification",
+      "completed_at_declared_depth": false
+    },
+    {
+      "code": "00A64",
+      "topic": "数学与文学",
+      "request_id": "MATH-FICTION",
+      "existing_support": "S2支持量词辨析，S3支持分类定位；天平比喻为原创说明。",
+      "missing": "未取得数学与文学专题目录、作品或学术讨论；一般语言歧义不能独自兑现数学与文学导读的参考入口。",
+      "required_repair": "取得可核对的真实数学文学专题来源，并给出与具体文学/数学结构相关的原创定位；不编造作品情节或从可读性推断转载权。",
+      "status": "pending_topic_source_verification",
+      "completed_at_declared_depth": false
+    }
+  ],
+  "additional_g_assessment": [
+    {
+      "codes": [
+        "00-01",
+        "00A15"
+      ],
+      "status": "existing_topic_entry_available_not_freshly_revalidated",
+      "basis": "S1教材与实际元数据适用于入门材料/书目阅读；本轮未重取，沿用来源旧台账，非四个缺口的替代品。"
+    },
+    {
+      "codes": [
+        "00-02"
+      ],
+      "status": "research_project_entry_only",
+      "basis": "旧台账实读Stacks README提供真实研究项目入口；未读具体研究阐述内容，不扩大为研究专著正文实读或证明核验。是否充分兑现目标仍由本轮独立教学审读判断。"
+    },
+    {
+      "codes": [
+        "00A99"
+      ],
+      "status": "local_classification_evidence_only",
+      "basis": "本地MSC原抽取记录可支撑分类余项定位；AMS本次仍不可达，不宣称再次核验官方全文。"
+    },
+    {
+      "codes": [
+        "00B05",
+        "00B10",
+        "00B15",
+        "00B20",
+        "00B25",
+        "00B30",
+        "00B50",
+        "00B55",
+        "00B60",
+        "00B99"
+      ],
+      "status": "real_metadata_document_available_practice_revision_pending",
+      "basis": "Crossref真实文档可支撑书目字段和版本核验实践；不能冒充各类真实汇编、会议集、纪念集、译文集、重印集的实读记录。此次不对十节逐项授予完成；拟加入实践后须由独立审读核对目标，未完成的真实专题阅读仍列待补。"
+    }
+  ],
+  "crossref": {
+    "access_verified_current_run": true,
+    "format_version": "v3",
+    "format_version_date": "2018-05-15",
+    "deprecated": true,
+    "source_content_facts": [
+      {
+        "section": "Versioning",
+        "fields": [
+          "v3"
+        ],
+        "fact_zh": "所读文件版本表最后一行列v3，日期2018-05-15。",
+        "boundary": "文件版本不是论文出版年，也不是2026年API现状确认。"
+      },
+      {
+        "section": "Work",
+        "fields": [
+          "title",
+          "container-title"
+        ],
+        "fact_zh": "title为作品题名数组；container-title为容纳作品的题名数组，在该表中为可选。",
+        "boundary": "字段结构没有提供任何具体文章的题名值。"
+      },
+      {
+        "section": "Work",
+        "fields": [
+          "created",
+          "deposited",
+          "indexed",
+          "issued"
+        ],
+        "fact_zh": "created指DOI首次注册；deposited指元数据最近更新；indexed指最近索引，重新索引不保证元数据变化；issued取纸本与网络出版日期中较早者。",
+        "boundary": "注册、元数据更新、索引和出版是不同事件；不把访问日或v3日期填为论文出版日。"
+      },
+      {
+        "section": "Work / Contributor",
+        "fields": [
+          "author",
+          "editor",
+          "translator",
+          "family",
+          "given"
+        ],
+        "fact_zh": "author/editor/translator在Work中分列，均为Contributor数组且在该表中可选；Contributor给出姓与名等字段。",
+        "boundary": "角色不互相替代；空缺不是身份证据，姓名字段存在不证明已经读过本人作品。"
+      },
+      {
+        "section": "Work / Update",
+        "fields": [
+          "update-to",
+          "DOI",
+          "updated",
+          "type"
+        ],
+        "fact_zh": "Work的update-to指向Update数组；Update中DOI指被更新作品，updated给更新出版日期，type描述更新种类，如更正或撤稿。",
+        "boundary": "文档中列举类型不是某真实论文已撤稿的证据。"
+      },
+      {
+        "section": "Work / License",
+        "fields": [
+          "license",
+          "content-version",
+          "start",
+          "URL",
+          "delay-in-days"
+        ],
+        "fact_zh": "Work的license为可选数组；License记录适用内容版本、开始日期、许可页面URL和生效延迟。",
+        "boundary": "缺license不表示无版权；元数据、文档、文章全文各有权利边界。版本或生效时点不匹配时不能移用许可。"
+      }
+    ],
+    "license": {
+      "documentation_declared": "CC BY 4.0",
+      "evidence_request_id": "CROSSREF-README",
+      "evidence_locator": "Documentation License（许可证链接指向creativecommons.org/licenses/by/4.0/）",
+      "boundary": "此为所读API文档声明，不授予所索引论文或教材的版权；本轮只保存URL/哈希、字段名和原创概述，不转载长段文档。"
+    },
+    "historical_hash_match": true,
+    "historical_record": "research/production/part1_ch02_draft_scope.md",
+    "proves": [
+      "真实公开文档的可访问性、所读版本及选定字段说明"
+    ],
+    "does_not_prove": [
+      "现行API完全符合旧版字段要求",
+      "任何具体论文存在或出版状态",
+      "任何具体撤稿/更正事件",
+      "论文数学证明正确",
+      "第三方论文全文可转载"
+    ]
+  },
+  "practice_recommendation": {
+    "title": "核对一份真实元数据说明的版本、对象与证据边界",
+    "type": "original_document_reading_practice",
+    "is_real_article_metadata_record": false,
+    "actual_documents": [
+      "CROSSREF-FORMAT",
+      "CROSSREF-README"
+    ],
+    "learning_targets": [
+      "对实际取得的文档定位版本与字段",
+      "区分作品与载体、贡献者角色及日期事件",
+      "区分出版记录、许可信息与数学证明"
+    ],
+    "instructions": [
+      "打开CROSSREF-FORMAT，定位Versioning，记录最后一行版本和日期；再打开README，判断是否能把这份文档称为现行API指南。",
+      "在Work及对应嵌套类型中，找到作品题名、载体题名、作者、编者、译者的字段名；说明哪些只能从具体记录取得值。",
+      "比较created、deposited、indexed、issued，回答检索索引的日期能否替代论文出版日期。",
+      "追到Update和License，分别记录更正关系的指向对象、许可适用版本和开始日期的字段；不填写不存在的具体论文信息。",
+      "最后写出本次确实读过什么、尚未读过什么；回答有DOI、被索引或元数据格式合法能否证明论文结论正确。"
+    ],
+    "answer_outline": [
+      "版本表v3日期2018-05-15；README明示deprecated，因此只作历史元数据结构练习。访问日2026-11-05仅是本次获取日。",
+      "title/container-title分别标识作品与载体题名字段；author/editor/translator分列角色。本文档是字段说明，没有一篇由本次核实的文章题名、作者、页码或DOI值，不能补造。",
+      "created=首次DOI注册、deposited=元数据最近更新、indexed=最近索引、issued=最早纸本/网络出版日期；各事件不同，不能互相替换。",
+      "Update.DOI是被更新作品，updated为更新出版日期；License.content-version和start限制适用版本和开始时间，URL指向许可说明。列出correction/retraction两个类型不等于证明任何文章实际发生这些事件。",
+      "已读两个真实文档中指定段落；未读任何由此检索到的数学文章或其证明，未调用现行API、未核对具体出版记录。DOI、索引与格式只能帮助定位，证明正确性须另读命题条件及推理。"
+    ],
+    "extension_not_claimed_completed": "后续若取得实际会议论文/译文集等记录，再执行对象定位、版本比对与原文证明核验；此次没有完成该延伸。"
+  },
+  "required_acceptance_state": {
+    "target_id": "00-XX",
+    "status": "pending",
+    "full_scope_accepted": false,
+    "completed_at_declared_depth": false,
+    "blocking_codes": [
+      "00A17",
+      "00A27",
+      "00A30",
+      "00A64"
+    ],
+    "reason": "至少四个G节真实专题来源未取得；技术构建通过、局部逻辑正确及元数据实践不能抵消该内容完成缺口。应撤回/降为待补当前全部分完成声明，同时保留旧验收记录的历史而不改造旧记录。",
+    "author_review": "pending"
+  },
+  "claims_not_made": [
+    "没有宣称已确认任何开放问题截至现在的学界状态",
+    "没有构造虚假论文、DOI、ISBN或书评",
+    "没有宣称元数据实践等于阅读数学证明",
+    "没有宣称源站不存在或对公众拒绝访问"
+  ],
+  "files_written": [
+    "research/production/part1_revision_sources.json",
+    "research/production/part1_revision_sources.md"
+  ]
+}

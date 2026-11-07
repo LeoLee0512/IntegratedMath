@@ -1,0 +1,1207 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "status": "pending",
+  "reviewer": "/root/part1_sources",
+  "reviewed_at": "2026-11-05T17:43:55.766138+00:00",
+  "plan_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "sources": [
+    {
+      "id": "SRC-S1-ADD",
+      "title": "Elementary Algebra 2e — Solve Equations Using the Subtraction and Addition Properties of Equality",
+      "author_or_publisher": "OpenStax, Rice University",
+      "version": "Elementary Algebra 2e；模块身份及响应SHA-256锁定所读材料",
+      "public_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82463/index.cnxml",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-10-21T16:16:47.620759+00:00",
+        "document_sha256": "b6345a5a6a99108f9d32d6518445a4ae70a6b0c54a258021dffc6f2b77b8278a",
+        "evidence": [
+          {
+            "path": "research/ch01_source_checks.json",
+            "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385"
+          }
+        ],
+        "date_note": "保留既有取得记录日期；本轮同一hash正文重取时间见current_refresh_requests，不覆写原请求。"
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "b6345a5a6a99108f9d32d6518445a4ae70a6b0c54a258021dffc6f2b77b8278a",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [
+          {
+            "section_code": "00-01",
+            "requirement_id": "00-01-topic-source",
+            "objective_ids": [
+              "00-01-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "m82463：By the end of this section / Verify a Solution of an Equation / Solve Equations / Translate and Solve Applications",
+            "verified_claim": "实际教材模块m82463说明学习目标、验证解、等式操作、应用与检查；支持识别入门材料怎样安排概念/规则/练习。不是证明全书数系已建立。",
+            "limitations": "仅核对上述限定专题信息；不授予未读领域的证明、研究现状、版权或全部内容认证。"
+          }
+        ],
+        "scope_notes": "已实读所列模块教学段；Elementary Algebra 2e第二版元数据许可CC BY-NC-SA 4.0。数学题目与证明不复制。无覆盖记录的模块只是背景，不给G需求自动通过。"
+      }
+    },
+    {
+      "id": "SRC-S1-DIV",
+      "title": "Elementary Algebra 2e — Solve Equations using the Division and Multiplication Properties of Equality",
+      "author_or_publisher": "OpenStax, Rice University",
+      "version": "Elementary Algebra 2e；模块身份及响应SHA-256锁定所读材料",
+      "public_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82464/index.cnxml",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-10-21T16:16:47.700648+00:00",
+        "document_sha256": "099aae173772040a83d8c9160980922315352fc2a699af7c6f25ddc594a0c0bc",
+        "evidence": [
+          {
+            "path": "research/ch01_source_checks.json",
+            "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385"
+          }
+        ],
+        "date_note": "保留既有取得记录日期；本轮同一hash正文重取时间见current_refresh_requests，不覆写原请求。"
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "099aae173772040a83d8c9160980922315352fc2a699af7c6f25ddc594a0c0bc",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [],
+        "scope_notes": "已实读所列模块教学段；Elementary Algebra 2e第二版元数据许可CC BY-NC-SA 4.0。数学题目与证明不复制。无覆盖记录的模块只是背景，不给G需求自动通过。"
+      }
+    },
+    {
+      "id": "SRC-S2-LOGIC",
+      "title": "Discrete Mathematics: An Open Introduction — Rules of Logic",
+      "author_or_publisher": "Oscar Levin",
+      "version": "第四版活动正文，响应SHA-256锁定实际文件；版次/许可据既有LICENSE与frontmatter记录",
+      "public_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-10-21T16:16:47.896098+00:00",
+        "document_sha256": "ce6bd7f034383c08bc8ae0edbafa78a406679c1f6129d829541be0df56f07438",
+        "evidence": [
+          {
+            "path": "research/ch01_source_checks.json",
+            "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385"
+          }
+        ],
+        "date_note": "历史取得日期保留；本轮同hash正文重取时间另列。"
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "ce6bd7f034383c08bc8ae0edbafa78a406679c1f6129d829541be0df56f07438",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [],
+        "scope_notes": "实际读取等价/单向、量词、反例或分类证明段；XML注释排除。仅逻辑/证明背景，不覆盖书评、开放问题、数学哲学、文学的topic_specific要求；不把Goldbach历史导言当最新状态。"
+      }
+    },
+    {
+      "id": "SRC-S2-PROOF",
+      "title": "Discrete Mathematics: An Open Introduction — Proofs",
+      "author_or_publisher": "Oscar Levin",
+      "version": "第四版活动正文，响应SHA-256锁定实际文件；版次/许可据既有LICENSE与frontmatter记录",
+      "public_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-proofs.ptx",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-10-21T16:16:48.010283+00:00",
+        "document_sha256": "c97d90f3574c85e5d45a289c69e57a5d4db9f69e1aadda20ab00ce36c6016e3f",
+        "evidence": [
+          {
+            "path": "research/ch01_source_checks.json",
+            "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385"
+          }
+        ],
+        "date_note": "历史取得日期保留；本轮同hash正文重取时间另列。"
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "c97d90f3574c85e5d45a289c69e57a5d4db9f69e1aadda20ab00ce36c6016e3f",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [],
+        "scope_notes": "实际读取等价/单向、量词、反例或分类证明段；XML注释排除。仅逻辑/证明背景，不覆盖书评、开放问题、数学哲学、文学的topic_specific要求；不把Goldbach历史导言当最新状态。"
+      }
+    },
+    {
+      "id": "SRC-CROSSREF",
+      "title": "Crossref Metadata API JSON Format",
+      "author_or_publisher": "Crossref",
+      "version": "文件版本表v3（2018-05-15）；README明示deprecated",
+      "public_url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/api_format.md",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T09:36:39.581792+00:00",
+        "document_sha256": "70aa9d3fc20bbf8d2f4d35e756f40e65e8e1ebaaecec2eaf1e6e1098996ed5c1",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_sources.json",
+            "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+          }
+        ],
+        "date_note": "引用本轮首次请求09:36 UTC的持久记录；09:45 UTC再次取得同hash，另列refresh。"
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "70aa9d3fc20bbf8d2f4d35e756f40e65e8e1ebaaecec2eaf1e6e1098996ed5c1",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [
+          {
+            "section_code": "00A15",
+            "requirement_id": "00A15-topic-source",
+            "objective_ids": [
+              "00A15-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "api_format.md v3：Versioning、Work（publisher/title/container-title/page/issued/author/editor等）及Contributor",
+            "verified_claim": "真实Crossref文档的Work字段给出题名、出版者、日期、容器题名、页码及贡献者角色。支持书目定位信息及字段缺失边界，不认证所指作品数学正确。",
+            "limitations": "仅核对上述限定专题信息；不授予未读领域的证明、研究现状、版权或全部内容认证。"
+          },
+          {
+            "section_code": "00B10",
+            "requirement_id": "00B10-topic-source",
+            "objective_ids": [
+              "00B10-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "api_format.md v3：Work.title/container-title/author/editor/page/volume/issue及Contributor",
+            "verified_claim": "Crossref的Work.title/container-title、author/editor、volume/issue/page与Contributor层次直接对应单篇、载体、作者/编者与定位字段；限定书目辨认目标有真实内容依据。不声称实读某本文集全部文章。",
+            "limitations": "仅核对上述限定专题信息；不授予未读领域的证明、研究现状、版权或全部内容认证。"
+          }
+        ],
+        "scope_notes": "文档字段是真实已读内容；文档许可CC BY 4.0不等于所索引全文许可；没有获取具体论文记录、现行API结果或证明。",
+        "partial_coverage": [
+          {
+            "section_code": "00B05",
+            "requirement_id": "00B05-topic-source",
+            "objective_ids": [
+              "00B05-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref有abstract/title/author/link等字段，但其abstract并不专指讲座摘要或报告人与作者角色关系；仅部分支持检索定位，未核实相应类型的来源说明。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B15",
+            "requirement_id": "00B15-topic-source",
+            "objective_ids": [
+              "00B15-1"
+            ],
+            "status": "partial",
+            "supported_claims": "MSC列出专题文章汇编类型；Crossref能定位题名/载体，却不能说明如何从专题目录识别问题、各篇定义及先修条件；当前只是部分背景。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B20",
+            "requirement_id": "00B20-topic-source",
+            "objective_ids": [
+              "00B20-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref支持出版/注册/索引日期及单篇定位，但本次所读字段规范不足以核验会议日期与出版事件的具体区别及会议材料身份；当前部分支持。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B25",
+            "requirement_id": "00B25-topic-source",
+            "objective_ids": [
+              "00B25-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref参考项结构和S2推理方法可作背景，但没有实际核对专题引用链与原结果条件；不把reference字段存在等同该专题核验目标已满足。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B30",
+            "requirement_id": "00B30-topic-source",
+            "objective_ids": [
+              "00B30-1"
+            ],
+            "status": "partial",
+            "supported_claims": "MSC提供Festschriften分类名；Crossref一般字段没有说明纪念文集内回忆、历史评价、研究主张的证据类型，专题来源仍缺。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B50",
+            "requirement_id": "00B50-topic-source",
+            "objective_ids": [
+              "00B50-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref区分作者/译者并列更新字段，S2支持量词辨析；两者不能完整支持译文所据版本、更正关系与原文/译文条件对照的专题说明，保持partial。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B55",
+            "requirement_id": "00B55-topic-source",
+            "objective_ids": [
+              "00B55-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref元数据没有专业术语、译文定义与数学先修；分类标题不是这些判断的内容证据，保持partial。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B60",
+            "requirement_id": "00B60-topic-source",
+            "objective_ids": [
+              "00B60-1"
+            ],
+            "status": "partial",
+            "supported_claims": "Crossref支持更新类型/日期、参考项、分页等字段，但更新不等于重印，未核验原发—重印—修订的专题说明或实例关系，保持partial。",
+            "not_eligible_to_satisfy_requirement": true
+          },
+          {
+            "section_code": "00B99",
+            "requirement_id": "00B99-topic-source",
+            "objective_ids": [
+              "00B99-1",
+              "00B99-2"
+            ],
+            "status": "partial",
+            "supported_claims": "真实文档实践目标00B99-2全部字段已核实；00B99-1中综合核验卡的字段与未知项有支持，但混合文献类型及余类判断仅靠一般元数据未完整覆盖。合并需求仍pending，不能因新增实践真实就通过整个需求。",
+            "not_eligible_to_satisfy_requirement": true
+          }
+        ],
+        "verified_subobjective_only": {
+          "section_code": "00B99",
+          "objective_id": "00B99-2",
+          "status": "verified",
+          "source_location": "Versioning、Work、Contributor、Update、License；README DEPRECATION NOTICE",
+          "claim": "实际文档的版本、角色、日期、更新、许可字段已核；无具体论文/证明核验。",
+          "does_not_complete_combined_requirement": true
+        }
+      }
+    },
+    {
+      "id": "SRC-MSC",
+      "title": "Mathematics Subject Classification 2020",
+      "author_or_publisher": "Mathematical Reviews / zbMATH",
+      "version": "MSC 2020；用户224页原件；响应之外的本地原件SHA-256",
+      "public_url": "https://www.ams.org/msc/msc2020.html",
+      "access": {
+        "status": "available_local",
+        "method": "user_provided",
+        "retrieved_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "532d86f87b042b1fbc30b72be174c98db8d2fb8e28b4150733956998363bcbe7",
+        "evidence": [
+          {
+            "path": "data/msc_taxonomy.json",
+            "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+          }
+        ],
+        "date_note": "此日期为本次打开用户原件的时间，原上传日期未核实；不将现成分类台账冒充原件。本次实读PDF第4及第5页00分类。",
+        "local_original_path": "/workspace/attachments/6f8b7bbe-7b78-4c95-8f71-e0b02c106745/MSC_2020.pdf",
+        "page_count": 224
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+        "document_sha256": "532d86f87b042b1fbc30b72be174c98db8d2fb8e28b4150733956998363bcbe7",
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_source_content_review.md",
+            "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+          }
+        ],
+        "coverage": [
+          {
+            "section_code": "00A99",
+            "requirement_id": "00A99-topic-source",
+            "objective_ids": [
+              "00A99-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "用户MSC_2020.pdf，第4页00Axx诸叶项及00A99；第5页开头00B99用于核对相同余类措辞的分支范围",
+            "verified_claim": "实际MSC原件第4页00A99及同页00Axx邻项/跨类提示，支持“本分支未列以上项”的边界；检查顺序为本书原创教学组织，未声称来源规定了该顺序。",
+            "limitations": "仅核对上述限定专题信息；不授予未读领域的证明、研究现状、版权或全部内容认证。"
+          }
+        ],
+        "scope_notes": "实际核对分类短标签/归属，不分发原PDF或全文。官方网页本轮代理失败不影响原件可读，但不宣称官方网页现行许可或研究内容已核。"
+      }
+    },
+    {
+      "id": "PENDING-00A17",
+      "title": "外部书评候选入口（未取得）",
+      "author_or_publisher": "MAA",
+      "version": "未取得，版本未核",
+      "public_url": "https://maa.org/press/maa-reviews",
+      "access": {
+        "status": "blocked_by_environment_proxy",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T09:36:39.531515+00:00",
+        "document_sha256": null,
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_sources.json",
+            "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+          }
+        ],
+        "proxy_connect_status": 403
+      },
+      "content_review": {
+        "status": "pending",
+        "coverage": [],
+        "reason": "MAA候选入口代理403；S2反例逻辑不能代替真实书评及所评版本/评论理由。"
+      }
+    },
+    {
+      "id": "PENDING-00A27",
+      "title": "未解问题清单候选入口（未取得）",
+      "author_or_publisher": "Clay Mathematics Institute",
+      "version": "未取得，版本未核",
+      "public_url": "https://www.claymath.org/millennium-problems/",
+      "access": {
+        "status": "blocked_by_environment_proxy",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T09:36:39.540008+00:00",
+        "document_sha256": null,
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_sources.json",
+            "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+          }
+        ],
+        "proxy_connect_status": 403
+      },
+      "content_review": {
+        "status": "pending",
+        "coverage": [],
+        "reason": "Clay入口代理403；MSC只有分类标签，S2只是逻辑和历史教材叙述，不能作为最新问题状态核验。"
+      }
+    },
+    {
+      "id": "PENDING-00A30",
+      "title": "数学哲学候选入口（未取得）",
+      "author_or_publisher": "Stanford Encyclopedia of Philosophy",
+      "version": "未取得，版本未核",
+      "public_url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+      "access": {
+        "status": "blocked_by_environment_proxy",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T09:36:39.551364+00:00",
+        "document_sha256": null,
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_sources.json",
+            "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+          }
+        ],
+        "proxy_connect_status": 403
+      },
+      "content_review": {
+        "status": "pending",
+        "coverage": [],
+        "reason": "Stanford入口代理403；量词顺序和反例内容确实取得，但不构成数学哲学对象、真理、公理地位的专题来源。"
+      }
+    },
+    {
+      "id": "PENDING-00A64",
+      "title": "数学与文学候选入口（未取得）",
+      "author_or_publisher": "College of Charleston候选目录",
+      "version": "未取得，版本未核",
+      "public_url": "https://math.cofc.edu/faculty/kasman/MATHFICT/",
+      "access": {
+        "status": "blocked_by_environment_proxy",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T09:36:39.569121+00:00",
+        "document_sha256": null,
+        "evidence": [
+          {
+            "path": "research/production/part1_revision_sources.json",
+            "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+          }
+        ],
+        "proxy_connect_status": 403
+      },
+      "content_review": {
+        "status": "pending",
+        "coverage": [],
+        "reason": "Charleston入口代理403；逻辑教材不构成数学与文学交叉的专题来源。"
+      }
+    },
+    {
+      "id": "SRC-S4-STACKS-SCHEMES",
+      "title": "The Stacks Project — Schemes, Affine schemes, lemma-standard-open",
+      "author_or_publisher": "The Stacks Project contributors",
+      "version": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "public_url": "https://github.com/stacks/stacks-project/blob/a04446e57ec1fbc252a871afcec7752fb2807b14/schemes.tex#L503-L590",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T16:17:32.758117+00:00",
+        "document_sha256": "08475a01cf0ddf69734fd7ebc0d14d3831148c25a2ef82aaafdb65666f8fce47",
+        "evidence": [
+          {
+            "path": "research/production/part1_research_exposition_followup.json",
+            "sha256": "7792670dd10a1cfe8c7cff748f26bc619b90022d56f322c49625bbe1374ab109"
+          }
+        ]
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "coverage": [
+          {
+            "section_code": "00-02",
+            "requirement_id": "00-02-topic-source",
+            "objective_ids": [
+              "00-02-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "schemes.tex lines503–590; statement519–536; proof538–564; conventions.tex51–54",
+            "verified_claim": "真实专题研究性教材片段可定位对象Spec(R)/D(f)、环与模约定、局部化及有限覆盖结论、证明及其跨章先修；支持分开记录对象、假设、结论、证明位置和未核依赖。",
+            "limitations": "不是对整个Stacks或代数几何理论的独立认证；未读取被引Algebra/Sheaves证明和EGA正文，不声称本书第一章建立这些先修。"
+          }
+        ],
+        "evidence": [
+          {
+            "path": "research/production/part1_research_exposition_followup.md",
+            "sha256": "8664bfbf0b615e688d1ad84d4c95d0e79ff35935427965b380e96df908fbd0e7"
+          },
+          {
+            "path": "research/production/part1_three_source_content_review.md",
+            "sha256": "91e751733e77ba45d6d983ae1dce520142267e80760751d8c7700eb5a4c05987"
+          }
+        ],
+        "reviewed_at": "2026-11-05T16:22:06.764411+00:00",
+        "document_sha256": "08475a01cf0ddf69734fd7ebc0d14d3831148c25a2ef82aaafdb65666f8fce47",
+        "mapping_reviewed_at": "2026-11-05T17:00:01.997390+00:00"
+      },
+      "license": {
+        "project_notice": "introduction.tex16–23: GNU FDL1.2-or-later, no invariant/front/back-cover texts",
+        "license_text": "COPYING GNU FDL1.2 read in full",
+        "scope_caveat": "schemes.tex开头未重复许可通知；本轮仅引用链接及原创事实概述，不据项目许可无条件分发章节源码或翻译。",
+        "intended_use": "链接、短书目及原创核验示范；缓存不纳入冻结ZIP。"
+      }
+    },
+    {
+      "id": "SRC-S5-RUSSELL-IMP-HISTORICAL",
+      "title": "Bertrand Russell — Introduction to Mathematical Philosophy",
+      "author_or_publisher": "Bertrand Russell",
+      "version": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "public_url": "https://raw.githubusercontent.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/7f4e90716794406bb99e227bedc1c6c465bc53b2/41654-t/41654-t.tex",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T16:36:03.272479+00:00",
+        "document_sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f",
+        "evidence": [
+          {
+            "path": "research/production/part1_math_philosophy_followup.json",
+            "sha256": "c8b7fe905fb70bfacda785f7afe8c1765b1619fb187b90b972c6f208afc7512a"
+          }
+        ]
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T16:42:56.139796+00:00",
+        "document_sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f",
+        "evidence": [
+          {
+            "path": "research/production/part1_math_philosophy_followup.md",
+            "sha256": "d5f8badd6c4e7895433c1d3648437c935f06acb91fd1ceb5a6ac63bd868cccbe"
+          },
+          {
+            "path": "research/production/part1_three_source_content_review.md",
+            "sha256": "91e751733e77ba45d6d983ae1dce520142267e80760751d8c7700eb5a4c05987"
+          }
+        ],
+        "coverage": [
+          {
+            "section_code": "00A30",
+            "requirement_id": "00A30-topic-source",
+            "objective_ids": [
+              "00A30-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "41654-t.tex lines 769–810;863–889;923–1159",
+            "verified_claim": "实际历史哲学文本区分采用起点与分析起点，讨论定义的起始项及公理解释与对象意义；支持数学陈述与认识边界的限定导读。既有量词示范继续由S2逻辑核对。",
+            "limitations": "仅该历史文本的有限问题提出方式，不是现代共识、哲学全景或本书数学定理；不认证全部历史数学主张；美国以外权利未核。",
+            "supplementary_general_method_source_ids": [
+              "SRC-S2-LOGIC"
+            ]
+          }
+        ],
+        "mapping_reviewed_at": "2026-11-05T17:00:01.997390+00:00"
+      },
+      "license": {
+        "metadata_claim": "Public domain in the USA.",
+        "outside_US_status": "not verified; embedded license makes no representations outside US",
+        "license_read": [
+          "repository LICENSE in full",
+          "embedded work license, lines 9333-9694"
+        ],
+        "discrepancy": "Root LICENSE contains starred copyrighted-work template paragraph and final template instruction; work-embedded 1.C/1.D does not contain that paragraph. No invented author permission.",
+        "permitted_project_use_claimed": "links, bibliographic metadata, source hashes, original reading-location commentary only",
+        "source_text_republished": false,
+        "global_public_domain_claimed": false
+      }
+    },
+    {
+      "id": "SRC-S6-ABBOTT-FLATLAND-LITERARY",
+      "title": "Edwin A. Abbott — Flatland: A Romance of Many Dimensions",
+      "author_or_publisher": "Edwin A. Abbott",
+      "version": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+      "public_url": "https://raw.githubusercontent.com/GITenberg/Flatland--a-romance-of-many-dimensions_97/5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8/97.txt",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T16:44:43.314243+00:00",
+        "document_sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f",
+        "evidence": [
+          {
+            "path": "research/production/part1_math_literature_followup.json",
+            "sha256": "510d86877fdf2708874a1b74a671d582703ea3aac61850a771f42e7a78e15894"
+          }
+        ]
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources",
+        "reviewed_at": "2026-11-05T16:48:27.791433+00:00",
+        "document_sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f",
+        "evidence": [
+          {
+            "path": "research/production/part1_math_literature_followup.md",
+            "sha256": "a76ef5e0d0389a2ef538d384c881621262aff169fd6d8b924d9a0ceb83c7894d"
+          },
+          {
+            "path": "research/production/part1_three_source_content_review.md",
+            "sha256": "91e751733e77ba45d6d983ae1dce520142267e80760751d8c7700eb5a4c05987"
+          }
+        ],
+        "coverage": [
+          {
+            "section_code": "00A64",
+            "requirement_id": "00A64-topic-source",
+            "objective_ids": [
+              "00A64-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "97.txt lines 2862–3045;3173–3290;3538–3546",
+            "verified_claim": "实际文学原作呈现方向措辞的沟通困难、类比推测与叙事解释的边界，直接支持既有语言/比喻阅读目标；量词换序不等价由S2活动逻辑例子1254–1315另行支持。",
+            "limitations": "小说不是读者选书量词例子的出处，也不是高维几何证明；本source只提供数学文学专题入口，量词逻辑由既有S2支持；非文学研究全景，美国以外权利未核。",
+            "supplementary_general_method_source_ids": [
+              "SRC-S2-LOGIC"
+            ]
+          }
+        ],
+        "mapping_reviewed_at": "2026-11-05T17:00:01.997390+00:00"
+      },
+      "license": {
+        "metadata_claim": "Public domain in the USA.",
+        "outside_US_status": "not verified",
+        "root_license_identical_to_previously_read_document": true,
+        "license_sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+        "template_discrepancy": "Starred copyrighted-work template paragraph in root LICENSE absent between work-embedded 1.C and 1.D.",
+        "project_use": "links, bibliographic metadata, hashes and original reading-location commentary only",
+        "text_republished": false,
+        "global_public_domain_claimed": false
+      }
+    },
+    {
+      "id": "SRC-C2-JULIACON-2025-KEYNOTE-ABSTRACT",
+      "title": "JuliaCon 2025 Keynotes — John Urschel: 80 Years of Computing with the Elimination Algorithm",
+      "author_or_publisher": "JuliaCon; speaker John Urschel",
+      "version": "85ad651a4f9e3480f5d0753fd201f9019b14870e",
+      "public_url": "https://github.com/JuliaCon/www.juliacon.org/blob/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/keynotes.md#L65-L69",
+      "access": {
+        "status": "retrieved",
+        "method": "public_https",
+        "retrieved_at": "2026-11-05T17:26:32.688810+00:00",
+        "document_sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+        "evidence": [
+          {
+            "path": "research/production/part1_jcon_abstract_event_followup_2026-11-05.json",
+            "sha256": "5accd768c75c3973ce6e80383b23817cc204609f86f750aadf6e72e9e0482b93"
+          }
+        ]
+      },
+      "content_review": {
+        "status": "verified",
+        "reviewer": "/root/part1_sources; independently read by /root",
+        "reviewed_at": "2026-11-05T17:36:56.999546+00:00",
+        "document_sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+        "coverage": [
+          {
+            "section_code": "00B05",
+            "requirement_id": "00B05-topic-source",
+            "objective_ids": [
+              "00B05-1"
+            ],
+            "relevance": "topic_specific",
+            "source_location": "2025/keynotes.md lines 65–69; identity README.md1–7; official index.md42–57; rights imprint.md full text",
+            "verified_claim": "实际官方报告摘要列明John Urschel、原题名与报告内容；支持辨认摘要的信息边界，以姓名和题名继续查找全文，并将未取得的全文、完整作者名单和证明保留为未知。",
+            "limitations": "只核真实讲座摘要与后续检索操作；未取得对应全文或论文作者名单，未审数学证明，不认证算法断言或最新开放状态；与LieGroups论文无已核对应关系。"
+          }
+        ],
+        "evidence": [
+          {
+            "path": "research/production/part1_jcon_abstract_event_followup_2026-11-05.md",
+            "sha256": "07a111b1f1cf16655d0314b69a29735bcc8c907cbb298eb508e47ba89e7ca76f"
+          },
+          {
+            "path": "research/production/part1_jcon_abstract_root_content_review.json",
+            "sha256": "5702b86959d615b42dfc160c6d2fa612309a36d65c3250e7738c5fda8e049267"
+          }
+        ],
+        "mapping_reviewed_at": "2026-11-05T17:43:55.766138+00:00"
+      },
+      "license": {
+        "explicit_redistribution_license_found": false,
+        "actual_read": "README.md and imprint.md full text; root directory listing",
+        "scope_caveat": "Public GitHub access is not a general republication license. Imprint reserves sponsor marks; no explicit general license for abstract text found in the read files.",
+        "intended_use": "Native fixed-version link, necessary title/speaker metadata and original reading explanation only. No abstract text or images reproduced.",
+        "external_fulltext_obtained": false
+      }
+    }
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00-01-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-S1-ADD"
+          ],
+          "reason": "实际教材模块m82463说明学习目标、验证解、等式操作、应用与检查；支持识别入门材料怎样安排概念/规则/练习。不是证明全书数系已建立。"
+        }
+      ]
+    },
+    {
+      "code": "00-02",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00-02-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-S4-STACKS-SCHEMES"
+          ],
+          "reason": "真实专题研究性教材片段可定位对象Spec(R)/D(f)、环与模约定、局部化及有限覆盖结论、证明及其跨章先修；支持分开记录对象、假设、结论、证明位置和未核依赖。"
+        }
+      ]
+    },
+    {
+      "code": "00A05",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A06",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A07",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A08",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A09",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A15",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00A15-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-CROSSREF"
+          ],
+          "reason": "真实Crossref文档的Work字段给出题名、出版者、日期、容器题名、页码及贡献者角色。支持书目定位信息及字段缺失边界，不认证所指作品数学正确。"
+        }
+      ]
+    },
+    {
+      "code": "00A17",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00A17-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "MAA候选入口代理403；S2反例逻辑不能代替真实书评及所评版本/评论理由。"
+        }
+      ]
+    },
+    {
+      "code": "00A20",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A22",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A27",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00A27-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Clay入口代理403；MSC只有分类标签，S2只是逻辑和历史教材叙述，不能作为最新问题状态核验。"
+        }
+      ]
+    },
+    {
+      "code": "00A30",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00A30-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-S5-RUSSELL-IMP-HISTORICAL"
+          ],
+          "reason": "实际历史哲学文本区分采用起点与分析起点，讨论定义的起始项及公理解释与对象意义；支持数学陈述与认识边界的限定导读。既有量词示范继续由S2逻辑核对。"
+        }
+      ]
+    },
+    {
+      "code": "00A35",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A64",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00A64-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-S6-ABBOTT-FLATLAND-LITERARY"
+          ],
+          "reason": "实际文学原作呈现方向措辞的沟通困难、类比推测与叙事解释的边界，直接支持既有语言/比喻阅读目标；量词换序不等价由S2活动逻辑例子1254–1315另行支持。"
+        }
+      ]
+    },
+    {
+      "code": "00A65",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A66",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A67",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A69",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A71",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A72",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A79",
+      "topic_source_status": "original_work_reviewed_separately",
+      "requirements": [],
+      "external_sources_verified": false,
+      "review_basis": "独立数学与教学审读；不把原创推导包装成外部文献核验。"
+    },
+    {
+      "code": "00A99",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00A99-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-MSC"
+          ],
+          "reason": "实际MSC原件第4页00A99及同页00Axx邻项/跨类提示，支持“本分支未列以上项”的边界；检查顺序为本书原创教学组织，未声称来源规定了该顺序。"
+        }
+      ]
+    },
+    {
+      "code": "00B05",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00B05-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-C2-JULIACON-2025-KEYNOTE-ABSTRACT"
+          ],
+          "reason": "实际官方报告摘要列明John Urschel、原题名与报告内容；支持辨认摘要的信息边界，以姓名和题名继续查找全文，并将未取得的全文、完整作者名单和证明保留为未知。"
+        }
+      ]
+    },
+    {
+      "code": "00B10",
+      "topic_source_status": "verified",
+      "requirements": [
+        {
+          "requirement_id": "00B10-topic-source",
+          "status": "verified",
+          "source_ids": [
+            "SRC-CROSSREF"
+          ],
+          "reason": "Crossref的Work.title/container-title、author/editor、volume/issue/page与Contributor层次直接对应单篇、载体、作者/编者与定位字段；限定书目辨认目标有真实内容依据。不声称实读某本文集全部文章。"
+        }
+      ]
+    },
+    {
+      "code": "00B15",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B15-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "MSC列出专题文章汇编类型；Crossref能定位题名/载体，却不能说明如何从专题目录识别问题、各篇定义及先修条件；当前只是部分背景。"
+        }
+      ]
+    },
+    {
+      "code": "00B20",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B20-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Crossref支持出版/注册/索引日期及单篇定位，但本次所读字段规范不足以核验会议日期与出版事件的具体区别及会议材料身份；当前部分支持。"
+        }
+      ]
+    },
+    {
+      "code": "00B25",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B25-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Crossref参考项结构和S2推理方法可作背景，但没有实际核对专题引用链与原结果条件；不把reference字段存在等同该专题核验目标已满足。"
+        }
+      ]
+    },
+    {
+      "code": "00B30",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B30-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "MSC提供Festschriften分类名；Crossref一般字段没有说明纪念文集内回忆、历史评价、研究主张的证据类型，专题来源仍缺。"
+        }
+      ]
+    },
+    {
+      "code": "00B50",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B50-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Crossref区分作者/译者并列更新字段，S2支持量词辨析；两者不能完整支持译文所据版本、更正关系与原文/译文条件对照的专题说明，保持partial。"
+        }
+      ]
+    },
+    {
+      "code": "00B55",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B55-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Crossref元数据没有专业术语、译文定义与数学先修；分类标题不是这些判断的内容证据，保持partial。"
+        }
+      ]
+    },
+    {
+      "code": "00B60",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B60-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "Crossref支持更新类型/日期、参考项、分页等字段，但更新不等于重印，未核验原发—重印—修订的专题说明或实例关系，保持partial。"
+        }
+      ]
+    },
+    {
+      "code": "00B99",
+      "topic_source_status": "pending",
+      "requirements": [
+        {
+          "requirement_id": "00B99-topic-source",
+          "status": "pending",
+          "source_ids": [],
+          "reason": "真实文档实践目标00B99-2全部字段已核实；00B99-1中综合核验卡的字段与未知项有支持，但混合文献类型及余类判断仅靠一般元数据未完整覆盖。合并需求仍pending，不能因新增实践真实就通过整个需求。"
+        }
+      ]
+    }
+  ],
+  "current_refresh_requests": [
+    {
+      "id": "s1-add",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82463/index.cnxml",
+      "retrieved_at": "2026-11-05T09:45:41.389085+00:00",
+      "http_status": 200,
+      "sha256": "b6345a5a6a99108f9d32d6518445a4ae70a6b0c54a258021dffc6f2b77b8278a",
+      "bytes": 122749
+    },
+    {
+      "id": "s1-div",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82464/index.cnxml",
+      "retrieved_at": "2026-11-05T09:45:42.129571+00:00",
+      "http_status": 200,
+      "sha256": "099aae173772040a83d8c9160980922315352fc2a699af7c6f25ddc594a0c0bc",
+      "bytes": 133732
+    },
+    {
+      "id": "s2-logic",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+      "retrieved_at": "2026-11-05T09:45:42.654696+00:00",
+      "http_status": 200,
+      "sha256": "ce6bd7f034383c08bc8ae0edbafa78a406679c1f6129d829541be0df56f07438",
+      "bytes": 48813
+    },
+    {
+      "id": "s2-proof",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-proofs.ptx",
+      "retrieved_at": "2026-11-05T09:45:43.167941+00:00",
+      "http_status": 200,
+      "sha256": "c97d90f3574c85e5d45a289c69e57a5d4db9f69e1aadda20ab00ce36c6016e3f",
+      "bytes": 58171
+    },
+    {
+      "id": "crossref-format",
+      "url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/api_format.md",
+      "retrieved_at": "2026-11-05T09:45:43.561803+00:00",
+      "http_status": 200,
+      "sha256": "70aa9d3fc20bbf8d2f4d35e756f40e65e8e1ebaaecec2eaf1e6e1098996ed5c1",
+      "bytes": 10677
+    },
+    {
+      "id": "crossref-readme",
+      "url": "https://raw.githubusercontent.com/CrossRef/rest-api-doc/master/README.md",
+      "retrieved_at": "2026-11-05T09:45:43.929469+00:00",
+      "http_status": 200,
+      "sha256": "7c1d9010cacd833645f7019ea6a8825b70fb3f33b5db98907c5d0637eec4663a",
+      "bytes": 45347
+    }
+  ],
+  "evidence": [
+    {
+      "path": "research/production/part1_revision_source_content_review.md",
+      "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+    },
+    {
+      "path": "research/production/part1_three_source_content_review.md",
+      "sha256": "91e751733e77ba45d6d983ae1dce520142267e80760751d8c7700eb5a4c05987"
+    },
+    {
+      "path": "research/production/part1_abstract_source_mapping_review.md",
+      "sha256": "96054e2a913ca0810eb841c5b922c77118cc77c86e1e217215f51e3de17a3401"
+    }
+  ],
+  "counts": {
+    "G_topic_verified": 8,
+    "G_topic_pending": 10,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "blocking_issues": [
+    {
+      "section_code": "00A17",
+      "reason": "MAA候选入口代理403；S2反例逻辑不能代替真实书评及所评版本/评论理由。"
+    },
+    {
+      "section_code": "00A27",
+      "reason": "Clay入口代理403；MSC只有分类标签，S2只是逻辑和历史教材叙述，不能作为最新问题状态核验。"
+    },
+    {
+      "section_code": "00B15",
+      "reason": "MSC列出专题文章汇编类型；Crossref能定位题名/载体，却不能说明如何从专题目录识别问题、各篇定义及先修条件；当前只是部分背景。"
+    },
+    {
+      "section_code": "00B20",
+      "reason": "Crossref支持出版/注册/索引日期及单篇定位，但本次所读字段规范不足以核验会议日期与出版事件的具体区别及会议材料身份；当前部分支持。"
+    },
+    {
+      "section_code": "00B25",
+      "reason": "Crossref参考项结构和S2推理方法可作背景，但没有实际核对专题引用链与原结果条件；不把reference字段存在等同该专题核验目标已满足。"
+    },
+    {
+      "section_code": "00B30",
+      "reason": "MSC提供Festschriften分类名；Crossref一般字段没有说明纪念文集内回忆、历史评价、研究主张的证据类型，专题来源仍缺。"
+    },
+    {
+      "section_code": "00B50",
+      "reason": "Crossref区分作者/译者并列更新字段，S2支持量词辨析；两者不能完整支持译文所据版本、更正关系与原文/译文条件对照的专题说明，保持partial。"
+    },
+    {
+      "section_code": "00B55",
+      "reason": "Crossref元数据没有专业术语、译文定义与数学先修；分类标题不是这些判断的内容证据，保持partial。"
+    },
+    {
+      "section_code": "00B60",
+      "reason": "Crossref支持更新类型/日期、参考项、分页等字段，但更新不等于重印，未核验原发—重印—修订的专题说明或实例关系，保持partial。"
+    },
+    {
+      "section_code": "00B99",
+      "reason": "真实文档实践目标00B99-2全部字段已核实；00B99-1中综合核验卡的字段与未知项有支持，但混合文献类型及余类判断仅靠一般元数据未完整覆盖。合并需求仍pending，不能因新增实践真实就通过整个需求。"
+    }
+  ],
+  "boundaries": [
+    "本次版本只新增00B05限定G专题映射；合计8个G verified、10个G pending，15个T/S另行原创审读；整个部分仍pending，未改变其余专题需求。",
+    "T/S数学内容独立审读，未要求外书具有相同原创推导。",
+    "00B99-2真实文档实践已核，但不抵消00B99合并需求其余内容的部分支持。",
+    "访问证据与内容报告分开；原请求日期保留，重取信息单独记录。",
+    "原件和外部正文临时缓存不分发，不宣称全部开放问题状态已核验。",
+    "00-02仅研究材料核验边界；00A30仅历史哲学入口；00A64文学语言/比喻入口配合既有S2量词逻辑，不扩大为专题全景或证明认证。",
+    "00B05仅真实摘要及以姓名/题名继续查找全文的阅读操作；全文及证明未核，不认证摘要算法断言，也不建立它与其他会议文章的对应关系。"
+  ],
+  "revision_history": [
+    {
+      "prepared_content_review_at": "2026-11-05T17:00:01.997390+00:00",
+      "applied_at": "2026-11-05T17:02:05.603909+00:00",
+      "previous_reviewed_at": "2026-11-05T09:52:12.264845+00:00",
+      "previous_plan": {
+        "path": "research/production/history/three-source-previous-9d8872b38cb3/part1_scope_plan.json",
+        "sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de"
+      },
+      "previous_ledger": {
+        "path": "research/production/history/three-source-previous-9d8872b38cb3/part1_topic_sources.json",
+        "sha256": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6"
+      },
+      "changed_sections": [
+        "00-02",
+        "00A30",
+        "00A64"
+      ],
+      "scope": "Only three new topic mappings and exact final bindings; remaining judgments carried forward unchanged."
+    },
+    {
+      "prepared_content_review_at": "2026-11-05T17:43:55.766138+00:00",
+      "application_state": "applied_after_batch33_snapshot",
+      "previous_plan_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+      "previous_ledger_sha256": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246",
+      "changed_sections": [
+        "00B05"
+      ],
+      "scope": "Only one new topic mapping, projected 8-source bindings and 8/10 counts; old source records and remaining requirements unchanged. Apply only after independent review; archive prior ledger first.",
+      "applied_at": "2026-11-05T18:10:42.528074+00:00",
+      "snapshot": "local-inputs/snapshots/batch33-composition-ivt-inverse-20261105T180921Z"
+    }
+  ],
+  "previous_reviewed_at": "2026-11-05T17:00:01.997390+00:00",
+  "updated_at": "2026-11-05T18:10:42.528074+00:00"
+}

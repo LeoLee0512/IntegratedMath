@@ -1,0 +1,107 @@
+{
+  "status": "READY_for_root_review_and_integration",
+  "checked_at_utc": "2026-10-30T04:27:54.938362+00:00",
+  "files": {
+    "tools/build_learning_batch.py": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353",
+    "tools/build_production_ledger.py": "559c8c56aac5e584f083452b72a9e605307c889fb055c3d6cca16e67fe2d23b8",
+    "tools/draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+    "tools/validate_learning_batch.py": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c",
+    "LEARNING_PATH.md.patch": "ed9f667538478854ce0f80c9af351ecfc8c8d19dad10c038781688b5c7d24b13",
+    "README.md.patch": "0f8cbea7c5605947b11a7e7a7209ef0f6a68298aacdeb0bbc1de4e09812c7c78",
+    "build_learning_batch.py.patch": "2864722b4857163bb90617ec364ab4d3518cb9ef2dcb8039bd7a9bad67c89c8d",
+    "build_production_ledger.py.patch": "25e8cc0ea5d9a371afc4c420cd6b3d0cc20f03e85ee5ded0ed1b465c1aad0ce8",
+    "draw_foundations_batch.py.patch": "8e97d20fa93525454ca1ba9508aaefe7c75d5ea65c623ee3b4754f73354b114a",
+    "validate_learning_batch.py.patch": "e5553b1745134c9b344137e7c409e61a7619ed20987fd90607354edda54aadcb",
+    "research/production/real_sequences_sources_2026-10-30.json": "cb4cfc29126d9b58efa14fcf802c556122e61491b6a0187d8ec5fb57c062ce06",
+    "research/production/real_sequences_sources_2026-10-30.md": "9a3c72e1bfab0b44ec080e29c63bbc32713cefdd41cd4135b9bf7606be2f21c7",
+    "structural_check.json": "a8d807b88b16809225bce2b24f96d226249b680a4012a5b259f686eca30744b1",
+    "baseline_tools_sha256.json": "b5c89131e0233d66bb05cdc88a94283206be1b3888ecdbfcc4d48b75d4cdfa6d",
+    "metadata/LEARNING_PATH.md": "8726b9458a1c4a3ef4b0c332609716ecb630ff47665d2c937728a6c9bc6badd3",
+    "metadata/README.md": "2c6bc0cdb003f3bd321b21191d8c058f026b45fce7a717fea1b79da3662e574e",
+    "metadata_baseline_sha256.json": "d03b6554885d4e4718341f6d4737a2e31c226f834b08d29fa7221922d3150433",
+    "freeze_inputs.json": "9d20cb4550941a656406d82ba3c0a7ef97dd25724674726720d13c1a637cd35c",
+    "figure_integration_check.json": "bd6db8f556e56302087fcdb5391b8d9880ae1a0704e4c3c0d7c79ff2219953c8",
+    "real_sequence_epsilon_figure_appendix_preview.md": "0a6d7f7bbce22b54e17c5088b338db623333bbf62d975212a4671221580e57b5",
+    "install30.py": "7b046b7367a4971314bee4abe3f46d7b45be751852646a8aa2dea03b883831a6"
+  },
+  "structural_result": {
+    "status": "isolated_structural_checks_passed",
+    "counts": {
+      "units": 61,
+      "foundation_exercises": 488,
+      "intro_exercises": 14,
+      "total_exercises": 502,
+      "figures": 21,
+      "numbered_appendices": 28,
+      "draft_chapters": 7,
+      "draft_leaves": 31,
+      "completed_chapters": 0
+    },
+    "html": {
+      "math_nodes": 30959,
+      "source_math_nodes": 30963,
+      "image_alt_math_nodes": 4,
+      "images": 21,
+      "exercise_pairs": 502,
+      "html_ids": 3283,
+      "html_internal_links": 4158
+    },
+    "new_units": [
+      {
+        "code": "B4.1",
+        "stage": "draft",
+        "prerequisites_verified": 30
+      },
+      {
+        "code": "B4.2",
+        "stage": "draft",
+        "prerequisites_verified": 29
+      }
+    ],
+    "input_sha256": {
+      "manuscript/foundations/real_sequences_limits.md": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+      "manuscript/foundations/real_sequences_limits_answers.md": "64b0f32bb8c864fccc445828d3560e4bb2d268062996e2717a7f72be1a496e13",
+      "manuscript/foundations/real_sequences_algebra.md": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89",
+      "manuscript/foundations/real_sequences_algebra_answers.md": "17eecc0e37e89df0d966825b311d41149272f237f438b5c07e1da132f183ef31"
+    },
+    "module_graph": "acyclic;existing single-analysis retains functions, induction-counting, number-systems;B3 module remains unwritten;unit prerequisites do not include plane geometry",
+    "new_numerical_code": "only exact finite witnesses inside drawing function; no new numerical API",
+    "new_figures": 1,
+    "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal repository writes, production build, acceptance registration or PDF visual acceptance in batch30 candidate preparation.",
+    "checked_candidate_tool_sha256": {
+      "build_learning_batch.py": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353",
+      "build_production_ledger.py": "559c8c56aac5e584f083452b72a9e605307c889fb055c3d6cca16e67fe2d23b8",
+      "draw_foundations_batch.py": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+      "validate_learning_batch.py": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c"
+    },
+    "source_audit_sha256": {
+      "md": "9a3c72e1bfab0b44ec080e29c63bbc32713cefdd41cd4135b9bf7606be2f21c7",
+      "json": "cb4cfc29126d9b58efa14fcf802c556122e61491b6a0187d8ec5fb57c062ce06"
+    },
+    "all_61_unit_chapter_segment_placements_verified": true,
+    "original_source_object_preserved": true,
+    "final_source_binding_metadata_preserves_composed_bytes": true,
+    "post_audit_scope_metadata_update": "Only manifest no-limits narrowed to no-function-limits and report partial chapter list updated; compose_body and audit_book AST identical, full final composed Markdown byte-identical. Ledger unchanged. Metadata whitespace corrected; all relative anchors rechecked."
+  },
+  "formal_installation_verified": false,
+  "approval_registered": false,
+  "baseline29_vs_formal": "All four tools and two metadata from frozen29 candidates are byte-identical to current installed29. No formal30 writes.",
+  "installation_script": {
+    "path": "/tmp/install30.py",
+    "candidate_copy": "install30.py",
+    "sha256": "7b046b7367a4971314bee4abe3f46d7b45be751852646a8aa2dea03b883831a6",
+    "executed_by_preparer": false,
+    "requires": "Root review; batch29 commit with clean worktree, matching snapshot commit and six actual file hashes;118 prior text reviews;all candidate/baseline/source preflight before mutations."
+  },
+  "notes": [
+    "Four exact incremental patches against installed29. New ANALYSIS_UNITS plus neutral CLASSIFIED_UNITS avoid falsely classifying40A05 as97 education; existing education map and all checks retained. Fixed stale aggregate chapter lists now include97Gxx and40Axx, current ordered segments and seven unique chapters.",
+    "Actual taxonomy: part28 40-XX, chapter242 40Axx, primary40A05; cross26A03/97I30 add no primary coverage. Teaching part order1/7/63/28 is prerequisite order, not taxonomy reordering.61units502questions(488+14),21figures28appendices;7draftchapters31draftleaves0complete.",
+    "Existing single-analysis module has two partial units, retains functions/induction-counting/number-systems dependencies. B3 induction-counting stays unwritten. B4.1 has30 exact prerequisites, B4.2 has29 including fourSL anchors. Neither depends on geometry; no backward edge.",
+    "Isolated actual Pandoc and original audit_book passed:30959 visibleMath+4image-alt=30963sourceMath;502exercise pairs;21embeddedPNG;3283uniqueIDs4158internalLinks. All61 chapter placements and28appendices,2source/codeanchors,complete function verified. Isolated ledger passed original taxonomy and acyclic checks. No formal production build or PDF acceptance.",
+    "Three public caches all rehashed; original one sequenceHTTP200 and two earlier license/frontHTTP200 preserved with exact dates/objects. Integration0newrequests. Lebl uses givenR andNstarts1;book usesconstructedR,Nstarts0 andindependentfixed-state recursion/proofs. No external proof of real construction or futuresequence topics claimed.",
+    "Four final drafts1212lines16solutions actuallyread. Both mathreports f77a4f34…/27773ff0… and finalped2583e324… bound with actualplan/concept and twofigure reports. Conceptreviewpredates its reviewer authoringB4.1; figureauthor selfcheck separated fromroot independent review/reproduction. Historical missing-source-anchor statements preserved; current targets verified separately.",
+    "Full draw_real_sequence_epsilon source unchanged from standalone37c506…; appendix28 extracts exactfunction dynamically. Candidate function actuallyexecuted,PNG9bf05… byte-identical to original actualview. Oneepsilon finiteplot is not infinite-tail or arbitraryepsilon proof.",
+    "Metadata updates current B4 entrance, counts and actual part/chapter, preserving B3 and futurelimits/series boundary. Historical B2 scope paragraphs remain scoped to their batches; old audits unchanged. Manifest final no-limits wording narrowed to no-function-limits.",
+    "install30.py prepared and syntax parsed only; afterrootreview/29snapshot execution would add4textrecords118→122 andrecordactualinstallation separately. No accepting records were written by preparer."
+  ]
+}

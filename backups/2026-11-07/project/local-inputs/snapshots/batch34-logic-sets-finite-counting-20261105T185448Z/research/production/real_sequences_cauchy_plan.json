@@ -1,0 +1,37 @@
+{
+  "unit": "B4.5",
+  "id": "b4-real-sequences-cauchy",
+  "chapter": 242,
+  "section": "40A05",
+  "cross": [
+    "26A03",
+    "97I30"
+  ],
+  "author": "/root",
+  "created_at": "2026-11-05T15:40:56.414054+00:00",
+  "status": "math-and-pedagogy-reviewed; build-unregistered",
+  "body": "manuscript/foundations/real_sequences_cauchy.md",
+  "answers": "manuscript/foundations/real_sequences_cauchy_answers.md",
+  "source_sha256": {
+    "manuscript/foundations/real_sequences_cauchy.md": "c1c2674e29dc7b877e4585cbb4d947d729ac37a681779ed6b3df460ed6503c1f",
+    "manuscript/foundations/real_sequences_cauchy_answers.md": "ae118699aafe23b3f5481a0f8550ffe708ad590afa716365289aec4dc1e91e90"
+  },
+  "goals": [
+    "Read and negate the two-index Cauchy condition",
+    "Prove convergence implies Cauchy and Cauchy implies bounded",
+    "Prove one convergent subsequence forces a Cauchy sequence to converge; derive real criterion from BW",
+    "Separate adjacent increments, boundedness, and domain of the limit using fully proved counterexamples"
+  ],
+  "exercise_pairs": 8,
+  "scope_limits": [
+    "No general metric-space completion",
+    "No construction of reals from Cauchy equivalence classes",
+    "No infinite series or limsup/liminf",
+    "No claim chapter 242 or part 28 complete"
+  ],
+  "source_evidence": "research/production/real_sequences_cauchy_sources_2026-11-05.json",
+  "build_registered": false,
+  "notes": "Not included in current batch31 rebuild. Former author-agent failed at model capacity before manuscript output; root authored both files.",
+  "math_review": "research/production/cauchy_math_review.md",
+  "pedagogy_source_review": "research/production/cauchy_pedagogy_source_review.md"
+}

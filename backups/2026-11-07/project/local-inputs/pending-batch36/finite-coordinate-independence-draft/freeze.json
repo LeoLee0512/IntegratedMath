@@ -1,0 +1,13 @@
+{
+  "status": "author-frozen for independent review",
+  "files": {
+    "finite_coordinate_independence.md": "611a581903924ae891ad6c35666bff252b8645097a914fcf7e64ed0c5fe8b473",
+    "finite_coordinate_independence_answers.md": "20b86b99d96023c6a47c11f062d732328505244ed788c362e5a2bb9ec11e45d3",
+    "finite_coordinate_independence_plan.md": "7643ac12ef7e16db76628fdcbf9e703090f6790cd9f6c80e5deb5bb6859853eb",
+    "finite_coordinate_independence_sources.json": "4ecb93731f0b13909e5467bcdb85b83e073a22cc95f2ff2722c0273672ebe6f1",
+    "finite_coordinate_independence_author_check.md": "b708f3ea39a53ce85c19231215772a61b4595af93ae12d4b690a415997735a9f",
+    "draw_fli_redundancy.py": "9ed2d3b027f68b466b403f9801033a55325ec76002b2daa746a395905696c4ec",
+    "figures/fli_redundancy.png": "8d996e46d7466f8195f3ab7d5d52094bbc11882bd8bf66fc028221df0dfe71b4",
+    "figures/fli_redundancy.svg": "04064348fbbd31db4e5220cf67de7956011043fd4b4bf3f0ad253530997317fa"
+  }
+}

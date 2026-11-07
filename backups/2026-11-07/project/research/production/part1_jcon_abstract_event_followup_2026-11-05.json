@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/part1_sources",
+  "reviewed_at_utc": "2026-11-05T17:35:20.037040+00:00",
+  "mode": "bounded_read_only_followup_no_formal_gate_mutation",
+  "frozen_scope_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+  "frozen_topic_sources_sha256": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246",
+  "formal_status": {
+    "G_verified": 7,
+    "G_pending": 11,
+    "TS_original_work_reviewed_separately": 15
+  },
+  "scope_objectives": [
+    {
+      "code": "00A17",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch01/chapter.md",
+      "anchor": "sec-00A17",
+      "objectives": [
+        {
+          "id": "00A17-1",
+          "text": "书评与原始论证的区别"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [],
+      "excluded_topics": [
+        "对应MSC领域的穷尽理论与历史；仅对上述已声明学习目标负责"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch01/appendices.md#sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch01/chapter.md#question-05",
+          "answer": "manuscript/review_ch01/answers.md#answer-05"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00A17-topic-source",
+          "topic": "外部书评：书评与原始论证的区别",
+          "objective_ids": [
+            "00A17-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B05",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B05",
+      "objectives": [
+        {
+          "id": "00B05-1",
+          "text": "辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A05",
+        "manuscript/review_ch01/chapter.md#sec-00A15"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "完整论文证明",
+        "报告人与完整作者名单的未经核验等同"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B05-topic-source",
+          "topic": "讲座摘要汇编：辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明",
+          "objective_ids": [
+            "00B05-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B20",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "body_source": "manuscript/review_ch02/chapter.md",
+      "anchor": "sec-00B20",
+      "objectives": [
+        {
+          "id": "00B20-1",
+          "text": "区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容"
+        }
+      ],
+      "prerequisites": [
+        "manuscript/review_ch01/chapter.md#sec-00A15",
+        "manuscript/review_ch02/chapter.md#sec-00B05"
+      ],
+      "adopted_rules": [
+        "通常书目描述约定；所给格式仅作可核对记录示范"
+      ],
+      "excluded_topics": [
+        "保证同行评议状态",
+        "将DOI或ISBN当作数学正确性证明"
+      ],
+      "reference_entries": [
+        "manuscript/review_ch02/chapter.md#ch02-sources"
+      ],
+      "exercise_answer_pairs": [
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+        },
+        {
+          "question": "manuscript/review_ch02/chapter.md#ch02-question-02",
+          "answer": "manuscript/review_ch02/answers.md#ch02-answer-02"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B20-topic-source",
+          "topic": "综合性会议论文集：区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容",
+          "objective_ids": [
+            "00B20-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    }
+  ],
+  "network": {
+    "policy_type": "restricted",
+    "observed_state": "enforced",
+    "policy_snapshot_sha256": "b40e6662f38d1272fb995562ffc812a99c8acf3a81d5c5707f4a3469ea1cc904",
+    "requested_hosts": [
+      "github.com",
+      "raw.githubusercontent.com"
+    ],
+    "not_requested_not_403": [
+      "pretalx.com",
+      "math.mit.edu"
+    ]
+  },
+  "access_records": [
+    {
+      "url": "https://github.com/search?q=org%3AJuliaCon+website&type=repositories",
+      "requested_at_utc": "2026-11-05T17:23:45.068065+00:00",
+      "status": 200,
+      "bytes": 164330,
+      "sha256": "13d68dddc31e522352c7f7c3b4a538b035df92bac0514fa5b5a2ddc5ad7b4fd4",
+      "cache": "/tmp/part1-jcon-event-followup/website-search.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/JuliaManifolds/LieGroups.jl/tree/JuliaCon2025Procedings",
+      "requested_at_utc": "2026-11-05T17:23:45.069113+00:00",
+      "status": 200,
+      "bytes": 258879,
+      "sha256": "641eb1cedf67121de08accb64405e486f7603ad3dadb8d236741625212745fc1",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-paper-branch.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/JuliaCon/www.juliacon.org",
+      "requested_at_utc": "2026-11-05T17:24:04.506033+00:00",
+      "status": 200,
+      "bytes": 265465,
+      "sha256": "31b7be69adc1f76698d912b1352fb0c83f29e1624e5bc19c10fb03638b6d500f",
+      "cache": "/tmp/part1-jcon-event-followup/juliacon-site-repo.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/README.md",
+      "requested_at_utc": "2026-11-05T17:24:25.551548+00:00",
+      "status": 200,
+      "bytes": 938,
+      "sha256": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+      "cache": "/tmp/part1-jcon-event-followup/site-README.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site-README.md"
+    },
+    {
+      "url": "https://github.com/JuliaCon/www.juliacon.org/tree/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025",
+      "requested_at_utc": "2026-11-05T17:24:25.552601+00:00",
+      "status": 200,
+      "bytes": 237288,
+      "sha256": "0a2497350c9c0512d31b35a4a53fcb09ebfc4cbedd9bc247a80f35c56a1a5c65",
+      "cache": "/tmp/part1-jcon-event-followup/site2025-dir.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/Readme.md",
+      "requested_at_utc": "2026-11-05T17:24:25.553832+00:00",
+      "status": 200,
+      "bytes": 2645,
+      "sha256": "f9954add8f1507532548d6089c7ba372ae3a4687c88abe3cb245143460d0af5e",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-Readme.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-Readme.md"
+    },
+    {
+      "url": "https://github.com/JuliaManifolds/LieGroups.jl/tree/414d7b61c4446dfefab894951109a2e79d83ff6f/paper",
+      "requested_at_utc": "2026-11-05T17:24:25.554562+00:00",
+      "status": 200,
+      "bytes": 214920,
+      "sha256": "c60744d60dc2cb1f2420009d993fab18a1e620395caf0a134d4164aac072aec1",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-paper-dir.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/index.md",
+      "requested_at_utc": "2026-11-05T17:24:50.112281+00:00",
+      "status": 200,
+      "bytes": 13044,
+      "sha256": "732e383758f2e816c7c361692ebc9cd2ed94ad61b0f31a0f5e71e3fd65260172",
+      "cache": "/tmp/part1-jcon-event-followup/site2025-index.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-index.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/schedule.md",
+      "requested_at_utc": "2026-11-05T17:24:50.114248+00:00",
+      "status": 200,
+      "bytes": 98,
+      "sha256": "2975c52cc64f6ed7a7ce2d5c07cff5c3ce352d99a3ad4e57f5e57d8f78356a9a",
+      "cache": "/tmp/part1-jcon-event-followup/site2025-schedule.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-schedule.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/paper/paper.yml",
+      "requested_at_utc": "2026-11-05T17:24:50.115020+00:00",
+      "status": 200,
+      "bytes": 666,
+      "sha256": "bbb555415882631be8dafd0d81148767b00d32786ae14037800b6f169a9c5e8b",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-paper.yml",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.yml"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/LICENSE",
+      "requested_at_utc": "2026-11-05T17:24:50.117958+00:00",
+      "status": 200,
+      "bytes": 1197,
+      "sha256": "da036d02034e90710be49e5e770b0510e4bd2711b58b64a4eaf3a93e518e0340",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-LICENSE",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-LICENSE"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/keynotes.md",
+      "requested_at_utc": "2026-11-05T17:26:32.688810+00:00",
+      "status": 200,
+      "bytes": 6080,
+      "sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+      "cache": "/tmp/part1-jcon-event-followup/site2025-keynotes.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-keynotes.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/minisymposia.md",
+      "requested_at_utc": "2026-11-05T17:26:32.689453+00:00",
+      "status": 200,
+      "bytes": 8655,
+      "sha256": "ab997d62ef2e4d6c886cae9ffcccc07174eafcd5cf9b78b53f312d3c44187efe",
+      "cache": "/tmp/part1-jcon-event-followup/site2025-minisymposia.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-minisymposia.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/paper/paper.tex",
+      "requested_at_utc": "2026-11-05T17:26:32.691194+00:00",
+      "status": 200,
+      "bytes": 66556,
+      "sha256": "d1827b2574ec62f10bc14145c1f3d4761f73b8ab1acd56e68a144c25b2e7a9f6",
+      "cache": "/tmp/part1-jcon-event-followup/liegroups-paper.tex",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.tex"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/imprint.md",
+      "requested_at_utc": "2026-11-05T17:26:32.692124+00:00",
+      "status": 200,
+      "bytes": 1263,
+      "sha256": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad",
+      "cache": "/tmp/part1-jcon-event-followup/site-imprint.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site-imprint.md"
+    },
+    {
+      "url": "https://github.com/search?q=%22book%20reviews%22%20mathematics&type=repositories",
+      "requested_at_utc": "2026-11-05T17:30:19.128147+00:00",
+      "status": 200,
+      "bytes": 164262,
+      "sha256": "e8c8fe1f11ea469f42852811a4368804ae06d734106d5726f8ccc3a85e1465fe",
+      "cache": "/tmp/part1-jcon-event-followup/book-review-search1.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/search?q=%22book%20review%22%20%22mathematics%22&type=repositories",
+      "requested_at_utc": "2026-11-05T17:30:19.129934+00:00",
+      "status": 200,
+      "bytes": 164387,
+      "sha256": "5497567b9cafbe3481035a1bc63474e1483deddfe9644ddb715408350d2069c1",
+      "cache": "/tmp/part1-jcon-event-followup/book-review-search2.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/search?q=%22book%20review%22%20%22mathematics%22%20in%3Areadme&type=repositories",
+      "requested_at_utc": "2026-11-05T17:30:45.263612+00:00",
+      "status": 200,
+      "bytes": 230624,
+      "sha256": "42b0267dde3c7a0428ef5250126a7194f35d7a04ed824ad597e3b0e85e62606a",
+      "cache": "/tmp/part1-jcon-event-followup/book-review-search3.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/search?q=%22book%20reviews%22%20%22analysis%22%20in%3Areadme&type=repositories",
+      "requested_at_utc": "2026-11-05T17:30:45.265120+00:00",
+      "status": 200,
+      "bytes": 228396,
+      "sha256": "c41f973150430d7bcd739717b22aa9a5ab3a260e54a7c697ad506930fa3e4ac7",
+      "cache": "/tmp/part1-jcon-event-followup/book-review-search4.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://github.com/planetmath/00_General",
+      "requested_at_utc": "2026-11-05T17:31:28.091802+00:00",
+      "status": 200,
+      "bytes": 462745,
+      "sha256": "2abee7bcb7baf09ff7d2db3f38870c23c0e6774e5e2f45609fd6809d551e7cbc",
+      "cache": "/tmp/part1-jcon-event-followup/planetmath-general.html",
+      "persistent_cache": null,
+      "retention_note": "原始HTML仍在/tmp；原始响应hash保留，不发布网页快照。"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/planetmath/00_General/f6b6fd1a507bf68001255dd23e173d82e41fb9ff/README.md",
+      "requested_at_utc": "2026-11-05T17:32:10.812829+00:00",
+      "status": 200,
+      "bytes": 1989,
+      "sha256": "e80d24a596bacc0c4a77043b80ebd416bceb77126ff6a9c48390cc30d07eb9b8",
+      "cache": "/tmp/part1-jcon-event-followup/planetmath-README.md",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/planetmath-README.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/planetmath/00_General/f6b6fd1a507bf68001255dd23e173d82e41fb9ff/LICENSE",
+      "requested_at_utc": "2026-11-05T17:32:10.818567+00:00",
+      "status": 200,
+      "bytes": 23342,
+      "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+      "cache": "/tmp/part1-jcon-event-followup/planetmath-LICENSE",
+      "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/planetmath-LICENSE"
+    }
+  ],
+  "content_review": {
+    "evidence": "research/production/part1_jcon_abstract_event_followup_2026-11-05.md",
+    "sha256": "07a111b1f1cf16655d0314b69a29735bcc8c907cbb298eb508e47ba89e7ca76f",
+    "reviewed_at_utc": "2026-11-05T17:35:20.037040+00:00"
+  },
+  "candidates": [
+    {
+      "requirement_id": "00B05-topic-source",
+      "objective_ids": [
+        "00B05-1"
+      ],
+      "proposed_source_id": "SRC-C2-JULIACON-2025-KEYNOTE-ABSTRACT",
+      "status": "candidate_sufficient_for_limited_G_goal_after_proposed_guide_and_independent_review",
+      "formal_status_unchanged": "pending",
+      "repository": "JuliaCon/www.juliacon.org",
+      "commit": "85ad651a4f9e3480f5d0753fd201f9019b14870e",
+      "document": "2025/keynotes.md",
+      "document_sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+      "actual_read": "full file lines 1-75; targeted John Urschel entry lines 65-69",
+      "identity_evidence": [
+        "README.md lines 1-7",
+        "2025/index.md lines 42-57",
+        "imprint.md lines 1-4"
+      ],
+      "rights": "No explicit open redistribution license found in read files/root listing; links and original overview only; no external abstract reproduced.",
+      "fulltext_status": "not_obtained_or_read",
+      "proof_status": "not_verified",
+      "mathematical_claims": "reported abstract contents only; no current open-status certification"
+    },
+    {
+      "requirement_id": "00B20-topic-source",
+      "status": "partial_still_pending",
+      "paper_source_commit": "414d7b61c4446dfefab894951109a2e79d83ff6f",
+      "source_date": "2025-11-15",
+      "event_general_dates": "2025-07-22/2025-07-26",
+      "paper_event_join": "not_established",
+      "publisher_date_previous_review": "2026-01-13",
+      "limitations": [
+        "Manuscript date is not event date",
+        "Different keynote is not this paper talk",
+        "No full proof review"
+      ]
+    },
+    {
+      "requirement_id": "00A17-topic-source",
+      "status": "pending_no_qualified_review_obtained",
+      "negative_candidate": "planetmath/00_General README classification row is not actual book review",
+      "candidate_commit": "f6b6fd1a507bf68001255dd23e173d82e41fb9ff"
+    }
+  ],
+  "persistent_cache_inventory": [
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/juliacon-site-repo-directory.json",
+      "sha256": "4c771903a58d8876cbf7a18792fc4d092d1514a5b780d522136534e1bb806587",
+      "bytes": 2269
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-LICENSE",
+      "sha256": "da036d02034e90710be49e5e770b0510e4bd2711b58b64a4eaf3a93e518e0340",
+      "bytes": 1197
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-Readme.md",
+      "sha256": "f9954add8f1507532548d6089c7ba372ae3a4687c88abe3cb245143460d0af5e",
+      "bytes": 2645
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper-branch-directory.json",
+      "sha256": "536f0edff5017d8f92d21b68e334c5e27de5c22d4f2dc7b4169b08ce916e9e53",
+      "bytes": 1252
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper-dir.json",
+      "sha256": "d31e5b54d70500fd30c6a21509406737fb906babd7a429c0a62bc3f3e154583b",
+      "bytes": 1436
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.tex",
+      "sha256": "d1827b2574ec62f10bc14145c1f3d4761f73b8ab1acd56e68a144c25b2e7a9f6",
+      "bytes": 66556
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.yml",
+      "sha256": "bbb555415882631be8dafd0d81148767b00d32786ae14037800b6f169a9c5e8b",
+      "bytes": 666
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/planetmath-LICENSE",
+      "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+      "bytes": 23342
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/planetmath-README.md",
+      "sha256": "e80d24a596bacc0c4a77043b80ebd416bceb77126ff6a9c48390cc30d07eb9b8",
+      "bytes": 1989
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/planetmath-dir.json",
+      "sha256": "2e8a63897b873ec7dd9b82853bdc7e92b4e10a6c6e0f05decb7f7073864e8085",
+      "bytes": 19570
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/requests.json",
+      "sha256": "448fb37c316e35ca04ee1a8f9754502fa046ea61950aacbd729892cb410d66b8",
+      "bytes": 10511
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/search-summary.json",
+      "sha256": "246e264a78e42646b2f8f97fa65ebfbdd69755d4850156bf500e62e8c0fcf467",
+      "bytes": 4556
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-README.md",
+      "sha256": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+      "bytes": 938
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-imprint.md",
+      "sha256": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad",
+      "bytes": 1263
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-dir.json",
+      "sha256": "022ab76dae0fb43a424e6eaa2c27fdbe52040c2f2d82a95e5084223b1eab397c",
+      "bytes": 2111
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-index.md",
+      "sha256": "732e383758f2e816c7c361692ebc9cd2ed94ad61b0f31a0f5e71e3fd65260172",
+      "bytes": 13044
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-keynotes.md",
+      "sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+      "bytes": 6080
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-minisymposia.md",
+      "sha256": "ab997d62ef2e4d6c886cae9ffcccc07174eafcd5cf9b78b53f312d3c44187efe",
+      "bytes": 8655
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-schedule.md",
+      "sha256": "2975c52cc64f6ed7a7ce2d5c07cff5c3ce352d99a3ad4e57f5e57d8f78356a9a",
+      "bytes": 98
+    }
+  ]
+}

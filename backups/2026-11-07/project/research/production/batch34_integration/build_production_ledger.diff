@@ -1,0 +1,229 @@
+--- base/build_production_ledger.py
++++ proposed/build_production_ledger.py
+@@ -157,6 +157,14 @@
+  'manuscript/foundations/real_intermediate_value_answers.md',
+  'manuscript/foundations/real_monotone_inverse.md',
+  'manuscript/foundations/real_monotone_inverse_answers.md']
++# Batch34 candidate: two bounded B3 units; not complete formal foundations.
++BRIDGE += ['manuscript/foundations/logic_connectives_quantifiers.md',
++ 'manuscript/foundations/logic_connectives_quantifiers_answers.md',
++ 'manuscript/foundations/sets_inclusion_operations.md',
++ 'manuscript/foundations/sets_inclusion_operations_answers.md']
++# Batch34 third bounded unit: B3.3 uses the frozen fct-unit source unchanged.
++BRIDGE += ['manuscript/foundations/finite_counting_reindex.md',
++ 'manuscript/foundations/finite_counting_reindex_answers.md']
+ # Each tuple: module id, stage, title, prerequisite module ids, MSC locating tags.
+ MODULES = [
+  ('reading','B0','阅读数学与核查论证',[],['00']),
+@@ -292,13 +300,37 @@
+                    'number-systems':BRIDGE[82:108:2],
+                    'real-algebra-equations':BRIDGE[108:110:2],
+                    'real-plane-geometry':BRIDGE[110:118:2],
+-                   'single-analysis':BRIDGE[118:138:2]}.get(mid,[])
++                   'single-analysis':BRIDGE[118:138:2],
++                   'logic-sets':BRIDGE[138:142:2],
++                   'induction-counting':BRIDGE[142:144:2]}.get(mid,[])
+         modules.append({'id': mid, 'stage': stage, 'title': title, 'prerequisites': deps,
+                         'msc_tags': tags, 'source_files': existing(root, planned),
+                         'implementation_status': 'partial_draft' if existing(root, planned) else 'unwritten',
+                         'precision': 'module_plan_not_complete_chapter_dependency_specification',
+                         'entry_diagnostic_status': 'needs_planning',
+                         'definition_and_theorem_anchors': []})
++        if mid == 'logic-sets':
++            modules[-1]['coverage'] = {
++                'scope': 'registered_logic_sets_entry_units_draft' if existing(root, planned) else 'none',
++                'completed': False,
++                'written_topics': ['B3.1经典命题语义与带域量词入口', 'B3.2包含、相等及有限次集合运算'] if existing(root, planned) else [],
++                'unwritten_topics': ['关系与等价类系统（仍待写，未编号）', '归纳/递归的形式构造', '完整一阶演算、公理集合论与数系形式基础'],
++                'boundary': '仅两项有限文本目标；不替代B1采用规则，不倒置既有证明依赖，不授予B3完成'}
++            modules[-1]['definition_and_theorem_anchors'] = [
++                anchor_ref(root, path, anchor) for path, anchors in [
++                    (BRIDGE[138], ['lcq-conventions','lcq-connectives','lcq-equivalence','lcq-inference','lcq-quantifiers','lcq-scope-negation','lcq-order-functions']),
++                    (BRIDGE[140], ['sio-background','sio-inclusion','sio-operations','sio-element-method','sio-distribution','sio-demorgan','sio-universe'])]
++                for anchor in anchors]
++        if mid == 'induction-counting':
++            modules[-1]['coverage'] = {
++                'scope': 'registered_finite_counting_entry_unit_draft' if existing(root, planned) else 'none',
++                'completed': False,
++                'written_topics': ['B3.3有限索引、编号长度唯一、同规模单满射与可逆重编号'] if existing(root, planned) else [],
++                'unwritten_topics': ['归纳与递归的形式构造', '一般计数、阶乘、排列个数与有限求和重排', '无限基数、线性基等长与维数'],
++                'boundary': '复用已证强归纳及最小元，不将其重复计为新成果；仅有限计数局部，不授予B3完成'}
++            modules[-1]['definition_and_theorem_anchors'] = [
++                anchor_ref(root, BRIDGE[142], anchor) for anchor in
++                ['fct-indices','fct-swap','fct-injection-bound','fct-cardinality','fct-equal-size','fct-reindex']]
+         if mid == 'rational-arithmetic':
+             arithmetic_parts = [
+                 (BRIDGE[28], ['加法与代表无关性', '相反数、加法消去与减法',
+@@ -3288,6 +3320,159 @@
+                      'research/production/real_function_limits_sources_2026-11-05.json',
+                      'research/production/monotone_inverse_pedagogy_source_review.md']}]
+ 
++# Batch34 proposed registration; no build approval follows from text review.
++UNIT_SPECS += [{'parent_code': '03Bxx',
++  'parent_chapter_number': 5,
++  'part_code': '03-XX',
++  'msc_leaf_codes': ['03B05', '03B10'],
++  'msc_cross_reference_codes': ['97E30'],
++  'module_ids': ['logic-sets'],
++  'code': 'B3.1',
++  'number': 70,
++  'title': '命题联结词与带域量词',
++  'anchor': 'lcq-unit',
++  'body': 'manuscript/foundations/logic_connectives_quantifiers.md',
++  'answers': 'manuscript/foundations/logic_connectives_quantifiers_answers.md',
++  'goals': ['辨认命题、开放条件、合法求值及采用语义与形式证明的区别',
++            '按全部赋值核五联结词、LQ1等价及LQ2前提保真',
++            '逐层解释带域量词、空限制域、辖域与否定',
++            '区分见证依赖顺序、函数存在与唯一条件并给完整反例'],
++  'definitions': ['lcq-conventions',
++                  'lcq-statements',
++                  'lcq-connectives',
++                  'lcq-equivalence',
++                  'lcq-inference',
++                  'lcq-quantifiers',
++                  'lcq-order-functions'],
++  'proved': [['LQ1', 'lcq-equivalence', '六个命题等价的全部赋值核验'],
++             ['LQ2', 'lcq-inference', '肯定前件保真与肯定后件反例'],
++             ['LQ3', 'lcq-scope-negation', '带域量词否定及空域边界'],
++             ['LQ4', 'lcq-order-functions', '统一见证蕴含逐输入见证及反向失败']],
++  'questions': 'lcq-q',
++  'answer_prefix': 'lcq-a',
++  'not_covered': ['完整一阶语言和公理演算、可靠性/完备性/可判定性', '集合公理、选择原则、归纳或递归的形式构造', 'B3其余目标与整个03B05/03B10/97E30'],
++  'prerequisites': [['manuscript/review_ch01/chapter.md', 'sec-00A05'],
++                    ['manuscript/review_ch01/chapter.md', 'sec-00A06'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-peano-rules'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-sets'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-pairs'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-correspondence'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-definition'],
++                    ['manuscript/foundations/rationals_division.md', 'rdiv-division']],
++  'adopted': [['lcq-conventions', '经典二值语义、元语言及非空背景域，限制集合可空']],
++  'adopted_external': [['manuscript/foundations/functions_definition.md',
++                        'fun-sets',
++                        '公开集合与限定子集背景'],
++                       ['manuscript/foundations/natural_numbers.md', 'b1-peano-rules', '自然数和相等规则']],
++  'source_records': ['research/production/logic_connectives_quantifiers_plan.md',
++                     'research/production/logic_connectives_quantifiers_sources.json',
++                     'research/production/logic_connectives_quantifiers_pedagogy_source_review.md']},
++ {'parent_code': '03Exx',
++  'parent_chapter_number': 8,
++  'part_code': '03-XX',
++  'msc_leaf_codes': ['03E20'],
++  'msc_cross_reference_codes': ['97E60'],
++  'module_ids': ['logic-sets'],
++  'code': 'B3.2',
++  'number': 71,
++  'title': '集合包含、相等与有限次集合运算',
++  'anchor': 'sio-unit',
++  'body': 'manuscript/foundations/sets_inclusion_operations.md',
++  'answers': 'manuscript/foundations/sets_inclusion_operations_answers.md',
++  'goals': ['在已给可空工作全集内区分成员、包含、相等及集合值',
++            '用两向包含证明基本关系及双补并保持范围',
++            '完整证明两条分配与同全集两条德摩根',
++            '用差运算迁移和变全集反例核条件边界'],
++  'definitions': ['sio-background', 'sio-inclusion', 'sio-operations'],
++  'proved': [['SI1', 'sio-inclusion', '包含反身、传递和空集包含'],
++             ['SI2', 'sio-element-method', '基本包含、并空集、交全集和双补'],
++             ['SI3', 'sio-distribution', '交对并与并对交的两向分配'],
++             ['SI4', 'sio-demorgan', '同全集两条德摩根及空U'],
++             ['全集比较', 'sio-universe', '嵌套全集补再交回的两向公式']],
++  'questions': 'sio-q',
++  'answer_prefix': 'sio-a',
++  'not_covered': ['任意集合族并交、幂集与基数理论', '集合论公理体系与选择原则', '数系的集合模型、关系理论与B3.3', '整个03E20/97E60'],
++  'prerequisites': [['manuscript/foundations/functions_definition.md', 'fun-sets'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-peano-rules'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md', 'lcq-conventions'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md', 'lcq-connectives'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md', 'lcq-equivalence'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md', 'lcq-inference'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md', 'lcq-quantifiers'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md',
++                     'lcq-scope-negation']],
++  'adopted': [['sio-background', '工作U可空；外延及已给集合内条件子集为采用背景']],
++  'adopted_external': [['manuscript/foundations/functions_definition.md',
++                        'fun-sets',
++                        '外延相等与明确有限/条件子集背景'],
++                       ['manuscript/foundations/logic_connectives_quantifiers.md',
++                        'lcq-conventions',
++                        '经典二值元语言；工作U与非空语义背景分层']],
++  'source_records': ['research/production/sets_inclusion_operations_plan.md',
++                     'research/production/sets_inclusion_operations_sources.json',
++                     'research/production/sets_inclusion_operations_math_review.md']}]
++
++# Batch34 third unit, added after the two reviewed logic/sets candidates.
++UNIT_SPECS += [{'parent_code': '03Exx',
++  'parent_chapter_number': 8,
++  'part_code': '03-XX',
++  'msc_leaf_codes': ['03E10'],
++  'msc_cross_reference_codes': ['97E60', '05A05'],
++  'module_ids': ['induction-counting'],
++  'code': 'B3.3',
++  'number': 72,
++  'title': '有限索引、计数唯一性与重编号',
++  'anchor': 'fct-unit',
++  'body': 'manuscript/foundations/finite_counting_reindex.md',
++  'answers': 'manuscript/foundations/finite_counting_reindex_answers.md',
++  'goals': ['区分有限表的位置数、不同值数与双射编号，并包含空索引情形',
++            '以目标长度归纳证明单射索引长度不增，再证明编号长度唯一',
++            '用确定最小原像证明同规模有限函数单满射等价并导出抽屉推论',
++            '按准确复合方向恢复置换重编号，并用非双射反例说明信息丢失'],
++  'definitions': ['fct-indices', 'fct-cardinality', 'fct-reindex'],
++  'proved': [['FCT1', 'fct-swap', '有界索引交换逐点自逆且双射'],
++             ['FCT2', 'fct-injection-bound', '存在单射I_m到I_n当且仅当m不大于n'],
++             ['FCT3', 'fct-cardinality', '有限集合双射编号长度唯一及空集边界'],
++             ['FCT4', 'fct-equal-size', '同规模有限函数单满双等价与抽屉推论'],
++             ['FCT5', 'fct-reindex', '索引置换的逆恢复与值集保持']],
++  'questions': 'fct-q',
++  'answer_prefix': 'fct-a',
++  'not_covered': ['无限基数、一般加乘计数、阶乘与排列个数',
++                  '有限求和任意置换不变性及多重求和换序',
++                  '关系及等价类系统、公理集合论与一般选择原则',
++                  '线性空间、线性基等长与维数定理',
++                  '整个03E10、05A05、97E60及B3阶段'],
++  'prerequisites': [['manuscript/foundations/natural_numbers.md', 'b1-induction'],
++                    ['manuscript/foundations/natural_order.md', 'ord-predecessor'],
++                    ['manuscript/foundations/natural_order.md', 'ord-partial-order'],
++                    ['manuscript/foundations/natural_order.md', 'ord-strict-equivalence'],
++                    ['manuscript/foundations/natural_order.md', 'ord-successor-comparison'],
++                    ['manuscript/foundations/natural_order.md', 'ord-trichotomy'],
++                    ['manuscript/foundations/natural_order.md', 'ord-strong-induction'],
++                    ['manuscript/foundations/natural_order_answers.md', 'ord-a07'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-definition'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-equality'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-identity'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-composition'],
++                    ['manuscript/foundations/functions_bijections.md', 'bij-injective'],
++                    ['manuscript/foundations/functions_bijections.md', 'bij-surjective'],
++                    ['manuscript/foundations/functions_bijections.md', 'bij-bijective'],
++                    ['manuscript/foundations/functions_bijections.md', 'bij-composition'],
++                    ['manuscript/foundations/functions_inverse.md', 'inv-reverse-graph'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-indices'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-sets']],
++  'adopted': [['fct-unit', '给定集合、条件子集与外延背景沿前文采用；不在此重建公理集合论']],
++  'adopted_external': [['manuscript/foundations/functions_definition.md',
++                        'fun-sets',
++                        '给定集合及条件子集、外延背景'],
++                       ['manuscript/foundations/natural_numbers.md',
++                        'b1-induction',
++                        '公开采用的普通归纳；强归纳与最小元为既有已证接口']],
++  'source_records': ['research/production/finite_counting_bridge_plan.md',
++                     'research/production/finite_counting_reindex_sources.json',
++                     'research/production/finite_counting_reindex_math_review.md',
++                     'research/production/finite_counting_reindex_pedagogy_source_review.md']}]
++
+ def anchor_ref(root, path, anchor):
+     text = (root/path).read_text() if (root/path).is_file() else ''
+     found = '{#'+anchor+'}' in text or 'id="'+anchor+'"' in text
+@@ -3759,6 +3944,12 @@
+                     chapter['learning_entry'].update(status='sequence_entry_defined_chapter_pending',
+                         module_ids=['single-analysis'])
+                     chapter['coverage']['unwritten_topics'] = '仅登记B4.1—B4.5实数数列收敛、四则、比较夹逼、单调收敛、子列、BW、有界子列判别和实数柯西判据；上/下极限、级数及其余无穷极限主题待写，整章未完成'
++                if code=='03Bxx':
++                    chapter['learning_entry'].update(status='logic_entry_defined_chapter_pending', module_ids=['logic-sets'])
++                    chapter['coverage']['unwritten_topics'] = '仅B3.1经典命题语义及带域量词有限入口；完整03B05/03B10、一阶演算、可靠性、完备性与其他逻辑主题未完成'
++                if code=='03Exx':
++                    chapter['learning_entry'].update(status='sets_counting_entries_defined_chapter_pending', module_ids=['logic-sets','induction-counting'])
++                    chapter['coverage']['unwritten_topics'] = '仅B3.2给定全集内的包含、相等及有限次运算，以及B3.3有限索引计数唯一性和重编号；关系、幂集基数、无限基数、公理集合论、选择原则与其余集合论未完成'
+                 chapters.append(chapter)
+                 for leaf in children[code]:
+                     has_anchor = code=='00Axx' and '{#sec-'+leaf['code']+'}' in ch01_text

@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-21T16:16:47.298842+00:00",
+  "scope": "第一部分第一章的等式规则、除零限制、反例、有限完整枚举，以及Clay黎曼猜想官方页访问状态；无扩展题库采集。",
+  "method": "无需登录的公开HTTPS GET，保留TLS校验；不使用或提取凭证，不绕过代理；只保存URL、访问元数据、哈希、许可短摘与独立短摘要，不保存教材题干、解答或全文。",
+  "sources": [
+    {
+      "id": "CH01-ALG",
+      "title": "Elementary Algebra 2e",
+      "publisher": "OpenStax, Rice University",
+      "public_url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+      "access_status": "verified_http_200",
+      "license": {
+        "declared": "CC BY-NC-SA 4.0",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/README.md",
+          "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+          "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/elementary-algebra-2e.collection.xml"
+        ],
+        "short_evidence": "Attribution-NonCommercial-ShareAlike 4.0 International",
+        "scope": "README explicitly lists Elementary Algebra 2e; collection metadata also declares by-nc-sa/4.0. This is not an unrestricted-reuse declaration."
+      },
+      "evidence_requests": [
+        {
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/README.md",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/README.md",
+          "bytes": 1114,
+          "sha256": "158ffba799594279d784587ee9a46cdf331fad43285d69abefe772a9f8fa8288",
+          "checked_at_utc": "2026-10-21T16:16:47.356046+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+          "bytes": 21442,
+          "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+          "checked_at_utc": "2026-10-21T16:16:47.448451+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/elementary-algebra-2e.collection.xml",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/elementary-algebra-2e.collection.xml",
+          "bytes": 5256,
+          "sha256": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72",
+          "checked_at_utc": "2026-10-21T16:16:47.533317+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82463/index.cnxml",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82463/index.cnxml",
+          "bytes": 122749,
+          "sha256": "b6345a5a6a99108f9d32d6518445a4ae70a6b0c54a258021dffc6f2b77b8278a",
+          "checked_at_utc": "2026-10-21T16:16:47.620759+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82464/index.cnxml",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82464/index.cnxml",
+          "bytes": 133732,
+          "sha256": "099aae173772040a83d8c9160980922315352fc2a699af7c6f25ddc594a0c0bc",
+          "checked_at_utc": "2026-10-21T16:16:47.700648+00:00"
+        }
+      ],
+      "topic_checks": [
+        {
+          "topic": "等式同加、同减",
+          "section": "Solve Equations Using the Subtraction and Addition Properties of Equality",
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82463/index.cnxml",
+          "summary_zh": "该节分别陈述等式两边减去同一数、加上同一数仍保持相等，并用这些操作解方程。书稿可据此核对规则；双向等价性仍应由书稿自行写出逆操作论证。",
+          "verified": true
+        },
+        {
+          "topic": "除零限制与乘除的区别",
+          "section": "Solve Equations using the Division and Multiplication Properties of Equality",
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m82464/index.cnxml",
+          "summary_zh": "除法性质明确要求除数非零；乘法性质允许乘同一数并保留等式成立。后者不意味着乘零后仍能逆向恢复原方程。",
+          "verified": true
+        }
+      ],
+      "reuse_decision": "仅作定义、条件和来源核对；不复制、翻译或改编教材题干、解答、插图或连续正文。不得将许可标为CC BY或无条件商业使用。"
+    },
+    {
+      "id": "CH01-LOGIC",
+      "title": "Discrete Mathematics: An Open Introduction",
+      "author": "Oscar Levin",
+      "public_url": "https://github.com/oscarlevin/discrete-book",
+      "access_status": "verified_http_200",
+      "edition_note": "Inspected active frontmatter identifies improvements to the fourth edition and declares CC BY-NC-SA 4.0. README contains mixed branch/edition descriptions; it is not the sole license evidence.",
+      "license": {
+        "declared": "CC BY-NC-SA 4.0 for inspected fourth-edition material",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+          "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx"
+        ],
+        "short_evidence": "starting with the fourth edition",
+        "earlier_editions": "LICENSE separately states released third and earlier editions are CC BY-SA 4.0; those earlier editions were not used for the topical checks."
+      },
+      "evidence_requests": [
+        {
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+          "bytes": 487,
+          "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+          "checked_at_utc": "2026-10-21T16:16:47.735722+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+          "bytes": 13015,
+          "sha256": "627888abb8f8c3765eb00e1ed8488433045abfd88e9e90ccadf07beb9f050d1a",
+          "checked_at_utc": "2026-10-21T16:16:47.801342+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+          "bytes": 48813,
+          "sha256": "ce6bd7f034383c08bc8ae0edbafa78a406679c1f6129d829541be0df56f07438",
+          "checked_at_utc": "2026-10-21T16:16:47.896098+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-proofs.ptx",
+          "http_status": 200,
+          "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-proofs.ptx",
+          "bytes": 58171,
+          "sha256": "c97d90f3574c85e5d45a289c69e57a5d4db9f69e1aadda20ab00ce36c6016e3f",
+          "checked_at_utc": "2026-10-21T16:16:48.010283+00:00"
+        }
+      ],
+      "topic_checks": [
+        {
+          "topic": "反例与量词",
+          "section": "Rules of Logic — Equivalence for Quantified Statements / Quantifiers and Negation",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+          "summary_zh": "活动正文明确区分全称与存在主张，并说明一个满足对象范围而违反结论的实例即可否定全称命题。这不等于一个支持性例子能够证明全称命题。",
+          "verified": true
+        },
+        {
+          "topic": "有限穷举必须覆盖全部情况",
+          "section": "Rules of Logic — Truth Tables",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+          "summary_zh": "真值表逐行覆盖命题变元所有可能的真假组合，以判断复合命题。此处核实的是有限完整列举的一个具体逻辑实例，不是用有限抽样验证无限对象全集。",
+          "verified": true
+        },
+        {
+          "topic": "分类论证的穷尽性",
+          "section": "Proofs — Direct Proof",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-proofs.ptx",
+          "summary_zh": "活动正文在直接证明中明确要求所讨论的情况覆盖所有可能，之后才汇总结论。这里只记录一般方法，不复制该书的具体问题或证明。",
+          "verified": true
+        }
+      ],
+      "comment_handling": "XML comments were removed before topical checks. The source file includes commented-out sections titled Proof by (counter) Example and Proof by Cases; these were not treated as active published sections or as the evidence for counterexamples.",
+      "reuse_decision": "仅引用并核对通用逻辑事实；不转载原题、解答或案例。"
+    },
+    {
+      "id": "CH01-CLAY-RH",
+      "title": "Riemann Hypothesis — Clay Mathematics Institute",
+      "public_url": "https://www.claymath.org/millennium/riemann-hypothesis/",
+      "access_status": "blocked_by_environment_proxy",
+      "attempted_at_utc_date": "2026-10-21",
+      "observed_error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "http_status": null,
+      "proxy_connect_status": 403,
+      "license": {
+        "declared": null,
+        "status": "not_inspected"
+      },
+      "summary_zh": "本次官方页面未能通过环境的HTTPS代理连接，未取得页面正文。不能据此次请求核验黎曼猜想截至核查时刻的官方最新状态，也不能把403解释为Clay源站拒绝所有公众访问。",
+      "reuse_decision": "可保留为官方待核查链接；禁止写作“本次已阅读官方页面并确认当前状态”。"
+    },
+    {
+      "id": "CH01-PROOF-CANDIDATE",
+      "title": "Book of Proof — Richard Hammack",
+      "public_url": "https://richardhammack.github.io/BookOfProof/",
+      "access_status": "blocked_by_environment_proxy",
+      "attempted_at_utc_date": "2026-10-21",
+      "observed_error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "http_status": null,
+      "proxy_connect_status": 403,
+      "license": {
+        "declared": null,
+        "status": "not_verified_in_this_check"
+      },
+      "summary_zh": "候选公开证明教材入口本次未取得。未依据记忆宣称具体许可，也未用其支持本章论证。",
+      "reuse_decision": "未采用"
+    }
+  ],
+  "claims_verified": [
+    "等式两边同加同减保持相等",
+    "等式两边除以同一数须明确该数非零",
+    "一个反例可否定全称命题",
+    "有限穷举须覆盖全部可能情形"
+  ],
+  "claims_not_verified": [
+    "Clay官方页面当前正文及其最新状态",
+    "未访问资料的许可或内容",
+    "任何外部教材题目解答的逐题正确性"
+  ],
+  "diagnostic_notes": [
+    "OpenStax collection module m82462 was inspected and is titled Introduction; it was not cited for the algebraic properties. The two relevant modules are m82463 and m82464.",
+    "No external problem statements, worked answers, illustrations, or textbook body files are included in these outputs."
+  ]
+}

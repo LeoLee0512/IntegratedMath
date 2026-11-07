@@ -1,0 +1,81 @@
+{
+  "mapping_only_without_scope_update": {
+    "passed": false,
+    "reason": "Scope plan topic_source_status is not verified"
+  },
+  "complete_limited_source_mapping": {
+    "passed": true,
+    "result": {
+      "status": "verified",
+      "source_ids": [
+        "SRC-S4-STACKS-SCHEMES"
+      ],
+      "blocking_issues": []
+    }
+  },
+  "general_method_rejected": {
+    "passed": false,
+    "reason": "00-02-topic-source: SRC-S4-STACKS-SCHEMES: General method source cannot replace topic-specific evidence"
+  },
+  "wrong_objective_rejected": {
+    "passed": false,
+    "reason": "00-02-topic-source: SRC-S4-STACKS-SCHEMES: Source content coverage does not match required objectives"
+  },
+  "access_as_content_review_rejected": {
+    "passed": false,
+    "reason": "00-02-topic-source: SRC-S4-STACKS-SCHEMES: Access metadata cannot serve as its own content review"
+  },
+  "source_only_binding_simulation": {
+    "math": {
+      "passed": false,
+      "reason": "Exact source snapshot mismatch"
+    },
+    "pedagogy": {
+      "passed": false,
+      "reason": "Exact source snapshot mismatch"
+    },
+    "sources": {
+      "passed": false,
+      "reason": "Exact source snapshot mismatch"
+    },
+    "build": {
+      "passed": false,
+      "reason": "Exact source snapshot mismatch"
+    },
+    "visual": {
+      "passed": false,
+      "reason": "Valid build record required before visual acceptance"
+    }
+  },
+  "scope_only_binding_simulation": {
+    "math": {
+      "passed": false,
+      "reason": "Scope plan hash mismatch"
+    },
+    "pedagogy": {
+      "passed": false,
+      "reason": "Scope plan hash mismatch"
+    },
+    "sources": {
+      "passed": false,
+      "reason": "Scope plan hash mismatch"
+    },
+    "build": {
+      "passed": false,
+      "reason": "Scope plan hash mismatch"
+    },
+    "visual": {
+      "passed": false,
+      "reason": "Valid build record required before visual acceptance"
+    }
+  },
+  "boundary": "Only the individual 00-02 requirement is tested as satisfiable; no complete-part attestation is issued or rewritten. Zero hashes simulate changed snapshots, not actual source revisions.",
+  "input_hashes": {
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "research/production/part1_topic_sources.json": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
+    "research/production/part1_research_exposition_followup.json": "7792670dd10a1cfe8c7cff748f26bc619b90022d56f322c49625bbe1374ab109",
+    "research/production/part1_research_exposition_followup.md": "8664bfbf0b615e688d1ad84d4c95d0e79ff35935427965b380e96df908fbd0e7",
+    "tools/validate_part1_acceptance.py": "f69009bae9423f9758fbba4c1d702b37818e6aa34289d80c10b27e39b4cc3b70",
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc"
+  }
+}

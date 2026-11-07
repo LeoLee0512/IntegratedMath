@@ -1,0 +1,573 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-27T16:26:42.379214+00:00",
+  "source_sha256": {
+    "tools/rational_multiplication.py": "b35d7d5c33f24f2c5ec1fa185468b6a291b5b68a93bc2f96dfb2ffa1093350b0",
+    "tools/validate_rational_multiplication.py": "9759586307597128ce72989df30db39f5a81406a90b85c45badef56adf44b1ee",
+    "tools/rational_addition.py": "ce2b320be71d5cf352e98d64f4a4a791e3478c8b5572e385ae194b4133cf87a4",
+    "tools/extended_euclidean.py": "a76970f7e8883073476be72dac9635e788030761c3154931756b77f30970dcd9",
+    "tools/integer_euclidean.py": "1059fa4bb23e44c6e6fbbc57006b3f2f072211790114226576587f1ca47ad01f",
+    "tools/natural_algorithms.py": "630c87b88312bee1014bf0cd3c18f087cdf4381ccdbd609fded5052fe7e04715"
+  },
+  "scope": {
+    "record_a": [
+      -6,
+      6
+    ],
+    "record_b": [
+      1,
+      5
+    ],
+    "triple_a": [
+      -2,
+      2
+    ],
+    "triple_b": [
+      1,
+      3
+    ],
+    "embedding": [
+      -8,
+      8
+    ],
+    "scaling_pairs": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ]
+  },
+  "counts": {
+    "records": 65,
+    "reciprocals": 60,
+    "zero_reciprocal_rejections": 5,
+    "product_pairs": 4225,
+    "division_pairs": 3900,
+    "zero_division_rejections": 325,
+    "representative_changes": 8450,
+    "association_triples": 3375,
+    "distributivity_triples": 3375,
+    "cancellation_triples": 2700,
+    "integer_embedding_pairs": 289,
+    "invalid_input_rejections": 60
+  },
+  "examples": [
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -2,
+          3
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "result": [
+        -3,
+        2
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -2,
+          3
+        ],
+        [
+          -9,
+          4
+        ]
+      ],
+      "result": [
+        3,
+        2
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          0,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "result": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "reciprocal",
+      "inputs": [
+        [
+          -6,
+          8
+        ]
+      ],
+      "result": [
+        -4,
+        3
+      ]
+    },
+    {
+      "operation": "reciprocal",
+      "inputs": [
+        [
+          6,
+          8
+        ]
+      ],
+      "result": [
+        4,
+        3
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          2,
+          3
+        ],
+        [
+          -4,
+          5
+        ]
+      ],
+      "result": [
+        -5,
+        6
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          0,
+          7
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "result": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          -3,
+          1
+        ],
+        [
+          -6,
+          1
+        ]
+      ],
+      "result": [
+        1,
+        2
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "result": [
+        -2,
+        5
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          0,
+          7
+        ],
+        [
+          -3,
+          2
+        ]
+      ],
+      "result": [
+        0,
+        1
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          2,
+          4
+        ],
+        [
+          -6,
+          10
+        ]
+      ],
+      "result": [
+        -3,
+        10
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -6,
+          15
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "result": [
+        -2,
+        7
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          2,
+          3
+        ],
+        [
+          -15,
+          35
+        ]
+      ],
+      "result": [
+        -2,
+        7
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -2,
+          3
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "result": [
+        -5,
+        6
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -3,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "result": [
+        -6,
+        5
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          1,
+          2
+        ],
+        [
+          9,
+          18
+        ]
+      ],
+      "result": [
+        1,
+        4
+      ]
+    },
+    {
+      "operation": "reciprocal",
+      "inputs": [
+        [
+          -4,
+          6
+        ]
+      ],
+      "result": [
+        -3,
+        2
+      ]
+    },
+    {
+      "operation": "reciprocal",
+      "inputs": [
+        [
+          -6,
+          15
+        ]
+      ],
+      "result": [
+        -5,
+        2
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          -5,
+          6
+        ],
+        [
+          -2,
+          9
+        ]
+      ],
+      "result": [
+        15,
+        4
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -2,
+          9
+        ],
+        [
+          15,
+          4
+        ]
+      ],
+      "result": [
+        -5,
+        6
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          6,
+          5
+        ],
+        [
+          -3,
+          7
+        ]
+      ],
+      "result": [
+        -14,
+        5
+      ]
+    },
+    {
+      "operation": "multiply",
+      "inputs": [
+        [
+          -3,
+          7
+        ],
+        [
+          -14,
+          5
+        ]
+      ],
+      "result": [
+        6,
+        5
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          3,
+          5
+        ],
+        [
+          -4,
+          7
+        ]
+      ],
+      "result": [
+        -21,
+        20
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          -6,
+          15
+        ],
+        [
+          8,
+          21
+        ]
+      ],
+      "result": [
+        -21,
+        20
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          -6,
+          1
+        ],
+        [
+          -15,
+          1
+        ]
+      ],
+      "result": [
+        2,
+        5
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          6,
+          1
+        ],
+        [
+          -15,
+          1
+        ]
+      ],
+      "result": [
+        -2,
+        5
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "result": [
+        3,
+        5
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "result": [
+        2,
+        5
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "result": [
+        1,
+        1
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "result": [
+        1,
+        6
+      ]
+    },
+    {
+      "operation": "divide",
+      "inputs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "result": [
+        3,
+        2
+      ]
+    }
+  ],
+  "independent_model": "Python standard-library Fraction and exact integer cross products; no floating-point arithmetic.",
+  "limits": "Finite implementation and theorem-instance checks only, not general proofs or formal verification. Zero reciprocal/division are rejected, not assigned a conventional value."
+}

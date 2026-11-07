@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "status": "automated_checks_passed",
+  "command": "python tools/build_part1_review.py --plan research/production/part1_scope_plan.json && python tools/validate_part1_review.py --package",
+  "built_at": "2026-11-05T17:18:49.714856+00:00",
+  "plan_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+  "source_sha256": {
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "build_input_sha256": {
+    "data/catalog_titles.json": "bbb3ab5bf9fb7b07dad10dd5b61a5582fce61a61f1a401c72850cc6bf20240e7",
+    "data/catalog_titles_zh.json": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7",
+    "data/msc_taxonomy.json": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "dist/综合数学_完整数学目录.md": "cce6a593789d96bd1ba663f8bbf2dee520239891a9d1cfb497aee10de3141cb8",
+    "figures/ch01_disjoint.png": "e5c540eaa457bc3f5abd960e6cb139a18e9309d142a238eaabb7bca740a4bbae",
+    "figures/ch01_overlap.png": "e83c66be6d000753bc2a47f0aa80a1a1da5ce1721cc1b314de4bba423fcf66b1",
+    "figures/ch01_rhythm.png": "e2d57333a2a64be90a324df5e66e7bc8fe830987a2f427c522c69dbd90342840",
+    "figures/ch01_square.png": "bbde875aff34cc2b765dbb1beb50b65643b6c7329513a14546ae22f5a29197c8",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "research/production/part1_scope_plan.json": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+    "tools/build_part1_review.py": "065fe80c5d26116b76ce64a2e6dc281f28fd25ab9026ef432826b33ba4de76dd",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56",
+    "tools/pdf_header.tex": "50259c347f8a858a94e432639b4cae8a549b6a1e7e9fb9a5a488db7507fd90b5",
+    "tools/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c",
+    "tools/validate_part1_review.py": "0e7e67f6373cf1bf2c8ed971dcab8e751c7695ce3c7370be03f34230ed3d0748"
+  },
+  "section_codes": [
+    "00-01",
+    "00-02",
+    "00A05",
+    "00A06",
+    "00A07",
+    "00A08",
+    "00A09",
+    "00A15",
+    "00A17",
+    "00A20",
+    "00A22",
+    "00A27",
+    "00A30",
+    "00A35",
+    "00A64",
+    "00A65",
+    "00A66",
+    "00A67",
+    "00A69",
+    "00A71",
+    "00A72",
+    "00A79",
+    "00A99",
+    "00B05",
+    "00B10",
+    "00B15",
+    "00B20",
+    "00B25",
+    "00B30",
+    "00B50",
+    "00B55",
+    "00B60",
+    "00B99"
+  ],
+  "blocking_issues": [],
+  "artifact_sha256": {
+    "dist/part1/figures/ch01_disjoint.png": "e5c540eaa457bc3f5abd960e6cb139a18e9309d142a238eaabb7bca740a4bbae",
+    "dist/part1/figures/ch01_overlap.png": "e83c66be6d000753bc2a47f0aa80a1a1da5ce1721cc1b314de4bba423fcf66b1",
+    "dist/part1/figures/ch01_rhythm.png": "e2d57333a2a64be90a324df5e66e7bc8fe830987a2f427c522c69dbd90342840",
+    "dist/part1/figures/ch01_square.png": "bbde875aff34cc2b765dbb1beb50b65643b6c7329513a14546ae22f5a29197c8",
+    "dist/part1/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c",
+    "dist/part1/综合数学_完整数学目录.html": "60d4f6094da43fa6a6dc2e76ff91ba8eec0aa575357e715a927a32f86dc56071",
+    "dist/part1/综合数学_完整数学目录.md": "f614a34e066de05b6cf8cdf788f2f37673495031a8b2a5eaac3b53294fb6c368",
+    "dist/part1/综合数学_完整数学目录.pdf": "2ead115d44e99663d56999ce723c25735a143c7c8c8c2236cf9b8d24f6a5a463",
+    "dist/part1/综合数学_第一部分完整目录版.html": "c020ef77dc419297452efde6cf3c2664b94a620c73507f49ef43b04dcd61b645",
+    "dist/part1/综合数学_第一部分完整目录版.md": "db93ee12263b5555ebc40f57cbef98098af149e820e1c823f00b1ab080fb46ff",
+    "dist/part1/综合数学_第一部分完整目录版.pdf": "081f32622273bc57b1d8803ad538433e9f119d2a79908f228c5b805afc22c5a3",
+    "dist/part1/综合数学_第一部分审阅版.html": "1e1ccc62f1450f42bb6d7ca3fee42cec2a9286cf4acf3c9a0919bd62b779d967",
+    "dist/part1/综合数学_第一部分审阅版.md": "0d63f7586034404203803ca124e2570bdac033d3dfb19e57f779c38c4539ee1a",
+    "dist/part1/综合数学_第一部分审阅版.pdf": "20cfea1ce2bd74740af898dea9d306f31427387d6c6aeb990ba148fc599cbd75",
+    "dist/part1/综合数学_第一部分伴生文件.zip": "0fe93595a3d6b119c8c87b5d28739cc66cf7a042e78b510352e0daa9ee112dd2"
+  },
+  "pdf_page_counts": {
+    "dist/part1/综合数学_第一部分完整目录版.pdf": 268,
+    "dist/part1/综合数学_第一部分审阅版.pdf": 51,
+    "dist/part1/综合数学_完整数学目录.pdf": 218
+  },
+  "checks": {
+    "scope_33_sections": true,
+    "formula_rendering": true,
+    "images": true,
+    "cross_references": true,
+    "exercise_answer_pairs": true,
+    "offline_html": true,
+    "source_bundle": true,
+    "page_boundaries": true
+  },
+  "evidence": [
+    {
+      "path": "build/part1/manifest.json",
+      "sha256": "9d62db5030e915ba1a594978d2b7674a1d500030e6559d7ab8de99bfa00bd264"
+    },
+    {
+      "path": "build/part1/validation.json",
+      "sha256": "c65aa6df0cc6e02afa06bae58b36c952896ee7ab860f477dd9c9d61fac96afb1"
+    }
+  ],
+  "package_supplement": {
+    "method": "After official validate_part1_review.py --package, called unchanged create_package(manifest, report, rendered + explicit_extra_files) through /tmp/seal_part1_three_sources.py. No bound tool or source edits.",
+    "extra_groups": [
+      "build/part1/root-details/full-{222,232,234,267}.png",
+      "local-inputs/part1-before-three-source-647d6bc/dist/part1/综合数学_完整数学目录.pdf",
+      "local-inputs/part1-before-three-source-647d6bc/build/part1/validation.json",
+      "research/production/part1_three_source_math_delta/**",
+      "research/production/history/pre-three-source-revision-647d6bc/research/**"
+    ],
+    "historical_manuscripts_excluded": "Avoid duplicate source suffixes; retained separately in pre-revision archive.",
+    "validation_sha256": "c65aa6df0cc6e02afa06bae58b36c952896ee7ab860f477dd9c9d61fac96afb1"
+  }
+}

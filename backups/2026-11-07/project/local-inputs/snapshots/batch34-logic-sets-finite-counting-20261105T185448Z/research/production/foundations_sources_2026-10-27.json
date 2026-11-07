@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-27T12:40:49.562951+00:00",
+  "scope": "基础材料：自然数归纳与递归、十进制位值、自然数及整数的带余除法；附教学审查准备。",
+  "method": "先读本仓库research/ch01_source_checks.json/.md，复用其中OpenStax与Oscar Levin来源。公开HTTPS只读请求，经已有代理且保持TLS校验；不使用登录、不提取凭证、不绕过访问控制。解析XML时不把注释当作活动正文。",
+  "network_context": {
+    "policy_file": "/etc/codex/network-policy.json",
+    "startup_http_mode": "restricted",
+    "vpn_configured": false,
+    "runtime_observations_current": true,
+    "runtime_network_state": "unknown",
+    "interpretation": "不把unknown写成已执行的网络策略；各URL可读性由本次实际响应单独判断。"
+  },
+  "request_summary": {
+    "total": 16,
+    "http_200": 13,
+    "http_404": 3,
+    "note": "三次404是对既有教材猜测的源文件路径不存在，随后读取公开目录找出正确路径；不是鉴权失败，也未绕过网络限制。"
+  },
+  "sources": [
+    {
+      "id": "FND-OPENSTAX",
+      "title": "Prealgebra 2e",
+      "authors": [
+        "Lynn Marecek",
+        "MaryAnne Anthony-Smith",
+        "Andrea Honeycutt Mathis"
+      ],
+      "publisher": "OpenStax, Rice University",
+      "author_evidence": {
+        "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81241/index.cnxml",
+        "location": "Preface > About the Authors > Senior Contributing Authors；CNXML section id=eip-653",
+        "verified": true
+      },
+      "public_url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+      "license": {
+        "declared": "CC BY-NC-SA 4.0",
+        "verified": true,
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+          "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/prealgebra-2e.collection.xml"
+        ],
+        "short_evidence": "Attribution-NonCommercial-ShareAlike 4.0 International",
+        "scope": "仓库LICENSE和Prealgebra 2e集合元数据均明确该许可；不是无条件商业复用许可。"
+      },
+      "checks": [
+        {
+          "topic": "十进制位值",
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81243/index.cnxml",
+          "location": "Introduction to Whole Numbers > Identify the Place Value of a Digit；section id=fs-id1883656",
+          "status": "verified",
+          "finding_zh": "活动正文明确相邻数位左边一位的单位值是右边一位的十倍；适合作位值意义的教学参考。没有据此声称该节证明了任意底数表示的存在性与唯一性。"
+        },
+        {
+          "topic": "零的占位作用",
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81243/index.cnxml",
+          "location": "Introduction to Whole Numbers > Use Place Value to Write Whole Numbers；section id=fs-id1339359",
+          "status": "verified",
+          "finding_zh": "活动正文要求需要时写出占位零。书稿应独立解释数位与数字、内部零与前导零的区别。"
+        },
+        {
+          "topic": "自然数含零的约定",
+          "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81243/index.cnxml",
+          "location": "Introduction to Whole Numbers > Identify Counting Numbers and Whole Numbers；section id=fs-id1830385",
+          "status": "verified_with_convention_difference",
+          "finding_zh": "该书把counting/natural numbers从1起，把包括0者称whole numbers。本书若约定自然数从0开始，必须明说；不能把该教材的英语分类直接搬来作为唯一约定。"
+        },
+        {
+          "topic": "十进制书写与汉语读数",
+          "status": "limited",
+          "finding_zh": "该书英文读数按三位分组（千、百万等），不能直接替代中文按万、亿等单位的读法；本稿中文读数例子须原创并单独核查。"
+        }
+      ],
+      "reuse_decision": "只核对定义、语义与教学层次并引用；不转载、翻译或改编原书题目、答案、插图及连续正文。"
+    },
+    {
+      "id": "FND-LEVIN",
+      "title": "Discrete Mathematics: An Open Introduction",
+      "author": "Oscar Levin",
+      "edition": "第四版活动源码；bookinfo document-id=dmoi-4，说明2024年8月发行第四版",
+      "public_url": "https://github.com/oscarlevin/discrete-book",
+      "author_provenance": "沿用本仓库已核验CH01-LOGIC记录；当前bookinfo也明确称Levin的第四版。",
+      "license": {
+        "declared": "CC BY-NC-SA 4.0 for fourth edition",
+        "verified": true,
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE"
+        ],
+        "scope": "当前LICENSE区分第四版及以后与已发布第三版及更早版本；本次不把旧版CC BY-SA 4.0套用于当前活动文件。"
+      },
+      "checks": [
+        {
+          "topic": "数学归纳法的结构",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-induction.ptx",
+          "location": "Proof by Induction > Formalizing Proofs > Induction Proof Structure；subsection xml:id=subsec_induction-formproofs",
+          "status": "verified",
+          "finding_zh": "明确分别证明基例以及对每个适当自然数成立的归纳步。归纳假设只在证明相邻一步的条件命题时使用，不能先假定所有项成立。"
+        },
+        {
+          "topic": "递归定义的初值与递推规则",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-basics.ptx",
+          "location": "Describing Sequences > Sequences and Formulas > Recursive definition；根xml:id=sec_seq_intro",
+          "status": "verified_with_scope_limit",
+          "finding_zh": "活动定义同时要求递推关系与初始条件。它是数列入门说明，不是任意递推关系都存在唯一解的一般递归定理，也不能以其中简略的初值数量说明覆盖全部非线性、隐式递推。"
+        },
+        {
+          "topic": "从归纳直观到采用的基础规则",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-induction.ptx",
+          "location": "Proof by Induction > Recursive Reasoning；subsection xml:id=subsec_induction-recursion",
+          "status": "verified_with_scope_limit",
+          "finding_zh": "该节给出递归推理动机与归纳证明结构。教材比喻不是从更弱公理导出归纳原理的形式证明；本稿须声明采用归纳原理，而不是把可数到若干项当成证明。"
+        },
+        {
+          "topic": "整数带余除法",
+          "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_addtops-numbth.ptx",
+          "location": "Introduction to Number Theory > Divisibility > The Division Algorithm；根xml:id=sec_addtops-numbth",
+          "status": "verified_with_source_omission",
+          "finding_zh": "实际声明框给出a=qb+r与0≤r<|b|，但文字称任意整数a,b，未显式排除b=0；框内也未陈述商与余数的唯一性。该段不能作为本书完整存在唯一性定理已经被外部核实的凭据。"
+        },
+        {
+          "topic": "带余除法的书稿必须补足之处",
+          "status": "editorial_requirement",
+          "finding_zh": "自然数版须写除数b>0；若扩到整数，可取b>0并处理负被除数，或明确非零b及0≤r<|b|。存在性、唯一性应由本书自己证明，不能照抄来源遗漏。"
+        }
+      ],
+      "reuse_decision": "仅核对一般方法并引用。除法段带明确缺陷标记，不把作者声誉替代逐项检查；不复制其例题和证明。"
+    },
+    {
+      "id": "FND-LEAN",
+      "title": "Lean 4 core: Init.Prelude and Init.Data.Nat.Div.Basic",
+      "authors": {
+        "Init.Prelude": [
+          "Leonardo de Moura",
+          "Mario Carneiro"
+        ],
+        "Init.Data.Nat.Div.Basic": [
+          "Leonardo de Moura"
+        ]
+      },
+      "public_url": "https://github.com/leanprover/lean4",
+      "license": {
+        "declared": "Apache-2.0",
+        "verified": true,
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/leanprover/lean4/master/LICENSE",
+          "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+          "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Data/Nat/Div/Basic.lean"
+        ],
+        "short_evidence": "Released under Apache 2.0 license as described in the file LICENSE.",
+        "scope": "两份源文件头明确适用Apache 2.0，与根LICENSE一致。"
+      },
+      "checks": [
+        {
+          "topic": "自然数从零及后继构造",
+          "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+          "location": "inductive Nat；本次下载源码第1363–1385行",
+          "status": "verified_source_reading",
+          "finding_zh": "Nat构造明确包含zero与succ。可作形式化体系中的另一种基础约定参照；本书无需向零基础读者引入Lean语法。"
+        },
+        {
+          "topic": "加法与乘法的递归方向",
+          "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+          "location": "Nat.add（约第1910行）与Nat.mul（约第1931行）",
+          "status": "verified_source_reading",
+          "finding_zh": "按第二变量递归：加法在零处取第一变量，后继步再取后继；乘法在零处为零，后继步增加第一变量。用于核对本书递归规则的方向与条件。"
+        },
+        {
+          "topic": "自然数带余分解及余数上界",
+          "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Data/Nat/Div/Basic.lean",
+          "additional_url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+          "location": "Nat.div_add_mod（Div.Basic第241行）；Nat.mod_lt（Prelude第2432行）",
+          "status": "verified_source_reading",
+          "finding_zh": "分解恒等式n*(m/n)+m%n=m可在零除数约定下仍写出；但余数严格小于除数的mod_lt声明显式要求0<y。必须将恒等式与带正除数限制的带余除法定理区分。"
+        },
+        {
+          "topic": "商的刻画",
+          "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Data/Nat/Div/Basic.lean",
+          "location": "Nat.div_eq_of_lt_le（第365行）",
+          "status": "verified_source_reading",
+          "finding_zh": "给定k*n≤m与m<(k+1)*n时，声明m/n=k；可用作商的区间刻画参照。"
+        },
+        {
+          "topic": "验证边界",
+          "status": "not_compiled_in_this_check",
+          "finding_zh": "本轮仅阅读公开源码声明及对应实现；没有运行Lean检查本书证明，没有证明源码整仓构建通过，也没有把阅读Lean源码写成书稿已经形式化验证。"
+        }
+      ],
+      "reuse_decision": "仅作定义和条件的第二视角核验并引用；不移植源码，不把实现约定直接当成本书除零规则。"
+    }
+  ],
+  "evidence_requests": [
+    {
+      "request_id": "levin_license",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "checked_at_utc": "2026-10-27T12:36:31.173970+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "bytes": 487,
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_induction",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_sequences-induction.ptx",
+      "checked_at_utc": "2026-10-27T12:36:31.517281+00:00",
+      "access_status": "not_retrieved",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404
+    },
+    {
+      "request_id": "levin_recursion",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_sequences-recursion.ptx",
+      "checked_at_utc": "2026-10-27T12:36:31.797897+00:00",
+      "access_status": "not_retrieved",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404
+    },
+    {
+      "request_id": "levin_divisibility",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_numbertheory-divisibility.ptx",
+      "checked_at_utc": "2026-10-27T12:36:32.061525+00:00",
+      "access_status": "not_retrieved",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404
+    },
+    {
+      "request_id": "openstax_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/prealgebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-27T12:36:32.305891+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/prealgebra-2e.collection.xml",
+      "bytes": 5043,
+      "sha256": "309fa072672372d1e46d52031167c21d9a120d1cdfdf3001548e1ca2975077a2",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+      "checked_at_utc": "2026-10-27T12:36:32.617483+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_directory",
+      "url": "https://github.com/oscarlevin/discrete-book/tree/master/source",
+      "checked_at_utc": "2026-10-27T12:36:50.638567+00:00",
+      "http_status": 200,
+      "bytes": 355949,
+      "sha256": "49c61093df4ad45744d6eb37b33c20143bcf34efd1d51fef07148c7e1acb5643",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_induction_actual",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-induction.ptx",
+      "checked_at_utc": "2026-10-27T12:37:17.119791+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-induction.ptx",
+      "bytes": 36922,
+      "sha256": "a98b88dd8f94c0d810d14e84c4be39d9c4f60adb7450bdc02a1172e4587a72ff",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_sequences",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-basics.ptx",
+      "checked_at_utc": "2026-10-27T12:37:17.502196+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_seq-basics.ptx",
+      "bytes": 42315,
+      "sha256": "7a45211c37ecb0a8bfa4a148495fd5a37446042e31be06cd07c034ca312e83a0",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_numbertheory",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_addtops-numbth.ptx",
+      "checked_at_utc": "2026-10-27T12:37:17.846616+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_addtops-numbth.ptx",
+      "bytes": 47685,
+      "sha256": "89866e258c3803c227ea71c5fd049c1cf6a186ae28bb780ad82a219a448b5518",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "levin_bookinfo",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/bookinfo.ptx",
+      "checked_at_utc": "2026-10-27T12:37:18.147123+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/bookinfo.ptx",
+      "bytes": 3532,
+      "sha256": "078691fda788ab75d6c2654819cc402a0e747a7310ad691a171968f3fe4099a9",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_whole_numbers",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81243/index.cnxml",
+      "checked_at_utc": "2026-10-27T12:37:18.434108+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81243/index.cnxml",
+      "bytes": 99062,
+      "sha256": "396b0029798e054e5db6d7acde738cec9f9d8b86bc81da8cc3690d01ec07cf2b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81241/index.cnxml",
+      "checked_at_utc": "2026-10-27T12:37:18.652249+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/modules/m81241/index.cnxml",
+      "bytes": 26760,
+      "sha256": "1c7cf6eda8be5021f1f33dc22069f5a3db50d1412a024bb57c7268b25db7f9df",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_nat_div",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Data/Nat/Div/Basic.lean",
+      "checked_at_utc": "2026-10-27T12:38:37.718761+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Data/Nat/Div/Basic.lean",
+      "bytes": 17794,
+      "sha256": "0c8fc51180b0d4fb6319e8a44acd7999f3a1b3aad21d8da5c0ad575914f9d120",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_prelude",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+      "checked_at_utc": "2026-10-27T12:38:38.015915+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/Init/Prelude.lean",
+      "bytes": 242111,
+      "sha256": "3344cf9b303feb42a03da1c25e397c452829f4fa326cd0a8ba96b778f753ba97",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_license",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/master/LICENSE",
+      "checked_at_utc": "2026-10-27T12:38:38.337732+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/master/LICENSE",
+      "bytes": 9160,
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "not_established": [
+    "未由这些参考完成一般集合论意义的自然数递归定理的存在唯一性证明。",
+    "未核验任何外部原题或答案并将其收入本书。",
+    "未取得出版PDF，不提供或猜测印刷页码；定位均为实际源码章节标题、XML标识或本次读取行号。",
+    "未验证最终合编文档的全部链接、图片或PDF版面；本组只做来源核验与指定正文教学审读。"
+  ],
+  "teaching_review_checklist": [
+    "入口先从可操作的有限计数和逐个配对开始；不能在介绍阶段就依赖未定义的集合基数。",
+    "明示本书自然数是否含0，区分数字、数、数位、后继；0、1、加号、等号、字母与下标第一次出现应解释。",
+    "列清采用的基础规则；后继单射、零不是后继、归纳原理不能偷偷作为已经证明的定理使用。",
+    "区分递归定义与归纳证明；解释初值与每步规则，注明一般递归定理是采用还是已证明。",
+    "归纳基例与归纳步的下界一致，不能跳过0到1；归纳假设只证明条件命题，不假定所有自然数情形。",
+    "加法交换律、结合律、消去律、乘法分配律不能作为证明它们自身的步骤；每次引用标明前置位置。",
+    "若用比较或最小元证明除法，先建立顺序与良序性质；若用归纳证明，则避免反过来依赖位值唯一性。",
+    "带余除法显式限制正除数，并分别证明存在与唯一；不得从少量算例或机器验证推广为全称定理。",
+    "从有限数字串到数的值说明十倍位权、占位零与前导零；规范表示不允许多余最高位零。",
+    "长除法循环为何停要说明，不能把循环计数器终止与数学正确性混同；数值程序如提供须对应公式。",
+    "中文读数需考虑万、亿的分组，不照抄英语三位分组读法；所有练习保持原创且答案逐步给出。"
+  ],
+  "teaching_review": {
+    "reviewed_at_utc": "2026-10-27T12:45:15.377763+00:00",
+    "scope": "读取两单元与全部16题答案，核查零基础术语入口、采用规则/证明边界、定义方向、依赖链与答案；不编辑作者正文。",
+    "files": [
+      {
+        "path": "manuscript/foundations/natural_numbers.md",
+        "sha256_at_review_record": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+      },
+      {
+        "path": "manuscript/foundations/natural_numbers_answers.md",
+        "sha256_at_review_record": "402eeac5b267f46d22aebb06979d5d9a511e1a3b5e4b1cf67329c58e149dc84a"
+      },
+      {
+        "path": "manuscript/foundations/place_value.md",
+        "sha256_at_review_record": "54846ae33ade38e5f722a7a179efd39349f595f17ba65f8ed3fea3892aef4641"
+      },
+      {
+        "path": "manuscript/foundations/place_value_answers.md",
+        "sha256_at_review_record": "3ebc3dec1a1fdbee9857982260d180539d283efa9bb860bc027b894571f59dc8"
+      }
+    ],
+    "passed": [
+      "N1–N5加法证明无发现循环依赖，条件和归纳变量写明。",
+      "自然数答案题8将归纳性质准确取为整个条件命题，左消去律证明成立。",
+      "乘法依次建立分配、交换、另一向分配、结合，依赖链成立。",
+      "两单元16题答案未发现计算错误。",
+      "采用递归原则与尚未完成集合论构造的范围已明确区分。",
+      "位值单元不把一次进位恒等式冒充终止性或规范表示唯一性的证明。"
+    ],
+    "recommendations_sent_to_editor": [
+      {
+        "priority": "clarify",
+        "file": "manuscript/foundations/natural_numbers.md",
+        "location": "后继函数符号说明",
+        "issue": "“函数括号表示输入范围”易混淆定义域与本次输入。",
+        "suggestion": "改为“括号中写本次输入的对象”。"
+      },
+      {
+        "priority": "complete_argument",
+        "file": "manuscript/foundations/natural_numbers_answers.md",
+        "location": "题7答案末段",
+        "issue": "原例仅证基例不可省，末句却总结两个任务均不可省。",
+        "suggestion": "另用P(n):n=0：基例真，归纳步在0到1失败，P(1)假，以补足归纳步不可省的独立例证。"
+      },
+      {
+        "priority": "define_before_use",
+        "file": "manuscript/foundations/place_value.md",
+        "location": "首次正式计算2乘3等于6之前；第7节",
+        "issue": "前单元只显式命名到5，本单元先使用6，再在较后处说依次到9。",
+        "suggestion": "在首次正式使用前命名6=S(5)，并明确7、8、9的后继命名。"
+      },
+      {
+        "priority": "clarify",
+        "file": "manuscript/foundations/place_value.md",
+        "location": "首段“归并”",
+        "issue": "新术语首次出现宜解释。",
+        "suggestion": "说明十个同单位合成一个高一位单位。",
+        "observed_followup": "复查时首段已经加入该解释。"
+      }
+    ],
+    "build_checks_pending": [
+      "合编后的锚点和所有题解往返链接",
+      "figures/b1_place_value.png在读取时尚未生成；由主编统一制图构建",
+      "最终PDF公式、中文和版面截图检查"
+    ],
+    "status": "教学审查已完成，具体措辞及补足反例建议已交主编处理；不据本审读宣称形式化验证。"
+  }
+}

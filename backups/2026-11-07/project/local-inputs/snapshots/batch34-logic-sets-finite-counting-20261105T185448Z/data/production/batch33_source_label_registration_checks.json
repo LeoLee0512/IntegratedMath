@@ -1,0 +1,142 @@
+{
+  "status": "text_registration_rebound_build_pending",
+  "reviewed_at": "2026-11-05T17:38:56.335175+00:00",
+  "reviewer": "/root/part1_audit",
+  "scope": "batch33 source display wording correction only; no batch34 registration",
+  "current_sha256": {
+    "research/production/accepted_reviews.json": "89e582a32b2c4069607b389e7a4193c0bcb089cad8b11fb55f46f0340fe5add4",
+    "tools/build_production_ledger.py": "5fa5e38c422933c51db23f7267e0c512ecbf5780cca699322e085d88d39e0938",
+    "data/production/units.json": "d6ebc08cd9be3b0168c56d80d15b7e8c1f1e7024b00d9ff813a3df5491610330",
+    "data/production/chapters.json": "14cd6cf68dd507ba4ab76d299471b1b47094e72778a412fd68e4b84289459db4",
+    "data/production/sections.json": "7cec0024bfd527dab6bd492e1a9538a186d3428c70c680a4dbe28dbae3fc91bd",
+    "data/production/prerequisites.json": "4155bfecdf49ecf916104fd5478a65dca0d38b1c330dcac62ab327288901f8a3",
+    "data/production/parts.json": "87a72de9e20a3c2a1c978ca15cc1de056204cd45ab3b7b6de268519a17094104"
+  },
+  "changed_text_reviews": [
+    [
+      "ccomp-unit",
+      "math-reviewed"
+    ],
+    [
+      "ccomp-unit",
+      "pedagogy-reviewed"
+    ],
+    [
+      "ivt-unit",
+      "math-reviewed"
+    ],
+    [
+      "ivt-unit",
+      "pedagogy-reviewed"
+    ]
+  ],
+  "unchanged_reviews": 134,
+  "total_text_reviews": 138,
+  "units": 69,
+  "foundation_exercise_pairs": 552,
+  "part1_exercise_pairs": 27,
+  "total_exercise_pairs": 579,
+  "math_passed_units": 69,
+  "pedagogy_passed_units": 69,
+  "build_pending_units": 69,
+  "build_blocker": "Current batch_validation does not yet report automated_checks_passed with accepted actual visual evidence; generator truthfully declined old build approval.",
+  "chapters": 534,
+  "sections": 6006,
+  "parts": 63,
+  "completed_chapters": 0,
+  "new_units_registered": [],
+  "rebound_reviews": [
+    {
+      "target_type": "unit",
+      "target_id": "ccomp-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_continuous_composition.md": "831b973f4af5cd1b24a91443e3648a139ebacc3ea0fa31a8522d76b54715be7e",
+        "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_continuous_composition_math_review.md",
+          "sha256": "df04b5af2d312062ff4b612fccf4462b2f171bc9e669ee62007ec0a114a42e0d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ccomp-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit (historical full review); /root/part1_build (current source-display delta)",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_continuous_composition.md": "831b973f4af5cd1b24a91443e3648a139ebacc3ea0fa31a8522d76b54715be7e",
+        "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_continuous_composition_pedagogy_review.md",
+          "sha256": "3bb404a88febd27fdbbe80f31b74cb15ede8ffe6f3ad696609fafa460a762b28"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ivt-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_intermediate_value.md": "23f54dd5adb3ea9ad1a36a8c1a2ae1d856699101887aca6baf38c78bc45bb388",
+        "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_intermediate_value_math_review.md",
+          "sha256": "43a22b624d10bce8a9385ac2952d46b5e290340e3c88f764b69175378327bb3a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ivt-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources (historical full review); /root/part1_build (current source-display delta)",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_intermediate_value.md": "23f54dd5adb3ea9ad1a36a8c1a2ae1d856699101887aca6baf38c78bc45bb388",
+        "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/intermediate_value_pedagogy_source_review.md",
+          "sha256": "99a21bd312ab545684cf1e5a1f1bdd2fef9e69520b6a1e567f3eea46f2381823"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    }
+  ],
+  "historical_checks": {
+    "path": "data/production/batch33_registration_checks.json",
+    "sha256": "ebd44d4964e9b3099a6ded177d11a8812656cb3ef1bd0fef766194c57ff8fd3e",
+    "status": "historical_pre_source_label_fix",
+    "warning": "Its previous source/report hashes describe the first registration, not current re-bound evidence; retained unchanged."
+  },
+  "historical_accepted": "research/production/history/batch33-before-source-label-fix/accepted_reviews.json",
+  "limits": "No build/visual/author approval and no chapter/part completion. Builder/validator not changed; current build manifest must be regenerated by build owner."
+}

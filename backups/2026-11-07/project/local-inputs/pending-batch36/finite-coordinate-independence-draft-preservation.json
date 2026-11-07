@@ -1,0 +1,21 @@
+{
+  "source": "/tmp/finite-coordinate-independence-draft",
+  "copy": "/workspace/IntegratedMath-book/local-inputs/pending-batch36/finite-coordinate-independence-draft",
+  "files": {
+    "finite_coordinate_independence_pedagogy_review.md": "1bf6c51600ef032f40a267804e141590696c1daad89a7602cae844d168f5c486",
+    "freeze.json": "c29f5e445f184bf119823294cc9aac7fdfe6270e98c138ffffa06338960ad925",
+    "finite_coordinate_independence_author_check.md": "b708f3ea39a53ce85c19231215772a61b4595af93ae12d4b690a415997735a9f",
+    "finite_coordinate_independence_sources.json": "4ecb93731f0b13909e5467bcdb85b83e073a22cc95f2ff2722c0273672ebe6f1",
+    "author_checks.json": "be0976910b051e616b1117838137130c6bedbdf0cfb79103a7426899e5f71051",
+    "check_fli.py": "1f5ed3b9a11a65169b71c671c60d5632bb2c08cdd1a8d79fd174ef8d62d8780b",
+    "draw_fli_redundancy.py": "9ed2d3b027f68b466b403f9801033a55325ec76002b2daa746a395905696c4ec",
+    "finite_coordinate_independence_answers.md": "20b86b99d96023c6a47c11f062d732328505244ed788c362e5a2bb9ec11e45d3",
+    "root_preliminary_read.json": "f693bf2ab43530c4212abf061b8eb105bc16cb86ceb48eaf59afbde3cd08faf4",
+    "finite_coordinate_independence.md": "611a581903924ae891ad6c35666bff252b8645097a914fcf7e64ed0c5fe8b473",
+    "finite_coordinate_independence_source_reading.json": "e6d6ae9dfea8c58714062a2351b87a6212c44f65f45fc52ba45ffc8623eda08d",
+    "finite_coordinate_independence_plan.md": "7643ac12ef7e16db76628fdcbf9e703090f6790cd9f6c80e5deb5bb6859853eb",
+    "figures/fli_redundancy.svg": "04064348fbbd31db4e5220cf67de7956011043fd4b4bf3f0ad253530997317fa",
+    "figures/fli_redundancy.png": "8d996e46d7466f8195f3ab7d5d52094bbc11882bd8bf66fc028221df0dfe71b4"
+  },
+  "status": "unregistered_pending_independent_math_and_build"
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "validated_at": "2026-10-29T17:20:08.798907+00:00",
+  "oracle": "SymPy 1.14.0 exact linsolve; original-equation membership; all finite maps",
+  "source_sha256": {
+    "tools/rational_affine.py": "e62a96b5f79062d7abf96e73a1795e645ce735932c9af2f57ec2376033261a8c",
+    "tools/validate_rational_affine.py": "953eabd65e00889a2f1ee26ea41232ed4911ea5c0484eefa0f6d742eac1d9f6d",
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "counts": {
+    "values": 125,
+    "two_points": 500,
+    "equal_x_rejected": 125,
+    "intersections": 625,
+    "intersection_membership": 15625,
+    "intercepts": 25,
+    "linear_relations": 125,
+    "relation_membership": 3125,
+    "finite_graphs": 32768,
+    "input_rejections": 106,
+    "duplicate_graphs": 3
+  },
+  "examples": [
+    {
+      "case": "2x-1 and -x+2",
+      "result": {
+        "kind": "unique",
+        "point": [
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "case": "zero graph intercepts",
+      "result": {
+        "vertical": [
+          "0",
+          "0"
+        ],
+        "horizontal": null,
+        "horizontal_kind": "all"
+      }
+    },
+    {
+      "case": "constant nonzero intercepts",
+      "result": {
+        "vertical": [
+          "0",
+          "3"
+        ],
+        "horizontal": null,
+        "horizontal_kind": "none"
+      }
+    },
+    {
+      "case": "vertical relation 2x=1",
+      "result": {
+        "kind": "vertical",
+        "x": "1/2"
+      }
+    },
+    {
+      "case": "two points (0,-1),(1,1)",
+      "result": [
+        "2",
+        "-1"
+      ]
+    },
+    {
+      "case": "missing input",
+      "result": false
+    }
+  ],
+  "limits": "Finite exact checks, not universal proofs. Concrete finite graphs only; no inference from a sample to an infinite graph."
+}

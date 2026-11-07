@@ -1,0 +1,11 @@
+{
+  "status": "planned_not_applied",
+  "current_formal_G_pending": 14,
+  "files": {
+    "gate_checks.json": "473186289216bb5843eb92284e97825e22587fda1c846ed9cdb47816fbd36bca",
+    "assessment_and_rebinding_plan.md": "f0b735290ef25c40b20d2378c0c6eb6ac6349c052dd2efb50dee00a69f28ff06",
+    "check_gate_impact.py": "52d861e2c6ed4b279f8cdbd52de48055774eba874af74e08b85aaa2a6f3a20d9",
+    "proposal_review.json": "052232bd37b1d30bd04c75a2876086c71d512f746522222e33b7175f707d8837"
+  },
+  "next_batch_metadata_sha256": "2f0ac19087e6e323abebfe66d0e5295cb8b688eaba11fde7d5375b1a70d0fffc"
+}

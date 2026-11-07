@@ -1,0 +1,12 @@
+{
+  "standalone_script_sha256": "112748c017d7f30fb19900b6644946943ab2c8e41f0bf4bc56061ab70d686a0d",
+  "candidate_draw_module_sha256": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63",
+  "function_source_sha256": "867c9207df9b186758aa32e57c0eeac09b52802c414c8a98bda71d45fcdf16ff",
+  "complete_function_exact_match": true,
+  "function_ast_exact_match": true,
+  "png_sha256": "d6804131be3393ab7309d1d86715c5cec95d087c62e2ae632ce40c142f215a20",
+  "png_matches_original_bytes": true,
+  "original_png_actually_viewed": true,
+  "formal_draw_module_installation_verified": false,
+  "scope": "Standalone function imported into candidate module without body changes;onlythis function executed in/tmp,all Fraction assertions pass;originalPNG viewed;no PDF acceptance."
+}

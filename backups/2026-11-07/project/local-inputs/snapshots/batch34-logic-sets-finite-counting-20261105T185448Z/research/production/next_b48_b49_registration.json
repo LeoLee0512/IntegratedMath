@@ -1,0 +1,334 @@
+{
+  "status": "metadata_proposal_only_not_registered",
+  "prepared_at": "2026-11-05T16:38:26.471566+00:00",
+  "root": "/workspace/IntegratedMath-book",
+  "current_registered_units": 66,
+  "future_unit_numbers": [
+    67,
+    68
+  ],
+  "units": [
+    {
+      "spec_proposal": {
+        "parent_code": "26Axx",
+        "parent_chapter_number": 146,
+        "part_code": "26-XX",
+        "msc_leaf_codes": [
+          "26A15"
+        ],
+        "msc_cross_reference_codes": [
+          "97I20"
+        ],
+        "module_ids": [
+          "single-analysis"
+        ],
+        "code": "B4.8",
+        "number": 67,
+        "title": "连续复合与局部定义域",
+        "anchor": "ccomp-unit",
+        "body": "manuscript/foundations/real_continuous_composition.md",
+        "answers": "manuscript/foundations/real_continuous_composition_answers.md",
+        "goals": [
+          "区分原函数目标、实际像及新目标记录，逐点核复合函数合法性",
+          "按ε到η到δ顺序证明连续复合，覆盖重复中心值与孤立点",
+          "区分自然域与整个局部邻域映入，并证明含中心局部一致传递连续",
+          "用完整反例区分充分条件、反向失败与去心极限边界"
+        ],
+        "definitions": [
+          "ccomp-types",
+          "ccomp-local-domain"
+        ],
+        "proved": [
+          [
+            "CC0",
+            "ccomp-types",
+            "实际像包含下新函数与严格类型复合"
+          ],
+          [
+            "CC1",
+            "ccomp-theorem",
+            "同域连续复合的直接两层误差证明"
+          ],
+          [
+            "CC2",
+            "ccomp-local-domain",
+            "自然可求值域及含中心局部一致传递连续"
+          ]
+        ],
+        "questions": "ccomp-q",
+        "answer_prefix": "ccomp-a",
+        "not_covered": [
+          "一般点极限复合定理",
+          "序列判据、介值、极值与紧致",
+          "一致连续、导数与积分"
+        ],
+        "prerequisites": [
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-algebra"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-basic-restriction"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-definition"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-isolated-limit"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-quotient"
+          ],
+          [
+            "manuscript/foundations/dedekind_division_field.md",
+            "cutdiv-definition"
+          ],
+          [
+            "manuscript/foundations/dedekind_additive_order.md",
+            "cutgroup-translation"
+          ],
+          [
+            "manuscript/foundations/dedekind_ring_order.md",
+            "cutring-multiplication-order"
+          ],
+          [
+            "manuscript/foundations/dedekind_signed_product.md",
+            "cutsigned-rational-zero"
+          ],
+          [
+            "manuscript/foundations/dedekind_signed_product.md",
+            "cutsigned-signs"
+          ],
+          [
+            "manuscript/foundations/functions_composition.md",
+            "fc-composition"
+          ],
+          [
+            "manuscript/foundations/functions_composition.md",
+            "fc-equality"
+          ],
+          [
+            "manuscript/foundations/functions_composition.md",
+            "fc-restriction"
+          ],
+          [
+            "manuscript/foundations/real_function_limits.md",
+            "flim-definition"
+          ],
+          [
+            "manuscript/foundations/real_function_limits.md",
+            "flim-domain-cluster"
+          ],
+          [
+            "manuscript/foundations/functions_definition.md",
+            "fun-definition"
+          ],
+          [
+            "manuscript/foundations/functions_definition.md",
+            "fun-image"
+          ],
+          [
+            "manuscript/foundations/real_absolute_distance.md",
+            "realabs-definition-bounds"
+          ],
+          [
+            "manuscript/foundations/real_absolute_distance.md",
+            "realabs-distance"
+          ]
+        ],
+        "adopted_external": [
+          [
+            "manuscript/foundations/functions_definition.md",
+            "fun-sets",
+            "条件子集与函数图背景按原公开规则采用，不声明B3完成"
+          ]
+        ],
+        "source_records": [
+          "research/production/real_continuous_composition_ivt_plan.md",
+          "research/production/real_function_limits_sources_2026-11-05.json"
+        ],
+        "structural_comparisons": []
+      },
+      "source_sha256": {
+        "manuscript/foundations/real_continuous_composition.md": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+        "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "review_evidence": [
+        {
+          "stage": "math-reviewed",
+          "status": "accepted",
+          "reviewer": "/root",
+          "report_path": "research/production/real_continuous_composition_math_review.md",
+          "report_sha256": "5bfcfedd3731174e1df14321e85c25f36fb23e0adbcda79188331da3d2518964",
+          "source_sha256": {
+            "manuscript/foundations/real_continuous_composition.md": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+            "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+          }
+        },
+        {
+          "stage": "pedagogy-reviewed",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "report_path": "research/production/real_continuous_composition_pedagogy_review.md",
+          "report_sha256": "0d5ccfa8f8e1baf4c4ece1156d5c3b5bafb7db233b34c97780840edce7d6e790",
+          "source_sha256": {
+            "manuscript/foundations/real_continuous_composition.md": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+            "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+          }
+        }
+      ],
+      "exercise_answer_count": 8,
+      "build_status": "pending",
+      "coverage_completed": false
+    },
+    {
+      "spec_proposal": {
+        "parent_code": "26Axx",
+        "parent_chapter_number": 146,
+        "part_code": "26-XX",
+        "msc_leaf_codes": [
+          "26A15"
+        ],
+        "msc_cross_reference_codes": [
+          "97I20"
+        ],
+        "module_ids": [
+          "single-analysis"
+        ],
+        "code": "B4.9",
+        "number": 68,
+        "title": "闭区间上的介值定理",
+        "anchor": "ivt-unit",
+        "body": "manuscript/foundations/real_intermediate_value.md",
+        "answers": "manuscript/foundations/real_intermediate_value_answers.md",
+        "goals": [
+          "区分介值的存在、内点、唯一性与数值计算含义",
+          "从上确界定义证明接近见证并完整展开介值四步",
+          "覆盖相等端值、目标等于端值、反向端值与单点区间",
+          "通过条件反例、根数、非循环平方根重证及实际像核验迁移"
+        ],
+        "definitions": [
+          "ivt-interval",
+          "ivt-supremum-tool"
+        ],
+        "proved": [
+          [
+            "IV1",
+            "ivt-proof",
+            "严格端值的直接上确界四步证明"
+          ],
+          [
+            "IV1边界",
+            "ivt-boundaries",
+            "端点、反向端值与退化闭区间"
+          ],
+          [
+            "例题",
+            "ivt-example",
+            "三次方程存在与独立唯一性证明"
+          ]
+        ],
+        "questions": "ivt-q",
+        "answer_prefix": "ivt-a",
+        "not_covered": [
+          "一般区间像定理与连通空间",
+          "极值、紧致与一致连续",
+          "求根算法、微分与积分"
+        ],
+        "prerequisites": [
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-algebra"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-basic-restriction"
+          ],
+          [
+            "manuscript/foundations/real_function_continuity.md",
+            "cont-definition"
+          ],
+          [
+            "manuscript/foundations/dedekind_cuts_order.md",
+            "cut-supremum"
+          ],
+          [
+            "manuscript/foundations/dedekind_division_field.md",
+            "cutdiv-complete-field"
+          ],
+          [
+            "manuscript/foundations/dedekind_ring_order.md",
+            "cutring-multiplication-order"
+          ],
+          [
+            "manuscript/foundations/dedekind_signed_product.md",
+            "cutsigned-rational-zero"
+          ],
+          [
+            "manuscript/foundations/functions_definition.md",
+            "fun-image"
+          ],
+          [
+            "manuscript/foundations/real_absolute_distance.md",
+            "realabs-products-triangle"
+          ]
+        ],
+        "adopted_external": [
+          [
+            "manuscript/foundations/functions_definition.md",
+            "fun-sets",
+            "条件子集按现有公开集合语言采用，不声明B3完成"
+          ]
+        ],
+        "source_records": [
+          "research/production/real_continuous_composition_ivt_plan.md",
+          "research/production/real_function_limits_sources_2026-11-05.json",
+          "research/production/intermediate_value_pedagogy_source_review.md"
+        ],
+        "structural_comparisons": [
+          [
+            "manuscript/foundations/real_square_roots.md",
+            "realsqrt-existence",
+            "历史证明比较，不是本次介值或平方根重证的逻辑先修"
+          ]
+        ]
+      },
+      "source_sha256": {
+        "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+        "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "review_evidence": [
+        {
+          "stage": "math-reviewed",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "report_path": "research/production/real_intermediate_value_math_review.md",
+          "report_sha256": "3250e9a62d86ada59b3353577987e33ea45260e1ac4e16da6da512349ebc0c41",
+          "source_sha256": {
+            "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+            "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+          }
+        },
+        {
+          "stage": "pedagogy-reviewed",
+          "status": "accepted",
+          "reviewer": "/root/part1_sources",
+          "report_path": "research/production/intermediate_value_pedagogy_source_review.md",
+          "report_sha256": "1900a3b4593c756ae2f350ebe39e6d1e5ed90c205beda67fbbf77eff3d1d18eb",
+          "source_sha256": {
+            "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+            "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+          }
+        }
+      ],
+      "exercise_answer_count": 8,
+      "build_status": "pending",
+      "coverage_completed": false
+    }
+  ],
+  "boundary": "No repository file changed; current batch32 remains B4.5–B4.7 only. Source records are real reading evidence candidates, not automatic source-stage promotion."
+}

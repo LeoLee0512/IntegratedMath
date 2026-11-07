@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "record_kind": "source_followup_proposal_only",
+  "reviewed_at_utc": "2026-11-05T16:48:27.791433+00:00",
+  "formal_status_changed": false,
+  "network_requests": [
+    {
+      "url": "https://github.com/search?q=org%3AGITenberg+Flatland&type=repositories",
+      "requested_at_utc": "2026-11-05T16:44:10.514513+00:00",
+      "status": 200,
+      "bytes": 174635,
+      "sha256": "0165953364eee6df1680f5f731fd8b6c8a36381918a3a9cc48d98d708a7f1863",
+      "cache": "/tmp/part1-math-literature-evidence/search.html"
+    },
+    {
+      "url": "https://github.com/GITenberg/Flatland--a-romance-of-many-dimensions_97",
+      "requested_at_utc": "2026-11-05T16:44:25.571344+00:00",
+      "status": 200,
+      "bytes": 248783,
+      "sha256": "6a10aee353b6c1377163d2f94d5a1b089fc44b38b5c6cb8518b970a4984926d1",
+      "cache": "/tmp/part1-math-literature-evidence/repository.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Flatland--a-romance-of-many-dimensions_97/5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8/97.txt",
+      "commit": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+      "requested_at_utc": "2026-11-05T16:44:43.314243+00:00",
+      "status": 200,
+      "bytes": 216630,
+      "sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f",
+      "cache": "/tmp/part1-math-literature-evidence/97.txt",
+      "path_basis": "actual GitHub repository directory listing",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/97.txt"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Flatland--a-romance-of-many-dimensions_97/5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8/metadata.yaml",
+      "commit": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+      "requested_at_utc": "2026-11-05T16:44:43.314895+00:00",
+      "status": 200,
+      "bytes": 3444,
+      "sha256": "d173a962d476afa9921d9a65e4a4a915eb5edda0f52b9249110f06b443e79a74",
+      "cache": "/tmp/part1-math-literature-evidence/metadata.yaml",
+      "path_basis": "actual GitHub repository directory listing",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/metadata.yaml"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Flatland--a-romance-of-many-dimensions_97/5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8/README.rst",
+      "commit": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+      "requested_at_utc": "2026-11-05T16:44:43.315884+00:00",
+      "status": 200,
+      "bytes": 2232,
+      "sha256": "13a6989fdb34d52b11316716cd2c904faca4d0e7154b0612247e0a63494c6366",
+      "cache": "/tmp/part1-math-literature-evidence/README.rst",
+      "path_basis": "actual GitHub repository directory listing",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/README.rst"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Flatland--a-romance-of-many-dimensions_97/5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8/LICENSE",
+      "commit": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+      "requested_at_utc": "2026-11-05T16:44:43.316564+00:00",
+      "status": 200,
+      "bytes": 17504,
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "cache": "/tmp/part1-math-literature-evidence/LICENSE",
+      "path_basis": "actual GitHub repository directory listing",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/LICENSE"
+    }
+  ],
+  "source_identity": {
+    "repository": "https://github.com/GITenberg/Flatland--a-romance-of-many-dimensions_97",
+    "provider": "GITenberg archive of Project Gutenberg ebook; not independently collated author edition",
+    "author": "Edwin Abbott Abbott",
+    "title": "Flatland: A Romance of Many Dimensions",
+    "ebook_id": "97",
+    "fixed_commit": "5ed685b7d3d8484f94ea5f1a061b7ef6fb93d2c8",
+    "as_transcribed_edition": "1884; preface to second and revised edition, 1884",
+    "posting_date": "2008-05-15",
+    "release_date": "1994-01",
+    "last_updated_in_file": "2005-01-19",
+    "metadata_issued": "1994-01-01",
+    "metadata_version": "0.2.0",
+    "scan_collation_performed": false
+  },
+  "actual_content_reading": {
+    "cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/97.txt",
+    "document_sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f",
+    "encoding": "ASCII",
+    "ranges": [
+      [
+        1,
+        180
+      ],
+      [
+        2862,
+        3045
+      ],
+      [
+        3173,
+        3290
+      ],
+      [
+        3420,
+        3553
+      ],
+      [
+        3550,
+        3690
+      ],
+      [
+        3905,
+        3926
+      ]
+    ],
+    "whole_book_read": false
+  },
+  "rights": {
+    "metadata_claim": "Public domain in the USA.",
+    "outside_US_status": "not verified",
+    "root_license_identical_to_previously_read_document": true,
+    "license_sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+    "template_discrepancy": "Starred copyrighted-work template paragraph in root LICENSE absent between work-embedded 1.C and 1.D.",
+    "project_use": "links, bibliographic metadata, hashes and original reading-location commentary only",
+    "text_republished": false,
+    "global_public_domain_claimed": false
+  },
+  "mapping_proposal": {
+    "source_id": "SRC-S6-ABBOTT-FLATLAND-LITERARY",
+    "section_code": "00A64",
+    "requirement_id": "00A64-topic-source",
+    "objective_ids": [
+      "00A64-1"
+    ],
+    "relevance": "topic_specific",
+    "verified_content_scope": [
+      "literary use of mathematical language",
+      "limits of analogy and communication through direction words"
+    ],
+    "not_supported": [
+      "the exact every-reader/one-book quantifier exchange example",
+      "formal quantifier logic",
+      "proof of higher-dimensional geometry",
+      "comprehensive literary criticism"
+    ],
+    "quantifier_support_remains": "S2 existing actual logic source; no enlarged claim",
+    "formal_requirement_status": "pending",
+    "adoption_condition": "Root independent targeted review and actual bounded reference inserted in next text revision; all affected gate bindings reviewed anew. If original literature must directly instantiate exact quantifier swap, evidence remains partial."
+  },
+  "baseline_bindings": {
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "research/production/part1_topic_sources.json": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783"
+  },
+  "cache_git_ignored": true,
+  "access": {
+    "evidence": "/workspace/IntegratedMath-book/research/production/part1_math_literature_followup.json",
+    "status": "retrieved",
+    "http_status": 200
+  },
+  "content_review": {
+    "evidence": "/workspace/IntegratedMath-book/research/production/part1_math_literature_followup.md",
+    "reviewed_at": "2026-11-05T16:48:27.791433+00:00",
+    "document_sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f",
+    "report_sha256": "a76ef5e0d0389a2ef538d384c881621262aff169fd6d8b924d9a0ceb83c7894d",
+    "status": "targeted_content_read"
+  },
+  "source_files_for_local_review_only": [
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/97.txt",
+      "sha256": "9933a0838441f03d5c8600da5f54c4a8af9cbcbf845bfeaa8e1b7213a2c3917f"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/metadata.yaml",
+      "sha256": "d173a962d476afa9921d9a65e4a4a915eb5edda0f52b9249110f06b443e79a74"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/README.rst",
+      "sha256": "13a6989fdb34d52b11316716cd2c904faca4d0e7154b0612247e0a63494c6366"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/LICENSE",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-literature-source-cache/directory.json",
+      "sha256": "534f6e0d440429f7a78acff9aaf8204f3a7a4bf96387bbb6de48525f916c840e"
+    }
+  ]
+}

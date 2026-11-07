@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "status": "author check; independent review pending",
+  "source": {
+    "author": "Robert A. Beezer",
+    "title": "A First Course in Linear Algebra",
+    "version": "3.50",
+    "commit": "347f27fe909b54b26970bcc0fcbf69c7e853c766",
+    "license": "GFDL 1.2 or later, no invariant sections or cover texts"
+  },
+  "new_network_requests": 3,
+  "discovery": "Exact native fixed-commit src directory paths previously read in /tmp/finite-linear-combinations-source-cache/tree.html; no API retry. This finalization reread caches, no additional requests.",
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LI.xml",
+      "checked_at_utc": "2026-11-05T18:49:45.483487+00:00",
+      "status": 200,
+      "bytes": 70177,
+      "sha256": "825577704b67560629ff93458281c2a8b94980a9def4972849e723902e455090",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LI.xml",
+      "actual_read_ranges": [
+        "1–40"
+      ],
+      "adopted_scope": "LI definitions of zero relation, trivial/nontrivial and independence; equation/vector/table distinctions."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LISS.xml",
+      "checked_at_utc": "2026-11-05T18:49:57.161030+00:00",
+      "status": 200,
+      "bytes": 62520,
+      "sha256": "fe6b767b5e77a8922bff021c92ee8b0a663a30a3f14c00a45555fb6810da98b5",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LISS.xml",
+      "actual_read_ranges": [
+        "578–622"
+      ],
+      "adopted_scope": "LISS coefficient-difference uniqueness reasoning. Source basis/abstract space framework is not adopted; our existence and uniqueness restricted to span(v)."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LDS.xml",
+      "checked_at_utc": "2026-11-05T18:50:09.094141+00:00",
+      "status": 200,
+      "bytes": 48860,
+      "sha256": "44a7e9d2a0044a33e2ff63d1226443d923a9bb6a1ca08f3a526ed2557c40a00c",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LDS.xml",
+      "actual_read_ranges": [
+        "1–99"
+      ],
+      "adopted_scope": "LDS nonzero specified coefficient isolation and reverse relation, plus redundancy/spans idea. Explicit real zero-based deletion domains and empty cases proved here."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "actual_read_ranges": [
+        "1–22"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    }
+  ],
+  "adoption_boundaries": [
+    "Source complex/one-based sets or abstract vector spaces; this unit real/zero-based finite tables, repeats retained.",
+    "Existence is only for span(v); source basis theorem is not imported.",
+    "Nonzero-coefficient isolation and reverse-relation ideas are attributed to LDS; own prefix/singleton/suffix tables, conditional natural differences, empty parameters, two-sided span containment and inserted-zero proof are explicit.",
+    "Source proof concepts are acknowledged; all eight questions and full solutions are independently written, source numerical exercises/solutions not reproduced or translated.",
+    "Original exact-coordinate PNG/SVG diagram visualizes our exercise 8; not external image and not a proof.",
+    "No basis/dimension/exchange/matrix/elimination, arbitrary term permutation or m>n dependence result."
+  ],
+  "plan": {
+    "actual_path": "/tmp/finite-coordinate-independence-draft/finite_coordinate_independence_plan.md",
+    "sha256": "7643ac12ef7e16db76628fdcbf9e703090f6790cd9f6c80e5deb5bb6859853eb"
+  },
+  "cache_preservation": "Keep actual reading paths/times/hashes immutable; any later preservation into ignored local-inputs must use separate cache-preservation.json mapping. Do not package external originals.",
+  "prerequisite_files": {
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+    "/tmp/finite-coordinate-subspaces-draft/finite_coordinate_subspaces.md": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97"
+  },
+  "manuscripts": [
+    {
+      "actual_path": "/tmp/finite-coordinate-independence-draft/finite_coordinate_independence.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_independence.md",
+      "sha256": "611a581903924ae891ad6c35666bff252b8645097a914fcf7e64ed0c5fe8b473",
+      "lines": 282
+    },
+    {
+      "actual_path": "/tmp/finite-coordinate-independence-draft/finite_coordinate_independence_answers.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_independence_answers.md",
+      "sha256": "20b86b99d96023c6a47c11f062d732328505244ed788c362e5a2bb9ec11e45d3",
+      "lines": 223
+    }
+  ],
+  "figure_files": [
+    {
+      "actual_path": "/tmp/finite-coordinate-independence-draft/draw_fli_redundancy.py",
+      "sha256": "9ed2d3b027f68b466b403f9801033a55325ec76002b2daa746a395905696c4ec"
+    },
+    {
+      "actual_path": "/tmp/finite-coordinate-independence-draft/figures/fli_redundancy.png",
+      "sha256": "8d996e46d7466f8195f3ab7d5d52094bbc11882bd8bf66fc028221df0dfe71b4"
+    },
+    {
+      "actual_path": "/tmp/finite-coordinate-independence-draft/figures/fli_redundancy.svg",
+      "sha256": "04064348fbbd31db4e5220cf67de7956011043fd4b4bf3f0ad253530997317fa"
+    }
+  ],
+  "figure_review": {
+    "method": "actual view_image of generated PNG, 2052×882 pixels",
+    "findings": "all arrows from origin; blue length1/orange length2 overlap deliberately; green (0,1); right hollow unreachable point; equal coordinate scale; Chinese/labels legible without overlap; final three arrow styles explicitly shrinkA=0/shrinkB=0, regenerated final PNG actually viewed again; code maximum line 78 characters, long Chinese caption split into adjacent short literals",
+    "limits": "author figure review only, no assembled PDF layout/visual acceptance",
+    "code_delivery": "standalone complete drawing function and runner for later code appendix; no builder modifications"
+  }
+}

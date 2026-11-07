@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-05T08:14:09.848226+00:00",
+  "scope": "第一部分8个G节的来源入口、先修和相邻主题边界核查建议；不改正文。",
+  "method": "公开无需登录HTTPS GET；保留继承代理与TLS校验；不读取凭据，不安装，不绕过代理或访问限制。仅保存元数据、哈希与原创概述；没有保存外部版权正文。",
+  "network_context": {
+    "networking_skill_read": true,
+    "policy_path": "/etc/codex/network-policy.json",
+    "policy_type": "restricted",
+    "vpn_configured": false,
+    "runtime_observations_current": true,
+    "runtime_network_policy_state": "unknown",
+    "note": "startup快照与runtime期望列表均未列AMS、MAA、Clay、Stanford、Charleston。五个实际正常代理请求均CONNECT403；不以unknown状态声称网络已enforced。"
+  },
+  "local_evidence": [
+    {
+      "path": "data/msc_taxonomy.json",
+      "inspected_at_utc": "2026-11-05T08:14:09.848226+00:00",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+      "bytes": 1884549,
+      "status": "local_existing_evidence_reinspected",
+      "boundary": "本次检查本地既有台账，不等于本次重取原附件或重访其中每个URL。"
+    },
+    {
+      "path": "research/ch01_source_checks.json",
+      "inspected_at_utc": "2026-11-05T08:14:09.848226+00:00",
+      "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385",
+      "bytes": 12154,
+      "status": "local_existing_evidence_reinspected",
+      "boundary": "本次检查本地既有台账，不等于本次重取原附件或重访其中每个URL。"
+    }
+  ],
+  "msc_attachment_hash_in_existing_ledger": "532d86f87b042b1fbc30b72be174c98db8d2fb8e28b4150733956998363bcbe7",
+  "historical_content_checks": {
+    "record_path": "research/ch01_source_checks.json",
+    "original_checked_at_utc": "2026-10-21T16:16:47.298842+00:00",
+    "rechecked_body_in_this_run": false,
+    "ids": [
+      "CH01-ALG",
+      "CH01-LOGIC"
+    ],
+    "boundary": "本次只复核S1/S2项目/许可/版本元数据。模块具体数学内容和2026-10-21的请求哈希以旧台账为准，不改写旧日期。"
+  },
+  "sources": [
+    {
+      "id": "P1-MSC",
+      "title": "Mathematics Subject Classification 2020",
+      "publisher_or_author": "Mathematical Reviews / zbMATH",
+      "public_url": "https://www.ams.org/msc/msc2020.html",
+      "request_ids": [
+        "MSC2020"
+      ],
+      "verification_scope": "本地data/msc_taxonomy.json记录224页附件、来源SHA256及00-01/02、00Axx条目；本次未重验原PDF，外网官方入口未取得。",
+      "license_and_reuse_boundary": "未核实附件或官方网页开放转载许可；只用归属信息、分类代码和必要短标题，不分发原PDF及全文。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-BOOKREVIEWS",
+      "title": "MAA Reviews（数学书评候选入口）",
+      "publisher_or_author": "Mathematical Association of America",
+      "public_url": "https://maa.org/press/maa-reviews",
+      "request_ids": [
+        "MAA-REVIEWS"
+      ],
+      "verification_scope": "候选外部书评入口；未取得页面，当前路径、栏目内容及具体书评均待核验。",
+      "license_and_reuse_boundary": "许可未核；只列链接与本书原创阅读建议，不摘录或改写原书评。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-OPEN",
+      "title": "Millennium Prize Problems（开放问题状态候选入口）",
+      "publisher_or_author": "Clay Mathematics Institute",
+      "public_url": "https://www.claymath.org/millennium-problems/",
+      "request_ids": [
+        "CLAY-MILLENNIUM"
+      ],
+      "verification_scope": "该链接仅为候选官方问题索引；不能据未取得的页面确认问题总数、逐题开放状态或最新研究进展。",
+      "license_and_reuse_boundary": "许可未核；仅链接，正文不复制问题说明或图像。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-PHIL",
+      "title": "Philosophy of Mathematics（哲学百科条目候选入口）",
+      "publisher_or_author": "Stanford Encyclopedia of Philosophy",
+      "public_url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+      "request_ids": [
+        "SEP-MATH"
+      ],
+      "verification_scope": "候选数学哲学概览；作者、修订日、章节及现行正文未核验，不据记忆填写。",
+      "license_and_reuse_boundary": "许可未核；仅链接与原创问题定位，不翻译连续正文。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-LIT",
+      "title": "Mathematical Fiction（数学与文学候选目录）",
+      "publisher_or_author": "Alex Kasman / College of Charleston（候选归属，页面未取得）",
+      "public_url": "https://math.cofc.edu/faculty/kasman/MATHFICT/",
+      "request_ids": [
+        "MATH-FICTION"
+      ],
+      "verification_scope": "候选数学小说目录；当前地址、维护情况及收录作品未核验。不能把书目收录当成作品数学正确性的认证。",
+      "license_and_reuse_boundary": "目录页面和所列文学作品权利分别核实；本轮只链接，不摘录小说、封面或目录正文。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-S1",
+      "title": "Elementary Algebra 2e",
+      "publisher_or_author": "OpenStax, Rice University",
+      "public_url": "https://github.com/openstax/osbooks-prealgebra-bundle",
+      "request_ids": [
+        "OPENSTAX-README",
+        "OPENSTAX-LICENSE",
+        "OPENSTAX-METADATA"
+      ],
+      "verification_scope": "本次复核项目身份与Elementary Algebra 2e书级许可元数据；m82463、m82464论证内容仅沿用2026-10-21旧核验。",
+      "license_and_reuse_boundary": "本次书级元数据与LICENSE均声明CC BY-NC-SA 4.0；不视为无条件商用许可；本书仍只链接、核对条件并原创撰写。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-S2",
+      "title": "Discrete Mathematics: An Open Introduction（第四版材料）",
+      "publisher_or_author": "Oscar Levin",
+      "public_url": "https://github.com/oscarlevin/discrete-book",
+      "request_ids": [
+        "LEVIN-README",
+        "LEVIN-LICENSE",
+        "LEVIN-FRONTMATTER"
+      ],
+      "verification_scope": "本次复核第四版frontmatter与LICENSE。README混有分支/版次描述，不单独用于确定版次。量词、反例及穷尽分类内容沿用2026-10-21旧核验。",
+      "license_and_reuse_boundary": "第四版CC BY-NC-SA 4.0；第三版及以前另为CC BY-SA 4.0，不能混用。仅链接和通用逻辑核对，不复制原题与解答。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    },
+    {
+      "id": "P1-STACKS",
+      "title": "The Stacks Project（研究层次阅读路线示例）",
+      "publisher_or_author": "Stacks Project维护者仓库",
+      "public_url": "https://github.com/stacks/stacks-project",
+      "request_ids": [
+        "STACKS-README",
+        "STACKS-README-PLAIN"
+      ],
+      "verification_scope": "本次取得README（无扩展名），项目自述为代数叠及其所需代数几何教材，指向Columbia项目站。只核对研究对象与入口，未阅读或审校数学正文。",
+      "license_and_reuse_boundary": "本次未取得独立许可材料，许可不宣称已核；仅用链接和原创一句概述，不复制教材正文。",
+      "use": "仅链接与本书原创概述；不收入外部版权正文、题干、解答或图像。"
+    }
+  ],
+  "requests": [
+    {
+      "id": "MSC2020",
+      "url": "https://www.ams.org/msc/msc2020.html",
+      "checked_at_utc": "2026-11-05T08:09:43.646129+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403,
+      "interpretation": "未取得目标正文；403为代理CONNECT失败，不等于源站对公众拒绝访问；无正文故sha256为null。"
+    },
+    {
+      "id": "MAA-REVIEWS",
+      "url": "https://maa.org/press/maa-reviews",
+      "checked_at_utc": "2026-11-05T08:09:43.676635+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403,
+      "interpretation": "未取得目标正文；403为代理CONNECT失败，不等于源站对公众拒绝访问；无正文故sha256为null。"
+    },
+    {
+      "id": "CLAY-MILLENNIUM",
+      "url": "https://www.claymath.org/millennium-problems/",
+      "checked_at_utc": "2026-11-05T08:09:43.688036+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403,
+      "interpretation": "未取得目标正文；403为代理CONNECT失败，不等于源站对公众拒绝访问；无正文故sha256为null。"
+    },
+    {
+      "id": "SEP-MATH",
+      "url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+      "checked_at_utc": "2026-11-05T08:09:43.696888+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403,
+      "interpretation": "未取得目标正文；403为代理CONNECT失败，不等于源站对公众拒绝访问；无正文故sha256为null。"
+    },
+    {
+      "id": "MATH-FICTION",
+      "url": "https://math.cofc.edu/faculty/kasman/MATHFICT/",
+      "checked_at_utc": "2026-11-05T08:09:43.712891+00:00",
+      "http_status": null,
+      "sha256": null,
+      "access_status": "blocked_by_environment_proxy",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "proxy_connect_status": 403,
+      "interpretation": "未取得目标正文；403为代理CONNECT失败，不等于源站对公众拒绝访问；无正文故sha256为null。"
+    },
+    {
+      "id": "OPENSTAX-README",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/README.md",
+      "checked_at_utc": "2026-11-05T08:09:43.725015+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/README.md",
+      "bytes": 1217,
+      "sha256": "aeb5dbf12999ed92d78f5fc59a2cd739497ea9b240f34b18e7bc295d11dcca81",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "LEVIN-README",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/README.md",
+      "checked_at_utc": "2026-11-05T08:09:44.111894+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/README.md",
+      "bytes": 2554,
+      "sha256": "49acf2864e340b035d69d88d864d501849c90c4d46dcfcbf08012ae4c310c21f",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "OPENSTAX-LICENSE",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+      "checked_at_utc": "2026-11-05T08:10:22.149663+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "OPENSTAX-METADATA",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/elementary-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-11-05T08:10:22.528059+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/main/collections/elementary-algebra-2e.collection.xml",
+      "bytes": 5256,
+      "sha256": "5fdc03ab9e6ee7327be72f7e0a17c4d884e65f4a8081a0b2a06dbdb1392bda72",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "LEVIN-LICENSE",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "checked_at_utc": "2026-11-05T08:10:22.838024+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "bytes": 487,
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "LEVIN-FRONTMATTER",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+      "checked_at_utc": "2026-11-05T08:10:23.230679+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+      "bytes": 13015,
+      "sha256": "627888abb8f8c3765eb00e1ed8488433045abfd88e9e90ccadf07beb9f050d1a",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "STACKS-README",
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/master/README.md",
+      "checked_at_utc": "2026-11-05T08:10:23.665516+00:00",
+      "http_status": 404,
+      "sha256": null,
+      "access_status": "request_failed",
+      "error": "HTTP Error 404: Not Found",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    },
+    {
+      "id": "STACKS-README-PLAIN",
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/master/README",
+      "checked_at_utc": "2026-11-05T08:10:41.124465+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/master/README",
+      "bytes": 969,
+      "sha256": "8d42a1d61b4693951cc78843d1d9eb4e586104fe8c966d90bf87ef8c8b50901c",
+      "access_status": "retrieved",
+      "interpretation": "仅证明该URL在记录时刻的返回状态；不自动证明全文正确或允许转载。"
+    }
+  ],
+  "section_recommendations": [
+    {
+      "code": "00-01",
+      "section": "部分第1节",
+      "source_ids": [
+        "P1-MSC",
+        "P1-S1"
+      ],
+      "precise_reference_entries": [
+        "https://github.com/openstax/osbooks-prealgebra-bundle/blob/main/collections/elementary-algebra-2e.collection.xml",
+        "https://github.com/openstax/osbooks-prealgebra-bundle/blob/main/modules/m82463/index.cnxml"
+      ],
+      "prerequisite_suggestion": "无额外数学先修。读懂本章第3节#sec-00A05中对象、定义、采用规则与证明的区别，再练习按书名、版次、节名定位。",
+      "neighbour_distinction": "00-01描述数学总论入门阐述的文献层次；区别00-02研究阐述与00A15书目记录。OpenStax只作入门教材阅读方式示例，不擅自给其整书赋MSC00-01。",
+      "scope_statement_suggestion": "本节教会识别入口与所需背景，不证明外部教材全部结论。",
+      "remaining_gap": "所引具体模块仅为2026-10-21旧内容核验，2026-11-05只复核书级元数据。"
+    },
+    {
+      "code": "00-02",
+      "section": "部分第2节",
+      "source_ids": [
+        "P1-MSC",
+        "P1-STACKS"
+      ],
+      "precise_reference_entries": [
+        "https://github.com/stacks/stacks-project/blob/master/README",
+        "https://stacks.math.columbia.edu/"
+      ],
+      "prerequisite_suggestion": "本节只需识别对象、假设、结论和来源定位。阅读示例项目数学正文另需集合语言、抽象代数和相应代数几何背景；本章未建立这些先修，不要求初学者直接研读。",
+      "neighbour_distinction": "区别00-01入门阐述、原始研究论文与00Bxx会议文集：研究阐述说明层次/目的，会议文集说明载体，不能仅凭载体判断证明已核。Stacks属于专门领域示例，不据此把代数几何改归00-02。",
+      "scope_statement_suggestion": "只示范如何辨认研究对象和查先修，不引用Stacks深定理为本章已证结论。",
+      "remaining_gap": "只取得仓库README；Columbia网页及具体章/定理未访问，许可未核。若本轮不新增来源，可仅保留MSC分类定位并明说缺具体研究综述核验。"
+    },
+    {
+      "code": "00A15",
+      "section": "第8节",
+      "source_ids": [
+        "P1-S1",
+        "P1-S2"
+      ],
+      "precise_reference_entries": [
+        "https://github.com/openstax/osbooks-prealgebra-bundle/blob/main/collections/elementary-algebra-2e.collection.xml",
+        "https://github.com/oscarlevin/discrete-book/blob/master/source/frontmatter.ptx"
+      ],
+      "prerequisite_suggestion": "能识别作者、题名、版次和节名即可；引用等式规则时再回第3节#sec-00A05检查本章采用的规则。",
+      "neighbour_distinction": "书目提供定位字段，00A17评价材料质量，00A20解释术语；书目存在不代表证明正确。",
+      "scope_statement_suggestion": "示范可追踪的文献记录，不声称已建立完整数学总论书目。",
+      "remaining_gap": "更新README哈希不可覆盖旧模块核验日期；引用版本和访问时间应分列。"
+    },
+    {
+      "code": "00A17",
+      "section": "第9节",
+      "source_ids": [
+        "P1-BOOKREVIEWS",
+        "P1-S2"
+      ],
+      "precise_reference_entries": [
+        "https://maa.org/press/maa-reviews",
+        "https://github.com/oscarlevin/discrete-book/blob/master/source/sec_logic-rules.ptx"
+      ],
+      "prerequisite_suggestion": "采用第3节#sec-00A05的整数运算，理解第7节#sec-00A09中一反例否定全称断言的做法。",
+      "neighbour_distinction": "外部书评评价某书的版本、内容与教学表达；书目00A15只定位。Mathematical Reviews/zbMATH文摘检索记录不能不加说明等同于独立外部书评。",
+      "scope_statement_suggestion": "本节的一的平方例子是原创假设性评论示范；S2只支持反例逻辑，不作为已核验真实书评。",
+      "remaining_gap": "MAA入口代理失败；具体书评的题名、评论者、受评版次、日期、页码尚缺，不得写成已读案例。"
+    },
+    {
+      "code": "00A27",
+      "section": "第12节",
+      "source_ids": [
+        "P1-OPEN",
+        "P1-S2"
+      ],
+      "precise_reference_entries": [
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.claymath.org/millennium/riemann-hypothesis/"
+      ],
+      "prerequisite_suggestion": "先读第3节#sec-00A05的命题与证明区别；正式陈述某个深问题前逐项补所需定义。黎曼猜想例需复数、级数及解析延拓等背景，本章均未建立。",
+      "neighbour_distinction": "区别00A07有既知答案的习题与个人不会解的题；猜想、已证特例、数值证据和现行研究状态分别记录。",
+      "scope_statement_suggestion": "只说明状态记录和核验方法，不给本轮已确认的开放问题清单，不证明前沿问题。",
+      "remaining_gap": "本次索引代理失败；黎曼猜想详情链接仅继承2026-10-21失败记录，未在本轮重试；所有具体问题最新状态均未核实。"
+    },
+    {
+      "code": "00A30",
+      "section": "第13节",
+      "source_ids": [
+        "P1-PHIL",
+        "P1-S2"
+      ],
+      "precise_reference_entries": [
+        "https://plato.stanford.edu/entries/philosophy-mathematics/",
+        "https://github.com/oscarlevin/discrete-book/blob/master/source/sec_logic-rules.ptx"
+      ],
+      "prerequisite_suggestion": "能读日常语言中的每个、存在，并区分第3节#sec-00A05的定义、公理式采用规则和证明。进一步比较基础体系前须补相应逻辑与集合论；本章不作默认先修。",
+      "neighbour_distinction": "数学哲学研究对象/真理/证明的地位；00A35侧重推理方法。量词次序例只是逻辑辨析，不能凭它裁决哲学立场。",
+      "scope_statement_suggestion": "只建立议题定位；S2支持量词辨析，不构成完整哲学文献支持。",
+      "remaining_gap": "SEP未取得；作者、版本/修订日期与条目小节未核，不给派别史或权威共识断言。"
+    },
+    {
+      "code": "00A64",
+      "section": "第15节",
+      "source_ids": [
+        "P1-LIT",
+        "P1-S2"
+      ],
+      "precise_reference_entries": [
+        "https://math.cofc.edu/faculty/kasman/MATHFICT/",
+        "https://github.com/oscarlevin/discrete-book/blob/master/source/sec_logic-rules.ptx"
+      ],
+      "prerequisite_suggestion": "日常阅读能力即可；量词例回第13节#sec-00A30，排列模型回第6节#sec-00A08。不要把未写出的图论、统计学当成默认先修。",
+      "neighbour_distinction": "00A64关注数学与文学作品/语言结构的交叉；区别00A65音乐和00A66视觉艺术。数学隐喻、形式约束与文学评价不是同一任务。",
+      "scope_statement_suggestion": "只示范语言歧义与比喻边界，不声称由一个计数指标衡量文学价值，不复述未读小说情节。",
+      "remaining_gap": "数学小说目录当前网页未取得；没有具体文学作品或学术论文的已核验阅读记录。S2仅逻辑入口，不能填补文学来源缺口。"
+    },
+    {
+      "code": "00A99",
+      "section": "第23节",
+      "source_ids": [
+        "P1-MSC"
+      ],
+      "precise_reference_entries": [
+        "data/msc_taxonomy.json（00A99；本地台账pdf_page=4）",
+        "https://www.ams.org/msc/msc2020.html"
+      ],
+      "prerequisite_suggestion": "回看第3节#sec-00A05的对象范围、第4节#sec-00A06的候选/代回/完整性和第14节#sec-00A35的可逆与分情况条件。",
+      "neighbour_distinction": "99是本分类分支中无更合适细项时的剩余位置，不是任意跨领域主题的默认归宿。跨领域应同时查对应专门类，并保持原MSC归属。",
+      "scope_statement_suggestion": "只说明分类边界和本章复用检查，不额外声称新定理或通用MSC归类准则已获官方核验。",
+      "remaining_gap": "分类标签可由本地既有附件抽取记录核对；本次官方网页未取得，附件未重新逐页校对。"
+    }
+  ],
+  "claims_not_verified": [
+    "MSC官方网站当前正文与许可",
+    "MAA具体书评及现行入口内容",
+    "任何开放问题截至2026-11-05的最新状态",
+    "Stanford数学哲学条目现行作者、版本和正文",
+    "数学小说目录当前维护状态及具体作品内容",
+    "Stacks Project数学正文、深定理或许可"
+  ],
+  "completion_boundary": "来源研究记录已完成；受访问限制的真实专题入口仍为待核验候选，不能据本记录把8个G节全部标成来源核验完成或完整教学。"
+}

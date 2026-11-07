@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "validated_at": "2026-10-29T19:05:05.379734+00:00",
+  "source_sha256": {
+    "tools/rational_polynomial_linear_division.py": "6f246113bf509122628e9878a3898d0ce20070eb4447e7ef6fa2cc462c75fb5e",
+    "tools/validate_rational_polynomial_linear_division.py": "61a371a36c570fd99c5a07c3218dd88c1deedd5eedc0bb0387c65a2f73be969e",
+    "tools/rational_polynomial_product.py": "a8fac5ff74d635c6b9b9fe3454ec9f1279f0cf6ca8cb3bcaf782496fd4d63246",
+    "tools/rational_polynomial_basic.py": "4ab57898877c291e338241126e36ed79d4aeef8723c23e647f3591afbcf2243d",
+    "tools/rational_powers_sums.py": "fad8cf2a22151b4d584ba09ea3464526668cf34d2737afdf0374f241f16cfda4",
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "scope": {
+    "coefficient_values": [
+      "-1",
+      "0",
+      "1/2"
+    ],
+    "record_lengths": [
+      1,
+      4
+    ],
+    "additional_records": [
+      [
+        -6,
+        11,
+        -6,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "points": [
+      "-2",
+      "-1/2",
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "counts": {
+    "records": 123,
+    "divisions": 615,
+    "padding": 1845,
+    "suffixes": 2190,
+    "nonconstant_degree": 550,
+    "constant_zero": 65,
+    "rejections": 43,
+    "immutability": 123
+  },
+  "examples": [
+    {
+      "name": "cubic_root",
+      "record": [
+        -6,
+        11,
+        -6,
+        1
+      ],
+      "at": "1",
+      "quotient": [
+        "6",
+        "-5",
+        "1"
+      ],
+      "remainder": "0"
+    },
+    {
+      "name": "nonzero_remainder",
+      "record": [
+        1,
+        0,
+        2
+      ],
+      "at": "2",
+      "quotient": [
+        "4",
+        "2"
+      ],
+      "remainder": "9"
+    },
+    {
+      "name": "constant",
+      "record": [
+        "-3/2"
+      ],
+      "at": "-2",
+      "quotient": [
+        "0"
+      ],
+      "remainder": "-3/2"
+    },
+    {
+      "name": "zero_tail",
+      "record": [
+        0,
+        0,
+        0
+      ],
+      "at": "1/2",
+      "quotient": [
+        "0"
+      ],
+      "remainder": "0"
+    },
+    {
+      "name": "fractional",
+      "record": [
+        "1/2",
+        "-1/3",
+        "2/3"
+      ],
+      "at": "-1/2",
+      "quotient": [
+        "-2/3",
+        "2/3"
+      ],
+      "remainder": "5/6"
+    },
+    {
+      "name": "zero_parameter",
+      "record": [
+        2,
+        -3,
+        4
+      ],
+      "at": "0",
+      "quotient": [
+        "-3",
+        "4"
+      ],
+      "remainder": "2"
+    }
+  ],
+  "oracle": "SymPy 1.14.0 Poly over QQ, division by X-a",
+  "limits": "Finite exact implementation checks only; neither universal proof nor complete manuscript/build acceptance."
+}

@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-27T16:45:26.968655+00:00",
+  "scope": "B1.18 有理数序；B1.19 绝对值与有理数值距离。只核公开许可来源的标准事实、条件及证明范围，不转载教材题目。",
+  "prior_ledgers_read": [
+    "research/production/rationals_multiplication_sources_2026-10-27.json"
+  ],
+  "method": "先读 cloud-environment-runtime 及 references/networking.md，实际查询环境状态并读 /etc/codex/network-policy.json；使用继承代理并保留TLS验证，只读公开GitHub及raw.githubusercontent.com。完整响应只留/tmp，仓库只保存原创摘要和证据元数据。",
+  "network_context": {
+    "policy_version": 1,
+    "startup_http_mode": "restricted",
+    "vpn_configured": false,
+    "runtime_phase": "running",
+    "runtime_observations_current": true,
+    "runtime_network_state": "unknown",
+    "hosts_used": [
+      "github.com",
+      "raw.githubusercontent.com"
+    ],
+    "interpretation": "实际策略允许列表含这两个主机；unknown不等于网络执行策略已验证。9个请求的HTTP200分别记录可访问事实。未绕过限制。"
+  },
+  "sources": [
+    {
+      "id": "RORD-LEBL",
+      "title": "Basic Analysis: Introduction to Real Analysis, Volume I",
+      "authors": [
+        "Jiří Lebl"
+      ],
+      "version": "6.3；固定提交 e21ec524ca7d54f800c693b948020c188d21d01f",
+      "public_url": "https://github.com/jirilebl/ra",
+      "version_evidence_request_ids": [
+        "lebl_tree",
+        "lebl_front"
+      ],
+      "license": {
+        "declared": "Dual license CC BY-NC-SA 4.0 and CC BY-SA 4.0",
+        "selected_reuse_option": "CC BY-SA 4.0",
+        "verified": true,
+        "evidence_request_ids": [
+          "lebl_license"
+        ],
+        "short_evidence": "Creative Commons Attribution-Share Alike 4.0 International License",
+        "reuse_boundary": "公开授权不等于公有领域；如实际复制改编须遵署名及相同方式共享等条件。本批不转载正文、题目或图，仅原创概括标准事实并提供引用。"
+      },
+      "checks": [
+        {
+          "topic": "书名作者版本",
+          "evidence_request_ids": [
+            "lebl_readme",
+            "lebl_front"
+          ],
+          "location": "README.md 开头；realanal.tex 行379–383、401",
+          "finding_zh": "作者 Jiří Lebl，Basic Analysis: Introduction to Real Analysis，Volume I；活动标题页 version 6.3，版权年份2009–2026。固定提交而不将 master 当永久版本。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "有序域上的符号律",
+          "evidence_request_ids": [
+            "lebl_realnums"
+          ],
+          "location": "ch-real-nums.tex：有序域定义，行250–264；prop:bordfield，行267–323",
+          "finding_zh": "定义域为有序域 F。命题明列正因子保严格序、负因子反严格序、非零平方正、0<x<y 时 0<1/y<1/x。正因子与正倒数比较有展开证明；负因子比较以及若干后续项明确留作练习。教材声明 Q 是有序域但把细节留读者，故不算本书有理序构造已由来源证明。",
+          "status": "verified_with_proof_scope_limit"
+        },
+        {
+          "topic": "绝对值与区间界",
+          "evidence_request_ids": [
+            "lebl_realnums"
+          ],
+          "location": "ch-real-nums.tex：sec:absval；prop:absbas，行1123–1209",
+          "finding_zh": "绝对值按 x≥0 与 x<0 分段；命题列出非负及零当且仅当、相反数不变、积的绝对值、|x|≤y 当且仅当 -y≤x≤y、以及 -|x|≤x≤|x|，并逐项给证明。原文变量是实数；本书将在有理数内独立重证，所读证明仅使用域运算及序，无需上确界或完备性。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "三角与反三角不等式",
+          "evidence_request_ids": [
+            "lebl_realnums"
+          ],
+          "location": "ch-real-nums.tex：sec:absval 中 Triangle Inequality 命题及其后 corollary，行1213–1257",
+          "finding_zh": "实际读取 |x+y|≤|x|+|y| 的区间夹界证明及 ||x|-|y||≤|x-y| 的两次三角比较证明。声明域为 R；作为有序域推理模型核对，不声称原书此处是独立 Q 构造定理。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "距离公理与绝对值距离",
+          "evidence_request_ids": [
+            "lebl_metric"
+          ],
+          "location": "ch-metric.tex：sec:metric 中定义行30–67；标准实数距离例行101–116",
+          "finding_zh": "度量定义为 X×X→R，四条件为非负、零当且仅当同点、对称、三角。例子是 R 上 d(x,y)=|x-y|，三角证明展开 x-z=(x-y)+(y-z)。本批只需 Q≥0 值距离并在 Q 内检验四性质；尚未构造 R 时不偷用实数嵌入。",
+          "status": "verified_source_reading"
+        }
+      ]
+    },
+    {
+      "id": "RORD-LEAN",
+      "title": "Lean 4: Init.Data.Rat.Basic and Init.Data.Rat.Lemmas",
+      "authors": [
+        "Mario Carneiro",
+        "Johannes Hölzl",
+        "Robin Arnez"
+      ],
+      "author_scope": "Basic.lean署名Mario Carneiro；Lemmas.lean署名三人。",
+      "version": "v4.24.0",
+      "public_url": "https://github.com/leanprover/lean4/tree/v4.24.0/src/Init/Data/Rat",
+      "license": {
+        "declared": "Apache-2.0",
+        "verified": true,
+        "evidence_request_ids": [
+          "lean_license",
+          "lean_rat_basic",
+          "lean_rat_lemmas"
+        ],
+        "short_evidence": "Released under Apache 2.0 license",
+        "reuse_boundary": "本批不再分发源码，只记录声明、条件、出处与原创核对。"
+      },
+      "checks": [
+        {
+          "topic": "表示与正分母",
+          "evidence_request_ids": [
+            "lean_rat_basic"
+          ],
+          "location": "src/Init/Data/Rat/Basic.lean：Rat 结构，行18–35；Rat.den_pos，行45",
+          "finding_zh": "Rat 是分子为整数、分母为非零自然数、分子绝对值与分母互素的规范记录。正分母由非零自然数推出。本书以任意正分母对的等价类构造有理数，必须另证换代表不改变比较。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "交叉比较的精确条件",
+          "evidence_request_ids": [
+            "lean_rat_basic",
+            "lean_rat_lemmas"
+          ],
+          "location": "Basic.lean：Rat.blt 与 LT/LE 实例，行132–151；Lemmas.lean：Rat.lt_iff、Rat.le_iff，行665–687",
+          "finding_zh": "对 Rat 记录，严格与非严格比较分别等价于 a.num*b.den < b.num*a.den 与 ≤。这里两个分母自动正；不能把这一条件删掉，也不能将源码中的规范记录直接当作本书等价类的良定义证明。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "序公理与加法",
+          "evidence_request_ids": [
+            "lean_rat_lemmas"
+          ],
+          "location": "Lemmas.lean：Rat.le_iff_sub_nonneg 至 Rat.add_le_add_right，行689–746",
+          "finding_zh": "读取了总性、自反、传递、反对称与左右同加的声明及证明体。Rat.le_iff_sub_nonneg 把 a≤b 与 0≤b-a 联系；源码未调用实数完备性。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "正、零因子边界",
+          "evidence_request_ids": [
+            "lean_rat_lemmas"
+          ],
+          "location": "Lemmas.lean：Rat.mul_nonneg，行655–660；Rat.mul_le_mul_of_nonneg_left/right、mul_lt_mul_of_pos_left/right、le_of_mul_le_mul_left/right、mul_lt_mul_left/right，行763–812",
+          "finding_zh": "非负因子保持非严格比较；正因子保持严格比较并允许消去比较。lt_of_mul_lt_mul_left/right 的因子条件仅为非负，但另有严格乘积不等式，该前提本身排除零；不能误读成零因子严格保序。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "正倒数与除法比较",
+          "evidence_request_ids": [
+            "lean_rat_lemmas"
+          ],
+          "location": "Lemmas.lean：Rat.inv_pos，行835–840；Rat.div_lt_iff、div_lt_iff'、lt_div_iff、lt_div_iff'，行874–884",
+          "finding_zh": "inv_pos 是 0<a⁻¹ 当且仅当 0<a。div_lt_iff 在除数 b>0 时给 a/b<c 当且仅当 a<c*b；lt_div_iff 在 c>0 时给 a<b/c 当且仅当 a*c<b。这里只实读正除数版本，不宣称本文件已提供本书所有负除数版本。",
+          "status": "verified_source_reading"
+        },
+        {
+          "topic": "零倒数的约定差异",
+          "evidence_request_ids": [
+            "lean_rat_basic",
+            "lean_rat_lemmas"
+          ],
+          "location": "Basic.lean：Rat.inv 行177–192、Rat.div 行211；Lemmas.lean：Rat.inv_zero 行486–487",
+          "finding_zh": "Lean 把逆元与除法全定义，0⁻¹=0，除法定义为乘逆元。本书保留零倒数及除零未定义；从源码引用比较定理必须保留正除数或非零且已分符号的限制。",
+          "status": "verified_source_reading"
+        }
+      ]
+    }
+  ],
+  "independent_mathematical_checks": [
+    {
+      "topic": "正分母交叉序的代表无关",
+      "assumptions": "a,a′,c,c′ 为整数；b,b′,d,d′ 为正整数；ab′=a′b，cd′=c′d。仅调用已证整数交换结合及正因子保序与反映。",
+      "argument": "由 ad≤cb 同乘正整数 b′d′，左右分别改写为 (a′d′)(bd) 与 (c′b′)(bd)。因 bd>0，消去共同正因子得到 a′d′≤c′b′。反向交换两组代表即可，严格不等式同理。全程没有预先调用待定义的有理数序。",
+      "scope": "本审计原创的数学层交叉检查，不冒称摘自 Lean 规范记录的类构造证明，也不是机器形式验证。"
+    },
+    {
+      "topic": "乘除比较的三种符号",
+      "assumptions": "有理数的域运算和加法序相容已独立建立。",
+      "argument": "正因子保持并反映≤与<；负因子可写为正数的相反数，乘法后比较方向反转；零因子把两边都变为零，只保持≤，不能反映比较或保持<。例如2≤1为假而0·2≤0·1为真；1<2成立而0·1<0·2不成立。对非零除数，利用其逆元与它同号，正除数保持方向、负除数反转。除数零不进入书稿定义域。"
+    },
+    {
+      "topic": "三角、反三角",
+      "assumptions": "Q 上已证线性序、加法保序及相反数反序；|x|按符号分段。",
+      "argument": "先独立证明 |x|≥0、|-x|=|x| 和 |x|≤t 当且仅当 -t≤x≤t。分别相加 -|x|≤x≤|x| 与 -|y|≤y≤|y|，得三角不等式。由 |x|≤|x-y|+|y| 及 |y|≤|x-y|+|x| 得 -|x-y|≤|x|-|y|≤|x-y|，再用区间刻画得反三角。没有极限、上确界或实数完备性。"
+    },
+    {
+      "topic": "有理数值距离",
+      "assumptions": "x,y,z∈Q，d(x,y)=|x-y|，值域取 Q≥0。",
+      "argument": "非负来自绝对值定义；d(x,y)=0当且仅当x-y=0当且仅当x=y；由y-x=-(x-y)得对称；由x-z=(x-y)+(y-z)及三角不等式得距离三角。若后文采用通常实数值度量术语，则须在构造实数及其有理数嵌入后说明值域转换。"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "lean_license",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-27T16:40:44.617588+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "bytes": 9160,
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_rat_basic",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Rat/Basic.lean",
+      "checked_at_utc": "2026-10-27T16:40:44.308411+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Rat/Basic.lean",
+      "bytes": 12914,
+      "sha256": "f92a643905d91f93d10026264553362081b328b8755f9d7ff2f770bc3bdf0755",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_rat_lemmas",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Rat/Lemmas.lean",
+      "checked_at_utc": "2026-10-27T16:40:44.308890+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Rat/Lemmas.lean",
+      "bytes": 45941,
+      "sha256": "79f153962f148a08747db7d5c142a9d1990e90aec7dd7d8a228788f2c8bcd2d5",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_front",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "checked_at_utc": "2026-10-27T16:41:15.339935+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "bytes": 18862,
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_license",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "checked_at_utc": "2026-10-27T16:41:15.337678+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "bytes": 467,
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_metric",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "checked_at_utc": "2026-10-27T16:41:15.339004+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "bytes": 131868,
+      "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_readme",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/master/README.md",
+      "checked_at_utc": "2026-10-27T16:40:44.307323+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/master/README.md",
+      "bytes": 2276,
+      "sha256": "acfeb81f88c161831d07b8156bf823978ce5d16d958d31ce1863b747a88d26e2",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_realnums",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "checked_at_utc": "2026-10-27T16:41:15.338330+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "bytes": 80337,
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lebl_tree",
+      "url": "https://github.com/jirilebl/ra/tree/master",
+      "checked_at_utc": "2026-10-27T16:40:44.307944+00:00",
+      "http_status": 200,
+      "final_url": "https://github.com/jirilebl/ra/tree/master",
+      "bytes": 354679,
+      "sha256": "6747e19353cfc29715039f398cab571c401f9ac17e84fca6a824d0bd80b96c45",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 9,
+    "http_200": 9,
+    "independent_source_series": 2,
+    "failed_requests": 0
+  },
+  "not_established": [
+    "没有运行Lean或形式化本书证明；源码阅读不等于当前机器验证通过。",
+    "本次Lean文件未核到三角/反三角的Rat专门定理，相关证据为Lebl正文及本审计独立有理推理。",
+    "Lebl把负因子保序证明以及Q有序域的细节留读者；不把习题留证当作已展开证明。",
+    "不把R上度量例子直接写成尚未构造实数时已经取得的Q→R嵌入。",
+    "9次访问仅说明指定URL当时响应成功，不证明其他网页或许可证链接已访问。"
+  ],
+  "distribution_boundary": "第三方完整响应仅在/tmp/integratedmath-rationals-order-audit；本仓库不收入第三方书籍、源码、图像或题库全文。"
+}

@@ -1,0 +1,195 @@
+{
+  "status": "new_topic_evidence_verified_mapping_proposed_not_applied",
+  "reviewer": "/root/part1_sources",
+  "reviewed_at_utc": "2026-11-05T16:22:06.764411+00:00",
+  "scope_binding": {
+    "path": "/workspace/IntegratedMath-book/research/production/part1_scope_plan.json",
+    "sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "section_code": "00-02",
+    "requirement_id": "00-02-topic-source",
+    "objective_ids": [
+      "00-02-1"
+    ],
+    "existing_status": "pending",
+    "objective": "研究材料的核验边界"
+  },
+  "network": {
+    "policy": "restricted/enforced",
+    "observations_current": true,
+    "new_public_requests": 9,
+    "hosts_used": [
+      "github.com",
+      "raw.githubusercontent.com"
+    ],
+    "forbidden_or_denied_hosts_requested": false,
+    "proxy_or_tls_configuration_changed": false,
+    "clone_performed": false,
+    "path_discovery": "actual official repository root directory; currentOid fixes all substantive requests"
+  },
+  "requests": [
+    {
+      "url": "https://github.com/stacks/stacks-project",
+      "requested_at_utc": "2026-11-05T16:16:49.984092+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/repository.html",
+      "status": 200,
+      "final_url": "https://github.com/stacks/stacks-project",
+      "bytes": 439888,
+      "sha256": "eb60edfed6ef206c77bc4271884cfc0879a48475f77ea7b378d5e5d73c04aef0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/master/README",
+      "requested_at_utc": "2026-11-05T16:16:49.986112+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/README",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/master/README",
+      "bytes": 969,
+      "sha256": "8d42a1d61b4693951cc78843d1d9eb4e586104fe8c966d90bf87ef8c8b50901c",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/README"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/schemes.tex",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:17:32.758117+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-schemes.tex",
+      "path_basis": "exact filename present in actual official repository root listing",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/schemes.tex",
+      "bytes": 174402,
+      "sha256": "08475a01cf0ddf69734fd7ebc0d14d3831148c25a2ef82aaafdb65666f8fce47",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-schemes.tex"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/COPYING",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:17:32.759249+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-COPYING",
+      "path_basis": "exact filename present in actual official repository root listing",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/COPYING",
+      "bytes": 20404,
+      "sha256": "4b2c8fc390f802cd92f0622dc00a708a588bec54d0145d2ee135d6d7672bfe85",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-COPYING"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/introduction.tex",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:17:32.760834+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-introduction.tex",
+      "path_basis": "exact filename present in actual official repository root listing",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/introduction.tex",
+      "bytes": 6560,
+      "sha256": "43abd6493bf48325878d6573966e97025770d4b4e12db1dda31da7fd181d4acf",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-introduction.tex"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/README",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:17:32.763097+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-README",
+      "path_basis": "exact filename present in actual official repository root listing",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/README",
+      "bytes": 969,
+      "sha256": "8d42a1d61b4693951cc78843d1d9eb4e586104fe8c966d90bf87ef8c8b50901c",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-README"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/preamble.tex",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:18:25.621088+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-preamble.tex",
+      "path_basis": "exact filename present in actual official root directory",
+      "status": 200,
+      "bytes": 8116,
+      "sha256": "3191aa403474341b4ed60f48f8d88dce1d69a672507704a33b197d32d3842ec7",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-preamble.tex"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/stacks-project.cls",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:18:25.621891+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-stacks-project.cls",
+      "path_basis": "exact filename present in actual official root directory",
+      "status": 200,
+      "bytes": 60186,
+      "sha256": "dbace0cb163b1b24f2816d89c547a3d487d51d59ede0303fad079e8ae3f93254",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-stacks-project.cls"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stacks/stacks-project/a04446e57ec1fbc252a871afcec7752fb2807b14/conventions.tex",
+      "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+      "requested_at_utc": "2026-11-05T16:18:25.623142+00:00",
+      "cache": "/tmp/stacks-00-02-evidence/fixed-conventions.tex",
+      "path_basis": "exact filename present in actual official root directory",
+      "status": 200,
+      "bytes": 1798,
+      "sha256": "711a1081e100d7d41f4f18f9665b8646c3a5439cfb3898655cbf395c4d518db3",
+      "durable_local_cache": "local-inputs/part1-research-exposition-source-cache/fixed-conventions.tex"
+    }
+  ],
+  "actual_reads": {
+    "fixed-README": "全文1—25",
+    "fixed-introduction.tex": "全文1—158；重点16—23许可、28—44目标与链接、56—151归属说明",
+    "fixed-schemes.tex": "1—235；503—590（含519—536标准开集引理全部陈述、538—564完整证明）",
+    "fixed-conventions.tex": "全文1—71；重点28—32集合论、51—54环/模、60自然数记号",
+    "fixed-COPYING": "全文1—397",
+    "fixed-preamble.tex": "1—20；仅检查类文件衔接，不作数学来源",
+    "fixed-stacks-project.cls": "仅关键词定位；未逐读全文，不作数学内容证据"
+  },
+  "proposed_source": {
+    "id": "SRC-S4-STACKS-SCHEMES",
+    "title": "The Stacks Project — Schemes, Affine schemes, lemma-standard-open",
+    "author_or_publisher": "The Stacks Project contributors",
+    "version": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+    "public_url": "https://github.com/stacks/stacks-project/blob/a04446e57ec1fbc252a871afcec7752fb2807b14/schemes.tex#L503-L590",
+    "access": {
+      "status": "retrieved",
+      "method": "public_https",
+      "retrieved_at": "2026-11-05T16:17:32.758117+00:00",
+      "document_sha256": "08475a01cf0ddf69734fd7ebc0d14d3831148c25a2ef82aaafdb65666f8fce47"
+    },
+    "content_review": {
+      "status": "verified",
+      "reviewer": "/root/part1_sources",
+      "coverage": [
+        {
+          "section_code": "00-02",
+          "requirement_id": "00-02-topic-source",
+          "objective_ids": [
+            "00-02-1"
+          ],
+          "relevance": "topic_specific",
+          "source_location": "schemes.tex lines503–590; statement519–536; proof538–564; conventions.tex51–54",
+          "verified_claim": "真实专题研究性教材片段可定位对象Spec(R)/D(f)、环与模约定、局部化及有限覆盖结论、证明及其跨章先修；支持分开记录对象、假设、结论、证明位置和未核依赖。",
+          "limitations": "不是对整个Stacks或代数几何理论的独立认证；未读取被引Algebra/Sheaves证明和EGA正文，不声称本书第一章建立这些先修。"
+        }
+      ]
+    },
+    "license": {
+      "project_notice": "introduction.tex16–23: GNU FDL1.2-or-later, no invariant/front/back-cover texts",
+      "license_text": "COPYING GNU FDL1.2 read in full",
+      "scope_caveat": "schemes.tex开头未重复许可通知；本轮仅引用链接及原创事实概述，不据项目许可无条件分发章节源码或翻译。",
+      "intended_use": "链接、短书目及原创核验示范；缓存不纳入冻结ZIP。"
+    }
+  },
+  "recommended_disposition": {
+    "source_requirement": "可在主代理采纳精确入口与边界、正式映射重绑并复核后将00-02-topic-source改verified；本文件不修改现有pending账。",
+    "part_status": "仍pending；其他G缺口不受影响。"
+  },
+  "unverified_dependencies": [
+    "Algebra: algebra-section-spectrum-ring",
+    "Algebra: algebra-definition-Zariski-topology",
+    "Algebra: algebra-lemma-standard-open",
+    "Algebra: algebra-lemma-Zariski-topology",
+    "Algebra: algebra-lemma-qc-open",
+    "Sheaves: sheaf-on-basis/extension/covering lemmas",
+    "EGA bibliography/reference content"
+  ],
+  "directory_evidence": {
+    "path": "local-inputs/part1-research-exposition-source-cache/repository-directory-evidence.json",
+    "sha256": "cefe0c0344ecd98237a142a4fad99a7040c09e9686295f039e583c1e9caa4707",
+    "note": "Only actual directory paths/commit copied from public page payload; no other page/session fields retained here."
+  },
+  "cache_boundary": "local-inputs cache is git-ignored, remains local and is not a source-distribution artifact."
+}

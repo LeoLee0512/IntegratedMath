@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "status": "author-source-check; independent review pending",
+  "network_requests": 0,
+  "source": {
+    "author": "Jiří Lebl",
+    "title": "Basic Analysis I",
+    "version": "6.3",
+    "commit": "e21ec524ca7d54f800c693b948020c188d21d01f",
+    "license": "dual CC BY-SA 4.0 / CC BY-NC-SA 4.0"
+  },
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+      "cache_path": "local-inputs/pending-batch31/source-cache/lebl_sequences",
+      "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+      "actual_read_ranges": [
+        "3000–3060",
+        "3302–3387"
+      ],
+      "scope": "finite partial-sum notation and finite scaling/addition identities inside series discussion; no use of series conclusions; source also notes finite termwise-product failure, checked by original numerical exercise 8",
+      "access": "existing fixed-commit cache reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch31/real_sequences_order_subsequences_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "local-inputs/pending-batch31/source-cache/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "scope": "dual license CC BY-SA 4.0 / CC BY-NC-SA 4.0",
+      "access": "existing fixed-commit cache reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch31/real_sequences_order_subsequences_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "local-inputs/pending-batch31/source-cache/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "actual_read_ranges": [
+        "360–374",
+        "372–409"
+      ],
+      "scope": "title Basic Analysis I, author Jiří Lebl, version 6.3, copyright; not whole-book reading",
+      "access": "existing fixed-commit cache reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch31/real_sequences_order_subsequences_sources.json"
+    }
+  ],
+  "adopted_scope": "Only finite notation and displayed finite linearity identities and the general warning against replacing a product of sums by a termwise-product sum checked against source. Original construction and all proofs/exercises/answers, no translated/copied examples or solutions. Source does not supply fixed-update recursion, empty-prefix/zero-extension treatment or our complete induction proofs.",
+  "excluded": [
+    "infinite series",
+    "limits of partial sums",
+    "arbitrary finite reordering",
+    "double summation",
+    "abstract groups",
+    "vector linear combinations (next planned unit, unwritten)"
+  ],
+  "plan": {
+    "actual_path": "/tmp/finite-real-sums-draft/finite_real_sums_linear_combinations_plan.md",
+    "sha256": "9df4bf2d14592af4cb11fbe9e6422a664530954915c2b03bfba0ce3e81bdc1ce"
+  },
+  "manuscripts": [
+    {
+      "actual_path": "/tmp/finite-real-sums-draft/finite_real_sums.md",
+      "intended_path": "manuscript/foundations/finite_real_sums.md",
+      "sha256": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+      "lines": 306
+    },
+    {
+      "actual_path": "/tmp/finite-real-sums-draft/finite_real_sums_answers.md",
+      "intended_path": "manuscript/foundations/finite_real_sums_answers.md",
+      "sha256": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f",
+      "lines": 232
+    }
+  ]
+}

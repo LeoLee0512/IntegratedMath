@@ -1,0 +1,653 @@
+{
+  "base_commit": "0056e85176168e912af14d778fb81681974a283a",
+  "purpose": "Preserve superseded Part 1 source, evidence and local artifacts before integrating ee27cea; prior accepted statement was withdrawn, not renewed.",
+  "files": [
+    {
+      "path": "PART1_REVIEW.md",
+      "sha256": "b348302c0c3a9c4ce175487fbcc953835ff440c31dcc36a087fa75ff162a4a0b",
+      "archive_path": "research/production/history/0056e85-preintegration/PART1_REVIEW.md"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-001.png",
+      "sha256": "7c58ddcc34e46c7cda5c503b19e4463434a3ea41c7e304a7e4252185167b34e4",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分完整目录版/contact-001.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-217.png",
+      "sha256": "c5e8f824cbfd1ad9c9f8d5971222665f3b0a4d610acfd9879c45e992db16d0b6",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分完整目录版/contact-217.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-229.png",
+      "sha256": "6264216424a979c8bb67c22cdbef7dc4a78131168f1970f3761240d06c6dfdac",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分完整目录版/contact-229.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-241.png",
+      "sha256": "f73c0fb31e1a06c915eb3e2d9baaab9302e98534d01ca21cabccbf70569478af",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分完整目录版/contact-241.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-253.png",
+      "sha256": "335a8c963c99696d59078315b5d2fb8581562e00ed3154fb9da9165911eff982",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分完整目录版/contact-253.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-001.png",
+      "sha256": "dd52b09b3ba82ddae9eaca6cf79c3fb6434590780171444574ec7a9fa257d6a7",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分审阅版/contact-001.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-013.png",
+      "sha256": "551d420575198c1e922a47332a49da642c8e2ae87e4b38731be0122557bb054f",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分审阅版/contact-013.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-025.png",
+      "sha256": "505470e266057005b22adc1b4e3268cab5f04cc4a217125c295fc0e6eb27fca0",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分审阅版/contact-025.png"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-037.png",
+      "sha256": "3ca2f978be2fef1f30d6b7fdf46269047ba06a0c0a3f9c746a73f5ceccc46a9c",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/contacts/综合数学_第一部分审阅版/contact-037.png"
+    },
+    {
+      "path": "build/part1/manifest.json",
+      "sha256": "b02e63c769c10abb7693de21d8a1ed116b445340974322203b39c819f171f25c",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/manifest.json"
+    },
+    {
+      "path": "build/part1/part1_build_review.json",
+      "sha256": "123fc49eb945ad285531ab1c7de378ea1c441739ff768a2eaf815c9148eca627",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/part1_build_review.json"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-003.png",
+      "sha256": "6123dc3d8f2326ddced09aef5716faf3b2d89b426a1e97f3a81780e075ddd69b",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-003.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-221.png",
+      "sha256": "d1e4c050eddbb30fc176475c1b1889b162c35ebb334adbdd0c24c4f0bca936fb",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-221.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-222.png",
+      "sha256": "1905a2f65fab85e1e6caed49e8c464559a2a57256a3f263349a42ca18966cecc",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-222.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-223.png",
+      "sha256": "ce83706ff46d5d842f2aa3ea3332e91d77bc5674bfb8aea4982c3d067bc925f3",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-223.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-224.png",
+      "sha256": "81778b6af6d06cb7fb55e7ea5c367873ff72e8a1577d49aeaf19e0d655771b6e",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-224.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-225.png",
+      "sha256": "20bfd679dca7032700f1b6c7da7a9caf2ae20855a22b7e4ce0044e825ab30110",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-225.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-226.png",
+      "sha256": "aa08d9622d78ec7de81e2a85e7654bcf4fb8edb03d4247413bad575750b4c744",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-226.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-227.png",
+      "sha256": "f71a4630315de2e0d87196638fbce3800825a7235a4a5259effce2e8ca8cf655",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-227.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-228.png",
+      "sha256": "ae534d643384c0e8b8d880cdeb3c9c8dee0cfeb3b961369a4ba6d6038720fd2d",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-228.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-229.png",
+      "sha256": "0987dda8e1570fe8baae6c76be3029ed5f1446499aa810f03d26b3eea1f76ac1",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-229.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-230.png",
+      "sha256": "1b65abca4177fac354dffd50515b338d6ed413c8e7fbed2e090aca3a0e089888",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-230.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-231.png",
+      "sha256": "03ea7dcdb0861b5ab3f62cf21250d97c759f3b26638284623a1b27aaf367eefd",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-231.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-232.png",
+      "sha256": "f681c2641ba8cd82926f98a7d9985c966c9b64e690be5cfdb0de73a73ab10090",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-232.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-233.png",
+      "sha256": "08aaa5972abf4ffa8dd269e64ec6f93ee8c8d1ef997faf5d28defe610a91d02a",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-233.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-234.png",
+      "sha256": "de0ff5f921c3679e8f283b4d5682d2077e4cd31b1ce006cdabd07bd7277efc4e",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-234.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-235.png",
+      "sha256": "398f3296401efd74f0101fdc261b429caadbbe687f7733d70f83b411cede390e",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-235.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-236.png",
+      "sha256": "f5f25b849932662457f836ee9f3c274faeba6e20d4c3f0f96f63296b96338577",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-236.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-237.png",
+      "sha256": "b9c0ba82f0f2aadff276085ca37f438e1af872df2537e2a698d91ae313d45511",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-237.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-238.png",
+      "sha256": "da395c41262d2956cc34b4fff988e1548b3f187bcdcde64be6fa6c282f5a44a7",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-238.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-239.png",
+      "sha256": "e1726e9fbd754be9d891656e6a57f47a5e04dde3bb55ff00fe0e7c7013343973",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-239.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-240.png",
+      "sha256": "4177a002a0aaba373b5c532974109f4b38607ad9beb8f31a98ea28ae85d55d09",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-240.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-241.png",
+      "sha256": "6a3547123260c18858ac6028d0b0ed0c6cbbe31efd5695987cfb4d26237688bc",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-241.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-242.png",
+      "sha256": "3596ef64fda122732a67cd965a51e841f84c7db73aabafc8f1f455ef3b0c7b05",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-242.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-243.png",
+      "sha256": "5eeb4ecce7feb895a7051232e7ceddd30e21104ad017bc228b236bd858092281",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-243.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-244.png",
+      "sha256": "81fad00306a5664742cb787f30ed9dbc3138a82d5fdb733956fc95dd3da98d15",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-244.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-245.png",
+      "sha256": "999dc21fb2a6f50295135b5a067a29ead5dbd947c777b999105aef39b90436c5",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-245.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-246.png",
+      "sha256": "6bf88e433bc2e121ba3264defe96baccd65d1833ed5a1897735311b7fe76569d",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-246.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-247.png",
+      "sha256": "d2c12119671a8d06ab1681cf4d14b6229c2ca818acd8cd264332442936bdb45f",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-247.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-248.png",
+      "sha256": "d754bdf6d5f2fcafabbed9a2fba8d5026bb72ff25858c340c6a7b75e2d908ff4",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-248.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-249.png",
+      "sha256": "e4aad8d100cd1d5f1f77e63d3785fc39788d79cce2080587e7066c0eb67be775",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-249.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-250.png",
+      "sha256": "875669b92b54308ee9a1fdb05f3322323a36743096b849ba5e2f83938ac0c437",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-250.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-251.png",
+      "sha256": "5a5825daca636a958f996e99fcda694ad9f956904700f7e5a5a29e10db96f519",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-251.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-252.png",
+      "sha256": "380662469ef305fdd7f3f81c28a840c66d510c47573ae3e1a23b70fcd4adff50",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-252.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-253.png",
+      "sha256": "7751150ee7405bb6d214a2079eb0d51feccd58f65dc01a6d418b526218d06b91",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-253.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-254.png",
+      "sha256": "ef23bf1cd18c6002678acd60cfb62dc7ce88e588d10b3cd24e44da8f2a0e2c66",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-254.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-255.png",
+      "sha256": "2372cc98f0316d13ab92f295422e9d26c6f0ffebcf094688c9d66f1b1ba6b390",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-255.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-256.png",
+      "sha256": "70df6f323571ab6bec996c520efce58c8629d88b5774a2350d1b65f81adc0a60",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-256.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-257.png",
+      "sha256": "db3719ef0a9b81e52561601ddbbee47959ded98846b98921e2da53007025a321",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分完整目录版/page-257.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-003.png",
+      "sha256": "50625506c9ca1fb0355935df8660e27cc75bbd0bf31d56fee18cb22c947ee2f7",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-003.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-004.png",
+      "sha256": "342f76e2d51f6a7790b9b58d737ccb0d7ec18da23b9e0d047a0aefaeed35380f",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-004.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-005.png",
+      "sha256": "aa51ed5a3fd5b448aa20bdb8b6e2177a109f8e188b3e331ca9b6529c8da65366",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-005.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-006.png",
+      "sha256": "f09a7b06aba170c62c792ae3a26ca11505c4e0a23fc1e4ada5ef5ea8c09795fc",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-006.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-007.png",
+      "sha256": "39c48891975edb852284797d05f6c34ac321f1f8376e5320d63e9c8b3af84c30",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-007.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-008.png",
+      "sha256": "3bbabec05061b121e767ccc16c810b37247f92b41624400f25d046619cf61442",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-008.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-009.png",
+      "sha256": "0a6487a4e2ab37b6f541056640b5861dcd97677c69882daf4fa47ea3a083f27d",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-009.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-010.png",
+      "sha256": "585329008ff3191e88b5e4bb512d1acd5529b709f493f8ad7d1dc8874082ab7f",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-010.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-011.png",
+      "sha256": "727ad2cc16820c0fedc46bde9698c68e8fe49c9cd0f1c63d34a28239c457bb17",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-011.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-012.png",
+      "sha256": "39ed247414babb41e600c4d3525ac40dec40f2b91ac510c02c698e03f3ca6248",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-012.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-013.png",
+      "sha256": "517eb2b799c8b5947e6b406acb68685e9df41824038ed60478253b5400534ac4",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-013.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-014.png",
+      "sha256": "fbe3f108d268188403b66a6e7e0c775b338baf89130614b2350969c37ab472e8",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-014.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-015.png",
+      "sha256": "a56094a61f9ff180611cee64d6289c33e6492d26fd72deee2643e9f0fbc89d71",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-015.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-016.png",
+      "sha256": "032b113755560f37ae2e5afd817c692f4d2cd2d3ab6070b7394f06b393e14960",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-016.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-017.png",
+      "sha256": "057e34e5f5309bd64875483102d64f52410c3d1dd55dec73340bd602ca5f5d54",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-017.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-018.png",
+      "sha256": "26cd0447615a9e7fea8e56c25dd87653cc12916983125d601789985884554cd5",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-018.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-019.png",
+      "sha256": "3f60502e3ddc33b8df711d1d5d0f456bd6ecc9af5a9545c3dd593303f850f9bd",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-019.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-020.png",
+      "sha256": "61b89d018dfad52cf7a2118e641d3eea8c9960b0976552afbe9c2d1a0ce0a8be",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-020.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-021.png",
+      "sha256": "950b306ad398aa4a369c3b1946e693a73ebc4d15c93083d4222d737154f359bf",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-021.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-022.png",
+      "sha256": "f43b64976232aebada40f627bd628bb083254c1db91b1e942022145e53a4c639",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-022.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-023.png",
+      "sha256": "cb191057b35671043a56a13aa5df8cb8f8d902d9020bd636cd0dd40a90685069",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-023.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-024.png",
+      "sha256": "171b3315db455081ecfc19abaed028b1eb76a3b64e2f5352778e050591a1cc58",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-024.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-025.png",
+      "sha256": "db305d8a5d7a8aaae72b2c29f823e988ba641e4de2de2fbad989061e85d95801",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-025.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-026.png",
+      "sha256": "683aa816b29d4e5d7750e15b371cbe7400b6351bd830d3eae345e59d8f4700b7",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-026.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-027.png",
+      "sha256": "dc8c94fd06946d2674f45f53898a6a9806cdba2a9a9159d97122004143d141de",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-027.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-028.png",
+      "sha256": "40012a6056df69da757d4bf23c1c41933389a2a9144e334d6304ecc658a087ac",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-028.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-029.png",
+      "sha256": "04b8e1ed2b123ae0e8831eeb688f39f0e5fd2a0b283f6809db1077f96b7a86d1",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-029.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-030.png",
+      "sha256": "8a5f135533ed354b4cf138abfe35068da8e4063adf4fe9a63e494e180e64b0c3",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-030.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-031.png",
+      "sha256": "939d06e6927c612743a1f4804cd819f1b81d576bf4670128ab4620aa71af8bff",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-031.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-032.png",
+      "sha256": "27ddb477df3ba8e823cf2ec2167014c88b964e3ac2be782243598a35335ff902",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-032.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-033.png",
+      "sha256": "f9ca3e90bf011e0040ad5476c6b7d55e2237c15d4d286b94fd138e6212c0b562",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-033.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-034.png",
+      "sha256": "89cac3b558eaefc2adc88fa165c10e323fd2c3b57af3ee96ccc5f1b117a46d2d",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-034.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-035.png",
+      "sha256": "83d4cf176260095878c464032f878c9cff63ce38a7dd4a398ba7e4d8734ff8b8",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-035.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-036.png",
+      "sha256": "f906936b961df4d90890bc5210e2367be0128ae9b8546733c21ab87234af3014",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-036.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-037.png",
+      "sha256": "4a97b4591b0823805c5ad28f432b207beda0c4ffbb4160759d251b2dc7532027",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-037.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-038.png",
+      "sha256": "a73cd7f2323a81070c762031da9fe4a4beeab21faf2e4ec8c7371b6a486ce8e2",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-038.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-039.png",
+      "sha256": "2f9131c87b8caf369fe41cccb6b16414dc1bf18900d104e7fbf7cdd759213c9a",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-039.png"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-040.png",
+      "sha256": "ad7837c6c8a720ee452faef174b96f99d845b25c8e64a7456dc5fef60e67ad25",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/screenshots/综合数学_第一部分审阅版/page-040.png"
+    },
+    {
+      "path": "build/part1/validation.json",
+      "sha256": "8ab57a1c24b814aec0aecc8573fdbbd97bbf7ba8afe92209f5ac0d640e19a005",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/build/part1/validation.json"
+    },
+    {
+      "path": "data/editorial_plan.json",
+      "sha256": "486ab0afb8b9037a380bef3158d1daf508c280402f4d13422d43a4c1afe14408",
+      "archive_path": "research/production/history/0056e85-preintegration/data/editorial_plan.json"
+    },
+    {
+      "path": "dist/part1/综合数学_完整数学目录.pdf",
+      "sha256": "40bbd608ab29aa447879845cfee6c16cfd00358d3acd89928270811684631a86",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_完整数学目录.pdf"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分伴生文件.zip",
+      "sha256": "4be47814e1a880e11c29063cb9bee9d50a161cfc8123d9b1bbde1d37ce7c9a5b",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分伴生文件.zip"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分完整目录版.html",
+      "sha256": "6e4bc66f9817ed03990bf4262df26fb3a41d6b968a3858762975ca8a6b548beb",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分完整目录版.html"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分完整目录版.md",
+      "sha256": "39e1e2e43a9242f61c53075a3cba6a03821481630e76d39a1e8192293b37688c",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分完整目录版.md"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分完整目录版.pdf",
+      "sha256": "d50e020230b8135b754d621a105f3aeeae27a8a9bf37917dae59c894c46aaf9d",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分完整目录版.pdf"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分审阅版.html",
+      "sha256": "c9e544d5bdee6a6e40848114718fa8cca80bdb3bad93749a4b8cf12aeb2d768c",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分审阅版.html"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分审阅版.md",
+      "sha256": "1f8ac1b681294f4e138486862db61a6d159a54392c443aea2881d3a839c2af9c",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分审阅版.md"
+    },
+    {
+      "path": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "sha256": "675702c557243fc32d40f2a8edd9036ce7f185748909f052c769ea75f16da645",
+      "archive_path": "local-inputs/resume-0056e85-before-integration/part1-prior-artifacts/dist/part1/综合数学_第一部分审阅版.pdf"
+    },
+    {
+      "path": "manuscript/review_ch01/answers.md",
+      "sha256": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch01/answers.md"
+    },
+    {
+      "path": "manuscript/review_ch01/appendices.md",
+      "sha256": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch01/appendices.md"
+    },
+    {
+      "path": "manuscript/review_ch01/chapter.md",
+      "sha256": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch01/chapter.md"
+    },
+    {
+      "path": "manuscript/review_ch01/part_opening.md",
+      "sha256": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch01/part_opening.md"
+    },
+    {
+      "path": "manuscript/review_ch02/answers.md",
+      "sha256": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch02/answers.md"
+    },
+    {
+      "path": "manuscript/review_ch02/chapter.md",
+      "sha256": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
+      "archive_path": "research/production/history/0056e85-preintegration/manuscript/review_ch02/chapter.md"
+    },
+    {
+      "path": "research/production/part1_acceptance.json",
+      "sha256": "6fb858541e5911006269e8829394bcbe28c718b8104189d18e4ae551aad0f7f4",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_acceptance.json"
+    },
+    {
+      "path": "research/production/part1_acceptance_interface.md",
+      "sha256": "52702456e6f6afd7dfe3a3ab983ec8c8bd02665490326d6e05c8c0f6c9908067",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_acceptance_interface.md"
+    },
+    {
+      "path": "research/production/part1_acceptance_tool_checks.md",
+      "sha256": "a7aec84c236c1ad45be22b52a02dd5666bed5b85cc1c143d48a3da7a3b57ce95",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_acceptance_tool_checks.md"
+    },
+    {
+      "path": "research/production/part1_build_review.json",
+      "sha256": "123fc49eb945ad285531ab1c7de378ea1c441739ff768a2eaf815c9148eca627",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_build_review.json"
+    },
+    {
+      "path": "research/production/part1_ch01_independent_review.md",
+      "sha256": "52730db5bec6e9377951cca3066847e185b40ab93b423410e36308f65d5bccb7",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_ch01_independent_review.md"
+    },
+    {
+      "path": "research/production/part1_ch02_draft_scope.md",
+      "sha256": "89ef9e1a5aac6c7b44f4a7d902a57a2f2942230dc68deb7d690d3432a7c3a226",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_ch02_draft_scope.md"
+    },
+    {
+      "path": "research/production/part1_math_review.json",
+      "sha256": "270b1ca5307a32d64ab925b258e3bda466d3a00944a2b8d0798acd804fc7d300",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_math_review.json"
+    },
+    {
+      "path": "research/production/part1_math_review.md",
+      "sha256": "36065e2bbd2637cbb7aa1b70c20475a3ba7dd6518342557a31f14b8592616ea4",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_math_review.md"
+    },
+    {
+      "path": "research/production/part1_pedagogy_review.json",
+      "sha256": "4d8a90bc08c836b3db195c5a2fad1ac63bcb4ddefd3f4a9bf32ad9eb923a4686",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_pedagogy_review.json"
+    },
+    {
+      "path": "research/production/part1_pedagogy_review.md",
+      "sha256": "f4fcd6b8a62b1a051feaf5c1e838d7a631cb38422111c2d37b61a9d44f4d2419",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_pedagogy_review.md"
+    },
+    {
+      "path": "research/production/part1_publication_preflight.md",
+      "sha256": "7fa2ecf113d2b1d0e3279423b80d1b95905fa65e7cbebb0793313e78097bd8e0",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_publication_preflight.md"
+    },
+    {
+      "path": "research/production/part1_scope_audit.md",
+      "sha256": "ce36518eb4c70d09673da94bf04fe3eb5ec5405d9e84ab04f0adccc2b4370c7c",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_scope_audit.md"
+    },
+    {
+      "path": "research/production/part1_scope_plan.json",
+      "sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_scope_plan.json"
+    },
+    {
+      "path": "research/production/part1_visual_catalog.json",
+      "sha256": "51e0ca31345f4096f849c61818f5fdaa8eb6e0fdb3e550b71220f36482718fb5",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_catalog.json"
+    },
+    {
+      "path": "research/production/part1_visual_catalog.md",
+      "sha256": "1cd437efaf34732be276f6a74e9cf00ec5f9eeaf7a4d55151af85f1cd330d2b1",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_catalog.md"
+    },
+    {
+      "path": "research/production/part1_visual_full.json",
+      "sha256": "186e7da28420055fd2fb1db6349263a59b70494f4e17b33d33d78f34577ceac6",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_full.json"
+    },
+    {
+      "path": "research/production/part1_visual_full.md",
+      "sha256": "e69296e556ea11b04ed151e917672cf4fbab1ffab471b191bab992d689095b01",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_full.md"
+    },
+    {
+      "path": "research/production/part1_visual_review.json",
+      "sha256": "d7ca1a2e556b4e903a50464e70c004878b7a3f1849ec391c1b525e3357b4a3c1",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_review.json"
+    },
+    {
+      "path": "research/production/part1_visual_root.json",
+      "sha256": "8a835d069ecc2bff602a6f2e9c8f04458179c0dc55ba9cdc92f66530afa43f5f",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_root.json"
+    },
+    {
+      "path": "research/production/part1_visual_root.md",
+      "sha256": "58171ca1ff2adef5a9976cabaad767d78183fb2045c6e34d16ab657b0e283ae0",
+      "archive_path": "research/production/history/0056e85-preintegration/research/production/part1_visual_root.md"
+    },
+    {
+      "path": "tools/validate_ch01_review.py",
+      "sha256": "97daa7ac9b53b09a012160820cfe64492ba5ad36841b6164315fbc9848d532d7",
+      "archive_path": "research/production/history/0056e85-preintegration/tools/validate_ch01_review.py"
+    },
+    {
+      "path": "tools/validate_part1_acceptance.py",
+      "sha256": "6b34a1eced42dc4e1f78a2f1663d565626f7f34f67848ae062eec25fc96d0264",
+      "archive_path": "research/production/history/0056e85-preintegration/tools/validate_part1_acceptance.py"
+    }
+  ],
+  "local_adaptation_prior_files": [
+    {
+      "path": "EDITORIAL_POLICY.md",
+      "sha256": "8e7ec826e63ea6f64de5b47fb1ecd68917e5a10c63357aab960c029c042d9b11",
+      "archive_path": "research/production/history/0056e85-preintegration/EDITORIAL_POLICY.md"
+    },
+    {
+      "path": "LEARNING_PATH.md",
+      "sha256": "36034684e2b69ad9c36c00feb6a07bba4c0bb3ecc009542b3f54d588aa364a5d",
+      "archive_path": "research/production/history/0056e85-preintegration/LEARNING_PATH.md"
+    },
+    {
+      "path": "tools/part1_ledger.py",
+      "sha256": "6a553c5d69ff02798095a0b83cdf0be0d6abdeb3ca73512fa54edbccd4df5cb9",
+      "archive_path": "research/production/history/0056e85-preintegration/tools/part1_ledger.py"
+    }
+  ]
+}

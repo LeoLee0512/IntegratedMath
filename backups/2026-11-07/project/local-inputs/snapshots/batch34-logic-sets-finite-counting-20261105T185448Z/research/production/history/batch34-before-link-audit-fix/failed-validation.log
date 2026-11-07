@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2752, in <module>
+    main()
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 2654, in main
+    book_reports = {stem: audit_book(stem, len(FIGURES), PAIRS) for stem in NEW_STEMS}
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 155, in audit_book
+    require(not re.search(r"\.md#", href), f"{stem}: leaked manuscript-file link {href}")
+  File "/workspace/IntegratedMath-book/tools/validate_learning_batch.py", line 44, in require
+    raise ValueError(message)
+ValueError: 综合数学_基础续写审阅版: leaked manuscript-file link https://github.com/JuliaCon/www.juliacon.org/blob/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/keynotes.md#L65-L69

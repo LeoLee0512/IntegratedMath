@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "status": "source_audit_not_manuscript_review",
+  "checked_at_utc": "2026-10-29T16:14:25.604467+00:00",
+  "scope": "B2.3单射、满射与双射；B2.4逆关系、逆函数判据、双侧逆唯一、逆复合与原像。",
+  "citation_anchor": "inverse-functions-sources",
+  "network_context": {
+    "runtime_skill_and_network_reference_read": true,
+    "policy_version": 1,
+    "vpn_configured": false,
+    "mode": "restricted",
+    "runtime_observations_current": true,
+    "runtime_network_state": "enforced",
+    "hosts_used": [
+      "raw.githubusercontent.com"
+    ],
+    "method": "继承代理与TLS验证，公开无需登录的只读请求；未读取或修改凭据，未绕限制。第三方完整响应仅在/tmp；仓库仅保留原创审计与元数据。"
+  },
+  "classification": {
+    "primary_leaf": "97I20",
+    "primary_title_zh": "映射与函数（教育方面）",
+    "parent_chapter": "97Ixx",
+    "parent_number": 529,
+    "part": "97-XX",
+    "part_number": 63,
+    "unit_codes": [
+      "B2.3",
+      "B2.4"
+    ],
+    "ledger_unit_numbers": [
+      24,
+      25
+    ],
+    "module": "functions",
+    "cross_tags_only": [
+      "03E20",
+      "97E60"
+    ],
+    "completed": false
+  },
+  "book_convention_and_independent_checks": [
+    "沿用f=(A,B,G)。定义域、目标与图均是函数数据；Judson图式对象与Lean类型化函数不能直接替代本书三数据证明。单射只看同一图中输出的碰撞；满射还依赖所声明目标集合。",
+    "固定B时空函数∅→B总单射；满射当且仅当B=∅，故双射也当且仅当B=∅。A≠∅时A→∅不存在，不能对不存在函数讨论性质。空集合上的恒等与逆仍合法。",
+    "对f:A→B，翻转图H={(b,a)∈B×A:(a,b)∈G}：每个b有至少一个输出恰是f满射；每个b至多一个输出恰是f单射。因此(B,A,H)为函数当且仅当f双射，不从非唯一纤维任意选择。",
+    "若g∘f=id_A，则f(a)=f(a′)经g得到a=a′。若f∘g=id_B，则每个b以g(b)为原像。若l是左逆而r是右逆，则l=l∘id_B=l∘(f∘r)=(l∘f)∘r=id_A∘r=r，所有中间类型明确。",
+    "若f:A→B及g:B→C均双射，则f⁻¹∘g⁻¹:C→A；代入两侧分别得id_C与id_A，再用唯一性得(g∘f)⁻¹=f⁻¹∘g⁻¹。不能保持原函数顺序。",
+    "任意f:A→B和T⊆B的原像是{x∈A:f(x)∈T}，不要求可逆。双射时它等于逆函数对T的像；f⁻¹(b)为元素、f⁻¹[T]为集合，不混用，亦不等于数的倒数1/f(b)。",
+    "任意f:A→B、g:B→C、T⊆C，x∈(g∘f)⁻¹[T] iff g(f(x))∈T iff f(x)∈g⁻¹[T] iff x∈f⁻¹[g⁻¹[T]]。这是逐成员等价，无双射前提。",
+    "改变目标为像f(A)可使新三数据函数满射，却不消除原有碰撞；例如{0,1}→{0}的常值函数仍非单射。单射限制到任意子集仍单射；满射限制可能失去原像。",
+    "逻辑边界：已给定右逆推出满射没有选择需求；从任意满射同时挑选所有非唯一原像是另一原则。本书不把其普遍成立列作本批已证结果；双射的唯一原像图构造不要求这种选择。"
+  ],
+  "not_established": [
+    "未运行Lean编译；读取公开形式化源码不等于形式验证本书证明。",
+    "此记录只审来源，不替代当前正文和16题全解的独立数学、教学与构建审阅。",
+    "不声称已建立选择公理、实数构造、完备性、连续图像或全部映射教育理论。"
+  ],
+  "requests": [
+    {
+      "request_id": "judson_copying",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/COPYING",
+      "checked_at_utc": "2026-10-29T16:10:49.100985+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/COPYING",
+      "bytes": 427,
+      "sha256": "b7d47749512a424173f6a20daeea7b00f36b9f5ef95c25930fdbc3bd549b8983",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_front",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/frontmatter.xml",
+      "checked_at_utc": "2026-10-29T16:10:49.030084+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/frontmatter.xml",
+      "bytes": 12931,
+      "sha256": "addf82ea52f863a28a6cf9372e7a42945c77cf36448ed99ce709a53dab6cfa23",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "judson_sets",
+      "url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml",
+      "checked_at_utc": "2026-10-29T16:10:49.030130+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/twjudson/aata/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml",
+      "bytes": 97708,
+      "sha256": "fa1d972edf851618fd869a7a1e5ff1dbcf7a9e5135f603087aff4bc418131b15",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_function",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Prelude.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.075628+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Prelude.lean",
+      "bytes": 223109,
+      "sha256": "a590e5b64fdaf40d4a4cc5cc123b4056bd152330ff608072de27e54094609632",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_license",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T16:10:48.909001+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/LICENSE",
+      "bytes": 9160,
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_function",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Function/Basic.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.251919+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Function/Basic.lean",
+      "bytes": 48376,
+      "sha256": "7d75d2a6f0510469afcaab5f9809e9ec2c2811b8db1a13dbd43a5b37f53616f3",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_function_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Function/Defs.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.500083+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Function/Defs.lean",
+      "bytes": 3378,
+      "sha256": "3295d86ee02840f55476323ab75de7b230f7f963e8ea9c4aba6c951c9df7aa6b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_image",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Image.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.296305+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Image.lean",
+      "bytes": 54229,
+      "sha256": "eb705a539daba1e0dce45498e637d64c9e48d292e57ee0e279ffceba01b4b629",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T16:10:49.434491+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_set_function",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Function.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.582561+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Function.lean",
+      "bytes": 54997,
+      "sha256": "19b9a1f32b200d8c84102f87ed77422fc49729067279bad6e2cdae040d2b36b8",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_equiv",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Equiv/Defs.lean",
+      "checked_at_utc": "2026-10-29T16:10:49.569955+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Logic/Equiv/Defs.lean",
+      "bytes": 40645,
+      "sha256": "c8ea24723359c73d163f84d9260528e618a2cf6781f8e026a7ecf65a422e3fca",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "lean_function_basic",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Function.lean",
+      "checked_at_utc": "2026-10-29T16:12:08.648332+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover/lean4/v4.24.0/src/Init/Data/Function.lean",
+      "bytes": 5076,
+      "sha256": "059f74efc5def55500757102ea4264eb72b121578e7783e39b255fde8136a7e5",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_set_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Defs.lean",
+      "checked_at_utc": "2026-10-29T16:12:08.946421+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Defs.lean",
+      "bytes": 10591,
+      "sha256": "0776c9b6ddd339184af6b6ccab8942680d1534273acabf793df72fa59df60fd1",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 13,
+    "http200": 13,
+    "independent_source_series": 2
+  },
+  "sources": [
+    {
+      "id": "INV-JUDSON",
+      "authors": [
+        "Thomas W. Judson"
+      ],
+      "title": "Abstract Algebra: Theory and Applications",
+      "version": "Annual Edition 2026；前言August 4, 2026；commit 3069910e3ded72ff5e18837a97a0e810c92790e2",
+      "url": "https://github.com/twjudson/aata/tree/3069910e3ded72ff5e18837a97a0e810c92790e2",
+      "license": {
+        "common_available_scope": "GFDL-1.3-or-later",
+        "evidence": [
+          "judson_copying",
+          "judson_front"
+        ],
+        "discrepancy": "COPYING为1.3或以后；frontmatter.xml行60为1.2或以后。共同许可范围为1.3或以后；均无不变章节和封面文本要求。",
+        "use": "事实、条件与证明结构核对；不转载段落、图片或题干。"
+      },
+      "checks": [
+        {
+          "request_id": "judson_sets",
+          "location": "src/sets.xml，行732–745",
+          "locator": "sets-subsection-cartesian-products：三种映射性质",
+          "browse_url": "https://github.com/twjudson/aata/blob/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml#L732",
+          "finding": "满射量词对每个目标元素要求至少一个原像；单射从相同输出推出相同输入；双射兼具两者。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "judson_sets",
+          "location": "src/sets.xml，行883–954",
+          "locator": "无编号XML theorem：复合的四条性质",
+          "browse_url": "https://github.com/twjudson/aata/blob/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml#L883",
+          "finding": "单射、满射、双射在匹配域目标的复合下保持。实际证明只展开结合与满射，单射部分留作练习；本书不能把该处当已读到全部证明。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "judson_sets",
+          "location": "src/sets.xml，行958–979",
+          "locator": "双侧逆定义",
+          "browse_url": "https://github.com/twjudson/aata/blob/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml#L958",
+          "finding": "逆函数g:B→A须同时满足g∘f=id_A及f∘g=id_B。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "judson_sets",
+          "location": "src/sets.xml，行1090–1124",
+          "locator": "无编号XML theorem：invertible iff one-to-one and onto",
+          "browse_url": "https://github.com/twjudson/aata/blob/3069910e3ded72ff5e18837a97a0e810c92790e2/src/sets.xml#L1090",
+          "finding": "逆存在推出单射与满射；反向由满射给存在、单射给唯一，再定义每个b的唯一原像。书稿还需按三数据记录证明逆图合法及两复合等式。",
+          "status": "verified_source_reading_with_noted_scope"
+        }
+      ],
+      "evidence_request_ids": [
+        "judson_copying",
+        "judson_front",
+        "judson_sets"
+      ]
+    },
+    {
+      "id": "INV-LEAN-MATHLIB",
+      "authors_by_file": {
+        "lean_function_basic": [
+          "Kim Morrison"
+        ],
+        "mathlib_function_defs": [
+          "Leonardo de Moura",
+          "Jeremy Avigad",
+          "Haitao Zhang"
+        ],
+        "mathlib_function": [
+          "Johannes Hölzl",
+          "Mario Carneiro"
+        ],
+        "mathlib_equiv": [
+          "Leonardo de Moura",
+          "Mario Carneiro"
+        ],
+        "mathlib_image": [
+          "Jeremy Avigad",
+          "Leonardo de Moura"
+        ]
+      },
+      "title": "Lean 4 function primitives and mathlib function, equivalence and preimage APIs",
+      "version": "Lean4 v4.24.0；mathlib4 v4.24.0",
+      "url": "https://github.com/leanprover-community/mathlib4/tree/v4.24.0",
+      "license": {
+        "name": "Apache-2.0",
+        "evidence": [
+          "lean_license",
+          "mathlib_license"
+        ],
+        "use": "阅读声明、证明体及许可；不复制源码，不声称本书已被形式验证。"
+      },
+      "checks": [
+        {
+          "request_id": "lean_function_basic",
+          "location": "src/Init/Data/Function.lean，行53–68",
+          "locator": "Function.Injective / Surjective / Injective.comp / Surjective.comp",
+          "browse_url": "https://github.com/leanprover/lean4/blob/v4.24.0/src/Init/Data/Function.lean#L53",
+          "finding": "逐量词定义与复合保性证明均读到，满射复合逐次消去两个存在量词，不需为整族选择非唯一原像。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "lean_function_basic",
+          "location": "src/Init/Data/Function.lean，行71–103",
+          "locator": "Function.LeftInverse / RightInverse / LeftInverse.injective / RightInverse.surjective",
+          "browse_url": "https://github.com/leanprover/lean4/blob/v4.24.0/src/Init/Data/Function.lean#L71",
+          "finding": "左右逆按两个不同的逐点恒等式定义；左逆推出原函数单射，右逆推出原函数满射。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_function_defs",
+          "location": "Mathlib/Logic/Function/Defs.lean，行51–59",
+          "locator": "Function.Bijective / Bijective.comp / bijective_id",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Function/Defs.lean#L51",
+          "finding": "双射定义为单射与满射的合取；复合与恒等保持双射。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_function",
+          "location": "Mathlib/Logic/Function/Basic.lean，行284–337",
+          "locator": "LeftInverse.comp_eq_id / RightInverse.comp_eq_id / LeftInverse.eq_rightInverse",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Function/Basic.lean#L284",
+          "finding": "同类型逐点式转为函数等式；任一左逆与任一右逆相等，证明利用结合与双单位律。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_function",
+          "location": "Mathlib/Logic/Function/Basic.lean，行365–409",
+          "locator": "InvFun section / injective_iff_hasLeftInverse",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Function/Basic.lean#L365",
+          "finding": "该段有[Nonempty α]前提，invFun使用Classical.choose与任意默认元素。不得删去非空条件，∅→非空集合单射却无反向函数。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_function",
+          "location": "Mathlib/Logic/Function/Basic.lean，行417–443",
+          "locator": "surjInv / Surjective.hasRightInverse / bijective_iff_has_inverse",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Function/Basic.lean#L417",
+          "finding": "surjInv为noncomputable并显式调用Classical.choose；双射逆判据可对照结论，但这里的实现不能用来宣称已在不采用选择公理的集合背景中证明任意满射有右逆。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_equiv",
+          "location": "Mathlib/Logic/Equiv/Defs.lean，行148–158",
+          "locator": "Equiv.symm / left_inv' / right_inv'",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Equiv/Defs.lean#L148",
+          "finding": "交换正反函数和两侧恒等证据定义逆等价，不需额外非空条件。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_equiv",
+          "location": "Mathlib/Logic/Equiv/Defs.lean，行249–276",
+          "locator": "apply_symm_apply / symm_apply_apply / symm_trans_apply / symm_symm_apply",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Logic/Equiv/Defs.lean#L249",
+          "finding": "双侧恒等、逆的逆以及复合逆的反序公式；trans方向按先f后g核查。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_image",
+          "location": "Mathlib/Data/Set/Image.lean，行135–148",
+          "locator": "Set.preimage_comp / preimage_comp_eq / preimage_preimage",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Set/Image.lean#L135",
+          "finding": "原像的复合反序对任意类型匹配函数成立，不需双射。",
+          "status": "verified_source_reading_with_noted_scope"
+        },
+        {
+          "request_id": "mathlib_image",
+          "location": "Mathlib/Data/Set/Image.lean，行393–409",
+          "locator": "image_preimage_subset / subset_preimage_image / preimage_image_eq / image_preimage_eq",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Set/Image.lean#L393",
+          "finding": "一般只含包含关系；单射支持原像像等式，满射支持像原像等式；不可省略相应条件。",
+          "status": "verified_source_reading_with_noted_scope"
+        }
+      ],
+      "evidence_request_ids": [
+        "lean_function",
+        "lean_license",
+        "mathlib_function",
+        "mathlib_function_defs",
+        "mathlib_image",
+        "mathlib_license",
+        "mathlib_set_function",
+        "mathlib_equiv",
+        "lean_function_basic",
+        "mathlib_set_defs"
+      ]
+    }
+  ],
+  "distribution_boundary": "不分发外部教材正文、题目、图或第三方源码；书稿与题答独立编写，审计只记原创摘要、定位、URL、许可、版本及响应哈希。"
+}

@@ -1,0 +1,6 @@
+{
+  "old_sha256": "dcae973168a9b5884a112b4d665ded3f1bb13ad9c6dece30874b022f58c53e1c",
+  "new_sha256": "8173d217b8ff3e94abb86ff8c17e7a55836b5ac7d9e02e9a50bd9b7c73300727",
+  "ast_identical": true,
+  "reason": "Correct obsolete 74-unit comment; FLC is now registered below. Candidate review remains bound to original bytes; this is independent comment-only delta."
+}

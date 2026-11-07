@@ -1,0 +1,918 @@
+{
+  "schema_version": 1,
+  "status": "source_audit_not_manuscript_review",
+  "checked_at_utc": "2026-10-29T17:36:24.461240+00:00",
+  "scope": "B2.11有理数的非负整数幂；B2.12有限和的递归与基本运算。未来多项式未收入本批。",
+  "network_context": {
+    "runtime_skill_and_network_reference_previously_read": true,
+    "network_policy_file": "/etc/codex/network-policy.json",
+    "policy_version": 1,
+    "mode": "restricted",
+    "observations_current": true,
+    "observed_phase": "running",
+    "network_state": "enforced",
+    "hosts_used": [
+      "raw.githubusercontent.com"
+    ],
+    "method": "继承代理并验证TLS，公开只读；无认证、凭据或远程git操作。"
+  },
+  "requests": [
+    {
+      "request_id": "openstax_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-29T17:29:05.315711+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "bytes": 5642,
+      "sha256": "993990c353220be879928579c1393ced90c8b54764b4ba1182ba660b54e8ce32",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_exponents",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81382/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.316253+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81382/index.cnxml",
+      "bytes": 1568,
+      "sha256": "64ad32f8d264f3389e6a1869504e67360c9e9ac5fa0df2c3ce79f08d9af41001",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_powers",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.316848+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81383/index.cnxml",
+      "bytes": 179034,
+      "sha256": "5a0a6cd939b20eabbbc13d7c8cc7ac047c9bdeb29ffec2be064af5f7dcbaf9d8",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_products",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.317599+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml",
+      "bytes": 311916,
+      "sha256": "023e5187687bc3426e13ce1a6c93d1b3cc8ea7764cc35d552327a4cafe36456d",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:05.318025+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:29:05.658317+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "bytes": 23553,
+      "sha256": "f4d01bced59370e726f637a3d5b846ad77aa3536dba5a838cb00ceeadebd3033",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_group_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.670992+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Defs.lean",
+      "bytes": 52245,
+      "sha256": "5fe7a3a3f0827d6f50ea422574316731b470631308fe5a5d4faf8a5f97b9d885",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_group_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.795981+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Group/Basic.lean",
+      "bytes": 38946,
+      "sha256": "897682a769e0862a2ea040b604015588a465a98da46a1294334beb193c3d085a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_finsum",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.901676+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "bytes": 49194,
+      "sha256": "48d917421143e1e0a03fbe5e3ec2b035a8670c53c3a9f0e17f71dad80f789ecc",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_ringsum",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Ring/Finset.lean",
+      "checked_at_utc": "2026-10-29T17:29:05.947271+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Ring/Finset.lean",
+      "bytes": 15876,
+      "sha256": "5e370608955962fd9b3666c3a4dd5a4c085ce422fc39b6bd20898954f7dc31d1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_polynomial",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.149199+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Basic.lean",
+      "bytes": 43310,
+      "sha256": "58729bca673d44ea3694f7c3edc292b01da80e777a90faf15fdbe2ef4ce7ba23",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_eval",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.154298+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "bytes": 24376,
+      "sha256": "a623faee92573a0123e1af4abbdaf13316d409b5cd8693bf63a6d9d93e38b8b4",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_degree",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.199942+00:00",
+      "http_status": 404,
+      "access_status": "http_error"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_multiply",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:30:13.350355+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81385/index.cnxml",
+      "bytes": 208873,
+      "sha256": "83d265c9ba9fc274e90c27e3d660dfc5677371986abeaf1fc99eb8114a286133",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_degree_definitions",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.351003+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "bytes": 20441,
+      "sha256": "d3d0fd4d898113bfb7316bd4484d9dee8455f04aa5d1a038d1b23e0c3e63665f",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_coeff",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.351388+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Coeff.lean",
+      "bytes": 13849,
+      "sha256": "9c393b82f87e98e16d38f71007eddd2ed2d0a712c728996a9ae14191c46d961f",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_finsum_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.356856+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean",
+      "bytes": 34237,
+      "sha256": "b1e0e38c64a3ad5252bcec93c568646279af5821e16c9dc24edbe42e8420be8c",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_finsupp_defs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.357368+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Finsupp/Defs.lean",
+      "bytes": 16938,
+      "sha256": "7efe21a1f4a910c84ec21238d4a55e5e3e1c7889c1eb08a4437f7d1f843da007",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_fubini",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.lean",
+      "checked_at_utc": "2026-10-29T17:30:50.004224+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.lean",
+      "bytes": 6437,
+      "sha256": "973065e7327db3b86ef53ef814c3212c1723b8b51bf517eb624438ab68b7c1dc",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 20,
+    "http200": 19,
+    "http404": 1,
+    "independent_source_series": 2
+  },
+  "access_failures": [
+    {
+      "request_id": "mathlib_degree",
+      "status": 404,
+      "requested_path": "Mathlib/Algebra/Polynomial/Degree/Defs.lean",
+      "note": "候选路径不存在；原下载器只记HTTP状态，未保存错误响应正文/异常字符串，故不补造错误原文。正确Definitions.lean另有实际200记录。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "POWSUM-OPENSTAX",
+      "title": "Intermediate Algebra 2e",
+      "authors": [
+        "Lynn Marecek",
+        "Andrea Honeycutt Mathis"
+      ],
+      "version": "osbooks-prealgebra-bundle commit ad40c7e3c9a909cde81a24c526f52fe26a51fb14",
+      "license": {
+        "name": "CC-BY-NC-SA-4.0",
+        "evidence": [
+          "openstax_license",
+          "openstax_preface",
+          "openstax_collection"
+        ],
+        "use": "只核数学条件与术语，不复制正文、外部题答或图。非商业与相同方式共享限制不可误写为CC BY；图片有独立例外，本批不转载。"
+      },
+      "checks": [
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行51–65",
+          "locator": "m81384，fs-id1167835595382，Exponential Notation",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L51",
+          "finding": "按重复乘法介绍指数；本书须递归定义所有n∈N含0，而不能由正次数的省略号自动推出零次数。"
+        },
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行94–100",
+          "locator": "m81384，Product Property for Exponents",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L94",
+          "finding": "同底乘法合并指数的代数形式。源涉及更广的实底数/整数指数语境；本批仅Q底数和非负整数指数，用归纳证明。"
+        },
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行401–412",
+          "locator": "m81384，fs-id1167826869964 / fs-id1167831969999",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L401",
+          "finding": "零指数条款明确只限非零底数，教材声明被取零次幂的变量非零。它不为本书0^0=1约定提供依据；本书由离散递归单独明确规定，且不据此允许0/0。"
+        },
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行860–865",
+          "locator": "m81384，fs-id1167830898684",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L860",
+          "finding": "幂的幂合并指数。框中写实底数和整数指数，未逐项重述负指数非零条件；本书不照搬扩大范围，本批只n,m∈N。"
+        },
+        {
+          "request_id": "openstax_products",
+          "location": "modules/m81384/index.cnxml，行991–997",
+          "locator": "m81384，fs-id1167826996996",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81384/index.cnxml#L991",
+          "finding": "乘积的非负整数幂逐因子取幂；本书归纳时明确用有理乘法交换结合，不暗示任意非交换对象同样成立。"
+        }
+      ]
+    },
+    {
+      "id": "POWSUM-MATHLIB",
+      "title": "mathlib natural powers and finite sums",
+      "authors_by_file": {
+        "mathlib_group_defs": [
+          "Jeremy Avigad",
+          "Leonardo de Moura",
+          "Simon Hudon",
+          "Mario Carneiro"
+        ],
+        "mathlib_group_basic": [
+          "Jeremy Avigad",
+          "Leonardo de Moura",
+          "Simon Hudon",
+          "Mario Carneiro"
+        ],
+        "mathlib_finsum": [
+          "Johannes Hölzl"
+        ],
+        "mathlib_ringsum": [
+          "Johannes Hölzl"
+        ],
+        "mathlib_finsum_defs": [
+          "Johannes Hölzl"
+        ]
+      },
+      "version": "mathlib4 v4.24.0",
+      "license": {
+        "name": "Apache-2.0",
+        "evidence": [
+          "mathlib_license"
+        ],
+        "use": "阅读源码与前提，不复制实现，未运行Lean编译，也未形式化书稿。to_additive源注解与生成声明的对应不声称为本地编译结果。"
+      },
+      "checks": [
+        {
+          "request_id": "mathlib_group_defs",
+          "location": "Mathlib/Algebra/Group/Defs.lean，行586–619",
+          "locator": "Monoid.npow_zero / npow_succ / pow_zero / pow_succ",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Group/Defs.lean#L586",
+          "finding": "自然数幂的零次值为1，对每个底数成立，含带零的乘法结构中的0；后继由右乘底数给出。该约定是离散幂，不是除法或极限规则。"
+        },
+        {
+          "request_id": "mathlib_group_defs",
+          "location": "Mathlib/Algebra/Group/Defs.lean，行650–667",
+          "locator": "one_pow / pow_add / pow_mul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Group/Defs.lean#L650",
+          "finding": "幺半群背景即可对自然数指数归纳证明；pow_add与pow_mul写出零分支及后继分支，无非零底数假设。"
+        },
+        {
+          "request_id": "mathlib_group_basic",
+          "location": "Mathlib/Algebra/Group/Basic.lean，行204–214",
+          "locator": "CommMonoid / mul_pow",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Group/Basic.lean#L204",
+          "finding": "乘积幂要求可交换乘法背景。书稿的Q已具备，但不能把来源条件删去后推广。"
+        },
+        {
+          "request_id": "mathlib_finsum_defs",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean，行19–25",
+          "locator": "Finset求和的AddCommMonoid背景",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean#L19",
+          "finding": "有限集合求和预先使用可交换加法结构；不等于本书未经定义的任意求和符号。书稿先定义有序前缀和，再证明要用的有限性质。"
+        },
+        {
+          "request_id": "mathlib_finsum_defs",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean，行347–356",
+          "locator": "prod_empty，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean#L347",
+          "finding": "加法对应空和为零；这里读取了to_additive源注解，未运行Lean编译验证生成定理。"
+        },
+        {
+          "request_id": "mathlib_finsum",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean，行522–552",
+          "locator": "prod_range_succ / eventually_constant_prod / prod_range_add，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean#L522",
+          "finding": "加法对应前n项和的后继、零尾稳定和前缀拼接偏移。范围range n按i<n定义；n>0时才可写0,…,n−1，空范围和为0；本书须证明索引边界而不是把上界n误作末项。"
+        },
+        {
+          "request_id": "mathlib_finsum",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean，行303–305",
+          "locator": "prod_mul_distrib，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean#L303",
+          "finding": "加法对应逐项相加的和等于两和之和；本书用归纳和有理加法交换结合独立证明。"
+        },
+        {
+          "request_id": "mathlib_ringsum",
+          "location": "Mathlib/Algebra/BigOperators/Ring/Finset.lean，行46–54",
+          "locator": "sum_mul / mul_sum",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Ring/Finset.lean#L46",
+          "finding": "有限和左右乘常数的分配，源背景具有加法交换与左右分配；本书以有理数规律和前缀长度归纳独立证明，不把后续矩形双和自动列为本批成果。"
+        },
+        {
+          "request_id": "mathlib_finsum",
+          "location": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean，行628–645",
+          "locator": "prod_const / pow_eq_prod_const，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean#L628",
+          "finding": "加法对应常量有限和为项数次重复加法；库用自然数标量作用nsmul。本书尚未定义一般标量作用，故另用η(0)=0、η(n+1)=η(n)+1及分配律归纳证明SUM3的η(n)c，不能把自然数n直接当成Q对象。"
+        }
+      ]
+    }
+  ],
+  "request_id_disambiguation": {
+    "openstax_exponents": "m81382实际为Introduction，仅用于发现模块边界，不作为指数定理证据",
+    "openstax_powers": "m81383实际为Add and Subtract Polynomials",
+    "openstax_products": "m81384实际为Properties of Exponents and Scientific Notation",
+    "openstax_multiply": "m81385实际为Multiply Polynomials"
+  },
+  "existing_recursion_audit": {
+    "path": "manuscript/foundations/natural_numbers.md",
+    "anchor": "b1-recursion-principle",
+    "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+    "finding": "明确允许任意对象范围X、固定更新T:X→X；不是仅N值递归，但并未直接给出依赖索引n的更新版本。",
+    "powers_instantiation": "X=Q, x0=1, T(z)=za",
+    "sums_instantiation": "X=N×Q, x0=(0,0), T(i,s)=(i+1,s+u(i));归纳第一分量=n后取第二分量。"
+  },
+  "classification": {
+    "status": "registered_primary_scope_not_complete",
+    "primary_leaf": "97H20",
+    "parent_code": "97Hxx",
+    "parent_chapter_number": 528,
+    "part_code": "97-XX",
+    "part_number": 63,
+    "taxonomy_rows": [
+      {
+        "code": "97Hxx",
+        "level": "intermediate",
+        "parent_code": "97-XX",
+        "title_en": "Algebra education",
+        "title_zh": "代数教育",
+        "translation_method": "root"
+      },
+      {
+        "code": "97H20",
+        "level": "subject_leaf",
+        "parent_code": "97Hxx",
+        "title_en": "Elementary algebra (educational aspects)",
+        "title_zh": "初等代数（教育方面）",
+        "translation_method": "root"
+      }
+    ],
+    "reason": "仅非负整数幂、有限前缀和及基本运算的初等代数教学；不是方程不等式主目标，也不是一般代数结构完整教学。",
+    "cross_tags_if_actually_used": [],
+    "completed": false,
+    "unit_codes": [
+      "B2.11",
+      "B2.12"
+    ],
+    "ledger_unit_numbers": [
+      32,
+      33
+    ],
+    "module": "functions"
+  },
+  "independent_derivation_checks": [
+    "幂：固定a∈Q，取已采用递归原则的X=Q、初值1、更新T(z)=za。必须先核乘法封闭/唯一，获得唯一p_a:N→Q，定义a^n=p_a(n)。明示a^0=1包括0^0=1，这是离散自然数幂的约定，不能由a^m/a^m在a=0时推导，也不允许0/0。",
+    "指数律：a^(m+n)=a^m a^n对n归纳；(a^m)^n=a^(mn)对n归纳，调用自然数乘法后继及前式；(ab)^n=a^n b^n对n归纳并显式使用有理乘法交换结合。n=0、m=0、a=0都在起始/后继中覆盖。0^n=0只对n>0；1^n=1对n≥0。负底数括号与负号位置先说明。",
+    "有限和：给u:N→Q，原递归只允许固定状态更新，取X=N×Q，初值(0,0)，T(i,s)=(i+1,s+u(i))。T处处定义且值在X；递归得F(n)，归纳首分量为n，第二分量记Σ_n u，于是Σ_0u=0，Σ_(n+1)u=Σ_nu+u(n)。这合法使用原任意X原则，不暗增索引依赖递归公理。",
+    "边界：Σ_n指前n项、索引0≤i<n，不是0至n；含末项n要写Σ_(n+1)。空表n=0和为0。有限表可先零延拓到N，但须证明只要前n项一致，Σ_n便相同，因而不依赖任意表外扩展。",
+    "和式基本律：零序列、逐项和、常数倍分别按前缀长度归纳；结合、交换和左右分配只用于当前两个有理数，不能直接当作任意有限重排已经证明。若教逐项取负，也用递归或和的相反数唯一证明。",
+    "拼接：对后段长度m归纳，证明Σ_(n+m)u=Σ_nu+Σ_m(i↦u(n+i))，逐项处理索引n+(i+1)与(n+i)+1。若u(i)=0对i≥N，则N之后任意更长前缀和相同；空前段、空后段、零尾与不同可用上界全部覆盖。",
+    "实际POW5还核新旧幂兼容：η=j∘ι:N→Q，其中ι由int-embedding进入Z，j由rat-integers进入Q；逐层单射及保零、一、加、乘来自int-addition-laws、imul-basic-laws、radd-integers、rmul-integers。旧pos-value-lemmas对自然b≥2给B0=1、B(n+1)=B(n)b，按n归纳得η(Bn)=η(b)^n。自然指数n与有理系数η(n)分别标明；该接口复用已写证明，没有新增外部访问。",
+    "实际SUM3固定c∈Q并对项数n归纳，空和与η(0)c同为0；后继由Σ_(n+1)=Σ_n+c=(η(n)+1)c=η(n+1)c。此处只用明确的N→Q嵌入和分配律，c=0或负数无需除法。索引I_n按j<n定义，n=0时不写无定义的自然差n−1。"
+  ],
+  "finite_diagnostics": {
+    "inputs": "Fraction(n,2), n=−4,…,4；幂指数0…6；固定seed20261029的200对8项序列。",
+    "counts": {
+      "power_add_and_power_power": 882,
+      "product_power": 567,
+      "prefix_concatenation": 9000,
+      "sum_linearity": 3600
+    },
+    "status": "passed",
+    "limitation": "预备审计时对当前幂与和式公式的有限诊断，不是本批书稿或新实现的测试，不代替一般证明。"
+  },
+  "remaining_gates": [
+    "独立数学教学审阅绑定当前稿哈希",
+    "构建和实际视觉验收",
+    "主线程最终QA后生成正式data JSON"
+  ],
+  "distribution_boundary": "只交付原创审计及来源元数据；外部教材、题答、图和源码全文不写入仓库。",
+  "citation_anchor": "powers-sums-sources",
+  "promotion": {
+    "origin": "/tmp/powers-polynomials-sources-plan.json",
+    "origin_sha256": "92a993c27f86275748fa7f2aafca5364e5fb3da3875de9b8285745b85b5fa07a",
+    "source_requests_repeated_during_promotion": false,
+    "note": "保留原checked_at_utc及20条请求原始访问时刻、状态、成功响应哈希和许可。正式化并非重新抓取。"
+  },
+  "request_scope_classification": [
+    {
+      "request_id": "openstax_collection",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "openstax_exponents",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "openstax_powers",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "openstax_products",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "openstax_license",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "openstax_preface",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_group_defs",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_group_basic",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_finsum",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_ringsum",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_polynomial",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_eval",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_degree",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_license",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "openstax_multiply",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_degree_definitions",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_coeff",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_finsum_defs",
+      "scope": "current_powers_sums_or_license"
+    },
+    {
+      "request_id": "mathlib_finsupp_defs",
+      "scope": "preparatory_read_not_current_coverage"
+    },
+    {
+      "request_id": "mathlib_fubini",
+      "scope": "preparatory_read_not_current_coverage"
+    }
+  ],
+  "deferred_read_boundary": "保留20次真实请求是访问历史，不是本批教学范围。m81382为发现模块；m81383/m81385、多项式/系数/求值/次数/有限支撑及一般双索引换序的源文件均只属未来预读，不登记当前定义、命题、练习或分类覆盖。",
+  "not_established": [
+    "未运行Lean编译，未把本书形式化；to_additive对应关系只据源码阅读。",
+    "来源审计不代替两正文及16题全解的独立数学/教学审阅。",
+    "本批未引入负整数/有理/实指数、无限级数、收敛、一般有限排列或双三索引求和换序。",
+    "所有多项式预读，包括零次数接口、卷积、求值与根数界，均未收入本批教学和完成台账。",
+    "有限精确诊断不代替一般归纳证明。"
+  ],
+  "actual_unit_targets": [
+    {
+      "code": "B2.11",
+      "number": 32,
+      "title": "有理数的非负整数幂",
+      "body": "manuscript/foundations/rational_powers.md",
+      "answers": "manuscript/foundations/rational_powers_answers.md",
+      "main_anchor": "pow-unit",
+      "definition_anchors": [
+        "pow-definition",
+        "pow-zero",
+        "pow-compatibility"
+      ],
+      "proved": [
+        {
+          "proposition": "POW1",
+          "anchor": "pow-zero",
+          "title": "零次、一次、单位底数和幂为零的完整判据"
+        },
+        {
+          "proposition": "POW2",
+          "anchor": "pow-addition",
+          "title": "同底数乘法的指数加法规律"
+        },
+        {
+          "proposition": "POW3",
+          "anchor": "pow-product",
+          "title": "可交换有理乘法下乘积的幂"
+        },
+        {
+          "proposition": "POW4",
+          "anchor": "pow-iteration",
+          "title": "幂的幂与自然指数乘法"
+        },
+        {
+          "proposition": "POW5",
+          "anchor": "pow-compatibility",
+          "title": "自然数嵌入有理数后新旧位值幂相容"
+        }
+      ],
+      "precise_prerequisites": [
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-peano-rules",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-induction",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-recursion-principle",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-add-one",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-addition-associative",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/place_value.md",
+          "anchor": "b1-right-distributivity",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-predecessor",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-signs",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-zero-product",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-integers",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-division",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/integers_addition_order.md",
+          "anchor": "int-embedding",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/integers_addition_order.md",
+          "anchor": "int-addition-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/integers_multiplication.md",
+          "anchor": "imul-basic-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_construction.md",
+          "anchor": "rat-integers",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-integers",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/positional_representation.md",
+          "anchor": "pos-value-lemmas",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-composition",
+          "status": "present"
+        }
+      ],
+      "exercise_count": 8,
+      "question_prefix": "pow-q",
+      "answer_prefix": "pow-a",
+      "scope": "actual_draft_targets_not_review_acceptance"
+    },
+    {
+      "code": "B2.12",
+      "number": 33,
+      "title": "有限和与求和规则",
+      "body": "manuscript/foundations/finite_sums.md",
+      "answers": "manuscript/foundations/finite_sums_answers.md",
+      "main_anchor": "sum-unit",
+      "definition_anchors": [
+        "sum-indices",
+        "sum-definition",
+        "sum-extensionality",
+        "sum-linearity",
+        "sum-concatenation"
+      ],
+      "proved": [
+        {
+          "proposition": "SUM1",
+          "anchor": "sum-extensionality",
+          "title": "前n项一致决定前缀和及有限表延拓独立"
+        },
+        {
+          "proposition": "SUM2",
+          "anchor": "sum-linearity",
+          "title": "逐项相加与有理常数缩放的有限和规则"
+        },
+        {
+          "proposition": "SUM3",
+          "anchor": "sum-constant",
+          "title": "常量有限和等于嵌入项数乘常量"
+        },
+        {
+          "proposition": "SUM4",
+          "anchor": "sum-concatenation",
+          "title": "移位序列及连续有限表拼接的和值公式"
+        },
+        {
+          "proposition": "SUM5",
+          "anchor": "sum-padding",
+          "title": "尾补任意有限个零保持和值"
+        }
+      ],
+      "precise_prerequisites": [
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-induction",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-recursion-principle",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-add-one",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-addition-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-addition-associative",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-cancellation",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-partial-order",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-strict-equivalence",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-successor-comparison",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-trichotomy",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-addition-order",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/natural_subtraction.md",
+          "anchor": "sub-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-subtraction",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-signs",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-pairs",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-compatibility",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-zero",
+          "status": "present"
+        }
+      ],
+      "exercise_count": 8,
+      "question_prefix": "sum-q",
+      "answer_prefix": "sum-a",
+      "scope": "actual_draft_targets_not_review_acceptance"
+    }
+  ],
+  "eta_interface": {
+    "path": "manuscript/foundations/rational_powers.md",
+    "anchor": "pow-compatibility",
+    "definition": "η=j∘ι:N→Q",
+    "properties": [
+      "单射",
+      "保零与一",
+      "保自然加法与乘法",
+      "η(n+1)=η(n)+1"
+    ],
+    "used_by": "SUM3 #sum-constant，常量和为η(n)c；带自然系数的有理值序列也使用此接口。",
+    "status": "proof_in_draft_independent_review_separate"
+  },
+  "registration_check": {
+    "temp_root": "/tmp/powers-sums-ledger-check-5rc_2ztt",
+    "units": 33,
+    "foundation_questions": 264,
+    "ch01_questions": 14,
+    "total_questions": 278,
+    "draft_chapters": 5,
+    "draft_leaves": 28,
+    "completed_parts": 0,
+    "parts_push": "not_due",
+    "modules": 43,
+    "old_specs_unchanged": 31,
+    "old_bridge_paths_unchanged": 62,
+    "formal_json_unchanged": true,
+    "all_new_anchors_present": true,
+    "precise_prerequisites_forward": true,
+    "primary_leaf_new": "97H20",
+    "note": "Temporary copy omits built PDFs; this is a ledger/anchor check, not final build/visual acceptance."
+  }
+}

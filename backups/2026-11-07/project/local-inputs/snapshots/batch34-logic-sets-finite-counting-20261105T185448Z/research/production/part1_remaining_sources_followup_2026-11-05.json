@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "record_kind": "followup_only_no_formal_status_change",
+  "reviewer": "/root/part1_sources",
+  "reviewed_at_utc": "2026-11-05T17:20:07.506083+00:00",
+  "formal_counts_unchanged": {
+    "G_topic_verified": 7,
+    "G_topic_pending": 11,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "scope_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+  "ledger_sha256": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246",
+  "scope_targets": [
+    {
+      "code": "00A17",
+      "objectives": [
+        {
+          "id": "00A17-1",
+          "text": "书评与原始论证的区别"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00A17-topic-source",
+          "topic": "外部书评：书评与原始论证的区别",
+          "objective_ids": [
+            "00A17-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B05",
+      "objectives": [
+        {
+          "id": "00B05-1",
+          "text": "辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B05-topic-source",
+          "topic": "讲座摘要汇编：辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明",
+          "objective_ids": [
+            "00B05-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B10",
+      "objectives": [
+        {
+          "id": "00B10-1",
+          "text": "区分单篇文章与汇编载体，分别记录作者、编者和使用位置"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B10-topic-source",
+          "topic": "具有普遍意义的文章汇编：区分单篇文章与汇编载体，分别记录作者、编者和使用位置",
+          "objective_ids": [
+            "00B10-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "verified"
+    },
+    {
+      "code": "00B15",
+      "objectives": [
+        {
+          "id": "00B15-1",
+          "text": "从专题目录选择具体问题并记录不同文章的定义和先修条件"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B15-topic-source",
+          "topic": "各类专门主题的文章汇编：从专题目录选择具体问题并记录不同文章的定义和先修条件",
+          "objective_ids": [
+            "00B15-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B20",
+      "objectives": [
+        {
+          "id": "00B20-1",
+          "text": "区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B20-topic-source",
+          "topic": "综合性会议论文集：区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容",
+          "objective_ids": [
+            "00B20-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B25",
+      "objectives": [
+        {
+          "id": "00B25-1",
+          "text": "追踪专题文章的具体引用链，逐项检查适用条件并辨认无起点的循环引用"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B25-topic-source",
+          "topic": "各类专题会议论文集：追踪专题文章的具体引用链，逐项检查适用条件并辨认无起点的循环引用",
+          "objective_ids": [
+            "00B25-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B30",
+      "objectives": [
+        {
+          "id": "00B30-1",
+          "text": "区分纪念文集的回忆、历史评价与研究主张并选择相应证据"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B30-topic-source",
+          "topic": "纪念文集：区分纪念文集的回忆、历史评价与研究主张并选择相应证据",
+          "objective_ids": [
+            "00B30-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B50",
+      "objectives": [
+        {
+          "id": "00B50-1",
+          "text": "记录原作者、译者与译文所据版本，核对更正和量词顺序"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B50-topic-source",
+          "topic": "具有普遍意义的文章译文集：记录原作者、译者与译文所据版本，核对更正和量词顺序",
+          "objective_ids": [
+            "00B50-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B55",
+      "objectives": [
+        {
+          "id": "00B55-1",
+          "text": "对照专题译文的术语、定义与版本，明确数学先修和翻译核验边界"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B55-topic-source",
+          "topic": "各类专门主题的文章译文集：对照专题译文的术语、定义与版本，明确数学先修和翻译核验边界",
+          "objective_ids": [
+            "00B55-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B60",
+      "objectives": [
+        {
+          "id": "00B60-1",
+          "text": "区分原发、重印与修订，核对分页和更正并识别同源传播"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B60-topic-source",
+          "topic": "文章重印汇编：区分原发、重印与修订，核对分页和更正并识别同源传播",
+          "objective_ids": [
+            "00B60-1"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B99",
+      "objectives": [
+        {
+          "id": "00B99-1",
+          "text": "综合生成文章核验卡并明确未知项，描述混合材料而不滥用其他类目"
+        },
+        {
+          "id": "00B99-2",
+          "text": "实际核对真实历史元数据文档的版本、角色、日期、更新和许可字段，并明确未核验论文证明"
+        }
+      ],
+      "source_requirements": [
+        {
+          "id": "00B99-topic-source",
+          "topic": "本章中未列入以上各节的其他主题：综合生成文章核验卡并明确未知项，描述混合材料而不滥用其他类目",
+          "objective_ids": [
+            "00B99-1",
+            "00B99-2"
+          ],
+          "relevance": "topic_specific"
+        }
+      ],
+      "topic_source_status": "pending"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://github.com/search?q=repo%3Aopenjournals%2Fjose-reviews+%22linear+algebra%22&type=issues",
+      "requested_at_utc": "2026-11-05T17:06:15.938338+00:00",
+      "status": 200,
+      "bytes": 181557,
+      "sha256": "38e80f788d0ccf26709bca74b0e3f4a2d06ad4d104daba1fb016c861d0506e26",
+      "cache": "/tmp/part1-remaining-source-evidence/jose-search.html"
+    },
+    {
+      "url": "https://github.com/leanprover-community/leanprover-community.github.io",
+      "requested_at_utc": "2026-11-05T17:06:15.939763+00:00",
+      "status": 200,
+      "bytes": 268374,
+      "sha256": "7b5275b03a442ec26d902ac20de88bc85519c419396130efc06fbffd79cd9954",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-repo.html"
+    },
+    {
+      "url": "https://github.com/search?q=repo%3Aopenjournals%2Fjose-reviews+textbook&type=issues",
+      "requested_at_utc": "2026-11-05T17:06:54.432218+00:00",
+      "status": 200,
+      "bytes": 218754,
+      "sha256": "7e22ac3ad0781e0623862f041159a0acd706eabbe7b75927e0e39924a36b050e",
+      "cache": "/tmp/part1-remaining-source-evidence/jose-textbook-search.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/leanprover-community.github.io/837dbf67da2e810527f30e42da1a5241e23a4428/README.md",
+      "requested_at_utc": "2026-11-05T17:06:54.433744+00:00",
+      "status": 200,
+      "bytes": 4372,
+      "sha256": "f058a48201a9ec80485d92de8c2642ec418e79f12a571e9a8d57af3af964da98",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-README.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-README.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/leanprover-community.github.io/837dbf67da2e810527f30e42da1a5241e23a4428/LICENSE",
+      "requested_at_utc": "2026-11-05T17:06:54.438525+00:00",
+      "status": 200,
+      "bytes": 1089,
+      "sha256": "f14dafe0cdfcb0ec91467558ff9f8375b66f30c026aee9888fa06f05390d6810",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-LICENSE",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-LICENSE"
+    },
+    {
+      "url": "https://github.com/leanprover-community/leanprover-community.github.io/tree/837dbf67da2e810527f30e42da1a5241e23a4428/data",
+      "requested_at_utc": "2026-11-05T17:06:54.439434+00:00",
+      "status": 200,
+      "bytes": 201417,
+      "sha256": "b49bb015aaf888d7f33d8a404ba1d1788c3b130ba41124ae26044ded7409fffb",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-data-directory.html"
+    },
+    {
+      "url": "https://github.com/openjournals/jose-reviews/issues/183",
+      "requested_at_utc": "2026-11-05T17:07:47.043555+00:00",
+      "status": 200,
+      "bytes": 371222,
+      "sha256": "eaefa74319d2cd3e4cb4d498f16d4b908fdee8e90cddb79534bcefa6eed8c833",
+      "cache": "/tmp/part1-remaining-source-evidence/jose183.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/leanprover-community.github.io/837dbf67da2e810527f30e42da1a5241e23a4428/data/events.yaml",
+      "requested_at_utc": "2026-11-05T17:07:47.044709+00:00",
+      "status": 200,
+      "bytes": 18681,
+      "sha256": "c1fd90fe3f90acbc6d96bd4cce3ce88aaa6f524deeec261c4216c4ac323d8dd0",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-events.yaml",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-events.yaml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/leanprover-community.github.io/tree/837dbf67da2e810527f30e42da1a5241e23a4428/templates",
+      "requested_at_utc": "2026-11-05T17:07:47.045968+00:00",
+      "status": 200,
+      "bytes": 264146,
+      "sha256": "65a048364defb6bd7740a2b08b1dad21e180dc09bfd8f4c9fde1ee2acd11d861",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-templates.html"
+    },
+    {
+      "url": "https://github.com/leanprover-community/lt2025",
+      "requested_at_utc": "2026-11-05T17:08:34.001559+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "cache": null
+    },
+    {
+      "url": "https://github.com/leanprover-community/leanprover-community.github.io/tree/master",
+      "requested_at_utc": "2026-11-05T17:08:49.702151+00:00",
+      "status": 200,
+      "bytes": 311231,
+      "sha256": "bfb600fa532c73743115bf16a08858bc2d2702d28bb05c967160f7c1ff8d4beb",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-master.html"
+    },
+    {
+      "url": "https://github.com/search?q=org%3Aleanprover-community+%22Lean+Together%22&type=repositories",
+      "requested_at_utc": "2026-11-05T17:09:13.197776+00:00",
+      "status": 200,
+      "bytes": 164971,
+      "sha256": "66d8d0906bc9f6fa9e835ebf2b1b2211e7a079fce304d062b7c03a6144f3e7a7",
+      "cache": "/tmp/part1-remaining-source-evidence/lean-event-search.html"
+    },
+    {
+      "url": "https://github.com/leanprover-community/lt2021",
+      "requested_at_utc": "2026-11-05T17:09:22.031102+00:00",
+      "status": 200,
+      "bytes": 240827,
+      "sha256": "6de2f6d83b4845b0c83f1b0d689d83530d7159145bfbd31a3bff07bbfb108e24",
+      "cache": "/tmp/part1-remaining-source-evidence/lt2021-repo.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/lt2021/b39c7a98484730c1dfa36860e56c6a93c5fab1cd/index.md",
+      "requested_at_utc": "2026-11-05T17:09:37.314008+00:00",
+      "status": 200,
+      "bytes": 2017,
+      "sha256": "aae83a092105a7f1bfa0f4aed16aa25404a2bb89da383332034d102401105d21",
+      "cache": "/tmp/part1-remaining-source-evidence/lt2021-index.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-index.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/lt2021/b39c7a98484730c1dfa36860e56c6a93c5fab1cd/schedule.md",
+      "requested_at_utc": "2026-11-05T17:09:37.315966+00:00",
+      "status": 200,
+      "bytes": 9670,
+      "sha256": "5149c30414c9553cb96938e6c8c15be8d44cae38886f7262bfc1d8284d19488c",
+      "cache": "/tmp/part1-remaining-source-evidence/lt2021-schedule.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-schedule.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/leanprover-community/lt2021/b39c7a98484730c1dfa36860e56c6a93c5fab1cd/LICENSE.md",
+      "requested_at_utc": "2026-11-05T17:09:37.316836+00:00",
+      "status": 200,
+      "bytes": 1090,
+      "sha256": "7e4b9c19b1bdd02884e14dca70c58553772ad99e8410ebf897ab3410e40a1ace",
+      "cache": "/tmp/part1-remaining-source-evidence/lt2021-LICENSE.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-LICENSE.md"
+    },
+    {
+      "url": "https://github.com/leanprover-community/lt2021/tree/b39c7a98484730c1dfa36860e56c6a93c5fab1cd/_data",
+      "requested_at_utc": "2026-11-05T17:09:37.317922+00:00",
+      "status": 200,
+      "bytes": 170323,
+      "sha256": "37a6c0ee291ad317df2f55fc005e37b481dc69df618051dd95c164eceada739a",
+      "cache": "/tmp/part1-remaining-source-evidence/lt2021-data.html"
+    },
+    {
+      "url": "https://github.com/search?q=JuliaCon+proceedings&type=repositories",
+      "requested_at_utc": "2026-11-05T17:10:48.415120+00:00",
+      "status": 200,
+      "bytes": 217746,
+      "sha256": "588790b28076748aa3b01970e9b20396e831825ad002249fd436a8fc971b01ec",
+      "cache": "/tmp/part1-remaining-source-evidence/proceedings-search.html"
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-guide",
+      "requested_at_utc": "2026-11-05T17:11:05.009072+00:00",
+      "status": 200,
+      "bytes": 226058,
+      "sha256": "d3906378751ddee39380294280f8ab6f68e08fac9c289a6b1614cb417d5415b7",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-guide-repo.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-guide/cd7d6f3c7aac8068e6fddda2c23f772820ae272b/README.md",
+      "requested_at_utc": "2026-11-05T17:11:21.190133+00:00",
+      "status": 200,
+      "bytes": 212,
+      "sha256": "44c56fe039fc269724e178e265e1e5d91eeb191037eefa9a350a6e0bedc65d88",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-README.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-README.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-guide/cd7d6f3c7aac8068e6fddda2c23f772820ae272b/index.md",
+      "requested_at_utc": "2026-11-05T17:11:21.191541+00:00",
+      "status": 200,
+      "bytes": 1187,
+      "sha256": "460231a5eacc078a466b138aca504fa21882e656a13c921f4b12eca4917c5551",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-index.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-index.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-guide/cd7d6f3c7aac8068e6fddda2c23f772820ae272b/author.md",
+      "requested_at_utc": "2026-11-05T17:11:21.192486+00:00",
+      "status": 200,
+      "bytes": 7325,
+      "sha256": "1317f9c112251e61e83baffdb6d067fec26bde889511b87e26a791475d33c673",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-author.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-author.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-guide/cd7d6f3c7aac8068e6fddda2c23f772820ae272b/reviewer.md",
+      "requested_at_utc": "2026-11-05T17:11:21.193387+00:00",
+      "status": 200,
+      "bytes": 3833,
+      "sha256": "8408b51f34c30e0da8aca139a72707de4ee3683a3bc092d823cad13a92b28a39",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-reviewer.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-reviewer.md"
+    },
+    {
+      "url": "https://github.com/search?q=repo%3AJuliaCon%2Fproceedings-review+%22published%22+%222021%22&type=issues",
+      "requested_at_utc": "2026-11-05T17:11:55.376395+00:00",
+      "status": 200,
+      "bytes": 220494,
+      "sha256": "e0e379b3fe995167d2b5a3f58b46f920733014037f8d94b78248651d00e514e9",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-published-search.html"
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-review/issues/195",
+      "requested_at_utc": "2026-11-05T17:12:24.832505+00:00",
+      "status": 200,
+      "bytes": 512361,
+      "sha256": "c8256951db2756b5b7e431e6f64fa533095809008be9328bd63c9d64d831de9b",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon195.html"
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-papers/tree/jcon.00195/jcon.00195",
+      "requested_at_utc": "2026-11-05T17:12:57.223961+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "cache": null
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-papers",
+      "requested_at_utc": "2026-11-05T17:13:28.211429+00:00",
+      "status": 200,
+      "bytes": 308756,
+      "sha256": "b4894f2e6724f16f93b607d43cb36028403cce77c9e2aee8bce661161cb97a19",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-papers-repo.html"
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-papers/pull/135",
+      "requested_at_utc": "2026-11-05T17:13:28.212294+00:00",
+      "status": 200,
+      "bytes": 259555,
+      "sha256": "b1f519821b7beadf59ea54886d4e632bce31cffa0ecc0a1dd1c18f8b8ebb6af4",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-pull135.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/README.md",
+      "requested_at_utc": "2026-11-05T17:13:47.507674+00:00",
+      "status": 200,
+      "bytes": 21,
+      "sha256": "f99c9d30993f4034482855b02fc204d6e600253b52f2769f135a12af25a34323",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon-papers-README.md",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-papers-README.md"
+    },
+    {
+      "url": "https://github.com/JuliaCon/proceedings-papers/tree/3f1f2cc695d89fff22fa23e21519fb3915bff614/jcon.00195",
+      "requested_at_utc": "2026-11-05T17:13:47.508777+00:00",
+      "status": 200,
+      "bytes": 176005,
+      "sha256": "457f3627b3416a2cbbac376e85e3907958d75fc1de912ccb4abff6aa235ca965",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon195-fixed-directory.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/jcon.00195/10.21105.jcon.00195.pdf",
+      "requested_at_utc": "2026-11-05T17:14:02.153019+00:00",
+      "status": 200,
+      "bytes": 638986,
+      "sha256": "9a7920ef8b1985569d2e899aa93966a173ba8cf9d8fee8e96240bbbc2b8d15f2",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon195.pdf",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195.pdf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/jcon.00195/10.21105.jcon.00195.crossref.xml",
+      "requested_at_utc": "2026-11-05T17:14:02.154483+00:00",
+      "status": 200,
+      "bytes": 4001,
+      "sha256": "e7ef7c419883538ec47d43cc07bf69398d682a28b1d32179ff3929947b7618f8",
+      "cache": "/tmp/part1-remaining-source-evidence/jcon195.crossref.xml",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195.crossref.xml"
+    }
+  ],
+  "actual_reads": [
+    {
+      "source": "JOSE #183",
+      "type": "pre-review issue snapshot, not completed book review",
+      "locations": [
+        "issue header version v2.0",
+        "https://github.com/openjournals/jose-reviews/issues/183#issuecomment-1212562856"
+      ],
+      "status": "insufficient_for_00A17",
+      "immutable_commit": null,
+      "license_status": "issue content redistribution not verified"
+    },
+    {
+      "source": "Lean Together 2021",
+      "commit": "b39c7a98484730c1dfa36860e56c6a93c5fab1cd",
+      "files_read_in_full": [
+        "index.md",
+        "schedule.md",
+        "LICENSE.md"
+      ],
+      "status": "real event schedule; no abstracts/full proceedings read",
+      "license": "MIT repository notice; external talk assets not automatically covered"
+    },
+    {
+      "source": "JuliaCon proceedings guide",
+      "commit": "cd7d6f3c7aac8068e6fddda2c23f772820ae272b",
+      "files_read_in_full": [
+        "README.md",
+        "index.md",
+        "author.md",
+        "reviewer.md"
+      ],
+      "key_locations": {
+        "author.md": [
+          "8-31",
+          "112-136"
+        ]
+      },
+      "license_status": "No explicit guide redistribution license located in read files/root listing; links and original overview only"
+    },
+    {
+      "source": "JuliaCon proceedings article 00195",
+      "commit": "3f1f2cc695d89fff22fa23e21519fb3915bff614",
+      "title": "Groups and smooth geometry using LieGroups.jl",
+      "authors": [
+        "Ronny Bergmann",
+        "Mateusz Baran"
+      ],
+      "doi": "10.21105/jcon.00195",
+      "pdf_pages": 9,
+      "pdf_actual_read": [
+        "page 1 visual/text: title, authors, abstract, Introduction and mathematical-background entry",
+        "page 2 extracted definition context",
+        "page 5 vicinity extracted implementation/type context"
+      ],
+      "xml_actual_read": "entire 4001-byte publisher deposit document",
+      "publication_date_as_recorded": "2026-01-13",
+      "conference_date": "not_verified_for_this_article",
+      "version_as_paper": "LieGroups.jl 0.1.9",
+      "pagination_caveat": "XML first_page=195; visually read PDF printed first page=1; not treated as interchangeable and not silently corrected",
+      "license_as_publisher_metadata": "CC BY 4.0 for vor/am/tdm; not automatically applied to other materials",
+      "math_correctness_certified": false,
+      "all_references_read": false
+    }
+  ],
+  "recommended_disposition": {
+    "00A17": "pending",
+    "00B05": "pending",
+    "00B10": "existing verified status unchanged; possible real-example enrichment only",
+    "00B15": "pending",
+    "00B20": "partial new evidence; remains pending",
+    "00B25": "pending",
+    "00B30": "pending",
+    "00B50": "pending",
+    "00B55": "pending",
+    "00B60": "pending",
+    "00B99": "partial new practice; whole requirement pending"
+  },
+  "proposed_practice": {
+    "new_manuscript_changes_applied": false,
+    "focus": [
+      "real article authors/title/DOI",
+      "actual publication date",
+      "PDF versus metadata locator distinction",
+      "conference date explicitly unknown",
+      "publication record versus mathematical proof"
+    ],
+    "not_a_conference_join": "Lean Together dates must never be joined to unrelated JuliaCon article"
+  },
+  "cache_git_ignored": true,
+  "cached_files": [
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-directory.json",
+      "sha256": "22f4115a243b327dc0134c1eb0f993dfb35739daab8ad2545a0c8460f1b64b46",
+      "bytes": 1421
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-data-directory.json",
+      "sha256": "e8e247ee834db89f4f8a615886447e1e015cfa666993d1ee9586d1d830914111",
+      "bytes": 1004
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-templates.json",
+      "sha256": "453c00f600bb024e4a17bfbbff30e98883b451a5ff08be0f81720a0f907659f9",
+      "bytes": 3039
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-master-directory.json",
+      "sha256": "f27cfa9f7a4c77810f403d9cc4df334c22b52deabd949cf615b025dff691d870",
+      "bytes": 3400
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-README.md",
+      "sha256": "f058a48201a9ec80485d92de8c2642ec418e79f12a571e9a8d57af3af964da98",
+      "bytes": 4372
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-LICENSE",
+      "sha256": "f14dafe0cdfcb0ec91467558ff9f8375b66f30c026aee9888fa06f05390d6810",
+      "bytes": 1089
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lean-events.yaml",
+      "sha256": "c1fd90fe3f90acbc6d96bd4cce3ce88aaa6f524deeec261c4216c4ac323d8dd0",
+      "bytes": 18681
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-directory.json",
+      "sha256": "fcae2888a06de4710294936a8491b839e855edda64b90467bed5b8ecd0072529",
+      "bytes": 1413
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-data-directory.json",
+      "sha256": "c35ed1cfe06644227d84a5f324102f72c9c125b4a187dde1e5e001467807645e",
+      "bytes": 152
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-index.md",
+      "sha256": "aae83a092105a7f1bfa0f4aed16aa25404a2bb89da383332034d102401105d21",
+      "bytes": 2017
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-schedule.md",
+      "sha256": "5149c30414c9553cb96938e6c8c15be8d44cae38886f7262bfc1d8284d19488c",
+      "bytes": 9670
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/lt2021-LICENSE.md",
+      "sha256": "7e4b9c19b1bdd02884e14dca70c58553772ad99e8410ebf897ab3410e40a1ace",
+      "bytes": 1090
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jose183-content.json",
+      "sha256": "183a83501d5791b6b518117d5a81942dcdccd07ea18bc8eb351a43a3e66b4a8d",
+      "bytes": 8110
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-guide-directory.json",
+      "sha256": "6fdb811334cf2b2dc2d6e9d8ffee8c721d943b09f37d8be09f4a457ee2e13333",
+      "bytes": 1121
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-README.md",
+      "sha256": "44c56fe039fc269724e178e265e1e5d91eeb191037eefa9a350a6e0bedc65d88",
+      "bytes": 212
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-index.md",
+      "sha256": "460231a5eacc078a466b138aca504fa21882e656a13c921f4b12eca4917c5551",
+      "bytes": 1187
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-author.md",
+      "sha256": "1317f9c112251e61e83baffdb6d067fec26bde889511b87e26a791475d33c673",
+      "bytes": 7325
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-reviewer.md",
+      "sha256": "8408b51f34c30e0da8aca139a72707de4ee3683a3bc092d823cad13a92b28a39",
+      "bytes": 3833
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195-content.json",
+      "sha256": "0dfc258dce01ed590fe624254215647eaab589e0518f40457b3aeb34bba655f4",
+      "bytes": 25058
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-papers-directory.json",
+      "sha256": "8bff16c3f8a7b3ffa2c78cae625c8e9a2f69eee66f5c0bec8cc1399b937a062d",
+      "bytes": 4220
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195-fixed-directory.json",
+      "sha256": "e0ed87973b8f5fda0a674e89a8b114979305ffdf066a34f489a3eed82a716b06",
+      "bytes": 270
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon-papers-README.md",
+      "sha256": "f99c9d30993f4034482855b02fc204d6e600253b52f2769f135a12af25a34323",
+      "bytes": 21
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195.pdf",
+      "sha256": "9a7920ef8b1985569d2e899aa93966a173ba8cf9d8fee8e96240bbbc2b8d15f2",
+      "bytes": 638986
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195.crossref.xml",
+      "sha256": "e7ef7c419883538ec47d43cc07bf69398d682a28b1d32179ff3929947b7618f8",
+      "bytes": 4001
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/jcon195.txt",
+      "sha256": "9bb660d2ad7af78411b33e521a45f061ace0eca950eb7bded447dc84cfe89f26",
+      "bytes": 73618
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-remaining-source-followup-cache/requests.json",
+      "sha256": "523afa11877fd877ed8f6facede468c3e211aaaa682a6c437e04a2f9c42adef3",
+      "bytes": 11653
+    }
+  ],
+  "content_review": {
+    "evidence": "research/production/part1_remaining_sources_followup_2026-11-05.md",
+    "sha256": "b9c2be97e85210cf2efb4f9f9f608ad935a7e4dc4b168f5838a489ec2f8e35d8"
+  }
+}

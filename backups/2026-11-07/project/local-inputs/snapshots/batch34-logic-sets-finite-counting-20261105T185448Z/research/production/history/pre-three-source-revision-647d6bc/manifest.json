@@ -1,0 +1,21 @@
+{
+  "base_commit": "647d6bc",
+  "old_files": {
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56",
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "research/production/part1_topic_sources.json": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
+    "research/production/part1_math_review.json": "57e4a70201481a907a9be32866993d0e7919f45eb4d17eec20dfb6087da57c4e",
+    "research/production/part1_pedagogy_review.json": "12b145a6690f8c2b070e5849c6c58d9231dfc935cc1c4a29a851b9c04ca43b35",
+    "research/production/part1_build_review.json": "5d2b73f530890f39ada1ca66d34edd7b3995b0b96a63c03370c286fea1f2c594",
+    "research/production/part1_visual_review.json": "a3b9e1497e38322db219bf84f68ebbaa6a0865d41564477396b951dc6fe25a2c",
+    "research/production/part1_acceptance.json": "08b6d777f22314a93611cbcf9f8aaedb6075b7f3e191227848e454b65d0e6f4e"
+  },
+  "purpose": "immutable prior first-part bindings before three-source revision"
+}

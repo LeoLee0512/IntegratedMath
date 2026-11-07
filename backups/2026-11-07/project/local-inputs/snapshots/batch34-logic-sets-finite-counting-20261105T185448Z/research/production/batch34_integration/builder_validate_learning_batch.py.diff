@@ -1,0 +1,74 @@
+--- tools/validate_learning_batch.py
++++ proposed/tools/validate_learning_batch.py
+@@ -28,7 +28,7 @@
+                                  FINITE_FUNCTION_INVERSES_REPORT, LINEAR_EQUATION_SOLVERS_REPORT, EDUCATION_UNITS, ANALYSIS_UNITS, CLASSIFIED_UNITS,
+                                  RATIONAL_INEQUALITIES_REPORT, RATIONAL_AFFINE_REPORT, RATIONAL_POWERS_SUMS_REPORT,
+                                  RATIONAL_POLYNOMIAL_BASIC_REPORT, RATIONAL_POLYNOMIAL_PRODUCT_REPORT,
+-                                 RATIONAL_POLYNOMIAL_LINEAR_DIVISION_REPORT, RATIONAL_QUADRATICS_REPORT, source_hashes, artifact_hashes,
++                                 RATIONAL_POLYNOMIAL_LINEAR_DIVISION_REPORT, RATIONAL_QUADRATICS_REPORT, source_hashes, artifact_hashes, check_batch34_prerequisites,
+                                  hashes, rational_gap_figure_source, dedekind_grid_figure_source, real_plane_figure_source, real_projection_figure_source, real_sequence_epsilon_figure_source)
+ 
+ REPORT = ROOT / "data/production/batch_validation.json"
+@@ -377,6 +377,9 @@
+                     or "基础单元B4.3" in text or "基础单元B4.4" in text
+                     or "基础单元B4.5" in text or "基础单元B4.6" in text
+                     or "基础单元B4.7" in text or "第146章一元函数" in text
++                    or "第5章一般逻辑" in text or "第8章集合论" in text
++                    or "命题联结词与带域量词" in text or "集合包含、相等与有限次集合运算" in text
++                    or "有限索引、计数唯一性与重编号" in text
+                     or "附录十五有限双射" in text
+                     or "附录十六有理数一次方程" in text
+                     or "附录十七有理数不等式" in text
+@@ -2528,8 +2531,9 @@
+ 
+ 
+ def main():
+-    require(len(UNITS) == 69 and len(PAIRS) == 579 and len(FIGURES) == 21,
+-            "Current analysis registration counts must be 69 units, 579 exercise pairs and 21 figures")
++    check_batch34_prerequisites()
++    require(len(UNITS) == 72 and len(PAIRS) == 603 and len(FIGURES) == 21,
++            "Current batch registration counts must be 72 units, 603 exercise pairs and 21 figures")
+     REPORT.parent.mkdir(parents=True, exist_ok=True)
+     # Immediately invalidate an earlier acceptance, including if this run later fails.
+     REPORT.write_text(json.dumps({"status": "validation_in_progress",
+@@ -2570,10 +2574,10 @@
+     require(len(re.findall(r"^### 第\d+章 ", full, re.M)) == 534, "Catalogue chapters mismatch")
+     require(len(re.findall(r"^- 第\d+节 ", full, re.M)) == 6006, "Catalogue sections mismatch")
+     for text in [full, review]:
+-        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "2", "26", "526", "529", "528", "529", "528", "526", "528", "527", "242", "146"],
++        require(re.findall(r"^# 第(\d+)章 ", text, re.M) == ["1", "2", "26", "526", "529", "528", "529", "528", "526", "528", "527", "242", "146", "5", "8"],
+                 "Teaching chapter order must follow prerequisites, with chapters 529, 528 and 526 continued")
+-        require(re.findall(r"^# 第(\d+)部分 ", text, re.M) == ["1", "7", "63", "28", "18"],
+-                "Teaching parts must follow prerequisites: 1, 7, 63, 28, 18")
++        require(re.findall(r"^# 第(\d+)部分 ", text, re.M) == ["1", "7", "63", "28", "18", "3"],
++                "Teaching parts follow the declared sequence: 1, 7, 63, 28, 18, then bounded B3 revisit in part 3")
+         require(re.findall(r"^## 第(\d+)节 ", text, re.M) == [str(i) for i in range(1, 34)], "First part section numbering changed")
+         require(re.findall(r"^# 附录(二十八|二十七|二十六|二十五|二十四|二十三|二十二|二十一|二十|十九|十八|十七|十六|十五|十四|十三|十二|十一|十|[一二三四五六七八九]) ", text, re.M)
+                 == ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三", "二十四", "二十五", "二十六", "二十七", "二十八"],
+@@ -2583,7 +2587,7 @@
+                 "Answers interleaved with teaching prose")
+         require(all(text.index("{#" + q + "}") < answers < text.index("{#" + a + "}") for q, a in PAIRS),
+                 "Exercise/answer separation failed")
+-        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation", "526-continuation", "528-real-continuation", "527", "242", "146"]
++        teaching_order = ["26", "526", "529", "528", "529-continuation", "528-continuation", "526-continuation", "528-real-continuation", "527", "242", "146", "5", "8"]
+         chapter_starts = {segment: text.index("{#chapter-" + segment + "}") for segment in teaching_order}
+         chapter_ends = {segment: chapter_starts[teaching_order[i + 1]]
+                         if i + 1 < len(teaching_order) else answers
+@@ -2606,7 +2610,7 @@
+                        "97F80", "97F70", "97I20", "97H30", "97H20", "章号保留原分类目录编号",
+                        "同一分类章续写，不新增分类章或节",
+                        "第529章续写，不新增分类章或节", "第526章续写，不新增分类章或节", "97F50",
+-                       "学习顺序说成MSC分类顺序", "第一部分11个G节的专题来源仍待核实", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "六十九个基础桥接单元", "第146章未完成", "柯西判据", "26A03", "26A15", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
++                       "学习顺序说成MSC分类顺序", "第一部分10个G节的专题来源仍待核实", "采用佩亚诺规则", "未形式证明递归原则", "二十一张插图", "七十二个基础桥接单元", "第146章未完成", "柯西判据", "第5章未完成", "第8章未完成", "B3.1", "B3.2", "B3.3", "03B05", "03B10", "03E20", "03E10", "97E30", "97E60", "05A05", "26A03", "26A15", "有序交换加法群", "非负分割乘积规律", "有序交换环", "完备有序域", "12J15", "有理像稠密", "非负平方根", "实数绝对值", "实数二次方程", "54E35"]:
+             require(phrase in text, "Missing scope/figure disclosure: " + phrase)
+         require(rational_gap_figure_source().strip() in text,
+                 "Rational gap appendix does not contain the current complete figure function")
+@@ -2618,7 +2622,7 @@
+         require(text.count("{#dedekind-multiplication-sources}") == 1,
+                 "Nonnegative cut product reference anchor missing/duplicated")
+         for anchor in ("real-sequences-cauchy-sources", "real-function-limits-sources",
+-                       "real-function-continuity-sources", "ccomp-boundary", "ivt-interval", "minv-boundary"):
++                       "real-function-continuity-sources", "ccomp-boundary", "ivt-interval", "minv-boundary", "lcq-sources", "sio-sources", "fct-source-boundary"):
+             require(text.count("{#" + anchor + "}") == 1,
+                     "New analysis reference anchor missing/duplicated: " + anchor)
+         require(text.count("{#dedekind-signed-sources}") == 1,

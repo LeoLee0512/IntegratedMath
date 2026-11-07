@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "status": "author source check; independent review pending",
+  "source": {
+    "author": "Robert A. Beezer",
+    "title": "A First Course in Linear Algebra",
+    "version": "3.50",
+    "commit": "347f27fe909b54b26970bcc0fcbf69c7e853c766",
+    "license": "GFDL 1.2 or later, no invariant sections/front-cover/back-cover texts"
+  },
+  "new_network_requests": 2,
+  "records": [
+    {
+      "url": "https://github.com/rbeezer/fcla/tree/347f27fe909b54b26970bcc0fcbf69c7e853c766/src",
+      "checked_at_utc": "2026-11-05T18:19:13.848956+00:00",
+      "status": 200,
+      "bytes": 304500,
+      "sha256": "d9fda772e13a1d9c425c0bf88b01307e7503d4988b1c1011fcc1e43f0211371f",
+      "cache": "/tmp/finite-linear-combinations-source-cache/tree.html",
+      "actual_read": "directory listing paths inspected for discovery; not full HTML content read"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LC.xml",
+      "checked_at_utc": "2026-11-05T18:19:23.077843+00:00",
+      "status": 200,
+      "bytes": 75707,
+      "sha256": "cddc53d10c3f74f7f930fac49da12301af5065a12fbfffbda7e4669a7fdc300e",
+      "cache": "/tmp/finite-linear-combinations-source-cache/section-LC.xml",
+      "actual_read": "section-LC.xml lines 1–125 read; adopted scope 1–29 definitions/type; examples read but not used"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new HTTP request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "actual_read_ranges": [
+        "1–22"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new HTTP request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    }
+  ],
+  "boundaries": [
+    "Source gives complex-column-vector finite linear-combination definition and matching numbers of scalar/vector inputs.",
+    "Book here defines real zero-indexed function-table combinations by scalar finite sums, proves all six FLC claims including m=0/n=0, and provides original eight questions/solutions.",
+    "Source examples were actually read but their numbers, solutions and presentation are not reproduced or translated.",
+    "No abstract vector-space sum recursion, span, basis, dimension, matrices, arbitrary term permutation or double-sum interchange claimed."
+  ],
+  "source_cache_preservation": "New originals currently only under /tmp/finite-linear-combinations-source-cache per root freeze instruction; when installing drafts preserve under ignored local-inputs and update this metadata path, do not ship originals.",
+  "plan": {
+    "path": "/tmp/finite-coordinate-combinations-draft/finite_coordinate_combinations_plan.md",
+    "sha256": "cd25ac54793f8e88dcfb8e86dcb96aa2a529dbaeac67f14cccf8f2d563c31ca0"
+  },
+  "prerequisite_files": {
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa",
+    "/tmp/finite-real-sums-draft/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+    "/tmp/finite-real-sums-draft/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+  },
+  "manuscripts": [
+    {
+      "actual_path": "/tmp/finite-coordinate-combinations-draft/finite_coordinate_combinations.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_combinations.md",
+      "sha256": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+      "lines": 285
+    },
+    {
+      "actual_path": "/tmp/finite-coordinate-combinations-draft/finite_coordinate_combinations_answers.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_combinations_answers.md",
+      "sha256": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e",
+      "lines": 251
+    }
+  ],
+  "index_mapping": {
+    "source": "n vector/scalar terms, vectors in C^m, one-based coordinates",
+    "this_book": "m vector/scalar terms, vectors in V_n={I_n→R}, zero-based coordinates",
+    "warning": "Letters m/n change roles between source and this manuscript; no symbol-for-symbol transfer."
+  }
+}

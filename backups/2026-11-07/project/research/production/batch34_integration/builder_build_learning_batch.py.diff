@@ -1,0 +1,135 @@
+--- tools/build_learning_batch.py
++++ proposed/tools/build_learning_batch.py
+@@ -109,6 +109,7 @@
+     ("real_intermediate_value", "ivt-unit", "ivt", "real_intermediate_value"),
+     ("real_monotone_inverse", "minv-unit", "minv", "real_monotone_inverse"),
+ ]
++UNITS += [('logic_connectives_quantifiers', 'lcq-unit', 'lcq', 'logic_connectives_quantifiers'), ('sets_inclusion_operations', 'sio-unit', 'sio', 'sets_inclusion_operations'), ('finite_counting_reindex', 'fct-unit', 'fct', 'finite_counting_reindex')]
+ EDUCATION_UNITS = {
+     "ratio-unit": {"chapter": 526, "code": "97Fxx", "section": "97F80"},
+     "qty-unit": {"chapter": 526, "code": "97Fxx", "section": "97F70"},
+@@ -163,7 +164,12 @@
+     "ivt-unit": {"chapter": 146, "code": "26Axx", "section": "26A15"},
+     "minv-unit": {"chapter": 146, "code": "26Axx", "section": "26A15"},
+ }
+-CLASSIFIED_UNITS = {**EDUCATION_UNITS, **ANALYSIS_UNITS}
++B3_UNITS = {
++    "lcq-unit": {"chapter": 5, "code": "03Bxx", "section": "03B05", "learning_code": "B3.1"},
++    "sio-unit": {"chapter": 8, "code": "03Exx", "section": "03E20", "learning_code": "B3.2"},
++    "fct-unit": {"chapter": 8, "code": "03Exx", "section": "03E10", "learning_code": "B3.3"},
++}
++CLASSIFIED_UNITS = {**EDUCATION_UNITS, **ANALYSIS_UNITS, **B3_UNITS}
+ WRITTEN_REPORT = ROOT / "research/production/written_arithmetic_validation.json"
+ INTEGER_REPORT = ROOT / "research/production/integer_pairs_validation.json"
+ EUCLIDEAN_REPORT = ROOT / "research/production/integer_euclidean_validation.json"
+@@ -324,6 +330,7 @@
+               ROOT / "research/production/part1_math_philosophy_followup.md",
+               ROOT / "research/production/part1_math_literature_followup.json",
+               ROOT / "research/production/part1_math_literature_followup.md"]
++    paths += [ROOT / name for name in ['research/production/logic_connectives_quantifiers_plan.md', 'research/production/logic_connectives_quantifiers_sources.json', 'research/production/logic_connectives_quantifiers_pedagogy_source_review.md', 'research/production/sets_inclusion_operations_plan.md', 'research/production/sets_inclusion_operations_sources.json', 'research/production/sets_inclusion_operations_math_review.md', 'research/production/finite_counting_bridge_plan.md', 'research/production/finite_counting_reindex_sources.json', 'research/production/finite_counting_reindex_math_review.md', 'research/production/finite_counting_reindex_pedagogy_source_review.md', 'research/production/logic_connectives_quantifiers_math_review.md', 'research/production/sets_inclusion_operations_pedagogy_review.md', 'tools/build_production_ledger.py', 'research/production/part1_jcon_abstract_event_followup_2026-11-05.json', 'research/production/part1_jcon_abstract_event_followup_2026-11-05.md', 'research/production/part1_jcon_abstract_root_content_review.json', 'research/production/part1_abstract_source_mapping_review.md']]
+     return hashes(paths)
+ 
+ 
+@@ -1601,16 +1608,54 @@
+ """
+ 
+ 
++def check_batch34_prerequisites():
++    """Fail before artifacts change unless registration and the abstract revision are applied."""
++    from build_production_ledger import UNIT_SPECS
++    expected = [(stem, anchor) for stem, anchor, *_ in UNITS]
++    actual = [(Path(spec["body"]).stem, spec["anchor"]) for spec in UNIT_SPECS]
++    if len(UNIT_SPECS) != 72 or actual != expected:
++        raise ValueError("Batch34 requires the reviewed 72-unit registration in matching order")
++    for spec in UNIT_SPECS[-3:]:
++        location = B3_UNITS[spec["anchor"]]
++        if (spec["code"] != location["learning_code"]
++                or spec["parent_code"] != location["code"]
++                or spec["parent_chapter_number"] != location["chapter"]
++                or location["section"] not in spec["msc_leaf_codes"]):
++            raise ValueError("B3 display metadata disagrees with the actual registration")
++    plan_path = ROOT / "research/production/part1_scope_plan.json"
++    plan = json.loads(plan_path.read_text())
++    ledger = json.loads((ROOT / "research/production/part1_topic_sources.json").read_text())
++    statuses = [section["topic_source_status"] for section in ledger["sections"]]
++    required_counts = {"G_topic_verified": 8, "G_topic_pending": 10,
++                       "T_S_original_work_reviewed_separately": 15}
++    if (ledger.get("counts") != required_counts or statuses.count("verified") != 8
++            or statuses.count("pending") != 10
++            or statuses.count("original_work_reviewed_separately") != 15):
++        raise ValueError("Batch34 ten-gap disclosure requires the applied 00B05 source revision")
++    for document in (plan, ledger):
++        section = next(item for item in document["sections"] if item["code"] == "00B05")
++        if section["topic_source_status"] != "verified":
++            raise ValueError("00B05 is still pending; do not publish the ten-gap disclosure")
++    if ledger.get("plan_sha256") != hashlib.sha256(plan_path.read_bytes()).hexdigest():
++        raise ValueError("Part1 source ledger does not bind the current scope")
++    if ledger.get("source_sha256") != hashes([ROOT / name for name in plan["source_files"]]):
++        raise ValueError("Part1 source ledger does not bind the current eight source files")
++    sources = {item["id"]: item for item in ledger["sources"]}
++    abstract = sources.get("SRC-C2-JULIACON-2025-KEYNOTE-ABSTRACT", {})
++    if abstract.get("content_review", {}).get("status") != "verified":
++        raise ValueError("The actual lecture-abstract content review is missing")
++
++
+ def compose_body():
+     opening = (CHAPTER / "part_opening.md").read_text()
+-    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章修订稿、第2章导读，以及六十九个基础桥接单元。"
++    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章修订稿、第2章导读，以及七十二个基础桥接单元。"
+               "B1.1—B1.19归入第7部分第26章；B1.20—B1.21归入第63部分第526章的数学教育主题。"
+               "B2.1—B2.4归入同部分第529章的函数教学桥接。"
+               "B2.5—B2.8归入同部分第528章的方程与不等式教学桥接。"
+               "B2.9—B2.10在这些先修之后续写第529章的有理坐标与仿射函数图像教学。"
+               "B2.11—B2.20随后续写第528章的有理数幂、有限和、多项式系数记录、运算、一次除式商余、有理根与恒等识别、有理平方及二次方程。"
+               "B2.21—B2.32再续写第526章97F50的有理数缺口、戴德金分割次序、非空有上界分割族的上确界、分割加法、有序交换加法群、非负分割乘积规律、全符号乘法的有序交换环、非零倒数与除法，汇总同一包含序下具上确界性质的完备有序域，再建立实数阿基米德性质、有理像稠密及非负平方根。B2.33继续第526章的实数绝对值与线距，B2.34再回到第528章的实数二次方程与配方界。"
+-              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.5随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛、实数数列BW及柯西判据。B4.6—B4.7再进入第18部分第146章26Axx，分别主归26A03点极限入口与26A15域内连续性；B4.8—B4.10继续26A15的连续复合、闭区间介值及有限闭区间严格单调函数的逆连续。第26章、第242章仅有部分单元，第146章未完成；第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；第2章已有十节导读及七题，第一部分11个G节的专题来源仍待核实，不计为完整部分完成。"
++              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.5随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛、实数数列BW及柯西判据。B4.6—B4.7再进入第18部分第146章26Axx，分别主归26A03点极限入口与26A15域内连续性；B4.8—B4.10继续26A15的连续复合、闭区间介值及有限闭区间严格单调函数的逆连续。本批随后回访第3部分：B3.1进入第5章03Bxx，B3.2—B3.3进入第8章03Exx；只补逻辑、集合运算与有限计数的有界入口。第5章、第8章未完成。第26章、第242章仅有部分单元，第146章未完成；第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；第2章已有十节导读及七题，第一部分10个G节的专题来源仍待核实，不计为完整部分完成。"
+               "本稿教学正文按先修关系接续，不能把这一学习顺序说成MSC分类顺序。"
+               "全目录仍为63部分、534章、6006节。自然数单元明确采用佩亚诺规则、归纳与递归原则，"
+               "尚未进行集合论中的自然数形式构造，也未形式证明递归原则。所有课后题答案统一置于全部教学正文之后；例题解答随文保留。\n\n")
+@@ -1717,7 +1762,7 @@
+ 
+ # 第28部分 序列、级数与可和性（MSC 40-XX） {#part-40}
+ 
+-从这里进入B4的实数数列入口；教学先修顺序回到原分类第28部分，不改变63部分的分类编号。直接使用已建立的函数、自然数规则、实数域、绝对值与阿基米德接口，不以前面的平面几何为先修。B3归纳计数模块和自然数形式基础仍未写，采用规则与完成课程分别登记。
++从这里进入B4的实数数列入口；教学先修顺序回到原分类第28部分，不改变63部分的分类编号。直接使用已建立的函数、自然数规则、实数域、绝对值与阿基米德接口，不以前面的平面几何为先修。B3归纳计数模块仅有本批后段的有限计数局部；自然数形式基础与归纳递归形式构造仍未写，采用规则与完成课程分别登记。
+ 
+ # 第242章 无穷极限过程的收敛与发散（40Axx） {#chapter-242}
+ 
+@@ -1736,6 +1781,28 @@
+ B4.6主归26A03“实变量函数基础”，交叉40A05与97I20；B4.7主归26A15“连续性与相关问题”，交叉97I20。前者建立积点、去心点极限、限制和有限运算，后者建立域内点的连续性、孤立点分支及有限运算与自然商域。两单元的误差证明直接使用已建立的函数与实数有序域规则，不先调用未证的序列判据。B4.8另以直接误差证明连续复合和局部定义域条件；B4.9独立用上确界证明有限闭区间介值定理；B4.10在有限闭区间上确定严格单调连续函数的像、重设目标取逆，并完整处理内部、端点及单点域的逆连续性。这些单元仅覆盖相应分类叶的部分教学内容，第146章未完成；序列判据、一般区间理论、极值、紧致性、一致连续性和微积分仍待后续。
+ 
+ """
++        if stem == "logic_connectives_quantifiers":
++            teaching += """
++
++# 第3部分 数理逻辑与数学基础（MSC 03-XX） {#part-03}
++
++本批在既有六十九个单元之后回访三项有界基础内容，不改变MSC分类次序，也不把此前采用的元语言、自然归纳或集合背景改称已经形式构造。
++
++# 第5章 一般逻辑（03Bxx） {#chapter-5}
++
++B3.1“命题联结词与带域量词”主归03B05并仅有03B10带域量词的经典语义入口；交叉97E30定位第525章，不重复收稿。B3.1是以下单元的学习编号，不是分类章号。第5章未完成；公理演算、可靠性与完备性仍不在当前范围。
++
++"""
++        if stem == "sets_inclusion_operations":
++            teaching += """
++
++# 第8章 集合论（03Exx） {#chapter-8}
++
++B3.2“集合包含、相等与有限次集合运算”主归03E20，讨论给定全集内的包含、相等与有限次集合运算；B3.3“有限索引、计数唯一性与重编号”主归03E10的有限基数局部，证明编号长度唯一、同规模单满射等价和可逆重编号。B3.2—B3.3交叉97E60定位第525章，B3.3另交叉05A05定位第12章；均不重复正文或题数。第8章未完成，关系系统、公理集合论、无限基数和线性维数仍待后续。
++
++"""
++        if stem == "finite_counting_reindex":
++            teaching += "\n\n**学习编号映射。** 以下“有限索引、计数唯一性与重编号”的学习编号为B3.3，先修入口见单元开篇。\n"
+         teaching += "\n\n" + (FOUNDATIONS / (stem + ".md")).read_text()
+         new_source = {"real_sequences_cauchy": "real-sequences-cauchy-sources",
+                       "real_function_limits": "real-function-limits-sources",
+@@ -2540,6 +2607,7 @@
+     reuse.add_argument("--incremental", action="store_true",
+                        help="Reuse only hash-verified legacy chapter and catalogue artifacts")
+     args = parser.parse_args()
++    check_batch34_prerequisites()
+     BUILD.mkdir(parents=True, exist_ok=True)
+     (OUT / "figures").mkdir(parents=True, exist_ok=True)
+     inputs = source_hashes()  # Fail before a costly build if any needed source is absent.

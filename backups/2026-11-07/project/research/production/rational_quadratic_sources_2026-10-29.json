@@ -1,0 +1,894 @@
+{
+  "schema_version": 1,
+  "status": "source_conditions_checked_formal_manuscript_interfaces_registered_final_build_separate",
+  "citation_anchor": "rational-quadratic-sources",
+  "reviewed_at_utc": "2026-10-29T19:15:53.645227+00:00",
+  "scope": "B2.19有理平方与存在域内非负根及规范记录平方判据；B2.20仅Q参数/未知量的配方、全部二次及退化解集、有理域取得界",
+  "plan": {
+    "path": "/tmp/rational_quadratic_plan.md",
+    "sha256": "b504e837c6af49d86ca72865e74ade818fda7ab5cfffc39bd156f8a5c71ed7c9",
+    "unit_codes": [
+      "B2.19",
+      "B2.20"
+    ],
+    "proposition_prefixes": [
+      "SQ",
+      "QC"
+    ],
+    "primary_leaf": "97H30",
+    "parent_chapter_number": 528,
+    "cross_tags_only": [
+      "97H20"
+    ],
+    "status": "planning_only_not_manuscript_registration"
+  },
+  "network_context": {
+    "skill": "cloud-environment-runtime",
+    "network_reference_read": true,
+    "policy_version": 1,
+    "mode": "restricted",
+    "vpn_configured": false,
+    "state": "enforced",
+    "host": "raw.githubusercontent.com",
+    "tls_verification": true,
+    "inherited_proxy": true,
+    "authentication": "none_public_readonly"
+  },
+  "requests": [
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "openstax_college_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/collections/college-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-29T18:48:43.484170+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/collections/college-algebra-2e.collection.xml",
+      "access_status": "verified_http_200",
+      "bytes": 7013,
+      "sha256": "7582386b6008cac7d7fefb6940c68eec029642d61b945b06af5a578c46c4b1e3",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_collection",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "openstax_college_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m63490/index.cnxml",
+      "checked_at_utc": "2026-10-29T18:49:08.160261+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m63490/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 26330,
+      "sha256": "117f342ba34b5649baf5415b330b88abe13db515ad325ea77a305834342a0481",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_preface",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "openstax_college_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/LICENSE",
+      "checked_at_utc": "2026-10-29T18:48:43.484582+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/LICENSE",
+      "access_status": "verified_http_200",
+      "bytes": 21013,
+      "sha256": "8e63d319b3d085a7571278ea3033d713131ac0d330b87cf9ac854e05ee44229d",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_license",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean",
+      "checked_at_utc": "2026-10-29T19:08:17.142293+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean",
+      "access_status": "verified_http_200",
+      "bytes": 6202,
+      "sha256": "05b2b7164e2d030e07da898c735075015633c08e26ad81cff8a9cf1dba033180",
+      "cache_path": "/tmp/rational-quadratics-source-audit/mathlib_quadratic_discriminant",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "openstax_college_quadratics",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51255/index.cnxml",
+      "checked_at_utc": "2026-10-29T19:08:17.142909+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51255/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 115532,
+      "sha256": "8c3cb3997e9547344a750a95f869dc6fc5aa099e41df997551cdaca37c2db734",
+      "cache_path": "/tmp/rational-quadratics-source-audit/openstax_college_quadratics",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml",
+      "checked_at_utc": "2026-10-29T19:08:36.423439+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml",
+      "bytes": 165891,
+      "sha256": "abd5c13a632284f2ebac2be3f77a8299384f587a954d9160323e63cb94881822",
+      "cache_path": "/tmp/rational-quadratics-source-audit/openstax_college_quadratic_equations",
+      "access_status": "verified_http_200",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "mathlib_rat_sqrt",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Sqrt.lean",
+      "checked_at_utc": "2026-10-29T19:11:28.090315+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Sqrt.lean",
+      "access_status": "verified_http_200",
+      "bytes": 1863,
+      "sha256": "5a5c8abd04d8a6b20511a269dd2b8c87f23a6244489c5139cc81a402d2ce3ed1",
+      "cache_path": "/tmp/rational-quadratics-source-audit/mathlib_rat_sqrt",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "mathlib_nat_gcd_basic",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Nat/GCD/Basic.lean",
+      "checked_at_utc": "2026-10-29T19:11:28.090757+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Nat/GCD/Basic.lean",
+      "access_status": "verified_http_200",
+      "bytes": 10818,
+      "sha256": "bcda68bfc6f277a302f674ebe4fba4086fdf846f67c92042cd9060cef6fa1642",
+      "cache_path": "/tmp/rational-quadratics-source-audit/mathlib_nat_gcd_basic",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "mathlib_rat_lemmas",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Lemmas.lean",
+      "checked_at_utc": "2026-10-29T19:11:45.719643+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Rat/Lemmas.lean",
+      "access_status": "verified_http_200",
+      "bytes": 14919,
+      "sha256": "971359de1e11fcb8e14ee15229d09e57f8069afcbb162b6c223586634949bb74",
+      "cache_path": "/tmp/rational-quadratics-source-audit/mathlib_rat_lemmas",
+      "reuse": "new_request_for_batch20_preflight"
+    },
+    {
+      "request_id": "mathlib_order_ring_abs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Abs.lean",
+      "checked_at_utc": "2026-10-29T19:12:14.285169+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Abs.lean",
+      "access_status": "verified_http_200",
+      "bytes": 10578,
+      "sha256": "fb016553b22ee81eac44a1f3ded6414961d55fbf4d65e0e69c937c3c10f33996",
+      "cache_path": "/tmp/rational-quadratics-source-audit/mathlib_order_ring_abs",
+      "reuse": "new_request_for_batch20_preflight"
+    }
+  ],
+  "request_summary": {
+    "reused_http200": 4,
+    "new_http_requests": 7,
+    "new_http200": 7,
+    "new_http_errors": 0,
+    "total_http_records": 11,
+    "new_git_requests": 0,
+    "note": "OpenStax固定commit沿用19批实际HEAD解析结果，本批未再解析git。每条请求原时间保留，reviewed_at_utc仅本地审读。"
+  },
+  "request_label_corrections": {
+    "openstax_college_quadratics": "m51255实际Complex Numbers，仅发现/排除范围；m51256才为Quadratic Equations"
+  },
+  "sources": [
+    {
+      "id": "QUAD-OPENSTAX",
+      "title": "College Algebra 2e, Quadratic Equations (m51256)",
+      "senior_contributing_author": "Jay Abramson",
+      "other_contributors_evidence": "cached preface lines174–176",
+      "version": "osbooks-college-algebra-bundle commit 463991614337632b0e02cbb6c76223cbb0d423d3",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_evidence": [
+        "openstax_college_collection line6",
+        "openstax_college_preface lines19–27",
+        "openstax_college_license"
+      ],
+      "use": "只核代数事实、条件与教学方法；不复制题目、连续段落、图像。实数上下文和有理性分类的隐含条件明确隔离。",
+      "contributing_authors": [
+        "Valeree Falduto",
+        "Rachael Gross",
+        "David Lippman",
+        "Melonie Rasmussen",
+        "Rick Norwood",
+        "Nicholas Belloit",
+        "Jean-Marie Magnier",
+        "Harold Whipple",
+        "Christina Fernandez"
+      ]
+    },
+    {
+      "id": "QUAD-MATHLIB",
+      "title": "mathlib4 rational squares, coprimality and quadratic discriminants",
+      "version": "v4.24.0",
+      "file_authors": {
+        "mathlib_quadratic_discriminant": [
+          "Zhouhang Zhou"
+        ],
+        "mathlib_rat_lemmas": [
+          "Johannes Hölzl",
+          "Mario Carneiro"
+        ],
+        "mathlib_rat_sqrt": [
+          "Johannes Hölzl",
+          "Mario Carneiro"
+        ],
+        "mathlib_nat_gcd_basic": [
+          "Jeremy Avigad",
+          "Leonardo de Moura"
+        ],
+        "mathlib_order_ring_abs": [
+          "Jeremy Avigad",
+          "Leonardo de Moura",
+          "Mario Carneiro"
+        ]
+      },
+      "license": "Apache-2.0",
+      "license_evidence": [
+        "mathlib_license",
+        "各源码头许可"
+      ],
+      "use": "只读源码核声明条件，不编译Lean、不复制实现、不宣称书稿形式化。库全域Rat.sqrt不等同本书部分定义域sqrt_Q。"
+    }
+  ],
+  "checks": [
+    {
+      "request_id": "openstax_college_quadratics",
+      "location": "lines 3–3",
+      "locator": "m51255 title discovery",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51255/index.cnxml#L3",
+      "conditions": "实际标题Complex Numbers，原请求标签quadratics不是标题。",
+      "finding": "仅保留发现记录；复数、负数开方及复平面不作为本批采用对象或先修。",
+      "source_excerpt_sha256": "d261ff4d79385f4af1cdebb7ace887e5f44160bc50e16e67a4bd64f8dbefcb48"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 378–402",
+      "locator": "Zero product / quadratic standard form",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L378",
+      "conditions": "来源a,b,c为实数，a≠0时才称标准二次方程。",
+      "finding": "本书将全部参数和未知量限制Q；a=0必须先按一次/常量/恒零分支，不能把除以a的公式延伸到此。",
+      "source_excerpt_sha256": "536eceb80420293b40157b25d9622fe7d98a9b1332da6bfd4effc4dc006d31f7"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 1397–1480",
+      "locator": "Square root property",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L1397",
+      "conditions": "来源使用±√k，声明k为非零实数，且整书已有复数背景。",
+      "finding": "不能据此定义任意有理q的平方根。本书先分负、零、正有理平方、正非平方，并只在S_Q上定义唯一非负sqrt_Q；零时两符号代表同一解。",
+      "source_excerpt_sha256": "733bfe38fdc4654c0f74985bcf5c231e1c78ddbe3913235ba1c46ef5a5c89f49"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 1725–1810",
+      "locator": "Completing the square",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L1725",
+      "conditions": "先把非零首项系数化成1，再添半线性系数的平方。",
+      "finding": "本书逐步核a≠0、2a≠0、4a≠0后证明恒等式；常量项变动、等式两侧同时变动和双向变形不可省略。",
+      "source_excerpt_sha256": "89c70f734edfd93ed5892cf254d7edd62f1f56245c018bd2b22fe947fb219a71"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 2327–2380",
+      "locator": "Derivation of quadratic formula",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L2327",
+      "conditions": "来源可先把a变正；使用实数公式环境。",
+      "finding": "本书直接保留任意非零有理a并证明可逆仿射变换；无需a>0，负a时两根的大小排序会交换。",
+      "source_excerpt_sha256": "46f63715bfc4aab8ddb1036226c49492de0faf907dff0703159b103b08a430a2"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 2622–2680",
+      "locator": "Quadratic formula",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L2622",
+      "conditions": "源框a,b,c∈R且a≠0，公式含未在本书定义的实/复根式。",
+      "finding": "本书只在已给同域s∈Q且s²=Δ时写(-b±s)/(2a)，或在Δ∈S_Q时使用sqrt_Q(Δ)。不宣称正判别式自动有Q解。",
+      "source_excerpt_sha256": "1d84c57321d8da54698a41935689a2ad490bd4156bc24e02d5c6fe0ba7d322de"
+    },
+    {
+      "request_id": "openstax_college_quadratic_equations",
+      "location": "lines 2960–3062",
+      "locator": "Discriminant table: missing rational-coefficient qualification",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51256/index.cnxml#L2960",
+      "conditions": "相邻段落声明实系数，表却把Δ=0列作一个有理解、正平方列作两个有理解、正非平方列作两个无理解。",
+      "finding": "这组有理/无理分类需要额外有理系数前提，不能从任意实系数直接推出。本书明确a,b,c∈Q，且平方指Q中存在平方见证；只报告Q中0/1/2解，不借此表宣告实根存在。",
+      "source_excerpt_sha256": "f190a3455b3f8ed9f9bb88aec3d15305c19f53a8154850526ccf7a62fb0affed"
+    },
+    {
+      "request_id": "mathlib_order_ring_abs",
+      "location": "lines 65–76",
+      "locator": "abs_mul_abs_self / sq_abs / abs_sq",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Ring/Abs.lean#L65",
+      "conditions": "相关节Ring与LinearOrder；abs_sq另在IsOrderedRing条件下。",
+      "finding": "核|x|²=x²及平方非负所用绝对值关系。本书仍用已证有理符号/次序分支证明平方非负；不把整套库顺序实例当作新公理。",
+      "source_excerpt_sha256": "f9d6f43527ec2b7a8496a6d78076faf9428ef300fd116c17ac0efc9894f3c614"
+    },
+    {
+      "request_id": "mathlib_order_ring_abs",
+      "location": "lines 83–107",
+      "locator": "abs comparison and squares",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Ring/Abs.lean#L83",
+      "conditions": "[Ring α] [LinearOrder α] [IsStrictOrderedRing α]；比较的是|a|与|b|。",
+      "finding": "不能把平方说成全Q严格递增。仅在u,v≥0时绝对值等于自身，得到平方的严格比较和单射；本书用(v−u)(v+u)及三歧性独立证明。",
+      "source_excerpt_sha256": "a3559b633adc96e1ce3163acb72e2378b35b6ef1e9f384afb268eea4b0948d63"
+    },
+    {
+      "request_id": "mathlib_nat_gcd_basic",
+      "location": "lines 183–193",
+      "locator": "coprime_pow_left_iff / coprime_pow_right_iff",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Nat/GCD/Basic.lean#L183",
+      "conditions": "自然数Coprime；指数n>0。",
+      "finding": "取指数2可核互素平方仍互素。书稿直接在整数gcd上两用既有C4并用对称，不引素数分解，也不把自然gcd与整数符号约定混为同一接口。",
+      "source_excerpt_sha256": "5aeb4a71d47700eebf000c213a7dc6c8a9daec70d3fa7fc6ba2ce03f87f8438e"
+    },
+    {
+      "request_id": "mathlib_rat_lemmas",
+      "location": "lines 151–157",
+      "locator": "Rat.mul_self_num / Rat.mul_self_den",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Rat/Lemmas.lean#L151",
+      "conditions": "q为已规范化Rat，num整数、den正自然数，q.reduced记录互素。",
+      "finding": "平方后规范分子、分母分别平方，证明明确使用互素乘积而无需素因子分解；本书以(p²,q²)正分母且互素，再用R5唯一性得到相同结论。",
+      "source_excerpt_sha256": "8ec7d75d22a401e178a12fd137e62422ea7072b7f1dbe84685838b72fe6982a7"
+    },
+    {
+      "request_id": "mathlib_rat_lemmas",
+      "location": "lines 167–174",
+      "locator": "Rat.isSquare_iff",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Rat/Lemmas.lean#L167",
+      "conditions": "IsSquare q当且仅当规范整数num与自然数den分别IsSquare。",
+      "finding": "对应本书唯一规范代表(m,n)：存在u≥0、v>0使m=u²,n=v²。必须是规范代表；8/18本身分子分母非平方但等于4/9，不可对任意未约分记录套必要性。",
+      "source_excerpt_sha256": "ce1737e27f63f3778f86f7dfe7e67b601da37f93b8438f2e46ff7492c4d3b81c"
+    },
+    {
+      "request_id": "mathlib_rat_lemmas",
+      "location": "lines 176–182",
+      "locator": "isSquare_natCast_iff / isSquare_intCast_iff",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Rat/Lemmas.lean#L176",
+      "conditions": "自然数或整数嵌入Q之后成为平方，当且仅当原整数体系内是平方。",
+      "finding": "支持用整数平方间隙排除Q中的2与1/2；本书仍写0、1、≥2离散分支，不用2素数或未定义的实数√2作为理由。",
+      "source_excerpt_sha256": "8435ebe548a17e3fb95209d1792c8842b22e461fba58620589255eb7f4de9c3d"
+    },
+    {
+      "request_id": "mathlib_rat_lemmas",
+      "location": "lines 244–260",
+      "locator": "num/den of coprime fractions / div_int_inj",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Rat/Lemmas.lean#L244",
+      "conditions": "正整数分母及分子分母绝对值的自然互素；两份规范分数相等推出分量相等。",
+      "finding": "本书R5已证同一有理数唯一正分母互素代表，平方判据可以使用该接口，不能把两任意分数相等误作各分量相等。",
+      "source_excerpt_sha256": "bfee8512bba57760c1a77a12cbf5987179b3cddca0a39cc725c4f5c207eb99e6"
+    },
+    {
+      "request_id": "mathlib_rat_sqrt",
+      "location": "lines 22–38",
+      "locator": "Rat.sqrt / sqrt_eq / exists_mul_self",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Rat/Sqrt.lean#L22",
+      "conditions": "Rat.sqrt是以整数/自然数sqrt计算而得到的全域有理函数；是否真平方根需验证sqrt(x)²=x。",
+      "finding": "它不等于本书只在S_Q上定义的sqrt_Q。库exists_mul_self显式加回平方校验；绝不能据函数名认为每个非负有理数都可在Q开方。未调用此库函数作为书稿证明。",
+      "source_excerpt_sha256": "664bad999a80ff7bdde738bce8880170c3701d785e2dd5f526308650952d0ebe"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 43–55",
+      "locator": "discrim / discrim_eq_sq_of_quadratic_eq_zero",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L43",
+      "conditions": "discrim定义只需Ring；根推出Δ=(2ax+b)²需CommRing，无需先给平方根。",
+      "finding": "本书先证明除法自由恒等式(2at+b)²−Δ=4aF(t)。由根产生同域平方见证是必要方向，不依赖预设Δ可开方。",
+      "source_excerpt_sha256": "f695f04c77011556cc613c3906fccdfdbaf83a5a338b18ca88f6253cf98706a9"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 59–66",
+      "locator": "quadratic_eq_zero_iff_discrim_eq_sq",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L59",
+      "conditions": "[CommRing R] [NeZero (2:R)] [NoZeroDivisors R]且a≠0。",
+      "finding": "反向从平方等式回到原方程，需要4a非零并消去；本书Q的2≠0与零积法则须具体引用，不能漏掉a=0退化或特征2边界。",
+      "source_excerpt_sha256": "b9171a0bddf42de44596a5f6970e1a2d82f9c91bba51c441d0b30c0f9d860849"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 68–71",
+      "locator": "quadratic_ne_zero_of_discrim_ne_sq",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L68",
+      "conditions": "CommRing，假设对同一个R中每个s均Δ≠s²。",
+      "finding": "无同域平方根则无同域方程根。本书Δ>0且Δ不属于S_Q也归无Q解；“正”不是有理解充分条件。",
+      "source_excerpt_sha256": "47bb8da03b80f777d4abfa376abcc979c0e00fdbc82ff094e269b9fdad77fc2f"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 75–84",
+      "locator": "quadratic_eq_zero_iff",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L75",
+      "conditions": "[Field K] [NeZero (2:K)]，a≠0，明确s∈K且Δ=s*s。",
+      "finding": "公式的根式实际是已存在的同域元素s。取K=Q恰符合本批条件；两候选可穷尽所有Q解，不以只代回候选替代逆向证明。",
+      "source_excerpt_sha256": "5b664bfb1ea5abb88ad7a92feb45090e1ee997ec1d9e92f554572e5d5a82cbad"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 86–98",
+      "locator": "exists_quadratic_eq_zero / zero discriminant",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L86",
+      "conditions": "同Field/2非零条件；存在s使Δ=s²，或Δ=0。",
+      "finding": "Δ=0时唯一候选−b/(2a)；正平方时有两候选，但其不同仍须由s>0、2a≠0证明。不能把零判别式叫两个不同解。",
+      "source_excerpt_sha256": "ed4d0a4849689a215a3f137355db8e094a200c81ce1795781d65a12093586333"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 100–111",
+      "locator": "discrim_eq_zero_iff uniqueness",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L100",
+      "conditions": "同Field/2非零，a≠0。",
+      "finding": "唯一同域解恰对应零判别式；本书完整分类还必须独立涵盖a=0的全Q解/无解/唯一线性解。",
+      "source_excerpt_sha256": "e694670bad4c3d4bb0560673747ce825299f8e3feaf9afabdeb38fe3c146cba1"
+    },
+    {
+      "request_id": "mathlib_quadratic_discriminant",
+      "location": "lines 115–137",
+      "locator": "Global nonnegativity theorem boundary",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/QuadraticDiscriminant.lean#L115",
+      "conditions": "有序域定理discrim_le_zero证明调用Filter趋向无穷等工具。",
+      "finding": "仅核排除范围：本书QC4不引用该更强证明链，只由F(t)=a(t−h)²+κ、平方非负及a符号推出Q上的界；h∈Q确保取得界，不需极限、连续性或完备性。",
+      "source_excerpt_sha256": "f326f51b2761c600f00c1f76076d1c8f9dbb8d30b6e011d148ac28addbf10ae5"
+    }
+  ],
+  "book_proof_obligations": [
+    "平方x²沿用POW1/有理乘法定义，不引新的幂对象。按x<0、x=0、x>0证明x²≥0及x²=0⇔x=0；负支使用(−x)²=x²和正负乘法律。",
+    "由有理分配逐项证明v²−u²=(v−u)(v+u)。0≤u<v时两因子均正，得u²<v²；反向用三歧性排除相等及反向。全Q平方并非递增，例如−2<−1而4>1。",
+    "任意有理x,y满足x²=y²⇔x=y或x=−y，来自平方差和有理零积；零时两支相同。用非负平方单射得非负根至多一个，但唯一性不能冒充存在性。",
+    "定义S_Q为存在非负有理s满足s²=q的有理q集合，仅在S_Q上定义sqrt_Q。任意x²在S_Q，因为可选x或−x使其非负；S_Q包含0且包含于非负Q，但不等于所有非负Q。此处集合背景沿用既有按条件取子集及函数三数据约定，不采用实数构造。",
+    "平方方程x²=q的四支：q<0无解；q=0仅0；q>0且q∈S_Q时恰为s及−s并证明两者不同；q>0且q不在S_Q无解。每个充分方向代回，每个必要方向用同平方正负两支或非负见证构造。",
+    "互素平方小引理只用C4两次及gcd对称：gcd(p,q)=1⇒gcd(p,q²)=1⇒gcd(q²,p)=1⇒gcd(q²,p²)=1⇒gcd(p²,q²)=1；允许p=0，不暗添p,q非零或两份相同q彼此互素。",
+    "取z唯一规范记录(m,n)，n>0。若z=s²且s有规范(p,q)，q>0，则乘法代表(p²,q²)正分母且由前条互素，R5唯一性给m=p²,n=q²。令u=|p|≥0,v=q>0并核|p|²=p²。必要性必须借规范唯一而不是直接比较任意代表。",
+    "若存在整数u≥0,v>0且m=u²,n=v²，则合法代表[(u,v)]给非负有理s，其平方等于[(m,n)]；无需先证明(u,v)互素。零用(0,1)，负分子不可能为整数平方；8/18须先规范化为4/9。",
+    "2不在S_Q：其规范代表(2,1)，若u≥0整数满足u²=2，将其写成自然嵌入；u<2时由离散次序只有0或1，u≥2时平方≥4，均矛盾。1/2同理由规范分母2排除。无需素数、唯一分解、实数平方根或浮点近似。",
+    "有理参数a,b,c与未知t明确属于Q。先处理a=0：b≠0唯一−c/b；b=c=0全部Q；b=0且c≠0无解。此支不计算1/a、1/(2a)或1/(4a)，也不把降次后的零多项式赋次数。",
+    "a≠0时先核2、4在Q为正且2a、4a非零，定义h=−b/(2a)、κ=c−b²/(4a)。逐次分配、结合交换、符号与合法约分证明F(t)=a(t−h)²+κ。若写形式版，明确有理数乘与常量C对象，按既有形式运算独立核。",
+    "定义Δ=b²−4ac，逐展开证明(2at+b)²−Δ=4aF(t)。必要方向代F=0；充分方向用4a≠0消去。t↦2at+b在Q上可逆，逆为(y−b)/(2a)，故平方方程解与原方程解一一对应。",
+    "a≠0时Δ<0无Q解；Δ=0唯一−b/(2a)；Δ>0且Δ∈S_Q时恰为(-b±sqrt_Q(Δ))/(2a)且两根不同；Δ>0非Q平方无Q解。负a允许，不能把“+s”分支固定当较大根。存在判别用Δ的唯一正分母互素记录与SQ4，不用教材实数根分类替代。",
+    "QC4只论有理定义域：a>0时F(t)≥κ，a<0时F(t)≤κ；等号由a非零和平方零判据恰为t=h。h确为Q中输入，所以界取得，不需连续实抛物线、导数、极限或完备性。",
+    "实现按本批方案以整数二分构造integer_sqrt，不引math.isqrt作为额外可信前提。对n≥0采用0≤lo<hi、lo²≤n<hi²不变式（例如初值lo=0、hi=n+1，初值平方界需证明），hi−lo>1时选严格内部整数中点并按mid²≤n或>n更新。证明不变式保持、正整数差hi−lo严格减小，终态hi=lo+1给lo²≤n<(lo+1)²；仅lo²=n时判为平方。负输入拒绝或在有理平方接口先分支，规范分子分母分别检验。全部有理参数先校验，解集输出区分无解、全部Q与有限解。二分实现的证明与运行诊断由实现附录另记，本来源审计不替代实际运行记录；正式报告位置见implementation字段。"
+  ],
+  "adopted_vs_proved": {
+    "existing_adopted_background": [
+      "先前自然数及有限递归背景",
+      "既有朴素集合及按条件选子集、函数三数据约定"
+    ],
+    "existing_proved_interfaces": [
+      "C4互素乘积及gcd对称",
+      "R5正分母互素规范代表唯一",
+      "有理加乘除、序和零乘积判据",
+      "整数/自然数嵌入与离散序",
+      "原有平方记号与有理幂"
+    ],
+    "new_results_to_prove": [
+      "SQ1–4全部平方、根存在域及规范平方判据",
+      "QC1–4配方、双向判别式等价、完整有理解集及有理域界"
+    ],
+    "not_adopted": [
+      "任意非负有理数可开方",
+      "实数或复数平方根函数",
+      "素数与唯一因子分解",
+      "连续性、导数、实数完备性或代数闭包",
+      "库已有域/序结构作为书稿未经证明的公理"
+    ]
+  },
+  "existing_prerequisite_locators": [
+    {
+      "path": "manuscript/foundations/coprimality.md",
+      "anchor": "cop-product",
+      "sha256": "61962f4a3d4863ec369cc2d8269797561209c182b349e7b3abeceb6d7fa55806"
+    },
+    {
+      "path": "manuscript/foundations/gcd_euclidean.md",
+      "anchor": "gcd-properties",
+      "sha256": "9d1490c8f63e2a77e74b7f5fd3ea39b8088619d1994087749eda6798d43e520c"
+    },
+    {
+      "path": "manuscript/foundations/rationals_construction.md",
+      "anchor": "rat-normal-form",
+      "sha256": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0"
+    },
+    {
+      "path": "manuscript/foundations/rationals_order.md",
+      "anchor": "rord-multiplication",
+      "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+    },
+    {
+      "path": "manuscript/foundations/rationals_multiplication.md",
+      "anchor": "rmul-zero-product",
+      "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+    }
+  ],
+  "remaining_gates": [
+    "Formal review binding and acceptance import",
+    "Final build, links, mathematics rendering and actual page inspection",
+    "Versioned checkpoint and local companion package"
+  ],
+  "repository_mutations": "Two source audit files and explicit unit registration; no publication, no complete chapter/part status",
+  "formal_registered_at_utc": "2026-10-29T19:39:00.621103+00:00",
+  "formal_manuscript_interfaces": [
+    {
+      "code": "B2.19",
+      "main_leaf": "97H30",
+      "cross_reference": "97H20",
+      "body": "manuscript/foundations/rational_square_equations.md",
+      "answers": "manuscript/foundations/rational_square_equations_answers.md",
+      "source_sha256": {
+        "manuscript/foundations/rational_square_equations.md": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598",
+        "manuscript/foundations/rational_square_equations_answers.md": "2b623ea4477353874f910d0867ca3fc9af8f6e92ed5f74e037450c756ae346c2"
+      },
+      "proved": [
+        [
+          "SQ1",
+          "sqrat-order",
+          "平方符号与非负平方比较"
+        ],
+        [
+          "SQ2",
+          "sqrat-root-uniqueness",
+          "同平方两支及非负根唯一性"
+        ],
+        [
+          "SQ3",
+          "sqrat-solutions",
+          "有理平方方程完整分类"
+        ],
+        [
+          "SQ4",
+          "sqrat-normal-form-test",
+          "规范代表的有理平方判据"
+        ]
+      ],
+      "prerequisite_anchors": [
+        {
+          "path": "manuscript/foundations/coprimality.md",
+          "anchor": "cop-bezout",
+          "sha256": "61962f4a3d4863ec369cc2d8269797561209c182b349e7b3abeceb6d7fa55806"
+        },
+        {
+          "path": "manuscript/foundations/coprimality.md",
+          "anchor": "cop-product",
+          "sha256": "61962f4a3d4863ec369cc2d8269797561209c182b349e7b3abeceb6d7fa55806"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-definition",
+          "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+        },
+        {
+          "path": "manuscript/foundations/gcd_euclidean.md",
+          "anchor": "gcd-properties",
+          "sha256": "9d1490c8f63e2a77e74b7f5fd3ea39b8088619d1994087749eda6798d43e520c"
+        },
+        {
+          "path": "manuscript/foundations/integer_division.md",
+          "anchor": "idiv-absolute",
+          "sha256": "c950dc8b1e8c12faede1ec992a49dfd2ab28b8c568122b4b7b9f7134c7b6381b"
+        },
+        {
+          "path": "manuscript/foundations/integers_multiplication.md",
+          "anchor": "imul-sign-rules",
+          "sha256": "4bc038ace8d4fe782843098e3f171cf1e2b78b3e79a8169baea9d4bbdfa52bba"
+        },
+        {
+          "path": "manuscript/foundations/integers_addition_order.md",
+          "anchor": "int-order-laws",
+          "sha256": "bd18f2b22e9a8b2ef116c5835140eb79beacc4499e489dbfc8e6a38c89778672"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-multiplication-order",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-successor-comparison",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-compatibility",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-definition",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-subtraction",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_construction.md",
+          "anchor": "rat-classes",
+          "sha256": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0"
+        },
+        {
+          "path": "manuscript/foundations/rationals_construction.md",
+          "anchor": "rat-normal-form",
+          "sha256": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-definition",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-signs",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-zero-product",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-integers",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-laws",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-multiplication",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-negation",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-sign",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-translation",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        }
+      ],
+      "questions": 8,
+      "answer_count": 8
+    },
+    {
+      "code": "B2.20",
+      "main_leaf": "97H30",
+      "cross_reference": "97H20",
+      "body": "manuscript/foundations/rational_quadratic_equations.md",
+      "answers": "manuscript/foundations/rational_quadratic_equations_answers.md",
+      "source_sha256": {
+        "manuscript/foundations/rational_quadratic_equations.md": "b3ce2e17a3c46c2b461091c75a49543dfb2cfb6bc6cc490ea2b8dde6befb3779",
+        "manuscript/foundations/rational_quadratic_equations_answers.md": "d49ee39b39ed6e318c7d345eb71db84171f9ee409e2771f4b58574264a5eeba0"
+      },
+      "proved": [
+        [
+          "QC1",
+          "quad-completion",
+          "配方恒等式"
+        ],
+        [
+          "QC2",
+          "quad-discriminant",
+          "可逆判别式平方方程"
+        ],
+        [
+          "QC3",
+          "quad-rational-solutions",
+          "全部有理解与退化分支"
+        ],
+        [
+          "QC4",
+          "quad-bound",
+          "有理输入上的界与唯一等号"
+        ]
+      ],
+      "prerequisite_anchors": [
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-model",
+          "sha256": "13f253560a79cb0eaf336dbebd78cc4cb89ba43937bf9cad6f77dfa67d6c9e48"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-samples",
+          "sha256": "13f253560a79cb0eaf336dbebd78cc4cb89ba43937bf9cad6f77dfa67d6c9e48"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-addition",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-affine",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-division",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-equivalence",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-multiplication",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-solutions",
+          "sha256": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-compatibility",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-cancellation",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-cancellation",
+          "sha256": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-division",
+          "sha256": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-signs",
+          "sha256": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-cancellation",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-signs",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-zero-product",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-integers",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-laws",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-multiplication",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-translation",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rational_square_equations.md",
+          "anchor": "sqrat-normal-form-test",
+          "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598"
+        },
+        {
+          "path": "manuscript/foundations/rational_square_equations.md",
+          "anchor": "sqrat-order",
+          "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598"
+        },
+        {
+          "path": "manuscript/foundations/rational_square_equations.md",
+          "anchor": "sqrat-root-uniqueness",
+          "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598"
+        },
+        {
+          "path": "manuscript/foundations/rational_square_equations.md",
+          "anchor": "sqrat-solutions",
+          "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598"
+        }
+      ],
+      "questions": 8,
+      "answer_count": 8
+    }
+  ],
+  "implementation": {
+    "paths": [
+      "tools/rational_quadratics.py",
+      "tools/validate_rational_quadratics.py",
+      "research/production/rational_quadratics_algorithm_notes.md",
+      "research/production/rational_quadratics_validation.json"
+    ],
+    "source_sha256": {
+      "tools/rational_quadratics.py": "b2311b7df377f4e2ae1cd3742bd752e69cebc3068cef25182e772a386a195663",
+      "tools/validate_rational_quadratics.py": "448465721944a2dde4556b1af57cd9711fe42e54c3bb63fcb4f024a5d37fb752",
+      "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9",
+      "research/production/rational_quadratics_algorithm_notes.md": "312a617204340b8acf58d1723737cd0e74fe56ab885f5a60ee0308c22ba02e6b",
+      "research/production/rational_quadratics_validation.json": "aaa4f949753cfb7d5130d487a48fb54256ff9e12aee4243baddc6a0ab433184e"
+    },
+    "validation_status": "main exact finite report passed; independent API review separate; not mathematical formalization"
+  },
+  "figure": {
+    "path": "dist/figures/b2_quadratic_bound.png",
+    "sha256": "7f3e4b0b9a23b47b3b0ec6aa8968d1c01f5a1977e81aadd49f9d19555850d000",
+    "source": "tools/draw_foundations_batch.py",
+    "source_sha256": "3ddf7b800bf8b71f819b61552fcf07e39e6f7967da33d6a7fc2c3bfff04499cd",
+    "scope": "eight exact rational samples; only plotting coordinates converted to float; no interpolation or universal proof by samples"
+  },
+  "registration_scope": {
+    "units": 41,
+    "exercises": 342,
+    "figures": 16,
+    "chapters_with_partial_body": 5,
+    "leaves_with_partial_body": 28,
+    "modules": 43,
+    "completed_chapters": 0,
+    "completed_parts": 0,
+    "old39_specs_unchanged": true,
+    "no_new_fetch_during_registration": true
+  }
+}

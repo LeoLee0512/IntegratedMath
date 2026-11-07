@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "reviewer": "/root/part1_build",
+  "checked_at": "2026-11-05T18:29:19.413494+00:00",
+  "old_validator_sha256": "10e0078b2c6a173f67162f40dd2febb2ceb86eb0bff3307961c6337b458e08f4",
+  "new_validator_sha256": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf",
+  "all_10_fixtures_independently_rerun": true,
+  "changed_existing_functions": [
+    "audit_book"
+  ],
+  "added_helper": [
+    "is_local_markdown_fragment"
+  ],
+  "all_other_functions_and_classes_ast_identical": true,
+  "internal_anchor_existence_and_protocol_checks_retained": true,
+  "manuscript_edited_by_reviewer": false,
+  "current_input_count": 306,
+  "new_build_and_full_validation": "pending",
+  "candidate_pdf_boundary_readonly_scan": "Both initial normal-build candidate PDFs have zero overflow words using unchanged8point page-boundary criterion; this is not full validation or visual acceptance."
+}

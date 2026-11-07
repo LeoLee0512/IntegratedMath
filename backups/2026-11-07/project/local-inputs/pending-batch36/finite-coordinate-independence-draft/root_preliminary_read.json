@@ -1,0 +1,12 @@
+{
+  "reviewer": "/root",
+  "status": "preliminary_body_read_not_acceptance",
+  "body_sha256_at_read": "0a674a43033f1df5d1a8e1f81e67d53c6cef7b951145db6ef2c445057aa4c0ef",
+  "actually_read": "body through current source section; final figure/answers not yet authored at this reading",
+  "source_cache_ranges": {
+    "section-LI.xml": "1–40",
+    "section-LISS.xml": "578–622",
+    "section-LDS.xml": "1–99"
+  },
+  "findings": "No blocker in definitions, uniqueness limited to span, explicit prefix/suffix deletion, nonzero selected coefficient and scalar inverse, minimality directions, zero insertion. Pending full answers, final figure and frozen bytes."
+}

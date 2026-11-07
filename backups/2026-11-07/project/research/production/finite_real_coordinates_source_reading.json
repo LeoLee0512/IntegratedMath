@@ -1,0 +1,18 @@
+{
+  "reviewer": "/root",
+  "date": "2026-11-05T17:43:07.922971+00:00",
+  "status": "planning_reading_only",
+  "sources": [
+    {
+      "path": "local-inputs/pending-batch28/source-cache/beezer_vector_operations",
+      "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8"
+    },
+    {
+      "path": "local-inputs/pending-batch28/source-cache/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc"
+    }
+  ],
+  "locations": "section-VO 12–35,105–118,145–159,178–195,267–356; COPYING full",
+  "network_requests": 0,
+  "scope": "original real finite coordinate operations planned, not written"
+}

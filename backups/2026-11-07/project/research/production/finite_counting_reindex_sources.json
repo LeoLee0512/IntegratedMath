@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-05",
+  "status": "author source-content check; independent review pending",
+  "author": "/root/part1_pedagogy",
+  "source": "Oscar Levin, Discrete Mathematics: An Open Introduction, fourth edition repository",
+  "license": "CC BY-NC-SA 4.0",
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/ch_counting.ptx",
+      "time": "2026-11-05T17:36:13.854841+00:00",
+      "status": 200,
+      "bytes": 1516,
+      "sha256": "dcacbdbc7f64fc7c6ac8459622284e87f7a8576c2de1fc642b31b9473763369c",
+      "cache": "local-inputs/finite-counting-source-cache/ch_counting.ptx",
+      "actual_read_ranges": [
+        "full discovery manifest"
+      ],
+      "role": "discovery only; no adopted mathematical content"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_structures-functions.ptx",
+      "time": "2026-11-05T17:36:25.207513+00:00",
+      "status": 200,
+      "bytes": 49386,
+      "sha256": "56ec951f529b91b0e4041a3c54bca3afb9997aa34ef326219a82bfde276cf292",
+      "cache": "local-inputs/finite-counting-source-cache/sec_structures-functions.ptx",
+      "actual_read_ranges": [
+        "823–853",
+        "1095–1135"
+      ],
+      "role": "definition and same-size question check; not a proof source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_counting-combine-outcomes.ptx",
+      "time": "2026-11-05T17:36:25.457231+00:00",
+      "status": 200,
+      "bytes": 41648,
+      "sha256": "a3987acf7be0f9f643a6130751adf8c8fecc3e00f0bf26685ac746d663c695f7",
+      "cache": "local-inputs/finite-counting-source-cache/sec_counting-combine-outcomes.ptx",
+      "actual_read_ranges": [],
+      "role": "discovery only; no adopted mathematical content"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/ch_additionalTopics.ptx",
+      "time": "2026-11-05T17:36:35.746273+00:00",
+      "status": 200,
+      "bytes": 261,
+      "sha256": "47cb27280c63b3152d405b10bd900cbb072fdb3b94365a71f309a28c7edd980a",
+      "cache": "local-inputs/finite-counting-source-cache/ch_additionalTopics.ptx",
+      "actual_read_ranges": [
+        "full discovery manifest"
+      ],
+      "role": "discovery only; no adopted mathematical content"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_structures-sets.ptx",
+      "cache": "local-inputs/b3-sets-source-cache/sec_structures-sets.ptx",
+      "sha256": "0d525f026c14b828c16a7e4534dbe7df0bed77919456262d31a088eb643c8af7",
+      "this_task_access": "existing cache reread; no new HTTP request",
+      "actual_read_ranges": [
+        "788–855"
+      ],
+      "role": "finite cardinality and no duplicate elements; not enumeration uniqueness proof"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "cache": "local-inputs/b3-logic-source-cache/license.txt",
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+      "this_task_access": "existing cache reread; no new HTTP request",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "role": "fourth edition CC BY-NC-SA 4.0; earlier editions license explicitly distinguished"
+    }
+  ],
+  "boundaries": [
+    "Actual read is limited to stated ranges; downloaded counting-combine-outcomes file was searched but not content-read and supports no theorem.",
+    "Source supports definitions and finite-counting problem context only. FCT1–5 proofs, examples, exercises and solutions are independently written; no source proof claimed for exchange induction or minimum-fiber section.",
+    "No source exercises, figures or answers copied or translated.",
+    "No API domain retry; originals remain ignored under local-inputs."
+  ],
+  "plan": {
+    "path": "research/production/finite_counting_bridge_plan.md",
+    "sha256": "b30e0b811805bfff5b61625312c9a8d15a9852cf960164e0b5bd1cb743991c98"
+  },
+  "manuscripts": {
+    "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74",
+    "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9"
+  }
+}

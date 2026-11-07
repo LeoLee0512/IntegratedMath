@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "status": "registration_verified_build_pending",
+  "registered_at": "2026-11-05T17:07:28.311717+00:00",
+  "base_commit": "647d6bc6412d6e721d6e096975ea5c3699e7dbd6",
+  "registered_units": 69,
+  "new_unit_numbers": [
+    67,
+    68,
+    69
+  ],
+  "new_codes": [
+    "B4.8",
+    "B4.9",
+    "B4.10"
+  ],
+  "foundation_exercise_answer_pairs": 552,
+  "part1_exercise_answer_pairs": 27,
+  "total_exercise_answer_pairs": 579,
+  "old_unit_specs_preserved": 66,
+  "old_review_records_preserved": 132,
+  "new_math_pedagogy_reviews": 6,
+  "all_review_records": 138,
+  "current_build_status": "pending_for_all_69_due_to_stale_batch32_global_source_binding",
+  "build_import_reason": [
+    {
+      "input": "data/production/batch_validation.json",
+      "status": "pending_schema_adapter",
+      "reason": "Batch build input missing or stale: manuscript/review_ch01/appendices.md"
+    }
+  ],
+  "new_units": [
+    {
+      "number": 67,
+      "code": "B4.8",
+      "unit_id": "ccomp-unit",
+      "parent_chapter_number": 146,
+      "parent_code": "26Axx",
+      "msc_leaf_codes": [
+        "26A15"
+      ],
+      "stages": {
+        "unwritten": "false",
+        "draft": "registered_unit_draft",
+        "math-reviewed": "passed",
+        "pedagogy-reviewed": "passed",
+        "build-verified": "pending"
+      },
+      "exercise_answer_pairs": 8,
+      "source_snapshot": [
+        {
+          "path": "manuscript/foundations/real_continuous_composition.md",
+          "sha256": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8"
+        },
+        {
+          "path": "manuscript/foundations/real_continuous_composition_answers.md",
+          "sha256": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+        }
+      ],
+      "math_ped_evidence": [
+        {
+          "target_type": "unit",
+          "target_id": "ccomp-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_continuous_composition.md": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+            "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+          },
+          "evidence": [
+            {
+              "path": "research/production/real_continuous_composition_math_review.md",
+              "sha256": "5bfcfedd3731174e1df14321e85c25f36fb23e0adbcda79188331da3d2518964"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元正文及八解按本阶段独立审阅；build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "ccomp-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_continuous_composition.md": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+            "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+          },
+          "evidence": [
+            {
+              "path": "research/production/real_continuous_composition_pedagogy_review.md",
+              "sha256": "0d5ccfa8f8e1baf4c4ece1156d5c3b5bafb7db233b34c97780840edce7d6e790"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元正文及八解按本阶段独立审阅；build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "code": "B4.9",
+      "unit_id": "ivt-unit",
+      "parent_chapter_number": 146,
+      "parent_code": "26Axx",
+      "msc_leaf_codes": [
+        "26A15"
+      ],
+      "stages": {
+        "unwritten": "false",
+        "draft": "registered_unit_draft",
+        "math-reviewed": "passed",
+        "pedagogy-reviewed": "passed",
+        "build-verified": "pending"
+      },
+      "exercise_answer_pairs": 8,
+      "source_snapshot": [
+        {
+          "path": "manuscript/foundations/real_intermediate_value.md",
+          "sha256": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676"
+        },
+        {
+          "path": "manuscript/foundations/real_intermediate_value_answers.md",
+          "sha256": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+        }
+      ],
+      "math_ped_evidence": [
+        {
+          "target_type": "unit",
+          "target_id": "ivt-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+            "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+          },
+          "evidence": [
+            {
+              "path": "research/production/real_intermediate_value_math_review.md",
+              "sha256": "3250e9a62d86ada59b3353577987e33ea45260e1ac4e16da6da512349ebc0c41"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元正文及八解按本阶段独立审阅；build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "ivt-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_sources",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_intermediate_value.md": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+            "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+          },
+          "evidence": [
+            {
+              "path": "research/production/intermediate_value_pedagogy_source_review.md",
+              "sha256": "1900a3b4593c756ae2f350ebe39e6d1e5ed90c205beda67fbbf77eff3d1d18eb"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元正文及八解按本阶段独立审阅；build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "code": "B4.10",
+      "unit_id": "minv-unit",
+      "parent_chapter_number": 146,
+      "parent_code": "26Axx",
+      "msc_leaf_codes": [
+        "26A15"
+      ],
+      "stages": {
+        "unwritten": "false",
+        "draft": "registered_unit_draft",
+        "math-reviewed": "passed",
+        "pedagogy-reviewed": "passed",
+        "build-verified": "pending"
+      },
+      "exercise_answer_pairs": 8,
+      "source_snapshot": [
+        {
+          "path": "manuscript/foundations/real_monotone_inverse.md",
+          "sha256": "9b917ad7a2e00682055c0bec1123170f20f809d44e1ba5b8069517e4aad48fec"
+        },
+        {
+          "path": "manuscript/foundations/real_monotone_inverse_answers.md",
+          "sha256": "9ebca50fd140d9d66ac7c3b8f8c7bd80d3266b609bc108f9f371a1cb678ffddc"
+        }
+      ],
+      "math_ped_evidence": [
+        {
+          "target_type": "unit",
+          "target_id": "minv-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_monotone_inverse.md": "9b917ad7a2e00682055c0bec1123170f20f809d44e1ba5b8069517e4aad48fec",
+            "manuscript/foundations/real_monotone_inverse_answers.md": "9ebca50fd140d9d66ac7c3b8f8c7bd80d3266b609bc108f9f371a1cb678ffddc"
+          },
+          "evidence": [
+            {
+              "path": "research/production/real_monotone_inverse_math_review.md",
+              "sha256": "02b4f846dc622d95b1ad9a418ef77b25db38a21ebd8ec8bd931396753e0c2d59"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元及八解原审＋两处实际措辞差异复核；非任意区间一般逆定理。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "minv-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_sources",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/real_monotone_inverse.md": "9b917ad7a2e00682055c0bec1123170f20f809d44e1ba5b8069517e4aad48fec",
+            "manuscript/foundations/real_monotone_inverse_answers.md": "9ebca50fd140d9d66ac7c3b8f8c7bd80d3266b609bc108f9f371a1cb678ffddc"
+          },
+          "evidence": [
+            {
+              "path": "research/production/monotone_inverse_pedagogy_source_review.md",
+              "sha256": "d6b8e4d30cf5228aab1ebc5d1a05d614d514ccc5d1f11d9713949bc2004499e8"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "完整有限单元及八解原审＋两处实际措辞差异复核；非任意区间一般逆定理。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。",
+          "attestation_file": "research/production/accepted_reviews.json",
+          "attestation_file_sha256": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca"
+        }
+      ]
+    }
+  ],
+  "classification_counts": {
+    "parts": 63,
+    "chapters": 534,
+    "sections": 6006
+  },
+  "completed_counts": {
+    "parts": 0,
+    "chapters": 0,
+    "sections": 0
+  },
+  "b3_registered": false,
+  "part1_checks": {
+    "all_chapters_completed": false,
+    "all_direct_sections_completed": false,
+    "full_scope_math_accepted": true,
+    "full_scope_pedagogy_accepted": true,
+    "full_scope_build_and_visual_accepted": false,
+    "scope_plan_valid": true,
+    "full_scope_sources_accepted": false,
+    "full_scope_build_accepted": false,
+    "full_scope_visual_accepted": false
+  },
+  "part1_source_status_counts": {
+    "verified": 7,
+    "original_work_reviewed_separately": 15,
+    "pending": 11
+  },
+  "hashes_at_registration": {
+    "tools/build_production_ledger.py": "5fa5e38c422933c51db23f7267e0c512ecbf5780cca699322e085d88d39e0938",
+    "research/production/accepted_reviews.json": "0b02dd9dc54e75012077796af437b9a7605781689c1ec8421f23c88965b91fca",
+    "research/production/part1_math_review.json": "eca44f6a6742d69831adfca5f0c68239879d12307f071ea9ee6017efdb544cd8",
+    "research/production/part1_scope_plan.json": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+    "data/production/units.json": "4774b85b3e6563fa5b98a62410285a8f47c19d2ea89c6643fd3e11302c16ff6c",
+    "data/production/parts.json": "8e6dbeb52bc0662f8160ea69f06e70ce6eee7bd976d76a75ff1b993e16f25235",
+    "data/production/chapters.json": "d328793c40ab8875c387321d9bbba186a39e94321bbb89525dae609d6a877df0",
+    "data/production/sections.json": "dfa0a63640a53dbb3f8f6998de9441a8bb9844cc09bee1157c9e83a39ff1ed6b",
+    "data/production/prerequisites.json": "535c846a9d6e1414db39e30f2eea0379e2429e0e139cbde71b05be499f5a10b9"
+  },
+  "boundary": "This is a registration check, not a build/visual or author acceptance. Old batch32 receipt and historical snapshots remain unchanged. First Part still has 11 missing G topic sources; no complete MSC chapter/leaf/part."
+}

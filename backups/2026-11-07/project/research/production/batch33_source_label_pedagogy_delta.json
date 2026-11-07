@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/part1_build",
+  "reviewed_at": "2026-11-05T17:37:18.673487+00:00",
+  "status": "accepted",
+  "scope": "display_only_source_label_delta",
+  "historical_full_reviews_inherited": true,
+  "new_full_read_claim": false,
+  "blocking_issues": [],
+  "records": [
+    {
+      "unit": "B4.8",
+      "target_id": "ccomp-unit",
+      "old_source": {
+        "path": "research/production/history/batch33-before-source-label-fix/real_continuous_composition.md",
+        "sha256": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8"
+      },
+      "current_source": {
+        "path": "manuscript/foundations/real_continuous_composition.md",
+        "sha256": "831b973f4af5cd1b24a91443e3648a139ebacc3ea0fa31a8522d76b54715be7e"
+      },
+      "unchanged_answers": {
+        "path": "manuscript/foundations/real_continuous_composition_answers.md",
+        "sha256": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "historical_full_review": {
+        "path": "research/production/history/batch33-before-source-label-fix/real_continuous_composition_pedagogy_review.md",
+        "sha256": "0d5ccfa8f8e1baf4c4ece1156d5c3b5bafb7db233b34c97780840edce7d6e790",
+        "reviewer": "/root/part1_audit"
+      },
+      "exact_display_replacements": 1,
+      "only_replacement_yields_current_bytes": true,
+      "math_fragment_count": 329,
+      "all_math_fragments_byte_identical": true,
+      "all_link_destinations_byte_identical": true,
+      "all_anchor_names_byte_identical": true,
+      "exercise_answer_pairs": 8,
+      "full_review_this_round": false,
+      "new_source_fetches": 0
+    },
+    {
+      "unit": "B4.9",
+      "target_id": "ivt-unit",
+      "old_source": {
+        "path": "research/production/history/batch33-before-source-label-fix/real_intermediate_value.md",
+        "sha256": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676"
+      },
+      "current_source": {
+        "path": "manuscript/foundations/real_intermediate_value.md",
+        "sha256": "23f54dd5adb3ea9ad1a36a8c1a2ae1d856699101887aca6baf38c78bc45bb388"
+      },
+      "unchanged_answers": {
+        "path": "manuscript/foundations/real_intermediate_value_answers.md",
+        "sha256": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "historical_full_review": {
+        "path": "research/production/history/batch33-before-source-label-fix/intermediate_value_pedagogy_source_review.md",
+        "sha256": "1900a3b4593c756ae2f350ebe39e6d1e5ed90c205beda67fbbf77eff3d1d18eb",
+        "reviewer": "/root/part1_sources"
+      },
+      "exact_display_replacements": 1,
+      "only_replacement_yields_current_bytes": true,
+      "math_fragment_count": 219,
+      "all_math_fragments_byte_identical": true,
+      "all_link_destinations_byte_identical": true,
+      "all_anchor_names_byte_identical": true,
+      "exercise_answer_pairs": 8,
+      "full_review_this_round": false,
+      "new_source_fetches": 0
+    }
+  ],
+  "evidence": [
+    {
+      "path": "research/production/batch33_source_label_pedagogy_delta.md",
+      "sha256": "65b88df3b4942b1fc5597cff4c78a27566cd66b26262e2a3b08751fa94b432b7"
+    },
+    {
+      "path": "research/production/batch33_source_label_pedagogy_delta.diff",
+      "sha256": "728300779fe79530bdfc8b4a4bde8965da13882e14ebd5e90af21ab3a8ab7e5f"
+    }
+  ],
+  "build_visual_status": "pending_rebuild_and_actual_image_inspection",
+  "source_gate_change": false
+}

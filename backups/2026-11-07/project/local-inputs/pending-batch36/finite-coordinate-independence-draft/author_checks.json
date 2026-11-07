@@ -1,0 +1,19 @@
+{
+  "status": "author finite checks passed; not independent proof validation",
+  "unique_internal_targets": 43,
+  "question_answer_pairs": 8,
+  "numerical_checks": [
+    "q5 null relation, nonzero inverse coefficient, reconstructed item, reverse relation",
+    "q8 null relation"
+  ],
+  "files": {
+    "finite_coordinate_independence.md": {
+      "sha256": "611a581903924ae891ad6c35666bff252b8645097a914fcf7e64ed0c5fe8b473",
+      "lines": 282
+    },
+    "finite_coordinate_independence_answers.md": {
+      "sha256": "20b86b99d96023c6a47c11f062d732328505244ed788c362e5a2bb9ec11e45d3",
+      "lines": 223
+    }
+  }
+}

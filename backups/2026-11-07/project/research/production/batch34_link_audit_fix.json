@@ -1,0 +1,54 @@
+{
+  "status": "targeted_link_classification_checks_passed",
+  "cases": [
+    {
+      "href": "manuscript/x.md#q",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "../x.md#q",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "/workspace/x.md#q",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "file:///workspace/x.md#q",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "//github.com/a/x.md#L1",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "https:///x.md#L1",
+      "local_fragment_rejected": true
+    },
+    {
+      "href": "https://github.com/JuliaCon/www.juliacon.org/blob/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/keynotes.md#L65-L69",
+      "local_fragment_rejected": false
+    },
+    {
+      "href": "http://example.org/x.md#L1",
+      "local_fragment_rejected": false
+    },
+    {
+      "href": "#question-01",
+      "local_fragment_rejected": false
+    },
+    {
+      "href": "#missing",
+      "local_fragment_rejected": false
+    }
+  ],
+  "existing_internal_anchor_and_protocol_checks": "retained unchanged; missing internal target remains rejected by existing separate assertion",
+  "changed_existing_functions": [
+    "audit_book"
+  ],
+  "added_helper": "is_local_markdown_fragment",
+  "old_sha256": "10e0078b2c6a173f67162f40dd2febb2ceb86eb0bff3307961c6337b458e08f4",
+  "new_sha256": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf",
+  "full_build_and_validation": "pending; previous run failed on valid external GitHub Markdown line citation",
+  "no_manuscript_changes": true
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "review_kind": "math",
+  "status": "accepted",
+  "reviewer": "/root/part1_audit",
+  "reviewed_at": "2026-11-05T17:04:08.286170+00:00",
+  "independent_of_authors": true,
+  "plan_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "blocking_issues": [],
+  "evidence": [
+    {
+      "path": "research/production/part1_revision_independent_review.md",
+      "sha256": "73733af1118ade6b062f810811e27338f9f685588add9daaca72d0d46a92343c"
+    },
+    {
+      "path": "research/production/history/pre-three-source-revision-647d6bc/research/production/part1_math_review.json",
+      "sha256": "57e4a70201481a907a9be32866993d0e7919f45eb4d17eec20dfb6087da57c4e"
+    },
+    {
+      "path": "research/production/part1_three_source_math_delta/review.md",
+      "sha256": "ff6b67c99cffe6766cce06ecaa0ff47290ed39a60845eef2c02aeeb1e1fec369"
+    },
+    {
+      "path": "research/production/part1_three_source_math_delta/review.json",
+      "sha256": "a3dbcc31fbe2e78befb808245cdaf2b05e012528141e786b6c4c7d73661673b1"
+    },
+    {
+      "path": "research/production/part1_three_source_math_delta/reviewed.diff",
+      "sha256": "c1dc606697ea300cfca62063004d81d958bc3a4987a0e581f5484f255ad5868d"
+    },
+    {
+      "path": "research/production/part1_three_source_math_delta/applied_review.md",
+      "sha256": "7601f8a16413554980e8e36dbbf73b6dbd7508d933c7f6d0bb4b451068fb6440"
+    }
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "depth": "G",
+      "objective_ids": [
+        "00-01-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00-02",
+      "depth": "G",
+      "objective_ids": [
+        "00-02-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A05",
+      "depth": "S",
+      "objective_ids": [
+        "00A05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A06",
+      "depth": "T",
+      "objective_ids": [
+        "00A06-1",
+        "00A06-2",
+        "00A06-3",
+        "00A06-4",
+        "00A06-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A07",
+      "depth": "S",
+      "objective_ids": [
+        "00A07-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A08",
+      "depth": "S",
+      "objective_ids": [
+        "00A08-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A09",
+      "depth": "S",
+      "objective_ids": [
+        "00A09-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A15",
+      "depth": "G",
+      "objective_ids": [
+        "00A15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A17",
+      "depth": "G",
+      "objective_ids": [
+        "00A17-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A20",
+      "depth": "S",
+      "objective_ids": [
+        "00A20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A22",
+      "depth": "S",
+      "objective_ids": [
+        "00A22-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A27",
+      "depth": "G",
+      "objective_ids": [
+        "00A27-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A30",
+      "depth": "G",
+      "objective_ids": [
+        "00A30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A35",
+      "depth": "T",
+      "objective_ids": [
+        "00A35-1",
+        "00A35-2",
+        "00A35-3",
+        "00A35-4",
+        "00A35-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A64",
+      "depth": "G",
+      "objective_ids": [
+        "00A64-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A65",
+      "depth": "S",
+      "objective_ids": [
+        "00A65-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A66",
+      "depth": "S",
+      "objective_ids": [
+        "00A66-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A67",
+      "depth": "S",
+      "objective_ids": [
+        "00A67-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A69",
+      "depth": "S",
+      "objective_ids": [
+        "00A69-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A71",
+      "depth": "S",
+      "objective_ids": [
+        "00A71-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A72",
+      "depth": "S",
+      "objective_ids": [
+        "00A72-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A79",
+      "depth": "S",
+      "objective_ids": [
+        "00A79-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A99",
+      "depth": "G",
+      "objective_ids": [
+        "00A99-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B05",
+      "depth": "G",
+      "objective_ids": [
+        "00B05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B10",
+      "depth": "G",
+      "objective_ids": [
+        "00B10-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B15",
+      "depth": "G",
+      "objective_ids": [
+        "00B15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B20",
+      "depth": "G",
+      "objective_ids": [
+        "00B20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B25",
+      "depth": "G",
+      "objective_ids": [
+        "00B25-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B30",
+      "depth": "G",
+      "objective_ids": [
+        "00B30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B50",
+      "depth": "G",
+      "objective_ids": [
+        "00B50-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B55",
+      "depth": "G",
+      "objective_ids": [
+        "00B55-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B60",
+      "depth": "G",
+      "objective_ids": [
+        "00B60-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B99",
+      "depth": "G",
+      "objective_ids": [
+        "00B99-1",
+        "00B99-2"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    }
+  ],
+  "acceptance_boundary": "仅数学/逻辑阶段；以旧完整独立审阅加当前三来源独立差异审阅承接。11个G来源仍pending，完整部分不accepted。",
+  "source_gate_pending_sections": [
+    "00A17",
+    "00A27",
+    "00B05",
+    "00B15",
+    "00B20",
+    "00B25",
+    "00B30",
+    "00B50",
+    "00B55",
+    "00B60",
+    "00B99"
+  ],
+  "review_method": "unchanged_scope_and_sources_inherit_hash_verified_full_independent_review_plus_independent_exact_delta_review",
+  "inherited_full_review": {
+    "reviewer": "/root/part1_pedagogy",
+    "signature_path": "research/production/history/pre-three-source-revision-647d6bc/research/production/part1_math_review.json",
+    "signature_sha256": "57e4a70201481a907a9be32866993d0e7919f45eb4d17eec20dfb6087da57c4e",
+    "report_path": "research/production/part1_revision_independent_review.md",
+    "report_sha256": "73733af1118ade6b062f810811e27338f9f685588add9daaca72d0d46a92343c"
+  }
+}

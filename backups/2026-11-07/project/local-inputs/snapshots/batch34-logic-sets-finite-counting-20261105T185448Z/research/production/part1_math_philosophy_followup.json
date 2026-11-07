@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "record_kind": "source_followup_proposal_only",
+  "reviewed_at_utc": "2026-11-05T16:42:56.139796+00:00",
+  "formal_status_changed": false,
+  "network_requests": [
+    {
+      "url": "https://github.com/search?q=org%3AGITenberg+Introduction+to+Mathematical+Philosophy&type=repositories",
+      "requested_at_utc": "2026-11-05T16:34:21.371541+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/search.html",
+      "status": 200,
+      "final_url": "https://github.com/search?q=org%3AGITenberg+Introduction+to+Mathematical+Philosophy&type=repositories",
+      "bytes": 165486,
+      "sha256": "1eea2a47e87445ae55d5e7bcf861883de8b5864448172540fca548509aabf63b"
+    },
+    {
+      "url": "https://github.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654",
+      "requested_at_utc": "2026-11-05T16:34:48.606075+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/repository.html",
+      "status": 200,
+      "final_url": "https://github.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654",
+      "bytes": 242761,
+      "sha256": "0458140d8a1780daadc1613fd0f0eef195b0b58faa4834c6ae23426927421036"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/7f4e90716794406bb99e227bedc1c6c465bc53b2/metadata.yaml",
+      "commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "requested_at_utc": "2026-11-05T16:35:06.694532+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/metadata.yaml",
+      "status": 200,
+      "bytes": 1002,
+      "sha256": "d48f1a0c5d43843a6a351f4c68c218cfa07337080642446170341bdbf64bc56a",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/metadata.yaml"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/7f4e90716794406bb99e227bedc1c6c465bc53b2/README.rst",
+      "commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "requested_at_utc": "2026-11-05T16:35:06.696101+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/README.rst",
+      "status": 200,
+      "bytes": 1994,
+      "sha256": "421d7041f75f71fe9839ec2df39cbc1b1b9b9b7463f4e25e5e036706261b15b2",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/README.rst"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/7f4e90716794406bb99e227bedc1c6c465bc53b2/LICENSE",
+      "commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "requested_at_utc": "2026-11-05T16:35:06.697489+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/LICENSE",
+      "status": 200,
+      "bytes": 17504,
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/LICENSE"
+    },
+    {
+      "url": "https://github.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/tree/7f4e90716794406bb99e227bedc1c6c465bc53b2/41654-t",
+      "commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "requested_at_utc": "2026-11-05T16:35:06.699009+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/text-directory.html",
+      "status": 200,
+      "bytes": 173778,
+      "sha256": "f3aded2f590830c81573e6de8d329bab820018847d6607af1bbd7f783cdf4b43"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654/7f4e90716794406bb99e227bedc1c6c465bc53b2/41654-t/41654-t.tex",
+      "commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+      "requested_at_utc": "2026-11-05T16:36:03.272479+00:00",
+      "cache": "/tmp/part1-math-philosophy-evidence/41654-t.tex",
+      "path_basis": "actual fixed-commit GitHub directory listing",
+      "status": 200,
+      "bytes": 521280,
+      "sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f",
+      "durable_local_cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/41654-t.tex"
+    }
+  ],
+  "source_identity": {
+    "repository": "https://github.com/GITenberg/Introduction-to-Mathematical-Philosophy_41654",
+    "archive_provider": "GITenberg archive of Project Gutenberg ebook; not an author institutional edition",
+    "title": "Introduction to Mathematical Philosophy",
+    "author": "Bertrand Russell",
+    "ebook_id": "41654",
+    "fixed_commit": "7f4e90716794406bb99e227bedc1c6c465bc53b2",
+    "printed_edition_as_transcribed": "Second Edition April 1920; first published May 1919",
+    "metadata_gutenberg_issued": "2012-12-18",
+    "tex_release_date": "2013-02-17",
+    "metadata_schema_version": "0.1.0",
+    "scan_collation_performed": false
+  },
+  "actual_content_reading": {
+    "cache": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/41654-t.tex",
+    "document_sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f",
+    "encoding": "ISO-8859-1",
+    "ranges": [
+      [
+        625,
+        686
+      ],
+      [
+        769,
+        810
+      ],
+      [
+        850,
+        945
+      ],
+      [
+        940,
+        1017
+      ],
+      [
+        1014,
+        1159
+      ],
+      [
+        9333,
+        9694
+      ]
+    ],
+    "whole_book_read": false,
+    "notes": "Targeted historical philosophical reading; full downloaded file is not proof of full reading."
+  },
+  "rights": {
+    "metadata_claim": "Public domain in the USA.",
+    "outside_US_status": "not verified; embedded license makes no representations outside US",
+    "license_read": [
+      "repository LICENSE in full",
+      "embedded work license, lines 9333-9694"
+    ],
+    "discrepancy": "Root LICENSE contains starred copyrighted-work template paragraph and final template instruction; work-embedded 1.C/1.D does not contain that paragraph. No invented author permission.",
+    "permitted_project_use_claimed": "links, bibliographic metadata, source hashes, original reading-location commentary only",
+    "source_text_republished": false,
+    "global_public_domain_claimed": false
+  },
+  "mapping_proposal": {
+    "source_id": "SRC-S5-RUSSELL-IMP-HISTORICAL",
+    "section_code": "00A30",
+    "requirement_id": "00A30-topic-source",
+    "objective_ids": [
+      "00A30-1"
+    ],
+    "relevance": "topic_specific",
+    "proposed_content_status": "content_verified_for_limited_historical_reading",
+    "formal_requirement_status": "pending",
+    "adoption_condition": "Independent targeted review, actual insertion of bounded topic reference in next revision, all affected review/build bindings renewed; not hash-only carry-over.",
+    "supports": [
+      "distinction between deduction from chosen starting points and examination of starting points",
+      "undefined terms and definitions",
+      "historical discussion of primitive-term interpretations and object meaning"
+    ],
+    "does_not_support": [
+      "modern philosophical consensus",
+      "full survey of philosophical schools",
+      "mathematical correctness certification of entire Russell text",
+      "first-order categoricity or nonstandard-model claims",
+      "worldwide redistribution permission"
+    ]
+  },
+  "baseline_bindings": {
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "research/production/part1_topic_sources.json": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783"
+  },
+  "access": {
+    "evidence": "/workspace/IntegratedMath-book/research/production/part1_math_philosophy_followup.json",
+    "status": "retrieved",
+    "http_status": 200
+  },
+  "content_review": {
+    "evidence": "/workspace/IntegratedMath-book/research/production/part1_math_philosophy_followup.md",
+    "reviewed_at": "2026-11-05T16:42:56.139796+00:00",
+    "document_sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f",
+    "report_sha256": "d5f8badd6c4e7895433c1d3648437c935f06acb91fd1ceb5a6ac63bd868cccbe",
+    "status": "targeted_content_read"
+  },
+  "source_files_for_local_review_only": [
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/41654-t.tex",
+      "sha256": "a072130ccd13cf563c0f99478fa98cf6169387726e1ff5492263edd134b6930f"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/metadata.yaml",
+      "sha256": "d48f1a0c5d43843a6a351f4c68c218cfa07337080642446170341bdbf64bc56a"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/README.rst",
+      "sha256": "421d7041f75f71fe9839ec2df39cbc1b1b9b9b7463f4e25e5e036706261b15b2"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/LICENSE",
+      "sha256": "1e301e03fb28addf6ad03d42b1429e87679013d1ee7e141c7c968fbef0ad961d"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/directory.json",
+      "sha256": "c615bc8f6debc5f92df0a31019cf83ac04006352970ef145b0d9add3a3e687df"
+    },
+    {
+      "path": "/workspace/IntegratedMath-book/local-inputs/part1-math-philosophy-source-cache/text-directory.json",
+      "sha256": "eaf669782a5edd6d9cdf14b08fffbeea23d9582d228ad53687735b3ded7d4e17"
+    }
+  ],
+  "cache_git_ignored": true
+}

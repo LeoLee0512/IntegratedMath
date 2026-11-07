@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-05T18:02:09.957790+00:00",
+  "scope": "Companion source-only drafts outside69-unit/579-pair PDFs and this build acceptance.",
+  "draft_units": [
+    "B3.1 logic_connectives_quantifiers",
+    "B3.2 sets_inclusion_operations",
+    "B3 finite_counting_reindex"
+  ],
+  "files": [
+    {
+      "path": "manuscript/foundations/finite_counting_reindex.md",
+      "sha256": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+      "heading": "## 基础单元 有限索引、计数唯一性与重编号 {#fct-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "sha256": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74",
+      "heading": "## 有限索引、计数唯一性与重编号：课后题完整解答 {#fct-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/logic_connectives_quantifiers.md",
+      "sha256": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+      "heading": "## 基础单元 B3.1 命题联结词与带域量词 {#lcq-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/logic_connectives_quantifiers_answers.md",
+      "sha256": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707",
+      "heading": "## 基础单元 B3.1 课后题完整解答 {#lcq-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/sets_inclusion_operations.md",
+      "sha256": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+      "heading": "## 基础单元 B3.2 集合包含、相等与有限次集合运算 {#sio-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/sets_inclusion_operations_answers.md",
+      "sha256": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f",
+      "heading": "## 基础单元 B3.2 课后题完整解答 {#sio-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    }
+  ],
+  "registered_unit_count": 69,
+  "built_exercise_pairs": 579,
+  "no_inferred_acceptance_from_inclusion": true,
+  "excluded_followup_drafts": "Later unregistered finite_real_coordinates drafts are preserved outside repository in /tmp; not packaged, registered or accepted in batch33.",
+  "excluded_followup_report": {
+    "path": "research/production/finite_real_coordinates_math_review.md",
+    "reason": "Later unregistered coordinate unit, sources outside repo; not evidence for batch33 and not included in its package."
+  }
+}

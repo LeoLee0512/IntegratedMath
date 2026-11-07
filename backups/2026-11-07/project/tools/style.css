@@ -1,0 +1,5 @@
+body{max-width:54rem;margin:3rem auto;padding:0 1.4rem;line-height:1.9;color:#172331;font-family:"Noto Serif CJK SC",serif}
+h1,h2,h3{line-height:1.4;color:#245c85}h1{margin-top:3rem;border-bottom:1px solid #c8d8e4;padding-bottom:.6rem}
+img{display:block;max-width:92%;margin:auto}table{border-collapse:collapse;width:100%;font-size:.9em}
+th,td{border:1px solid #ccd6de;padding:.5rem;vertical-align:top}pre{overflow:auto;background:#f4f6f8;padding:1rem}
+math[display="block"]{margin:1.5rem 0;overflow:auto}a{color:#245c85}blockquote{border-left:3px solid #d78622;padding-left:1rem}

@@ -1,0 +1,44 @@
+{
+  "prepared_at": "2026-11-05T17:43:55.766138+00:00",
+  "status": "proposal_only_not_applied",
+  "base_hashes": {
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "research/production/part1_scope_plan.json": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+    "research/production/part1_topic_sources.json": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246"
+  },
+  "proposed_hashes": {
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "research/production/part1_scope_plan.json": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "research/production/part1_topic_sources.json": "e209568a667a3e7e95d697122044b6cdfb0e2e98911e2ffcf6dced2440cd7442",
+    "research/production/part1_abstract_source_mapping_review.md": "96054e2a913ca0810eb841c5b922c77118cc77c86e1e217215f51e3de17a3401"
+  },
+  "supporting_evidence_hashes": {
+    "research/production/part1_jcon_abstract_event_followup_2026-11-05.json": "5accd768c75c3973ce6e80383b23817cc204609f86f750aadf6e72e9e0482b93",
+    "research/production/part1_jcon_abstract_event_followup_2026-11-05.md": "07a111b1f1cf16655d0314b69a29735bcc8c907cbb298eb508e47ba89e7ca76f",
+    "research/production/part1_jcon_abstract_root_content_review.json": "5702b86959d615b42dfc160c6d2fa612309a36d65c3250e7738c5fda8e049267"
+  },
+  "changed_requirement_ids": [
+    "00B05-topic-source"
+  ],
+  "counts_before": {
+    "G_topic_verified": 7,
+    "G_topic_pending": 11,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "counts_proposed": {
+    "G_topic_verified": 8,
+    "G_topic_pending": 10,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "scope_objectives_changed": false,
+  "old_source_records_unchanged": true,
+  "formal_inputs_unchanged": true,
+  "next_steps": [
+    "Root independently review unified.diff",
+    "Archive current formal source/scope before application",
+    "Apply reviewed files only after current frozen build boundary is released",
+    "Refresh math/pedagogy/build/visual bindings through actual reviews, not hash-only rewriting"
+  ]
+}

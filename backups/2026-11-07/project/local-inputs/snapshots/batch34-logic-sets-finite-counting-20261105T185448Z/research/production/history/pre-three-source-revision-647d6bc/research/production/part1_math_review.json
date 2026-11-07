@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "review_kind": "math",
+  "status": "accepted",
+  "reviewer": "/root/part1_pedagogy",
+  "reviewed_at": "2026-11-05T09:56:06.541568+00:00",
+  "independent_of_authors": true,
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "blocking_issues": [],
+  "evidence": [
+    {
+      "path": "research/production/part1_revision_independent_review.md",
+      "sha256": "73733af1118ade6b062f810811e27338f9f685588add9daaca72d0d46a92343c"
+    }
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "depth": "G",
+      "objective_ids": [
+        "00-01-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00-02",
+      "depth": "G",
+      "objective_ids": [
+        "00-02-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A05",
+      "depth": "S",
+      "objective_ids": [
+        "00A05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A06",
+      "depth": "T",
+      "objective_ids": [
+        "00A06-1",
+        "00A06-2",
+        "00A06-3",
+        "00A06-4",
+        "00A06-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A07",
+      "depth": "S",
+      "objective_ids": [
+        "00A07-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A08",
+      "depth": "S",
+      "objective_ids": [
+        "00A08-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A09",
+      "depth": "S",
+      "objective_ids": [
+        "00A09-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A15",
+      "depth": "G",
+      "objective_ids": [
+        "00A15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A17",
+      "depth": "G",
+      "objective_ids": [
+        "00A17-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A20",
+      "depth": "S",
+      "objective_ids": [
+        "00A20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A22",
+      "depth": "S",
+      "objective_ids": [
+        "00A22-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A27",
+      "depth": "G",
+      "objective_ids": [
+        "00A27-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A30",
+      "depth": "G",
+      "objective_ids": [
+        "00A30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A35",
+      "depth": "T",
+      "objective_ids": [
+        "00A35-1",
+        "00A35-2",
+        "00A35-3",
+        "00A35-4",
+        "00A35-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A64",
+      "depth": "G",
+      "objective_ids": [
+        "00A64-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A65",
+      "depth": "S",
+      "objective_ids": [
+        "00A65-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A66",
+      "depth": "S",
+      "objective_ids": [
+        "00A66-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A67",
+      "depth": "S",
+      "objective_ids": [
+        "00A67-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A69",
+      "depth": "S",
+      "objective_ids": [
+        "00A69-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A71",
+      "depth": "S",
+      "objective_ids": [
+        "00A71-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A72",
+      "depth": "S",
+      "objective_ids": [
+        "00A72-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A79",
+      "depth": "S",
+      "objective_ids": [
+        "00A79-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A99",
+      "depth": "G",
+      "objective_ids": [
+        "00A99-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B05",
+      "depth": "G",
+      "objective_ids": [
+        "00B05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B10",
+      "depth": "G",
+      "objective_ids": [
+        "00B10-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B15",
+      "depth": "G",
+      "objective_ids": [
+        "00B15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B20",
+      "depth": "G",
+      "objective_ids": [
+        "00B20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B25",
+      "depth": "G",
+      "objective_ids": [
+        "00B25-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B30",
+      "depth": "G",
+      "objective_ids": [
+        "00B30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B50",
+      "depth": "G",
+      "objective_ids": [
+        "00B50-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B55",
+      "depth": "G",
+      "objective_ids": [
+        "00B55-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B60",
+      "depth": "G",
+      "objective_ids": [
+        "00B60-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B99",
+      "depth": "G",
+      "objective_ids": [
+        "00B99-1",
+        "00B99-2"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    }
+  ],
+  "acceptance_boundary": "仅数学/逻辑阶段；来源14个G仍pending，完整部分不accepted。",
+  "source_gate_pending_sections": [
+    "00-02",
+    "00A17",
+    "00A27",
+    "00A30",
+    "00A64",
+    "00B05",
+    "00B15",
+    "00B20",
+    "00B25",
+    "00B30",
+    "00B50",
+    "00B55",
+    "00B60",
+    "00B99"
+  ]
+}

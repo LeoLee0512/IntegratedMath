@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "status": "verified",
+  "verified_commit": "de08a8a92dc04feeacf088c7566e4b79b2bc32fa",
+  "verified_at": "2026-11-05T08:37:24.641101+00:00",
+  "full_scope_accepted": true,
+  "push_succeeded": true,
+  "repository": "https://github.com/LeoLee0512/IntegratedMath.git",
+  "branch": "draft/first-batch-2026-10-20",
+  "base_commit": "229f3f86cdcdef15eb8ec8fb519c44d31e58146d",
+  "local_accepted_checkpoint": "40d945e8d4813bcc5586a25458892a7443e4f552",
+  "method": "normal fast-forward push; ls-remote exact match; original backups subtree unchanged; full source distribution blob hashes matched; three raw remote downloads HTTP200 and exact hashes",
+  "remote_http_verified_paths": [
+    "PART1_REVIEW.md",
+    "manuscript/review_ch02/chapter.md",
+    "research/production/part1_acceptance.json"
+  ],
+  "ci": {
+    "status": "unknown",
+    "reason": "GitHub check-runs API request blocked by proxy CONNECT 403 Forbidden"
+  },
+  "distribution": "source-only; PDFs/ZIP/screenshots retained in local accepted snapshot",
+  "acceptance_sha256": "6fb858541e5911006269e8829394bcbe28c718b8104189d18e4ae551aad0f7f4"
+}

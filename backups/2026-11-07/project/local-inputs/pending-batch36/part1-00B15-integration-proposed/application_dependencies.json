@@ -1,0 +1,21 @@
+{
+  "status": "read_only_dependency_inventory_not_application",
+  "observed_at": "2026-11-05T19:05:12.630409+00:00",
+  "observed_file_sha256": {
+    "tools/build_learning_batch.py": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+    "tools/validate_learning_batch.py": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58",
+    "tools/build_production_ledger.py": "8173d217b8ff3e94abb86ff8c17e7a55836b5ac7d9e02e9a50bd9b7c73300727",
+    "tools/validate_part1_acceptance.py": "f69009bae9423f9758fbba4c1d702b37818e6aa34289d80c10b27e39b4cc3b70",
+    "tools/part1_ledger.py": "909ad676d33394b4e0f2690eb86cf5d628af78b062253acf1a4ab5e4d42cb0b4",
+    "tools/review_artifacts.py": "545d284a65504d56dab6f296268f39bee955b91359448c46c25924d0e7086eeb",
+    "tools/build_ch01_review.py": "382403a44e3573531849b390d9c74e4d612446f7615e6f696185268cc4d9e69f",
+    "tools/build_part1_review.py": "065fe80c5d26116b76ce64a2e6dc281f28fd25ab9026ef432826b33ba4de76dd",
+    "tools/package_learning_batch.py": "482b0f39ad31dceedc3dd79c5455b9c1dd1d4594b4367ddbfd9f1c6f79199b6c",
+    "data/editorial_plan.json": "a8b31a380732779d44d9dcac639f42e81319edffbbe759fac2d5d55d8de5ef72"
+  },
+  "report": "application_dependencies.md",
+  "report_sha256": "cda313ca3ed5d1041994ab9c69e574cb32a870a18a3f8ac28e9bb499bae9a7e2",
+  "formal_mutations": [],
+  "network_requests": 0,
+  "builds_run": 0
+}

@@ -1,0 +1,49 @@
+{
+  "status": "public-source-content-read-for-defined-scope; manuscript_reviews_separate",
+  "content_reviewer": "/root/part1_audit",
+  "cache_preserved_by": "/root",
+  "author": "Jiří Lebl",
+  "title": "Basic Analysis I",
+  "version": "6.3",
+  "license": "CC-BY-SA-4.0 or CC-BY-NC-SA-4.0; no source prose/exercises copied",
+  "retrieval_and_actual_read_evidence": "research/production/real_function_limits_plan.md",
+  "actual_read_ranges": {
+    "limits": [
+      "17–77 cluster points",
+      "78–202 epsilon-delta and uniqueness",
+      "328–437 arithmetic conditions",
+      "438–501 restriction/locality"
+    ],
+    "continuity": [
+      "739–905 continuity/isolated points/limit equivalence"
+    ],
+    "boundary_only": [
+      "203–256 sequential criterion excluded",
+      "999–1038 composition excluded"
+    ]
+  },
+  "resources": [
+    {
+      "filename": "ch-contfunc.tex",
+      "sha256": "3fe56fe7261f3db0dfb0dbabe8e807b0781c41255c2b9cb463f4868fbb13c14d",
+      "bytes": 119775,
+      "local_cache": "local-inputs/function-limits-source-cache/ch-contfunc.tex",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex"
+    },
+    {
+      "filename": "realanal.tex",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "local_cache": "local-inputs/function-limits-source-cache/realanal.tex",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex"
+    },
+    {
+      "filename": "LICENSE.md",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "local_cache": "local-inputs/function-limits-source-cache/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md"
+    }
+  ],
+  "distribution": "Original cache kept locally, not automatically republished. Original textbook explanations and exercises newly authored."
+}

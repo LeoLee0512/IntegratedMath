@@ -1,0 +1,11 @@
+--- reviewed-candidate
++++ applied-comment-correction
+@@ -3568,7 +3568,7 @@
+                      'research/production/finite_real_coordinates_math_review.md',
+                      'research/production/finite_real_coordinates_pedagogy_review.md']}]
+ 
+-# RFS only; finite coordinate linear combinations remain unregistered.
++# RFS registration; FLC is registered separately below.
+ UNIT_SPECS += [{'parent_code': '97Hxx',
+   'parent_chapter_number': 528,
+   'part_code': '97-XX',

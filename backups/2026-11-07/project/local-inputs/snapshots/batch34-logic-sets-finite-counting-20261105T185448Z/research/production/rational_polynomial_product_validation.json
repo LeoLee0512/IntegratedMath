@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "validated_at": "2026-10-29T18:41:16.060864+00:00",
+  "source_sha256": {
+    "tools/rational_polynomial_product.py": "a8fac5ff74d635c6b9b9fe3454ec9f1279f0cf6ca8cb3bcaf782496fd4d63246",
+    "tools/validate_rational_polynomial_product.py": "a092019a0dbc7fe65783e6e8464ea1656bd162cedd04a7626714f82a2d1b11bd",
+    "tools/rational_polynomial_basic.py": "4ab57898877c291e338241126e36ed79d4aeef8723c23e647f3591afbcf2243d",
+    "tools/rational_powers_sums.py": "fad8cf2a22151b4d584ba09ea3464526668cf34d2737afdf0374f241f16cfda4",
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "scope": {
+    "coefficient_values": [
+      "-1",
+      "0",
+      "1/2",
+      "2"
+    ],
+    "record_lengths": [
+      1,
+      3
+    ],
+    "triple_coefficient_values": [
+      "-1",
+      "0",
+      "1/2"
+    ],
+    "triple_lengths": [
+      1,
+      2
+    ],
+    "points": [
+      "-2",
+      "-1/2",
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "counts": {
+    "records": 84,
+    "pairs": 7056,
+    "evaluations": 35280,
+    "padding": 21168,
+    "scalings": 21168,
+    "triples": 1728,
+    "rejections": 33,
+    "immutability": 84
+  },
+  "examples": [
+    {
+      "name": "zero_shift",
+      "output": [
+        "0"
+      ]
+    },
+    {
+      "name": "coefficient_convolution",
+      "left": [
+        1,
+        -1,
+        2
+      ],
+      "right": [
+        0,
+        3
+      ],
+      "output": [
+        "0",
+        "3",
+        "-3",
+        "6"
+      ]
+    },
+    {
+      "name": "square_difference",
+      "output": [
+        "-4",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "fractional_coefficients",
+      "output": [
+        "-1",
+        "1/2",
+        "2/3",
+        "-1/3"
+      ]
+    },
+    {
+      "name": "zero_product",
+      "output": [
+        "0"
+      ]
+    },
+    {
+      "name": "tail_zero_representatives",
+      "output": [
+        "1",
+        "0",
+        "-1"
+      ]
+    }
+  ],
+  "oracle": "SymPy 1.14.0 Poly over QQ",
+  "limits": "Finite exact implementation checks only; not universal proofs or final manuscript/build acceptance."
+}

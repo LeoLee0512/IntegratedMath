@@ -1,0 +1,139 @@
+--- current72/tools/build_learning_batch.py
++++ proposed75/tools/build_learning_batch.py
+@@ -110,6 +110,7 @@
+     ("real_monotone_inverse", "minv-unit", "minv", "real_monotone_inverse"),
+ ]
+ UNITS += [('logic_connectives_quantifiers', 'lcq-unit', 'lcq', 'logic_connectives_quantifiers'), ('sets_inclusion_operations', 'sio-unit', 'sio', 'sets_inclusion_operations'), ('finite_counting_reindex', 'fct-unit', 'fct', 'finite_counting_reindex')]
++UNITS += [('finite_real_coordinates', 'frc-unit', 'frc', 'finite_real_coordinates'), ('finite_real_sums', 'rfs-unit', 'rfs', 'finite_real_sums'), ('finite_coordinate_combinations', 'flc-unit', 'flc', 'finite_coordinate_combinations')]
+ EDUCATION_UNITS = {
+     "ratio-unit": {"chapter": 526, "code": "97Fxx", "section": "97F80"},
+     "qty-unit": {"chapter": 526, "code": "97Fxx", "section": "97F70"},
+@@ -169,7 +170,12 @@
+     "sio-unit": {"chapter": 8, "code": "03Exx", "section": "03E20", "learning_code": "B3.2"},
+     "fct-unit": {"chapter": 8, "code": "03Exx", "section": "03E10", "learning_code": "B3.3"},
+ }
+-CLASSIFIED_UNITS = {**EDUCATION_UNITS, **ANALYSIS_UNITS, **B3_UNITS}
++FINITE_COORDINATE_UNITS = {
++    "frc-unit": {"chapter": 84, "code": "15Axx", "section": "15A03", "learning_code": "B4.L1", "part_code": "15-XX", "segment": "84"},
++    "rfs-unit": {"chapter": 528, "code": "97Hxx", "section": "97H20", "learning_code": "B2.39", "part_code": "97-XX", "segment": "528-rfs-continuation"},
++    "flc-unit": {"chapter": 84, "code": "15Axx", "section": "15A03", "learning_code": "B4.L2", "part_code": "15-XX", "segment": "84-combinations-continuation"},
++}
++CLASSIFIED_UNITS = {**EDUCATION_UNITS, **ANALYSIS_UNITS, **B3_UNITS, **FINITE_COORDINATE_UNITS}
+ WRITTEN_REPORT = ROOT / "research/production/written_arithmetic_validation.json"
+ INTEGER_REPORT = ROOT / "research/production/integer_pairs_validation.json"
+ EUCLIDEAN_REPORT = ROOT / "research/production/integer_euclidean_validation.json"
+@@ -331,6 +337,7 @@
+               ROOT / "research/production/part1_math_literature_followup.json",
+               ROOT / "research/production/part1_math_literature_followup.md"]
+     paths += [ROOT / name for name in ['research/production/logic_connectives_quantifiers_plan.md', 'research/production/logic_connectives_quantifiers_sources.json', 'research/production/logic_connectives_quantifiers_pedagogy_source_review.md', 'research/production/sets_inclusion_operations_plan.md', 'research/production/sets_inclusion_operations_sources.json', 'research/production/sets_inclusion_operations_math_review.md', 'research/production/finite_counting_bridge_plan.md', 'research/production/finite_counting_reindex_sources.json', 'research/production/finite_counting_reindex_math_review.md', 'research/production/finite_counting_reindex_pedagogy_source_review.md', 'research/production/logic_connectives_quantifiers_math_review.md', 'research/production/sets_inclusion_operations_pedagogy_review.md', 'tools/build_production_ledger.py', 'research/production/part1_jcon_abstract_event_followup_2026-11-05.json', 'research/production/part1_jcon_abstract_event_followup_2026-11-05.md', 'research/production/part1_jcon_abstract_root_content_review.json', 'research/production/part1_abstract_source_mapping_review.md']]
++    paths += [ROOT / name for name in ['research/production/finite_real_coordinates_next_plan.md', 'research/production/finite_real_coordinates_sources.json', 'research/production/finite_real_coordinates_source_reading.json', 'research/production/finite_real_coordinates_math_review.md', 'research/production/finite_real_coordinates_pedagogy_review.md', 'research/production/finite_real_sums_linear_combinations_plan.md', 'research/production/finite_real_sums_sources.json', 'research/production/finite_real_sums_author_check.md', 'research/production/finite_real_sums_math_review.md', 'research/production/finite_real_sums_pedagogy_review.md', 'research/production/finite_coordinate_combinations_plan.md', 'research/production/finite_coordinate_combinations_sources.json', 'research/production/finite_coordinate_combinations_author_check.md', 'research/production/finite_coordinate_combinations_math_review.md', 'research/production/finite_coordinate_combinations_pedagogy_review.md']]
+     return hashes(paths)
+ 
+ 
+@@ -1608,20 +1615,21 @@
+ """
+ 
+ 
+-def check_batch34_prerequisites():
++def check_batch35_prerequisites():
+     """Fail before artifacts change unless registration and the abstract revision are applied."""
+     from build_production_ledger import UNIT_SPECS
+     expected = [(stem, anchor) for stem, anchor, *_ in UNITS]
+     actual = [(Path(spec["body"]).stem, spec["anchor"]) for spec in UNIT_SPECS]
+-    if len(UNIT_SPECS) != 72 or actual != expected:
+-        raise ValueError("Batch34 requires the reviewed 72-unit registration in matching order")
+-    for spec in UNIT_SPECS[-3:]:
+-        location = B3_UNITS[spec["anchor"]]
++    if len(UNIT_SPECS) != 75 or actual != expected:
++        raise ValueError("Batch35 requires the reviewed 75-unit registration in matching order")
++    for spec in UNIT_SPECS[69:]:
++        location = {**B3_UNITS, **FINITE_COORDINATE_UNITS}[spec["anchor"]]
+         if (spec["code"] != location["learning_code"]
+                 or spec["parent_code"] != location["code"]
+                 or spec["parent_chapter_number"] != location["chapter"]
+-                or location["section"] not in spec["msc_leaf_codes"]):
+-            raise ValueError("B3 display metadata disagrees with the actual registration")
++                or location["section"] not in spec["msc_leaf_codes"]
++                or ("part_code" in location and spec["part_code"] != location["part_code"])):
++            raise ValueError("B3 or finite-coordinate display metadata disagrees with the actual registration")
+     plan_path = ROOT / "research/production/part1_scope_plan.json"
+     plan = json.loads(plan_path.read_text())
+     ledger = json.loads((ROOT / "research/production/part1_topic_sources.json").read_text())
+@@ -1631,7 +1639,7 @@
+     if (ledger.get("counts") != required_counts or statuses.count("verified") != 8
+             or statuses.count("pending") != 10
+             or statuses.count("original_work_reviewed_separately") != 15):
+-        raise ValueError("Batch34 ten-gap disclosure requires the applied 00B05 source revision")
++        raise ValueError("Batch35 ten-gap disclosure requires the applied 00B05 source revision")
+     for document in (plan, ledger):
+         section = next(item for item in document["sections"] if item["code"] == "00B05")
+         if section["topic_source_status"] != "verified":
+@@ -1648,14 +1656,14 @@
+ 
+ def compose_body():
+     opening = (CHAPTER / "part_opening.md").read_text()
+-    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章修订稿、第2章导读，以及七十二个基础桥接单元。"
++    notice = ("**本批范围。** 本稿包含第一部分开篇、第1章修订稿、第2章导读，以及七十五个基础桥接单元。"
+               "B1.1—B1.19归入第7部分第26章；B1.20—B1.21归入第63部分第526章的数学教育主题。"
+               "B2.1—B2.4归入同部分第529章的函数教学桥接。"
+               "B2.5—B2.8归入同部分第528章的方程与不等式教学桥接。"
+               "B2.9—B2.10在这些先修之后续写第529章的有理坐标与仿射函数图像教学。"
+               "B2.11—B2.20随后续写第528章的有理数幂、有限和、多项式系数记录、运算、一次除式商余、有理根与恒等识别、有理平方及二次方程。"
+               "B2.21—B2.32再续写第526章97F50的有理数缺口、戴德金分割次序、非空有上界分割族的上确界、分割加法、有序交换加法群、非负分割乘积规律、全符号乘法的有序交换环、非零倒数与除法，汇总同一包含序下具上确界性质的完备有序域，再建立实数阿基米德性质、有理像稠密及非负平方根。B2.33继续第526章的实数绝对值与线距，B2.34再回到第528章的实数二次方程与配方界。"
+-              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.5随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛、实数数列BW及柯西判据。B4.6—B4.7再进入第18部分第146章26Axx，分别主归26A03点极限入口与26A15域内连续性；B4.8—B4.10继续26A15的连续复合、闭区间介值及有限闭区间严格单调函数的逆连续。本批随后回访第3部分：B3.1进入第5章03Bxx，B3.2—B3.3进入第8章03Exx；只补逻辑、集合运算与有限计数的有界入口。第5章、第8章未完成。第26章、第242章仅有部分单元，第146章未完成；第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；第2章已有十节导读及七题，第一部分10个G节的专题来源仍待核实，不计为完整部分完成。"
++              "B2.35—B2.38进入并接续第527章97G70的实数坐标、位移、仿射参数、平方和与欧氏距离、直线方程交点、正交投影和唯一最近点。B4.1—B4.5随后切换并接续第28部分第242章40A05的实数数列收敛、有界与四则极限、比较夹逼、单调收敛、实数数列BW及柯西判据。B4.6—B4.7再进入第18部分第146章26Axx，分别主归26A03点极限入口与26A15域内连续性；B4.8—B4.10继续26A15的连续复合、闭区间介值及有限闭区间严格单调函数的逆连续。本批随后回访第3部分：B3.1进入第5章03Bxx，B3.2—B3.3进入第8章03Exx；只补逻辑、集合运算与有限计数的有界入口。第5章、第8章未完成。随后B4.L1进入第11部分第84章15A03有限实数坐标；B2.39回到第63部分第528章97H20建立有限实数和，再以B4.L2回到第11部分第84章建立有限坐标线性组合。第84章未完成，张成、基、维数、秩和矩阵仍待写。第26章、第242章仅有部分单元，第146章未完成；第526章、第529章、第528章和第527章也只有部分教学桥接，不等于相应整章或分类条目完成；第2章已有十节导读及七题，第一部分10个G节的专题来源仍待核实，不计为完整部分完成。"
+               "本稿教学正文按先修关系接续，不能把这一学习顺序说成MSC分类顺序。"
+               "全目录仍为63部分、534章、6006节。自然数单元明确采用佩亚诺规则、归纳与递归原则，"
+               "尚未进行集合论中的自然数形式构造，也未形式证明递归原则。所有课后题答案统一置于全部教学正文之后；例题解答随文保留。\n\n")
+@@ -1803,6 +1811,42 @@
+ """
+         if stem == "finite_counting_reindex":
+             teaching += "\n\n**学习编号映射。** 以下“有限索引、计数唯一性与重编号”的学习编号为B3.3，先修入口见单元开篇。\n"
++        if stem == "finite_real_coordinates":
++            teaching += """
++
++# 第11部分 线性与多重线性代数、矩阵理论（MSC 15-XX） {#part-15}
++
++在逻辑、集合与有限计数入口之后，转入有限实数坐标。以下B4.L1与后续B4.L2是线性代数支线的学习编号；B4.1—B4.10仍表示前面的分析单元，编号不改。
++
++# 第84章 基础线性代数（15Axx） {#chapter-84}
++
++以下“有限实数坐标与逐坐标运算”的学习编号为B4.L1，主归15A03的有限坐标入口。它从已建立的实数域和函数记录出发，证明逐坐标运算、消去条件、重编号和旧二维模型相容；不调用尚未定义的实数有限和。第84章未完成；张成、抽象向量空间、线性相关、基、维数、秩、lineability、矩阵与行列式仍待后续。学习号不是分类号，章号保留原分类目录编号。
++
++"""
++        if stem == "finite_real_sums":
++            teaching += """
++
++# 第63部分 数学教育（续，MSC 97-XX） {#part-97-real-sums-continuation}
++
++这里回到数学教育部分，补有限坐标组合需要的实数求和接口。这一回访是学习顺序安排，不改变单元的主分类。
++
++# 第528章 代数教育（97Hxx，实数有限和续） {#chapter-528-rfs-continuation}
++
++以下“有限实数和：递归、逐项规则与拼接”的学习编号为B2.39，主归97H20初等代数教育的有限求和局部。这是[第528章实数代数前段](#chapter-528-real-continuation)之后的同一分类章续写，不新增分类章或节。B2.39从自然递归、函数和实数加乘规则构造实数和值，不把旧有理求和公式直接改名。它不依赖B4.L1，但为后续B4.L2提供有限表和、逐项规则及连续拼接。第528章未完成；任意重排、双重和、无限级数与一般代数理论不在本单元内。
++
++"""
++        if stem == "finite_coordinate_combinations":
++            teaching += """
++
++# 第11部分 线性与多重线性代数、矩阵理论（续，MSC 15-XX） {#part-15-combinations-continuation}
++
++实数求和接口建立后，回到有限坐标向量；向量项索引和一个向量内部的坐标索引必须分别核查。
++
++# 第84章 基础线性代数（15Axx，续） {#chapter-84-combinations-continuation}
++
++以下“有限坐标向量的线性组合”的学习编号为B4.L2，继续15A03的具体坐标组合局部。它使用[B4.L1的函数表与运算](#frc-unit)及[B2.39的实数有限和](#rfs-unit)，逐坐标定义组合，再证明规则和两个零参数的边界。这是[第84章前段](#chapter-84)后的同一分类章续写，不增加分类章或节。固定坐标重编号不等于任意向量项重排；张成、基、线性相关、维数、秩、矩阵和行列式仍未建立，第84章未完成。
++
++"""
+         teaching += "\n\n" + (FOUNDATIONS / (stem + ".md")).read_text()
+         new_source = {"real_sequences_cauchy": "real-sequences-cauchy-sources",
+                       "real_function_limits": "real-function-limits-sources",
+@@ -2607,7 +2651,7 @@
+     reuse.add_argument("--incremental", action="store_true",
+                        help="Reuse only hash-verified legacy chapter and catalogue artifacts")
+     args = parser.parse_args()
+-    check_batch34_prerequisites()
++    check_batch35_prerequisites()
+     BUILD.mkdir(parents=True, exist_ok=True)
+     (OUT / "figures").mkdir(parents=True, exist_ok=True)
+     inputs = source_hashes()  # Fail before a costly build if any needed source is absent.

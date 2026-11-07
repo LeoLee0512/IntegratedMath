@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-29T16:12:22.687541+00:00",
+  "domain": "All total functions between all subsets of {0,1}; finite integer labels only",
+  "counts": {
+    "functions": 18,
+    "property_checks": 54,
+    "inverse_functions": 7,
+    "inverse_rejections": 11,
+    "preimages": 53,
+    "compositions": 90,
+    "inverse_compositions": 13,
+    "opposite_type_pairs": 29,
+    "two_sided_inverses": 7,
+    "one_sided_implications": 58,
+    "invalid_rejections": 22
+  },
+  "explicit_examples": [
+    "empty-to-empty bijection is its own inverse",
+    "empty domain with nonempty codomain is not surjective",
+    "same graph and different codomain change surjectivity",
+    "preimage exists for a noninvertible constant function",
+    "finite affine table inverse reverses all three arrows",
+    "zero output does not prevent a function inverse; reciprocal differs"
+  ],
+  "source_sha256": {
+    "tools/finite_functions.py": "f863964ff3899de0aa179c3c0bcbc7f8614aff5d08dac1f735d41f66d55528ee",
+    "tools/finite_function_inverses.py": "62deba9bc0c408c461a97ae06745f0c81acea0ad6319e6a2582f111826846d3b",
+    "tools/validate_finite_function_inverses.py": "3e4779af60b4267d74fa791b5a93c1aa7e0879babd747170f3f260ffa8ce2582"
+  },
+  "limits": "Finite oracle tests support implementation only. No general proof, real-number model, or choice principle is inferred."
+}

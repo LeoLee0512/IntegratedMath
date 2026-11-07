@@ -1,0 +1,51 @@
+--- formal75/accepted_reviews.json
++++ proposed76/accepted_reviews.json
+@@ -3168,6 +3168,48 @@
+       ],
+       "blocking_issues": [],
+       "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
++    },
++    {
++      "target_type": "unit",
++      "target_id": "fsp-unit",
++      "stage": "math-reviewed",
++      "scope": "unit",
++      "status": "accepted",
++      "reviewer": "/root/part1_audit",
++      "reviewed_at": "2026-11-05",
++      "source_sha256": {
++        "manuscript/foundations/finite_coordinate_subspaces.md": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97",
++        "manuscript/foundations/finite_coordinate_subspaces_answers.md": "93847c7812c470fb727c277edd5853ea64f0071b63ec4776c65ec9d8330f29dc"
++      },
++      "evidence": [
++        {
++          "path": "research/production/finite_coordinate_subspaces_math_review.md",
++          "sha256": "e3b73d9a00a4ec19ef2fb1866960a6069949d901373458eb1a3280d8ab2ac11d"
++        }
++      ],
++      "blocking_issues": [],
++      "limits": "仅FSP最终临时两稿及八题全解的真实独立文字审阅。提案中正式路径尚未安装；须按映射逐字节安装并核hash后方可载入该审签。原读位置与日精度保留，不冒称重新全文审或build/visual通过；非完整15A03/第84章/模块。"
++    },
++    {
++      "target_type": "unit",
++      "target_id": "fsp-unit",
++      "stage": "pedagogy-reviewed",
++      "scope": "unit",
++      "status": "accepted",
++      "reviewer": "/root",
++      "reviewed_at": "2026-11-05",
++      "source_sha256": {
++        "manuscript/foundations/finite_coordinate_subspaces.md": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97",
++        "manuscript/foundations/finite_coordinate_subspaces_answers.md": "93847c7812c470fb727c277edd5853ea64f0071b63ec4776c65ec9d8330f29dc"
++      },
++      "evidence": [
++        {
++          "path": "research/production/finite_coordinate_subspaces_pedagogy_review.md",
++          "sha256": "ccac39e48c0a6c04dec335d80079ded55c474f599a1d7f88093e880d43250491"
++        }
++      ],
++      "blocking_issues": [],
++      "limits": "仅FSP最终临时两稿及八题全解的真实独立文字审阅。提案中正式路径尚未安装；须按映射逐字节安装并核hash后方可载入该审签。原读位置与日精度保留，不冒称重新全文审或build/visual通过；非完整15A03/第84章/模块。"
+     }
+   ]
+ }

@@ -1,0 +1,1446 @@
+{
+  "schema_version": 1,
+  "status": "source_conditions_checked_formal_draft_interfaces_registered_final_acceptance_separate",
+  "scope": "B2.17有理参数首一线性商余与固定状态综合除法；B2.18因式定理、不同有理根数界、共同系数上界有限点判等及标准Q→Q求值函数识别。零次数未定义。",
+  "public_git_ref_discovery": {
+    "kind": "public_git_ref_read",
+    "url": "https://github.com/openstax/osbooks-college-algebra-bundle.git",
+    "checked_at_utc": "2026-10-29T18:48:30.093183+00:00",
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/openstax/osbooks-college-algebra-bundle.git",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout": "463991614337632b0e02cbb6c76223cbb0d423d3\tHEAD\n",
+    "stderr": ""
+  },
+  "requests": [
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "mathlib_eval",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "checked_at_utc": "2026-10-29T17:29:06.154298+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Eval/Defs.lean",
+      "bytes": 24376,
+      "sha256": "a623faee92573a0123e1af4abbdaf13316d409b5cd8693bf63a6d9d93e38b8b4",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_eval",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "mathlib_degree_definitions",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "checked_at_utc": "2026-10-29T17:30:13.351003+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean",
+      "bytes": 20441,
+      "sha256": "d3d0fd4d898113bfb7316bd4484d9dee8455f04aa5d1a038d1b23e0c3e63665f",
+      "access_status": "verified_http_200",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_degree_definitions",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "mathlib_degree_operations",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Operations.lean",
+      "checked_at_utc": "2026-10-29T18:28:56.821594+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Operations.lean",
+      "bytes": 31329,
+      "sha256": "38d7fe31706fec12f44d5f63b3a4ec411f26e9e19697f55d4a79d57fff651b8f",
+      "cache_path": "/tmp/polynomial-multiplication-source-audit/mathlib_degree_operations",
+      "access_status": "verified_http_200",
+      "reuse": "existing_cached_response"
+    },
+    {
+      "request_id": "mathlib_div",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean",
+      "checked_at_utc": "2026-10-29T18:48:03.534268+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean",
+      "access_status": "verified_http_200",
+      "bytes": 35165,
+      "sha256": "95b8cec3a37c5426d89bf79fd2d9613c1ce248fbf765364595507bcdb3772322",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/mathlib_div",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean",
+      "checked_at_utc": "2026-10-29T18:48:03.534760+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean",
+      "access_status": "verified_http_200",
+      "bytes": 34591,
+      "sha256": "941d6e739a88ceecc6e6aa2b8bbe5639272e7d6442178b4b7c2137e3b00e7ad5",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/mathlib_roots",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "mathlib_field_division",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/FieldDivision.lean",
+      "checked_at_utc": "2026-10-29T18:48:03.535330+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Polynomial/FieldDivision.lean",
+      "access_status": "verified_http_200",
+      "bytes": 32064,
+      "sha256": "ed089606c16b310a3fdac0dbbbb9f0ab00d0f8c22c0b809c3e81b8aadb691513",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/mathlib_field_division",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/collections/college-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-29T18:48:43.484170+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/collections/college-algebra-2e.collection.xml",
+      "access_status": "verified_http_200",
+      "bytes": 7013,
+      "sha256": "7582386b6008cac7d7fefb6940c68eec029642d61b945b06af5a578c46c4b1e3",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_collection",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/LICENSE",
+      "checked_at_utc": "2026-10-29T18:48:43.484582+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/LICENSE",
+      "access_status": "verified_http_200",
+      "bytes": 21013,
+      "sha256": "8e63d319b3d085a7571278ea3033d713131ac0d330b87cf9ac854e05ee44229d",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_license",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m63490/index.cnxml",
+      "checked_at_utc": "2026-10-29T18:49:08.160261+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m63490/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 26330,
+      "sha256": "117f342ba34b5649baf5415b330b88abe13db515ad325ea77a305834342a0481",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_preface",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_division",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51276/index.cnxml",
+      "checked_at_utc": "2026-10-29T18:49:08.160869+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51276/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 185999,
+      "sha256": "0f587bc7b7103f8b740e6ca957377ffacd2361989aa8a8353d43a6d50d0f5d04",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_division",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_zeros",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51277/index.cnxml",
+      "checked_at_utc": "2026-10-29T18:49:08.161295+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51277/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 127715,
+      "sha256": "1f450b1734c8db7b384d03badb66fbd782d062d9bf53afda1b04176d5eec08a6",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_zeros",
+      "reuse": "new_request_this_preflight"
+    },
+    {
+      "request_id": "openstax_college_zero_theorems",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51278/index.cnxml",
+      "checked_at_utc": "2026-10-29T18:49:16.106722+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-college-algebra-bundle/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51278/index.cnxml",
+      "access_status": "verified_http_200",
+      "bytes": 180061,
+      "sha256": "c3454182de66ecaa1b4f7ecf45d0eefa23b77149dde7a221627eee6b88d020d6",
+      "cache_path": "/tmp/polynomial-linear-division-source-audit/openstax_college_zero_theorems",
+      "reuse": "new_request_this_preflight"
+    }
+  ],
+  "request_summary": {
+    "reused_http200": 4,
+    "new_http_requests": 9,
+    "new_http200": 9,
+    "new_http_errors": 0,
+    "total_http_records": 13,
+    "public_git_ref_reads": 1,
+    "new_requests_during_write": 0,
+    "note": "HTTP请求与git只读HEAD解析分别计数；所有已存字节重新核大小与SHA。原checked_at_utc不改写成本次本地复核时间。"
+  },
+  "request_label_corrections": {
+    "openstax_college_division": "m51276实际为Graphs of Polynomial Functions",
+    "openstax_college_zeros": "m51277实际为Dividing Polynomials",
+    "openstax_college_zero_theorems": "m51278为Zeros of Polynomial Functions"
+  },
+  "sources": [
+    {
+      "id": "LINDIV-OPENSTAX",
+      "title": "College Algebra 2e",
+      "senior_contributing_author": "Jay Abramson",
+      "contributing_authors": [
+        "Valeree Falduto",
+        "Rachael Gross",
+        "David Lippman",
+        "Melonie Rasmussen",
+        "Rick Norwood",
+        "Nicholas Belloit",
+        "Jean-Marie Magnier",
+        "Harold Whipple",
+        "Christina Fernandez"
+      ],
+      "version": "osbooks-college-algebra-bundle commit 463991614337632b0e02cbb6c76223cbb0d423d3",
+      "license": "CC-BY-NC-SA-4.0",
+      "license_evidence": [
+        "openstax_college_collection line6",
+        "openstax_college_preface lines19–27",
+        "openstax_college_license"
+      ],
+      "authors_evidence": "openstax_college_preface lines168–176",
+      "use": "只核数学事实、条件与教学算法；不复制题目、连续段落或图像。公开可读不免除署名、非商业及相同方式共享条件；图像另有例外，不采用。",
+      "reason_for_new_fetch": "原Intermediate Algebra缓存没有本批余式/因式定理所需章节；先只读确认另一公开书库HEAD，再全部用固定commit取得字节。"
+    },
+    {
+      "id": "LINDIV-MATHLIB",
+      "title": "mathlib4 polynomial division, roots and evaluation",
+      "authors": [
+        "Chris Hughes",
+        "Johannes Hölzl",
+        "Kim Morrison",
+        "Jens Wagemaker"
+      ],
+      "additional_roots_author": "Johan Commelin",
+      "version": "v4.24.0",
+      "license": "Apache-2.0",
+      "license_evidence": [
+        "mathlib_license",
+        "各源码首行许可声明"
+      ],
+      "use": "只读源码核声明假设；未编译Lean，未形式化书稿，不复制实现，不把库已有环/集合/次数接口当书稿自动可用。"
+    }
+  ],
+  "checks": [
+    {
+      "request_id": "openstax_college_zeros",
+      "location": "lines 378–435",
+      "locator": "The Division Algorithm (m51277)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51277/index.cnxml#L378",
+      "conditions": "非零除数；该框先限定除数次数不大于被除式次数；余式为零或次数更低。",
+      "finding": "只用作唯一商余的教材对照。本书专取X−C(a)，并独立覆盖零及常量被除式，不能借该框省略低次数输入或引入一般除法。",
+      "source_excerpt_sha256": "d399c149cea01c2f27589ed6121557022af238f2169e20806394287af5b69ed8"
+    },
+    {
+      "request_id": "openstax_college_zeros",
+      "location": "lines 705–705",
+      "locator": "Synthetic division scope (m51277)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51277/index.cnxml#L705",
+      "conditions": "首项系数为1的线性因子。",
+      "finding": "本批综合除法限X−C(a)，a∈Q；非首一线性或高次除数不在本算法接口中。",
+      "source_excerpt_sha256": "68e49ebe76af80e79888e51fa93c80e2288e709944b59f5520644e79d3e80d02"
+    },
+    {
+      "request_id": "openstax_college_zeros",
+      "location": "lines 757–801",
+      "locator": "Synthetic Division / steps (m51277)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51277/index.cnxml#L757",
+      "conditions": "源说明x−k且k为实数，高到低处理系数。",
+      "finding": "本书限有理a，升序系数记录必须倒序读取。缺次项须补零；除X−a使用a，除X+a使用−a。末格余数，其余为商的降序系数，输出须转回升序并规范化。",
+      "source_excerpt_sha256": "0220822de61394d9e384f5bf6a7929da53fc347ae26ef439bca8b6a71476950f"
+    },
+    {
+      "request_id": "openstax_college_zero_theorems",
+      "location": "lines 101–200",
+      "locator": "Remainder theorem (m51278)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51278/index.cnxml#L101",
+      "conditions": "线性首一除数x−k；余式常量。",
+      "finding": "代入a得到r=E_P(a)，使用已证求值保加乘与E_(X−C(a))(a)=0。书稿须区分数值r与常量多项式C(r)，且不使用一般除法存在作为未证前提。",
+      "source_excerpt_sha256": "3d14d6f6753551cbf2c5da00917cb429e54ffcb82f1244e4a145ca569d7b87a9"
+    },
+    {
+      "request_id": "openstax_college_zero_theorems",
+      "location": "lines 356–438",
+      "locator": "Factor theorem and adjacent complex-root claim (m51278)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51278/index.cnxml#L356",
+      "conditions": "x−k整除f当且仅当k是根；相邻文字另谈复数系统中n个根。",
+      "finding": "本批仅a∈Q的因式/根等价。相邻复数n根的陈述不能移到Q，也不能解释为n个不同根；不据此宣称有理多项式必裂。",
+      "source_excerpt_sha256": "fd4aafaf2851ce3282eea87f527af1ecffa785de8ef96402120ab6c7dda089b2"
+    },
+    {
+      "request_id": "openstax_college_zero_theorems",
+      "location": "lines 1307–1362",
+      "locator": "Fundamental theorem boundary (m51278)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51278/index.cnxml#L1307",
+      "conditions": "源正式框n>0、复数根；随后n根明确允许重数。",
+      "finding": "仅作排除范围核查：本批不采用代数基本定理、不引复数或实根存在定理；本批根数界统计不同有理根。",
+      "source_excerpt_sha256": "404f9c2d43343039b09529895069718b8e72ac8a363bcc4338d1a99457f13f40"
+    },
+    {
+      "request_id": "openstax_college_division",
+      "location": "lines 950–989",
+      "locator": "Multiplicity discussion (m51276)",
+      "browse_url": "https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/modules/m51276/index.cnxml#L950",
+      "conditions": "图像章节讨论因子重复与零点重数。",
+      "finding": "原请求标签division实际为Graphs of Polynomial Functions。此处只核重数与不同根的差别；图像与触轴/穿轴叙述不引入当前书稿。",
+      "source_excerpt_sha256": "a7c208007b721fa242c79b1f62f53aede346661bfef9972dbd28d3f6b08cf01a"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 82–108",
+      "locator": "divModByMonicAux",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L82",
+      "conditions": "[Ring R]；首一除数，度数递降的良基递归；使用WithBot degree。",
+      "finding": "库建一般首一多项式除法，强于本批线性范围；本书以原记录正长度归纳独立构造，不把度数递归或一般除法作为先修。",
+      "source_excerpt_sha256": "6d5932e7033ec81d6ce1d870e368c1fd317491be21a1b4afb99386379d362a67"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 111–120",
+      "locator": "divByMonic / modByMonic",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L111",
+      "conditions": "[Ring R]；源有非首一输入的缺省定义。",
+      "finding": "本书只定义固定D_a=X−C(a)的商余，不借库总化接口扩展到任意非首一除数。",
+      "source_excerpt_sha256": "03822c58deb98f2a7f422afa0e939aa0da5880d56f35e2176f7f2391aa3845cc"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 239–240",
+      "locator": "modByMonic_add_div",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L239",
+      "conditions": "[Ring R]、Monic q。",
+      "finding": "核余式+除数×商=被除式的方向；本书写P=D_a Q+C(r)，可由既有加法交换调整。",
+      "source_excerpt_sha256": "cc28fa42fca4cba2d5bf60baa9a2db446f4400bae4544f7e7e1c26dedb9b92ee"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 318–336",
+      "locator": "div_modByMonic_unique",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L318",
+      "conditions": "[Ring R]、Monic g，r+gq=f且degree r<degree g。",
+      "finding": "首一除法唯一性不需要一般域。本书用先代入a得余数唯一、再D_a非零消去得商唯一；不以零余式的未定义次数处理边界。",
+      "source_excerpt_sha256": "85f5cb4cd62d452e44448a8ae194b602c9879ed43b1f36e92467e588a3c39ff0"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 420–428",
+      "locator": "coeff_divByMonic_X_sub_C_rec",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L420",
+      "conditions": "[Ring R]，q_n=p_(n+1)+a q_(n+1)。",
+      "finding": "核综合除法递推的正号和下标。书稿须另给有限终端、常量/零输入与记录方向，不能把无限递推关系当唯一算法定义。",
+      "source_excerpt_sha256": "f185d6ee46d014f2439d81ad9c1d6651ffae53efbc107a8e80cced9a68b0dc4d"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 430–438",
+      "locator": "coeff_divByMonic_X_sub_C",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L430",
+      "conditions": "[Ring R]；有限区间Icc(n+1,natDegree p)。",
+      "finding": "库闭式包含条件自然差和natDegree约定；本书不需复制此求和闭式，可用高到低有限递推，避免额外重排和零次数混用。",
+      "source_excerpt_sha256": "9976ec36bb99cacbe8f03e7cb4c9eb381199e0f4de75e7eda4301338b58f7f98"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 549–567",
+      "locator": "modByMonic_X_sub_C_eq_C_eval",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L549",
+      "conditions": "[CommRing R]；余式为C(p.eval a)。",
+      "finding": "书稿Q满足数值交换规则，但必须从已经独立构造的线性商余式推导余式定理；不能循环用余式定理证明商余存在。",
+      "source_excerpt_sha256": "59930406bdffd84fde6fe08a36cb7051f895b2aae520eb27bd4f765a207e60fa"
+    },
+    {
+      "request_id": "mathlib_div",
+      "location": "lines 569–585",
+      "locator": "mul_divByMonic_eq_iff_isRoot / dvd_iff_isRoot",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Div.lean#L569",
+      "conditions": "[CommRing R]；a属于系数环，因式在同一多项式类型。",
+      "finding": "本批a∈Q且商也为Q系数多项式。定义D_a整除P为存在Q使P=D_aQ后再证根等价；P=0时每个a是根，D_a整除0，商为0。",
+      "source_excerpt_sha256": "943a0dd0fabfd6bc4bbebd5d7d53289ce92a66c554d51152f0b279edb36103c9"
+    },
+    {
+      "request_id": "mathlib_field_division",
+      "location": "lines 282–304",
+      "locator": "General polynomial division boundary",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/FieldDivision.lean#L282",
+      "conditions": "[Field R]，使用首项系数逆元构造一般除法。",
+      "finding": "该源仅划界：线性首一除法不需要这一完整除法结构；本批不登记一般多项式长除法或欧几里得域。",
+      "source_excerpt_sha256": "017ac0bf86b6ce5a7e5777391f8deaed2f96b519ac5e6ee8f7410ff534430330"
+    },
+    {
+      "request_id": "mathlib_degree_definitions",
+      "location": "lines 44–53",
+      "locator": "degree / natDegree zero conventions",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Definitions.lean#L44",
+      "conditions": "degree(0)=bottom；natDegree(0)=0。",
+      "finding": "本书零次数未定义。零被除式、零商、零余式和零差多项式都须单独分支，不移植库的零次数公式。",
+      "source_excerpt_sha256": "96cae1760c711f75dae5b7c16b6f1cfd3effb79c9d822fb3014e12b90e47053b"
+    },
+    {
+      "request_id": "mathlib_degree_operations",
+      "location": "lines 666–674",
+      "locator": "degree_mul",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Degree/Operations.lean#L666",
+      "conditions": "[Semiring R] [NoZeroDivisors R]；WithBot degree。",
+      "finding": "本书已证非零积次数，D_a=(-a,1)非零次数1。P=D_aQ且P非零时先得Q非零，再得degP=1+degQ；自然差d−1只在d≥1后使用。",
+      "source_excerpt_sha256": "7bc4e14ab3514e11d51442172b8eea400ca4e1bd9eefebb00fe418cc43562e21"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 43–77",
+      "locator": "roots / roots_zero / card_roots",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L43",
+      "conditions": "[CommRing R] [IsDomain R]；roots为含重数的多重集，0特设空多重集；degree界须P≠0。",
+      "finding": "不能把roots(0)=空误读为零多项式没有根。书稿定义的求值零点对零多项式是所有Q；非零根数定理仅论互异有理输入列表。",
+      "source_excerpt_sha256": "a0a7825ea5ea2398be4c2bc2ecba72db6aa9f719c24ad06291430b836f64f691"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 100–108",
+      "locator": "mem_roots / mem_roots'",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L100",
+      "conditions": "roots成员与IsRoot等价须P≠0；一般版本显式含P≠0。",
+      "finding": "库的roots数据结构与求值根谓词有零边界差异；本书无需构造含重数根多重集。",
+      "source_excerpt_sha256": "28e02e11a7f396b4899bcc0cfe4bfb5ef7ddd02ff922623b65f103fcb1677809"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 122–131",
+      "locator": "card_le_degree_of_subset_roots / finite_setOf_isRoot",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L122",
+      "conditions": "整环；有限集合界通过多重集根建立，非零才有有限根集。",
+      "finding": "本书用互异列表归纳证d次非零多项式不可能有d+1个不同有理根，避免引入未教集合基数或多重集。",
+      "source_excerpt_sha256": "cfa21aa5ebf760c1a3c6ec0cb8e8430a025f1c19bb9ecd1ef4d5adf0badb94c1"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 140–144",
+      "locator": "eq_of_infinite_eval_eq",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L140",
+      "conditions": "整环；取值相等的输入集合无限。",
+      "finding": "本书可用有限整数网格证明Q上的全输入取值相同推出正式相等，不借无限集合基数论。",
+      "source_excerpt_sha256": "8c400e4cfa9e80a23ea86082db03d9f4fb31df3621455418cc6692e0ccf59b29"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 377–388",
+      "locator": "zero_of_eval_zero / funext",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L377",
+      "conditions": "[CommRing R] [IsDomain R] [Infinite R]。",
+      "finding": "不能删掉无限性后推广到任意有限系数域或只给有限样本；本书标准求值函数均为Q→Q，使用自然数嵌入提供任意长互异列表。",
+      "source_excerpt_sha256": "78ce34e5c4d59adb5b58779356432fa08f0712ed271436895aa9c24ec1e5e2cb"
+    },
+    {
+      "request_id": "mathlib_roots",
+      "location": "lines 592–615",
+      "locator": "eq_zero_of_natDegree_lt_card_of_eval_eq_zero",
+      "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Polynomial/Roots.lean#L592",
+      "conditions": "整环；有限索引、输入映射单射、所有输入取值0、样本数大于natDegree。",
+      "finding": "这是有限网格路线的库对照。本书只用d+1个显式互异有理整数，按根数界得矛盾；无需调用该库的Fintype或基数结论。",
+      "source_excerpt_sha256": "2ce4b2446829f8c74c89631b91acfb2d7f49056f17e2788cc63b37ddae937d35"
+    }
+  ],
+  "existing_prerequisite_locators": [
+    {
+      "path": "manuscript/foundations/integers_addition_order.md",
+      "anchor": "int-embedding",
+      "sha256": "bd18f2b22e9a8b2ef116c5835140eb79beacc4499e489dbfc8e6a38c89778672",
+      "note": "仅核现有先修定位；不登记下一批未写接口"
+    },
+    {
+      "path": "manuscript/foundations/rationals_construction.md",
+      "anchor": "rat-integers",
+      "sha256": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0",
+      "note": "仅核现有先修定位；不登记下一批未写接口"
+    },
+    {
+      "path": "manuscript/foundations/polynomial_records.md",
+      "anchor": "polyrec-evaluation",
+      "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5",
+      "note": "仅核现有先修定位；不登记下一批未写接口"
+    },
+    {
+      "path": "manuscript/foundations/polynomial_product_structure.md",
+      "anchor": "polyprod-degree",
+      "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8",
+      "note": "仅核现有先修定位；不登记下一批未写接口"
+    },
+    {
+      "path": "manuscript/foundations/polynomial_product_structure.md",
+      "anchor": "polyprod-zero-cancellation",
+      "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8",
+      "note": "仅核现有先修定位；不登记下一批未写接口"
+    }
+  ],
+  "remaining_gates": [
+    "独立数学教学审阅由根绑定最终稿与来源哈希",
+    "构建、实际视觉与最终QA另行完成",
+    "生产台账JSON及检查点由根统一生成，不由来源审计预领完成"
+  ],
+  "repository_mutations": "本次仅两份正式来源审计与台账脚本；未写accepted_reviews或正式生产JSON。",
+  "citation_anchor": "poly-linear-division-sources",
+  "source_checked_at_utc": "2026-10-29T18:53:32.914444+00:00",
+  "prior_fetch_network_context": {
+    "skill": "cloud-environment-runtime",
+    "network_reference_read": true,
+    "policy_version": 1,
+    "mode": "restricted",
+    "vpn_configured": false,
+    "observations_current": true,
+    "state": "enforced",
+    "hosts": [
+      "raw.githubusercontent.com",
+      "github.com"
+    ],
+    "tls_verification": true,
+    "inherited_proxy": true,
+    "authentication": "none_public_readonly"
+  },
+  "formal_registered_at_utc": "2026-10-29T19:07:15.263784+00:00",
+  "registered_draft_interfaces": [
+    {
+      "code": "B2.17",
+      "number": 38,
+      "title": "一次除式的商余与综合除法",
+      "body": "manuscript/foundations/polynomial_linear_division.md",
+      "answers": "manuscript/foundations/polynomial_linear_division_answers.md",
+      "anchor": "polydiv-unit",
+      "parent_code": "97Hxx",
+      "parent_chapter_number": 528,
+      "part_code": "97-XX",
+      "msc_leaf_codes": [
+        "97H20"
+      ],
+      "msc_cross_reference_codes": [
+        "12E05"
+      ],
+      "module_ids": [
+        "functions"
+      ],
+      "goals": [
+        "明确有理参数对应的一次首一除式及数值余数与多项式商",
+        "按非空原记录可表示长度独立构造商余",
+        "以求值和非零因子消去证明余数公式及商余唯一",
+        "用固定状态更新与后缀不变式证明综合除法正确和表示无关",
+        "区分常量零输入并证明非常量输入的商次数"
+      ],
+      "not_covered": [
+        "任意多项式除数或非首一除数的一般除法",
+        "因式定理、根数界与求值反向识别（后继单元另证）",
+        "实数或复数参数、根的重数及根存在定理",
+        "一般多项式欧几里得算法"
+      ],
+      "status": "formal_draft_interfaces_verified_final_acceptance_separate",
+      "body_anchor": {
+        "path": "manuscript/foundations/polynomial_linear_division.md",
+        "anchor": "polydiv-unit",
+        "status": "present",
+        "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+      },
+      "answer_anchor": {
+        "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+        "anchor": "polydiv-answers",
+        "status": "present",
+        "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+      },
+      "prerequisites": [
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-normalization",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-equality",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-degree",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-evaluation",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-special-values",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-addition",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-subtraction",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-scalars",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-evaluation",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_multiplication.md",
+          "anchor": "polymul-shift",
+          "status": "present",
+          "sha256": "048a6c96c9297cae0a4c2ee3e040a5265640515c31433dd06d615690af0f249d"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_multiplication.md",
+          "anchor": "polymul-laws",
+          "status": "present",
+          "sha256": "048a6c96c9297cae0a4c2ee3e040a5265640515c31433dd06d615690af0f249d"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-associativity",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-evaluation",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-degree",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-zero-cancellation",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-factorization-entry",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-induction",
+          "status": "present",
+          "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-recursion-principle",
+          "status": "present",
+          "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-predecessor",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-successor-comparison",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-cancellation",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_subtraction.md",
+          "anchor": "sub-definition",
+          "status": "present",
+          "sha256": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-pairs",
+          "status": "present",
+          "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-trichotomy",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-addition-order",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-cancellation",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        }
+      ],
+      "definitions": [
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-linear-divisor",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-quotient-remainder",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-synthetic",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        }
+      ],
+      "proved": [
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-linear-divisor",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+          "proposition": "PD1",
+          "title": "一次除式的非零性、次数与求值",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-existence",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+          "proposition": "PD2",
+          "title": "按原记录长度证明商余存在",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-uniqueness",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+          "proposition": "PD3",
+          "title": "余数求值公式与商余唯一性",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-invariant",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+          "proposition": "PD4",
+          "title": "综合除法后缀不变式及输出表示无关",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        }
+      ],
+      "exercise_pairs": [
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q01",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a01",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q02",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a02",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q03",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a03",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q04",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a04",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q05",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a05",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q06",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a06",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q07",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a07",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_linear_division.md",
+            "anchor": "polydiv-q08",
+            "status": "present",
+            "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_linear_division_answers.md",
+            "anchor": "polydiv-a08",
+            "status": "present",
+            "sha256": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+          }
+        }
+      ]
+    },
+    {
+      "code": "B2.18",
+      "number": 39,
+      "title": "因式定理、不同根数界与恒等识别",
+      "body": "manuscript/foundations/polynomial_roots_identity.md",
+      "answers": "manuscript/foundations/polynomial_roots_identity_answers.md",
+      "anchor": "polyroot-unit",
+      "parent_code": "97Hxx",
+      "parent_chapter_number": 528,
+      "part_code": "97-XX",
+      "msc_leaf_codes": [
+        "97H20"
+      ],
+      "msc_cross_reference_codes": [
+        "12E05"
+      ],
+      "module_ids": [
+        "functions"
+      ],
+      "goals": [
+        "定义有理根与一次因式并证明含零边界的因式定理",
+        "以不同根向商转移和次数归纳证明不同有理根数界",
+        "用共同系数上界证明足量互异样本能够判等且兼容零对象",
+        "由自然数嵌入的有限互异初段证明标准有理求值函数识别系数",
+        "区分限制输入、重复样本、重数与有理根不存在的边界"
+      ],
+      "not_covered": [
+        "根的重数、一般多项式除法与一般因式分解算法",
+        "实根复根存在、代数基本定理及其他系数域推广",
+        "任意多项式在有理数上完全分裂",
+        "插值构造与一般无限集合基数理论"
+      ],
+      "status": "formal_draft_interfaces_verified_final_acceptance_separate",
+      "body_anchor": {
+        "path": "manuscript/foundations/polynomial_roots_identity.md",
+        "anchor": "polyroot-unit",
+        "status": "present",
+        "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+      },
+      "answer_anchor": {
+        "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+        "anchor": "polyroot-answers",
+        "status": "present",
+        "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+      },
+      "prerequisites": [
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-definition",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-equality",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-degree",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-evaluation",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_records.md",
+          "anchor": "polyrec-special-values",
+          "status": "present",
+          "sha256": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-subtraction",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-evaluation",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_multiplication.md",
+          "anchor": "polymul-laws",
+          "status": "present",
+          "sha256": "048a6c96c9297cae0a4c2ee3e040a5265640515c31433dd06d615690af0f249d"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-evaluation",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-degree",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_product_structure.md",
+          "anchor": "polyprod-factorization-entry",
+          "status": "present",
+          "sha256": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-linear-divisor",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-existence",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_division.md",
+          "anchor": "polydiv-uniqueness",
+          "status": "present",
+          "sha256": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3"
+        },
+        {
+          "path": "manuscript/foundations/natural_numbers.md",
+          "anchor": "b1-induction",
+          "status": "present",
+          "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-cancellation",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-successor-comparison",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/natural_order.md",
+          "anchor": "ord-trichotomy",
+          "status": "present",
+          "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+        },
+        {
+          "path": "manuscript/foundations/finite_sums.md",
+          "anchor": "sum-indices",
+          "status": "present",
+          "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+        },
+        {
+          "path": "manuscript/foundations/rational_powers.md",
+          "anchor": "pow-compatibility",
+          "status": "present",
+          "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present",
+          "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-cancellation",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-zero-product",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-laws",
+          "status": "present",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-integers",
+          "status": "present",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-translation",
+          "status": "present",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-negation",
+          "status": "present",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-multiplication",
+          "status": "present",
+          "sha256": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present",
+          "sha256": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present",
+          "sha256": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_linear_operations.md",
+          "anchor": "polyops-definition",
+          "status": "present",
+          "sha256": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5"
+        }
+      ],
+      "definitions": [
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-entry",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-factor",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-bound",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-finite-identity",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+        }
+      ],
+      "proved": [
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-factor",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+          "proposition": "RT1",
+          "title": "有理根与一次因式等价",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-bound",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+          "proposition": "RT2",
+          "title": "非零多项式的不同有理根次数界",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-finite-identity",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+          "proposition": "RT3",
+          "title": "共同系数上界下的有限点判等",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        },
+        {
+          "path": "manuscript/foundations/polynomial_roots_identity.md",
+          "anchor": "polyroot-standard-identity",
+          "status": "present",
+          "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+          "proposition": "RT4",
+          "title": "标准Q到Q求值函数与形式系数的恒等识别",
+          "claim_status": "proof_in_draft_independent_review_separate"
+        }
+      ],
+      "exercise_pairs": [
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q01",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a01",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q02",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a02",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q03",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a03",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q04",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a04",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q05",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a05",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q06",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a06",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q07",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a07",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        },
+        {
+          "question": {
+            "path": "manuscript/foundations/polynomial_roots_identity.md",
+            "anchor": "polyroot-q08",
+            "status": "present",
+            "sha256": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8"
+          },
+          "answer": {
+            "path": "manuscript/foundations/polynomial_roots_identity_answers.md",
+            "anchor": "polyroot-a08",
+            "status": "present",
+            "sha256": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+          }
+        }
+      ]
+    }
+  ],
+  "formal_anchor_and_hash_checks": 111,
+  "registered_draft_counts": {
+    "units": 39,
+    "foundation_questions": 312,
+    "ch01_questions": 14,
+    "total_questions": 326,
+    "draft_chapters": 5,
+    "draft_leaves": 28,
+    "modules": 43,
+    "completed_parts": 0,
+    "push_status": "not_due",
+    "figures": "15 unchanged; build verification separate"
+  },
+  "classification": {
+    "primary_leaf": "97H20",
+    "parent_code": "97Hxx",
+    "parent_chapter_number": 528,
+    "part_code": "97-XX",
+    "cross_tags_only": [
+      "12E05"
+    ],
+    "completed": false
+  },
+  "implementation_diagnostics": {
+    "path": "research/production/rational_polynomial_linear_division_validation.json",
+    "sha256": "e9f04c2f0e9d84947655f343b96da335475bd181480bc7c812db441df832967c",
+    "status": "passed",
+    "validated_at": "2026-10-29T19:05:05.379734+00:00",
+    "source_sha256": {
+      "tools/rational_polynomial_linear_division.py": "6f246113bf509122628e9878a3898d0ce20070eb4447e7ef6fa2cc462c75fb5e",
+      "tools/validate_rational_polynomial_linear_division.py": "61a371a36c570fd99c5a07c3218dd88c1deedd5eedc0bb0387c65a2f73be969e",
+      "tools/rational_polynomial_product.py": "a8fac5ff74d635c6b9b9fe3454ec9f1279f0cf6ca8cb3bcaf782496fd4d63246",
+      "tools/rational_polynomial_basic.py": "4ab57898877c291e338241126e36ed79d4aeef8723c23e647f3591afbcf2243d",
+      "tools/rational_powers_sums.py": "fad8cf2a22151b4d584ba09ea3464526668cf34d2737afdf0374f241f16cfda4",
+      "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+    },
+    "scope": {
+      "coefficient_values": [
+        "-1",
+        "0",
+        "1/2"
+      ],
+      "record_lengths": [
+        1,
+        4
+      ],
+      "additional_records": [
+        [
+          -6,
+          11,
+          -6,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "points": [
+        "-2",
+        "-1/2",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "counts": {
+      "records": 123,
+      "divisions": 615,
+      "padding": 1845,
+      "suffixes": 2190,
+      "nonconstant_degree": 550,
+      "constant_zero": 65,
+      "rejections": 43,
+      "immutability": 123
+    },
+    "oracle": "SymPy 1.14.0 Poly over QQ, division by X-a",
+    "limitation": "主实现有限精确诊断，与独立审稿和一般证明分别记账，不替代完整教学或构建验收。"
+  },
+  "independent_derivation_checks": [
+    "范围固定P∈有理系数规范多项式，a∈Q。定义D_a=X−C(a)=(-a,1)，由1≠0直接为二项规范记录，所以D_a≠0且deg D_a=1，a=0也成立。商为正式多项式Q，余数为有理数r；恒等式中余项写C(r)。",
+    "存在性按P可由n+1项原记录表示作归纳。单项P=C(b)：取Q=0,r=b。长记录P=C(b)+S(T)，尾部原记录非空，T规范化后可能为0，但仍由较短原长度表示；归纳假设必须按可表示长度而非规范长度恰好。",
+    "设T=D_a Q+C(r)。用XQ=S(Q)、乘法结合交换分配和XC(r)=D_a C(r)+C(ar)，逐步推P=D_a(S(Q)+C(r))+C(b+ar)。后继输出商S(Q)+C(r)，余数b+ar。不得以余式定理或一般除法存在为此步骤前提。",
+    "对任何合法分解P=D_aQ+C(r)，在a求值，已证求值保加乘给E_P(a)=0·E_Q(a)+r=r。两分解先得r=r′，多项式加法消去得D_aQ=D_aQ′，D_a非零乘法消去给Q=Q′。存在和唯一合起来使尾零表示或算法路径无关。",
+    "PD实际算法采用固定状态(j,Q,r)而非将无限系数递推当定义。原记录(p_0,…,p_d)的初状态(0,0,p_d)，仅在j<d时读取p_(d−(j+1))并同时用旧状态更新Q′=S(Q)+C(r)、r′=p_(d−(j+1))+ar、j′=j+1；j≥d时保持。自然差条件、状态闭包、固定递归原则与d次终止在polydiv-synthetic逐项说明。",
+    "PD4将第j步绑定非空后缀P_j=N(p_(d−j),…,p_d)，用商余更新恒等式归纳证明P_j=D_aQ_j+C(r_j)。j=d后缀为原输入，PD3唯一性给任意尾零表示同一输出；不要求中间状态或步数相同。",
+    "综合除法要保留中间缺次零，也允许原记录末尾有零；规范商不能删除开头/中间零，只有尾零可删。全零长输入返回商0、余0；a=0时余p_0、商去常数项后规范化，单项时商0。有限程序结果不能替代一般商余证明。",
+    "定义a是P的有理根为E_P(a)=0；定义D_a为因式/整除为存在Q使P=D_aQ。因式⇒根用求值保乘；根⇒因式由余式唯一r=E_P(a)=0。P=0时所有有理a都是根和线性因式的参数，但不写deg0。",
+    "根数定理仅说非零、次数d的P不可能在长度d+1的两两不同有理列表上全为0。d=0是非零常量，任意输入求值非零。d≥1且给定互异根列表时取第一项a，由因式定理P=D_aQ；P≠0先迫使Q≠0，次数公式再得d=1+degQ。",
+    "其余根b满足b≠a，故b−a≠0。由0=E_P(b)=(b−a)E_Q(b)及有理零积判据得E_Q(b)=0；删去首项的列表仍互异，以degQ=d−1的归纳假设矛盾。不得把同一根反复列入当作额外不同根。",
+    "自然数→整数嵌入iota和整数→有理嵌入j已分别单射，定义eta=j∘iota。eta(0),…,eta(d)在Q中互异；逐项理由是eta(i)=eta(k)⇒i=k，不需先证明一般无限集合的基数性质。",
+    "标准求值函数E_P,E_Q都声明Q为域与目标。正式P=Q推出E_P=E_Q已在PR5建立。反向若函数相等而H=P−Q非零，置d=degH；对上述d+1个互异有理整数，求值保差给E_H=0，违背根数界，故H=0并由加法消去得P=Q。",
+    "RT3正式使用共同系数上界M：两对象在所有i>M处系数零，故允许任一或两者为零；若差H非零，其次数h≤M，而M+1个互异同值点变成H的不同根，违反RT2。不是无条件的有限采样判等。",
+    "RT4实际精确引用pow-compatibility中已建立的eta:N→Q单射及fc-equality函数三数据相等，不重新采用无限基数公理。RT答案7已把列表比较指标改为k,l以避免与整数到有理嵌入j重名；绑定的是修订后的正式答案哈希。",
+    "反向识别不表示任意给定有限样本总能识别任意次数多项式；已知次数上界d时d+1个互异点才足够。若不声明次数上界，早先有限样本不足的反例仍成立。不得在根数定理建立前用求值反向证明乘法或除法的形式恒等式。",
+    "本批不推断每个非恒定Q多项式有有理根，不推断有d个不同根或在Q完全分裂。重数、复根存在、实根连续性/介值定理、一般多项式除法、任意系数域扩展与插值构造均另需证明。"
+  ],
+  "temporary_ledger_validation": {
+    "status": "passed_temporary_output_only",
+    "checked_at_utc": "2026-10-29T19:07:16.350302+00:00",
+    "temporary_root": "/tmp/polynomial-linear-division-ledger-check-v2dlpp87",
+    "units": 39,
+    "foundation_questions": 312,
+    "ch01_questions": 14,
+    "total_questions": 326,
+    "draft_chapters": 5,
+    "draft_leaves": 28,
+    "modules": 43,
+    "module_graph": "acyclic",
+    "completed_parts": 0,
+    "push_status": "not_due",
+    "old37_specs_and_ch01_unchanged": true,
+    "formal_production_json_unchanged": true,
+    "primary_leaf": "97H20",
+    "cross12E05_unwritten": true,
+    "figures": "15 unchanged; separate build gate"
+  }
+}

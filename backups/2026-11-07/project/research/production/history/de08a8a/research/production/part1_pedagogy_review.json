@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "review_kind": "pedagogy",
+  "status": "accepted",
+  "reviewer": "/root/part1_pedagogy",
+  "reviewed_at": "2026-11-05T08:19:37.785858+00:00",
+  "independent_of_authors": true,
+  "plan_sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
+    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
+    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
+    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
+    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
+    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "blocking_issues": [],
+  "evidence": [
+    {
+      "path": "research/production/part1_pedagogy_review.md",
+      "sha256": "f4fcd6b8a62b1a051feaf5c1e838d7a631cb38422111c2d37b61a9d44f4d2419"
+    }
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "depth": "G",
+      "objective_ids": [
+        "00-01-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00-02",
+      "depth": "G",
+      "objective_ids": [
+        "00-02-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A05",
+      "depth": "S",
+      "objective_ids": [
+        "00A05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A06",
+      "depth": "T",
+      "objective_ids": [
+        "00A06-1",
+        "00A06-2",
+        "00A06-3"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A07",
+      "depth": "S",
+      "objective_ids": [
+        "00A07-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A08",
+      "depth": "S",
+      "objective_ids": [
+        "00A08-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A09",
+      "depth": "S",
+      "objective_ids": [
+        "00A09-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A15",
+      "depth": "G",
+      "objective_ids": [
+        "00A15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A17",
+      "depth": "G",
+      "objective_ids": [
+        "00A17-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A20",
+      "depth": "S",
+      "objective_ids": [
+        "00A20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A22",
+      "depth": "S",
+      "objective_ids": [
+        "00A22-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A27",
+      "depth": "G",
+      "objective_ids": [
+        "00A27-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A30",
+      "depth": "G",
+      "objective_ids": [
+        "00A30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A35",
+      "depth": "T",
+      "objective_ids": [
+        "00A35-1",
+        "00A35-2",
+        "00A35-3"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A64",
+      "depth": "G",
+      "objective_ids": [
+        "00A64-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A65",
+      "depth": "S",
+      "objective_ids": [
+        "00A65-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A66",
+      "depth": "S",
+      "objective_ids": [
+        "00A66-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A67",
+      "depth": "S",
+      "objective_ids": [
+        "00A67-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A69",
+      "depth": "S",
+      "objective_ids": [
+        "00A69-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A71",
+      "depth": "S",
+      "objective_ids": [
+        "00A71-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A72",
+      "depth": "S",
+      "objective_ids": [
+        "00A72-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A79",
+      "depth": "S",
+      "objective_ids": [
+        "00A79-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00A99",
+      "depth": "G",
+      "objective_ids": [
+        "00A99-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B05",
+      "depth": "G",
+      "objective_ids": [
+        "00B05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B10",
+      "depth": "G",
+      "objective_ids": [
+        "00B10-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B15",
+      "depth": "G",
+      "objective_ids": [
+        "00B15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B20",
+      "depth": "G",
+      "objective_ids": [
+        "00B20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B25",
+      "depth": "G",
+      "objective_ids": [
+        "00B25-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B30",
+      "depth": "G",
+      "objective_ids": [
+        "00B30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B50",
+      "depth": "G",
+      "objective_ids": [
+        "00B50-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B55",
+      "depth": "G",
+      "objective_ids": [
+        "00B55-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B60",
+      "depth": "G",
+      "objective_ids": [
+        "00B60-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    },
+    {
+      "code": "00B99",
+      "depth": "G",
+      "objective_ids": [
+        "00B99-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "applied_at": "2026-11-05T18:10:42.528074+00:00",
+  "status": "sources_and_registration_applied_reviews_and_build_pending",
+  "snapshot33": "local-inputs/snapshots/batch33-composition-ivt-inverse-20261105T180921Z",
+  "source_before": {
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "research/production/part1_scope_plan.json": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+    "research/production/part1_topic_sources.json": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246"
+  },
+  "source_after": {
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "research/production/part1_scope_plan.json": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "research/production/part1_topic_sources.json": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+    "research/production/part1_abstract_source_mapping_review.md": "96054e2a913ca0810eb841c5b922c77118cc77c86e1e217215f51e3de17a3401"
+  },
+  "source_gate_counts": {
+    "G_topic_verified": 8,
+    "G_topic_pending": 10,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "whole_part_accepted": false,
+  "next": "Independent actual delta rebind then normal rebuild and visual review; old build acceptance is historical only."
+}

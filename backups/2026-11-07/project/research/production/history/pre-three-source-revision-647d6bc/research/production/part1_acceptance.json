@@ -1,0 +1,955 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "status": "pending",
+  "validated_at": "2026-11-05T10:10:14.524030+00:00",
+  "full_scope_accepted": false,
+  "completion_checks": {
+    "scope_plan_valid": true,
+    "full_scope_math_accepted": true,
+    "full_scope_pedagogy_accepted": true,
+    "full_scope_sources_accepted": false,
+    "full_scope_build_accepted": true,
+    "full_scope_visual_accepted": true,
+    "full_scope_build_and_visual_accepted": true,
+    "all_chapters_completed": false,
+    "all_direct_sections_completed": false
+  },
+  "depth_counts": {
+    "G": 18,
+    "S": 13,
+    "T": 2
+  },
+  "section_results": [
+    {
+      "code": "00-01",
+      "parent_code": "00-XX",
+      "depth": "G",
+      "topic_source_status": "verified",
+      "status": "pending"
+    },
+    {
+      "code": "00-02",
+      "parent_code": "00-XX",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00A05",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A06",
+      "parent_code": "00Axx",
+      "depth": "T",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A07",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A08",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A09",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A15",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "verified",
+      "status": "pending"
+    },
+    {
+      "code": "00A17",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00A20",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A22",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A27",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00A30",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00A35",
+      "parent_code": "00Axx",
+      "depth": "T",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A64",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00A65",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A66",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A67",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A69",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A71",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A72",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A79",
+      "parent_code": "00Axx",
+      "depth": "S",
+      "topic_source_status": "original_work_reviewed_separately",
+      "status": "pending"
+    },
+    {
+      "code": "00A99",
+      "parent_code": "00Axx",
+      "depth": "G",
+      "topic_source_status": "verified",
+      "status": "pending"
+    },
+    {
+      "code": "00B05",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B10",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "verified",
+      "status": "pending"
+    },
+    {
+      "code": "00B15",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B20",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B25",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B30",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B50",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B55",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B60",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    },
+    {
+      "code": "00B99",
+      "parent_code": "00Bxx",
+      "depth": "G",
+      "topic_source_status": "pending",
+      "status": "pending"
+    }
+  ],
+  "chapter_results": [
+    {
+      "code": "00Axx",
+      "completed": false,
+      "completion_basis": "declared_depth_and_objectives"
+    },
+    {
+      "code": "00Bxx",
+      "completed": false,
+      "completion_basis": "declared_depth_and_objectives"
+    }
+  ],
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "artifact_sha256": {
+    "dist/part1/figures/ch01_disjoint.png": "e5c540eaa457bc3f5abd960e6cb139a18e9309d142a238eaabb7bca740a4bbae",
+    "dist/part1/figures/ch01_overlap.png": "e83c66be6d000753bc2a47f0aa80a1a1da5ce1721cc1b314de4bba423fcf66b1",
+    "dist/part1/figures/ch01_rhythm.png": "e2d57333a2a64be90a324df5e66e7bc8fe830987a2f427c522c69dbd90342840",
+    "dist/part1/figures/ch01_square.png": "bbde875aff34cc2b765dbb1beb50b65643b6c7329513a14546ae22f5a29197c8",
+    "dist/part1/style.css": "662b8c62013cfa340674440afe277239e9e94516c5822bfdd1410eab4bbb709c",
+    "dist/part1/综合数学_完整数学目录.html": "60d4f6094da43fa6a6dc2e76ff91ba8eec0aa575357e715a927a32f86dc56071",
+    "dist/part1/综合数学_完整数学目录.md": "f614a34e066de05b6cf8cdf788f2f37673495031a8b2a5eaac3b53294fb6c368",
+    "dist/part1/综合数学_完整数学目录.pdf": "cc4e45a20c3ca1e23d4991ab4cc5b4ec3966ea0abd9d7853025ea73f2c485c67",
+    "dist/part1/综合数学_第一部分完整目录版.html": "5e33efde5e2290e87f14bfea870b3a21f6e7c18e59b4d424bf837281214e8cb4",
+    "dist/part1/综合数学_第一部分完整目录版.md": "ac2363056ef76c0dba41bb9d11ce133d7822a2904d56d29f360b53f3f95dd262",
+    "dist/part1/综合数学_第一部分完整目录版.pdf": "89aeceee7142a04b383c472ee4bf45eca887ae4c06b63e81b14596b665677759",
+    "dist/part1/综合数学_第一部分审阅版.html": "748f789eb69c94aeec71031f024d1af52cc5cae8109d022340235d3d750b93e3",
+    "dist/part1/综合数学_第一部分审阅版.md": "f417450b3d279df2c6b0d775e32f0f58786c831b216b177c5ef35dff9a05fc74",
+    "dist/part1/综合数学_第一部分审阅版.pdf": "4ebb795defe39df97ff59236dd827c0bfc7dd7b5b4d807395fe696fb6dfb8b9e",
+    "dist/part1/综合数学_第一部分伴生文件.zip": "6d7f070ec62ceb13032065eb81d1c85c7b93f65dc6d8bb584f420f88953eb7ed"
+  },
+  "source_review": {
+    "status": "pending",
+    "path": "research/production/part1_topic_sources.json",
+    "sha256": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
+    "sections": {
+      "00-01": {
+        "status": "verified",
+        "source_ids": [
+          "SRC-S1-ADD"
+        ],
+        "blocking_issues": []
+      },
+      "00-02": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00A05": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A06": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A07": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A08": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A09": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A15": {
+        "status": "verified",
+        "source_ids": [
+          "SRC-CROSSREF"
+        ],
+        "blocking_issues": []
+      },
+      "00A17": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00A20": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A22": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A27": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00A30": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00A35": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A64": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00A65": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A66": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A67": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A69": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A71": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A72": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A79": {
+        "status": "original_work_reviewed_separately",
+        "source_ids": [],
+        "blocking_issues": [],
+        "review_basis": "independent_math_and_pedagogy_gates",
+        "external_sources_verified": false
+      },
+      "00A99": {
+        "status": "verified",
+        "source_ids": [
+          "SRC-MSC"
+        ],
+        "blocking_issues": []
+      },
+      "00B05": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B10": {
+        "status": "verified",
+        "source_ids": [
+          "SRC-CROSSREF"
+        ],
+        "blocking_issues": []
+      },
+      "00B15": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B20": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B25": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B30": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B50": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B55": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B60": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      },
+      "00B99": {
+        "status": "pending",
+        "source_ids": [],
+        "blocking_issues": [
+          "Scope plan topic_source_status is not verified"
+        ]
+      }
+    },
+    "boundary": "取得或HTTP成功不等于内容核验；专题相关性仍由实际阅读者负责。"
+  },
+  "evidence": [
+    {
+      "path": "data/msc_taxonomy.json",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    {
+      "path": "research/production/part1_scope_plan.json",
+      "sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de"
+    },
+    {
+      "path": "research/production/part1_math_review.json",
+      "sha256": "57e4a70201481a907a9be32866993d0e7919f45eb4d17eec20dfb6087da57c4e"
+    },
+    {
+      "path": "research/production/part1_revision_independent_review.md",
+      "sha256": "73733af1118ade6b062f810811e27338f9f685588add9daaca72d0d46a92343c"
+    },
+    {
+      "path": "research/production/part1_pedagogy_review.json",
+      "sha256": "12b145a6690f8c2b070e5849c6c58d9231dfc935cc1c4a29a851b9c04ca43b35"
+    },
+    {
+      "path": "research/production/part1_revision_pedagogy_review.md",
+      "sha256": "6f0c4fefbcaf509f913805bb6a65b50bda4212f16059717fea227c7ed486d398"
+    },
+    {
+      "path": "research/production/part1_topic_sources.json",
+      "sha256": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6"
+    },
+    {
+      "path": "research/ch01_source_checks.json",
+      "sha256": "e407650ea63cb988efb7de2819529dda26e7438ac46c2408a8d5c887a889c385"
+    },
+    {
+      "path": "research/production/part1_revision_source_content_review.md",
+      "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+    },
+    {
+      "path": "research/production/part1_revision_sources.json",
+      "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+    },
+    {
+      "path": "research/production/part1_revision_source_content_review.md",
+      "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+    },
+    {
+      "path": "data/msc_taxonomy.json",
+      "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    {
+      "path": "research/production/part1_revision_source_content_review.md",
+      "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+    },
+    {
+      "path": "research/production/part1_revision_sources.json",
+      "sha256": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d"
+    },
+    {
+      "path": "research/production/part1_revision_source_content_review.md",
+      "sha256": "f6cb7a4d55dee26cd1288e3baca07c87044b02bd784113089520ac1f3957c076"
+    },
+    {
+      "path": "research/production/part1_build_review.json",
+      "sha256": "5d2b73f530890f39ada1ca66d34edd7b3995b0b96a63c03370c286fea1f2c594"
+    },
+    {
+      "path": "build/part1/manifest.json",
+      "sha256": "0e701c482a2bc0f74498402f20223af58100d2ff83395a8f794e7ee7a65ccdd6"
+    },
+    {
+      "path": "build/part1/validation.json",
+      "sha256": "bed1c6abda9ede0b4e1f3390658f42e4bd6773191a5b2e8b628b9e48602be383"
+    },
+    {
+      "path": "research/production/part1_visual_review.json",
+      "sha256": "a3b9e1497e38322db219bf84f68ebbaa6a0865d41564477396b951dc6fe25a2c"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-001.png",
+      "sha256": "55755d21cf9b6b8626aab8c682e2685deffc7c616ec1a68425696b04888becff"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-013.png",
+      "sha256": "daed4a057475184a3164263dd0bfa5dd5174f4ed373e22286938416ca7544155"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-025.png",
+      "sha256": "8b29b54a28578d74c84c5158cec26269dc73e556ce399724542511dc1e80e4e9"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-037.png",
+      "sha256": "bf9c3bc7d35be80a5f68f93de6d13f973cb7ef652adbf8ab8dd75325e2751650"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-049.png",
+      "sha256": "0f496c91a9d7677114712dbd6e4c99da5cb8fe08d714a7c094db8aed50eb5b62"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-061.png",
+      "sha256": "79233b9f129a304fb48070876d0784820a75e9466fd805302fafd895b090dd03"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-073.png",
+      "sha256": "9d20bbf812b656448a1f34995dabe8b5c7c92c170074b9d91ddb1ae495a8458b"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-085.png",
+      "sha256": "d7b67426200b0076423b2d669696637d8f15623536b693c4146a4aab9c9286ce"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-097.png",
+      "sha256": "267a30cb144c8bab88c818a611f96c7ad35ccc2e23389f83292507fee74b7ff0"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-109.png",
+      "sha256": "48acda05028a232a03a056bf7f83f711ed483c4b7c463d2b03c3bfebdd1952ac"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-121.png",
+      "sha256": "857dbcd659b428b826b9280c1ecd43f172a5c017fc0e5203a87d55dc77a4645c"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-133.png",
+      "sha256": "74441cd1ddd0f923e0ef287b51c5f99dfaebe5df6c830cc8061e18dacab7b426"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-145.png",
+      "sha256": "2f568bc6c92ac6bb20064708a356e9ff7ac6487cfe9be2ff72666301fa7ff1a5"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-157.png",
+      "sha256": "6cfe05ccdc5414e7b60ecc9d245ca70e66108b69bd768d523759099e684678f0"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-169.png",
+      "sha256": "afdf33a496095f5d80ae2ea9700633e1b00359106eb93da0075f02cc6f45c055"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-181.png",
+      "sha256": "9c796981563512eb4aabd17b12d760a3af6779f87fc2a29677e4d831ac6daab2"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-193.png",
+      "sha256": "3ed93bc23e0f75fbf5785c25c1fd8b3fd2d578ea8dd1c9e4d873ebc59aa1a4c6"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-205.png",
+      "sha256": "006d015889bd9cd6493df1de605b3b3942d02ed7cc540c45f990a0bb115b585b"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-217.png",
+      "sha256": "a13faf5fbe8538c10d7316a9d9982bf23a43971d568720633f32e4af7cb5d096"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-229.png",
+      "sha256": "3ac832f219e2b2d2b3d6d853209d258bbaf8c119a1ceb8ee4eed3a53dcd188fa"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-241.png",
+      "sha256": "6cc068dcc8dd856a9349a95f3c32066c6088c76ffaa8949afce1d817e032c79a"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-253.png",
+      "sha256": "3291e0b5666305cece89bf3a5a8c3d3b5752342450f6c8cda1294b2f6d139b30"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分完整目录版/contact-265.png",
+      "sha256": "253c5f59b3dc5e6b9993b3ed98dd814f2ad0920b58f420d7839c0a39384a0abe"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-003.png",
+      "sha256": "d430fcec48daa90112656a27b8ded7d8df35834a81899a58fd395db8e8e6b417"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-221.png",
+      "sha256": "3a5d9ac9b812c64b8a8b1001e935d2918c89b0bc6628953dd576f2c13c9a7a09"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-223.png",
+      "sha256": "32e8e44073f0cab1e077d57a43ecca378e5210ad3ab5f13a9809ce3cd17ef8cf"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-227.png",
+      "sha256": "3fd5c227eee92a1b685886b4ae1bd37ee5c50b0d1e165b068ac2a6e3da7890fa"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-228.png",
+      "sha256": "07296815c60ef80554616ae0d6f004ce51455a8ef1e8e5192411e7d2140c2e47"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-230.png",
+      "sha256": "157423e26aa15021e07f8a9e6459e39d960f28d9960bcc896137d798b93a57db"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-234.png",
+      "sha256": "b4f245448aae477a14cccac6b77b41c74b140bec4840e25bdc0bfb4137cc1d24"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-235.png",
+      "sha256": "234e737a28d86a150cb8d2959f4326eaec2578ecf68728d8ae66650c1e6bb7db"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-240.png",
+      "sha256": "8038894d4c487e43463fe79edd5a51fcd9cc7a3673fcce844a6f7a6fcdf5aaa4"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-242.png",
+      "sha256": "e8da37055a45ee8eb3e6944c4e12e5c1177ac8dd713614eae821dc68f11459de"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-247.png",
+      "sha256": "2d6a2bf90d4e7a8f8a9de8644c30fbf131222101db07d7e1cd9efea465c04fdc"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-254.png",
+      "sha256": "3073fd2ab9039db1e831286798068c6182cfcd924856047d0abe590d3eece844"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-258.png",
+      "sha256": "04acfdc6ca522c0758e5d5b6b158eca44eeed1905d692e27c0a83874b84d9eca"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-264.png",
+      "sha256": "2d6b46f5e62d1625c8a660f84bc862c0fe2c0f231ef0c6dee88312a3fe8c3cbb"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分完整目录版/page-266.png",
+      "sha256": "2174c1f2a8b25666d4e9cddcaf5aade0305274b453dcd0924cb72ff41649c635"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-001.png",
+      "sha256": "3cb7a619f6a1a9825fea0ecd6978dbdd95be55997dd66c91709206bd5f15a8b2"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-013.png",
+      "sha256": "22ac332f1c3be61cbb38123452c58285e8f345943aa43efbbc1dcc152541f47e"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-025.png",
+      "sha256": "d40595bd425533a80da56300c909b75b352f0a2e17b07f0c30e809267a8ae0fe"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-037.png",
+      "sha256": "b31a3d4baff21ad5c4a2cf507efd4f683c25d22ed931719e82f369a10121825a"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-049.png",
+      "sha256": "3f181682befe0900d240d0ae3b1cd347882c7a4e0cb383ded78b098471e070ef"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-061.png",
+      "sha256": "d282f5d005c60d144c73a0be987d28a414f7bc17c535cfad9706f133aeb1df8e"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-073.png",
+      "sha256": "a6648189c0a66cf396408ea1f0c1725841bb3257677f038f5689063eb9993448"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-085.png",
+      "sha256": "44295b69bb24e58a485ca078fc98ddd146bc7e58fc32535a7c270768d6907054"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-097.png",
+      "sha256": "6da3e3de3951472007516fe279c12c8e36ceff23b839c0d9ee8cf89d58a5a7ad"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-109.png",
+      "sha256": "a18daad3f30e74007ed0ce4f47d53e0196de793121089c7e566ff2e1484ba49b"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-121.png",
+      "sha256": "6a834d2e80a11662b5f1eaa27c25030b1b5d03093dc82badae27fd0b965754da"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-133.png",
+      "sha256": "ab01e9b8723f686ac06bce6f8c3238c2755ed60fe74ce937e344625337cad9f9"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-145.png",
+      "sha256": "e7248ea54675fad593e8f5fe91caa9e79c0e96bb9db3691d0eeaa061acbec912"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-157.png",
+      "sha256": "13080c7452f5521a831a3426c83b381d16cd194b921a523fb05d6f7fd8915988"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-169.png",
+      "sha256": "f031129d1807fef9e7901a92303b528b9560b1120ecad6ae95bab7307b7d5eba"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-181.png",
+      "sha256": "2c6f895e33a29e67c1d8d4ffab283c4069a49395a09638ff7730272722bf575e"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-193.png",
+      "sha256": "5d00433d27603c2aec26f36a0637297c2aad4560287b6e86a58201c5be2542b2"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-205.png",
+      "sha256": "ec57aebd9ea93f670cc7c503e85b2ce58cd308eb5a2fbec5717f30b9156de542"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-217.png",
+      "sha256": "661b4920e14207e285a5027b275c52be8860aa771048d482571f8b4c5d44084e"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-002.png",
+      "sha256": "6dcab15ce9c92a9d0a46ade7a98bfc2bbf31b97515be7c2d6ccd09a887552d81"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-018.png",
+      "sha256": "2cde059339fb0547adf546bf290242546a3e82c1a4d00c33fcb5ea086698e958"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-114.png",
+      "sha256": "e3f9ecd35a6331a080eb7593eea940da35deea56dd92368821b99d9597dc94ec"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-178.png",
+      "sha256": "43351a5250a1d016cbd9abf06806fa94d58b09377636361f0603d6e5cad3010d"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-218.png",
+      "sha256": "6e13a45d99d2fce34e38e6e7a9fdf6cb1b23ad9d2fd809488e871887d78988e1"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-001.png",
+      "sha256": "a88a8d0ad5c6be8792108ddf756622a1b6f5ec320f5d92a9fe8a60a401ef89fd"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-013.png",
+      "sha256": "a1dfb9b9c587ee8eb879fbd94c788ccd614f5f58752ed779cee72d9e29a59e32"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-025.png",
+      "sha256": "e73291ecb5cfa771f89aaf5f45a9627c834f7f9a23149946b74c4dae60364e0c"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-037.png",
+      "sha256": "a8e10b7392a2e5cea9350d6d483e220a2282e5d43e58dda0c2b9e907dd9ebcc0"
+    },
+    {
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-049.png",
+      "sha256": "79145196b02c988d2db73d681d63631fd0912ec0de48045ecb7b31820e39a160"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-004.png",
+      "sha256": "33385c3f045096b49b74abefef73529f15b4cf1b37cc5b4912f5640066a8d0cc"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-015.png",
+      "sha256": "94765a79dc06d001077a749f42ab243dc7bb61b9412fb40b8eb0048317d7a8be"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-023.png",
+      "sha256": "56ebcf624502a9fce956c5f260373732e6cbb2dc7b7e296b81a13604e6d08599"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-031.png",
+      "sha256": "65176a919cdefaf46c7633df054b8b113ebbb0732fa61f5501d9412a25c22936"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-040.png",
+      "sha256": "a5a1154f76967a69702f276c26a02c5a10c997cd133586b781852b227bda5b6c"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-044.png",
+      "sha256": "07cd38ee43e6bb6c4b05eda34adecbc169f5cb0e7945d3d6e06d81fcfc0ad7c8"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-047.png",
+      "sha256": "d19093fb3f7b4fabd264fefb1ef04d794e141744c3066d9f0f5478e24da655b8"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-049.png",
+      "sha256": "a5e930e82617353f868d2adef69d8acdfdb45f51f669cb5ef2c4cc5c8ec35528"
+    },
+    {
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-050.png",
+      "sha256": "30854f49e758d09fa77a337c755f7e2b905db0f0779e66e9e7668db0a18b3ebd"
+    },
+    {
+      "path": "research/production/part1_visual_full.json",
+      "sha256": "9e34b449e7b9b84fb75399ae74dfcde14b6789ff0586fc62983eb1ff88782c4e"
+    },
+    {
+      "path": "research/production/part1_visual_full.md",
+      "sha256": "f1515a76e734029f9a7bc41efb2987177386a50ebe81bcfe82604b3e37771c06"
+    },
+    {
+      "path": "research/production/part1_visual_catalog.json",
+      "sha256": "6e3f359b754b0e040a0daf9cca062160368109d56526fa78b7db43a1083d3620"
+    },
+    {
+      "path": "research/production/part1_visual_catalog.md",
+      "sha256": "7d6ee8c3c147cbfd63a578f645fc4af2a8c8a6d93cc9555793a07f58ae6823f3"
+    },
+    {
+      "path": "research/production/part1_visual_root.json",
+      "sha256": "b5ff73b21139a19816daf8f2b308cadac12f2fc5d0400bcfc64a0bacb6156e62"
+    },
+    {
+      "path": "research/production/part1_visual_root.md",
+      "sha256": "438d9759941810ff8b1defcf719b9b174fbbb734b7071fdbc78961e0de11409d"
+    }
+  ],
+  "blocking_issues": [
+    {
+      "stage": "sources",
+      "reason": "Unverified topic sources in sections: 00-02, 00A17, 00A27, 00A30, 00A64, 00B05, 00B15, 00B20, 00B25, 00B30, 00B50, 00B55, 00B60, 00B99"
+    }
+  ],
+  "author_review": {
+    "status": "pending",
+    "independent_of_production_acceptance": true
+  },
+  "push_succeeded": false,
+  "completion_note": "按逐项目标及T/S/G声明深度验收；专题来源缺证阻断全范围通过，其他审阅阶段分别记账。G完成不是完整数学教学，且不宣称穷尽MSC领域。"
+}

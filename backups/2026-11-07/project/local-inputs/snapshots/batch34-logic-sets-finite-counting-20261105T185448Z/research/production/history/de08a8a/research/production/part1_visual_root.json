@@ -1,0 +1,131 @@
+{
+  "reviewer": "/root",
+  "reviewed_at": "2026-11-05T08:25:57.168039+00:00",
+  "pdf_sha256": {
+    "dist/part1/综合数学_第一部分审阅版.pdf": "675702c557243fc32d40f2a8edd9036ce7f185748909f052c769ea75f16da645"
+  },
+  "pages": [
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-001.png",
+      "sha256": "dd52b09b3ba82ddae9eaca6cf79c3fb6434590780171444574ec7a9fa257d6a7",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-013.png",
+      "sha256": "551d420575198c1e922a47332a49da642c8e2ae87e4b38731be0122557bb054f",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-025.png",
+      "sha256": "505470e266057005b22adc1b4e3268cab5f04cc4a217125c295fc0e6eb27fca0",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-037.png",
+      "sha256": "3ca2f978be2fef1f30d6b7fdf46269047ba06a0c0a3f9c746a73f5ceccc46a9c",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        15
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-015.png",
+      "sha256": "a56094a61f9ff180611cee64d6289c33e6492d26fd72deee2643e9f0fbc89d71",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        23
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-023.png",
+      "sha256": "cb191057b35671043a56a13aa5df8cb8f8d902d9020bd636cd0dd40a90685069",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        28
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-028.png",
+      "sha256": "40012a6056df69da757d4bf23c1c41933389a2a9144e334d6304ecc658a087ac",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        39
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-039.png",
+      "sha256": "2f9131c87b8caf369fe41cccb6b16414dc1bf18900d104e7fbf7cdd759213c9a",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        40
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-040.png",
+      "sha256": "ad7837c6c8a720ee452faef174b96f99d845b25c8e64a7456dc5fef60e67ad25",
+      "inspected": true
+    }
+  ],
+  "blocking_issues": [],
+  "limitations": [
+    "40页均按联系表实看，5页另放大；不是全部页面逐字放大校对",
+    "少数段落及参考答案链接跨页，仍可定位，未作阻断认定"
+  ]
+}

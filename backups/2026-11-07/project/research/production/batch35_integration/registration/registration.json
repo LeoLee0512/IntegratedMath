@@ -1,0 +1,824 @@
+{
+  "prepared_at": "2026-11-05T18:38:43.300120+00:00",
+  "prepared_by": "/root/part1_sources",
+  "status": "temporary_candidate_not_applied",
+  "baseline_units": 72,
+  "prior_candidate_units": 74,
+  "expected_units": 75,
+  "expected_foundation_pairs": 600,
+  "expected_total_pairs": 627,
+  "expected_text_reviews": 150,
+  "unit_specs": [
+    {
+      "parent_code": "15Axx",
+      "parent_chapter_number": 84,
+      "part_code": "15-XX",
+      "msc_leaf_codes": [
+        "15A03"
+      ],
+      "msc_cross_reference_codes": [],
+      "module_ids": [
+        "linear-algebra"
+      ],
+      "code": "B4.L1",
+      "number": 73,
+      "title": "有限实数坐标与逐坐标运算",
+      "anchor": "frc-unit",
+      "body": "manuscript/foundations/finite_real_coordinates.md",
+      "answers": "manuscript/foundations/finite_real_coordinates_answers.md",
+      "goals": [
+        "以I_n到实数的函数记录定义有限实数坐标，辨认空表、长度与同域同目标判等",
+        "先核运算类型与闭合，再逐坐标证明向量加法和标量乘法的全部所需规律",
+        "分开证明加法消去、非零标量消去及非零向量见证，并处理零乘判据的双向与空表",
+        "证明置换重编号双逆及保持运算，并以明确双射连接旧二维有序对模型"
+      ],
+      "definitions": [
+        "frc-model",
+        "frc-operations",
+        "frc-reindex"
+      ],
+      "proved": [
+        [
+          "FRC1",
+          "frc-additive-laws",
+          "向量加法群律与零和相反向量唯一性"
+        ],
+        [
+          "FRC2",
+          "frc-scalar-laws",
+          "标量结合、两侧分配与标量1"
+        ],
+        [
+          "FRC3",
+          "frc-scalar-laws",
+          "零标量、零向量及负一倍"
+        ],
+        [
+          "FRC4",
+          "frc-cancellation",
+          "带准确非零条件的消去、非零坐标见证与零乘双向判据"
+        ],
+        [
+          "FRC5",
+          "frc-reindex",
+          "置换重编号双逆且保持加法和标量乘法"
+        ],
+        [
+          "二维桥接",
+          "frc-plane-compatibility",
+          "有序对与二坐标函数表的双逆及运算相容"
+        ]
+      ],
+      "questions": "frc-q",
+      "answer_prefix": "frc-a",
+      "not_covered": [
+        "任意项数实数有限和、实数线性组合及任意有限求和重排",
+        "抽象向量空间、子空间、线性相关、基、维数与维数不变定理",
+        "秩、lineability、矩阵、线性映射的一般理论和行列式",
+        "整个15A03、15Axx与linear-algebra模块；不新增分类章或节"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-trichotomy"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-strict-equivalence"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-scope-negation"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-pairs"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-definition"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-equality"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-composition"
+        ],
+        [
+          "manuscript/foundations/functions_inverse.md",
+          "inv-two-sided"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-indices"
+        ],
+        [
+          "manuscript/foundations/finite_counting_reindex.md",
+          "fct-reindex"
+        ],
+        [
+          "manuscript/foundations/dedekind_addition.md",
+          "cutadd-definition"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-laws"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-inverses"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-negation-subtraction"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-definition"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-signs"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-associative"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-rational-zero"
+        ],
+        [
+          "manuscript/foundations/dedekind_ring_order.md",
+          "cutring-distributive"
+        ],
+        [
+          "manuscript/foundations/dedekind_ring_order.md",
+          "cutring-cancellation"
+        ],
+        [
+          "manuscript/foundations/dedekind_addition.md",
+          "cutadd-rational"
+        ],
+        [
+          "manuscript/foundations/real_plane_affine.md",
+          "realplane-model"
+        ],
+        [
+          "manuscript/foundations/real_plane_affine.md",
+          "realplane-operations"
+        ]
+      ],
+      "structural_comparisons": [
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-definition",
+          "旧有限和的值域为有理数；仅用于说明不能直接替代尚未定义的实数有限和"
+        ]
+      ],
+      "adopted": [
+        [
+          "frc-model",
+          "公开采用已给集合间全部函数记录组成集合及逐输入唯一合法输出的构造背景；不声称从零证明ZFC公理"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets",
+          "既有给定集合及条件子集背景"
+        ]
+      ],
+      "source_records": [
+        "research/production/finite_real_coordinates_next_plan.md",
+        "research/production/finite_real_coordinates_sources.json",
+        "research/production/finite_real_coordinates_source_reading.json",
+        "research/production/finite_real_coordinates_math_review.md",
+        "research/production/finite_real_coordinates_pedagogy_review.md"
+      ]
+    },
+    {
+      "parent_code": "97Hxx",
+      "parent_chapter_number": 528,
+      "part_code": "97-XX",
+      "msc_leaf_codes": [
+        "97H20"
+      ],
+      "msc_cross_reference_codes": [],
+      "module_ids": [
+        "real-algebra-equations"
+      ],
+      "code": "B2.39",
+      "number": 74,
+      "title": "有限实数和：递归、逐项规则与拼接",
+      "anchor": "rfs-unit",
+      "body": "manuscript/foundations/finite_real_sums.md",
+      "answers": "manuscript/foundations/finite_real_sums_answers.md",
+      "goals": [
+        "从固定状态N×R更新构造唯一实数前缀和，区分空和、单项和及索引和值类型",
+        "证明前缀一致性、有限表零延拓合法及任意延拓同值",
+        "完整归纳证明逐项相加与固定实数缩放，逐步重组四项并核零负标量",
+        "核自然差与后段索引后证明连续拼接和尾补零，区分和值和函数记录相等",
+        "证明有理嵌入与新实数和相容，并用合法反例辨认逐项乘积错误"
+      ],
+      "definitions": [
+        "rfs-definition",
+        "rfs-prefix-table",
+        "rfs-linearity",
+        "rfs-concatenation"
+      ],
+      "proved": [
+        [
+          "RFS1",
+          "rfs-definition",
+          "固定状态递归给实数部分和存在唯一"
+        ],
+        [
+          "RFS2",
+          "rfs-prefix-table",
+          "前缀相等决定和值及有限表延拓独立"
+        ],
+        [
+          "RFS3",
+          "rfs-linearity",
+          "逐项相加与固定实数缩放及有限表相容"
+        ],
+        [
+          "RFS4",
+          "rfs-concatenation",
+          "移位与连续表拼接的完整索引及和值公式"
+        ],
+        [
+          "RFS5",
+          "rfs-padding",
+          "零表和为零与尾补零保和值"
+        ],
+        [
+          "RFS6",
+          "rfs-rational-compatibility",
+          "有理序列及有限表嵌入与实数和相容"
+        ]
+      ],
+      "questions": "rfs-q",
+      "answer_prefix": "rfs-a",
+      "not_covered": [
+        "无限级数、部分和极限及任意有限重排",
+        "双重求和与换序、抽象群求和、一般向量和递归",
+        "有限坐标向量线性组合、基、维数与抽象线性空间",
+        "整个97H20初等代数教育、97Hxx及实数代数模块"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-induction"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-recursion-principle"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-addition-definition"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-add-one"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-addition-associative"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-successor-comparison"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-trichotomy"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-partial-order"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-strict-equivalence"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-addition-order"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-cancellation"
+        ],
+        [
+          "manuscript/foundations/natural_subtraction.md",
+          "sub-definition"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-pairs"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-definition"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-equality"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-indices"
+        ],
+        [
+          "manuscript/foundations/dedekind_addition.md",
+          "cutadd-definition"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-laws"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-inverses"
+        ],
+        [
+          "manuscript/foundations/dedekind_additive_order.md",
+          "cutgroup-negation-subtraction"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-definition"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-signs"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-rational-zero"
+        ],
+        [
+          "manuscript/foundations/dedekind_ring_order.md",
+          "cutring-distributive"
+        ],
+        [
+          "manuscript/foundations/dedekind_addition.md",
+          "cutadd-unit"
+        ],
+        [
+          "manuscript/foundations/dedekind_addition.md",
+          "cutadd-rational"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-definition"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-extensionality"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-composition"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-recursion-principle",
+          "公开采用的固定更新递归原则，用于N×R；不声称此处证明集合论递归定理"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-induction",
+          "公开采用普通归纳原则以证明部分和规律"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-pairs",
+          "给定集合与集合积背景"
+        ]
+      ],
+      "source_records": [
+        "research/production/finite_real_sums_linear_combinations_plan.md",
+        "research/production/finite_real_sums_sources.json",
+        "research/production/finite_real_sums_author_check.md",
+        "research/production/finite_real_sums_math_review.md",
+        "research/production/finite_real_sums_pedagogy_review.md"
+      ]
+    },
+    {
+      "parent_code": "15Axx",
+      "parent_chapter_number": 84,
+      "part_code": "15-XX",
+      "msc_leaf_codes": [
+        "15A03"
+      ],
+      "msc_cross_reference_codes": [],
+      "module_ids": [
+        "linear-algebra"
+      ],
+      "code": "B4.L2",
+      "number": 75,
+      "title": "有限坐标向量的线性组合",
+      "anchor": "flc-unit",
+      "body": "manuscript/foundations/finite_coordinate_combinations.md",
+      "answers": "manuscript/foundations/finite_coordinate_combinations_answers.md",
+      "goals": [
+        "区分向量项数m与坐标数n，以合法的加权实数表和构造唯一组合向量",
+        "分别核两个零参数及一项两项与既有运算相容，不预用一般向量求和",
+        "逐坐标证明系数相加、两位置共同缩放及同型向量项相加",
+        "核同步拼接和固定坐标重编号，区分项索引与坐标索引并避免未经证明的重排换序",
+        "用具体表辨认表示不唯一和不可达，不提前使用张成、基、维数"
+      ],
+      "definitions": [
+        "flc-data",
+        "flc-definition"
+      ],
+      "proved": [
+        [
+          "FLC1",
+          "flc-definition",
+          "加权实数表定义组合的合法唯一性、两零参数及一两项相容"
+        ],
+        [
+          "FLC2",
+          "flc-coefficients",
+          "同向量表的系数逐项相加"
+        ],
+        [
+          "FLC3",
+          "flc-scaling",
+          "共同标量放在系数或向量项两处的缩放及零数据"
+        ],
+        [
+          "FLC4",
+          "flc-vector-addition",
+          "同型向量项逐点相加"
+        ],
+        [
+          "FLC5",
+          "flc-concatenation",
+          "同切点同步拼接的组合公式"
+        ],
+        [
+          "FLC6",
+          "flc-reindex",
+          "坐标重编号保持组合与双逆恢复，不重排向量项"
+        ]
+      ],
+      "questions": "flc-q",
+      "answer_prefix": "flc-a",
+      "not_covered": [
+        "一般向量和递归、任意向量项置换不变及双重求和换序",
+        "张成、抽象向量空间、线性相关、基、维数、秩及lineability",
+        "矩阵、行列式及一般线性映射理论",
+        "整个15A03、第84章与linear-algebra模块"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-model"
+        ],
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-operations"
+        ],
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-additive-laws"
+        ],
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-scalar-laws"
+        ],
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-reindex"
+        ],
+        [
+          "manuscript/foundations/finite_real_sums.md",
+          "rfs-definition"
+        ],
+        [
+          "manuscript/foundations/finite_real_sums.md",
+          "rfs-prefix-table"
+        ],
+        [
+          "manuscript/foundations/finite_real_sums.md",
+          "rfs-linearity"
+        ],
+        [
+          "manuscript/foundations/finite_real_sums.md",
+          "rfs-concatenation"
+        ],
+        [
+          "manuscript/foundations/finite_real_sums.md",
+          "rfs-padding"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-equality"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-indices"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-successor-comparison"
+        ],
+        [
+          "manuscript/foundations/natural_subtraction.md",
+          "sub-definition"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-signs"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-associative"
+        ],
+        [
+          "manuscript/foundations/dedekind_ring_order.md",
+          "cutring-distributive"
+        ],
+        [
+          "manuscript/foundations/dedekind_signed_product.md",
+          "cutsigned-rational-zero"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/finite_real_coordinates.md",
+          "frc-model",
+          "沿FRC公开采用的给定集合间函数集合存在和逐输入合法唯一构造背景；不新增集合公理证明"
+        ]
+      ],
+      "source_records": [
+        "research/production/finite_coordinate_combinations_plan.md",
+        "research/production/finite_coordinate_combinations_sources.json",
+        "research/production/finite_coordinate_combinations_author_check.md",
+        "research/production/finite_coordinate_combinations_math_review.md",
+        "research/production/finite_coordinate_combinations_pedagogy_review.md"
+      ]
+    }
+  ],
+  "new_reviews": [
+    {
+      "target_type": "unit",
+      "target_id": "frc-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+        "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_coordinates_math_review.md",
+          "sha256": "7a93a5ba403cca8b4b32f69f2a7d1008c0c3b11ef255956cc5bfc2171a4586d7"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "frc-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+        "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_coordinates_pedagogy_review.md",
+          "sha256": "c7e857fccf44de772fdb9db3d0cbe9aa439e2d201d202e244be070e45af855b4"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rfs-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+        "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_sums_math_review.md",
+          "sha256": "d3ffed312cc15d15b3244e15e0db5e9e155c0ec3aa5762aed605e432be29f745"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rfs-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+        "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_sums_pedagogy_review.md",
+          "sha256": "12c4f5ea5a58e9e4030f5d1b39d9a8893cc7a818e3d18a4616b01e48df25bf83"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flc-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_combinations_math_review.md",
+          "sha256": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flc-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_combinations_pedagogy_review.md",
+          "sha256": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+    }
+  ],
+  "baseline_sha256": {
+    "tools/build_production_ledger.py": "5f7e554207ba99ed089941c5ef46e74dae52e3e6b8e3c8daeff15befd2a7114f",
+    "research/production/accepted_reviews.json": "f65c40b79f14f718dfebed26f6e927dcd3bd8c67ce932a78509aa3e364a8969d",
+    "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+    "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa",
+    "research/production/finite_real_coordinates_next_plan.md": "0cae33fa49a4a1d2ae9682e8193703effe1804e70176e5bf61555685d337ede4",
+    "research/production/finite_real_coordinates_sources.json": "947dd382c6a0d282b19e46256ecd1e96c23a3f7839db3313d9e8a700060f27b1",
+    "research/production/finite_real_coordinates_source_reading.json": "43e3cbe8bf1d3e00b60a29c444c7e8690c78dfbdb955f09a7ecd2f7c27ec9f84",
+    "research/production/finite_real_coordinates_math_review.md": "7a93a5ba403cca8b4b32f69f2a7d1008c0c3b11ef255956cc5bfc2171a4586d7",
+    "research/production/finite_real_coordinates_pedagogy_review.md": "c7e857fccf44de772fdb9db3d0cbe9aa439e2d201d202e244be070e45af855b4",
+    "tools/build_learning_batch.py": "efa3639ac6753e7b6fa45a5f3778121ce67b07962bc70f82329c7adbdb80efb1",
+    "tools/validate_learning_batch.py": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf",
+    "manuscript/foundations/natural_order.md": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+    "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+    "manuscript/foundations/functions_definition.md": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+    "manuscript/foundations/functions_composition.md": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+    "manuscript/foundations/functions_inverse.md": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+    "manuscript/foundations/finite_sums.md": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23",
+    "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+    "manuscript/foundations/dedekind_addition.md": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+    "manuscript/foundations/dedekind_additive_order.md": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+    "manuscript/foundations/dedekind_signed_product.md": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+    "manuscript/foundations/dedekind_ring_order.md": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+    "manuscript/foundations/real_plane_affine.md": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+    "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+    "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f",
+    "research/production/finite_real_sums_sources.json": "eaf16065a330d7190f8aaf1d14e2433258f750ed5932410ba8f968f07a1db955",
+    "research/production/finite_real_sums_linear_combinations_plan.md": "9df4bf2d14592af4cb11fbe9e6422a664530954915c2b03bfba0ce3e81bdc1ce",
+    "research/production/finite_real_sums_math_review.md": "d3ffed312cc15d15b3244e15e0db5e9e155c0ec3aa5762aed605e432be29f745",
+    "research/production/finite_real_sums_pedagogy_review.md": "12c4f5ea5a58e9e4030f5d1b39d9a8893cc7a818e3d18a4616b01e48df25bf83",
+    "research/production/finite_real_sums_author_check.md": "91fb7cbb3f8a1999a99d0cdd69f8383ce8550da81efbd15b8b303fb252aebbab",
+    "manuscript/foundations/natural_numbers.md": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+    "manuscript/foundations/natural_subtraction.md": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247",
+    "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+    "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e",
+    "research/production/finite_coordinate_combinations_sources.json": "faa3f7d6f822ea73e4c98dda39c70591910c3503ee970fede717e5c20a4a3f13",
+    "research/production/finite_coordinate_combinations_plan.md": "cd25ac54793f8e88dcfb8e86dcb96aa2a529dbaeac67f14cccf8f2d563c31ca0",
+    "research/production/finite_coordinate_combinations_math_review.md": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155",
+    "research/production/finite_coordinate_combinations_pedagogy_review.md": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42",
+    "research/production/finite_coordinate_combinations_author_check.md": "18491ebf95c52f75fd4cbc940a2beb525cd7a7d7b06d455ce84bf4a34c712a91",
+    "local-inputs/pending-batch35/finite-linear-combinations-cache-preservation.json": "32a693dcf4812a1255dc6b16fb01b9f4761fdd9426afa6775c663e3d2ae31108"
+  },
+  "baseline_refresh": {
+    "tools/validate_learning_batch.py": {
+      "previous": "10e0078b2c6a173f67162f40dd2febb2ceb86eb0bff3307961c6337b458e08f4",
+      "current": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf",
+      "reason": "Read exact formal delta: URL-aware .md# validation preserves external HTTP(S) citations while rejecting leaked local links; no registration/source changes"
+    }
+  },
+  "prior_candidate_sha256": {
+    "build_production_ledger.py": "b0662c401fa9178c933e3ca6dd8514ec542e4b11b952c752273cfc1e5436b0e3",
+    "accepted_reviews.json": "e7d81c9982bfb5f788b9f92b11aa413443432c99383759316cd6b8beefb84a85",
+    "registration.json": "decd2a4017f53d37a9c0bc53fd1aa699aab6e115e5027aa3226465e934931088"
+  },
+  "module_title_change_inherited": {
+    "id": "real-algebra-equations",
+    "from": "实数方程与配方界",
+    "to": "实数代数：有限和、方程与配方界",
+    "root_approved": true,
+    "id_stage_tags_and_edges_unchanged": true
+  },
+  "module_graph_decision": {
+    "new_edges": [],
+    "root_approved": true,
+    "reason": "Existing module graph explicitly broad; exact per-unit anchors and B4.L2→B2.39 interface mapping carry actual dependency without imposing whole real-algebra-equations module on B4.L1",
+    "FLC_RFS_interfaces": [
+      [
+        "manuscript/foundations/finite_real_sums.md",
+        "rfs-definition"
+      ],
+      [
+        "manuscript/foundations/finite_real_sums.md",
+        "rfs-prefix-table"
+      ],
+      [
+        "manuscript/foundations/finite_real_sums.md",
+        "rfs-linearity"
+      ],
+      [
+        "manuscript/foundations/finite_real_sums.md",
+        "rfs-concatenation"
+      ],
+      [
+        "manuscript/foundations/finite_real_sums.md",
+        "rfs-padding"
+      ]
+    ],
+    "FLC_FRC_interfaces": [
+      [
+        "manuscript/foundations/finite_real_coordinates.md",
+        "frc-model"
+      ],
+      [
+        "manuscript/foundations/finite_real_coordinates.md",
+        "frc-operations"
+      ],
+      [
+        "manuscript/foundations/finite_real_coordinates.md",
+        "frc-additive-laws"
+      ],
+      [
+        "manuscript/foundations/finite_real_coordinates.md",
+        "frc-scalar-laws"
+      ],
+      [
+        "manuscript/foundations/finite_real_coordinates.md",
+        "frc-reindex"
+      ]
+    ]
+  },
+  "cache_preservation": {
+    "record": "local-inputs/pending-batch35/finite-linear-combinations-cache-preservation.json",
+    "sha256": "32a693dcf4812a1255dc6b16fb01b9f4761fdd9426afa6775c663e3d2ae31108",
+    "original_source_metadata_unchanged": true,
+    "raw_text_in_candidate": false,
+    "local_verification_only_not_publication_dependency": true
+  },
+  "excluded_drafts": [],
+  "naming": "B4.L1, B2.39, B4.L2 in exact reading order; ordinal73,74,75; all previous codes unchanged"
+}

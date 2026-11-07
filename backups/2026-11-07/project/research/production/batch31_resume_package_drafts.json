@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-05T16:09:31.142900+00:00",
+  "scope": "Companion ZIP includes manuscript draft sources because the established package script globs all Markdown. These are not registered build inputs and are excluded from this build acceptance.",
+  "draft_units": [
+    "B4.5 real_sequences_cauchy",
+    "B4.6 real_function_limits",
+    "B4.7 real_function_continuity"
+  ],
+  "files": [
+    {
+      "path": "manuscript/foundations/real_function_continuity.md",
+      "sha256": "c28fe5c66a2895d0db3ad9cfbc2ada9f3e9f8e7942faaa80802529312d19a21b",
+      "heading": "## 基础单元 B4.7 实函数在定义域内的连续性 {#cont-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_function_continuity_answers.md",
+      "sha256": "859e8bbb937f3ce8d4a12beb70956e49984a06da635284bd3d8170ae7a3007aa",
+      "heading": "## 基础单元 B4.7 课后题完整解答 {#cont-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_function_limits.md",
+      "sha256": "93e6559645e147597cb9950108febd90e14a3417e614e231ca014bd1b901241b",
+      "heading": "## 基础单元 B4.6 实函数的点极限与有限运算 {#flim-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_function_limits_answers.md",
+      "sha256": "ab47e47ddfc0ba5a5270e16a535b916ced6e572c8064687307ca18823b4bde1b",
+      "heading": "## 基础单元 B4.6 课后题完整解答 {#flim-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_sequences_cauchy.md",
+      "sha256": "c1c2674e29dc7b877e4585cbb4d947d729ac37a681779ed6b3df460ed6503c1f",
+      "heading": "## 基础单元 B4.5 实数柯西条件与收敛判据 {#cauchy-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_sequences_cauchy_answers.md",
+      "sha256": "ae118699aafe23b3f5481a0f8550ffe708ad590afa716365289aec4dc1e91e90",
+      "heading": "## 基础单元 B4.5 课后题完整解答 {#cauchy-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    }
+  ],
+  "registered_unit_count": 63,
+  "built_exercise_pairs": 531,
+  "no_inferred_acceptance_from_inclusion": true
+}

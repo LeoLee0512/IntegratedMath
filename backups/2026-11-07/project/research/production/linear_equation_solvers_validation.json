@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-29T16:41:35.510627+00:00",
+  "domain": "125 one-variable equations on {-2,-1,0,1,2}; 729 two-row systems on {-1,0,1} plus 3 rational cases; 25 candidate pairs per system",
+  "oracle": "SymPy 1.14.0 exact solveset/rank/inverse, direct Fraction substitution",
+  "counts": {
+    "linear_equations": 125,
+    "linear_candidate_checks": 625,
+    "systems": 732,
+    "unique": 433,
+    "none": 200,
+    "line": 98,
+    "all": 1,
+    "candidate_pairs": 18300,
+    "parameter_points": 490,
+    "row_swap_checks": 732,
+    "invalid_rejections": 54
+  },
+  "explicit_examples": [
+    "zero one-variable coefficient: identity and contradiction distinguished",
+    "both zero rows: all pairs or contradiction",
+    "zero scalar combination: inconsistent and dependent consistent distinguished",
+    "zero first coefficient uses a nonzero second-coordinate pivot",
+    "first zero row is swapped with the nonzero row",
+    "unique pair checked in both original equations"
+  ],
+  "source_sha256": {
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9",
+    "tools/validate_linear_equation_solvers.py": "9050c270f187574f30408605be3818450a9ae33a4ff16fa70732e32a4d85994b"
+  },
+  "limits": "Finite external checks, not proofs. Solvers cover all rational unknowns only; extra domain exclusions are not parsed or imposed."
+}

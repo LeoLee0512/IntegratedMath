@@ -1,0 +1,601 @@
+{
+  "status": "planned_not_applied",
+  "repo": "/workspace/IntegratedMath-book",
+  "expected_units": 72,
+  "expected_exercise_pairs": 603,
+  "foundation_pairs": 576,
+  "part1_pairs": 27,
+  "excluded": [],
+  "baseline_sha256": {
+    "tools/build_production_ledger.py": "5fa5e38c422933c51db23f7267e0c512ecbf5780cca699322e085d88d39e0938",
+    "research/production/accepted_reviews.json": "89e582a32b2c4069607b389e7a4193c0bcb089cad8b11fb55f46f0340fe5add4",
+    "data/msc_taxonomy.json": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+    "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+    "manuscript/foundations/logic_connectives_quantifiers_answers.md": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707",
+    "manuscript/foundations/sets_inclusion_operations.md": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+    "manuscript/foundations/sets_inclusion_operations_answers.md": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f",
+    "research/production/logic_connectives_quantifiers_math_review.md": "f1d888e68821bb13d0258e9bd6f51d3a98221f1dde3f58833bb3876355e3985d",
+    "research/production/logic_connectives_quantifiers_pedagogy_source_review.md": "c4b53de6407bad4d5928418254c19d505e5240f9a7eac74eda12586816fab071",
+    "research/production/sets_inclusion_operations_math_review.md": "6e0aa06d0c3dead4e55451dc58c7353e9ffe53885b59b49f52c1397ce3d13dbd",
+    "research/production/sets_inclusion_operations_pedagogy_review.md": "75bfce16bb6a7e11f94c334dc0f56f94e153194a4be600587fe219ae8c65bb46",
+    "research/production/logic_connectives_quantifiers_plan.md": "3e014f460c5164f0f8008947e0ad03c7c813d1504cbc9ee18cf04ecbbc89241d",
+    "research/production/logic_connectives_quantifiers_sources.json": "e82998623bcc6b164074e7886701e5c4368b75324736b0fb3b310401383205a0",
+    "research/production/sets_inclusion_operations_plan.md": "7366227d397982ca4478f18ca51ff9decc66e488a83ca5b4711639ec6c79c66c",
+    "research/production/sets_inclusion_operations_sources.json": "8774d0446f814cdfb8beafe167b318b36bb404c3c179cce48d7de54e117267a5",
+    "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+    "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74",
+    "research/production/finite_counting_reindex_sources.json": "b4327e6db45c1e13f104826703dc8430ceef55c2c0db9b0e432fba126b496502",
+    "research/production/finite_counting_reindex_math_review.md": "156ccae338f7e3e150c7f05172fe7ccde80cf904d86fd73a89b06eafd3f47d02",
+    "research/production/finite_counting_reindex_pedagogy_source_review.md": "c4344c7e0f309e5a691ef8143d25358155366122f42be797116fdbe20b41db5b",
+    "research/production/finite_counting_bridge_plan.md": "b30e0b811805bfff5b61625312c9a8d15a9852cf960164e0b5bd1cb743991c98",
+    "research/production/finite_counting_reindex_pedagogy_source_review.json": "349ed1006bef78b898496a999128e4395bc9485cbde779dbd7790bf4c718b4f1",
+    "manuscript/foundations/natural_numbers.md": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+    "manuscript/foundations/natural_order.md": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+    "manuscript/foundations/natural_order_answers.md": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8",
+    "manuscript/foundations/functions_definition.md": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+    "manuscript/foundations/functions_composition.md": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+    "manuscript/foundations/functions_bijections.md": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+    "manuscript/foundations/functions_inverse.md": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+    "manuscript/foundations/finite_sums.md": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+  },
+  "unit_specs": [
+    {
+      "parent_code": "03Bxx",
+      "parent_chapter_number": 5,
+      "part_code": "03-XX",
+      "msc_leaf_codes": [
+        "03B05",
+        "03B10"
+      ],
+      "msc_cross_reference_codes": [
+        "97E30"
+      ],
+      "module_ids": [
+        "logic-sets"
+      ],
+      "code": "B3.1",
+      "number": 70,
+      "title": "命题联结词与带域量词",
+      "anchor": "lcq-unit",
+      "body": "manuscript/foundations/logic_connectives_quantifiers.md",
+      "answers": "manuscript/foundations/logic_connectives_quantifiers_answers.md",
+      "goals": [
+        "辨认命题、开放条件、合法求值及采用语义与形式证明的区别",
+        "按全部赋值核五联结词、LQ1等价及LQ2前提保真",
+        "逐层解释带域量词、空限制域、辖域与否定",
+        "区分见证依赖顺序、函数存在与唯一条件并给完整反例"
+      ],
+      "definitions": [
+        "lcq-conventions",
+        "lcq-statements",
+        "lcq-connectives",
+        "lcq-equivalence",
+        "lcq-inference",
+        "lcq-quantifiers",
+        "lcq-order-functions"
+      ],
+      "proved": [
+        [
+          "LQ1",
+          "lcq-equivalence",
+          "六个命题等价的全部赋值核验"
+        ],
+        [
+          "LQ2",
+          "lcq-inference",
+          "肯定前件保真与肯定后件反例"
+        ],
+        [
+          "LQ3",
+          "lcq-scope-negation",
+          "带域量词否定及空域边界"
+        ],
+        [
+          "LQ4",
+          "lcq-order-functions",
+          "统一见证蕴含逐输入见证及反向失败"
+        ]
+      ],
+      "questions": "lcq-q",
+      "answer_prefix": "lcq-a",
+      "not_covered": [
+        "完整一阶语言和公理演算、可靠性/完备性/可判定性",
+        "集合公理、选择原则、归纳或递归的形式构造",
+        "B3其余目标与整个03B05/03B10/97E30"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/review_ch01/chapter.md",
+          "sec-00A05"
+        ],
+        [
+          "manuscript/review_ch01/chapter.md",
+          "sec-00A06"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-peano-rules"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-pairs"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-correspondence"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-definition"
+        ],
+        [
+          "manuscript/foundations/rationals_division.md",
+          "rdiv-division"
+        ]
+      ],
+      "adopted": [
+        [
+          "lcq-conventions",
+          "经典二值语义、元语言及非空背景域，限制集合可空"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets",
+          "公开集合与限定子集背景"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-peano-rules",
+          "自然数和相等规则"
+        ]
+      ],
+      "source_records": [
+        "research/production/logic_connectives_quantifiers_plan.md",
+        "research/production/logic_connectives_quantifiers_sources.json",
+        "research/production/logic_connectives_quantifiers_pedagogy_source_review.md"
+      ]
+    },
+    {
+      "parent_code": "03Exx",
+      "parent_chapter_number": 8,
+      "part_code": "03-XX",
+      "msc_leaf_codes": [
+        "03E20"
+      ],
+      "msc_cross_reference_codes": [
+        "97E60"
+      ],
+      "module_ids": [
+        "logic-sets"
+      ],
+      "code": "B3.2",
+      "number": 71,
+      "title": "集合包含、相等与有限次集合运算",
+      "anchor": "sio-unit",
+      "body": "manuscript/foundations/sets_inclusion_operations.md",
+      "answers": "manuscript/foundations/sets_inclusion_operations_answers.md",
+      "goals": [
+        "在已给可空工作全集内区分成员、包含、相等及集合值",
+        "用两向包含证明基本关系及双补并保持范围",
+        "完整证明两条分配与同全集两条德摩根",
+        "用差运算迁移和变全集反例核条件边界"
+      ],
+      "definitions": [
+        "sio-background",
+        "sio-inclusion",
+        "sio-operations"
+      ],
+      "proved": [
+        [
+          "SI1",
+          "sio-inclusion",
+          "包含反身、传递和空集包含"
+        ],
+        [
+          "SI2",
+          "sio-element-method",
+          "基本包含、并空集、交全集和双补"
+        ],
+        [
+          "SI3",
+          "sio-distribution",
+          "交对并与并对交的两向分配"
+        ],
+        [
+          "SI4",
+          "sio-demorgan",
+          "同全集两条德摩根及空U"
+        ],
+        [
+          "全集比较",
+          "sio-universe",
+          "嵌套全集补再交回的两向公式"
+        ]
+      ],
+      "questions": "sio-q",
+      "answer_prefix": "sio-a",
+      "not_covered": [
+        "任意集合族并交、幂集与基数理论",
+        "集合论公理体系与选择原则",
+        "数系的集合模型、关系理论与B3.3",
+        "整个03E20/97E60"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-peano-rules"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-conventions"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-connectives"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-equivalence"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-inference"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-quantifiers"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-scope-negation"
+        ]
+      ],
+      "adopted": [
+        [
+          "sio-background",
+          "工作U可空；外延及已给集合内条件子集为采用背景"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets",
+          "外延相等与明确有限/条件子集背景"
+        ],
+        [
+          "manuscript/foundations/logic_connectives_quantifiers.md",
+          "lcq-conventions",
+          "经典二值元语言；工作U与非空语义背景分层"
+        ]
+      ],
+      "source_records": [
+        "research/production/sets_inclusion_operations_plan.md",
+        "research/production/sets_inclusion_operations_sources.json",
+        "research/production/sets_inclusion_operations_math_review.md"
+      ]
+    },
+    {
+      "parent_code": "03Exx",
+      "parent_chapter_number": 8,
+      "part_code": "03-XX",
+      "msc_leaf_codes": [
+        "03E10"
+      ],
+      "msc_cross_reference_codes": [
+        "97E60",
+        "05A05"
+      ],
+      "module_ids": [
+        "induction-counting"
+      ],
+      "code": "B3.3",
+      "number": 72,
+      "title": "有限索引、计数唯一性与重编号",
+      "anchor": "fct-unit",
+      "body": "manuscript/foundations/finite_counting_reindex.md",
+      "answers": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "goals": [
+        "区分有限表的位置数、不同值数与双射编号，并包含空索引情形",
+        "以目标长度归纳证明单射索引长度不增，再证明编号长度唯一",
+        "用确定最小原像证明同规模有限函数单满射等价并导出抽屉推论",
+        "按准确复合方向恢复置换重编号，并用非双射反例说明信息丢失"
+      ],
+      "definitions": [
+        "fct-indices",
+        "fct-cardinality",
+        "fct-reindex"
+      ],
+      "proved": [
+        [
+          "FCT1",
+          "fct-swap",
+          "有界索引交换逐点自逆且双射"
+        ],
+        [
+          "FCT2",
+          "fct-injection-bound",
+          "存在单射I_m到I_n当且仅当m不大于n"
+        ],
+        [
+          "FCT3",
+          "fct-cardinality",
+          "有限集合双射编号长度唯一及空集边界"
+        ],
+        [
+          "FCT4",
+          "fct-equal-size",
+          "同规模有限函数单满双等价与抽屉推论"
+        ],
+        [
+          "FCT5",
+          "fct-reindex",
+          "索引置换的逆恢复与值集保持"
+        ]
+      ],
+      "questions": "fct-q",
+      "answer_prefix": "fct-a",
+      "not_covered": [
+        "无限基数、一般加乘计数、阶乘与排列个数",
+        "有限求和任意置换不变性及多重求和换序",
+        "关系及等价类系统、公理集合论与一般选择原则",
+        "线性空间、线性基等长与维数定理",
+        "整个03E10、05A05、97E60及B3阶段"
+      ],
+      "prerequisites": [
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-induction"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-predecessor"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-partial-order"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-strict-equivalence"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-successor-comparison"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-trichotomy"
+        ],
+        [
+          "manuscript/foundations/natural_order.md",
+          "ord-strong-induction"
+        ],
+        [
+          "manuscript/foundations/natural_order_answers.md",
+          "ord-a07"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-definition"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-equality"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-identity"
+        ],
+        [
+          "manuscript/foundations/functions_composition.md",
+          "fc-composition"
+        ],
+        [
+          "manuscript/foundations/functions_bijections.md",
+          "bij-injective"
+        ],
+        [
+          "manuscript/foundations/functions_bijections.md",
+          "bij-surjective"
+        ],
+        [
+          "manuscript/foundations/functions_bijections.md",
+          "bij-bijective"
+        ],
+        [
+          "manuscript/foundations/functions_bijections.md",
+          "bij-composition"
+        ],
+        [
+          "manuscript/foundations/functions_inverse.md",
+          "inv-reverse-graph"
+        ],
+        [
+          "manuscript/foundations/finite_sums.md",
+          "sum-indices"
+        ],
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets"
+        ]
+      ],
+      "adopted": [
+        [
+          "fct-unit",
+          "给定集合、条件子集与外延背景沿前文采用；不在此重建公理集合论"
+        ]
+      ],
+      "adopted_external": [
+        [
+          "manuscript/foundations/functions_definition.md",
+          "fun-sets",
+          "给定集合及条件子集、外延背景"
+        ],
+        [
+          "manuscript/foundations/natural_numbers.md",
+          "b1-induction",
+          "公开采用的普通归纳；强归纳与最小元为既有已证接口"
+        ]
+      ],
+      "source_records": [
+        "research/production/finite_counting_bridge_plan.md",
+        "research/production/finite_counting_reindex_sources.json",
+        "research/production/finite_counting_reindex_math_review.md",
+        "research/production/finite_counting_reindex_pedagogy_source_review.md"
+      ]
+    }
+  ],
+  "new_reviews": [
+    {
+      "target_type": "unit",
+      "target_id": "lcq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+        "manuscript/foundations/logic_connectives_quantifiers_answers.md": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707"
+      },
+      "evidence": [
+        {
+          "path": "research/production/logic_connectives_quantifiers_math_review.md",
+          "sha256": "f1d888e68821bb13d0258e9bd6f51d3a98221f1dde3f58833bb3876355e3985d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "lcq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+        "manuscript/foundations/logic_connectives_quantifiers_answers.md": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707"
+      },
+      "evidence": [
+        {
+          "path": "research/production/logic_connectives_quantifiers_pedagogy_source_review.md",
+          "sha256": "c4b53de6407bad4d5928418254c19d505e5240f9a7eac74eda12586816fab071"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sio-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/sets_inclusion_operations.md": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+        "manuscript/foundations/sets_inclusion_operations_answers.md": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/sets_inclusion_operations_math_review.md",
+          "sha256": "6e0aa06d0c3dead4e55451dc58c7353e9ffe53885b59b49f52c1397ce3d13dbd"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sio-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/sets_inclusion_operations.md": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+        "manuscript/foundations/sets_inclusion_operations_answers.md": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/sets_inclusion_operations_pedagogy_review.md",
+          "sha256": "75bfce16bb6a7e11f94c334dc0f56f94e153194a4be600587fe219ae8c65bb46"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fct-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05T17:51:08.088323+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+        "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_counting_reindex_math_review.md",
+          "sha256": "156ccae338f7e3e150c7f05172fe7ccde80cf904d86fd73a89b06eafd3f47d02"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终冻结有限计数正文及八题全解的真实独立文本审阅；有限基数与重编号局部，非完整MSC叶/章/部分或维数定理；build/visual与作者审阅另记。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fct-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05T17:51:26.505491+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+        "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_counting_reindex_pedagogy_source_review.md",
+          "sha256": "c4344c7e0f309e5a691ef8143d25358155366122f42be797116fdbe20b41db5b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终冻结有限计数正文及八题全解的真实独立文本审阅；有限基数与重编号局部，非完整MSC叶/章/部分或维数定理；build/visual与作者审阅另记。"
+    }
+  ],
+  "display_policy": "B3.1/2/3 are learning identifiers for lcq-unit/sio-unit/fct-unit; do not edit frozen manuscript headings. Main chapters5/8/8, finite counting03E10; cross97E60 chapter525 and05A05 chapter12 are references only. Builder may display metadata B3.3 while preserving source heading/hash.",
+  "gates": "Proposal only; apply after batch33 frozen and root authorization. Preserve old69 and two-unit candidate records; new build pending; independently rebuild and inspect current artifacts.",
+  "prepared_at": "2026-11-05T17:57:45.156578+00:00",
+  "prepared_by": "/root/part1_sources",
+  "two_unit_candidate_sha256": {
+    "LEARNING_PATH_append_proposal.md": "6067a8453bd0df1b654af8faba0814756cb82ca65952e797683953bfc900f08f",
+    "README.md": "dc281acdf23ca429d5e1335d8c57573c173091c6ff9ad64191b1f997ef29cc67",
+    "preparation_checks.json": "e49333c22cf7f1e6d7ac728b8f7f5ec7d2016119cc469bf78ed5552af8df09f6",
+    "build_production_ledger.diff": "8817b4a3ee67d854754167321870916a0ca2b6e41e3c4510d10d1b2bae2bd6ba",
+    "registration.json": "ecd56cba7efefc27e1532c864e406e36808664a4a268b12e5f8d65861fd8ab72",
+    "accepted_reviews.json": "33870628212289d493899971114405baaf9e9a071e512dd7f47d919463c470aa",
+    "build_production_ledger.py": "4bf3dcab214d7970daeac7594ca3ef3d1322fe8bd7f5e4ee8fd9bfeda0169585",
+    "prepare.py": "5dc7e955a4fe276106072b34738b3de9bc0f7bad5c4382b273165d03a2973ec5"
+  },
+  "naming_interface": "NAMING_INTERFACE.md"
+}

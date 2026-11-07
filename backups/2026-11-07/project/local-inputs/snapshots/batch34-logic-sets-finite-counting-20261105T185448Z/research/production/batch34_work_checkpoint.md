@@ -1,0 +1,23 @@
+> 历史工作记录：此为第34批早期过程记录；最终状态见 `batch34_build_acceptance.md` 与根目录 `BATCH_CHECKPOINT.md`。以下保留历史，不作为当前验收结论。
+
+# 第34批在途检查点
+
+2026-11-05。已验收基线本地03438bcdefa1a91bdd1b9bb3d72df2edb700de19及snapshot batch33-composition-ivt-inverse-20261105T180921Z（69单元579题，1016/1229页）。快照2095文件由root独立逐项核SHA；不覆盖。
+
+当前实际已应用B3.1/B3.2/B3.3三项注册，72单元603题拟构建。源稿与六份独立文本审签精确匹配，生成器导入144签；分类63/534/6006及503直属叶保持，11章47叶仅partial，0整章/部分完成。root compose查2095唯一锚与603对题答齐，无悬空；脚本语法与新前置guard通过。
+
+00B05应用真实摘要实践后来源账8verified/10pending/15原创另审。应用事件和原四源/原签历史均保存；audit与build分别实读delta后签数学/教学，明确历史全文+当次差异而非重新全文审33节。摘要对应全文/完整论文作者/数学证明仍未取得。00B20缓存再核缺具体活动关系，保留pending，不借另一Urschel报告补齐。
+
+构建代理part1_build独占执行normal全书构建，随后完整validator；尚未取得本轮新PDF自动/视觉验收，不能复用33状态作为34通过。后续需按新PDF实际页面分工审查、聚合、ledger、package、版本snapshot和本地提交，0完整部分不触发推送。
+
+FRC有限实数坐标两稿及8完整解答已安装为未注册草稿，正文d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3，答案572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa；独立math/ped通过，未build，拟下批B4.L1第73单元。RFS有限实数和正在/tmp/finite-real-sums-draft编写，audit等作者冻结后审；随后才写坐标线性组合。当前不注册它们，不改变34冻结输入。
+
+继续原用户指示直到额度耗尽或真正阻碍，不以单批或此记录为停工点。未推送、合并或发布，保留所有用户文件。
+
+## 链接检查修复及下一候选
+
+normal构建得到1049/1262页，但完整validator将合法外部GitHub keynotes.md#L65-L69来源误判为本地稿链接，已保存失败log/manifest/receipt。root仅修正local/external HTTP(S)片段判定，10例核相对/绝对/file/无主机仍拒；内部锚存在和协议限制原样保留；build独立复核AST与用例。旧稿内容无修改。随后实际incremental重建仅复用本轮normal已验hash的legacy，生成新manifest a2e0b00d2ee49dea14a20752ad683d5fdcd3d1519587971f704f46674a232a73，306输入51产物相等，validator session89392还在运行。当前PDF不是初次normal的hash，须以新raw为准，不能提前签视觉。
+
+新review1049页SHA415be2e8d8e9ad687c5482d1558d3d06b4c2bc0f3fa6ec3e648e2dabab48881f，full1262页SHAf1b96e191f0cfc525f9027030a5c712a3d261388a4e7980a1eb41f3cbd17269f，未验收。
+
+RFS有限实数和正文306/答案232行已数学及教学通过并安装为未注册稿；FRC/RFS备份在local-inputs/pending-batch35。两单元下一注册候选/tmp/frc-rfs74-registration，拟B4.L1第73、B2.39第74，74单元619题，尚未应用。FLC线性组合285+251行仅/tmp/finite-coordinate-combinations-draft，冻结body ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd、ans a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e，root已全文教学审及LC1–125源核读，audit正数学审。作者接着只先规划V_n子空间/有限生成，待FLC数学通过再写。全部仍原任务，未推送。

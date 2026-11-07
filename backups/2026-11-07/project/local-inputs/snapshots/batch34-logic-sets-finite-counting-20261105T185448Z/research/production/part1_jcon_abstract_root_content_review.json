@@ -1,0 +1,32 @@
+{
+  "reviewer": "/root",
+  "date": "2026-11-05T17:36:56.999546+00:00",
+  "actual_readings": [
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-keynotes.md",
+      "sha256": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+      "read_range": "55–78（实际文件止于75；重点65–69的Urschel条目）"
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-index.md",
+      "sha256": "732e383758f2e816c7c361692ebc9cd2ed94ad61b0f31a0f5e71e3fd65260172",
+      "read_range": "1–75"
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-README.md",
+      "sha256": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+      "read_range": "全文"
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-imprint.md",
+      "sha256": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad",
+      "read_range": "全文"
+    }
+  ],
+  "section_code": "00B05",
+  "objective_id": "00B05-1",
+  "judgment": "Supports a real lecture-abstract reading and a specified further-search procedure, with full text and proofs explicitly not obtained. Does not support any theorem in the abstract or a link to the unrelated LieGroups article.",
+  "reproduction": "No full abstract or images to be redistributed; original explanation, necessary title/speaker and native fixed-version link only. No explicit general republication license found in read README/imprint.",
+  "formal_scope_status": "unchanged; current 7 verified /11 pending remains frozen until next revision and acceptance review",
+  "limitations": "Local saved originals actually read; this review did not repeat network requests, access linked MIT site, read paper proof, or verify a lecture date beyond official overall conference dates."
+}

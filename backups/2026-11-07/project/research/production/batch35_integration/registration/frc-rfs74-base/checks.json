@@ -1,0 +1,32 @@
+{
+  "syntax": "passed",
+  "old73_specs_preserved": true,
+  "formal72_specs_preserved": true,
+  "old146_bridge_paths_preserved": true,
+  "old146_text_reviews_preserved": true,
+  "module_ids_stages_tags_edges_unchanged": true,
+  "one_module_display_title_changed": {
+    "id": "real-algebra-equations",
+    "from": "实数方程与配方界",
+    "to": "实数代数：有限和、方程与配方界",
+    "root_approved": true,
+    "id_stage_tags_and_edges_unchanged": true
+  },
+  "prerequisite_anchors_checked": 29,
+  "rfs_rational_definitions_used_only_for_RFS6": true,
+  "source_caches_match_hashes": true,
+  "review_reports_bind_installed_bytes": true,
+  "expected_units": 74,
+  "expected_total_pairs": 619,
+  "expected_text_reviews": 148,
+  "formal_build_executed": false,
+  "formal_ledger_generation_executed": false,
+  "formal_files_modified": false,
+  "unfrozen_drafts_registered": false,
+  "changed_existing_functions": [
+    "prerequisite_data",
+    "build"
+  ],
+  "all_other_existing_functions_ast_unchanged": true,
+  "full_rfs_delta_read": true
+}

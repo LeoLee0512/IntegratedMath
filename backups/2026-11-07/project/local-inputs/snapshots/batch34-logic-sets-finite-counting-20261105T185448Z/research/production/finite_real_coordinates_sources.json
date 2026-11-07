@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "status": "author source and scope check; independent review pending",
+  "network_requests": 0,
+  "source": {
+    "author": "Robert A. Beezer",
+    "title": "A First Course in Linear Algebra",
+    "version": "3.50",
+    "commit": "347f27fe909b54b26970bcc0fcbf69c7e853c766",
+    "license": "GFDL 1.2 or later, no invariant sections/front-cover/back-cover texts"
+  },
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+      "cache_path": "local-inputs/pending-batch28/source-cache/beezer_vector_operations",
+      "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8",
+      "actual_read_ranges": [
+        "1–42",
+        "100–119",
+        "140–160",
+        "175–196",
+        "265–358"
+      ],
+      "role": "definitions and listed laws; source details only scalar-addition distributivity",
+      "access": "existing cache directly reread; no new HTTP request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "cache_path": "local-inputs/pending-batch28/source-cache/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "role": "GFDL 1.2 or later, no invariant sections or cover texts",
+      "access": "existing cache directly reread; no new HTTP request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "cache_path": "local-inputs/pending-batch28/source-cache/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "actual_read_ranges": [
+        "1–22"
+      ],
+      "role": "author, version 3.50, title and short license; no claim of full file/legal appendix read",
+      "access": "existing cache directly reread; no new HTTP request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    }
+  ],
+  "scope": {
+    "source": "mostly complex column vectors, one-based indexing; lists closure and eight algebraic properties, details one distributivity proof",
+    "original_here": "real-valued function records on I_n with zero-based indexing; explicit function-set background, empty table, all coordinate proofs, cancellation/nonzero witness, reindexing and old-plane correspondence; original eight exercises and solutions",
+    "excluded": [
+      "real finite sums",
+      "abstract vector spaces",
+      "basis",
+      "dimension theorem",
+      "matrices",
+      "determinants"
+    ],
+    "no_source_reproduction": "No source examples, exercises, solutions, figures or original text are reproduced or translated."
+  },
+  "msc": {
+    "main": "15A03",
+    "exact_title": "Vector spaces, linear dependence, rank, lineability",
+    "chapter": 84,
+    "parent": "15Axx",
+    "status": "partial finite-coordinate starting unit only"
+  },
+  "plan": {
+    "path": "research/production/finite_real_coordinates_next_plan.md",
+    "sha256": "0cae33fa49a4a1d2ae9682e8193703effe1804e70176e5bf61555685d337ede4"
+  },
+  "files": [
+    {
+      "actual_path": "/tmp/finite-real-coordinates-draft/finite_real_coordinates.md",
+      "intended_path": "manuscript/foundations/finite_real_coordinates.md",
+      "sha256": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+      "lines": 292
+    },
+    {
+      "actual_path": "/tmp/finite-real-coordinates-draft/finite_real_coordinates_answers.md",
+      "intended_path": "manuscript/foundations/finite_real_coordinates_answers.md",
+      "sha256": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa",
+      "lines": 234
+    }
+  ]
+}

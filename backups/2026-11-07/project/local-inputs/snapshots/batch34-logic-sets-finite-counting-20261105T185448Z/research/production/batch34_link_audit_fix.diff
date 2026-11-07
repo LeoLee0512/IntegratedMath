@@ -1,0 +1,35 @@
+--- before/validate_learning_batch.py
++++ after/validate_learning_batch.py
+@@ -16,7 +16,7 @@
+ import re
+ import subprocess
+ import sys
+-from urllib.parse import unquote
++from urllib.parse import unquote, urlsplit
+ 
+ import fitz
+ from PIL import Image, ImageDraw
+@@ -102,6 +102,14 @@
+ 
+ def ast_of(path):
+     return json.loads(subprocess.check_output(["pandoc", str(path), "-t", "json"], cwd=ROOT))
++
++
++def is_local_markdown_fragment(href):
++    """External HTTP(S) source-file fragments are valid book citations."""
++    if not re.search(r"\.md#", href):
++        return False
++    parsed = urlsplit(href)
++    return not (parsed.scheme in ("https", "http") and bool(parsed.netloc))
+ 
+ 
+ def audit_book(stem, expected_images, pairs):
+@@ -152,7 +160,7 @@
+     for href in html.links:
+         if href.startswith("#"):
+             require(unquote(href[1:]) in html.ids, f"{stem}: unresolved HTML link {href}")
+-        require(not re.search(r"\.md#", href), f"{stem}: leaked manuscript-file link {href}")
++        require(not is_local_markdown_fragment(href), f"{stem}: leaked manuscript-file link {href}")
+         require(href.startswith(("#", "https://", "http://", "mailto:")),
+                 f"{stem}: nonportable relative link in standalone book {href}")
+     prose = "".join(html.prose)

@@ -1,0 +1,32 @@
+--- reviewed_proposal_topic_sources
++++ applied_topic_sources
+@@ -1161,7 +1161,7 @@
+     }
+   ],
+   "boundaries": [
+-    "本次拟议版本只新增00B05限定G专题映射；合计8个G verified、10个G pending，15个T/S另行原创审读；整个部分仍pending，未改变其余专题需求。",
++    "本次版本只新增00B05限定G专题映射；合计8个G verified、10个G pending，15个T/S另行原创审读；整个部分仍pending，未改变其余专题需求。",
+     "T/S数学内容独立审读，未要求外书具有相同原创推导。",
+     "00B99-2真实文档实践已核，但不抵消00B99合并需求其余内容的部分支持。",
+     "访问证据与内容报告分开；原请求日期保留，重取信息单独记录。",
+@@ -1191,15 +1191,17 @@
+     },
+     {
+       "prepared_content_review_at": "2026-11-05T17:43:55.766138+00:00",
+-      "application_state": "proposal_only_not_applied",
++      "application_state": "applied_after_batch33_snapshot",
+       "previous_plan_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+       "previous_ledger_sha256": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246",
+       "changed_sections": [
+         "00B05"
+       ],
+-      "scope": "Only one new topic mapping, projected 8-source bindings and 8/10 counts; old source records and remaining requirements unchanged. Apply only after independent review; archive prior ledger first."
++      "scope": "Only one new topic mapping, projected 8-source bindings and 8/10 counts; old source records and remaining requirements unchanged. Apply only after independent review; archive prior ledger first.",
++      "applied_at": "2026-11-05T18:10:42.528074+00:00",
++      "snapshot": "local-inputs/snapshots/batch33-composition-ivt-inverse-20261105T180921Z"
+     }
+   ],
+   "previous_reviewed_at": "2026-11-05T17:00:01.997390+00:00",
+-  "updated_at": "2026-11-05T17:43:55.766138+00:00"
++  "updated_at": "2026-11-05T18:10:42.528074+00:00"
+ }

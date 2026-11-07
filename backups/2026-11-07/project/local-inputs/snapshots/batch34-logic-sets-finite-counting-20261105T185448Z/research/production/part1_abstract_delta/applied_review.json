@@ -1,0 +1,42 @@
+{
+  "reviewer": "/root/part1_audit",
+  "reviewed_at": "2026-11-05T18:12:22.288408+00:00",
+  "status": "applied_delta_passed",
+  "proposal_review": {
+    "path": "research/production/part1_abstract_delta/proposal_independent_math_pedagogy_delta_review.md",
+    "sha256": "882a5d6644a1b845991b7879f7dc5afc40c9f69d95b794201a04abdb1c71bd59"
+  },
+  "proposal_checks": {
+    "path": "research/production/part1_abstract_delta/proposal_independent_math_pedagogy_delta_review.json",
+    "sha256": "324ecd7079172b108102aa8ea54395825a150b088ec7ccdd38c46e1a2cc068e5"
+  },
+  "application_event": {
+    "path": "research/production/batch34_application_event.json",
+    "sha256": "58cd09c9da4ee8a88cb1804fe892a80e9d28f36d5e0625867ca358358676752f"
+  },
+  "metadata_diff": {
+    "path": "research/production/part1_abstract_delta/application_metadata.diff",
+    "sha256": "c24f9262e79b2204ea71bea801e5ec4c9142f071ef88b45ae2ccfd8a71569051"
+  },
+  "metadata_exactly_allowed_transform": true,
+  "allowed_changes": [
+    "boundaries[0]: remove 拟议",
+    "revision_history[-1].application_state: applied_after_batch33_snapshot",
+    "revision_history[-1].applied_at and .snapshot match event",
+    "updated_at matches applied_at"
+  ],
+  "applied_files": {
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "research/production/part1_scope_plan.json": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "research/production/part1_topic_sources.json": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a"
+  },
+  "source_gate_counts": {
+    "G_topic_verified": 8,
+    "G_topic_pending": 10,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "whole_part_accepted": false,
+  "author_review": "pending",
+  "full_reread_claimed": false
+}

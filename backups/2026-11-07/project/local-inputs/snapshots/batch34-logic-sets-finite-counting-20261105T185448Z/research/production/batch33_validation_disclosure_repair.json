@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-05T17:32:02.449370+00:00",
+  "initial_run": "python tools/validate_learning_batch.py",
+  "initial_error": "Traceback (most recent call last):\n  File \"/workspace/IntegratedMath-book/tools/validate_learning_batch.py\", line 2748, in <module>\n    main()\n  File \"/workspace/IntegratedMath-book/tools/validate_learning_batch.py\", line 2610, in main\n    require(phrase in text, \"Missing scope/figure disclosure: \" + phrase)\n  File \"/workspace/IntegratedMath-book/tools/validate_learning_batch.py\", line 44, in require\n    raise ValueError(message)\nValueError: Missing scope/figure disclosure: 第一部分14个G节的专题来源仍待核实\n",
+  "repair": "Only required exact disclosure strings updated: 14 pending G sources to 11, 66 bridge units to 69; assertions retained. Independent review recorded missed initial check.",
+  "validator_sha256": "7743d2810c2a67ec949e727e226ec3628f659b63b1c834493ccc8ccef36c9b5b",
+  "rebuild": "python tools/build_learning_batch.py --incremental",
+  "rebuild_log": "{\"status\": \"built\", \"artifacts\": [\"综合数学_基础续写审阅版\", \"综合数学\"], \"next\": \"python tools/validate_learning_batch.py\"}\n",
+  "rebuild_scope": "Hash-verified legacy artifacts reused; both combined PDFs and HTML rebuilt; no manual manifest hash replacement.",
+  "final_validation": "running; not yet accepted"
+}

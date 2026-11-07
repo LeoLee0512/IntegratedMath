@@ -1,0 +1,31 @@
+{
+  "reviewer": "/root/part1_audit",
+  "reviewed_at": "2026-11-05T16:33:38.381710+00:00",
+  "status": "limited_source_mapping_supported_proposal_only",
+  "actual_proposal_sha256": "f12f16a3fe0cbe33eb88d655d89c4ff260e01a3b8d99dda6f73d76a64f16bf14",
+  "validator_result": {
+    "status": "verified",
+    "source_ids": [
+      "SRC-S4-STACKS-SCHEMES"
+    ],
+    "blocking_issues": []
+  },
+  "baseline_sha256_unchanged": {
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "research/production/part1_scope_plan.json": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+    "research/production/part1_topic_sources.json": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6"
+  },
+  "formal_source_counts_unchanged": {
+    "verified_G": 4,
+    "pending_G": 14,
+    "original_TS": 15
+  },
+  "after_authorized_rebinding_expected": {
+    "verified_G": 5,
+    "pending_G": 13,
+    "original_TS": 15
+  },
+  "requires_new_math_ped_build_visual_bindings": true,
+  "repo_modified": false
+}

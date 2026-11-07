@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "status": "author check; independent review pending",
+  "source": {
+    "author": "Robert A. Beezer",
+    "title": "A First Course in Linear Algebra",
+    "version": "3.50",
+    "commit": "347f27fe909b54b26970bcc0fcbf69c7e853c766",
+    "license": "GFDL 1.2 or later, no invariant sections or cover texts"
+  },
+  "network_requests": 2,
+  "discovery": "Exact S/SS source paths observed in prior fixed-commit native GitHub src listing under /tmp/finite-linear-combinations-source-cache/tree.html; no API use or blocked-domain retry.",
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-S.xml",
+      "checked_at_utc": "2026-11-05T18:33:57.409264+00:00",
+      "status": 200,
+      "bytes": 59499,
+      "sha256": "1b3675dd97f9664dd35cb6ee784ddec13f5be27d707e6025fd3541cdc3a182db",
+      "cache": "/tmp/finite-coordinate-subspaces-source-cache/section-S.xml",
+      "actual_read_ranges": [
+        "1–28",
+        "90–136",
+        "170–229",
+        "413–482",
+        "789–835"
+      ],
+      "adopted_scope": "concrete restriction of nonempty/closure subspace test and span-closure reasoning; closure-counterexample contrast ideas used with independently chosen real coordinate conditions, calculations and solutions; abstract/matrix tail read only to delimit scope"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-SS.xml",
+      "checked_at_utc": "2026-11-05T18:33:57.443873+00:00",
+      "status": 200,
+      "bytes": 72323,
+      "sha256": "8ee6479f3d3732d90b96d2829a62612a7670c8adbc1a6d68a383e455f3c72f14",
+      "cache": "/tmp/finite-coordinate-subspaces-source-cache/section-SS.xml",
+      "actual_read_ranges": [
+        "1–38"
+      ],
+      "adopted_scope": "finite column-vector span definition and distinction between original listed vectors and all outputs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "actual_read_ranges": [
+        "full"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "cache": "local-inputs/pending-batch28/source-cache/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "actual_read_ranges": [
+        "1–22"
+      ],
+      "access": "existing fixed-commit cache directly reread; no new request",
+      "original_retrieval_metadata": "local-inputs/pending-batch28/real_plane_metric_sources.json"
+    }
+  ],
+  "adoption_boundaries": [
+    "Book limits to real V_n function tables and defines subspaces by zero/addition/all-real-scalar closure, not source abstract complex vector-space framework.",
+    "Source closure-counterexample ideas informed contrasting failure of addition/scalar closure. This book uses independently chosen real-coordinate sets and writes full computations/solutions; no source solution text is reproduced or translated. Exercise 3 adds K={x∈V2:x1=0 or x1=x0} with (1,0)+(1,1)=(2,1), distinct from source union-of-coordinate-axes example.",
+    "The read source spans do not supply our explicit single-supported finite-real-table sum induction, unit-coefficient coordinate proof or full term-count induction for minimality. These are independently proved from RFS/FLC.",
+    "Same-range table invariance is proved only after minimality; no use or claim of arbitrary sum rearrangement.",
+    "No matrix, basis, dimension, abstract vector-space, arbitrary-family span or elimination result adopted."
+  ],
+  "cache_preservation": "New originals remain /tmp per root freeze. Preserve later to ignored local-inputs, update metadata paths, never distribute originals.",
+  "plan": {
+    "actual_path": "/tmp/finite-coordinate-subspaces-draft/finite_coordinate_subspaces_plan.md",
+    "sha256": "25c49f4f52e52a695eb3f2e8749ea828664fe41356973e3a5b0d26faa56c9fa8"
+  },
+  "prerequisite_files": {
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+    "/workspace/IntegratedMath-book/manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd"
+  },
+  "manuscripts": [
+    {
+      "actual_path": "/tmp/finite-coordinate-subspaces-draft/finite_coordinate_subspaces.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_subspaces.md",
+      "sha256": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97",
+      "lines": 240
+    },
+    {
+      "actual_path": "/tmp/finite-coordinate-subspaces-draft/finite_coordinate_subspaces_answers.md",
+      "intended_path": "manuscript/foundations/finite_coordinate_subspaces_answers.md",
+      "sha256": "93847c7812c470fb727c277edd5853ea64f0071b63ec4776c65ec9d8330f29dc",
+      "lines": 168
+    }
+  ]
+}

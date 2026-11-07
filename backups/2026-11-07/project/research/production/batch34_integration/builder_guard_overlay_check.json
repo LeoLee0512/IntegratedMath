@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-05T18:11:33.659272+00:00",
+  "scope": "Execute only exact AST UNITS/B3_UNITS/hashes/check_batch34_prerequisites; ledger definitions imported with non-main name; no builder/validator/main/compose/render invoked",
+  "results": {
+    "actual_proposal_72_registration_8_10_sources": "passed",
+    "actual_ledger_counts": {
+      "G_topic_verified": 8,
+      "G_topic_pending": 10,
+      "T_S_original_work_reviewed_separately": 15
+    },
+    "actual_00B05_scope_status": "verified",
+    "72_registration_with_preserved_frozen_7_11_sources": {
+      "rejected": true,
+      "message": "Batch34 ten-gap disclosure requires the applied 00B05 source revision"
+    },
+    "actual_old_69_registration_with_proposal_sources": {
+      "rejected": true,
+      "message": "Batch34 requires the reviewed 72-unit registration in matching order"
+    },
+    "proposal_with_one_source_hash_changed": {
+      "rejected": true,
+      "message": "Part1 source ledger does not bind the current eight source files"
+    },
+    "actual_root_applied_8_10_sources": "passed"
+  },
+  "builder_sha256": "efa3639ac6753e7b6fa45a5f3778121ce67b07962bc70f82329c7adbdb80efb1",
+  "registration_sha256": "5f7e554207ba99ed089941c5ef46e74dae52e3e6b8e3c8daeff15befd2a7114f",
+  "proposal_ledger_sha256": "e209568a667a3e7e95d697122044b6cdfb0e2e98911e2ffcf6dced2440cd7442",
+  "proposal_scope_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+  "formal_files_modified": false,
+  "artifacts_generated": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-05T16:54:04.795823+00:00",
+  "scope": "Companion source-only drafts, outside66-unit/555-pair PDFs and acceptance.",
+  "draft_units": [
+    "B4.8 real_continuous_composition",
+    "B4.9 real_intermediate_value",
+    "B4.10 real_monotone_inverse"
+  ],
+  "files": [
+    {
+      "path": "manuscript/foundations/real_continuous_composition.md",
+      "sha256": "f540326588227d38dc0b8222405ed461f3929d782eb46732dbd6631c87d52ff8",
+      "heading": "## 基础单元 B4.8 连续复合与局部定义域 {#ccomp-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_continuous_composition_answers.md",
+      "sha256": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3",
+      "heading": "## 基础单元 B4.8 课后题完整解答 {#ccomp-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_intermediate_value.md",
+      "sha256": "e79d53a89cf8266f39d76a3f4f35b3e3baecf99d8bfa3db9d679872b37e7f676",
+      "heading": "## 基础单元 B4.9 闭区间上的介值定理 {#ivt-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_intermediate_value_answers.md",
+      "sha256": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a",
+      "heading": "## 基础单元 B4.9 课后题完整解答 {#ivt-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_monotone_inverse.md",
+      "sha256": "aa73190cef81d69e88e4aa638839a842591879c3a558ce8964ba038e9f5bd661",
+      "heading": "## 基础单元 B4.10 闭区间上的严格单调与逆函数连续性 {#minv-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/real_monotone_inverse_answers.md",
+      "sha256": "484f3c09517abd115d97649a58b7a68cb347fa041059499baefcc061cf3a2ac9",
+      "heading": "## 基础单元 B4.10 课后题完整解答 {#minv-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    }
+  ],
+  "registered_unit_count": 66,
+  "built_exercise_pairs": 555,
+  "no_inferred_acceptance_from_inclusion": true,
+  "pending_note": "B4.10 still requires independent review and wording correction in answer8: right-side wording should identify the left-side product; current bytes frozen solely for this draft snapshot."
+}

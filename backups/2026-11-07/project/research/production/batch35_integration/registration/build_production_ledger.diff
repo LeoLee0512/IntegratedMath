@@ -1,0 +1,321 @@
+--- base/build_production_ledger.diff
++++ proposed75/build_production_ledger.diff
+@@ -165,6 +165,12 @@
+ # Batch34 third bounded unit: B3.3 uses the frozen fct-unit source unchanged.
+ BRIDGE += ['manuscript/foundations/finite_counting_reindex.md',
+  'manuscript/foundations/finite_counting_reindex_answers.md']
++# FRC candidate: B4.L1 distinguishes the linear-algebra branch from analysis B4.1--10.
++BRIDGE += ['manuscript/foundations/finite_real_coordinates.md', 'manuscript/foundations/finite_real_coordinates_answers.md']
++# RFS candidate follows FRC in reading order; B2.39 is the stable learning identifier.
++BRIDGE += ['manuscript/foundations/finite_real_sums.md', 'manuscript/foundations/finite_real_sums_answers.md']
++# FLC candidate consumes precise FRC and RFS interfaces; keeps old learning identifiers.
++BRIDGE += ['manuscript/foundations/finite_coordinate_combinations.md', 'manuscript/foundations/finite_coordinate_combinations_answers.md']
+ # Each tuple: module id, stage, title, prerequisite module ids, MSC locating tags.
+ MODULES = [
+  ('reading','B0','阅读数学与核查论证',[],['00']),
+@@ -188,7 +194,7 @@
+  ('prime-factorization','B1','素数与唯一分解',['coprimality','natural-order'],['11']),
+  ('relations-units','B1','等式、不等式、比例与单位',['rational-order'],['11','26','97']),
+  ('functions','B2','变量、函数、坐标与图像',['relations-units'],['03','26','97']),
+- ('real-algebra-equations','B2','实数方程与配方界',['functions','number-systems'],['97']),
++ ('real-algebra-equations','B2','实数代数：有限和、方程与配方界',['functions','number-systems'],['97']),
+  ('real-plane-geometry','B2','实数坐标、位移与欧氏距离',['functions','number-systems'],['97','51','54']),
+  ('elementary-geometry','B2','图形、长度与面积',['relations-units'],['51']),
+  ('logic-sets','B3','集合、量词、映射与证明规则',['relations-units','functions'],['03']),
+@@ -298,11 +304,12 @@
+                    'relations-units':BRIDGE[38:42:2],
+                    'functions':BRIDGE[42:82:2],
+                    'number-systems':BRIDGE[82:108:2],
+-                   'real-algebra-equations':BRIDGE[108:110:2],
++                   'real-algebra-equations':BRIDGE[108:110:2]+BRIDGE[146:148:2],
+                    'real-plane-geometry':BRIDGE[110:118:2],
+                    'single-analysis':BRIDGE[118:138:2],
+                    'logic-sets':BRIDGE[138:142:2],
+-                   'induction-counting':BRIDGE[142:144:2]}.get(mid,[])
++                   'induction-counting':BRIDGE[142:144:2],
++                   'linear-algebra':BRIDGE[144:146:2]+BRIDGE[148:150:2]}.get(mid,[])
+         modules.append({'id': mid, 'stage': stage, 'title': title, 'prerequisites': deps,
+                         'msc_tags': tags, 'source_files': existing(root, planned),
+                         'implementation_status': 'partial_draft' if existing(root, planned) else 'unwritten',
+@@ -331,6 +338,23 @@
+             modules[-1]['definition_and_theorem_anchors'] = [
+                 anchor_ref(root, BRIDGE[142], anchor) for anchor in
+                 ['fct-indices','fct-swap','fct-injection-bound','fct-cardinality','fct-equal-size','fct-reindex']]
++        if mid == 'linear-algebra':
++            modules[-1]['coverage'] = {
++                'scope': 'registered_real_coordinate_and_combination_units_draft' if existing(root, planned) else 'none',
++                'completed': False,
++                'written_topics': [topic for path, topics in [(BRIDGE[144], ['B4.L1有限实数坐标函数表、逐坐标运算规律、消去条件、重编号及二维模型连接']), (BRIDGE[148], ['B4.L2加权实数表构造有限坐标组合、两零参数、五项运算规则及具体表示边界'])] if existing(root, [path]) for topic in topics],
++                'unwritten_topics': ['一般向量和递归、任意项重排与双重和换序', '张成、抽象向量空间与一般线性映射', '线性相关、基、维数、秩、lineability、矩阵与行列式'],
++                'boundary': '只登记15A03的B4.L1有限坐标和B4.L2具体线性组合局部；旧B4.1—B4.10分析编号不改；不授予模块或第84章完成'}
++            modules[-1]['definition_and_theorem_anchors'] = [
++                anchor_ref(root, BRIDGE[144], anchor) for anchor in
++                ['frc-model','frc-operations','frc-additive-laws','frc-scalar-laws','frc-cancellation','frc-reindex','frc-plane-compatibility']] + [
++                anchor_ref(root, BRIDGE[148], anchor) for anchor in ['flc-data','flc-definition','flc-coefficients','flc-scaling','flc-vector-addition','flc-concatenation','flc-reindex']]
++            modules[-1]['scope_boundary'] = {
++                'exact_unit_prerequisites': 'B4.L1沿原逐锚入口；B4.L2必须先有B4.L1及B2.39的实数和接口。模块图是概略规划，不能替代每单元精确先修，也不把整个实数方程模块当B4.L1先修',
++                'adopted_background': '给定集合间函数集合存在与合法唯一逐输入函数构造背景',
++                'unit_dependency_interfaces': {'B4.L2': {'B4.L1': ['frc-model','frc-operations','frc-additive-laws','frc-scalar-laws','frc-reindex'], 'B2.39': ['rfs-definition','rfs-prefix-table','rfs-linearity','rfs-concatenation','rfs-padding']}, 'B2.39_module': 'real-algebra-equations'},
++                'real_finite_sums_used_by_B4_L2': True,
++                'dimension_theorem_used': False}
+         if mid == 'rational-arithmetic':
+             arithmetic_parts = [
+                 (BRIDGE[28], ['加法与代表无关性', '相反数、加法消去与减法',
+@@ -496,17 +520,18 @@
+                 'note': '向functions及number-systems单向取先修；36取35及33的精确接口；37不依赖36距离或38，38取35—37及实数平方绝对值；均不需31或34。保留广义elementary-geometry未来模块。'}
+         if mid == 'real-algebra-equations':
+             modules[-1]['coverage'] = {
+-                'scope': 'registered_real_quadratic_unit_draft' if existing(root, planned) else 'none',
+-                'written_topics': ['实数配方及判别式恒等式', '双向仿射换元与全部参数解集', '配方全局界与唯一达到输入'] if existing(root, planned) else [],
+-                'unwritten_topics': ['一般实形式多项式系统', '高次实方程和一般不等式系统', '微分与一般极值理论'],
++                'scope': 'registered_real_algebra_units_draft' if existing(root, planned) else 'none',
++                'written_topics': [topic for path, topics in [(BRIDGE[108], ['实数配方及判别式恒等式', '双向仿射换元与全部参数解集', '配方全局界与唯一达到输入']), (BRIDGE[146], ['B2.39固定状态递归实数有限和、前缀与延拓、逐项规则、连续拼接、补零及有理嵌入相容'])] if existing(root, [path]) for topic in topics],
++                'unwritten_topics': ['一般实形式多项式系统', '高次实方程和一般不等式系统', '任意实数有限和重排、双重和与无限级数', '抽象线性空间（具体坐标组合由另模块B4.L2提供）', '微分与一般极值理论'],
+                 'completed': False,
+-                'note': '仅B2.34实际教学目标；这是学习模块，不新增分类章或叶。'}
++                'note': '仅B2.34与B2.39实际教学目标；B2.39主归97H20而非方程叶97H30，沿既有模块扩充实数代数局部，不新增模块、分类章或叶。'}
+             modules[-1]['definition_and_theorem_anchors'] = [
+                 anchor_ref(root, BRIDGE[108], a) for a in [
+-                    'realquad-completion', 'realquad-discriminant', 'realquad-solutions', 'realquad-bounds']]
++                    'realquad-completion', 'realquad-discriminant', 'realquad-solutions', 'realquad-bounds']] + [
++                anchor_ref(root, BRIDGE[146], a) for a in ['rfs-definition','rfs-prefix-table','rfs-linearity','rfs-concatenation','rfs-padding','rfs-rational-compatibility']]
+             modules[-1]['scope_boundary'] = {
+-                'entry_domain': '已构造的实数有序域及非负平方根；全部实数候选域',
+-                'note': '单向依赖functions的集合函数语言和number-systems的实数运算/平方根；不反向改变旧functions模块依赖。精确先修按单元锚定位，B2.34不依赖B2.31或B2.33；旧有理配方仅为结构对照。'}
++                'entry_domain': 'B2.34使用实数有序域及非负平方根；B2.39只用自然规则、函数与实数加乘接口，不以平方根或二次方程为先修',
++                'note': '保留单向依赖functions与number-systems；不把实数和塞回早期有理functions模块造成先修混淆。各单元精确锚独立登记；B2.34不依赖B2.31或B2.33，B2.39也不依赖B2.34或FRC。RFS6的旧有理求和定义仅用于嵌入相容，不能代替新实数和的构造。'}
+         if mid == 'number-systems':
+             number_parts = [
+                 (BRIDGE[82], ['有理中点稠密与显式自然数界', '上界与上确界、平方缺口和无有理上确界']),
+@@ -3473,6 +3498,212 @@
+                      'research/production/finite_counting_reindex_math_review.md',
+                      'research/production/finite_counting_reindex_pedagogy_source_review.md']}]
+ 
++# FRC only; other unreviewed drafts are not registered.
++UNIT_SPECS += [{'parent_code': '15Axx',
++  'parent_chapter_number': 84,
++  'part_code': '15-XX',
++  'msc_leaf_codes': ['15A03'],
++  'msc_cross_reference_codes': [],
++  'module_ids': ['linear-algebra'],
++  'code': 'B4.L1',
++  'number': 73,
++  'title': '有限实数坐标与逐坐标运算',
++  'anchor': 'frc-unit',
++  'body': 'manuscript/foundations/finite_real_coordinates.md',
++  'answers': 'manuscript/foundations/finite_real_coordinates_answers.md',
++  'goals': ['以I_n到实数的函数记录定义有限实数坐标，辨认空表、长度与同域同目标判等',
++            '先核运算类型与闭合，再逐坐标证明向量加法和标量乘法的全部所需规律',
++            '分开证明加法消去、非零标量消去及非零向量见证，并处理零乘判据的双向与空表',
++            '证明置换重编号双逆及保持运算，并以明确双射连接旧二维有序对模型'],
++  'definitions': ['frc-model', 'frc-operations', 'frc-reindex'],
++  'proved': [['FRC1', 'frc-additive-laws', '向量加法群律与零和相反向量唯一性'],
++             ['FRC2', 'frc-scalar-laws', '标量结合、两侧分配与标量1'],
++             ['FRC3', 'frc-scalar-laws', '零标量、零向量及负一倍'],
++             ['FRC4', 'frc-cancellation', '带准确非零条件的消去、非零坐标见证与零乘双向判据'],
++             ['FRC5', 'frc-reindex', '置换重编号双逆且保持加法和标量乘法'],
++             ['二维桥接', 'frc-plane-compatibility', '有序对与二坐标函数表的双逆及运算相容']],
++  'questions': 'frc-q',
++  'answer_prefix': 'frc-a',
++  'not_covered': ['任意项数实数有限和、实数线性组合及任意有限求和重排',
++                  '抽象向量空间、子空间、线性相关、基、维数与维数不变定理',
++                  '秩、lineability、矩阵、线性映射的一般理论和行列式',
++                  '整个15A03、15Axx与linear-algebra模块；不新增分类章或节'],
++  'prerequisites': [['manuscript/foundations/natural_order.md', 'ord-trichotomy'],
++                    ['manuscript/foundations/natural_order.md', 'ord-strict-equivalence'],
++                    ['manuscript/foundations/logic_connectives_quantifiers.md',
++                     'lcq-scope-negation'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-sets'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-pairs'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-definition'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-equality'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-composition'],
++                    ['manuscript/foundations/functions_inverse.md', 'inv-two-sided'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-indices'],
++                    ['manuscript/foundations/finite_counting_reindex.md', 'fct-reindex'],
++                    ['manuscript/foundations/dedekind_addition.md', 'cutadd-definition'],
++                    ['manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'],
++                    ['manuscript/foundations/dedekind_additive_order.md', 'cutgroup-inverses'],
++                    ['manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-definition'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-signs'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-associative'],
++                    ['manuscript/foundations/dedekind_signed_product.md',
++                     'cutsigned-rational-zero'],
++                    ['manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'],
++                    ['manuscript/foundations/dedekind_ring_order.md', 'cutring-cancellation'],
++                    ['manuscript/foundations/dedekind_addition.md', 'cutadd-rational'],
++                    ['manuscript/foundations/real_plane_affine.md', 'realplane-model'],
++                    ['manuscript/foundations/real_plane_affine.md', 'realplane-operations']],
++  'structural_comparisons': [('manuscript/foundations/finite_sums.md',
++                              'sum-definition',
++                              '旧有限和的值域为有理数；仅用于说明不能直接替代尚未定义的实数有限和')],
++  'adopted': [['frc-model', '公开采用已给集合间全部函数记录组成集合及逐输入唯一合法输出的构造背景；不声称从零证明ZFC公理']],
++  'adopted_external': [['manuscript/foundations/functions_definition.md',
++                        'fun-sets',
++                        '既有给定集合及条件子集背景']],
++  'source_records': ['research/production/finite_real_coordinates_next_plan.md',
++                     'research/production/finite_real_coordinates_sources.json',
++                     'research/production/finite_real_coordinates_source_reading.json',
++                     'research/production/finite_real_coordinates_math_review.md',
++                     'research/production/finite_real_coordinates_pedagogy_review.md']}]
++
++# RFS only; finite coordinate linear combinations remain unregistered.
++UNIT_SPECS += [{'parent_code': '97Hxx',
++  'parent_chapter_number': 528,
++  'part_code': '97-XX',
++  'msc_leaf_codes': ['97H20'],
++  'msc_cross_reference_codes': [],
++  'module_ids': ['real-algebra-equations'],
++  'code': 'B2.39',
++  'number': 74,
++  'title': '有限实数和：递归、逐项规则与拼接',
++  'anchor': 'rfs-unit',
++  'body': 'manuscript/foundations/finite_real_sums.md',
++  'answers': 'manuscript/foundations/finite_real_sums_answers.md',
++  'goals': ['从固定状态N×R更新构造唯一实数前缀和，区分空和、单项和及索引和值类型',
++            '证明前缀一致性、有限表零延拓合法及任意延拓同值',
++            '完整归纳证明逐项相加与固定实数缩放，逐步重组四项并核零负标量',
++            '核自然差与后段索引后证明连续拼接和尾补零，区分和值和函数记录相等',
++            '证明有理嵌入与新实数和相容，并用合法反例辨认逐项乘积错误'],
++  'definitions': ['rfs-definition', 'rfs-prefix-table', 'rfs-linearity', 'rfs-concatenation'],
++  'proved': [['RFS1', 'rfs-definition', '固定状态递归给实数部分和存在唯一'],
++             ['RFS2', 'rfs-prefix-table', '前缀相等决定和值及有限表延拓独立'],
++             ['RFS3', 'rfs-linearity', '逐项相加与固定实数缩放及有限表相容'],
++             ['RFS4', 'rfs-concatenation', '移位与连续表拼接的完整索引及和值公式'],
++             ['RFS5', 'rfs-padding', '零表和为零与尾补零保和值'],
++             ['RFS6', 'rfs-rational-compatibility', '有理序列及有限表嵌入与实数和相容']],
++  'questions': 'rfs-q',
++  'answer_prefix': 'rfs-a',
++  'not_covered': ['无限级数、部分和极限及任意有限重排',
++                  '双重求和与换序、抽象群求和、一般向量和递归',
++                  '有限坐标向量线性组合、基、维数与抽象线性空间',
++                  '整个97H20初等代数教育、97Hxx及实数代数模块'],
++  'prerequisites': [['manuscript/foundations/natural_numbers.md', 'b1-induction'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-recursion-principle'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-addition-definition'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-add-one'],
++                    ['manuscript/foundations/natural_numbers.md', 'b1-addition-associative'],
++                    ['manuscript/foundations/natural_order.md', 'ord-successor-comparison'],
++                    ['manuscript/foundations/natural_order.md', 'ord-trichotomy'],
++                    ['manuscript/foundations/natural_order.md', 'ord-partial-order'],
++                    ['manuscript/foundations/natural_order.md', 'ord-strict-equivalence'],
++                    ['manuscript/foundations/natural_order.md', 'ord-addition-order'],
++                    ['manuscript/foundations/natural_order.md', 'ord-cancellation'],
++                    ['manuscript/foundations/natural_subtraction.md', 'sub-definition'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-pairs'],
++                    ['manuscript/foundations/functions_definition.md', 'fun-definition'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-equality'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-indices'],
++                    ['manuscript/foundations/dedekind_addition.md', 'cutadd-definition'],
++                    ['manuscript/foundations/dedekind_additive_order.md', 'cutgroup-laws'],
++                    ['manuscript/foundations/dedekind_additive_order.md', 'cutgroup-inverses'],
++                    ['manuscript/foundations/dedekind_additive_order.md',
++                     'cutgroup-negation-subtraction'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-definition'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-signs'],
++                    ['manuscript/foundations/dedekind_signed_product.md',
++                     'cutsigned-rational-zero'],
++                    ['manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'],
++                    ['manuscript/foundations/dedekind_addition.md', 'cutadd-unit'],
++                    ['manuscript/foundations/dedekind_addition.md', 'cutadd-rational'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-definition'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-extensionality'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-composition']],
++  'adopted_external': [['manuscript/foundations/natural_numbers.md',
++                        'b1-recursion-principle',
++                        '公开采用的固定更新递归原则，用于N×R；不声称此处证明集合论递归定理'],
++                       ['manuscript/foundations/natural_numbers.md',
++                        'b1-induction',
++                        '公开采用普通归纳原则以证明部分和规律'],
++                       ['manuscript/foundations/functions_definition.md',
++                        'fun-pairs',
++                        '给定集合与集合积背景']],
++  'source_records': ['research/production/finite_real_sums_linear_combinations_plan.md',
++                     'research/production/finite_real_sums_sources.json',
++                     'research/production/finite_real_sums_author_check.md',
++                     'research/production/finite_real_sums_math_review.md',
++                     'research/production/finite_real_sums_pedagogy_review.md']}]
++
++# FLC final reviewed source only; no further units pre-registered.
++UNIT_SPECS += [{'parent_code': '15Axx',
++  'parent_chapter_number': 84,
++  'part_code': '15-XX',
++  'msc_leaf_codes': ['15A03'],
++  'msc_cross_reference_codes': [],
++  'module_ids': ['linear-algebra'],
++  'code': 'B4.L2',
++  'number': 75,
++  'title': '有限坐标向量的线性组合',
++  'anchor': 'flc-unit',
++  'body': 'manuscript/foundations/finite_coordinate_combinations.md',
++  'answers': 'manuscript/foundations/finite_coordinate_combinations_answers.md',
++  'goals': ['区分向量项数m与坐标数n，以合法的加权实数表和构造唯一组合向量',
++            '分别核两个零参数及一项两项与既有运算相容，不预用一般向量求和',
++            '逐坐标证明系数相加、两位置共同缩放及同型向量项相加',
++            '核同步拼接和固定坐标重编号，区分项索引与坐标索引并避免未经证明的重排换序',
++            '用具体表辨认表示不唯一和不可达，不提前使用张成、基、维数'],
++  'definitions': ['flc-data', 'flc-definition'],
++  'proved': [['FLC1', 'flc-definition', '加权实数表定义组合的合法唯一性、两零参数及一两项相容'],
++             ['FLC2', 'flc-coefficients', '同向量表的系数逐项相加'],
++             ['FLC3', 'flc-scaling', '共同标量放在系数或向量项两处的缩放及零数据'],
++             ['FLC4', 'flc-vector-addition', '同型向量项逐点相加'],
++             ['FLC5', 'flc-concatenation', '同切点同步拼接的组合公式'],
++             ['FLC6', 'flc-reindex', '坐标重编号保持组合与双逆恢复，不重排向量项']],
++  'questions': 'flc-q',
++  'answer_prefix': 'flc-a',
++  'not_covered': ['一般向量和递归、任意向量项置换不变及双重求和换序',
++                  '张成、抽象向量空间、线性相关、基、维数、秩及lineability',
++                  '矩阵、行列式及一般线性映射理论',
++                  '整个15A03、第84章与linear-algebra模块'],
++  'prerequisites': [['manuscript/foundations/finite_real_coordinates.md', 'frc-model'],
++                    ['manuscript/foundations/finite_real_coordinates.md', 'frc-operations'],
++                    ['manuscript/foundations/finite_real_coordinates.md', 'frc-additive-laws'],
++                    ['manuscript/foundations/finite_real_coordinates.md', 'frc-scalar-laws'],
++                    ['manuscript/foundations/finite_real_coordinates.md', 'frc-reindex'],
++                    ['manuscript/foundations/finite_real_sums.md', 'rfs-definition'],
++                    ['manuscript/foundations/finite_real_sums.md', 'rfs-prefix-table'],
++                    ['manuscript/foundations/finite_real_sums.md', 'rfs-linearity'],
++                    ['manuscript/foundations/finite_real_sums.md', 'rfs-concatenation'],
++                    ['manuscript/foundations/finite_real_sums.md', 'rfs-padding'],
++                    ['manuscript/foundations/functions_composition.md', 'fc-equality'],
++                    ['manuscript/foundations/finite_sums.md', 'sum-indices'],
++                    ['manuscript/foundations/natural_order.md', 'ord-successor-comparison'],
++                    ['manuscript/foundations/natural_subtraction.md', 'sub-definition'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-signs'],
++                    ['manuscript/foundations/dedekind_signed_product.md', 'cutsigned-associative'],
++                    ['manuscript/foundations/dedekind_ring_order.md', 'cutring-distributive'],
++                    ['manuscript/foundations/dedekind_signed_product.md',
++                     'cutsigned-rational-zero']],
++  'adopted_external': [['manuscript/foundations/finite_real_coordinates.md',
++                        'frc-model',
++                        '沿FRC公开采用的给定集合间函数集合存在和逐输入合法唯一构造背景；不新增集合公理证明']],
++  'source_records': ['research/production/finite_coordinate_combinations_plan.md',
++                     'research/production/finite_coordinate_combinations_sources.json',
++                     'research/production/finite_coordinate_combinations_author_check.md',
++                     'research/production/finite_coordinate_combinations_math_review.md',
++                     'research/production/finite_coordinate_combinations_pedagogy_review.md']}]
++
+ def anchor_ref(root, path, anchor):
+     text = (root/path).read_text() if (root/path).is_file() else ''
+     found = '{#'+anchor+'}' in text or 'id="'+anchor+'"' in text
+@@ -3931,7 +4162,7 @@
+                 if code=='97Hxx':
+                     chapter['learning_entry'].update(status='bridge_entry_defined_chapter_pending',
+                         module_ids=['functions','real-algebra-equations'])
+-                    chapter['coverage']['unwritten_topics'] = '仅登记有理数一元一次方程、二元一次方程组、一次不等式、绝对值条件、非负整数幂、有限和、多项式规范记录、加法数乘、有限卷积乘法、乘积求值次数、首一线性商余、有理根与恒等识别、有理平方判据及有理配方二次方程、实数二次方程与配方界十五个教学桥接；一般多项式除法、根的重数及更高次根存在性、更一般不等式系统、高次方程、一般代数结构及代数教育研究仍待写'
++                    chapter['coverage']['unwritten_topics'] = '仅登记有理数一元一次方程、二元一次方程组、一次不等式、绝对值条件、非负整数幂、有限和、多项式规范记录、加法数乘、有限卷积乘法、乘积求值次数、首一线性商余、有理根与恒等识别、有理平方判据及有理配方二次方程、实数二次方程与配方界，以及B2.39有限实数和的递归、逐项规则、拼接及嵌入相容共十六个教学桥接；一般多项式除法、根的重数及更高次根存在性、更一般不等式系统、高次方程、一般代数结构及代数教育研究仍待写'
+                 if code=='97Gxx':
+                     chapter['learning_entry'].update(status='bridge_entry_defined_chapter_pending',
+                         module_ids=['real-plane-geometry'])
+@@ -3950,6 +4181,9 @@
+                 if code=='03Exx':
+                     chapter['learning_entry'].update(status='sets_counting_entries_defined_chapter_pending', module_ids=['logic-sets','induction-counting'])
+                     chapter['coverage']['unwritten_topics'] = '仅B3.2给定全集内的包含、相等及有限次运算，以及B3.3有限索引计数唯一性和重编号；关系、幂集基数、无限基数、公理集合论、选择原则与其余集合论未完成'
++                if code=='15Axx':
++                    chapter['learning_entry'].update(status='finite_real_coordinate_combination_entries_chapter_pending', module_ids=['linear-algebra'])
++                    chapter['coverage']['unwritten_topics'] = '仅B4.L1有限实数坐标与逐坐标运算、带条件消去、置换重编号和二维模型连接，以及B4.L2有限坐标线性组合的构造与规则；实数有限和先修由第528章B2.39提供。张成、抽象向量空间、线性相关、基、维数、秩、lineability、矩阵、一般线性映射、行列式及其余基础线性代数待写，第84章未完成'
+                 chapters.append(chapter)
+                 for leaf in children[code]:
+                     has_anchor = code=='00Axx' and '{#sec-'+leaf['code']+'}' in ch01_text

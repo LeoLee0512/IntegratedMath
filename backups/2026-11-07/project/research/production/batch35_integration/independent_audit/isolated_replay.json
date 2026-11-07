@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-05T18:54:44.604028+00:00",
+  "scope": "Only exact guard and two placement loops extracted from AST, registration definitions and literal new introductory paragraphs; no compose/main/builder/validator/render",
+  "results": {
+    "actual75_candidate_with_actual_8_10_ledger": "passed",
+    "actual_current72_registration": {
+      "rejected": true,
+      "message": "Batch35 requires the reviewed 75-unit registration in matching order"
+    },
+    "75_registration_with_RFS_before_FRC": {
+      "rejected": true,
+      "message": "Batch35 requires the reviewed 75-unit registration in matching order"
+    },
+    "RFS_wrongly_in_part15": {
+      "rejected": true,
+      "message": "B3 or finite-coordinate display metadata disagrees with the actual registration"
+    },
+    "actual_intro_and_three_source_text_positions": "passed",
+    "RFS_part_return_moved_after_its_unit": {
+      "rejected": true,
+      "message": "Finite-coordinate unit must be inside its own declared part/chapter: rfs-unit"
+    },
+    "actual_three_units_24_pairs_and_three_unique_source_anchors": "passed"
+  },
+  "builder_sha256": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+  "validator_sha256": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58",
+  "registration_tool_sha256": "dcae973168a9b5884a112b4d665ded3f1bb13ad9c6dece30874b022f58c53e1c",
+  "actual_scope_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+  "actual_topic_ledger_sha256": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+  "formal_files_modified": false,
+  "full_build_or_validator_executed": false
+}

@@ -1,0 +1,26 @@
+diff --git a/manuscript/foundations/real_monotone_inverse.md b/manuscript/foundations/real_monotone_inverse.md
+index e117509..4f30fad 100644
+--- a/manuscript/foundations/real_monotone_inverse.md
++++ b/manuscript/foundations/real_monotone_inverse.md
+@@ -181,7 +181,7 @@ $$
+ 
+ 这些反例没有证明“原函数不连续则逆必不连续”。实际像若有缺口，逆函数只在那个实际像上取输入，其相对连续性要另外检查。我们的定理只是给出一组充分条件，并未声称每项都是所有逆连续结论的必要条件。
+ 
+-**来源说明。** 本单元对照Jiří Lebl，*Basic Analysis I*，6.3，固定提交`e21ec524ca7d54f800c693b948020c188d21d01f`的[连续函数原生章节](https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex)。实际阅读第2950—2990行的单调定义及第3234—3333行的逆函数连续命题、证明与例子。源书的结论在任意实区间上只要求严格单调，甚至不要求原函数连续；源证明使用单侧极限、上下确界，并将只有一侧输入的边界留作练习。本单元范围更窄，独立以IV1确定有限闭区间的整段像，再完整写出三种中心的直接误差证明，不冒充复现源书证明，也不采用尚未建立的单侧极限规则。正文、例题及八题独立编写；外部TeX正文和图不收入本书稿。
++**来源说明。** 本单元对照Jiří Lebl，*Basic Analysis I*，6.3，所列固定版本的[连续函数原生章节](https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-contfunc.tex)。实际阅读第2950—2990行的单调定义及第3234—3333行的逆函数连续命题、证明与例子。源书的结论在任意实区间上只要求严格单调，甚至不要求原函数连续；源证明使用单侧极限、上下确界，并将只有一侧输入的边界留作练习。本单元范围更窄，独立以IV1确定有限闭区间的整段像，再完整写出三种中心的直接误差证明，不冒充复现源书证明，也不采用尚未建立的单侧极限规则。正文、例题及八题独立编写；外部TeX正文和图不收入本书稿。
+ 
+ ### 8. 课后练习 {#minv-exercises}
+ 
+diff --git a/manuscript/foundations/real_monotone_inverse_answers.md b/manuscript/foundations/real_monotone_inverse_answers.md
+index 90156dd..8d34d42 100644
+--- a/manuscript/foundations/real_monotone_inverse_answers.md
++++ b/manuscript/foundations/real_monotone_inverse_answers.md
+@@ -209,7 +209,7 @@ $$
+ (v-u)(v^2+vu+u^2)=v^3-u^3.
+ $$
+ 
+-确实右侧展开的中间项$v^2u-uv^2$与$vu^2-u^2v$分别相消。由于$v-u>0$，且$v>0$给$v^2>0$，另有$vu\ge0$、$u^2\ge0$，第二因子严格正。因此$v^3-u^3>0$，证明严格递增。
++展开左侧乘积后，中间项$v^2u-uv^2$与$vu^2-u^2v$分别相消。由于$v-u>0$，且$v>0$给$v^2>0$，另有$vu\ge0$、$u^2\ge0$，第二因子严格正。因此$v^3-u^3>0$，证明严格递增。
+ 
+ 端值$f(0)=0$、$f(1)=1$，MI1给实际像$J=[0,1]$。另设目标得到$F:[0,1]\to[0,1]$双射，INV1给逆$g:[0,1]\to[0,1]$。对每个$y\in[0,1]$，$g(y)$是该区间内唯一满足$(g(y))^3=y$的输入；这就是本题所定义的区间立方根，不涉及其他实数的输入或输出。它的实值版本$r:[0,1]\to\mathbb R$取$r(y)=g(y)$，MI3已给整个域上的连续性。
+ 

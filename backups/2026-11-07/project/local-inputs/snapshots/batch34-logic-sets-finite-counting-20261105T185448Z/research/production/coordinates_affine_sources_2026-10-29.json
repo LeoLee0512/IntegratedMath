@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "status": "source_audit_not_manuscript_review",
+  "checked_at_utc": "2026-10-29T17:13:56.006786+00:00",
+  "scope": "B2.9有理坐标与函数图；B2.10仿射函数图、斜率、截距、单调与交点。",
+  "network_context": {
+    "skill_and_network_reference_previously_read": true,
+    "policy_version": 1,
+    "vpn_configured": false,
+    "mode": "restricted",
+    "observations_current": true,
+    "final_network_state": "enforced",
+    "environment_state": "running",
+    "hosts_used": [
+      "raw.githubusercontent.com"
+    ],
+    "method": "继承代理及TLS验证，公开只读；未用凭据、认证、绕行、远程git。"
+  },
+  "requests": [
+    {
+      "request_id": "openstax_coordinates",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:37.860854+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml",
+      "bytes": 182816,
+      "sha256": "0ca3b9284188e75f0fda3b59093ece79f5e174152095a057e69d2889be79abd2",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_lines",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:37.861953+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml",
+      "bytes": 192242,
+      "sha256": "12157ddd00dae98c6c2cbddec512297110ec945d2a1e0bed207e1801ffab8ad4",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_slope",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81371/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:37.862782+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81371/index.cnxml",
+      "bytes": 123694,
+      "sha256": "a8d9b3cdd70107f7ee603d104ac9cdd4168b57acc9b19e2e8116fea3dccc2ed2",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_line_eq",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81372/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:37.863256+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81372/index.cnxml",
+      "bytes": 128075,
+      "sha256": "f434123faca9a5dc6fe31d6374098ba6b1138f3afc01889021de797d04f1655b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_functions",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81373/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:37.863670+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81373/index.cnxml",
+      "bytes": 151578,
+      "sha256": "2b606026c2b34cdf69acfa29bfe4b90abdb6961a322a78c7ec20107e0948b05c",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_graph_functions",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81374/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:06:38.264777+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81374/index.cnxml",
+      "bytes": 247332,
+      "sha256": "52552fb49a9c6fc323edbe7494be684546278bf85fa3ddb5f00b66889e1cf742",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "checked_at_utc": "2026-10-29T17:07:19.672474+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "checked_at_utc": "2026-10-29T17:07:19.673025+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "bytes": 23553,
+      "sha256": "f4d01bced59370e726f637a3d5b846ad77aa3536dba5a838cb00ceeadebd3033",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_prod",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Prod.lean",
+      "checked_at_utc": "2026-10-29T17:07:19.673488+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Prod.lean",
+      "bytes": 40921,
+      "sha256": "3a73445bdc0f82bbeee7092e8dfcc913c353f80471fa697d5e41afcf9456aeab",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_function",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Function.lean",
+      "checked_at_utc": "2026-10-29T17:07:19.674179+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Data/Set/Function.lean",
+      "bytes": 54997,
+      "sha256": "19b9a1f32b200d8c84102f87ed77422fc49729067279bad6e2cdae040d2b36b8",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_order",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:07:19.675126+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean",
+      "bytes": 61598,
+      "sha256": "fabe4035571efdafb4e0320f1ae1d2a7f423472e86de49f35e0afa4b010a457b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T17:07:19.948004+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_ring_order",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Basic.lean",
+      "checked_at_utc": "2026-10-29T17:07:32.812034+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Ring/Basic.lean",
+      "bytes": 9056,
+      "sha256": "e974bbf6c2d1385964f9aae9dda7959b528c3c93ba58cd6c9b6c6b25bdb8488c",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 13,
+    "http200": 13,
+    "failures": 0,
+    "independent_source_series": 2
+  },
+  "sources": [
+    {
+      "id": "COORD-OPENSTAX",
+      "title": "Intermediate Algebra 2e",
+      "authors": [
+        "Lynn Marecek",
+        "Andrea Honeycutt Mathis"
+      ],
+      "version": "osbooks-prealgebra-bundle commit ad40c7e3c9a909cde81a24c526f52fe26a51fb14",
+      "license": {
+        "name": "CC-BY-NC-SA-4.0",
+        "evidence": [
+          "openstax_license",
+          "openstax_preface"
+        ],
+        "locator": "m81357/index.cnxml lines20–26; LICENSE",
+        "use": "仅核数学事实、条件和教学边界，独立编写证明与题答，不拷贝题干、图表、连续正文；许可不可误写CC BY。图片另有例外说明，本批不使用图片。"
+      },
+      "checks": [
+        {
+          "request_id": "openstax_coordinates",
+          "location": "modules/m81369/index.cnxml，行48–70",
+          "locator": "m81369，fs-id1167834538411",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml#L48",
+          "finding": "有序对先横坐标后纵坐标。来源以通常几何平面为背景；本书只定义Q²为有理有序对集合，不能宣称所有实际几何点都有有理坐标。"
+        },
+        {
+          "request_id": "openstax_coordinates",
+          "location": "modules/m81369/index.cnxml，行88–97",
+          "locator": "m81369，fs-id1167835330675",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml#L88",
+          "finding": "横轴点的第二坐标为零，纵轴点的第一坐标为零；书稿用集合定义并保留原点同时在两轴上。"
+        },
+        {
+          "request_id": "openstax_coordinates",
+          "location": "modules/m81369/index.cnxml，行291–302",
+          "locator": "m81369，fs-id1167835350108",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml#L291",
+          "finding": "来源画三个点再连接的作图步骤只作展示参考；有限点不能证明函数在所有Q输入上的图，更不能把连笔曲线误作已构造的实连续点集。"
+        },
+        {
+          "request_id": "openstax_coordinates",
+          "location": "modules/m81369/index.cnxml，行458–472",
+          "locator": "m81369，fs-id1167832075518",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml#L458",
+          "finding": "x=c为竖直，y=b为水平。固定输入x下竖直集合有多个输出，水平集合给出常函数。"
+        },
+        {
+          "request_id": "openstax_coordinates",
+          "location": "modules/m81369/index.cnxml，行705–718",
+          "locator": "m81369，fs-id1167826874383",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81369/index.cnxml#L705",
+          "finding": "轴截点定义。书稿区分截点有序对与截距数值，补足零函数与非零常函数的横轴交集。"
+        },
+        {
+          "request_id": "openstax_lines",
+          "location": "modules/m81370/index.cnxml，行232–239",
+          "locator": "m81370，fs-id1167834504980",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml#L232",
+          "finding": "水平斜率为零，竖直斜率因分母零而未定义，不写无穷大斜率。"
+        },
+        {
+          "request_id": "openstax_lines",
+          "location": "modules/m81370/index.cnxml，行330–335",
+          "locator": "m81370，fs-id1167832041523",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml#L330",
+          "finding": "两点斜率差商，书稿必须显式要求x1≠x2；同一点与竖直两点另分支。"
+        },
+        {
+          "request_id": "openstax_lines",
+          "location": "modules/m81370/index.cnxml，行502–514",
+          "locator": "m81370，fs-id1167834194235",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml#L502",
+          "finding": "斜截式y=mx+b。书稿称仿射函数，固定a,b∈Q，不引入尚未定义的线性空间。"
+        },
+        {
+          "request_id": "openstax_lines",
+          "location": "modules/m81370/index.cnxml，行972–987",
+          "locator": "m81370，同斜率与不同截距",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81370/index.cnxml#L972",
+          "finding": "行972简说同斜率平行，行973的精确条件还要求不同纵截距；同斜率同截距是重合图，必须独立处理。竖直线斜率未定义。"
+        },
+        {
+          "request_id": "openstax_functions",
+          "location": "modules/m81373/index.cnxml，行56–60",
+          "locator": "m81373，关系的domain/range",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81373/index.cnxml#L56",
+          "finding": "来源由关系的第一、第二坐标集合定义域和值域；本书函数三元组另含声明目标集合，不能只由图恢复任意目标集合。"
+        },
+        {
+          "request_id": "openstax_functions",
+          "location": "modules/m81373/index.cnxml，行195–202",
+          "locator": "m81373，fs-id1167836614987",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81373/index.cnxml#L195",
+          "finding": "每个定义域输入恰一个输出；书稿须同时要求存在与唯一，包含空定义域边界。"
+        },
+        {
+          "request_id": "openstax_graph_functions",
+          "location": "modules/m81374/index.cnxml，行64–70",
+          "locator": "m81374，fs-id1167833386905",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81374/index.cnxml#L64",
+          "finding": "竖线至多交一点只保证在第一坐标投影域上的函数性；对预先给定D还须每个x∈D至少有一点且不含D外输入。"
+        },
+        {
+          "request_id": "openstax_graph_functions",
+          "location": "modules/m81374/index.cnxml，行128–141",
+          "locator": "m81374，fs-id1167829598148",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81374/index.cnxml#L128",
+          "finding": "图为全部(x,f(x))，不只是值表中有限样本。源实平面背景不直接继承到Q²。"
+        }
+      ]
+    },
+    {
+      "id": "COORD-MATHLIB",
+      "title": "mathlib sets, function graphs and ordered multiplication",
+      "version": "mathlib4 v4.24.0",
+      "license": {
+        "name": "Apache-2.0",
+        "evidence": [
+          "mathlib_license"
+        ],
+        "use": "只读公开源码核前提，不复制代码；未运行Lean，未形式化本书。"
+      },
+      "checks": [
+        {
+          "request_id": "mathlib_prod",
+          "location": "Mathlib/Data/Set/Prod.lean，行910–948",
+          "locator": "Set.mem_graphOn / graphOn_eq_empty / image_fst_graphOn / image_snd_graphOn / fst_injOn_graph / graphOn_inj",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Set/Prod.lean#L910",
+          "finding": "图的成员条件、空集边界、投影、第一投影单射及同域逐点相等；固定类型α,β和既有函数f，不等同于忽略目标集合的三元组。"
+        },
+        {
+          "request_id": "mathlib_function",
+          "location": "Mathlib/Data/Set/Function.lean，行414–435",
+          "locator": "graphOn_univ_inj / exists_eq_graphOn_image_fst / exists_eq_graphOn",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Data/Set/Function.lean#L414",
+          "finding": "逆向存在声明有[Nonempty β]且图定义在Prod.fst的像上，证明用choose!延拓到α全域。书稿按既有图式函数定义直接验证D上存在唯一，不照搬任意延拓或漏掉范围/存在条件。"
+        },
+        {
+          "request_id": "mathlib_order",
+          "location": "Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean，行581–597",
+          "locator": "strictMono_mul_left_of_pos / strictMono_mul_right_of_pos / StrictMono.const_mul",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean#L581",
+          "finding": "正倍数严格保序明确以0<a为前提；a<0和a=0的仿射分支由本书已证有理序律另证。不声称此段已给出全部负斜率/零斜率分类。"
+        }
+      ],
+      "authors_by_file": {
+        "mathlib_prod": [
+          "Mario Carneiro",
+          "Johannes Hölzl",
+          "Patrick Massot"
+        ],
+        "mathlib_function": [
+          "Jeremy Avigad",
+          "Andrew Zipperer",
+          "Haitao Zhang",
+          "Minchao Wu",
+          "Yury Kudryashov"
+        ],
+        "mathlib_order": [
+          "Damiano Testa",
+          "Yuyang Zhao"
+        ],
+        "mathlib_ring_order": [
+          "Jeremy Avigad",
+          "Robert Y. Lewis"
+        ]
+      }
+    }
+  ],
+  "supplementary_requests": [
+    {
+      "request_id": "openstax_slope",
+      "actual_title": "Find the Equation of a Line",
+      "use": "已抓取，核心条件已从Slope of a Line核定，不虚构额外逐段结论"
+    },
+    {
+      "request_id": "openstax_line_eq",
+      "actual_title": "Graph Linear Inequalities in Two Variables",
+      "use": "预先猜测模块序列后发现越出本批核心范围，仅保留真实抓取记录，不用于宣称覆盖"
+    },
+    {
+      "request_id": "mathlib_ring_order",
+      "use": "已抓取作候选检索；未找到需要的直接仿射负斜率声明，核心证据见mathlib_order及本书既有序律"
+    }
+  ],
+  "classification": {
+    "status": "registered_primary_scope_not_complete",
+    "primary_leaf": "97I20",
+    "parent_code": "97Ixx",
+    "parent_number": 529,
+    "part": "97-XX",
+    "part_number": 63,
+    "cross_tags_only": [
+      "97H30",
+      "97G70"
+    ],
+    "reason": "主教学目标为Q²中的函数图与仿射函数性质；97H30仅关联交点方程，97G70仅标坐标教学交叉，不登记为完整欧氏解析几何。",
+    "taxonomy_rows": [
+      {
+        "code": "26A03",
+        "level": "subject_leaf",
+        "parent_code": "26Axx",
+        "title_en": "Foundations: limits and generalizations, elementary topology of the line",
+        "title_zh": "基础：极限及其推广、直线上的初等拓扑",
+        "translation_method": "analysis"
+      },
+      {
+        "code": "51N20",
+        "level": "subject_leaf",
+        "parent_code": "51Nxx",
+        "title_en": "Euclidean analytic geometry",
+        "title_zh": "欧氏解析几何",
+        "translation_method": "msc_frontier"
+      },
+      {
+        "code": "97G70",
+        "level": "subject_leaf",
+        "parent_code": "97Gxx",
+        "title_en": "Analytic geometry, vector algebra (educational aspects)",
+        "title_zh": "解析几何与向量代数（教育方面）",
+        "translation_method": "root"
+      },
+      {
+        "code": "97Hxx",
+        "level": "intermediate",
+        "parent_code": "97-XX",
+        "title_en": "Algebra education",
+        "title_zh": "代数教育",
+        "translation_method": "root"
+      },
+      {
+        "code": "97H30",
+        "level": "subject_leaf",
+        "parent_code": "97Hxx",
+        "title_en": "Equations and inequalities (educational aspects)",
+        "title_zh": "方程与不等式（教育方面）",
+        "translation_method": "root"
+      },
+      {
+        "code": "97Ixx",
+        "level": "intermediate",
+        "parent_code": "97-XX",
+        "title_en": "Analysis education",
+        "title_zh": "分析学教育",
+        "translation_method": "root"
+      },
+      {
+        "code": "97I20",
+        "level": "subject_leaf",
+        "parent_code": "97Ixx",
+        "title_en": "Mappings and functions (educational aspects)",
+        "title_zh": "映射与函数（教育方面）",
+        "translation_method": "root"
+      }
+    ],
+    "not_assigned": [
+      "51N20",
+      "26A03"
+    ],
+    "completed": false,
+    "unit_codes": [
+      "B2.9",
+      "B2.10"
+    ],
+    "ledger_unit_numbers": [
+      30,
+      31
+    ],
+    "module": "functions"
+  },
+  "independent_derivation_checks": [
+    "Q²定义为Q×Q。点仅指有理有序对；(x,y)=(u,v)当且仅当x=u且y=v。两轴、原点与象限通过坐标零值和正负定义，不以未建立的欧氏平面作本体。",
+    "对给定D,B⊆Q，图H属于函数D→B的充要条件是H⊆D×B且每个x∈D恰有一个y∈B使(x,y)∈H。证明直接用函数三元组定义；H的第一投影是D，第二投影是实际输出像，目标B不能从图唯一恢复。",
+    "竖线至多相交一点只是输出唯一性；若某个声明输入没有点，则不是D上的函数。空图对应空定义域；对非空D空图失败。固定H、固定D和B时函数至多一个；改变B可保持同一图但改变函数。",
+    "横线H_b={(x,b):x∈Q}是常函数图，竖线V_c={(c,y):y∈Q}含(c,0)和(c,1)故不是横坐标作输入的函数图。若改纵坐标作输入须明确改变输入约定。",
+    "限制到S⊆D的图为H∩(S×Q)，目标集合沿用B；用成员条件双向证。有限值表与画点只作样本，不能决定无限域上整个函数。",
+    "令f:Q→Q，f(x)=ax+b，a,b∈Q。任意x1≠x2有f(x2)−f(x1)=a(x2−x1)，非零消去给差商a。证明斜率与所取不同横坐标的两点无关；反向排序同时改变分子分母符号。",
+    "给(x1,y1),(x2,y2)：x1≠x2时a=(y2−y1)/(x2−x1)，b=y1−ax1，代入证存在、相减证唯一。x1=x2且y1=y2时任取a后b=y1−ax1均适合；x1=x2且y1≠y2则无仿射函数经过两点。",
+    "纵轴交点恒为(0,b)。横轴交集：a≠0时{(−b/a,0)}；a=0,b≠0时空集；a=b=0时整条有理横轴。若用截距表示数值须先说明，不能把整轴交集误写唯一截点。",
+    "先定义严格递增、严格递减与常值。全Q上a>0严格递增，a<0严格递减，a=0常函数；用x2−x1>0与乘法符号逐向证明。逆向取0<1。空或单点D上的严格单调可真空成立，限制域时不得无条件说严格递增iff a>0。非严格单调仅为来源相关延伸；若使用非减/非增术语才先定义并说明常函数两者兼具，不把它登记为当前正文已教目标。",
+    "Γ(a,b)与Γ(c,d)交点：a≠c时x=(d−b)/(a−c)、y=ax+b且唯一；a=c,b=d时两图重合；a=c,b≠d时不交。分母a−c仅在非零分支出现。若定义域分别D,E再筛x∈D∩E。",
+    "可选桥接：Ax+By=C在Q²中，B≠0为仿射函数图；B=0,A≠0为竖直集合x=C/A；A=B=0,C=0为全Q²；A=B=0,C≠0为空集。先判参数再除法，关联SYS但不引入秩。",
+    "本批不建立实数完备性、连续性、欧氏距离、角度、垂直斜率积、任意实际点的坐标表示或完整解析几何。示意连接线只表示公式趋势，不表示本书已经定义全部实点。"
+  ],
+  "finite_crosscheck": {
+    "inputs": "Fraction(n,2), n=−4,…,4；另穷尽{0,1}²的16个关系与4个声明域",
+    "counts": {
+      "slope": 5832,
+      "monotonicity": 5832,
+      "intersections": 59049,
+      "axis_intersections": 729,
+      "graph_criterion": 64
+    },
+    "status": "passed",
+    "limitation": "有限检查仅验证分支表达式和反例覆盖，不能替代一般证明。"
+  },
+  "remaining_gates": [
+    "独立数学与教学审阅绑定当前稿哈希",
+    "构建、题答链接及视觉验收",
+    "最终QA后由主线程生成正式data/production台账"
+  ],
+  "distribution_boundary": "仅原创计划与元数据交付；外部教材、源码全文和题目不写入仓库。",
+  "promotion_note": "从已实核/tmp计划正式化，保留原checked_at_utc及逐请求访问时间/响应哈希；正式化不代表重新网络抓取，不授予书稿审阅或分类完成状态。",
+  "temporary_plan_sha256": "08f06ba137cf86fa4309590003044fb1b4fd5d41e06d5b6460cd24aaa4614d80",
+  "citation_anchor": "coordinates-affine-sources",
+  "actual_unit_targets": [
+    {
+      "code": "B2.9",
+      "number": 30,
+      "title": "有理坐标与函数图",
+      "body": "manuscript/foundations/rational_coordinates.md",
+      "answers": "manuscript/foundations/rational_coordinates_answers.md",
+      "main_anchor": "coord-unit",
+      "definition_anchors": [
+        "coord-model",
+        "coord-axes",
+        "coord-quadrants",
+        "coord-point-sets",
+        "coord-graph",
+        "coord-function-test"
+      ],
+      "proved": [
+        {
+          "proposition": "CO1",
+          "anchor": "coord-quadrants",
+          "title": "有理坐标点九类符号位置的完整互斥分类"
+        },
+        {
+          "proposition": "CO2",
+          "anchor": "coord-graph",
+          "title": "函数图的点成员判据及域与像的坐标读取"
+        },
+        {
+          "proposition": "CO3",
+          "anchor": "coord-function-test",
+          "title": "声明范围内逐横坐标存在且唯一的函数图判据"
+        },
+        {
+          "proposition": "CO4",
+          "anchor": "coord-intersections",
+          "title": "函数图与轴及另一函数图的共同点成员公式"
+        }
+      ],
+      "precise_prerequisites": [
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-sets",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-pairs",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-definition",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-empty",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-image",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_definition.md",
+          "anchor": "fun-representations",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-restriction",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-sign",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-subtraction",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-division",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-affine",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/linear_inequalities.md",
+          "anchor": "ineq-set-operations",
+          "status": "present"
+        }
+      ],
+      "exercise_count": 8,
+      "question_prefix": "coord-q",
+      "answer_prefix": "coord-a",
+      "scope": "actual_draft_targets_not_review_acceptance"
+    },
+    {
+      "code": "B2.10",
+      "number": 31,
+      "title": "仿射图像与方程交点",
+      "body": "manuscript/foundations/affine_graphs.md",
+      "answers": "manuscript/foundations/affine_graphs_answers.md",
+      "main_anchor": "affgraph-unit",
+      "definition_anchors": [
+        "affgraph-definition",
+        "affgraph-intercepts",
+        "affgraph-slope",
+        "affgraph-monotonicity",
+        "affgraph-vertical",
+        "affgraph-linear-relation"
+      ],
+      "proved": [
+        {
+          "proposition": "AG1",
+          "anchor": "affgraph-intercepts",
+          "title": "仿射图的纵轴唯一交点及横轴全部参数分支"
+        },
+        {
+          "proposition": "AG2",
+          "anchor": "affgraph-slope",
+          "title": "仿射输出差式与非零输入差下的恒定差商"
+        },
+        {
+          "proposition": "AG3",
+          "anchor": "affgraph-monotonicity",
+          "title": "全Q上严格单调或常值与系数符号的充要条件"
+        },
+        {
+          "proposition": "AG4",
+          "anchor": "affgraph-two-points",
+          "title": "不同横坐标两点确定唯一仿射函数"
+        },
+        {
+          "proposition": "AG5",
+          "anchor": "affgraph-intersection",
+          "title": "两仿射图唯一交点、不交或重合的完整分类"
+        }
+      ],
+      "precise_prerequisites": [
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-model",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-axes",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-point-sets",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-graph",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-function-test",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rational_coordinates.md",
+          "anchor": "coord-intersections",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/functions_composition.md",
+          "anchor": "fc-equality",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_multiplication.md",
+          "anchor": "rmul-distributive",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_division.md",
+          "anchor": "rdiv-division",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-laws",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-translation",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_order.md",
+          "anchor": "rord-multiplication",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-affine",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/linear_equations.md",
+          "anchor": "lin-two-sides",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/linear_systems.md",
+          "anchor": "sys-solution",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_construction.md",
+          "anchor": "rat-integers",
+          "status": "present"
+        },
+        {
+          "path": "manuscript/foundations/rationals_addition.md",
+          "anchor": "radd-cancellation",
+          "status": "present"
+        }
+      ],
+      "exercise_count": 8,
+      "question_prefix": "affgraph-q",
+      "answer_prefix": "affgraph-a",
+      "scope": "actual_draft_targets_not_review_acceptance"
+    }
+  ],
+  "registration_check": {
+    "temp_root": "/tmp/coordinates-ledger-check-2orwetrn",
+    "units": 31,
+    "foundation_questions": 248,
+    "ch01_questions": 14,
+    "total_questions": 262,
+    "draft_chapters": 5,
+    "draft_leaves": 27,
+    "completed_parts": 0,
+    "parts_push": "not_due",
+    "modules": 43,
+    "old_specs_unchanged": 29,
+    "old_bridge_paths_unchanged": 58,
+    "formal_json_unchanged": true,
+    "all_new_anchors_present": true,
+    "precise_prerequisites_forward": true,
+    "note": "Temporary copy does not include built PDFs, so build-review import is not a final artifact acceptance check."
+  },
+  "not_established": [
+    "本记录不代替两正文及16题全解的独立数学/教学审阅。",
+    "未编译Lean，未将本书形式化。",
+    "Q²代数模型不建立全部欧氏点、实数连续性、距离角度、完整解析几何或任何部分级完成。",
+    "精确有限检查只核条件表达式，不代替一般证明；外部题目、图和源码不转载。"
+  ],
+  "promotion": {
+    "origin": "/tmp/coordinates-sources-plan.json",
+    "origin_sha256": "08f06ba137cf86fa4309590003044fb1b4fd5d41e06d5b6460cd24aaa4614d80",
+    "source_requests_repeated_during_promotion": false,
+    "note": "沿用原checked_at_utc和13条真实响应；实际单元锚登记与临时台账验证不是新增网络访问。"
+  }
+}

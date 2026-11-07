@@ -1,0 +1,3215 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "target_type": "unit",
+      "target_id": "b1-natural-numbers",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "algebra_logic; incorporated by root",
+      "reviewed_at": "2026-10-27T12:49:45.566116+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_numbers.md": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+        "manuscript/foundations/natural_numbers_answers.md": "402eeac5b267f46d22aebb06979d5d9a511e1a3b5e4b1cf67329c58e149dc84a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/natural_numbers_math_review.md",
+          "sha256": "5d80168574175bef2b99a4a90e6a697cadd0f239afaabd20cd322d4804d85692"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "b1-natural-numbers",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T12:49:45.566281+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_numbers.md": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+        "manuscript/foundations/natural_numbers_answers.md": "402eeac5b267f46d22aebb06979d5d9a511e1a3b5e4b1cf67329c58e149dc84a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/foundations_pedagogy_review.md",
+          "sha256": "de453439edbdcd3eb3ffd82c3eea018d4c36d321038a1747a3df5e6bc0d19505"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "b1-place-value",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T12:49:45.566352+00:00",
+      "source_sha256": {
+        "manuscript/foundations/place_value.md": "93c1182d304b216a0a3b73cf4e4b2fd23dd370f31a9db8ffcd85c08eadf0fb45",
+        "manuscript/foundations/place_value_answers.md": "3ebc3dec1a1fdbee9857982260d180539d283efa9bb860bc027b894571f59dc8"
+      },
+      "evidence": [
+        {
+          "path": "research/production/place_value_math_review.md",
+          "sha256": "567abb9730edf4286bf0359fe9000ae55dfe07705420a45f2a2fb6e1139e45b9"
+        },
+        {
+          "path": "research/production/exercise_anchor_repair.json",
+          "sha256": "e49c583e5031f7fb6e274ede669e03d41a50946291348225bbbf5c9e6c805459"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval.",
+      "format_only_followup": "root verified only heading markup changed after independent substantive review"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "b1-place-value",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T12:49:45.566412+00:00",
+      "source_sha256": {
+        "manuscript/foundations/place_value.md": "93c1182d304b216a0a3b73cf4e4b2fd23dd370f31a9db8ffcd85c08eadf0fb45",
+        "manuscript/foundations/place_value_answers.md": "3ebc3dec1a1fdbee9857982260d180539d283efa9bb860bc027b894571f59dc8"
+      },
+      "evidence": [
+        {
+          "path": "research/production/foundations_pedagogy_review.md",
+          "sha256": "de453439edbdcd3eb3ffd82c3eea018d4c36d321038a1747a3df5e6bc0d19505"
+        },
+        {
+          "path": "research/production/exercise_anchor_repair.json",
+          "sha256": "e49c583e5031f7fb6e274ede669e03d41a50946291348225bbbf5c9e6c805459"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval.",
+      "format_only_followup": "root verified only heading markup changed after independent substantive review"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ord-natural-order",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169326+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_order.md": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+        "manuscript/foundations/natural_order_answers.md": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8"
+      },
+      "evidence": [
+        {
+          "path": "research/production/order_math_review.md",
+          "sha256": "eea26575b3c4f35f1e52aabfeb5de142ca2c112e23ff60be2d14a278c7ccdf1d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ord-natural-order",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169483+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_order.md": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+        "manuscript/foundations/natural_order_answers.md": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8"
+      },
+      "evidence": [
+        {
+          "path": "research/production/order_division_position_pedagogy_review.md",
+          "sha256": "dedb40f71b488b9f0abfc72b9aeec397420a2028ab4924577a7951fe71fc3107"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "div-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "msc_frontier; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169552+00:00",
+      "source_sha256": {
+        "manuscript/foundations/division_remainder.md": "4cb1a890810f4ca4f073fe8e93d12505dc4c0e286e5f7f0fcc36c405fe544354",
+        "manuscript/foundations/division_remainder_answers.md": "f72664b0b96390194c99cc3c533f0a7f8e9101934afd2307ae50d978b6f7752d"
+      },
+      "evidence": [
+        {
+          "path": "research/production/division_math_review.md",
+          "sha256": "c08aa2837d54b1b02d09bcc6fdf646e3b2ef64f2073c8a5ed35500a116d942e8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "div-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169618+00:00",
+      "source_sha256": {
+        "manuscript/foundations/division_remainder.md": "4cb1a890810f4ca4f073fe8e93d12505dc4c0e286e5f7f0fcc36c405fe544354",
+        "manuscript/foundations/division_remainder_answers.md": "f72664b0b96390194c99cc3c533f0a7f8e9101934afd2307ae50d978b6f7752d"
+      },
+      "evidence": [
+        {
+          "path": "research/production/order_division_position_pedagogy_review.md",
+          "sha256": "dedb40f71b488b9f0abfc72b9aeec397420a2028ab4924577a7951fe71fc3107"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "pos-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169677+00:00",
+      "source_sha256": {
+        "manuscript/foundations/positional_representation.md": "d1967565dd6e58c8980da21d33ba071dba401e8621141d5f15b9074153f82c09",
+        "manuscript/foundations/positional_representation_answers.md": "22b4a5ce490c8c45ffb0dff3e035cd35a15120006bd1f151b47fd78fbc5584fd"
+      },
+      "evidence": [
+        {
+          "path": "research/production/positional_math_review.md",
+          "sha256": "4e8789aa071a9b15301ff045cd94f3770e4cea111d18dd8597db06af7949433a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "pos-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T14:19:57.169740+00:00",
+      "source_sha256": {
+        "manuscript/foundations/positional_representation.md": "d1967565dd6e58c8980da21d33ba071dba401e8621141d5f15b9074153f82c09",
+        "manuscript/foundations/positional_representation_answers.md": "22b4a5ce490c8c45ffb0dff3e035cd35a15120006bd1f151b47fd78fbc5584fd"
+      },
+      "evidence": [
+        {
+          "path": "research/production/order_division_position_pedagogy_review.md",
+          "sha256": "dedb40f71b488b9f0abfc72b9aeec397420a2028ab4924577a7951fe71fc3107"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sub-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T14:28:17.788413+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_subtraction.md": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247",
+        "manuscript/foundations/natural_subtraction_answers.md": "0a2a1aee0113d6509234b4801c22cae3bbac727aa2f9e40adaf526249722739f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/subtraction_math_review.md",
+          "sha256": "57b5958aeff6fde2e80751c71bc0da3453ad74ae0001126fc042be53d65445dc"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sub-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T14:28:17.788532+00:00",
+      "source_sha256": {
+        "manuscript/foundations/natural_subtraction.md": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247",
+        "manuscript/foundations/natural_subtraction_answers.md": "0a2a1aee0113d6509234b4801c22cae3bbac727aa2f9e40adaf526249722739f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/subtraction_pedagogy_review.md",
+          "sha256": "88e93589c6bfe50670203600adf171464c92230a8db072bc4a96da167ce20ee9"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review within declared adopted axioms and unit objectives; not formal verification or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "int-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:02:07.403746+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integers_addition_order.md": "bd18f2b22e9a8b2ef116c5835140eb79beacc4499e489dbfc8e6a38c89778672",
+        "manuscript/foundations/integers_addition_order_answers.md": "d0caeb338721a568d7247541d9ae38902b6232e606ca4f510fe85fc341e7a185"
+      },
+      "evidence": [
+        {
+          "path": "research/production/integers_addition_order_math_review.md",
+          "sha256": "13a165b50be95a21002e2dab9d0eb1a1315eb903018e0712604087d675afc2fd"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and all eight solutions reviewed within declared natural-number and limited naive-set background; not formal verification, learner trials, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "int-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:02:07.403746+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integers_addition_order.md": "bd18f2b22e9a8b2ef116c5835140eb79beacc4499e489dbfc8e6a38c89778672",
+        "manuscript/foundations/integers_addition_order_answers.md": "d0caeb338721a568d7247541d9ae38902b6232e606ca4f510fe85fc341e7a185"
+      },
+      "evidence": [
+        {
+          "path": "research/production/integers_pedagogy_review.md",
+          "sha256": "ccb14691cf150a37a5609fecc414b3335bb36a7c1a1e219b0d2f4eaa20a61540"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and all eight solutions reviewed within declared natural-number and limited naive-set background; not formal verification, learner trials, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "imul-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:02:07.403746+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integers_multiplication.md": "4bc038ace8d4fe782843098e3f171cf1e2b78b3e79a8169baea9d4bbdfa52bba",
+        "manuscript/foundations/integers_multiplication_answers.md": "efaab04ea565b8e59b8bed0f677febfc763b2b2d99dc71e17511953a73d397d2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/integers_multiplication_math_review.md",
+          "sha256": "d51f872f4c22b192aa724b5fb93faa3d389e0ca3d0b5977d832cc7b107e71242"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and all eight solutions reviewed within declared natural-number and limited naive-set background; not formal verification, learner trials, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "imul-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:02:07.403746+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integers_multiplication.md": "4bc038ace8d4fe782843098e3f171cf1e2b78b3e79a8169baea9d4bbdfa52bba",
+        "manuscript/foundations/integers_multiplication_answers.md": "efaab04ea565b8e59b8bed0f677febfc763b2b2d99dc71e17511953a73d397d2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/integers_pedagogy_review.md",
+          "sha256": "ccb14691cf150a37a5609fecc414b3335bb36a7c1a1e219b0d2f4eaa20a61540"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and all eight solutions reviewed within declared natural-number and limited naive-set background; not formal verification, learner trials, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "idiv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integer_division.md": "c950dc8b1e8c12faede1ec992a49dfd2ab28b8c568122b4b7b9f7134c7b6381b",
+        "manuscript/foundations/integer_division_answers.md": "c42c1bea1447f1804e441da14ef96a078f2941a5731edb73175bda645ed8bb10"
+      },
+      "evidence": [
+        {
+          "path": "research/production/integer_division_math_review.md",
+          "sha256": "b3e138d7e8fd349fa256f6ab5fdeded88562af572738d4efc3fb995a840535f2"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "idiv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/integer_division.md": "c950dc8b1e8c12faede1ec992a49dfd2ab28b8c568122b4b7b9f7134c7b6381b",
+        "manuscript/foundations/integer_division_answers.md": "c42c1bea1447f1804e441da14ef96a078f2941a5731edb73175bda645ed8bb10"
+      },
+      "evidence": [
+        {
+          "path": "research/production/divisibility_pedagogy_review.md",
+          "sha256": "07d1e970c42665f78d5b8869c185ccf422df81e76259f12228226dc7db47ee0b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "dvs-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/divisibility.md": "d838cdcb6e34e4b9a5f40f3f5119a24b8e534e2baa16dc625180aff584000654",
+        "manuscript/foundations/divisibility_answers.md": "2f50d30e4fd5abcdd79ee8ad922cd0610206d659b14c6e4b33035e3cb9ea23ec"
+      },
+      "evidence": [
+        {
+          "path": "research/production/divisibility_math_review.md",
+          "sha256": "94a4bae147cbe188bd1719a82b9d02a16f3e72021566b80db00feda7688e8012"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "dvs-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/divisibility.md": "d838cdcb6e34e4b9a5f40f3f5119a24b8e534e2baa16dc625180aff584000654",
+        "manuscript/foundations/divisibility_answers.md": "2f50d30e4fd5abcdd79ee8ad922cd0610206d659b14c6e4b33035e3cb9ea23ec"
+      },
+      "evidence": [
+        {
+          "path": "research/production/divisibility_pedagogy_review.md",
+          "sha256": "07d1e970c42665f78d5b8869c185ccf422df81e76259f12228226dc7db47ee0b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "gcd-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/gcd_euclidean.md": "9d1490c8f63e2a77e74b7f5fd3ea39b8088619d1994087749eda6798d43e520c",
+        "manuscript/foundations/gcd_euclidean_answers.md": "f6d180df834ff7ccc5b5e83db34b54f5b7fad5b25aff5114fe78b36ad817a74d"
+      },
+      "evidence": [
+        {
+          "path": "research/production/gcd_euclidean_math_review.md",
+          "sha256": "e2a93689fe5baf7f51cca7b391eea76055ea4a1cd627f9d0927a512f8dda2b25"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "gcd-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:27:04.355025+00:00",
+      "source_sha256": {
+        "manuscript/foundations/gcd_euclidean.md": "9d1490c8f63e2a77e74b7f5fd3ea39b8088619d1994087749eda6798d43e520c",
+        "manuscript/foundations/gcd_euclidean_answers.md": "f6d180df834ff7ccc5b5e83db34b54f5b7fad5b25aff5114fe78b36ad817a74d"
+      },
+      "evidence": [
+        {
+          "path": "research/production/divisibility_pedagogy_review.md",
+          "sha256": "07d1e970c42665f78d5b8869c185ccf422df81e76259f12228226dc7db47ee0b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full manuscript and all eight solutions reviewed within explicit adopted foundations and prior unit results; not formal verification, learner trials, author approval or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "bez-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:49:10.390251+00:00",
+      "source_sha256": {
+        "manuscript/foundations/bezout.md": "87fc82dc9e0283ae2bbecd75b4633e979ff89bdb478686b9fb310109d382c523",
+        "manuscript/foundations/bezout_answers.md": "41f65947fd936055cef49fbf047cac4b23cc58651d3ac9b3342c9651af892d47"
+      },
+      "evidence": [
+        {
+          "path": "research/production/bezout_math_review.md",
+          "sha256": "b8cfee4f89a5239ff4d000039e2ee185e4380139776fe95b06753f374fc8c4a6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review of the declared unit and full solutions; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "bez-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:49:10.390404+00:00",
+      "source_sha256": {
+        "manuscript/foundations/bezout.md": "87fc82dc9e0283ae2bbecd75b4633e979ff89bdb478686b9fb310109d382c523",
+        "manuscript/foundations/bezout_answers.md": "41f65947fd936055cef49fbf047cac4b23cc58651d3ac9b3342c9651af892d47"
+      },
+      "evidence": [
+        {
+          "path": "research/production/bezout_pedagogy_review.md",
+          "sha256": "658c24b7eec764e0dba5f565f07a7443150ed15a8841be1b3f9b5d344adc4d41"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review of the declared unit and full solutions; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cop-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T15:49:10.390553+00:00",
+      "source_sha256": {
+        "manuscript/foundations/coprimality.md": "61962f4a3d4863ec369cc2d8269797561209c182b349e7b3abeceb6d7fa55806",
+        "manuscript/foundations/coprimality_answers.md": "5a7491c82cfbdc61123ee0a88ec9f827a67cbcb415ae1be2ce2e15d5f5ce9036"
+      },
+      "evidence": [
+        {
+          "path": "research/production/coprimality_math_review.md",
+          "sha256": "f21ed302f3fbd131a182e319bb139e2fa36a546b620bb0c594b3db38f7fa9558"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review of the declared unit and full solutions; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cop-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T15:49:10.390673+00:00",
+      "source_sha256": {
+        "manuscript/foundations/coprimality.md": "61962f4a3d4863ec369cc2d8269797561209c182b349e7b3abeceb6d7fa55806",
+        "manuscript/foundations/coprimality_answers.md": "5a7491c82cfbdc61123ee0a88ec9f827a67cbcb415ae1be2ce2e15d5f5ce9036"
+      },
+      "evidence": [
+        {
+          "path": "research/production/bezout_pedagogy_review.md",
+          "sha256": "658c24b7eec764e0dba5f565f07a7443150ed15a8841be1b3f9b5d344adc4d41"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent agent review of the declared unit and full solutions; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rat-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T16:10:37.146409+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_construction.md": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0",
+        "manuscript/foundations/rationals_construction_answers.md": "d1a2ef96ab6754163f18cfb135e08253f61c26c10f1290bfef3feb85c195cd48"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_construction_math_review.md",
+          "sha256": "e80bca44e256b9631a775944b89784000304f5c18ae0fc616500be35cbcafc93"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent unit and complete-solution review; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rat-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T16:10:37.146715+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_construction.md": "0833130ad2bd8f24598a8c8fdfd3ce38e03874036fceac57b019d6d9c7da45a0",
+        "manuscript/foundations/rationals_construction_answers.md": "d1a2ef96ab6754163f18cfb135e08253f61c26c10f1290bfef3feb85c195cd48"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_pedagogy_review.md",
+          "sha256": "33d33c43edc053a55cb561b7b16fde07cf780c70b9e30761f3e7b3dccec8adbf"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent unit and complete-solution review; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "radd-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root",
+      "reviewed_at": "2026-10-27T16:10:37.147119+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_addition.md": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+        "manuscript/foundations/rationals_addition_answers.md": "fcfc4f3e71f609217661b58c3ba856deeee5b76f63d58c1c2892653082aaa34c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_addition_math_review.md",
+          "sha256": "821a7abc14cacb7327a194ea3be403a16542290f7a4c066780bc4875f8684ba2"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent unit and complete-solution review; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "radd-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-27T16:10:37.147672+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_addition.md": "9b349aec9a9df0c7c45c9d33e7d0cfa483dc22432f0250baa23ab2a6d02b417b",
+        "manuscript/foundations/rationals_addition_answers.md": "fcfc4f3e71f609217661b58c3ba856deeee5b76f63d58c1c2892653082aaa34c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_pedagogy_review.md",
+          "sha256": "33d33c43edc053a55cb561b7b16fde07cf780c70b9e30761f3e7b3dccec8adbf"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent unit and complete-solution review; not formal verification, whole-chapter completion or author approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rmul-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after manuscript and solutions read",
+      "reviewed_at": "2026-10-27T16:31:49.507558+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_multiplication.md": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20",
+        "manuscript/foundations/rationals_multiplication_answers.md": "35853830c603a24048d477eeaf726c709e016dd66ae25c1ae3a53d3dd21f02d5"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_multiplication_math_review.md",
+          "sha256": "151595620afff106fd85fa9aaeb424b1b71754b0c4716e1692fe05d841cf0401"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of declared unit scope and all eight exercise solutions; not formal verification, cross-age reader testing, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rmul-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after manuscript and solutions read",
+      "reviewed_at": "2026-10-27T16:31:49.507620+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_multiplication.md": "033ed077c363d91143247bebedb790d4c444b5574c5085509a2b6c207d0b9c20",
+        "manuscript/foundations/rationals_multiplication_answers.md": "35853830c603a24048d477eeaf726c709e016dd66ae25c1ae3a53d3dd21f02d5"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_multiplication_pedagogy_review.md",
+          "sha256": "05f785c4a2fdae46d105316a4b27f2392c9cecf2ab7fc0c31ceada3e7983b7ab"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of declared unit scope and all eight exercise solutions; not formal verification, cross-age reader testing, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rdiv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after manuscript and solutions read",
+      "reviewed_at": "2026-10-27T16:31:49.507716+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_division.md": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64",
+        "manuscript/foundations/rationals_division_answers.md": "7db623610e5a194033b542773d4dae22c8669ab68ba08b0b323761e475867cec"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_division_math_review.md",
+          "sha256": "0074fe3c797313077de8a7dfcb24aa245591131f6806696575c430795ba1dd34"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of declared unit scope and all eight exercise solutions; not formal verification, cross-age reader testing, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rdiv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after manuscript and solutions read",
+      "reviewed_at": "2026-10-27T16:31:49.507754+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_division.md": "b2adb43e3d4b0fbe5c57dd6b745cfa1550f050321a2208df618a666ca8ecfc64",
+        "manuscript/foundations/rationals_division_answers.md": "7db623610e5a194033b542773d4dae22c8669ab68ba08b0b323761e475867cec"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_multiplication_pedagogy_review.md",
+          "sha256": "05f785c4a2fdae46d105316a4b27f2392c9cecf2ab7fc0c31ceada3e7983b7ab"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of declared unit scope and all eight exercise solutions; not formal verification, cross-age reader testing, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rord-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T16:54:05.951264+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_order.md": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+        "manuscript/foundations/rationals_order_answers.md": "4378a6650d58906be673eabf94401eca082454b7a998d8765ef5f19df848543f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_order_math_review.md",
+          "sha256": "f1435be8f3a8ed747bdc3b345302c574fb53e82d198a545ac2692ea5aead04d6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and all eight solutions; no formal verification, real completeness, cross-age reader test, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rord-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T16:54:05.951356+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_order.md": "db52d14c0642912bc281e22e1846f778bc9aa876d1a6ba22e04d5eb3ae28f3ba",
+        "manuscript/foundations/rationals_order_answers.md": "4378a6650d58906be673eabf94401eca082454b7a998d8765ef5f19df848543f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_order_pedagogy_review.md",
+          "sha256": "dc71cb3119f73bf8dfab752be1389e863dc55ca95429b10dc377f47a639adf0b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and all eight solutions; no formal verification, real completeness, cross-age reader test, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rabs-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T16:54:05.951476+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_absolute.md": "fe10f17f72f2128cd1ad9230b381fd3da2a000fb36b99c7bf097f9522b87b406",
+        "manuscript/foundations/rationals_absolute_answers.md": "76fd3a34156bc72ab7cfed5be17ed4904d9e2def20396cbe6c22210b3ada40ee"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_absolute_math_review.md",
+          "sha256": "79720338943a2ea6fd3d5f58d94b7ab29d2f70d79c226adfd93c8dd62c20a30e"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and all eight solutions; no formal verification, real completeness, cross-age reader test, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rabs-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T16:54:05.951536+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rationals_absolute.md": "fe10f17f72f2128cd1ad9230b381fd3da2a000fb36b99c7bf097f9522b87b406",
+        "manuscript/foundations/rationals_absolute_answers.md": "76fd3a34156bc72ab7cfed5be17ed4904d9e2def20396cbe6c22210b3ada40ee"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rationals_order_pedagogy_review.md",
+          "sha256": "dc71cb3119f73bf8dfab752be1389e863dc55ca95429b10dc377f47a639adf0b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and all eight solutions; no formal verification, real completeness, cross-age reader test, or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ratio-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T17:16:05.382211+00:00",
+      "source_sha256": {
+        "manuscript/foundations/ratios_proportions.md": "e39c8ae8bdf454b23a28d60a80b6ca57dbe63ffef5ec34fb33f7280045f0f52d",
+        "manuscript/foundations/ratios_proportions_answers.md": "8d9d0ad04fab91dff49f4d084ac97fb81ece785fd79863a95eb69e694c463ed1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/ratios_proportions_math_review.md",
+          "sha256": "534f9d6751b050d855981add005dcc7a0e5391dd8741bb2dd0c4e6253c121f8a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and eight full solutions; no formal proof checker, real construction, measurement certification, cross-age reader test or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ratio-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T17:16:05.382421+00:00",
+      "source_sha256": {
+        "manuscript/foundations/ratios_proportions.md": "e39c8ae8bdf454b23a28d60a80b6ca57dbe63ffef5ec34fb33f7280045f0f52d",
+        "manuscript/foundations/ratios_proportions_answers.md": "8d9d0ad04fab91dff49f4d084ac97fb81ece785fd79863a95eb69e694c463ed1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/ratios_units_pedagogy_review.md",
+          "sha256": "9ca9e3e760278568ecdeea40de79e4e82b8641a9c335a0e3fa12ca15a155c2d0"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and eight full solutions; no formal proof checker, real construction, measurement certification, cross-age reader test or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "qty-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T17:16:05.382546+00:00",
+      "source_sha256": {
+        "manuscript/foundations/quantities_units.md": "64183a8a0eb6cff12be150c7ab4fea4db3c4f4fc148421679b2a082581bc07c5",
+        "manuscript/foundations/quantities_units_answers.md": "f8da7255391b61074063f0180a88846ba8ed147f8f3ecde9379fc8ec53ce3f7f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/quantities_units_math_review.md",
+          "sha256": "2952fb53a27b9205c667d7e156ba8a1cb9e56bc03c26dab1e1b87f1bd41b88ce"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and eight full solutions; no formal proof checker, real construction, measurement certification, cross-age reader test or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "qty-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root after reading four manuscripts",
+      "reviewed_at": "2026-10-27T17:16:05.382631+00:00",
+      "source_sha256": {
+        "manuscript/foundations/quantities_units.md": "64183a8a0eb6cff12be150c7ab4fea4db3c4f4fc148421679b2a082581bc07c5",
+        "manuscript/foundations/quantities_units_answers.md": "f8da7255391b61074063f0180a88846ba8ed147f8f3ecde9379fc8ec53ce3f7f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/ratios_units_pedagogy_review.md",
+          "sha256": "9ca9e3e760278568ecdeea40de79e4e82b8641a9c335a0e3fa12ca15a155c2d0"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit scope and eight full solutions; no formal proof checker, real construction, measurement certification, cross-age reader test or user final approval."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fun-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis and astra_review; root independently read all four manuscripts",
+      "reviewed_at": "2026-10-29T15:58:22.253905+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_definition.md": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+        "manuscript/foundations/functions_definition_answers.md": "0cfcaad175aa77f787b368f3ba0fd52793e1544b627b285e2f6ec61b0e28af9a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_definition_math_review.md",
+          "sha256": "a9851cbf542ef0a3f474746c243103e435afdf926f8364fbf5dbd2e8bb7a70a3"
+        },
+        {
+          "path": "research/production/functions_astra_math_review.md",
+          "sha256": "88987f468a6efd836b7e5c99c9f23d651ea3f4342ebe3dd13b17944a9385eba8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent text reviews; finite exact code checks support but do not replace general proofs. Not formal verification, PDF approval, user acceptance or completion of a classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fun-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-29T15:58:22.254122+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_definition.md": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+        "manuscript/foundations/functions_definition_answers.md": "0cfcaad175aa77f787b368f3ba0fd52793e1544b627b285e2f6ec61b0e28af9a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_pedagogy_review.md",
+          "sha256": "0cc462b11c4835dc6e0f2243f074d6016b23ee38afd0cfe35a1ab00a62ac99e1"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent text reviews; finite exact code checks support but do not replace general proofs. Not formal verification, PDF approval, user acceptance or completion of a classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "funcomp-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "analysis and astra_review; root independently read all four manuscripts",
+      "reviewed_at": "2026-10-29T15:58:22.254193+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_composition.md": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+        "manuscript/foundations/functions_composition_answers.md": "ffb56ac2171cb8776889e2eff69c24a100ef038bd23c8c3b8b33afb6620d1fd9"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_composition_math_review.md",
+          "sha256": "d4d03624bdcd5faec4b8129f4f4d0abd447051d44efdb101f4a025f9b6208eea"
+        },
+        {
+          "path": "research/production/functions_astra_math_review.md",
+          "sha256": "88987f468a6efd836b7e5c99c9f23d651ea3f4342ebe3dd13b17944a9385eba8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent text reviews; finite exact code checks support but do not replace general proofs. Not formal verification, PDF approval, user acceptance or completion of a classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "funcomp-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "geometry_history; incorporated by root",
+      "reviewed_at": "2026-10-29T15:58:22.254284+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_composition.md": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+        "manuscript/foundations/functions_composition_answers.md": "ffb56ac2171cb8776889e2eff69c24a100ef038bd23c8c3b8b33afb6620d1fd9"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_pedagogy_review.md",
+          "sha256": "0cc462b11c4835dc6e0f2243f074d6016b23ee38afd0cfe35a1ab00a62ac99e1"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent text reviews; finite exact code checks support but do not replace general proofs. Not formal verification, PDF approval, user acceptance or completion of a classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "bij-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; root independently read all four manuscripts",
+      "reviewed_at": "2026-10-29T16:24:54.286933+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_bijections.md": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+        "manuscript/foundations/functions_bijections_answers.md": "8a3a14b86373170fcc2089a20e9a56ce47ac9fb2bff14e3c212202d04a36e324"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_bijections_math_review.md",
+          "sha256": "fdd5f388c8cef55215150f66919ea59b32f9b9d5b6abe6c87a2bb032993cbc06"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent complete text review; bounded code oracle is not proof of arbitrary-set results. Not formal verification, PDF acceptance or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "bij-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root",
+      "reviewed_at": "2026-10-29T16:24:54.287061+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_bijections.md": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+        "manuscript/foundations/functions_bijections_answers.md": "8a3a14b86373170fcc2089a20e9a56ce47ac9fb2bff14e3c212202d04a36e324"
+      },
+      "evidence": [
+        {
+          "path": "research/production/inverse_functions_pedagogy_review.md",
+          "sha256": "f85fc66c1d0315682feb4207d5febcd7f1e18e914b167131586064b195325c55"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent complete text review; bounded code oracle is not proof of arbitrary-set results. Not formal verification, PDF acceptance or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "inv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; root independently read all four manuscripts",
+      "reviewed_at": "2026-10-29T16:24:54.287162+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_inverse.md": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+        "manuscript/foundations/functions_inverse_answers.md": "d664e0c89bad00817b805b9d3551a4b1d4abc9e8b4f7252cc715f92d4e34b063"
+      },
+      "evidence": [
+        {
+          "path": "research/production/functions_inverse_math_review.md",
+          "sha256": "3dd3a08d91a0e46341cadb593d4b9a558efaf20aaac7f47bf13b7f10a6c7a7e3"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent complete text review; bounded code oracle is not proof of arbitrary-set results. Not formal verification, PDF acceptance or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "inv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root",
+      "reviewed_at": "2026-10-29T16:24:54.287237+00:00",
+      "source_sha256": {
+        "manuscript/foundations/functions_inverse.md": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+        "manuscript/foundations/functions_inverse_answers.md": "d664e0c89bad00817b805b9d3551a4b1d4abc9e8b4f7252cc715f92d4e34b063"
+      },
+      "evidence": [
+        {
+          "path": "research/production/inverse_functions_pedagogy_review.md",
+          "sha256": "f85fc66c1d0315682feb4207d5febcd7f1e18e914b167131586064b195325c55"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent complete text review; bounded code oracle is not proof of arbitrary-set results. Not formal verification, PDF acceptance or whole-chapter completion."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "lin-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T16:46:43.003899+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_equations.md": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4",
+        "manuscript/foundations/linear_equations_answers.md": "a0b6ca7006d52327c4bddcbe7c48d8a9e3e56eada3f9088d81ca4dae3c90d7b4"
+      },
+      "evidence": [
+        {
+          "path": "research/production/linear_equations_math_review.md",
+          "sha256": "07ee9f0a19f76fd21d5ca444ee4b9131b5e3a7cecf4bb1d7836a438029773d60"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of the declared unit and all eight worked exercise solutions; not formal verification, whole-chapter completion or author acceptance."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "lin-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T16:46:43.003932+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_equations.md": "46f013a3d82fa47fc1fdaf73325ed90baf6f7a92bb73e27f1bac98642eed70b4",
+        "manuscript/foundations/linear_equations_answers.md": "a0b6ca7006d52327c4bddcbe7c48d8a9e3e56eada3f9088d81ca4dae3c90d7b4"
+      },
+      "evidence": [
+        {
+          "path": "research/production/linear_equations_pedagogy_review.md",
+          "sha256": "5e85e8c3aa3b94f9d06998b75a655b2978716540e447937091d9fc286c7801c4"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of the declared unit and all eight worked exercise solutions; not formal verification, whole-chapter completion or author acceptance."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sys-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T16:46:43.004018+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_systems.md": "a990e27b6c36e0b3f02e468696c89102b3c9e120a77730c8f43b804c8863c46b",
+        "manuscript/foundations/linear_systems_answers.md": "5c08573cbcd8d99324a8d7d8dcaa42fe6ab09aad8029f2d314a8db5495672a27"
+      },
+      "evidence": [
+        {
+          "path": "research/production/linear_systems_math_review.md",
+          "sha256": "b55fe956fda36f4e125da342416455030d1feed1c5238fd1cdf749d80e889811"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of the declared unit and all eight worked exercise solutions; not formal verification, whole-chapter completion or author acceptance."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sys-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T16:46:43.004042+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_systems.md": "a990e27b6c36e0b3f02e468696c89102b3c9e120a77730c8f43b804c8863c46b",
+        "manuscript/foundations/linear_systems_answers.md": "5c08573cbcd8d99324a8d7d8dcaa42fe6ab09aad8029f2d314a8db5495672a27"
+      },
+      "evidence": [
+        {
+          "path": "research/production/linear_equations_pedagogy_review.md",
+          "sha256": "5e85e8c3aa3b94f9d06998b75a655b2978716540e447937091d9fc286c7801c4"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of the declared unit and all eight worked exercise solutions; not formal verification, whole-chapter completion or author acceptance."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ineq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:07:04.138500+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_inequalities.md": "89a72b6ff336ee06f23c19fef9f689d5c091182ce61f09b1f914408f6ca038a6",
+        "manuscript/foundations/linear_inequalities_answers.md": "a5a1878a6e9175bc09a02598fa23035aef867b6817769dfbace506ba3085747c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/linear_inequalities_math_review.md",
+          "sha256": "63abe530a071e7ca2320be61dcaac0698dd1244d833973dadc1eee5b095a1283"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ineq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:07:04.138543+00:00",
+      "source_sha256": {
+        "manuscript/foundations/linear_inequalities.md": "89a72b6ff336ee06f23c19fef9f689d5c091182ce61f09b1f914408f6ca038a6",
+        "manuscript/foundations/linear_inequalities_answers.md": "a5a1878a6e9175bc09a02598fa23035aef867b6817769dfbace506ba3085747c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/inequalities_pedagogy_review.md",
+          "sha256": "a968f75d371e3c24b7a07e2ed21956f861365a13b2a8c31937a0b42d037efe60"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "absineq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:07:04.138709+00:00",
+      "source_sha256": {
+        "manuscript/foundations/absolute_inequalities.md": "766c49a4d2ef4ab13bab56aebd663c827b2ba49d1b1f1f26ba772f8787bf75c5",
+        "manuscript/foundations/absolute_inequalities_answers.md": "c0673fd63b78f46fefac4581057de06c7790b282786ceff9d35dfeb76bc7dc88"
+      },
+      "evidence": [
+        {
+          "path": "research/production/absolute_inequalities_math_review.md",
+          "sha256": "b9aae99f752e209d3b742b1c8ec450898b125e34847a437b438f42dd21d3ee3b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "absineq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:07:04.138740+00:00",
+      "source_sha256": {
+        "manuscript/foundations/absolute_inequalities.md": "766c49a4d2ef4ab13bab56aebd663c827b2ba49d1b1f1f26ba772f8787bf75c5",
+        "manuscript/foundations/absolute_inequalities_answers.md": "c0673fd63b78f46fefac4581057de06c7790b282786ceff9d35dfeb76bc7dc88"
+      },
+      "evidence": [
+        {
+          "path": "research/production/inequalities_pedagogy_review.md",
+          "sha256": "a968f75d371e3c24b7a07e2ed21956f861365a13b2a8c31937a0b42d037efe60"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "coord-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:30:58.090850+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_coordinates.md": "13f253560a79cb0eaf336dbebd78cc4cb89ba43937bf9cad6f77dfa67d6c9e48",
+        "manuscript/foundations/rational_coordinates_answers.md": "fe7b4f82a1a76cbd6ebb8d9ccdfa316da16ed63a70acbd68c1322a82c92f1eb6"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_coordinates_math_review.md",
+          "sha256": "47e6f4c5a4c8587147db4064104b89a8ba13526aaa2b4578cc6fcf78ebba99b1"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "coord-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:30:58.090937+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_coordinates.md": "13f253560a79cb0eaf336dbebd78cc4cb89ba43937bf9cad6f77dfa67d6c9e48",
+        "manuscript/foundations/rational_coordinates_answers.md": "fe7b4f82a1a76cbd6ebb8d9ccdfa316da16ed63a70acbd68c1322a82c92f1eb6"
+      },
+      "evidence": [
+        {
+          "path": "research/production/coordinates_affine_pedagogy_review.md",
+          "sha256": "fb7c154a767f1ff5f41eae69dbcefb768548bd2fc725a874560e8588d137d874"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "affgraph-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:30:58.091010+00:00",
+      "source_sha256": {
+        "manuscript/foundations/affine_graphs.md": "1df31c69a925d64179d069cd450bd6a53c876fa55eae8727d394ba01b9438c92",
+        "manuscript/foundations/affine_graphs_answers.md": "f41cc17b765ac4bc7d33fd6b8c7c9d1bbc7b1c6671f44e22d6f8400850ecbd09"
+      },
+      "evidence": [
+        {
+          "path": "research/production/affine_graphs_math_review.md",
+          "sha256": "d1cb15f66fb96174d580f2c1823614d820b9b23e5bb8c70cbe44a8ff968a4dbb"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "affgraph-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:30:58.091072+00:00",
+      "source_sha256": {
+        "manuscript/foundations/affine_graphs.md": "1df31c69a925d64179d069cd450bd6a53c876fa55eae8727d394ba01b9438c92",
+        "manuscript/foundations/affine_graphs_answers.md": "f41cc17b765ac4bc7d33fd6b8c7c9d1bbc7b1c6671f44e22d6f8400850ecbd09"
+      },
+      "evidence": [
+        {
+          "path": "research/production/coordinates_affine_pedagogy_review.md",
+          "sha256": "fb7c154a767f1ff5f41eae69dbcefb768548bd2fc725a874560e8588d137d874"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "pow-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:58:27.195016+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_powers.md": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2",
+        "manuscript/foundations/rational_powers_answers.md": "fe64ec1b757dedb07583460db31afe240c9a1c0845c78a10603787ba2acef102"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_powers_math_review.md",
+          "sha256": "8b35783cc3152fe43e733325cd5e4665093163382aba1b7ea42dda6812079a75"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "pow-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:58:27.195098+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_powers.md": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2",
+        "manuscript/foundations/rational_powers_answers.md": "fe64ec1b757dedb07583460db31afe240c9a1c0845c78a10603787ba2acef102"
+      },
+      "evidence": [
+        {
+          "path": "research/production/powers_sums_pedagogy_review.md",
+          "sha256": "4b25a2ae1c9b9d8dfb70211d1cade618d169e5560bd02c3af9882f00c82be746"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sum-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_review; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:58:27.195174+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_sums.md": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23",
+        "manuscript/foundations/finite_sums_answers.md": "127a6dd135315f2ccf2f9e4931e0e0c5f8c3a4adfb511b4f962cd70f552b4704"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_sums_math_review.md",
+          "sha256": "894b8e0e1ac616be0badc89d60d5fd5b09203d817674b27956162ae36f77b215"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sum-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T17:58:27.195235+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_sums.md": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23",
+        "manuscript/foundations/finite_sums_answers.md": "127a6dd135315f2ccf2f9e4931e0e0c5f8c3a4adfb511b4f962cd70f552b4704"
+      },
+      "evidence": [
+        {
+          "path": "research/production/powers_sums_pedagogy_review.md",
+          "sha256": "4b25a2ae1c9b9d8dfb70211d1cade618d169e5560bd02c3af9882f00c82be746"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyrec-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T18:30:50.884734+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_records.md": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5",
+        "manuscript/foundations/polynomial_records_answers.md": "81a61101bd3382311ec4a460f6b9153279adc08c8f58e947589131c93a3783be"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_records_math_review.md",
+          "sha256": "59ed674d647a38f9b679b46decce6bc31547fc1ea5f60eb736d62edf7c9721fd"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyrec-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T18:30:50.884915+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_records.md": "d243e9a7e7231f121182494b32a38f7799fd897beb4d3bd5f67431438846a8c5",
+        "manuscript/foundations/polynomial_records_answers.md": "81a61101bd3382311ec4a460f6b9153279adc08c8f58e947589131c93a3783be"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_basic_pedagogy_review.md",
+          "sha256": "0e46da4705532b07b0bc0963684fb2bfda1c59614dbd8b6117104f8ae6a9e8a7"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyops-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T18:30:50.884995+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_linear_operations.md": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5",
+        "manuscript/foundations/polynomial_linear_operations_answers.md": "e374e4b3051009476f113b4cf460cfddf7b335d20bf66668a08fb55799041427"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_linear_operations_math_review.md",
+          "sha256": "6cf2e23c8e16b8c2d39cce6f14ce31066ca38ba2ff52716d0c0865fda929b5c8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyops-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "astra_pedagogy; incorporated by root after full manuscript reading",
+      "reviewed_at": "2026-10-29T18:30:50.885071+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_linear_operations.md": "c7836f2dcb0684865109f3c44dc58eaea5ba434d9fd058f3e49b6686ad6a23f5",
+        "manuscript/foundations/polynomial_linear_operations_answers.md": "e374e4b3051009476f113b4cf460cfddf7b335d20bf66668a08fb55799041427"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_basic_pedagogy_review.md",
+          "sha256": "0e46da4705532b07b0bc0963684fb2bfda1c59614dbd8b6117104f8ae6a9e8a7"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent review of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polymul-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after checking proofs, interfaces and review bindings",
+      "reviewed_at": "2026-10-29T18:48:25.218056+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_multiplication.md": "048a6c96c9297cae0a4c2ee3e040a5265640515c31433dd06d615690af0f249d",
+        "manuscript/foundations/polynomial_multiplication_answers.md": "4bab95e111a375b72a1b6b66675e447714f3158261790218209f508b46fc6cc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_multiplication_math_review.md",
+          "sha256": "cbbbcfdce36957412d6a83fc208a2afda7f2a27cc32133e15f47d4f5e0a331b6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polymul-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking proofs, interfaces and review bindings",
+      "reviewed_at": "2026-10-29T18:48:25.218185+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_multiplication.md": "048a6c96c9297cae0a4c2ee3e040a5265640515c31433dd06d615690af0f249d",
+        "manuscript/foundations/polynomial_multiplication_answers.md": "4bab95e111a375b72a1b6b66675e447714f3158261790218209f508b46fc6cc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_product_pedagogy_review.md",
+          "sha256": "be028bc38399e830ee4beb04ee9163bd126d998701078bc84adedea816bfe39a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyprod-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_next; incorporated by root after checking proofs, interfaces and review bindings",
+      "reviewed_at": "2026-10-29T18:48:25.218260+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_product_structure.md": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8",
+        "manuscript/foundations/polynomial_product_structure_answers.md": "2342e21afec69515c80f6b8b5063ce0f404efbd8de1c991767fd6be4bbe1c1c2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_product_structure_math_review.md",
+          "sha256": "517908703cf12606be6aafb9cbb376aa61c2134ad53c3f63dd76f7a826cbd9ba"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyprod-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking proofs, interfaces and review bindings",
+      "reviewed_at": "2026-10-29T18:48:25.218345+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_product_structure.md": "8dce7a9623ccac953c71113623156c6e0faca5abf82900fdfe3a6f6413e115b8",
+        "manuscript/foundations/polynomial_product_structure_answers.md": "2342e21afec69515c80f6b8b5063ce0f404efbd8de1c991767fd6be4bbe1c1c2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_product_pedagogy_review.md",
+          "sha256": "be028bc38399e830ee4beb04ee9163bd126d998701078bc84adedea816bfe39a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polydiv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after checking proof dependencies, final text and review bindings",
+      "reviewed_at": "2026-10-29T19:09:11.967278+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_linear_division.md": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+        "manuscript/foundations/polynomial_linear_division_answers.md": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_linear_division_math_review.md",
+          "sha256": "182f4d440ca8d1777b7496459527c52f6399682e861c97cc8ab713c59b3fc23b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polydiv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking proof dependencies, final text and review bindings",
+      "reviewed_at": "2026-10-29T19:09:11.967343+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_linear_division.md": "a1db7bbc2edc3a629570c62421b1152e0c968293596e665991d95e1ffcd107c3",
+        "manuscript/foundations/polynomial_linear_division_answers.md": "5b91e0c85611d38b1b7f7b7a17f30319d5b9dbad4fe98c4bc59b9cf0181dc0eb"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_linear_division_pedagogy_review.md",
+          "sha256": "f142c68e42711e3b12f13707d73ef6a85c5058ee06db0b3612fca2029219ae43"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyroot-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_next; incorporated by root after checking proof dependencies, final text and review bindings",
+      "reviewed_at": "2026-10-29T19:09:11.967440+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_roots_identity.md": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+        "manuscript/foundations/polynomial_roots_identity_answers.md": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_roots_identity_math_review.md",
+          "sha256": "9d73e954e11cd0c1bbaa4ba5b393f334b693faa01e0ec455e090a5f6f6c33add"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "polyroot-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking proof dependencies, final text and review bindings",
+      "reviewed_at": "2026-10-29T19:09:11.967488+00:00",
+      "source_sha256": {
+        "manuscript/foundations/polynomial_roots_identity.md": "d8d3c261a1e82ce8512fc74e8822d6d14bd7d321aa92166efcfb30f3ae6129d8",
+        "manuscript/foundations/polynomial_roots_identity_answers.md": "facd01a13eabf07e30881acf897b498e0cfb21f7a6c444ab407f955065de32fa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/polynomial_linear_division_pedagogy_review.md",
+          "sha256": "f142c68e42711e3b12f13707d73ef6a85c5058ee06db0b3612fca2029219ae43"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of stated unit objectives and all eight exercise solutions; no formal verification, whole chapter completion or user acceptance claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sqrat-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_next; incorporated by root after checking current proofs, prerequisites and exact report bindings",
+      "reviewed_at": "2026-10-29T19:44:06.651322+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_square_equations.md": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598",
+        "manuscript/foundations/rational_square_equations_answers.md": "2b623ea4477353874f910d0867ca3fc9af8f6e92ed5f74e037450c756ae346c2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_square_equations_math_review.md",
+          "sha256": "74b1d3aaceb15af9bd8f8f92dc7350186492568ee468712353b84e5809781aff"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of the stated unit and all eight full solutions; no formal verification or complete classification chapter claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sqrat-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking current proofs, prerequisites and exact report bindings",
+      "reviewed_at": "2026-10-29T19:44:06.651396+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_square_equations.md": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598",
+        "manuscript/foundations/rational_square_equations_answers.md": "2b623ea4477353874f910d0867ca3fc9af8f6e92ed5f74e037450c756ae346c2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_quadratic_pedagogy_review.md",
+          "sha256": "3e8c04e212c4fbb8ef3a6c617fe803ff7af7860a3c0d1c39cf69b69bf584abb5"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of the stated unit and all eight full solutions; no formal verification or complete classification chapter claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "quad-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after checking current proofs, prerequisites and exact report bindings",
+      "reviewed_at": "2026-10-29T19:44:06.651493+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_quadratic_equations.md": "b3ce2e17a3c46c2b461091c75a49543dfb2cfb6bc6cc490ea2b8dde6befb3779",
+        "manuscript/foundations/rational_quadratic_equations_answers.md": "d49ee39b39ed6e318c7d345eb71db84171f9ee409e2771f4b58574264a5eeba0"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_quadratic_equations_math_review.md",
+          "sha256": "44d14acf53d84fc872d0a3a09c43f1e1358e84facb7d0ede9c13fe5031619f7a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of the stated unit and all eight full solutions; no formal verification or complete classification chapter claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "quad-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after checking current proofs, prerequisites and exact report bindings",
+      "reviewed_at": "2026-10-29T19:44:06.651535+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_quadratic_equations.md": "b3ce2e17a3c46c2b461091c75a49543dfb2cfb6bc6cc490ea2b8dde6befb3779",
+        "manuscript/foundations/rational_quadratic_equations_answers.md": "d49ee39b39ed6e318c7d345eb71db84171f9ee409e2771f4b58574264a5eeba0"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_quadratic_pedagogy_review.md",
+          "sha256": "3e8c04e212c4fbb8ef3a6c617fe803ff7af7860a3c0d1c39cf69b69bf584abb5"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full reading of the stated unit and all eight full solutions; no formal verification or complete classification chapter claimed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "qgap-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_next; incorporated by root after full manuscript/answer reading and exact formal bindings",
+      "reviewed_at": "2026-10-29T20:12:48.263523+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_gaps_bounds.md": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+        "manuscript/foundations/rational_gaps_bounds_answers.md": "80cdf0a274ae73e0ed7546c4be8345534671f64bef1d441dca7b54507ad33675"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_gaps_bounds_math_review.md",
+          "sha256": "d40cf0239debc8a6e748c8b9e773bac1c9d830eca5488fd37e41a0cbfe59ac97"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; no formal verification or complete classification chapter claimed. Build and final visual evidence remain separate."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "qgap-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after full manuscript/answer reading and exact formal bindings",
+      "reviewed_at": "2026-10-29T20:12:48.263659+00:00",
+      "source_sha256": {
+        "manuscript/foundations/rational_gaps_bounds.md": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+        "manuscript/foundations/rational_gaps_bounds_answers.md": "80cdf0a274ae73e0ed7546c4be8345534671f64bef1d441dca7b54507ad33675"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_gaps_cuts_pedagogy_review.md",
+          "sha256": "bc460d82cd2f97fe7fd4bd4074afcf39dfe203755ba76febfb719caff94d3089"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; no formal verification or complete classification chapter claimed. Build and final visual evidence remain separate."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cut-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; incorporated by root after full manuscript/answer reading and exact formal bindings",
+      "reviewed_at": "2026-10-29T20:12:48.263798+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_cuts_order.md": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+        "manuscript/foundations/dedekind_cuts_order_answers.md": "cf5de337b8698a917fbabb0cef6d17e66db10227c05fc75179f3d41bfd0bac3c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_cuts_order_math_review.md",
+          "sha256": "85fa341aa6c3f87df616b05560d1dabd50f555c639c3836d2f94ea60e1087280"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; no formal verification or complete classification chapter claimed. Build and final visual evidence remain separate."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cut-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "pedagogy_visual; incorporated by root after full manuscript/answer reading and exact formal bindings",
+      "reviewed_at": "2026-10-29T20:12:48.263953+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_cuts_order.md": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+        "manuscript/foundations/dedekind_cuts_order_answers.md": "cf5de337b8698a917fbabb0cef6d17e66db10227c05fc75179f3d41bfd0bac3c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/rational_gaps_cuts_pedagogy_review.md",
+          "sha256": "bc460d82cd2f97fe7fd4bd4074afcf39dfe203755ba76febfb719caff94d3089"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; no formal verification or complete classification chapter claimed. Build and final visual evidence remain separate."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutadd-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_next; root full text reading and exact migration/formatting diff review",
+      "reviewed_at": "2026-10-30T01:56:57.229129+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_addition.md": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+        "manuscript/foundations/dedekind_addition_answers.md": "02841b87929c5ca19f11a0c8b8036d29adf3b4b727a82070ffd5d72fcadc145e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_addition_math_review.md",
+          "sha256": "21a7f7b51386ec831b4bd1f82cf961047ee78efcfe1415fe3e8d0cba6cc73c1b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Full text and eight complete solutions reviewed; formatting-only changes independently checked. Formal build and rendered-page validation pending; not complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutadd-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration/formatting diff review",
+      "reviewed_at": "2026-10-30T01:56:57.229261+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_addition.md": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+        "manuscript/foundations/dedekind_addition_answers.md": "02841b87929c5ca19f11a0c8b8036d29adf3b4b727a82070ffd5d72fcadc145e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_addition_pedagogy_review.md",
+          "sha256": "d56a45511ebf5c0adcfabe7b4c9334e3375f01f30a57dda0f9fc933fe9cedb07"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Full text and eight complete solutions reviewed; formatting-only changes independently checked. Formal build and rendered-page validation pending; not complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutgroup-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "polynomial_math; root full text reading and exact migration/formatting diff review",
+      "reviewed_at": "2026-10-30T01:56:57.229330+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_additive_order.md": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+        "manuscript/foundations/dedekind_additive_order_answers.md": "94d4ed3e4729b55f877832b18459277e09d968e9bbf59d9139608a051533ddb9"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_additive_order_math_review.md",
+          "sha256": "84ccf7939ff345db21530d35ca10005a104bb79cf1f54c4487f1aa441bb393c6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Full text and eight complete solutions reviewed; formatting-only changes independently checked. Formal build and rendered-page validation pending; not complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutgroup-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration/formatting diff review",
+      "reviewed_at": "2026-10-30T01:56:57.229399+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_additive_order.md": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+        "manuscript/foundations/dedekind_additive_order_answers.md": "94d4ed3e4729b55f877832b18459277e09d968e9bbf59d9139608a051533ddb9"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_addition_pedagogy_review.md",
+          "sha256": "d56a45511ebf5c0adcfabe7b4c9334e3375f01f30a57dda0f9fc933fe9cedb07"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Full text and eight complete solutions reviewed; formatting-only changes independently checked. Formal build and rendered-page validation pending; not complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutprod-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:20:03.852058+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_nonnegative_product.md": "73e77200fa17f9c5cf8861b0655c3529075a8ce3d4c7dbe309db0527fd0f2be7",
+        "manuscript/foundations/dedekind_nonnegative_product_answers.md": "2fbb1afebf2dd314fa065a92aaae326d13d2928d086b60daa2b9a30e0ed3d511"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_nonnegative_product_math_review.md",
+          "sha256": "839e102818454424dfd7d856b991c5b951086374a708d7d6aeb26420383196bf"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Both independent text reviews completed, all eight solutions included. Formal build/rendered-page acceptance pending; no classification chapter completed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutprod-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:20:03.852140+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_nonnegative_product.md": "73e77200fa17f9c5cf8861b0655c3529075a8ce3d4c7dbe309db0527fd0f2be7",
+        "manuscript/foundations/dedekind_nonnegative_product_answers.md": "2fbb1afebf2dd314fa065a92aaae326d13d2928d086b60daa2b9a30e0ed3d511"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_nonnegative_pedagogy_review.md",
+          "sha256": "6878f972526436fcbecfcd7b6502570d058878d90b37372f62f95801b8005482"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Both independent text reviews completed, all eight solutions included. Formal build/rendered-page acceptance pending; no classification chapter completed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutprod-laws-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:20:03.852208+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_nonnegative_laws.md": "7a9a8f60774bc3f950efd42be40cc875b6f2c0f698fc0488a1f9f9824cc27c3a",
+        "manuscript/foundations/dedekind_nonnegative_laws_answers.md": "d7b17f64f3b95b0e8f3606536ffd9be9538d91ef5e8d127b7b69146b4db2346c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_nonnegative_laws_math_review.md",
+          "sha256": "579f64c2006f1c9ffde2210aec6d6f9762e207f450c851732faf89e9a3d88616"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Both independent text reviews completed, all eight solutions included. Formal build/rendered-page acceptance pending; no classification chapter completed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutprod-laws-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:20:03.852271+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_nonnegative_laws.md": "7a9a8f60774bc3f950efd42be40cc875b6f2c0f698fc0488a1f9f9824cc27c3a",
+        "manuscript/foundations/dedekind_nonnegative_laws_answers.md": "d7b17f64f3b95b0e8f3606536ffd9be9538d91ef5e8d127b7b69146b4db2346c"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_nonnegative_pedagogy_review.md",
+          "sha256": "6878f972526436fcbecfcd7b6502570d058878d90b37372f62f95801b8005482"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Both independent text reviews completed, all eight solutions included. Formal build/rendered-page acceptance pending; no classification chapter completed."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutsigned-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:36:28.461193+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_signed_product.md": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+        "manuscript/foundations/dedekind_signed_product_answers.md": "35209f53753538d6308f25e4a65bdd2077717a74bde1e866b914635982ff42da"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_signed_product_math_review.md",
+          "sha256": "fe2283e93a2d73de984c6788f8ab6934fcb24313ccbc832eb8952dc05fab278d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutsigned-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:36:28.461193+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_signed_product.md": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+        "manuscript/foundations/dedekind_signed_product_answers.md": "35209f53753538d6308f25e4a65bdd2077717a74bde1e866b914635982ff42da"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_signed_pedagogy_review.md",
+          "sha256": "3ab6c98d41c36d7428c851976dcfcd34b4faa4c9f2d88b72923ede1293a3548f"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutring-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:36:28.461193+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_ring_order.md": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+        "manuscript/foundations/dedekind_ring_order_answers.md": "d7daa010c33e90fca79aaa55387d331b661071db20f0810bea00c5fe5b7ea807"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_ring_order_math_review.md",
+          "sha256": "9b624a8bdec004a386eabc0ea77331b7e35a6141d07a0d79d4e52d9d2e8ed195"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutring-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:36:28.461193+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_ring_order.md": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+        "manuscript/foundations/dedekind_ring_order_answers.md": "d7daa010c33e90fca79aaa55387d331b661071db20f0810bea00c5fe5b7ea807"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_signed_pedagogy_review.md",
+          "sha256": "3ab6c98d41c36d7428c851976dcfcd34b4faa4c9f2d88b72923ede1293a3548f"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutinv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:55:42.165386+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_inverse.md": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a",
+        "manuscript/foundations/dedekind_inverse_answers.md": "a95b6e48978c4c00c3d3269063555777764152515d205270aa0dd1a003f6cac3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_inverse_math_review.md",
+          "sha256": "82d114bb99c237c4d79cf62c973df3593aa6694018b4d659c9a534136e6fb08f"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutinv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:55:42.165386+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_inverse.md": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a",
+        "manuscript/foundations/dedekind_inverse_answers.md": "a95b6e48978c4c00c3d3269063555777764152515d205270aa0dd1a003f6cac3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_inverse_pedagogy_review.md",
+          "sha256": "bfecfd659900f7f478244e5b8d6363d591ab43b71f8cfb6296396b52e470d2f6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutdiv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:55:42.165386+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_division_field.md": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+        "manuscript/foundations/dedekind_division_field_answers.md": "cd5b266feb27187daa74131d6a2484042729b401667aabf072ca1a8522f27dc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_division_field_math_review.md",
+          "sha256": "025f6c7ed0c884e74385ac00797d5785344887cb11e967900e4c869b6665e088"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cutdiv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T02:55:42.165386+00:00",
+      "source_sha256": {
+        "manuscript/foundations/dedekind_division_field.md": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+        "manuscript/foundations/dedekind_division_field_answers.md": "cd5b266feb27187daa74131d6a2484042729b401667aabf072ca1a8522f27dc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/dedekind_inverse_pedagogy_review.md",
+          "sha256": "bfecfd659900f7f478244e5b8d6363d591ab43b71f8cfb6296396b52e470d2f6"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realarch-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:19:31.025738+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_archimedean_density.md": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e",
+        "manuscript/foundations/real_archimedean_density_answers.md": "d9532ea72f9bf98a48cba5ea2293dc9977f98c9b64b07e9a973eb3a27e517165"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_archimedean_density_math_review.md",
+          "sha256": "c3d35dce9b5c33249aa4d66ef66030c61ac927ad88156f0f26b67de58f404c8d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realarch-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:19:31.025738+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_archimedean_density.md": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e",
+        "manuscript/foundations/real_archimedean_density_answers.md": "d9532ea72f9bf98a48cba5ea2293dc9977f98c9b64b07e9a973eb3a27e517165"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_arch_sqrt_pedagogy_review.md",
+          "sha256": "db38177a6cc57e010d4b0a60579c4e351427352539dca8c4cc55364ccc890109"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realsqrt-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:19:31.025738+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_square_roots.md": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+        "manuscript/foundations/real_square_roots_answers.md": "2a4d542d0326a6e6e9577a11363ad0434847de976cb6d40c851ec4a906f44732"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_square_roots_math_review.md",
+          "sha256": "745c9c9f6a27142e9a22274f62b9462421a407b11f67ae0aa496efbc4d28e207"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realsqrt-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:19:31.025738+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_square_roots.md": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+        "manuscript/foundations/real_square_roots_answers.md": "2a4d542d0326a6e6e9577a11363ad0434847de976cb6d40c851ec4a906f44732"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_arch_sqrt_pedagogy_review.md",
+          "sha256": "db38177a6cc57e010d4b0a60579c4e351427352539dca8c4cc55364ccc890109"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realabs-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:41:43.243764+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_absolute_distance.md": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+        "manuscript/foundations/real_absolute_distance_answers.md": "6936bdad3080d32277761c98efb4fdddc2b763a95748e88de1cad1c539339cc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_absolute_distance_math_review.md",
+          "sha256": "5d07a71ed8fec3ed81e477bb4335f68a4d12876daf2c308b10129951b910b9b7"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realabs-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:41:43.243764+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_absolute_distance.md": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+        "manuscript/foundations/real_absolute_distance_answers.md": "6936bdad3080d32277761c98efb4fdddc2b763a95748e88de1cad1c539339cc1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_distance_quadratic_pedagogy_review.md",
+          "sha256": "dbfe9b31849e3a2a5a362ce8f5fd5ee7d5bc8083e0f5c766f6c08c7109a4c177"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realquad-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:41:43.243764+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_quadratic_equations.md": "ebb2fcc25ecd46897a3b062e8c349d58ba142fa6e2c5fae92caa18513bac8f0f",
+        "manuscript/foundations/real_quadratic_equations_answers.md": "b42037063b3a4b084e136cc86a7d4946008b651f2df705fa42aad3089c91bcb1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_quadratic_equations_math_review.md",
+          "sha256": "a919407a85c78f68a0c7e9a6c44983eae162c1583b3ae1ce0f2b7bbfe2099b19"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realquad-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T03:41:43.243764+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_quadratic_equations.md": "ebb2fcc25ecd46897a3b062e8c349d58ba142fa6e2c5fae92caa18513bac8f0f",
+        "manuscript/foundations/real_quadratic_equations_answers.md": "b42037063b3a4b084e136cc86a7d4946008b651f2df705fa42aad3089c91bcb1"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_distance_quadratic_pedagogy_review.md",
+          "sha256": "dbfe9b31849e3a2a5a362ce8f5fd5ee7d5bc8083e0f5c766f6c08c7109a4c177"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight complete solutions reviewed; formal build/rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realplane-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:04:37.938484+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_affine.md": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+        "manuscript/foundations/real_plane_affine_answers.md": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_affine_math_review.md",
+          "sha256": "ed96d7ebed49764d36019a3ca427b573c49f7ae0e42d294803ec91087df0decc"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "realplane-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:04:37.938484+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_affine.md": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+        "manuscript/foundations/real_plane_affine_answers.md": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_metric_pedagogy_review.md",
+          "sha256": "15508aa2bbe5b48906e69923cc981b7d985d9adb1cc8b807bbbaf67c30adca75"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planedist-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:04:37.938484+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_distance.md": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2",
+        "manuscript/foundations/real_plane_distance_answers.md": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_distance_math_review.md",
+          "sha256": "84f1f8c119eeadbe5fd6048a0e5b45e02dcf6082465a298cfd14ba72c874586c"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planedist-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:04:37.938484+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_distance.md": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2",
+        "manuscript/foundations/real_plane_distance_answers.md": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_metric_pedagogy_review.md",
+          "sha256": "15508aa2bbe5b48906e69923cc981b7d985d9adb1cc8b807bbbaf67c30adca75"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planeline-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:20:54.434631+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_lines.md": "c0dcbed5cae920f8f5736b31d9a59a4e9b111c249e588fcf76010e073b0fa1eb",
+        "manuscript/foundations/real_plane_lines_answers.md": "e1972719fda1dc291fc3b7f14a35491b0cc5f3553d267364e0cf5e4cd4a8a2b2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_lines_math_review.md",
+          "sha256": "7a3f4fd85f95edd1f57cc7609cece8435ad8529d1e38b0edadf3253769965f99"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planeline-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:20:54.434631+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_lines.md": "c0dcbed5cae920f8f5736b31d9a59a4e9b111c249e588fcf76010e073b0fa1eb",
+        "manuscript/foundations/real_plane_lines_answers.md": "e1972719fda1dc291fc3b7f14a35491b0cc5f3553d267364e0cf5e4cd4a8a2b2"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_lines_projection_pedagogy_review.md",
+          "sha256": "c294d48cbc05179550ff49ec2e4c1d741a5d164e2ad0cc2c66f2be2ac9692d10"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planeproj-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:20:54.434631+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_projection.md": "ebb277469fdcbdc34241420d122a6809c424d23fe6629a2c00b7b149f01f21c4",
+        "manuscript/foundations/real_plane_projection_answers.md": "bdf1d68ae934cc6465642ee53f704951432fea857fccda12b6a662f2708d21ab"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_plane_projection_math_review.md",
+          "sha256": "fde06d3eb87cbe08d91dea89e874f5a33527305e7485bd242799073d127dfebe"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "planeproj-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:20:54.434631+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_plane_projection.md": "ebb277469fdcbdc34241420d122a6809c424d23fe6629a2c00b7b149f01f21c4",
+        "manuscript/foundations/real_plane_projection_answers.md": "bdf1d68ae934cc6465642ee53f704951432fea857fccda12b6a662f2708d21ab"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_lines_projection_pedagogy_review.md",
+          "sha256": "c294d48cbc05179550ff49ec2e4c1d741a5d164e2ad0cc2c66f2be2ac9692d10"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:37:54.763930+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_limits.md": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+        "manuscript/foundations/real_sequences_limits_answers.md": "64b0f32bb8c864fccc445828d3560e4bb2d268062996e2717a7f72be1a496e13"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_limits_math_review.md",
+          "sha256": "f77a4f34cab3857b753a197e938b57f39c87450e461b25b951ee0d41e8cc7e8b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:37:54.763930+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_limits.md": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+        "manuscript/foundations/real_sequences_limits_answers.md": "64b0f32bb8c864fccc445828d3560e4bb2d268062996e2717a7f72be1a496e13"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_pedagogy_review.md",
+          "sha256": "2583e324b7ac0f1e6b8e8b3ea0003cb1ae161efc99d4fda7c7863543669520c0"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seqlaw-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_real_next; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:37:54.763930+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_algebra.md": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89",
+        "manuscript/foundations/real_sequences_algebra_answers.md": "17eecc0e37e89df0d966825b311d41149272f237f438b5c07e1da132f183ef31"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_algebra_math_review.md",
+          "sha256": "27773ff0f0642b881b054b54e3a0c5f5a792271c3203289c140132cb7d91ef43"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seqlaw-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T04:37:54.763930+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_algebra.md": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89",
+        "manuscript/foundations/real_sequences_algebra_answers.md": "17eecc0e37e89df0d966825b311d41149272f237f438b5c07e1da132f183ef31"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_pedagogy_review.md",
+          "sha256": "2583e324b7ac0f1e6b8e8b3ea0003cb1ae161efc99d4fda7c7863543669520c0"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seqorder-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "review22; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T05:08:37.380239+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+        "manuscript/foundations/real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_order_math_review.md",
+          "sha256": "512893da9f135d72320e8b299b73593390ed0d8347f157046ea24cdd3522a764"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "seqorder-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T05:08:37.380239+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_order.md": "28850b28a7f3c0b590af030ddb8ee466d5355489b4d04921e8de11915fb5dfa5",
+        "manuscript/foundations/real_sequences_order_answers.md": "2ea55d7b661f47ecc607f38ed0db554c2dded3534dd3c331d4577c8949777582"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_order_subsequences_pedagogy_review.md",
+          "sha256": "fc56cda681b872a14eb10f35d06debddcfe5a75192123d9f0a17e4e2731ea085"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "subseq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "plan_multiplication; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T05:08:37.380239+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+        "manuscript/foundations/real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_subsequences_bw_math_review.md",
+          "sha256": "344ec137f89a73db34ba4962e9d3fa3aca93f50681a971696d756b2783eb80fc"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "subseq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "visual21_front; root full text reading and exact migration review",
+      "reviewed_at": "2026-10-30T05:08:37.380239+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_subsequences_bw.md": "1118ff39d195bb08d396341c925b7729d61059f705e3bcf611d9e009354c4292",
+        "manuscript/foundations/real_subsequences_bw_answers.md": "9333d231de62b657e65e946d1754ba1814cb050863bf478f66b57948ba4b40b5"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_sequences_order_subsequences_pedagogy_review.md",
+          "sha256": "fc56cda681b872a14eb10f35d06debddcfe5a75192123d9f0a17e4e2731ea085"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Independent full text and eight solutions reviewed; formal build and rendered-page acceptance pending; no complete classification chapter."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cauchy-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_pedagogy",
+      "reviewed_at": "2026-11-05T15:42:08.056382+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_cauchy.md": "c1c2674e29dc7b877e4585cbb4d947d729ac37a681779ed6b3df460ed6503c1f",
+        "manuscript/foundations/real_sequences_cauchy_answers.md": "ae118699aafe23b3f5481a0f8550ffe708ad590afa716365289aec4dc1e91e90"
+      },
+      "evidence": [
+        {
+          "path": "research/production/cauchy_math_review.md",
+          "sha256": "77e29387c97833cdf302eb9bcc51048cdf4ba51456a9792c3668df20558413e8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cauchy-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_sequences_cauchy.md": "c1c2674e29dc7b877e4585cbb4d947d729ac37a681779ed6b3df460ed6503c1f",
+        "manuscript/foundations/real_sequences_cauchy_answers.md": "ae118699aafe23b3f5481a0f8550ffe708ad590afa716365289aec4dc1e91e90"
+      },
+      "evidence": [
+        {
+          "path": "research/production/cauchy_pedagogy_source_review.md",
+          "sha256": "6e806b80ddef2f3bb9cba164b096fb1e30e053801931b4bb4c631dd583a8454a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flim-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_function_limits.md": "93e6559645e147597cb9950108febd90e14a3417e614e231ca014bd1b901241b",
+        "manuscript/foundations/real_function_limits_answers.md": "ab47e47ddfc0ba5a5270e16a535b916ced6e572c8064687307ca18823b4bde1b"
+      },
+      "evidence": [
+        {
+          "path": "research/production/function_limits_math_review.md",
+          "sha256": "4ae9843afe2efd36cc1713e51108414bfa19f0f236591eea0f18238a8d5a7202"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flim-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05T15:58:34.679818+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_function_limits.md": "93e6559645e147597cb9950108febd90e14a3417e614e231ca014bd1b901241b",
+        "manuscript/foundations/real_function_limits_answers.md": "ab47e47ddfc0ba5a5270e16a535b916ced6e572c8064687307ca18823b4bde1b"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_function_limits_pedagogy_review.md",
+          "sha256": "42e94671b3852006f02efdc0c4c1794bd8199921a249ee2f7030e5871be661b0"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cont-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05T16:08:05.029959+00:00",
+      "source_sha256": {
+        "manuscript/foundations/real_function_continuity.md": "c28fe5c66a2895d0db3ad9cfbc2ada9f3e9f8e7942faaa80802529312d19a21b",
+        "manuscript/foundations/real_function_continuity_answers.md": "859e8bbb937f3ce8d4a12beb70956e49984a06da635284bd3d8170ae7a3007aa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_function_continuity_math_review.md",
+          "sha256": "685c0456117ca8be3e4afff493dd277b08ae666801a53c135373d1523370053c"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "cont-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_function_continuity.md": "c28fe5c66a2895d0db3ad9cfbc2ada9f3e9f8e7942faaa80802529312d19a21b",
+        "manuscript/foundations/real_function_continuity_answers.md": "859e8bbb937f3ce8d4a12beb70956e49984a06da635284bd3d8170ae7a3007aa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/function_continuity_pedagogy_source_review.md",
+          "sha256": "49d0415349b1d2517ec317327ee47744545fcc577811e06a5e5c83648992a9f4"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "Current complete unit text and all eight solutions independently reviewed at this stage; build/visual and author review remain separate pending; no complete MSC chapter, leaf or part."
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ccomp-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_continuous_composition.md": "831b973f4af5cd1b24a91443e3648a139ebacc3ea0fa31a8522d76b54715be7e",
+        "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_continuous_composition_math_review.md",
+          "sha256": "df04b5af2d312062ff4b612fccf4462b2f171bc9e669ee62007ec0a114a42e0d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ccomp-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit (historical full review); /root/part1_build (current source-display delta)",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_continuous_composition.md": "831b973f4af5cd1b24a91443e3648a139ebacc3ea0fa31a8522d76b54715be7e",
+        "manuscript/foundations/real_continuous_composition_answers.md": "b43702eb838900b6d357951b4658a10a9eabd87c0f817921640081a8212b5fb3"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_continuous_composition_pedagogy_review.md",
+          "sha256": "3bb404a88febd27fdbbe80f31b74cb15ede8ffe6f3ad696609fafa460a762b28"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ivt-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_intermediate_value.md": "23f54dd5adb3ea9ad1a36a8c1a2ae1d856699101887aca6baf38c78bc45bb388",
+        "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_intermediate_value_math_review.md",
+          "sha256": "43a22b624d10bce8a9385ac2952d46b5e290340e3c88f764b69175378327bb3a"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "ivt-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources (historical full review); /root/part1_build (current source-display delta)",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_intermediate_value.md": "23f54dd5adb3ea9ad1a36a8c1a2ae1d856699101887aca6baf38c78bc45bb388",
+        "manuscript/foundations/real_intermediate_value_answers.md": "5e96183e4c669cbff38b5bb9f67fba65e4cee679ae87ca6ddcb03f6b0cb1b48a"
+      },
+      "evidence": [
+        {
+          "path": "research/production/intermediate_value_pedagogy_source_review.md",
+          "sha256": "99a21bd312ab545684cf1e5a1f1bdd2fef9e69520b6a1e567f3eea46f2381823"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "原完整单元及八解独立审阅＋本次来源显示短语一处差异复核；URL固定版本与答案未变，不声称新全文重审。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "minv-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_monotone_inverse.md": "9b917ad7a2e00682055c0bec1123170f20f809d44e1ba5b8069517e4aad48fec",
+        "manuscript/foundations/real_monotone_inverse_answers.md": "9ebca50fd140d9d66ac7c3b8f8c7bd80d3266b609bc108f9f371a1cb678ffddc"
+      },
+      "evidence": [
+        {
+          "path": "research/production/real_monotone_inverse_math_review.md",
+          "sha256": "02b4f846dc622d95b1ad9a418ef77b25db38a21ebd8ec8bd931396753e0c2d59"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "完整有限单元及八解原审＋两处实际措辞差异复核；非任意区间一般逆定理。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "minv-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/real_monotone_inverse.md": "9b917ad7a2e00682055c0bec1123170f20f809d44e1ba5b8069517e4aad48fec",
+        "manuscript/foundations/real_monotone_inverse_answers.md": "9ebca50fd140d9d66ac7c3b8f8c7bd80d3266b609bc108f9f371a1cb678ffddc"
+      },
+      "evidence": [
+        {
+          "path": "research/production/monotone_inverse_pedagogy_source_review.md",
+          "sha256": "d6b8e4d30cf5228aab1ebc5d1a05d614d514ccc5d1f11d9713949bc2004499e8"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "完整有限单元及八解原审＋两处实际措辞差异复核；非任意区间一般逆定理。build/visual与作者审阅另记，不授予MSC章/叶/部分完成。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "lcq-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+        "manuscript/foundations/logic_connectives_quantifiers_answers.md": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707"
+      },
+      "evidence": [
+        {
+          "path": "research/production/logic_connectives_quantifiers_math_review.md",
+          "sha256": "f1d888e68821bb13d0258e9bd6f51d3a98221f1dde3f58833bb3876355e3985d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "lcq-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/logic_connectives_quantifiers.md": "01d611457f20e4766e500e15b2db2992f91845bae7929ff291e981760ff79f03",
+        "manuscript/foundations/logic_connectives_quantifiers_answers.md": "5e305445a2d392a50f43317e428182b293a62dd384819f552aef7eea75dbf707"
+      },
+      "evidence": [
+        {
+          "path": "research/production/logic_connectives_quantifiers_pedagogy_source_review.md",
+          "sha256": "c4b53de6407bad4d5928418254c19d505e5240f9a7eac74eda12586816fab071"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sio-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/sets_inclusion_operations.md": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+        "manuscript/foundations/sets_inclusion_operations_answers.md": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/sets_inclusion_operations_math_review.md",
+          "sha256": "6e0aa06d0c3dead4e55451dc58c7353e9ffe53885b59b49f52c1397ce3d13dbd"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "sio-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/sets_inclusion_operations.md": "a09296416375ee0bbee65a56c12dcffd056fcb0e4d02de889fb1cefa68c41ab0",
+        "manuscript/foundations/sets_inclusion_operations_answers.md": "8e1da0fec461b1b214105be1de190727d00a729ea97eed29612c526d2756db4f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/sets_inclusion_operations_pedagogy_review.md",
+          "sha256": "75bfce16bb6a7e11f94c334dc0f56f94e153194a4be600587fe219ae8c65bb46"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅本有界单元正文及八题全解的独立文本审阅；构建/视觉与作者审阅另记。未授予完整MSC叶/章/部分；不将采用规则记为已构造。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fct-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05T17:51:08.088323+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+        "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_counting_reindex_math_review.md",
+          "sha256": "156ccae338f7e3e150c7f05172fe7ccde80cf904d86fd73a89b06eafd3f47d02"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终冻结有限计数正文及八题全解的真实独立文本审阅；有限基数与重编号局部，非完整MSC叶/章/部分或维数定理；build/visual与作者审阅另记。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fct-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_sources",
+      "reviewed_at": "2026-11-05T17:51:26.505491+00:00",
+      "source_sha256": {
+        "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+        "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_counting_reindex_pedagogy_source_review.md",
+          "sha256": "c4344c7e0f309e5a691ef8143d25358155366122f42be797116fdbe20b41db5b"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终冻结有限计数正文及八题全解的真实独立文本审阅；有限基数与重编号局部，非完整MSC叶/章/部分或维数定理；build/visual与作者审阅另记。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "frc-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+        "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_coordinates_math_review.md",
+          "sha256": "7a93a5ba403cca8b4b32f69f2a7d1008c0c3b11ef255956cc5bfc2171a4586d7"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "frc-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+        "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_coordinates_pedagogy_review.md",
+          "sha256": "c7e857fccf44de772fdb9db3d0cbe9aa439e2d201d202e244be070e45af855b4"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rfs-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+        "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_sums_math_review.md",
+          "sha256": "d3ffed312cc15d15b3244e15e0db5e9e155c0ec3aa5762aed605e432be29f745"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "rfs-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+        "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_real_sums_pedagogy_review.md",
+          "sha256": "12c4f5ea5a58e9e4030f5d1b39d9a8893cc7a818e3d18a4616b01e48df25bf83"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flc-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_combinations_math_review.md",
+          "sha256": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "flc-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_combinations_pedagogy_review.md",
+          "sha256": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fsp-unit",
+      "stage": "math-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root/part1_audit",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_subspaces.md": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97",
+        "manuscript/foundations/finite_coordinate_subspaces_answers.md": "93847c7812c470fb727c277edd5853ea64f0071b63ec4776c65ec9d8330f29dc"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_subspaces_math_review.md",
+          "sha256": "e3b73d9a00a4ec19ef2fb1866960a6069949d901373458eb1a3280d8ab2ac11d"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FSP最终临时两稿及八题全解的真实独立文字审阅。提案中正式路径尚未安装；须按映射逐字节安装并核hash后方可载入该审签。原读位置与日精度保留，不冒称重新全文审或build/visual通过；非完整15A03/第84章/模块。"
+    },
+    {
+      "target_type": "unit",
+      "target_id": "fsp-unit",
+      "stage": "pedagogy-reviewed",
+      "scope": "unit",
+      "status": "accepted",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-05",
+      "source_sha256": {
+        "manuscript/foundations/finite_coordinate_subspaces.md": "d61775e91c706c45cf03b216ed16e0b03de8799926f51302815c51ffdf09fd97",
+        "manuscript/foundations/finite_coordinate_subspaces_answers.md": "93847c7812c470fb727c277edd5853ea64f0071b63ec4776c65ec9d8330f29dc"
+      },
+      "evidence": [
+        {
+          "path": "research/production/finite_coordinate_subspaces_pedagogy_review.md",
+          "sha256": "ccac39e48c0a6c04dec335d80079ded55c474f599a1d7f88093e880d43250491"
+        }
+      ],
+      "blocking_issues": [],
+      "limits": "仅FSP最终临时两稿及八题全解的真实独立文字审阅。提案中正式路径尚未安装；须按映射逐字节安装并核hash后方可载入该审签。原读位置与日精度保留，不冒称重新全文审或build/visual通过；非完整15A03/第84章/模块。"
+    }
+  ]
+}

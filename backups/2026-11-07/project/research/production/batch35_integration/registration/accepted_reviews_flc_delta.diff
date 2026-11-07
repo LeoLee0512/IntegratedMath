@@ -1,0 +1,51 @@
+--- base/accepted_reviews_flc_delta.diff
++++ proposed75/accepted_reviews_flc_delta.diff
+@@ -3126,6 +3126,48 @@
+       ],
+       "blocking_issues": [],
+       "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
++    },
++    {
++      "target_type": "unit",
++      "target_id": "flc-unit",
++      "stage": "math-reviewed",
++      "scope": "unit",
++      "status": "accepted",
++      "reviewer": "/root/part1_audit",
++      "reviewed_at": "2026-11-05",
++      "source_sha256": {
++        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
++        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
++      },
++      "evidence": [
++        {
++          "path": "research/production/finite_coordinate_combinations_math_review.md",
++          "sha256": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155"
++        }
++      ],
++      "blocking_issues": [],
++      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
++    },
++    {
++      "target_type": "unit",
++      "target_id": "flc-unit",
++      "stage": "pedagogy-reviewed",
++      "scope": "unit",
++      "status": "accepted",
++      "reviewer": "/root",
++      "reviewed_at": "2026-11-05",
++      "source_sha256": {
++        "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
++        "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
++      },
++      "evidence": [
++        {
++          "path": "research/production/finite_coordinate_combinations_pedagogy_review.md",
++          "sha256": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42"
++        }
++      ],
++      "blocking_issues": [],
++      "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+     }
+   ]
+ }

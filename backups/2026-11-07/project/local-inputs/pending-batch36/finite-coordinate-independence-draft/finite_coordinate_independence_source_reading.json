@@ -1,0 +1,44 @@
+{
+  "status": "planning-content-read-only; manuscripts not started",
+  "date": "2026-11-05",
+  "author": "/root/part1_pedagogy",
+  "new_network_requests": 3,
+  "records": [
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LI.xml",
+      "checked_at_utc": "2026-11-05T18:49:45.483487+00:00",
+      "status": 200,
+      "bytes": 70177,
+      "sha256": "825577704b67560629ff93458281c2a8b94980a9def4972849e723902e455090",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LI.xml",
+      "actual_read_ranges": [
+        "1–40"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LISS.xml",
+      "checked_at_utc": "2026-11-05T18:49:57.161030+00:00",
+      "status": 200,
+      "bytes": 62520,
+      "sha256": "fe6b767b5e77a8922bff021c92ee8b0a663a30a3f14c00a45555fb6810da98b5",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LISS.xml",
+      "actual_read_ranges": [
+        "578–622"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-LDS.xml",
+      "checked_at_utc": "2026-11-05T18:50:09.094141+00:00",
+      "status": 200,
+      "bytes": 48860,
+      "sha256": "44a7e9d2a0044a33e2ff63d1226443d923a9bb6a1ca08f3a526ed2557c40a00c",
+      "cache": "/tmp/finite-coordinate-independence-source-cache/section-LDS.xml",
+      "actual_read_ranges": [
+        "1–99"
+      ]
+    }
+  ],
+  "scope": "definitions; coefficient-difference uniqueness reasoning restricted here to span(v); nonzero relation coefficient isolation/reverse. No source basis/matrix/dimension theorem adopted. All explicit deletion-index/empty-parameter details planned independently from existing book interfaces.",
+  "plan_sha256": "7643ac12ef7e16db76628fdcbf9e703090f6790cd9f6c80e5deb5bb6859853eb",
+  "source_original_policy": "Keep actual obtained/read tmp paths and hashes; later preservation mapping separately, no rewrite of signed reading record."
+}

@@ -1,0 +1,83 @@
+{
+  "prepared_at": "2026-11-05T18:06:42.963286+00:00",
+  "status": "temporary_candidate_not_applied",
+  "syntax": "passed",
+  "old_69_UNITS_literal_unchanged": true,
+  "appended_units": [
+    [
+      "logic_connectives_quantifiers",
+      "lcq-unit",
+      "lcq",
+      "logic_connectives_quantifiers"
+    ],
+    [
+      "sets_inclusion_operations",
+      "sio-unit",
+      "sio",
+      "sets_inclusion_operations"
+    ],
+    [
+      "finite_counting_reindex",
+      "fct-unit",
+      "fct",
+      "finite_counting_reindex"
+    ]
+  ],
+  "old_education_analysis_maps_unchanged": true,
+  "builder_changed_existing_functions": [
+    "source_hashes",
+    "compose_body",
+    "main"
+  ],
+  "validator_changed_existing_functions": [
+    "render_contacts",
+    "main"
+  ],
+  "all_other_existing_functions_ast_unchanged": true,
+  "old_require_calls": 302,
+  "new_require_calls": 302,
+  "require_calls_changed_only_counts_chapter_order_and_part_order": 3,
+  "new_source_records": [
+    "research/production/logic_connectives_quantifiers_plan.md",
+    "research/production/logic_connectives_quantifiers_sources.json",
+    "research/production/logic_connectives_quantifiers_pedagogy_source_review.md",
+    "research/production/sets_inclusion_operations_plan.md",
+    "research/production/sets_inclusion_operations_sources.json",
+    "research/production/sets_inclusion_operations_math_review.md",
+    "research/production/finite_counting_bridge_plan.md",
+    "research/production/finite_counting_reindex_sources.json",
+    "research/production/finite_counting_reindex_math_review.md",
+    "research/production/finite_counting_reindex_pedagogy_source_review.md",
+    "research/production/logic_connectives_quantifiers_math_review.md",
+    "research/production/sets_inclusion_operations_pedagogy_review.md",
+    "tools/build_production_ledger.py",
+    "research/production/part1_jcon_abstract_event_followup_2026-11-05.json",
+    "research/production/part1_jcon_abstract_event_followup_2026-11-05.md",
+    "research/production/part1_jcon_abstract_root_content_review.json",
+    "research/production/part1_abstract_source_mapping_review.md"
+  ],
+  "expected_counts": {
+    "units": 72,
+    "pairs": 603,
+    "figures": 21,
+    "part1_G_verified": 8,
+    "part1_G_pending": 10
+  },
+  "guard": "Requires actual 72-unit registration and applied/bound 00B05 source ledger before artifact mutation",
+  "build_executed": false,
+  "compose_executed": false,
+  "validator_executed": false,
+  "formal_files_modified": false,
+  "baseline_sha256": {
+    "tools/build_learning_batch.py": "ca8c790d25ae21770cf33c5bc6404add64ebba7982f2505d23b421276e84a556",
+    "tools/validate_learning_batch.py": "7743d2810c2a67ec949e727e226ec3628f659b63b1c834493ccc8ccef36c9b5b"
+  },
+  "candidate_sha256": {
+    "build_learning_batch.py": "efa3639ac6753e7b6fa45a5f3778121ce67b07962bc70f82329c7adbdb80efb1",
+    "validate_learning_batch.py": "10e0078b2c6a173f67162f40dd2febb2ceb86eb0bff3307961c6337b458e08f4"
+  },
+  "all_old_scope_phrases_retained_with_two_exact_count_updates": true,
+  "isolated_guard_check": "guard_overlay_check.json",
+  "proposal_and_root_applied_guards_passed": true,
+  "negative_cases_rejected": 3
+}

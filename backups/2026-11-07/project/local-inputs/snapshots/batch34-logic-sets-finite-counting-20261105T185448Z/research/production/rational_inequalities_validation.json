@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-29T16:57:42.465965+00:00",
+  "domain": "Five coefficients {-1,-1/2,0,1/2,1}, three slots, four comparisons, each of two solver families",
+  "oracle": "SymPy 1.14.0 exact full real interval unions, then rational membership checks",
+  "source_sha256": {
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9",
+    "tools/rational_inequalities.py": "c4c54bceea7c55549a1d27cfecb35bdc8e082e9123ef20c309b20d140d72c254",
+    "tools/validate_rational_inequalities.py": "6ddee0e0db7d39d9f12e95625978bae63b374098c5a5fc06819a93e399efbfd6"
+  },
+  "counts": {
+    "linear": 500,
+    "absolute": 500,
+    "full_set_oracle": 1000,
+    "rational_membership": 10616,
+    "finite_endpoint_checks": 760,
+    "invalid_coefficients": 36,
+    "invalid_relations": 12,
+    "invalid_membership_values": 6,
+    "extra_domain_checks": 2
+  },
+  "explicit_examples": [
+    "negative coefficient reverses strict direction",
+    "zero coefficient equal threshold: strict false, weak true",
+    "negative absolute threshold: upper empty and lower all",
+    "zero threshold distinguishes singleton, empty, all, punctured set",
+    "constant absolute value checked before dividing by a",
+    "negative affine slope has a positive half width"
+  ],
+  "limits": "Finite coefficient cases only; interval records represent Q subsets. No expression parsing, additional D filtering, real construction or formal proof is provided."
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/part1_sources",
+  "reviewed_at": "2026-11-05T17:51:26.505491+00:00",
+  "status": "passed",
+  "review_scope": "independent pedagogy and limited source content; not a build/visual/whole-chapter acceptance",
+  "manuscripts": {
+    "manuscript/foundations/finite_counting_reindex.md": "ae6eb2061b56f0a91de5f6790fa348871e83ef6adbb568a07539237d734740b9",
+    "manuscript/foundations/finite_counting_reindex_answers.md": "26650c66fc74285f4619be51ee99a6d210174f561d2ce894232e3da3caf90e74"
+  },
+  "source_record": {
+    "path": "research/production/finite_counting_reindex_sources.json",
+    "sha256": "b4327e6db45c1e13f104826703dc8430ceef55c2c0db9b0e432fba126b496502"
+  },
+  "plan": {
+    "path": "research/production/finite_counting_bridge_plan.md",
+    "sha256": "b30e0b811805bfff5b61625312c9a8d15a9852cf960164e0b5bd1cb743991c98"
+  },
+  "actual_full_read": {
+    "body_lines": 229,
+    "answer_lines": 181,
+    "questions": 8,
+    "answers": 8
+  },
+  "actual_source_readings": [
+    {
+      "path": "local-inputs/b3-sets-source-cache/sec_structures-sets.ptx",
+      "sha256": "0d525f026c14b828c16a7e4534dbe7df0bed77919456262d31a088eb643c8af7",
+      "actual_read_range": "788–855; header1–15",
+      "role": "finite cardinality and non-counting of repetitions"
+    },
+    {
+      "path": "local-inputs/finite-counting-source-cache/sec_structures-functions.ptx",
+      "sha256": "56ec951f529b91b0e4041a3c54bca3afb9997aa34ef326219a82bfde276cf292",
+      "actual_read_range": "823–853,1095–1135; header1–15",
+      "role": "injection/surjection/bijection definitions; same-size question, not proof"
+    },
+    {
+      "path": "local-inputs/b3-logic-source-cache/license.txt",
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+      "actual_read_range": "full 5-line notice",
+      "role": "fourth-edition CC BY-NC-SA 4.0; third-and-earlier CC BY-SA 4.0 distinguished"
+    },
+    {
+      "path": "local-inputs/b3-sets-source-cache/dmoi.ptx",
+      "sha256": "f0029601a3478be629c7df9c7a42252f2b12d5267db01c91bd0a1db5e1f1d6c9",
+      "actual_read_range": "full root file",
+      "role": "xml:id dmoi4 and subtitle 4th Edition; links to structures chapter"
+    },
+    {
+      "path": "local-inputs/b3-sets-source-cache/README.md",
+      "sha256": "49acf2864e340b035d69d88d864d501849c90c4d46dcfcbf08012ae4c310c21f",
+      "actual_read_range": "1–32",
+      "role": "repository identity and branch description only; commands not executed"
+    },
+    {
+      "path": "local-inputs/b3-sets-source-cache/requests.json",
+      "sha256": "33a62d8b432da4914f579dd007dddd5599454e8bdfd63758d8948a30d2a0dc38",
+      "actual_read_range": "full",
+      "role": "previous response metadata; failed guessed files not used as source"
+    }
+  ],
+  "prerequisite_file_bindings": [
+    {
+      "path": "manuscript/foundations/natural_numbers.md",
+      "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+    },
+    {
+      "path": "manuscript/foundations/natural_order.md",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+    },
+    {
+      "path": "manuscript/foundations/natural_order_answers.md",
+      "sha256": "ba046797e6a2ebf8b06cf1795fb6a1b03f92922e0e4caaf98f3a4d5d58c0f1d8"
+    },
+    {
+      "path": "manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+    },
+    {
+      "path": "manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a"
+    },
+    {
+      "path": "manuscript/foundations/functions_bijections.md",
+      "sha256": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db"
+    },
+    {
+      "path": "manuscript/foundations/functions_inverse.md",
+      "sha256": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270"
+    },
+    {
+      "path": "manuscript/foundations/finite_sums.md",
+      "sha256": "ea736adc9c09e27a9443cd24a11af4c3a1f1fcad72824a8f7430b3a4b670ea23"
+    }
+  ],
+  "anchor_validation": {
+    "unique_references": 36,
+    "unresolved": [],
+    "duplicates": [],
+    "locations": {
+      "b1-induction": "manuscript/foundations/natural_numbers.md",
+      "bij-bijective": "manuscript/foundations/functions_bijections.md",
+      "bij-composition": "manuscript/foundations/functions_bijections.md",
+      "bij-injective": "manuscript/foundations/functions_bijections.md",
+      "bij-surjective": "manuscript/foundations/functions_bijections.md",
+      "fc-composition": "manuscript/foundations/functions_composition.md",
+      "fc-equality": "manuscript/foundations/functions_composition.md",
+      "fc-identity": "manuscript/foundations/functions_composition.md",
+      "fct-a01": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a02": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a03": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a04": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a05": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a06": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a07": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-a08": "manuscript/foundations/finite_counting_reindex_answers.md",
+      "fct-q01": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q02": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q03": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q04": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q05": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q06": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q07": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-q08": "manuscript/foundations/finite_counting_reindex.md",
+      "fct-unit": "manuscript/foundations/finite_counting_reindex.md",
+      "fun-definition": "manuscript/foundations/functions_definition.md",
+      "fun-sets": "manuscript/foundations/functions_definition.md",
+      "inv-reverse-graph": "manuscript/foundations/functions_inverse.md",
+      "ord-a07": "manuscript/foundations/natural_order_answers.md",
+      "ord-partial-order": "manuscript/foundations/natural_order.md",
+      "ord-predecessor": "manuscript/foundations/natural_order.md",
+      "ord-strict-equivalence": "manuscript/foundations/natural_order.md",
+      "ord-strong-induction": "manuscript/foundations/natural_order.md",
+      "ord-successor-comparison": "manuscript/foundations/natural_order.md",
+      "ord-trichotomy": "manuscript/foundations/natural_order.md",
+      "sum-indices": "manuscript/foundations/finite_sums.md"
+    }
+  },
+  "review_evidence": {
+    "path": "research/production/finite_counting_reindex_pedagogy_source_review.md",
+    "sha256": "c4344c7e0f309e5a691ef8143d25358155366122f42be797116fdbe20b41db5b"
+  },
+  "network_requests": 0,
+  "source_manuscripts_modified": false,
+  "formal_acceptance_or_build_modified": false,
+  "resolved_findings": [
+    "Added precise O5 mixed-transitivity and FC identity prerequisites",
+    "Added real Sets/Functions/license public locations and exact source-record path; snapshot line limitations explicit"
+  ],
+  "remaining_pedagogy_source_blockers": [],
+  "not_claimed": [
+    "full external textbook review",
+    "external proof of FCT1-5",
+    "rendered visual review",
+    "page-budget verification",
+    "formal registration",
+    "whole-category completion"
+  ]
+}

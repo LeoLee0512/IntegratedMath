@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "result": "pass",
+  "checked_at_utc": "2026-10-27T14:52:24.051580+00:00",
+  "scope": {
+    "pair_entry_inclusive_range": [
+      0,
+      6
+    ],
+    "triple_pair_entry_inclusive_range": [
+      0,
+      3
+    ],
+    "comparison_model": "Independent Python signed integer arithmetic",
+    "representative_checks": "All same-value pair replacements within the stated finite domain"
+  },
+  "counts": {
+    "unary_records": 49,
+    "binary_pairs": 2401,
+    "law_triples": 4096,
+    "replacement_checks": 11319,
+    "invalid_input_rejected": 101,
+    "input_immutability": 7203,
+    "examples": 14
+  },
+  "manuscript_examples": [
+    {
+      "operation": "add",
+      "left": [
+        0,
+        3
+      ],
+      "right": [
+        5,
+        0
+      ],
+      "expected": [
+        2,
+        0
+      ],
+      "raw_result": [
+        5,
+        3
+      ],
+      "actual": [
+        2,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "subtract",
+      "left": [
+        3,
+        0
+      ],
+      "right": [
+        5,
+        0
+      ],
+      "expected": [
+        0,
+        2
+      ],
+      "raw_result": [
+        3,
+        5
+      ],
+      "actual": [
+        0,
+        2
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        0,
+        3
+      ],
+      "right": [
+        0,
+        4
+      ],
+      "expected": [
+        12,
+        0
+      ],
+      "raw_result": [
+        12,
+        0
+      ],
+      "actual": [
+        12,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        0,
+        3
+      ],
+      "right": [
+        4,
+        0
+      ],
+      "expected": [
+        0,
+        12
+      ],
+      "raw_result": [
+        0,
+        12
+      ],
+      "actual": [
+        0,
+        12
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        5,
+        5
+      ],
+      "right": [
+        0,
+        4
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "raw_result": [
+        20,
+        20
+      ],
+      "actual": [
+        0,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        3,
+        1
+      ],
+      "right": [
+        1,
+        4
+      ],
+      "expected": [
+        0,
+        6
+      ],
+      "raw_result": [
+        7,
+        13
+      ],
+      "actual": [
+        0,
+        6
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        5,
+        3
+      ],
+      "right": [
+        1,
+        4
+      ],
+      "expected": [
+        0,
+        6
+      ],
+      "raw_result": [
+        17,
+        23
+      ],
+      "actual": [
+        0,
+        6
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        0,
+        2
+      ],
+      "right": [
+        0,
+        3
+      ],
+      "expected": [
+        6,
+        0
+      ],
+      "raw_result": [
+        6,
+        0
+      ],
+      "actual": [
+        6,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "multiply",
+      "left": [
+        3,
+        5
+      ],
+      "right": [
+        2,
+        7
+      ],
+      "expected": [
+        10,
+        0
+      ],
+      "raw_result": [
+        41,
+        31
+      ],
+      "actual": [
+        10,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "add",
+      "left": [
+        2,
+        5
+      ],
+      "right": [
+        7,
+        1
+      ],
+      "expected": [
+        3,
+        0
+      ],
+      "raw_result": [
+        9,
+        6
+      ],
+      "actual": [
+        3,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "add",
+      "left": [
+        0,
+        3
+      ],
+      "right": [
+        6,
+        0
+      ],
+      "expected": [
+        3,
+        0
+      ],
+      "raw_result": [
+        6,
+        3
+      ],
+      "actual": [
+        3,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "subtract",
+      "left": [
+        3,
+        0
+      ],
+      "right": [
+        8,
+        0
+      ],
+      "expected": [
+        0,
+        5
+      ],
+      "raw_result": [
+        3,
+        8
+      ],
+      "actual": [
+        0,
+        5
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "subtract",
+      "left": [
+        3,
+        0
+      ],
+      "right": [
+        0,
+        8
+      ],
+      "expected": [
+        11,
+        0
+      ],
+      "raw_result": [
+        11,
+        0
+      ],
+      "actual": [
+        11,
+        0
+      ],
+      "result": "pass"
+    },
+    {
+      "operation": "subtract",
+      "left": [
+        0,
+        3
+      ],
+      "right": [
+        0,
+        8
+      ],
+      "expected": [
+        5,
+        0
+      ],
+      "raw_result": [
+        8,
+        3
+      ],
+      "actual": [
+        5,
+        0
+      ],
+      "result": "pass"
+    }
+  ],
+  "source_sha256": {
+    "tools/integer_pairs.py": "678d3636272f810534c1855ea27d68f9ab9e5c541d40d0c13f6fb437e2ad2f7f",
+    "tools/validate_integer_pairs.py": "0602ba169f892686cbea964b71a40a0cb9ec1cf2a5e6b367e186c4562ca6cbb2"
+  },
+  "reproduce": "python tools/validate_integer_pairs.py",
+  "limitations": [
+    "Finite checks do not prove the general mathematical claims.",
+    "Pairs are representatives; Python tuple equality is not integer-class equality.",
+    "No formal proof assistant, efficiency claim or PDF validation is implied."
+  ]
+}

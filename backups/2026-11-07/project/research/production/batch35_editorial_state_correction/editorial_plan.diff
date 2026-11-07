@@ -1,0 +1,310 @@
+--- base/data/editorial_plan.json
++++ proposed/data/editorial_plan.json
+@@ -13,8 +13,16 @@
+   },
+   "unlisted_sections": {
+     "depth": null,
+-    "status": "未规划",
+-    "count": 5973
++    "status": "未在本第一部分局部编辑计划逐节列出；不代表全书未规划或未写",
++    "count": 5973,
++    "count_basis": "6006个分类节减去本文件列出的第一部分33节，仅为本文件未列项数量",
++    "coverage_authority": "data/production/",
++    "authority_records": [
++      "data/production/parts.json",
++      "data/production/chapters.json",
++      "data/production/sections.json",
++      "data/production/units.json"
++    ]
+   },
+   "current_chapter": {
+     "code": "00Axx",
+@@ -53,7 +61,7 @@
+       "number": 2,
+       "code": "00-02",
+       "depth": "G",
+-      "status": "修订导读稿；专题来源待补；待作者审阅",
++      "status": "专题来源已核；完整部分验收未通过；待作者审阅",
+       "scope": "研究材料的核验边界",
+       "source": "manuscript/review_ch01/part_opening.md#sec-00-02",
+       "production_acceptance": "research/production/part1_acceptance.json",
+@@ -61,7 +69,7 @@
+       "learning_targets": [
+         "研究材料的核验边界"
+       ],
+-      "topic_source_status": "pending",
++      "topic_source_status": "verified",
+       "source_review": "research/production/part1_topic_sources.json",
+       "production_acceptance_status": "pending",
+       "completed_at_declared_depth": false,
+@@ -322,7 +330,7 @@
+       "number": 13,
+       "code": "00A30",
+       "depth": "G",
+-      "status": "修订导读稿；专题来源待补；待作者审阅",
++      "status": "专题来源已核；完整部分验收未通过；待作者审阅",
+       "scope": "数学陈述与认识边界",
+       "source": "manuscript/review_ch01/chapter.md#sec-00A30",
+       "production_acceptance": "research/production/part1_acceptance.json",
+@@ -330,7 +338,7 @@
+       "learning_targets": [
+         "数学陈述与认识边界"
+       ],
+-      "topic_source_status": "pending",
++      "topic_source_status": "verified",
+       "source_review": "research/production/part1_topic_sources.json",
+       "production_acceptance_status": "pending",
+       "completed_at_declared_depth": false,
+@@ -389,7 +397,7 @@
+       "number": 15,
+       "code": "00A64",
+       "depth": "G",
+-      "status": "修订导读稿；专题来源待补；待作者审阅",
++      "status": "专题来源已核；完整部分验收未通过；待作者审阅",
+       "scope": "语言表达与量词",
+       "source": "manuscript/review_ch01/chapter.md#sec-00A64",
+       "production_acceptance": "research/production/part1_acceptance.json",
+@@ -397,7 +405,7 @@
+       "learning_targets": [
+         "语言表达与量词"
+       ],
+-      "topic_source_status": "pending",
++      "topic_source_status": "verified",
+       "source_review": "research/production/part1_topic_sources.json",
+       "production_acceptance_status": "pending",
+       "completed_at_declared_depth": false,
+@@ -597,14 +605,14 @@
+       "code": "00B05",
+       "depth": "G",
+       "source": "manuscript/review_ch02/chapter.md#sec-00B05",
+-      "status": "修订导读稿；专题来源待补；待作者审阅",
++      "status": "专题来源已核；完整部分验收未通过；待作者审阅",
+       "scope": "辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明",
+       "production_acceptance": "research/production/part1_acceptance.json",
+       "author_review": "pending",
+       "learning_targets": [
+         "辨认讲座摘要的信息边界，由报告人和题名寻找全文而不宣称已读证明"
+       ],
+-      "topic_source_status": "pending",
++      "topic_source_status": "verified",
+       "source_review": "research/production/part1_topic_sources.json",
+       "production_acceptance_status": "pending",
+       "completed_at_declared_depth": false,
+@@ -836,39 +844,39 @@
+     "purpose": "文集类型、用途与核验，不承担基础运算教学",
+     "production_acceptance_status": "pending"
+   },
+-  "completion_note": "第一部分33节为T2/S13/G18修订审阅稿；4个G专题来源已核、14个G待补，15个T/S原创工作由独立数学与教学审读负责。数学与教学阶段已通过，自动构建27题及50/267/218页通过，三套PDF共535页已逐页覆盖实际视觉检查并通过，最终证据见当前visual报告。完整部分保持pending，33节不再沿用旧完整accepted；作者审阅待进行，不宣称穷尽MSC或全书完成。",
++  "completion_note": "第一部分33节为T2/S13/G18修订审阅稿；当前正式scope与来源账为8个G专题来源已核、10个G待补，15个T/S原创工作由独立数学与教学审读负责。当前数学、教学报告绑定本稿；独立Part1构建与视觉报告仍绑定较早源稿，不能据其旧页数和通过状态认证含00B05新入口的当前稿。旧4/14记录、旧页数及旧绑定完整保留于editorial_state_history。完整部分保持pending，作者审阅pending，完整部分完成数仍为0。全书实际覆盖与规划以根目录data/production为准，本文件未列出的5973节不等于全书未规划。",
+   "current_part": {
+     "code": "00-XX",
+     "status": "pending",
+     "full_scope_accepted": false,
+     "completed_at_declared_depth": false,
+     "scope_plan": "research/production/part1_scope_plan.json",
+-    "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
++    "plan_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+     "source_review": "research/production/part1_topic_sources.json",
+-    "source_review_sha256": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
++    "source_review_sha256": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+     "depth_counts": {
+       "T": 2,
+       "S": 13,
+       "G": 18
+     },
+     "source_status_counts": {
+-      "verified_G": 4,
+-      "pending_G": 14,
++      "verified_G": 8,
++      "pending_G": 10,
+       "original_T_S_reviewed_separately": 15
+     },
+     "verified_G_codes": [
+       "00-01",
++      "00-02",
+       "00A15",
++      "00A30",
++      "00A64",
+       "00A99",
++      "00B05",
+       "00B10"
+     ],
+     "pending_G_codes": [
+-      "00-02",
+       "00A17",
+       "00A27",
+-      "00A30",
+-      "00A64",
+-      "00B05",
+       "00B15",
+       "00B20",
+       "00B25",
+@@ -882,24 +890,157 @@
+       "math": "accepted",
+       "pedagogy": "accepted",
+       "sources": "pending",
+-      "automated_build": "automated_checks_passed",
+-      "visual": "accepted",
++      "automated_build": "pending_current_revision",
++      "visual": "pending_current_revision",
+       "author": "pending"
+     },
+     "exercises": 27,
+-    "pdf_page_counts": {
+-      "review": 50,
+-      "full_catalog_edition": 267,
+-      "catalog_only": 218
+-    },
+-    "build_record": "build/part1/validation.json",
+-    "status_note": "各阶段分别记录；来源缺口未消除，不能由数学/教学/自动构建通过提升全部分完成。",
+-    "visual_review": "research/production/part1_visual_review.json"
++    "pdf_page_counts": null,
++    "build_record": null,
++    "status_note": "当前稿数学/教学报告已绑定当前计划和八源；专题来源10项仍pending。独立Part1既有构建/视觉签与当前计划和源稿不匹配，其历史状态另存，不把旧产物当成本稿验收。基础续写批次的构建/视觉状态另以data/production/batch_validation.json及其实际绑定为准；不自动替代独立Part1整体验收。",
++    "visual_review": null,
++    "author_review": "pending",
++    "report_bindings": {
++      "math": {
++        "path": "research/production/part1_math_review.json",
++        "sha256": "e3d71546fc5464a8a7c7a78c4d3e88b2a412bd00a1ba858166035d76817f66c3",
++        "recorded_status": "accepted",
++        "matches_current_plan_and_eight_sources": true,
++        "applies_to_current_revision": true,
++        "interpretation": "现有独立审读记录，非本次重新审签"
++      },
++      "pedagogy": {
++        "path": "research/production/part1_pedagogy_review.json",
++        "sha256": "b4840986d383bace0904a7eface67487dd1e4cce62e12dd77f98c4e603b612f4",
++        "recorded_status": "accepted",
++        "matches_current_plan_and_eight_sources": true,
++        "applies_to_current_revision": true,
++        "interpretation": "现有独立审读记录，非本次重新审签"
++      },
++      "build": {
++        "path": "research/production/part1_build_review.json",
++        "sha256": "a5f955d6d5712e4787cb30f9096b01e1cdc77d1e50d43171aa523373e438f52c",
++        "recorded_status": "automated_checks_passed",
++        "matches_current_plan_and_eight_sources": false,
++        "applies_to_current_revision": false,
++        "interpretation": "仅为历史版本记录；当前独立Part1该阶段待更新"
++      },
++      "visual": {
++        "path": "research/production/part1_visual_review.json",
++        "sha256": "bb63cb6e61e10f9a1f807ced0edb373736b67fd5065f85b469965af564863333",
++        "recorded_status": "accepted",
++        "matches_current_plan_and_eight_sources": false,
++        "applies_to_current_revision": false,
++        "interpretation": "仅为历史版本记录；当前独立Part1该阶段待更新"
++      }
++    }
+   },
+   "historical_completion_statement": {
+     "commit": "de08a8a92dc04feeacf088c7566e4b79b2bc32fa",
+     "record": "research/production/history/de08a8a/research/production/part1_acceptance.json",
+     "correction": "旧工具未检查真实专题来源门槛，旧accepted保留为历史，不适用于当前完整部分声明。",
+     "author_review_at_that_time": "pending"
+-  }
++  },
++  "coverage_authority": {
++    "path": "data/production/",
++    "scope": "全书现行部/章/节/教学单元覆盖账；本文件仅为第一部分33节的局部编辑状态",
++    "completed_parts": 0,
++    "completed_parts_basis": "data/production/parts.json checks.completed_parts；本次只核该值，未新验全书完成"
++  },
++  "editorial_state_history": [
++    {
++      "archived_at": "2026-11-05T19:08:45.020523+00:00",
++      "original_updated_on": "2026-11-05",
++      "original_file_sha256": "a8b31a380732779d44d9dcac639f42e81319edffbbe759fac2d5d55d8de5ef72",
++      "applies_to_current_revision": false,
++      "description": "原文件曾将旧4/14来源状态、50/267/218页和旧计划/来源绑定放在current字段；原值保留为历史，不重新认证这些产物，不适用于当前00B05修订稿。",
++      "completion_note_as_recorded": "第一部分33节为T2/S13/G18修订审阅稿；4个G专题来源已核、14个G待补，15个T/S原创工作由独立数学与教学审读负责。数学与教学阶段已通过，自动构建27题及50/267/218页通过，三套PDF共535页已逐页覆盖实际视觉检查并通过，最终证据见当前visual报告。完整部分保持pending，33节不再沿用旧完整accepted；作者审阅待进行，不宣称穷尽MSC或全书完成。",
++      "current_part_as_recorded": {
++        "code": "00-XX",
++        "status": "pending",
++        "full_scope_accepted": false,
++        "completed_at_declared_depth": false,
++        "scope_plan": "research/production/part1_scope_plan.json",
++        "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
++        "source_review": "research/production/part1_topic_sources.json",
++        "source_review_sha256": "9d8872b38cb3602a73921c3f6c27c3bdca56f56ee8ac63edf9da775311121ea6",
++        "depth_counts": {
++          "T": 2,
++          "S": 13,
++          "G": 18
++        },
++        "source_status_counts": {
++          "verified_G": 4,
++          "pending_G": 14,
++          "original_T_S_reviewed_separately": 15
++        },
++        "verified_G_codes": [
++          "00-01",
++          "00A15",
++          "00A99",
++          "00B10"
++        ],
++        "pending_G_codes": [
++          "00-02",
++          "00A17",
++          "00A27",
++          "00A30",
++          "00A64",
++          "00B05",
++          "00B15",
++          "00B20",
++          "00B25",
++          "00B30",
++          "00B50",
++          "00B55",
++          "00B60",
++          "00B99"
++        ],
++        "stages": {
++          "math": "accepted",
++          "pedagogy": "accepted",
++          "sources": "pending",
++          "automated_build": "automated_checks_passed",
++          "visual": "accepted",
++          "author": "pending"
++        },
++        "exercises": 27,
++        "pdf_page_counts": {
++          "review": 50,
++          "full_catalog_edition": 267,
++          "catalog_only": 218
++        },
++        "build_record": "build/part1/validation.json",
++        "status_note": "各阶段分别记录；来源缺口未消除，不能由数学/教学/自动构建通过提升全部分完成。",
++        "visual_review": "research/production/part1_visual_review.json"
++      },
++      "unlisted_sections_as_recorded": {
++        "depth": null,
++        "status": "未规划",
++        "count": 5973
++      },
++      "changed_section_statuses_as_recorded": [
++        {
++          "code": "00-02",
++          "status": "修订导读稿；专题来源待补；待作者审阅",
++          "topic_source_status": "pending"
++        },
++        {
++          "code": "00A30",
++          "status": "修订导读稿；专题来源待补；待作者审阅",
++          "topic_source_status": "pending"
++        },
++        {
++          "code": "00A64",
++          "status": "修订导读稿；专题来源待补；待作者审阅",
++          "topic_source_status": "pending"
++        },
++        {
++          "code": "00B05",
++          "status": "修订导读稿；专题来源待补；待作者审阅",
++          "topic_source_status": "pending"
++        }
++      ]
++    }
++  ]
+ }

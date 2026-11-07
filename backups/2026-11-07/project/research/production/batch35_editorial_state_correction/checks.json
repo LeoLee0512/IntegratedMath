@@ -1,0 +1,41 @@
+{
+  "status": "passed_read_only_candidate_checks",
+  "prepared_at": "2026-11-05T19:08:45.020523+00:00",
+  "base_sha256": "a8b31a380732779d44d9dcac639f42e81319edffbbe759fac2d5d55d8de5ef72",
+  "candidate_sha256": "6891e00dce5d4f55dfff4b8905175993ea1144489a0f5c26abb32953d2b8b804",
+  "diff_sha256": "128c40dec3490e66fd2fb9b8a2ffc979b7b8a0729f14033050f5f7c187f6061a",
+  "observed_source_and_review_hashes": {
+    "research/production/part1_scope_plan.json": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "research/production/part1_topic_sources.json": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+    "research/production/part1_math_review.json": "e3d71546fc5464a8a7c7a78c4d3e88b2a412bd00a1ba858166035d76817f66c3",
+    "research/production/part1_pedagogy_review.json": "b4840986d383bace0904a7eface67487dd1e4cce62e12dd77f98c4e603b612f4",
+    "research/production/part1_build_review.json": "a5f955d6d5712e4787cb30f9096b01e1cdc77d1e50d43171aa523373e438f52c",
+    "research/production/part1_visual_review.json": "bb63cb6e61e10f9a1f807ced0edb373736b67fd5065f85b469965af564863333"
+  },
+  "section_count": 33,
+  "changed_section_codes": [
+    "00-02",
+    "00A30",
+    "00A64",
+    "00B05"
+  ],
+  "counts": {
+    "verified_G": 8,
+    "pending_G": 10,
+    "original_T_S_reviewed_separately": 15
+  },
+  "all_depths_objectives_anchors_unchanged": true,
+  "all_section_source_statuses_match_current_scope_and_ledger": true,
+  "author_pending_all_33": true,
+  "all_completion_flags_false": true,
+  "completed_parts": 0,
+  "old_historical_completion_statement_unchanged": true,
+  "old_current_part_and_pages_preserved_exactly_in_history": true,
+  "build_input_count": 327,
+  "build_manifest_sha256": "719a86dd42ee0fcbdd4f4e40e5f41a6cf3b2bbd3d1bf39997308bc3e3a0c08f7",
+  "computed_inputs_equal_build_manifest": true,
+  "editorial_plan_is_build_input": false,
+  "source_map_sha256": "50060d92a28248d24d9db8d507237c913d06cefe684496d22103a77341080424",
+  "no_formal_changes": true,
+  "no_builds_or_network_requests": true
+}

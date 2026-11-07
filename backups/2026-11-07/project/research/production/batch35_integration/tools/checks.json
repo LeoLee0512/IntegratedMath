@@ -1,0 +1,93 @@
+{
+  "prepared_at": "2026-11-05T18:42:55.201178+00:00",
+  "status": "temporary_candidate_not_applied",
+  "syntax": "passed",
+  "old72_UNITS_preserved": true,
+  "old_classification_maps_and_21_figures_preserved": true,
+  "all_old_source_path_constants_preserved": true,
+  "changed_existing_builder_functions": [
+    "source_hashes",
+    "compose_body",
+    "main"
+  ],
+  "renamed_guard": "check_batch34_prerequisites -> check_batch35_prerequisites",
+  "changed_existing_validator_functions": [
+    "render_contacts",
+    "main"
+  ],
+  "all_other_functions_ast_unchanged": true,
+  "external_HTTP_markdown_fragment_fix_preserved": true,
+  "old_require_calls": 302,
+  "new_require_calls": 303,
+  "changed_old_require_calls": 3,
+  "new_require_calls_for_part_chapter_containment": 1,
+  "appended_units": [
+    [
+      "finite_real_coordinates",
+      "frc-unit",
+      "frc",
+      "finite_real_coordinates"
+    ],
+    [
+      "finite_real_sums",
+      "rfs-unit",
+      "rfs",
+      "finite_real_sums"
+    ],
+    [
+      "finite_coordinate_combinations",
+      "flc-unit",
+      "flc",
+      "finite_coordinate_combinations"
+    ]
+  ],
+  "new_source_records": [
+    "research/production/finite_real_coordinates_next_plan.md",
+    "research/production/finite_real_coordinates_sources.json",
+    "research/production/finite_real_coordinates_source_reading.json",
+    "research/production/finite_real_coordinates_math_review.md",
+    "research/production/finite_real_coordinates_pedagogy_review.md",
+    "research/production/finite_real_sums_linear_combinations_plan.md",
+    "research/production/finite_real_sums_sources.json",
+    "research/production/finite_real_sums_author_check.md",
+    "research/production/finite_real_sums_math_review.md",
+    "research/production/finite_real_sums_pedagogy_review.md",
+    "research/production/finite_coordinate_combinations_plan.md",
+    "research/production/finite_coordinate_combinations_sources.json",
+    "research/production/finite_coordinate_combinations_author_check.md",
+    "research/production/finite_coordinate_combinations_math_review.md",
+    "research/production/finite_coordinate_combinations_pedagogy_review.md"
+  ],
+  "expected_counts": {
+    "units": 75,
+    "pairs": 627,
+    "figures": 21,
+    "part1_G_verified": 8,
+    "part1_G_pending": 10
+  },
+  "expected_new_parts": [
+    11,
+    63,
+    11
+  ],
+  "expected_new_chapters": [
+    84,
+    528,
+    84
+  ],
+  "baseline_sha256": {
+    "tools/build_learning_batch.py": "efa3639ac6753e7b6fa45a5f3778121ce67b07962bc70f82329c7adbdb80efb1",
+    "tools/validate_learning_batch.py": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf"
+  },
+  "candidate_sha256": {
+    "build_learning_batch.py": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+    "validate_learning_batch.py": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58"
+  },
+  "build_executed": false,
+  "compose_executed": false,
+  "validator_executed": false,
+  "formal_files_modified": false,
+  "full_diff_read": true,
+  "all_old_scope_phrases_retained_with_exact_count_update": true,
+  "isolated_checks": "isolated_checks.json"
+}

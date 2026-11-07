@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "catalog_pdf_complete",
+  "review_kind": "visual",
+  "status": "accepted",
+  "reviewer": "/root/part1_pedagogy",
+  "reviewed_at": "2026-11-05T08:27:13.764907+00:00",
+  "plan_sha256": "3c353bd3ee16589a76a2a12489b0a10396f4769cffc71292be20acdeb0926861",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "5130b7cdb3ddc654aeb94adbbe2923ae21c3ce9a66681f1a58c60754333a2acd",
+    "manuscript/review_ch01/chapter.md": "c04082871e3595819417e02ae730429790e8a5db2f233ce85caae7351293cacb",
+    "manuscript/review_ch01/answers.md": "506ea09593899622099c9fb3ac9821a407630ccb50dfba5cade93a5f117e0251",
+    "manuscript/review_ch01/appendices.md": "d16702d5411e5270a02963ae046a38c944b64e35d45adba3b4fffac86a4a2ae9",
+    "manuscript/review_ch02/chapter.md": "6ec66043da26980d6300e470a3ac53f8a76d4cb896a6f7533bfb9bbca3a466ac",
+    "manuscript/review_ch02/answers.md": "2813b876dfe34be9d57e03c5e23cc1b7b6ac6b8f271cd0e676b7c2c49d81acee",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "artifact_sha256": {
+    "dist/part1/综合数学_完整数学目录.pdf": "40bbd608ab29aa447879845cfee6c16cfd00358d3acd89928270811684631a86"
+  },
+  "pdf_page_counts": {
+    "dist/part1/综合数学_完整数学目录.pdf": 218
+  },
+  "pages": [
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-001.png",
+      "sha256": "3cb7a619f6a1a9825fea0ecd6978dbdd95be55997dd66c91709206bd5f15a8b2",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-013.png",
+      "sha256": "22ac332f1c3be61cbb38123452c58285e8f345943aa43efbbc1dcc152541f47e",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-025.png",
+      "sha256": "d40595bd425533a80da56300c909b75b352f0a2e17b07f0c30e809267a8ae0fe",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-037.png",
+      "sha256": "b31a3d4baff21ad5c4a2cf507efd4f683c25d22ed931719e82f369a10121825a",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-049.png",
+      "sha256": "3f181682befe0900d240d0ae3b1cd347882c7a4e0cb383ded78b098471e070ef",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-061.png",
+      "sha256": "d282f5d005c60d144c73a0be987d28a414f7bc17c535cfad9706f133aeb1df8e",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-073.png",
+      "sha256": "a6648189c0a66cf396408ea1f0c1725841bb3257677f038f5689063eb9993448",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-085.png",
+      "sha256": "44295b69bb24e58a485ca078fc98ddd146bc7e58fc32535a7c270768d6907054",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-097.png",
+      "sha256": "6da3e3de3951472007516fe279c12c8e36ceff23b839c0d9ee8cf89d58a5a7ad",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-109.png",
+      "sha256": "a18daad3f30e74007ed0ce4f47d53e0196de793121089c7e566ff2e1484ba49b",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-121.png",
+      "sha256": "6a834d2e80a11662b5f1eaa27c25030b1b5d03093dc82badae27fd0b965754da",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-133.png",
+      "sha256": "ab01e9b8723f686ac06bce6f8c3238c2755ed60fe74ce937e344625337cad9f9",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-145.png",
+      "sha256": "e7248ea54675fad593e8f5fe91caa9e79c0e96bb9db3691d0eeaa061acbec912",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-157.png",
+      "sha256": "13080c7452f5521a831a3426c83b381d16cd194b921a523fb05d6f7fd8915988",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-169.png",
+      "sha256": "f031129d1807fef9e7901a92303b528b9560b1120ecad6ae95bab7307b7d5eba",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-181.png",
+      "sha256": "2c6f895e33a29e67c1d8d4ffab283c4069a49395a09638ff7730272722bf575e",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-193.png",
+      "sha256": "5d00433d27603c2aec26f36a0637297c2aad4560287b6e86a58201c5be2542b2",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-205.png",
+      "sha256": "ec57aebd9ea93f670cc7c503e85b2ce58cd308eb5a2fbec5717f30b9156de542",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        217,
+        218
+      ],
+      "path": "build/part1/contacts/综合数学_完整数学目录/contact-217.png",
+      "sha256": "661b4920e14207e285a5027b275c52be8860aa771048d482571f8b4c5d44084e",
+      "inspected": true
+    }
+  ],
+  "detail_pages": [
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        2
+      ],
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-002.png",
+      "sha256": "6dcab15ce9c92a9d0a46ade7a98bfc2bbf31b97515be7c2d6ccd09a887552d81",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        18
+      ],
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-018.png",
+      "sha256": "2cde059339fb0547adf546bf290242546a3e82c1a4d00c33fcb5ea086698e958",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        114
+      ],
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-114.png",
+      "sha256": "e3f9ecd35a6331a080eb7593eea940da35deea56dd92368821b99d9597dc94ec",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        178
+      ],
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-178.png",
+      "sha256": "43351a5250a1d016cbd9abf06806fa94d58b09377636361f0603d6e5cad3010d",
+      "inspected": true
+    },
+    {
+      "pdf": "dist/part1/综合数学_完整数学目录.pdf",
+      "pages": [
+        218
+      ],
+      "path": "build/part1/screenshots/综合数学_完整数学目录/page-218.png",
+      "sha256": "6e13a45d99d2fce34e38e6e7a9fdf6cb1b23ad9d2fd809488e871887d78988e1",
+      "inspected": true
+    }
+  ],
+  "blocking_issues": [],
+  "checks": {
+    "chinese": true,
+    "toc": true,
+    "pagination": true,
+    "no_visible_missing_glyphs": true,
+    "no_visible_overflow": true,
+    "no_orphan_headings": true
+  },
+  "evidence": [
+    {
+      "path": "research/production/part1_visual_catalog.md",
+      "sha256": "1cd437efaf34732be276f6a74e9cf00ec5f9eeaf7a4d55151af85f1cd330d2b1"
+    }
+  ]
+}

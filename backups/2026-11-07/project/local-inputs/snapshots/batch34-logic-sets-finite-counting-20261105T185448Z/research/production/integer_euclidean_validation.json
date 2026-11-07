@@ -1,0 +1,340 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-27T15:19:55.701979+00:00",
+  "source_sha256": {
+    "tools/integer_euclidean.py": "1059fa4bb23e44c6e6fbbc57006b3f2f072211790114226576587f1ca47ad01f",
+    "tools/validate_integer_euclidean.py": "cdcea3c8f43e2656d4270a3c976cc2a207f6b2980cb5fbccd27643624c3e4e94",
+    "tools/natural_algorithms.py": "630c87b88312bee1014bf0cd3c18f087cdf4381ccdbd609fded5052fe7e04715"
+  },
+  "scope": {
+    "integer_inputs": [
+      -36,
+      36
+    ],
+    "division_divisors": [
+      -12,
+      12
+    ],
+    "division_excludes_zero": true,
+    "common_divisor_probes": [
+      -36,
+      36
+    ],
+    "gcd_double_zero": 0,
+    "remainder_convention": "0 <= r < abs(b)"
+  },
+  "counts": {
+    "division_pairs": 1752,
+    "divisibility_pairs": 5329,
+    "gcd_pairs": 5329,
+    "trace_rows": 16464,
+    "common_divisor_checks": 1590889,
+    "invalid_rejections": 67
+  },
+  "examples": [
+    {
+      "operation": "division",
+      "inputs": [
+        -23,
+        5
+      ],
+      "result": [
+        -5,
+        2
+      ]
+    },
+    {
+      "operation": "division",
+      "inputs": [
+        -23,
+        -5
+      ],
+      "result": [
+        5,
+        2
+      ]
+    },
+    {
+      "operation": "division",
+      "inputs": [
+        -20,
+        5
+      ],
+      "result": [
+        -4,
+        0
+      ]
+    },
+    {
+      "operation": "division",
+      "inputs": [
+        0,
+        -7
+      ],
+      "result": [
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "divides",
+      "inputs": [
+        0,
+        0
+      ],
+      "result": true
+    },
+    {
+      "operation": "divides",
+      "inputs": [
+        0,
+        7
+      ],
+      "result": false
+    },
+    {
+      "operation": "divides",
+      "inputs": [
+        -3,
+        6
+      ],
+      "result": true
+    },
+    {
+      "operation": "divides",
+      "inputs": [
+        4,
+        6
+      ],
+      "result": false
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        48,
+        18
+      ],
+      "result": 6,
+      "trace": [
+        {
+          "u": 48,
+          "v": 18,
+          "q": 2,
+          "r": 12
+        },
+        {
+          "u": 18,
+          "v": 12,
+          "q": 1,
+          "r": 6
+        },
+        {
+          "u": 12,
+          "v": 6,
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        -48,
+        18
+      ],
+      "result": 6,
+      "trace": [
+        {
+          "u": 48,
+          "v": 18,
+          "q": 2,
+          "r": 12
+        },
+        {
+          "u": 18,
+          "v": 12,
+          "q": 1,
+          "r": 6
+        },
+        {
+          "u": 12,
+          "v": 6,
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        0,
+        -7
+      ],
+      "result": 7,
+      "trace": [
+        {
+          "u": 0,
+          "v": 7,
+          "q": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        -7,
+        0
+      ],
+      "result": 7,
+      "trace": []
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        0,
+        0
+      ],
+      "result": 0,
+      "trace": []
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        84,
+        30
+      ],
+      "result": 6,
+      "trace": [
+        {
+          "u": 84,
+          "v": 30,
+          "q": 2,
+          "r": 24
+        },
+        {
+          "u": 30,
+          "v": 24,
+          "q": 1,
+          "r": 6
+        },
+        {
+          "u": 24,
+          "v": 6,
+          "q": 4,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        -84,
+        -30
+      ],
+      "result": 6,
+      "trace": [
+        {
+          "u": 84,
+          "v": 30,
+          "q": 2,
+          "r": 24
+        },
+        {
+          "u": 30,
+          "v": 24,
+          "q": 1,
+          "r": 6
+        },
+        {
+          "u": 24,
+          "v": 6,
+          "q": 4,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        14,
+        25
+      ],
+      "result": 1,
+      "trace": [
+        {
+          "u": 14,
+          "v": 25,
+          "q": 0,
+          "r": 14
+        },
+        {
+          "u": 25,
+          "v": 14,
+          "q": 1,
+          "r": 11
+        },
+        {
+          "u": 14,
+          "v": 11,
+          "q": 1,
+          "r": 3
+        },
+        {
+          "u": 11,
+          "v": 3,
+          "q": 3,
+          "r": 2
+        },
+        {
+          "u": 3,
+          "v": 2,
+          "q": 1,
+          "r": 1
+        },
+        {
+          "u": 2,
+          "v": 1,
+          "q": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "operation": "gcd",
+      "inputs": [
+        18,
+        30
+      ],
+      "result": 6,
+      "trace": [
+        {
+          "u": 18,
+          "v": 30,
+          "q": 0,
+          "r": 18
+        },
+        {
+          "u": 30,
+          "v": 18,
+          "q": 1,
+          "r": 12
+        },
+        {
+          "u": 18,
+          "v": 12,
+          "q": 1,
+          "r": 6
+        },
+        {
+          "u": 12,
+          "v": 6,
+          "q": 2,
+          "r": 0
+        }
+      ]
+    }
+  ],
+  "independent_models": "Division uses Python remainder with abs(b) and exact quotient; gcd uses exhaustive positive-factor search; divisibility uses Python modulo with explicit zero handling.",
+  "limits": "Finite implementation and example checks; not proof for arbitrary integers, formal verification or a complexity guarantee."
+}

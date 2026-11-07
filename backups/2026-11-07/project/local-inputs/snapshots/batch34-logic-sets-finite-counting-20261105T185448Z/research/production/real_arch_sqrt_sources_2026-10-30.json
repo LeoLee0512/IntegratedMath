@@ -1,0 +1,754 @@
+{
+  "schema_version": 1,
+  "status": "batch26_source_conditions_and_final_reviewed_text_snapshot_verified_pending_integration",
+  "citation_anchor": "real-arch-sqrt-sources",
+  "checked_at_utc": "2026-10-30T03:06:14.062987+00:00",
+  "actor": "/root/prepare22_build",
+  "formal_repository_writes": false,
+  "new_network_requests": 0,
+  "scope": "B2.31RA1–RA4 andB2.32RS1–RS4 current reviewed snapshot: real natural bounds,Archimedean multiples,rational-image density,finite-width brackets and nonnegative square-root existence/uniqueness. RS2 uses already constructed ordered field andDC4 independently ofRA; external assumedR is not construction evidence. No new aggregate approval.",
+  "sources": [
+    {
+      "id": "mathlib_archim_basic",
+      "title": "Algebra/Order/Archimedean/Basic.lean",
+      "author": "Mario Carneiro",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+      "role": "Mathematical conditions and structural comparison; no Lean code copied into book",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic",
+      "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+      "bytes": 25104,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.957096+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:43:58.506128+00:00",
+      "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+      "actual_bytes": 25104,
+      "batch26_integration_reused_cache": true,
+      "batch26_use": "Hypothesis/method comparison only, using the book already constructed field and order; external assumed existence of R is not a construction premise.",
+      "durable_local_cache_path": "local-inputs/pending-batch26/source-cache/mathlib_archim_basic"
+    },
+    {
+      "id": "mathlib_license",
+      "title": "mathlib LICENSE",
+      "author": "mathlib contributors",
+      "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+      "license": "Apache-2.0",
+      "role": "License evidence reused without a new network request",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:43:58.506167+00:00",
+      "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+      "actual_bytes": 11357,
+      "author_role_note": "Repository attribution, not authorship of standard Apache license text.",
+      "batch26_integration_reused_cache": true,
+      "batch26_use": "Hypothesis/method comparison only, using the book already constructed field and order; external assumed existence of R is not a construction premise.",
+      "durable_local_cache_path": "local-inputs/pending-batch26/source-cache/mathlib_license"
+    },
+    {
+      "id": "lebl_reals",
+      "title": "Basic Analysis I, chapter The Real Numbers",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "bytes": 80337,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:43:58.506234+00:00",
+      "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+      "actual_bytes": 80337,
+      "batch26_integration_reused_cache": true,
+      "batch26_use": "Hypothesis/method comparison only, using the book already constructed field and order; external assumed existence of R is not a construction premise.",
+      "durable_local_cache_path": "local-inputs/pending-batch26/source-cache/lebl_reals"
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author, title/version and copyright evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:43:58.506261+00:00",
+      "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+      "actual_bytes": 18862,
+      "batch26_integration_reused_cache": true,
+      "batch26_use": "Hypothesis/method comparison only, using the book already constructed field and order; external assumed existence of R is not a construction premise.",
+      "durable_local_cache_path": "local-inputs/pending-batch26/source-cache/lebl_front"
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "License evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T02:43:58.506273+00:00",
+      "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+      "actual_bytes": 467,
+      "author_role_note": "Work attribution and repository license notice; no claim Lebl authored standard Creative Commons license text.",
+      "batch26_integration_reused_cache": true,
+      "batch26_use": "Hypothesis/method comparison only, using the book already constructed field and order; external assumed existence of R is not a construction premise.",
+      "durable_local_cache_path": "local-inputs/pending-batch26/source-cache/lebl_license"
+    }
+  ],
+  "source_locators": {
+    "lebl_reals": [
+      "535-537: real field and least-upper-bound background already assumed",
+      "595-670: existence/uniqueness of positive square root of 2 by supremum and perturbations",
+      "684-773: Archimedean multiples and rational density; source proves natural unboundedness from completeness and density by least natural integer",
+      "672-682: irrationality statement; general nth roots mentioned but excluded here",
+      "772–775: negative-endpoint density cases reduce by negation; read for complete source argument, not adopted construction route."
+    ],
+    "mathlib_archim_basic": [
+      "39-44: class Archimedean with additive natural multiples and weak inequality",
+      "157-176: exists_nat_ge/exists_nat_gt assume Archimedean structure; not proof of cut construction"
+    ],
+    "lebl_license": [
+      "1-13: dual CC BY NC SA 4.0 / CC BY SA 4.0"
+    ]
+  },
+  "source_recheck": {
+    "five_original_caches_verified": true,
+    "checks": [
+      {
+        "source_id": "mathlib_archim_basic",
+        "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+        "bytes": 25104,
+        "matches_original": true,
+        "author_evidence_line": 4,
+        "author_evidence": "Authors: Mario Carneiro"
+      },
+      {
+        "source_id": "mathlib_license",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "bytes": 11357,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_reals",
+        "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "bytes": 80337,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "matches_original": true,
+        "author_evidence_line": 289,
+        "version_evidence_line": 382,
+        "copyright_evidence_line": 401
+      },
+      {
+        "source_id": "lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "matches_original": true
+      }
+    ],
+    "historical_request_logs": [
+      {
+        "path": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d",
+        "matching_original_source_records": [
+          {
+            "request_id": "mathlib_archim_basic",
+            "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+            "checked_at_utc": "2026-10-29T19:51:08.957096+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+            "access_status": "verified_http_200",
+            "bytes": 25104,
+            "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic"
+          },
+          {
+            "request_id": "lebl_reals",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "checked_at_utc": "2026-10-29T19:51:08.613314+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "access_status": "verified_http_200",
+            "bytes": 80337,
+            "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals"
+          },
+          {
+            "request_id": "lebl_front",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "checked_at_utc": "2026-10-29T19:51:54.424412+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "access_status": "verified_http_200",
+            "bytes": 18862,
+            "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front"
+          },
+          {
+            "request_id": "lebl_license",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "access_status": "verified_http_200",
+            "bytes": 467,
+            "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+          }
+        ]
+      },
+      {
+        "path": "/tmp/powers-polynomials-source-audit/requests.json",
+        "sha256": "2024f56d9263f4d1797e9c501db4e72d5ee62a79c5f09ea1670fee88778b7af6",
+        "matching_original_source_records": [
+          {
+            "request_id": "mathlib_license",
+            "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+            "checked_at_utc": "2026-10-29T17:29:06.420671+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+            "bytes": 11357,
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+            "access_status": "verified_http_200"
+          }
+        ]
+      }
+    ],
+    "request_history_note": "All five actual HTTP200 records are original2026-10-29 fetches. Current preparation reused bytes and made no HTTP request."
+  },
+  "current_formal_prerequisite_recheck": [
+    {
+      "path": "manuscript/foundations/rational_gaps_bounds.md",
+      "sha256": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+      "anchors": [
+        "qgap-density-archimedean"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "anchors": [
+        "cut-definition",
+        "cut-order-embedding",
+        "cut-supremum"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_addition.md",
+      "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+      "anchors": [
+        "cutadd-separation",
+        "cutadd-rational"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+      "anchors": [
+        "cutgroup-laws",
+        "cutgroup-inverses",
+        "cutgroup-translation",
+        "cutgroup-negation-subtraction"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_signed_product.md",
+      "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+      "anchors": [
+        "cutsigned-signs",
+        "cutsigned-associative",
+        "cutsigned-rational-zero"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+      "anchors": [
+        "cutring-distributive",
+        "cutring-multiplication-order"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/rational_square_equations.md",
+      "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598",
+      "anchors": [
+        "sqrat-order",
+        "sqrat-root-uniqueness",
+        "sqrat-two-not-square"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "anchors": [
+        "fun-definition"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/rational_powers.md",
+      "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2",
+      "anchors": [
+        "pow-compatibility"
+      ],
+      "status": "actual formal file and anchor verified; not a new acceptance review",
+      "current_recheck": "actual formal bytes and anchors match original; no acceptance issued"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_inverse.md",
+      "sha256": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a",
+      "anchors": [
+        "cutinv-signed-unique",
+        "cutinv-rational-identities"
+      ],
+      "current_recheck": "Actual installed batch25 prerequisite, replaces historical planned-anchor status for current use; aggregate acceptance is outside this audit."
+    },
+    {
+      "path": "manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "anchors": [
+        "cutdiv-definition",
+        "cutdiv-order",
+        "cutdiv-complete-field"
+      ],
+      "current_recheck": "Actual installed batch25 prerequisite, replaces historical planned-anchor status for current use; aggregate acceptance is outside this audit."
+    }
+  ],
+  "classification": {
+    "primary": "97F50",
+    "excluded_new_coverage": "26A03",
+    "coverage_note": "Existing ordered-field use and order cross-references only; no new drafted primary leaves or completed classification.",
+    "evidence": [
+      {
+        "path": "data/msc_taxonomy.json",
+        "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+      },
+      {
+        "path": "data/catalog_titles_zh.json",
+        "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+      }
+    ],
+    "current_cross": [
+      "06A05",
+      "12J15"
+    ]
+  },
+  "manuscript_binding": {
+    "status": "current_tmp_files_match_final_freeze_notifications_and_report_hashes",
+    "checked_at_utc": "2026-10-30T03:15:56.830543+00:00",
+    "manuscripts": [
+      {
+        "observed_path": "/tmp/real_archimedean_density.md",
+        "sha256": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e",
+        "bytes": 17754,
+        "intended_repository_path": "manuscript/foundations/real_archimedean_density.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_archimedean_density_answers.md",
+        "sha256": "d9532ea72f9bf98a48cba5ea2293dc9977f98c9b64b07e9a973eb3a27e517165",
+        "bytes": 15204,
+        "intended_repository_path": "manuscript/foundations/real_archimedean_density_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_square_roots.md",
+        "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+        "bytes": 17113,
+        "intended_repository_path": "manuscript/foundations/real_square_roots.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_square_roots_answers.md",
+        "sha256": "2a4d542d0326a6e6e9577a11363ad0434847de976cb6d40c851ec4a906f44732",
+        "bytes": 14075,
+        "intended_repository_path": "manuscript/foundations/real_square_roots_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      }
+    ],
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_archimedean_density_math_review.md",
+        "sha256": "c3d35dce9b5c33249aa4d66ef66030c61ac927ad88156f0f26b67de58f404c8d",
+        "bytes": 6708,
+        "intended_repository_path": "research/production/real_archimedean_density_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "review22",
+        "scope_as_reported": "独立全文数学审阅B2.31 RA1—RA4与八份完整解答，核最终先修链接差分",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_square_roots_math_review.md",
+        "sha256": "745c9c9f6a27142e9a22274f62b9462421a407b11f67ae0aa496efbc4d28e207",
+        "bytes": 10525,
+        "intended_repository_path": "research/production/real_square_roots_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/plan_multiplication",
+        "scope_as_reported": "独立全文数学审阅B2.32 RS1—RS4与八份完整解答；两处单空格排版修订已实际逆差绑定",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_arch_sqrt_pedagogy_review.md",
+        "sha256": "db38177a6cc57e010d4b0a60579c4e351427352539dca8c4cc55364ccc890109",
+        "bytes": 11492,
+        "intended_repository_path": "research/production/real_arch_sqrt_pedagogy_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "独立全文教学审阅四稿和16份完整解答、先修与题答双链；新来源仅核锚存在",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      }
+    ],
+    "planning_evidence": [
+      {
+        "observed_path": "/tmp/real_arch_sqrt_plan.md",
+        "sha256": "6e4b4fa94f86735c23dc7c3faff36b9095d2f54412934da29d167673813f9e64",
+        "bytes": 22119,
+        "intended_repository_path": "research/production/real_arch_sqrt_plan.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_arch_sqrt_concept_review.md",
+        "sha256": "f4442515aac02c79cd57121580d4fcaacaf3d80c90a46e6ca16731b0be124d69",
+        "bytes": 9362,
+        "intended_repository_path": "research/production/real_arch_sqrt_concept_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:19:31.025738+00:00"
+      }
+    ],
+    "formal_installation_verified": true,
+    "aggregate_approval_claim": false,
+    "note": "Actual byte and existing report-scope binding only. Review decisions belong to named reports; no production or visual approval is issued or bound downstream."
+  },
+  "planning_snapshot": {
+    "path": "/tmp/real_arch_sqrt_plan.md",
+    "sha256": "6e4b4fa94f86735c23dc7c3faff36b9095d2f54412934da29d167673813f9e64",
+    "note": "Observed planning snapshot only; concept typo correction and final review addendum must be bound later."
+  },
+  "original_plan_source_record": {
+    "status": "planning only; no formal repository changes; B2.29/30 conditional pending prerequisites",
+    "checked_at_utc": "2026-10-30T02:43:58.506822+00:00",
+    "new_http_requests": 0,
+    "sources": [
+      {
+        "id": "mathlib_archim_basic",
+        "title": "Algebra/Order/Archimedean/Basic.lean",
+        "author": "Mario Carneiro",
+        "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+        "license": "Apache-2.0; source file notice and reused fixed-tag LICENSE inspected",
+        "role": "Mathematical conditions and structural comparison; no Lean code copied into book",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Archimedean/Basic.lean",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/mathlib_archim_basic",
+        "sha256": "78c9a88bc670d67318367a3531fdae32b806a280fa3a1ee0ee5bc7728e05c09f",
+        "bytes": 25104,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.957096+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T02:43:58.506128+00:00",
+        "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+        "actual_bytes": 25104
+      },
+      {
+        "id": "mathlib_license",
+        "title": "mathlib LICENSE",
+        "author": "mathlib contributors",
+        "version": "mathlib v4.24.0 (public tagged source; checked text only, no Lean compilation)",
+        "license": "Apache-2.0",
+        "role": "License evidence reused without a new network request",
+        "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+        "cache_path": "/tmp/powers-polynomials-source-audit/mathlib_license",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "bytes": 11357,
+        "original_fetch_at_utc": "2026-10-29T17:29:06.420671+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T02:43:58.506167+00:00",
+        "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+        "actual_bytes": 11357
+      },
+      {
+        "id": "lebl_reals",
+        "title": "Basic Analysis I, chapter The Real Numbers",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+        "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "bytes": 80337,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T02:43:58.506234+00:00",
+        "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+        "actual_bytes": 80337
+      },
+      {
+        "id": "lebl_front",
+        "title": "Basic Analysis I, front matter",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Author, title/version and copyright evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T02:43:58.506261+00:00",
+        "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+        "actual_bytes": 18862
+      },
+      {
+        "id": "lebl_license",
+        "title": "Basic Analysis LICENSE.md",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "License evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T02:43:58.506273+00:00",
+        "current_check": "reused cached public bytes; SHA-256 and size recomputed; not new HTTP request",
+        "actual_bytes": 467
+      }
+    ],
+    "source_locators": {
+      "lebl_reals": [
+        "535-537: real field and least-upper-bound background already assumed",
+        "595-670: existence/uniqueness of positive square root of 2 by supremum and perturbations",
+        "684-773: Archimedean multiples and rational density; source proves natural unboundedness from completeness and density by least natural integer",
+        "672-682: irrationality statement; general nth roots mentioned but excluded here"
+      ],
+      "mathlib_archim_basic": [
+        "39-44: class Archimedean with additive natural multiples and weak inequality",
+        "157-176: exists_nat_ge/exists_nat_gt assume Archimedean structure; not proof of cut construction"
+      ],
+      "lebl_license": [
+        "1-13: dual CC BY NC SA 4.0 / CC BY SA 4.0"
+      ]
+    },
+    "prerequisites": [
+      {
+        "path": "manuscript/foundations/rational_gaps_bounds.md",
+        "sha256": "20ab8bd8ee996a2b69f297020caf7138c533e8781ff35bc794c8fe6cad0f4ff3",
+        "anchors": [
+          "qgap-density-archimedean"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/dedekind_cuts_order.md",
+        "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+        "anchors": [
+          "cut-definition",
+          "cut-order-embedding",
+          "cut-supremum"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/dedekind_addition.md",
+        "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+        "anchors": [
+          "cutadd-separation",
+          "cutadd-rational"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/dedekind_additive_order.md",
+        "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+        "anchors": [
+          "cutgroup-laws",
+          "cutgroup-inverses",
+          "cutgroup-translation",
+          "cutgroup-negation-subtraction"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/dedekind_signed_product.md",
+        "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+        "anchors": [
+          "cutsigned-signs",
+          "cutsigned-associative",
+          "cutsigned-rational-zero"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/dedekind_ring_order.md",
+        "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+        "anchors": [
+          "cutring-distributive",
+          "cutring-multiplication-order"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/rational_square_equations.md",
+        "sha256": "8a1edd98b84ee307666dfe8e7c416bea4530e9332b7eed1e1c813c471a7a2598",
+        "anchors": [
+          "sqrat-order",
+          "sqrat-root-uniqueness",
+          "sqrat-two-not-square"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/functions_definition.md",
+        "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+        "anchors": [
+          "fun-definition"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      },
+      {
+        "path": "manuscript/foundations/rational_powers.md",
+        "sha256": "581010522535b41a771d0dd920531b37669b379ea64ce6001028620988bb3ee2",
+        "anchors": [
+          "pow-compatibility"
+        ],
+        "status": "actual formal file and anchor verified; not a new acceptance review"
+      }
+    ],
+    "conditional_prerequisites": {
+      "B2.29": [
+        "cutinv-signed-unique",
+        "cutinv-rational-identities"
+      ],
+      "B2.30": [
+        "cutdiv-definition",
+        "cutdiv-order",
+        "cutdiv-complete-field"
+      ],
+      "status": "planned anchors from /tmp/dedekind_inverse_plan.md; MUST reverify final drafts and reviews before writing/applying"
+    },
+    "rights": "Sources used for mathematical conditions and method comparison; no copying of external exercises, answers, figures or prose; source cache not automatically distributed. Apache 2.0 source copyright/notice and CC attribution/share-alike terms remain applicable to any later reuse."
+  },
+  "original_source_record_files": [
+    {
+      "path": "/tmp/real_arch_sqrt_sources.json",
+      "sha256": "c65d88a55e7e736522cdebbd349e4a9cca4da926f015fb2ffaedc8f36e11c57c"
+    }
+  ],
+  "figures_and_code": {
+    "new_figures": 0,
+    "total_figures_expected": 18,
+    "new_numerical_code": false,
+    "new_numbered_code_appendix": false,
+    "numbered_appendices_expected": 25
+  },
+  "validation_boundary": "Source bytes,HTTP history,attribution,licenses,conditions and actual prerequisite/text/report binding only; no copied proofs/exercises/images/code,Lean compilation,general cut computation,new mathematical approval,production build orPDF acceptance.",
+  "current_batch26_obligations": [
+    {
+      "group": "RA1",
+      "anchor": "realarch-natural-bound",
+      "obligation": "Define ν:N→R via existing N→Q→R embeddings and check operation/order compatibility. A rational exterior r of any cut A and a positive natural Q bound give A⊆ν(n); r itself witnesses strictness. Prove natural-image unboundedness with correct quantifiers and two-sided bounds without real absolute value."
+    },
+    {
+      "group": "RA2",
+      "anchor": "realarch-scaled-reciprocal",
+      "obligation": "ForX>0 use legal Y/X,RA1 and positive multiplication-back to obtainν(n)X>Y. Forε>0 chooseν(n)>Inv(ε)>0, use already proved positive inverse reversal and double inverse to obtain0<Inv(ν(n))<ε and rational compatibility. n=0 and ε=0 excluded; no sequence limit or general finite-sum interface is introduced."
+    },
+    {
+      "group": "RA3",
+      "anchor": "realarch-rational-density",
+      "obligation": "ForA<B take rationalr∈B\\A then largers∈B. ShowA<i(s) usingr as strict witness andi(s)<B usings as distinct strict witness. The first pointr alone may yieldi(r)=A; do not use square roots, Archimedean instance, floor or surjectivity of rational embedding."
+    },
+    {
+      "group": "RA4",
+      "anchor": "realarch-rational-brackets",
+      "obligation": "Givenε>0 form positive half-widthE withE+E=ε by legal division and multiplication-back. ApplyRA3 twice and combine strict inequalities using negation/translation; express width asi(q−p), reflectp<q and prove both positive side errors<ε. Eachε has witnesses, not a uniform algorithm or infinite choice."
+    },
+    {
+      "group": "RS1",
+      "anchor": "realsqrt-square-order",
+      "obligation": "Define real square as self-product only. Reprove all-sign nonnegativity/zero criterion, positive and negative perturbation expansions and difference-of-squares from actualR distribution. Cross terms need commutation and2=1+1. Strict/weak comparison and reflection apply only to nonnegative inputs; show negative-input counterexample."
+    },
+    {
+      "group": "RS2",
+      "anchor": "realsqrt-existence",
+      "obligation": "ForA≥0, S_A={X∈R:0≤X andX²≤A} is a subset of cuts. Zero gives nonempty; U=A+1 withU²>A bounds it; DC4 gives s≥0 but not yet s∈S_A. Ifs²<A, explicitly define two-inputmin, takeh=min(1,(A−s²)/(2s+2))>0 and prove strict perturbation chain. Ifs²>A, s>0 and0<δ≤s²; h=δ/(2s)≤s/2 via multiplication-back, t=s−h>0,t<s,t²=A+h²>A. Prove everyX∈S_A lies belowt before callingt an upper bound and invoking leastness. This proof is independent ofRA1–RA4."
+    },
+    {
+      "group": "RS3",
+      "anchor": "realsqrt-function",
+      "obligation": "Nonnegative square reflection gives uniqueness after existence. Define sqrt_R only from nonnegativeR to nonnegativeR; root sign,zero andone follow by candidates/uniqueness. Rational compatibility uses old partialsqrt_Q only onS_Q; reverse rational-image root implies rational-square membership via embedding reflection and injectivity."
+    },
+    {
+      "group": "RS4",
+      "anchor": "realsqrt-equations-irrational",
+      "obligation": "In candidate domainR classifyX²=A into negative/zero/positive target branches. Positive case verifies±s then proves exhaustion by difference-of-squares and zero-product law, without dividing a possiblyzero difference. Existence ofsqrt(i2) precedes its irrationality proof usingQ no-square-of-two and embedding injectivity. Define irrational asR\\i(Q), prove1<sqrt(i2)<2 and translated-square solutions without general real quadratic formula or geometric length claim."
+    }
+  ],
+  "remaining_integration": [
+    "Final build and current-artifact automatic validation; then independent actual PDF page inspection and packaging."
+  ],
+  "root_integration": {
+    "actor": "/root",
+    "checked_at_utc": "2026-10-30T03:19:31.025738+00:00",
+    "candidate_json_sha256": "cd3a3f4dfecb20bc50e353653011976d880f95ba5ea164408a24e2bb247b1180",
+    "candidate_markdown_sha256": "4396d39d78f78b6b8dd9f81d73cfdc49596537839c8d92dca8560052de60d998",
+    "three_tools": {
+      "tools/build_learning_batch.py": "3bb604a3fc5644cdcfcb9aac689aefe2bd99363022965318957f3331df6876e0",
+      "tools/build_production_ledger.py": "85a623334580133d0c00489013cb3dd04d143f11c7231846beca25d89b489986",
+      "tools/validate_learning_batch.py": "4e6bfa8a69640c19343fc6a44eca065acf935143dc075733778bb6e7e2e7cb8c"
+    },
+    "new_network_requests": 0,
+    "scope": "Actual formal installation and cache byte check; no build acceptance.",
+    "actual_compose_body_checks": {
+      "units": 53,
+      "exercise_pairs": 438,
+      "figures": 18,
+      "numbered_appendices": 25,
+      "new_source_anchor_count": 1
+    }
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "complete_part",
+  "review_kind": "pedagogy",
+  "status": "accepted",
+  "reviewer": "/root/part1_build",
+  "reviewed_at": "2026-11-05T09:55:55.835324+00:00",
+  "independent_of_authors": true,
+  "plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+    "manuscript/review_ch01/chapter.md": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "blocking_issues": [],
+  "evidence": [
+    {
+      "path": "research/production/part1_revision_pedagogy_review.md",
+      "sha256": "6f0c4fefbcaf509f913805bb6a65b50bda4212f16059717fea227c7ed486d398"
+    }
+  ],
+  "sections": [
+    {
+      "code": "00-01",
+      "depth": "G",
+      "objective_ids": [
+        "00-01-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "verified"
+    },
+    {
+      "code": "00-02",
+      "depth": "G",
+      "objective_ids": [
+        "00-02-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00A05",
+      "depth": "S",
+      "objective_ids": [
+        "00A05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A06",
+      "depth": "T",
+      "objective_ids": [
+        "00A06-1",
+        "00A06-2",
+        "00A06-3",
+        "00A06-4",
+        "00A06-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A07",
+      "depth": "S",
+      "objective_ids": [
+        "00A07-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A08",
+      "depth": "S",
+      "objective_ids": [
+        "00A08-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A09",
+      "depth": "S",
+      "objective_ids": [
+        "00A09-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A15",
+      "depth": "G",
+      "objective_ids": [
+        "00A15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "verified"
+    },
+    {
+      "code": "00A17",
+      "depth": "G",
+      "objective_ids": [
+        "00A17-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00A20",
+      "depth": "S",
+      "objective_ids": [
+        "00A20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A22",
+      "depth": "S",
+      "objective_ids": [
+        "00A22-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A27",
+      "depth": "G",
+      "objective_ids": [
+        "00A27-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00A30",
+      "depth": "G",
+      "objective_ids": [
+        "00A30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00A35",
+      "depth": "T",
+      "objective_ids": [
+        "00A35-1",
+        "00A35-2",
+        "00A35-3",
+        "00A35-4",
+        "00A35-5"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A64",
+      "depth": "G",
+      "objective_ids": [
+        "00A64-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00A65",
+      "depth": "S",
+      "objective_ids": [
+        "00A65-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A66",
+      "depth": "S",
+      "objective_ids": [
+        "00A66-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A67",
+      "depth": "S",
+      "objective_ids": [
+        "00A67-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A69",
+      "depth": "S",
+      "objective_ids": [
+        "00A69-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A71",
+      "depth": "S",
+      "objective_ids": [
+        "00A71-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A72",
+      "depth": "S",
+      "objective_ids": [
+        "00A72-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A79",
+      "depth": "S",
+      "objective_ids": [
+        "00A79-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "original_work_reviewed_separately"
+    },
+    {
+      "code": "00A99",
+      "depth": "G",
+      "objective_ids": [
+        "00A99-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "verified"
+    },
+    {
+      "code": "00B05",
+      "depth": "G",
+      "objective_ids": [
+        "00B05-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B10",
+      "depth": "G",
+      "objective_ids": [
+        "00B10-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "verified"
+    },
+    {
+      "code": "00B15",
+      "depth": "G",
+      "objective_ids": [
+        "00B15-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B20",
+      "depth": "G",
+      "objective_ids": [
+        "00B20-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B25",
+      "depth": "G",
+      "objective_ids": [
+        "00B25-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B30",
+      "depth": "G",
+      "objective_ids": [
+        "00B30-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B50",
+      "depth": "G",
+      "objective_ids": [
+        "00B50-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B55",
+      "depth": "G",
+      "objective_ids": [
+        "00B55-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B60",
+      "depth": "G",
+      "objective_ids": [
+        "00B60-1"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    },
+    {
+      "code": "00B99",
+      "depth": "G",
+      "objective_ids": [
+        "00B99-1",
+        "00B99-2"
+      ],
+      "status": "accepted",
+      "blocking_issues": [],
+      "accepted_dimension": "pedagogical_structure_explanations_and_exercises_only",
+      "topic_source_status": "pending"
+    }
+  ],
+  "reviewed_exercises": {
+    "chapter_01": 20,
+    "chapter_02": 7,
+    "total": 27,
+    "all_questions_and_answers_read": true
+  },
+  "reviewed_objective_count": 42,
+  "review_context_sha256": {
+    "EDITORIAL_POLICY.md": "004d66f6e449008fc006fa09b6089016b29d685aa450cb46184e87b4b3982663",
+    "LEARNING_PATH.md": "18969b3bbc2eed9ec45cde2193ab6670e42b65d0109e3bbe45f6ddf3323f18db",
+    "research/production/part1_revision_sources.md": "4751c128a03776da03c6c9a60d22a9af92b87207ae83f46feea8956fb0247cb5",
+    "research/production/part1_revision_sources.json": "ab060574581da3925342ef6ba33c6c898ff66b05f7e4b4e47fd24d0630c27f2d",
+    "research/production/part1_revision_exercise_scope.md": "4649d038ad3fb81df01c69a07fcceb693daeaa9329a721d6a854467053da4493",
+    "research/production/part1_revision_acceptance_design.md": "4b0302a71dc5036c013ed14e7f72c40e749bada38cb7545d4d5d14a8574d18f0"
+  },
+  "source_gate_status": "pending",
+  "full_scope_sources_accepted": false,
+  "full_scope_accepted": false,
+  "completed_at_declared_depth": false,
+  "known_confirmed_topic_source_gaps": [
+    "00A17",
+    "00A27",
+    "00A30",
+    "00A64"
+  ],
+  "source_pending_sections": [
+    "00-02",
+    "00A17",
+    "00A27",
+    "00A30",
+    "00A64",
+    "00B05",
+    "00B15",
+    "00B20",
+    "00B25",
+    "00B30",
+    "00B50",
+    "00B55",
+    "00B60",
+    "00B99"
+  ],
+  "limits": "教学维度检查通过；G来源门槛与完整部分验收仍pending。本签署不替代独立数学、来源、构建、视觉或作者审阅，不声明推送成功。真实Crossref文档实践不等于具体论文或各类汇编个案实读。"
+}

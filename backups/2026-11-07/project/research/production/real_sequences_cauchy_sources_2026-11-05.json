@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-05T15:28:09.232277+00:00",
+  "reviewer": "/root",
+  "status": "source_contents_read_for_cauchy_planning; manuscript_not_yet_reviewed",
+  "author": "Jiří Lebl",
+  "title": "Basic Analysis I",
+  "version": "6.3",
+  "commit": "e21ec524ca7d54f800c693b948020c188d21d01f",
+  "url": "https://github.com/jirilebl/ra/blob/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+  "license": "CC-BY-SA-4.0 or CC-BY-NC-SA-4.0; independent original exposition, no text/exercise copying",
+  "cache_sha256": {
+    "lebl_sequences": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+    "lebl_front": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+    "lebl_license": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d"
+  },
+  "original_retrieval_record": "research/production/real_sequences_sources_2026-10-30.json",
+  "actual_cache_directory": "local-inputs/pending-batch31/source-cache",
+  "new_network_requests": 0,
+  "actual_read_lines": "2675–2910 (Cauchy definition, boundedness, equivalence, completeness boundary); LICENSE full; front matter author/version",
+  "verified_scope": [
+    "Two independent tail indices and common threshold",
+    "Convergent real sequence is Cauchy",
+    "Cauchy sequence bounded including finite prefix",
+    "Real convergence iff Cauchy relies on real completeness",
+    "Adjacent differences tending to zero are insufficient"
+  ],
+  "differences": "Source proves converse via liminf/limsup; our planned proof uses previously proved BW and one convergent subsequence, without unintroduced limsup. Natural indices begin at zero; finite prefix bound uses established recursion. No Cauchy construction of reals or general metric completion claimed."
+}

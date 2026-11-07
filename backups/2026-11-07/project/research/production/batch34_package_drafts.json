@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-05T18:50:27.428291+00:00",
+  "scope": "Six source-only FRC/RFS/FLC drafts, outside72-unit/603-pair PDFs and this build acceptance. Existing text reviews do not imply registration or build acceptance.",
+  "draft_units": [
+    "FRC finite_real_coordinates",
+    "RFS finite_real_sums",
+    "FLC finite_coordinate_combinations"
+  ],
+  "files": [
+    {
+      "path": "manuscript/foundations/finite_coordinate_combinations.md",
+      "sha256": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+      "heading": "## 基础单元 有限坐标向量的线性组合 {#flc-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_coordinate_combinations_answers.md",
+      "sha256": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e",
+      "heading": "## 有限坐标向量线性组合：课后题完整解答 {#flc-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_real_coordinates.md",
+      "sha256": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+      "heading": "## 基础单元 有限实数坐标与逐坐标运算 {#frc-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_real_coordinates_answers.md",
+      "sha256": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa",
+      "heading": "## 有限实数坐标与逐坐标运算：课后题完整解答 {#frc-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_real_sums.md",
+      "sha256": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+      "heading": "## 基础单元 有限实数和：递归、逐项规则与拼接 {#rfs-unit}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    },
+    {
+      "path": "manuscript/foundations/finite_real_sums_answers.md",
+      "sha256": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f",
+      "heading": "## 有限实数和：课后题完整解答 {#rfs-answers}",
+      "registered_in_build": false,
+      "included_in_current_pdf": false,
+      "accepted_by_this_build": false
+    }
+  ],
+  "registered_unit_count": 72,
+  "built_exercise_pairs": 603,
+  "no_inferred_acceptance_from_inclusion": true,
+  "excluded_followup": "New subspace source/reviews under /tmp are outside this explicit package inventory; no repository-external files imported."
+}

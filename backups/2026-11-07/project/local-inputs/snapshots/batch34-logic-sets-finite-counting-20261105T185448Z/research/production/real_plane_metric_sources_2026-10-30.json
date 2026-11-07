@@ -1,0 +1,1086 @@
+{
+  "schema_version": 1,
+  "status": "batch28_source_conditions_and_final_reviewed_text_snapshot_verified_pending_integration",
+  "citation_anchor": "real-plane-metric-sources",
+  "checked_at_utc": "2026-10-30T03:54:34.011982+00:00",
+  "actor": "/root/prepare22_build",
+  "formal_repository_writes": {
+    "intentional_content_changes": false,
+    "transient_accidental_write": true,
+    "restored_original_bytes": true,
+    "incident_report": "/tmp/batch28-integration/accidental_write_recovery/report.json",
+    "note": "One formal prerequisite file was transiently overwritten by a path-variable bug and restored exactly; all219 current source hashes and artifacts equal prior formal build/QA after recovery."
+  },
+  "new_network_requests_by_this_agent": 0,
+  "historical_new_requests_by_original_source_auditor": 2,
+  "sources": [
+    {
+      "id": "lebl_metric",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+      "http_status": 200,
+      "fetched_at_utc": "2026-10-30T03:19:56.836393+00:00",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_metric.tex",
+      "bytes": 131868,
+      "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a",
+      "author": "Jiří Lebl",
+      "title": "Basic Analysis: Introduction to Real Analysis, chapter Metric Spaces",
+      "version": "commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+      "actual_read_locations": [
+        "31–68: four metric axioms",
+        "169–181: R^n Cartesian product and point notation",
+        "193–239: Cauchy–Schwarz statement and sum-of-squares proof",
+        "241–319: Euclidean metric and triangle via Cauchy–Schwarz"
+      ],
+      "role": "Fact/condition comparison; source assumes existing real field, square roots and increasing sqrt; book must prove needed root-order/product identities using RS. No external prose/exercises copied.",
+      "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+    },
+    {
+      "id": "beezer_vector_operations",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+      "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+      "http_status": 200,
+      "fetched_at_utc": "2026-10-30T03:20:43.730446+00:00",
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_vector_operations.xml",
+      "bytes": 38273,
+      "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8",
+      "author": "Robert A. Beezer",
+      "title": "A First Course in Linear Algebra, Section VO: Vector Operations",
+      "version": "version 3.50; commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "actual_read_locations": [
+        "12–33: ambient complex tuples and real-coordinate specialization",
+        "105–117: component equality",
+        "145–158: component addition",
+        "178–194: component scalar multiplication",
+        "267–356: ten laws and component proof of scalar-addition distributivity"
+      ],
+      "role": "Fact/condition comparison; source mostly C^m, book R^2 only. Source proves one law in detail and leaves others; book must explicitly prove each required two-coordinate law. No examples/exercises/Sage code copied.",
+      "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author, title/version and copyright evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_front.tex",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_bytes": 18862,
+      "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "actual_read_locations": [
+        "front: 289 author; 291 title; 401 copyright; 435–456 dual license"
+      ]
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "License evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/real-plane-metric-source-audit/lebl_license.md",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_bytes": 467,
+      "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "actual_read_locations": [
+        "1–13 full license declaration"
+      ]
+    },
+    {
+      "id": "beezer_copying",
+      "author": "Robert A. Beezer",
+      "title": "COPYING.txt license grant",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+      "original_fetch_at_utc": "2026-10-29T16:33:31.372978+00:00",
+      "original_http_status": 200,
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_copying.txt",
+      "original_cache_path": "/tmp/linear-source-audit/beezer_copying",
+      "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+      "bytes": 740,
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_read_locations": [
+        "full 7-line COPYING grant"
+      ],
+      "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+    },
+    {
+      "id": "beezer_bookinfo",
+      "author": "Robert A. Beezer",
+      "title": "Book metadata and license grant",
+      "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+      "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+      "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+      "original_fetch_at_utc": "2026-10-29T16:33:44.811224+00:00",
+      "original_http_status": 200,
+      "cache_path": "/tmp/real-plane-metric-source-audit/beezer_bookinfo.xml",
+      "original_cache_path": "/tmp/linear-source-audit/beezer_bookinfo",
+      "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+      "bytes": 77493,
+      "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+      "current_check": "existing public cache re-read and hash verified; no new request",
+      "actual_read_locations": [
+        "1–20: version/title/author/copyright/shortlicense"
+      ],
+      "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+    }
+  ],
+  "source_recheck": {
+    "six_caches_verified": true,
+    "checks": [
+      {
+        "id": "lebl_metric",
+        "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a",
+        "bytes": 131868,
+        "original_hash_matches": true
+      },
+      {
+        "id": "beezer_vector_operations",
+        "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8",
+        "bytes": 38273,
+        "original_hash_matches": true
+      },
+      {
+        "id": "lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "original_hash_matches": true
+      },
+      {
+        "id": "lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_hash_matches": true
+      },
+      {
+        "id": "beezer_copying",
+        "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+        "bytes": 740,
+        "original_hash_matches": true
+      },
+      {
+        "id": "beezer_bookinfo",
+        "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+        "bytes": 77493,
+        "original_hash_matches": true
+      }
+    ],
+    "actual_original_fetch_logs": [
+      {
+        "path": "/tmp/real-plane-metric-source-audit/fetch.json",
+        "sha256": "7095854a08064cbb8a8a6ea48c23136a034aad9b4c91ca44d3f29df91e6fcb75",
+        "records": [
+          {
+            "id": "lebl_metric",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+            "http_status": 200,
+            "fetched_at_utc": "2026-10-30T03:19:56.836393+00:00",
+            "cache_path": "/tmp/real-plane-metric-source-audit/lebl_metric.tex",
+            "bytes": 131868,
+            "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a"
+          }
+        ]
+      },
+      {
+        "path": "/tmp/real-plane-metric-source-audit/fetch_beezer.json",
+        "sha256": "b60075ff78287f7937656edd422a7f383b86b1b89005be583b30e72478c89d68",
+        "records": [
+          {
+            "id": "beezer_vector_operations",
+            "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+            "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+            "http_status": 200,
+            "fetched_at_utc": "2026-10-30T03:20:43.730446+00:00",
+            "cache_path": "/tmp/real-plane-metric-source-audit/beezer_vector_operations.xml",
+            "bytes": 38273,
+            "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8"
+          }
+        ]
+      },
+      {
+        "path": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d",
+        "records": [
+          {
+            "request_id": "lebl_front",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "checked_at_utc": "2026-10-29T19:51:54.424412+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "access_status": "verified_http_200",
+            "bytes": 18862,
+            "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front"
+          },
+          {
+            "request_id": "lebl_license",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "access_status": "verified_http_200",
+            "bytes": 467,
+            "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+          }
+        ]
+      },
+      {
+        "path": "/tmp/linear-source-audit/requests.json",
+        "sha256": "3f0e2aa595e75ec1027ecd6639495a6aef5c1d07976d259fceefc6bf92c88d77",
+        "records": [
+          {
+            "request_id": "beezer_copying",
+            "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+            "checked_at_utc": "2026-10-29T16:33:31.372978+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+            "bytes": 740,
+            "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+            "access_status": "verified_http_200"
+          },
+          {
+            "request_id": "beezer_bookinfo",
+            "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+            "checked_at_utc": "2026-10-29T16:33:44.811224+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+            "bytes": 77493,
+            "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+            "access_status": "verified_http_200"
+          }
+        ]
+      }
+    ]
+  },
+  "original_plan_source_record": {
+    "status": "Independent plan/source conditions audit only; no unit manuscript or formal changes in this audit",
+    "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+    "plan_path": "/tmp/real_plane_metric_plan.md",
+    "plan_sha256": "d17da8816a8f17f5e6a20cad8929d2502e7626e2f7d5f3ee5898d893f826a940",
+    "network": {
+      "new_http_requests": 2,
+      "http200": 2,
+      "policy": "restricted/enforced; observations_current true; default inherited proxy retained; vpn false",
+      "discovery": "existing public fixed-commit textbook metadata, actual local root chapter include and repository listing; no broad web crawl"
+    },
+    "sources": [
+      {
+        "id": "lebl_metric",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+        "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-metric.tex",
+        "http_status": 200,
+        "fetched_at_utc": "2026-10-30T03:19:56.836393+00:00",
+        "cache_path": "/tmp/real-plane-metric-source-audit/lebl_metric.tex",
+        "bytes": 131868,
+        "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a",
+        "author": "Jiří Lebl",
+        "title": "Basic Analysis: Introduction to Real Analysis, chapter Metric Spaces",
+        "version": "commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+        "actual_read_locations": [
+          "31–68: four metric axioms",
+          "169–181: R^n Cartesian product and point notation",
+          "193–239: Cauchy–Schwarz statement and sum-of-squares proof",
+          "241–319: Euclidean metric and triangle via Cauchy–Schwarz"
+        ],
+        "role": "Fact/condition comparison; source assumes existing real field, square roots and increasing sqrt; book must prove needed root-order/product identities using RS. No external prose/exercises copied.",
+        "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+      },
+      {
+        "id": "beezer_vector_operations",
+        "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+        "final_url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/section-VO.xml",
+        "http_status": 200,
+        "fetched_at_utc": "2026-10-30T03:20:43.730446+00:00",
+        "cache_path": "/tmp/real-plane-metric-source-audit/beezer_vector_operations.xml",
+        "bytes": 38273,
+        "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8",
+        "author": "Robert A. Beezer",
+        "title": "A First Course in Linear Algebra, Section VO: Vector Operations",
+        "version": "version 3.50; commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+        "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+        "actual_read_locations": [
+          "12–33: ambient complex tuples and real-coordinate specialization",
+          "105–117: component equality",
+          "145–158: component addition",
+          "178–194: component scalar multiplication",
+          "267–356: ten laws and component proof of scalar-addition distributivity"
+        ],
+        "role": "Fact/condition comparison; source mostly C^m, book R^2 only. Source proves one law in detail and leaves others; book must explicitly prove each required two-coordinate law. No examples/exercises/Sage code copied.",
+        "current_check": "new public HTTPS request HTTP200; fixed commit; cached bytes SHA recomputed",
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00"
+      },
+      {
+        "id": "lebl_front",
+        "title": "Basic Analysis I, front matter",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Author, title/version and copyright evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+        "cache_path": "/tmp/real-plane-metric-source-audit/lebl_front.tex",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+        "current_check": "existing public cache re-read and hash verified; no new request",
+        "actual_bytes": 18862,
+        "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+        "actual_read_locations": [
+          "front: 289 author; 291 title; 401 copyright; 435–456 dual license"
+        ]
+      },
+      {
+        "id": "lebl_license",
+        "title": "Basic Analysis LICENSE.md",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "License evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+        "cache_path": "/tmp/real-plane-metric-source-audit/lebl_license.md",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+        "access_status": "verified_http_200",
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+        "current_check": "existing public cache re-read and hash verified; no new request",
+        "actual_bytes": 467,
+        "original_cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+        "actual_read_locations": [
+          "1–13 full license declaration"
+        ]
+      },
+      {
+        "id": "beezer_copying",
+        "author": "Robert A. Beezer",
+        "title": "COPYING.txt license grant",
+        "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+        "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+        "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/COPYING.txt",
+        "original_fetch_at_utc": "2026-10-29T16:33:31.372978+00:00",
+        "original_http_status": 200,
+        "cache_path": "/tmp/real-plane-metric-source-audit/beezer_copying.txt",
+        "original_cache_path": "/tmp/linear-source-audit/beezer_copying",
+        "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc",
+        "bytes": 740,
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+        "current_check": "existing public cache re-read and hash verified; no new request",
+        "actual_read_locations": [
+          "full 7-line COPYING grant"
+        ],
+        "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+      },
+      {
+        "id": "beezer_bookinfo",
+        "author": "Robert A. Beezer",
+        "title": "Book metadata and license grant",
+        "version": "3.50; fixed commit 347f27fe909b54b26970bcc0fcbf69c7e853c766",
+        "license": "GFDL-1.2-or-later; no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts",
+        "url": "https://raw.githubusercontent.com/rbeezer/fcla/347f27fe909b54b26970bcc0fcbf69c7e853c766/src/bookinfo.xml",
+        "original_fetch_at_utc": "2026-10-29T16:33:44.811224+00:00",
+        "original_http_status": 200,
+        "cache_path": "/tmp/real-plane-metric-source-audit/beezer_bookinfo.xml",
+        "original_cache_path": "/tmp/linear-source-audit/beezer_bookinfo",
+        "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679",
+        "bytes": 77493,
+        "checked_at_utc": "2026-10-30T03:23:13.315104+00:00",
+        "current_check": "existing public cache re-read and hash verified; no new request",
+        "actual_read_locations": [
+          "1–20: version/title/author/copyright/shortlicense"
+        ],
+        "role": "Actual author/version/license declaration; full GFDL legal appendix not independently reread in this task"
+      }
+    ],
+    "prerequisites": [
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+        "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+        "anchors_verified": [
+          "fun-sets",
+          "fun-pairs",
+          "fun-definition",
+          "fun-image"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_bijections.md",
+        "sha256": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+        "anchors_verified": [
+          "bij-injective",
+          "bij-surjective"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_inverse.md",
+        "sha256": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+        "anchors_verified": [
+          "inv-two-sided"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/dedekind_additive_order.md",
+        "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+        "anchors_verified": [
+          "cutgroup-laws",
+          "cutgroup-inverses",
+          "cutgroup-translation",
+          "cutgroup-negation-subtraction"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/dedekind_signed_product.md",
+        "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+        "anchors_verified": [
+          "cutsigned-signs",
+          "cutsigned-associative",
+          "cutsigned-rational-zero"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/dedekind_ring_order.md",
+        "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+        "anchors_verified": [
+          "cutring-distributive",
+          "cutring-multiplication-order",
+          "cutring-cancellation"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/dedekind_division_field.md",
+        "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+        "anchors_verified": [
+          "cutdiv-definition",
+          "cutdiv-equations",
+          "cutdiv-order"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/real_square_roots.md",
+        "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+        "anchors_verified": [
+          "realsqrt-square-order",
+          "realsqrt-function",
+          "realsqrt-equations-irrational"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      },
+      {
+        "path": "/tmp/real_absolute_distance.md",
+        "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+        "anchors_verified": [
+          "realabs-definition-bounds",
+          "realabs-products-triangle",
+          "realabs-error-root"
+        ],
+        "review_scope": "Actual readable text and anchors checked; historical math reading plus this task relevant interface rereads; not build acceptance"
+      }
+    ],
+    "classification": {
+      "taxonomy_path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+      "taxonomy_sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572",
+      "chapters_path": "/workspace/IntegratedMath-book/data/production/chapters.json",
+      "chapters_sha256": "f9c3c095b4d65261a269b9865397d9bdd9cb3ab09e966b622685bbdfa5430774",
+      "main": {
+        "chapter": 527,
+        "chapter_code": "97Gxx",
+        "leaf": "97G70",
+        "actual_english_title": "Analytic geometry, vector algebra (educational aspects)"
+      },
+      "cross_refs": [
+        {
+          "code": "51N10",
+          "title": "Affine analytic geometry",
+          "scope": "RP3 affine parameter line and RP4 segment/midpoint only"
+        },
+        {
+          "code": "54E35",
+          "title": "Metric spaces, metrizability",
+          "scope": "One fully verified Euclidean-plane metric example; no general metrizability theory"
+        }
+      ],
+      "counting": "No actual installation/ledger regeneration done; proposed future increments not independently certified"
+    },
+    "rights": "Only mathematical facts and condition comparisons used. External prose, proofs, exercises, images and code not copied into manuscript. Caches are evidence, not automatically distributed. License grants recorded with source and version; full legal texts beyond recorded license declarations were not independently re-audited."
+  },
+  "original_source_record_file": {
+    "path": "/tmp/real_plane_metric_sources.json",
+    "sha256": "71e6982051f1b9bf8748b181506d3cb4b33305d72c2f6ed42e3238d109ddde25"
+  },
+  "classification": {
+    "units": [
+      {
+        "unit": "B2.35",
+        "chapter": 527,
+        "primary": "97G70",
+        "cross": [
+          "51N10"
+        ]
+      },
+      {
+        "unit": "B2.36",
+        "chapter": 527,
+        "primary": "97G70",
+        "cross": [
+          "54E35"
+        ]
+      }
+    ],
+    "verified_catalogue_titles": [
+      {
+        "code": "51N10",
+        "level": "subject_leaf",
+        "parent_code": "51Nxx",
+        "title_en": "Affine analytic geometry",
+        "title_zh": "仿射解析几何",
+        "translation_method": "msc_frontier"
+      },
+      {
+        "code": "54E35",
+        "level": "subject_leaf",
+        "parent_code": "54Exx",
+        "title_en": "Metric spaces, metrizability",
+        "title_zh": "度量空间、可度量化性",
+        "translation_method": "msc_frontier"
+      },
+      {
+        "code": "97G70",
+        "level": "subject_leaf",
+        "parent_code": "97Gxx",
+        "title_en": "Analytic geometry, vector algebra (educational aspects)",
+        "title_zh": "解析几何与向量代数（教育方面）",
+        "translation_method": "root"
+      }
+    ],
+    "expected_counts": {
+      "units": 57,
+      "total_questions": 470,
+      "foundation_questions": 456,
+      "intro_questions": 14,
+      "figures": 19,
+      "appendices": 26,
+      "draft_chapters": 6,
+      "draft_leaves": 30,
+      "complete_chapters": 0
+    },
+    "note": "New primary geometry education leaf adds one draft chapter and leaf only after actual text registration;cross references do not grant coverage."
+  },
+  "baseline": {
+    "three_tools": "/tmp/batch27-integration/tools",
+    "draw_module": "/workspace/IntegratedMath-book/tools/draw_foundations_batch.py",
+    "formal27_match_status": "all_six_baseline_files_byte_identical",
+    "actual_comparison": {
+      "checked_at_utc": "2026-10-30T03:54:34.011982+00:00",
+      "files": [
+        {
+          "path": "tools/draw_foundations_batch.py",
+          "baseline_sha256": "804ea2d414bf728d8a6ffaeced181c69b3f00448f33bdb758cd036160459dbe1",
+          "formal_observed_sha256": "804ea2d414bf728d8a6ffaeced181c69b3f00448f33bdb758cd036160459dbe1",
+          "matches": true,
+          "basis": "current formal drawing module"
+        },
+        {
+          "path": "tools/build_production_ledger.py",
+          "baseline_sha256": "4aef5e98bbbad127ac9a5f5d4f164458ee2543522b95bb4cd3fd7981b527dfd4",
+          "formal_observed_sha256": "4aef5e98bbbad127ac9a5f5d4f164458ee2543522b95bb4cd3fd7981b527dfd4",
+          "matches": true,
+          "basis": "frozen batch27 candidate"
+        },
+        {
+          "path": "tools/validate_learning_batch.py",
+          "baseline_sha256": "a642fcff87a37561d3bffecdb0abf8e374f861121543a7fa29a321d20462e3ea",
+          "formal_observed_sha256": "a642fcff87a37561d3bffecdb0abf8e374f861121543a7fa29a321d20462e3ea",
+          "matches": true,
+          "basis": "frozen batch27 candidate"
+        },
+        {
+          "path": "tools/build_learning_batch.py",
+          "baseline_sha256": "e487af0def68ebb5fa44bfb1b7f94a2c6e2c3c402c1b610f97706c9b4e93bfb7",
+          "formal_observed_sha256": "e487af0def68ebb5fa44bfb1b7f94a2c6e2c3c402c1b610f97706c9b4e93bfb7",
+          "matches": true,
+          "basis": "frozen batch27 candidate"
+        },
+        {
+          "path": "README.md",
+          "baseline_sha256": "3b478a3e83e51f4c7551486a89f9fc248bb7adb62834e37cce1d105a4a1acd76",
+          "formal_observed_sha256": "3b478a3e83e51f4c7551486a89f9fc248bb7adb62834e37cce1d105a4a1acd76",
+          "matches": true,
+          "basis": "frozen batch27 candidate"
+        },
+        {
+          "path": "LEARNING_PATH.md",
+          "baseline_sha256": "c17bc63b3ca25de7b2ccc1b3b491d028818522e0773ac4796e6937dddbe4ef51",
+          "formal_observed_sha256": "c17bc63b3ca25de7b2ccc1b3b491d028818522e0773ac4796e6937dddbe4ef51",
+          "matches": true,
+          "basis": "frozen batch27 candidate"
+        }
+      ],
+      "all_match": true,
+      "note": "A mismatch means batch27 installation not yet verified; root must compare/install exact baseline before applying incremental patches. No formal writes by this agent."
+    }
+  },
+  "manuscript_binding": {
+    "status": "current_tmp_files_match_final_freeze_and_report_hashes",
+    "checked_at_utc": "2026-10-30T03:54:34.011982+00:00",
+    "manuscripts": [
+      {
+        "observed_path": "/tmp/real_plane_affine.md",
+        "sha256": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+        "bytes": 15470,
+        "intended_repository_path": "manuscript/foundations/real_plane_affine.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_plane_affine_answers.md",
+        "sha256": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae",
+        "bytes": 13291,
+        "intended_repository_path": "manuscript/foundations/real_plane_affine_answers.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_plane_distance.md",
+        "sha256": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2",
+        "bytes": 18567,
+        "intended_repository_path": "manuscript/foundations/real_plane_distance.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_plane_distance_answers.md",
+        "sha256": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159",
+        "bytes": 14618,
+        "intended_repository_path": "manuscript/foundations/real_plane_distance_answers.md",
+        "installation_status": "pending_root_integration"
+      }
+    ],
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_plane_affine_math_review.md",
+        "sha256": "ed96d7ebed49764d36019a3ca427b573c49f7ae0e42d294803ec91087df0decc",
+        "bytes": 11219,
+        "intended_repository_path": "research/production/real_plane_affine_math_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/plan_multiplication",
+        "scope_as_reported": "RP1—RP4及八解独立全文数学审；两处公式笔误逆差闭合；来源首锚实际补定位",
+        "current_manuscript_hashes_present": true
+      },
+      {
+        "observed_path": "/tmp/real_plane_distance_math_review.md",
+        "sha256": "84f1f8c119eeadbe5fd6048a0e5b45e02dcf6082465a298cfd14ba72c874586c",
+        "bytes": 10629,
+        "intended_repository_path": "research/production/real_plane_distance_math_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "review22",
+        "scope_as_reported": "PD1—PD4及八解独立全文数学审；最终三先修与前序称谓逆差核验，两个附录候选标题实际定位",
+        "current_manuscript_hashes_present": true
+      },
+      {
+        "observed_path": "/tmp/real_plane_metric_pedagogy_review.md",
+        "sha256": "15508aa2bbe5b48906e69923cc981b7d985d9adb1cc8b807bbbaf67c30adca75",
+        "bytes": 9845,
+        "intended_repository_path": "research/production/real_plane_metric_pedagogy_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "四稿16解独立全文教学审；发现B2.33误称上一单元并核修复；实际图像与脚本审读、静态Pandoc，不代签源完整性或PDF",
+        "current_manuscript_hashes_present": true
+      }
+    ],
+    "planning_evidence": [
+      {
+        "observed_path": "/tmp/real_plane_metric_plan.md",
+        "sha256": "d17da8816a8f17f5e6a20cad8929d2502e7626e2f7d5f3ee5898d893f826a940",
+        "bytes": 7227,
+        "intended_repository_path": "research/production/real_plane_metric_plan.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_plane_metric_concept_review.md",
+        "sha256": "9c8bd6d72f20a2ac697eca47c5d390b51c5d46b9daa4a1dd9dc4b71e815feea0",
+        "bytes": 11122,
+        "intended_repository_path": "research/production/real_plane_metric_concept_review.md",
+        "installation_status": "pending_root_integration"
+      }
+    ],
+    "formal_installation_verified": true,
+    "aggregate_approval_claim": false,
+    "note": "Reports retain independent named authors and limited scopes; this audit binds bytes without issuing aggregate mathematical/build/PDF approval."
+  },
+  "figure_binding": {
+    "standalone_script": {
+      "path": "/tmp/draw_real_plane.py",
+      "sha256": "112748c017d7f30fb19900b6644946943ab2c8e41f0bf4bc56061ab70d686a0d"
+    },
+    "original_png": {
+      "path": "/tmp/real-plane-figure/b2_real_plane_model.png",
+      "sha256": "d6804131be3393ab7309d1d86715c5cec95d087c62e2ae632ce40c142f215a20"
+    },
+    "note": "Full original script read and original PNG viewed; integrated complete function source exactly equals original source; isolated call of new function reproduces identical PNG bytes. Appendix complete-function inclusion separately checked during isolated composition. Formal installation not claimed.",
+    "integration_recheck": {
+      "standalone_script_sha256": "112748c017d7f30fb19900b6644946943ab2c8e41f0bf4bc56061ab70d686a0d",
+      "candidate_draw_module_sha256": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63",
+      "function_source_sha256": "867c9207df9b186758aa32e57c0eeac09b52802c414c8a98bda71d45fcdf16ff",
+      "complete_function_exact_match": true,
+      "function_ast_exact_match": true,
+      "png_sha256": "d6804131be3393ab7309d1d86715c5cec95d087c62e2ae632ce40c142f215a20",
+      "png_matches_original_bytes": true,
+      "original_png_actually_viewed": true,
+      "formal_draw_module_installation_verified": false,
+      "scope": "Standalone function imported into candidate module without body changes;onlythis function executed in/tmp,all Fraction assertions pass;originalPNG viewed;no PDF acceptance."
+    },
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_plane_figure_review.md",
+        "sha256": "b9d1aa9a3458136edfb261019d20131188cbf567cca26ce301129fa65a874fcc",
+        "bytes": 6738,
+        "intended_repository_path": "research/production/real_plane_figure_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/plan_multiplication",
+        "scope": "Original standalone drawing source, exact finite witnesses and actual PNG; original report determines execution scope; not final PDF review"
+      },
+      {
+        "observed_path": "/tmp/real_plane_figure_math_review.md",
+        "sha256": "c8ba4a033c3bfe42142a5d9179751fff812de3307545f4d4da8dfc4735a71454",
+        "bytes": 1187,
+        "intended_repository_path": "research/production/real_plane_figure_math_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "plan_real_next",
+        "scope": "Original standalone drawing source, exact finite witnesses and actual PNG; original report determines execution scope; not final PDF review"
+      }
+    ]
+  },
+  "validation_boundary": "Source conditions, original cache history and actual file binding only;no aggregate build/PDF approval. Source assumedR/complex tuples do not replace book construction;no externalprose/exercises/images/code copied.",
+  "current_prerequisite_recheck": [
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_addition.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_addition.md",
+      "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+      "anchors_verified": [
+        "cutadd-definition",
+        "cutadd-rational"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_additive_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+      "anchors_verified": [
+        "cutgroup-inverses",
+        "cutgroup-laws",
+        "cutgroup-negation-subtraction",
+        "cutgroup-translation"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "anchors_verified": [
+        "cut-order-embedding"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_division_field.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "anchors_verified": [
+        "cutdiv-definition",
+        "cutdiv-equations",
+        "cutdiv-order"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_ring_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+      "anchors_verified": [
+        "cutring-cancellation",
+        "cutring-distributive",
+        "cutring-multiplication-order"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_signed_product.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_signed_product.md",
+      "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+      "anchors_verified": [
+        "cutsigned-associative",
+        "cutsigned-definition",
+        "cutsigned-rational-zero",
+        "cutsigned-signs"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_bijections.md",
+      "intended_repository_path": "manuscript/foundations/functions_bijections.md",
+      "sha256": "b8eea358d984c1a13e27b83d24c872ae8f6ef1ca966fd1159788860cb35b79db",
+      "anchors_verified": [
+        "bij-bijective",
+        "bij-injective",
+        "bij-surjective"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+      "intended_repository_path": "manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+      "anchors_verified": [
+        "fc-composition",
+        "fc-equality",
+        "fc-identity"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "intended_repository_path": "manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "anchors_verified": [
+        "fun-definition",
+        "fun-image",
+        "fun-pairs",
+        "fun-sets"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_inverse.md",
+      "intended_repository_path": "manuscript/foundations/functions_inverse.md",
+      "sha256": "28ffc4f4746286d1407bbe873d9e508d81e7ca82393c76cbf818131e819b9270",
+      "anchors_verified": [
+        "inv-two-sided"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/tmp/real_absolute_distance.md",
+      "intended_repository_path": "manuscript/foundations/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+      "anchors_verified": [
+        "realabs-definition-bounds",
+        "realabs-distance",
+        "realabs-error-root",
+        "realabs-products-triangle"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/tmp/real_plane_affine.md",
+      "intended_repository_path": "manuscript/foundations/real_plane_affine.md",
+      "sha256": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+      "anchors_verified": [
+        "realplane-model",
+        "realplane-operations",
+        "realplane-segments"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/real_square_roots.md",
+      "intended_repository_path": "manuscript/foundations/real_square_roots.md",
+      "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+      "anchors_verified": [
+        "realsqrt-equations-irrational",
+        "realsqrt-function",
+        "realsqrt-square-order"
+      ],
+      "scope": "Current exact prerequisite anchor and byte binding; original historical prerequisite records preserved separately."
+    }
+  ],
+  "current_obligations": {
+    "RP1": "R×R points, projection and axes; rational pair embedding injective, non-surjective witness from established irrational root",
+    "RP2": "Each component law and point/displacement role; translation has both inverse compositions",
+    "RP3": "At least one nonzero direction component; zero direction collapses; same parameter for both coordinate membership conditions",
+    "RP4": "Both segment inclusions via 1-t; repeated endpoints; midpoint equal displacement and unique solution dividing only by positive2",
+    "PD1": "Four-term identity; legal square-root inputs; nonnegative square reflection gives Cauchy without division",
+    "PD2": "Zero criterion; signed/zero scaling by root uniqueness; norm triangle then two triangles for reverse triangle",
+    "PD3": "Point-pair function, four metric axioms, translations and scaling; zero scaling not called bijective/isometric",
+    "PD4": "Exact rational images and root uniqueness; parameter segments imply additive distances including degenerate cases; no converse or full equality classification"
+  },
+  "root_integration": {
+    "actor": "/root",
+    "checked_at_utc": "2026-10-30T04:04:37.938484+00:00",
+    "prior_commit": "6273322edd5739e083231b6e223c7171d7cba822",
+    "prior_snapshot_manifest": "local-inputs/snapshots/6273322/snapshot_manifest.json",
+    "candidate_json_sha256": "4b2faca2a589ec6d5429024c988fdc2b81bb745b3064675d99a05e7dd5721528",
+    "candidate_markdown_sha256": "6f9c3742f6f4bde2619ba97c3192537621afe43d6178f446c8b2e45c6783951b",
+    "installed_files": [
+      {
+        "path": "tools/build_learning_batch.py",
+        "sha256": "1c4e1f1403d97157de77749e09e36083d6d83bbd2e8889a1fe7172f4fec7a6df"
+      },
+      {
+        "path": "tools/validate_learning_batch.py",
+        "sha256": "060ac73928a33a7b0b7ca865485028a74900966935058cb4eef12f45fe0b4e7b"
+      },
+      {
+        "path": "tools/build_production_ledger.py",
+        "sha256": "9aeada1a777559b3ddd7dba4eae9877b36daef1229f0da2e60ecca3c3e08f16f"
+      },
+      {
+        "path": "tools/draw_foundations_batch.py",
+        "sha256": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63"
+      },
+      {
+        "path": "manuscript/foundations/real_plane_affine.md",
+        "sha256": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383"
+      },
+      {
+        "path": "manuscript/foundations/real_plane_affine_answers.md",
+        "sha256": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae"
+      },
+      {
+        "path": "manuscript/foundations/real_plane_distance.md",
+        "sha256": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2"
+      },
+      {
+        "path": "manuscript/foundations/real_plane_distance_answers.md",
+        "sha256": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+      },
+      {
+        "path": "research/production/real_plane_affine_math_review.md",
+        "sha256": "ed96d7ebed49764d36019a3ca427b573c49f7ae0e42d294803ec91087df0decc"
+      },
+      {
+        "path": "research/production/real_plane_distance_math_review.md",
+        "sha256": "84f1f8c119eeadbe5fd6048a0e5b45e02dcf6082465a298cfd14ba72c874586c"
+      },
+      {
+        "path": "research/production/real_plane_metric_pedagogy_review.md",
+        "sha256": "15508aa2bbe5b48906e69923cc981b7d985d9adb1cc8b807bbbaf67c30adca75"
+      },
+      {
+        "path": "research/production/real_plane_metric_plan.md",
+        "sha256": "d17da8816a8f17f5e6a20cad8929d2502e7626e2f7d5f3ee5898d893f826a940"
+      },
+      {
+        "path": "research/production/real_plane_metric_concept_review.md",
+        "sha256": "9c8bd6d72f20a2ac697eca47c5d390b51c5d46b9daa4a1dd9dc4b71e815feea0"
+      },
+      {
+        "path": "research/production/real_plane_figure_review.md",
+        "sha256": "b9d1aa9a3458136edfb261019d20131188cbf567cca26ce301129fa65a874fcc"
+      },
+      {
+        "path": "research/production/real_plane_figure_math_review.md",
+        "sha256": "c8ba4a033c3bfe42142a5d9179751fff812de3307545f4d4da8dfc4735a71454"
+      },
+      {
+        "path": "README.md",
+        "sha256": "0831d98e9190fc96912f6f85b01b4243ee71f6800bec3085093820d0e5630192"
+      },
+      {
+        "path": "LEARNING_PATH.md",
+        "sha256": "332d3b7a57cded5754dda16dbe36e41aaf4ac458e72fb4e91accbeefc0d7781e"
+      },
+      {
+        "path": "research/production/batch28_binding_incident_recovery.json",
+        "sha256": "1bb50f2f89c8657c94ed6ac23489efd6c9e195cac5d00316f489e7ef0a0879a3"
+      },
+      {
+        "path": "research/production/batch28_figure_integration_check.json",
+        "sha256": "cd5ad0e4355f130f45bf64ec93eea278ac88d511858d1877293877161b5db0f7"
+      },
+      {
+        "path": "research/production/batch28_structural_check.json",
+        "sha256": "975d772c98377543145c711d68b113ce9332d9c64a4ee1cb4814c11df13bb527"
+      },
+      {
+        "path": "research/production/batch28_DELIVERY.json",
+        "sha256": "10bffce917d12744aed39997d5943c890157925c29896153385bf54969de2b41"
+      }
+    ],
+    "durable_local_evidence": [
+      {
+        "path": "local-inputs/pending-batch28/source-cache/lebl_metric",
+        "sha256": "7856d4f48bbab222662c0ceace9d3e7f97be2dfffc7bac38433017d6800f268a"
+      },
+      {
+        "path": "local-inputs/pending-batch28/source-cache/beezer_vector_operations",
+        "sha256": "6c8c8c7da6c9894ec3c6c47a9e563d877dfa46529e1a13b3eae3d89a37a4d7b8"
+      },
+      {
+        "path": "local-inputs/pending-batch28/source-cache/lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee"
+      },
+      {
+        "path": "local-inputs/pending-batch28/source-cache/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d"
+      },
+      {
+        "path": "local-inputs/pending-batch28/source-cache/beezer_copying",
+        "sha256": "a72be10be0249bdabdd319a3aff491d7589876953a62fbd6521862c8d9c6d0dc"
+      },
+      {
+        "path": "local-inputs/pending-batch28/source-cache/beezer_bookinfo",
+        "sha256": "b9425c1711363ac4aed3cb94358329c0b706721cf04408cb350499a741ff9679"
+      },
+      {
+        "path": "local-inputs/pending-batch28/fetch-logs/1-fetch.json",
+        "sha256": "7095854a08064cbb8a8a6ea48c23136a034aad9b4c91ca44d3f29df91e6fcb75"
+      },
+      {
+        "path": "local-inputs/pending-batch28/fetch-logs/2-fetch_beezer.json",
+        "sha256": "b60075ff78287f7937656edd422a7f383b86b1b89005be583b30e72478c89d68"
+      },
+      {
+        "path": "local-inputs/pending-batch28/fetch-logs/3-requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d"
+      },
+      {
+        "path": "local-inputs/pending-batch28/fetch-logs/4-requests.json",
+        "sha256": "3f0e2aa595e75ec1027ecd6639495a6aef5c1d07976d259fceefc6bf92c88d77"
+      },
+      {
+        "path": "local-inputs/pending-batch28/original_plan_source_record.json",
+        "sha256": "71e6982051f1b9bf8748b181506d3cb4b33305d72c2f6ed42e3238d109ddde25"
+      },
+      {
+        "path": "local-inputs/pending-batch28/original-figure/draw_real_plane.py",
+        "sha256": "112748c017d7f30fb19900b6644946943ab2c8e41f0bf4bc56061ab70d686a0d"
+      },
+      {
+        "path": "local-inputs/pending-batch28/original-figure/b2_real_plane_model.png",
+        "sha256": "d6804131be3393ab7309d1d86715c5cec95d087c62e2ae632ce40c142f215a20"
+      }
+    ],
+    "complete_draw_function_source_identical": true,
+    "new_network_requests": 0,
+    "scope": "Actual installation and byte verification only; no build or PDF acceptance. Original source-fetch history and candidate-stage incident record retained unchanged."
+  }
+}

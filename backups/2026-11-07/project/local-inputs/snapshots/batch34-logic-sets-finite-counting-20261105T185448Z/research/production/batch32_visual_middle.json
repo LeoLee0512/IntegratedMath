@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/part1_audit",
+  "reviewed_at_utc": "2026-11-05T16:48:48.615363+00:00",
+  "kind": "independent_visual_review_partial_pdf_range",
+  "status": "passed_with_nonblocking_layout_observations",
+  "pdf": {
+    "path": "dist/综合数学_基础续写审阅版.pdf",
+    "sha256": "0c170f6585774a5ecc55bf8ea3f4739d053fe69ecf0f765fa721278b829610b9",
+    "page_count": 989
+  },
+  "build_manifest": {
+    "path": "build/learning_batch/build_inputs.json",
+    "sha256": "d8d61bcc738491c1da78a0a20e6b5365436c4ca69ad286563acfd95fee8db38c",
+    "all_registered_input_hashes_match_at_review": true
+  },
+  "automated_validation_observed": {
+    "path": "data/production/batch_validation.json",
+    "sha256_at_review": "288d2116293415237b44a423788e7cc6b96e4e42aef27b96b32888415a1593c4",
+    "status_at_review": "automated_checks_passed",
+    "snapshot_note": "Current automated receipt observed before team visual aggregation; later aggregation may change receipt bytes, not the reviewed PDF/screenshots.",
+    "preserved_snapshot": {
+      "path": "build/learning_batch/batch32_automated_validation_before_visual.json",
+      "sha256": "288d2116293415237b44a423788e7cc6b96e4e42aef27b96b32888415a1593c4"
+    }
+  },
+  "coverage": {
+    "page_numbering": "1-based PDF physical pages; printed page numbers in this range are PDF page minus 2",
+    "first_pdf_page": 337,
+    "last_pdf_page": 672,
+    "page_count": 336,
+    "contact_count": 28,
+    "all_contacts_actually_opened": true,
+    "contact_pages": [
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      566,
+      567,
+      568,
+      569,
+      570,
+      571,
+      572,
+      573,
+      574,
+      575,
+      576,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672
+    ],
+    "single_page_zoom_count": 13,
+    "single_page_zoom_pages": [
+      368,
+      369,
+      432,
+      478,
+      492,
+      498,
+      516,
+      520,
+      522,
+      527,
+      531,
+      533,
+      549
+    ]
+  },
+  "contact_sheets": [
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-337.png",
+      "sha256": "dc5e59b70af0bf0f96e3293b1cb38c576605f9e99bfabbf7706e849134c6bebc",
+      "pages": [
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-349.png",
+      "sha256": "da08a7b849c389424f74e192d6e073f90872c6e36affeb6d4160a58367ba0399",
+      "pages": [
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-361.png",
+      "sha256": "99d1e8830c5010e381c4d5b61e5c4e5b43f7e8c6848ca2085d4da43d420dfad9",
+      "pages": [
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-373.png",
+      "sha256": "8c9bb14e3f4d518348c0ff579a890a44e0ae20fefe29b4ee55af0ec984f34fc0",
+      "pages": [
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-385.png",
+      "sha256": "f9d690aa1fb1c362c089dd9d098b9317a002fbce73987c93cf681e592d27a2b4",
+      "pages": [
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-397.png",
+      "sha256": "40539eed050345fe1db568ae76e976bf5fefafb45380a039124b8788190a26fb",
+      "pages": [
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-409.png",
+      "sha256": "47173e282b992f20757d307a9c48cfa27a7e4545fd3f682e792fab60ad8081cd",
+      "pages": [
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-421.png",
+      "sha256": "2fd8747155bafffd0530f2c719d1d541b40ea15115b3dc2872723f9c421879cf",
+      "pages": [
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-433.png",
+      "sha256": "67de9c81c37d0d728be322957cc825a8860c804e15aacc1b054e1fa8e871ad46",
+      "pages": [
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-445.png",
+      "sha256": "c8219e2be08d67641089c055136fcbb75a577d768ea2beaba7e47be3380e9a62",
+      "pages": [
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-457.png",
+      "sha256": "fd5a172496a6dfb178d98405f8a751e2c5d0a82c8b211bcbb5d702b5e10b4e6a",
+      "pages": [
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-469.png",
+      "sha256": "cd57e5333efdd24e877995ddbb80b0033babb62d882475c4a527ad9e77a2e429",
+      "pages": [
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-481.png",
+      "sha256": "495b9c35eaa75792fb1c167654f2e65ab0670b212affb2ef3d8e0340cf605e85",
+      "pages": [
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-493.png",
+      "sha256": "a131e1aa94b363c217d4652abdf505cae084445685b65c5f6c7ff254dd5383e2",
+      "pages": [
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-505.png",
+      "sha256": "87888031689d087e418c0f6c539aac3e2943fcd7d9309f9c38a7b9e670131a99",
+      "pages": [
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-517.png",
+      "sha256": "9c114f8d1045a237237210d2538f0d7f8a5483138b2e77d46878c152ff8ec748",
+      "pages": [
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-529.png",
+      "sha256": "d1ca42eeeddcea6107460e0061238d8b69847ae3cd25914e04700e9313c1df1c",
+      "pages": [
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-541.png",
+      "sha256": "3f8d8cde6a8760733b427424c916f6ff08ab36600efaf06a551db6dae893a0bb",
+      "pages": [
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-553.png",
+      "sha256": "5c0f8886d0ab3576909d104501adbbe2c9421e20ab5c3b37acf74fba8456592b",
+      "pages": [
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-565.png",
+      "sha256": "f6726356aaec75358784167909d38989ae98d668ffb7b06b1b170bff69dd7bf7",
+      "pages": [
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-577.png",
+      "sha256": "59f8793d65b00d9d639d488f225831c01d59062230430ca0bf00eb3116a7a548",
+      "pages": [
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-589.png",
+      "sha256": "0b08a80238da909196e7c8aa85369a5573d8aa545dc6ec6d9c0ced164eb0a17c",
+      "pages": [
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-601.png",
+      "sha256": "70a87ea8523201fbf88255465a5fb39189749ce44d99fc2bfa81c226e602a5aa",
+      "pages": [
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-613.png",
+      "sha256": "48023a4701a0cf9c20def161a7aae5edff42df98deed6f4bd4450a71e0e11ebb",
+      "pages": [
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-625.png",
+      "sha256": "fd21b9d74d1f00674018c6505471b7d93c1508a752aaa5f6bba4f30e1738dd37",
+      "pages": [
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-637.png",
+      "sha256": "050e2ac08222e13e5c24827aed25c66ce270b52b0ff667d1d76eb272511e5a74",
+      "pages": [
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-649.png",
+      "sha256": "b45768341a401d389c75661bfd57063b5eaa1310889514bc6380682a52e78ba4",
+      "pages": [
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-contact-661.png",
+      "sha256": "bd14848b85f13f2e1688854b9b101fb61e156cd3343ea0829bfc49596743d340",
+      "pages": [
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image actual contact opened",
+      "dimensions": [
+        1200,
+        1760
+      ],
+      "result": "no_visible_blocking_layout_issue"
+    }
+  ],
+  "zoom_images": [
+    {
+      "path": "build/learning_batch/screenshots/batch-page-368.png",
+      "sha256": "e3ba1cd3a2894cb7a8815505bce1e71d2b29a805e9ed5468d847dc159fd74ab6",
+      "pages": [
+        368
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "来源收尾短段完整，整页留白较多；非漏渲染。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-369.png",
+      "sha256": "d1e211ffff55cff27c15020d9611b60dea6baa0b08f58a8f8b936c228a730ea7",
+      "pages": [
+        369
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "第526章导语密集，字号、行距和左右边界仍正常。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-432.png",
+      "sha256": "433507fcfadc2cafbc7a82d981053c93b0e6a5f35145d2294bfbf8b63fae69ad",
+      "pages": [
+        432
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "有序域性质与依据两列表格完整，公式及单元格没有截断。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-478.png",
+      "sha256": "c6ce1f5a54137055972416e648063d053a044746e76601610519435cf75bd963",
+      "pages": [
+        478
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "图19两子图、轴标签、点标记及图注完整可读。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-492.png",
+      "sha256": "0dde7912ee28374c6c5c550592fbf689577d3ccc550ab8faa419458fe72da625",
+      "pages": [
+        492
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "图20正交投影、坐标标签与下方公式完整，无压图。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-498.png",
+      "sha256": "89bb0edfac145ae92fefc6c5b852f35c5b8cce6aaac30e13356eccafad734946",
+      "pages": [
+        498
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "图21误差带、严格阈值、空心边界点、图注与正文清楚。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-516.png",
+      "sha256": "b873020c12348f337dd7a9d7a2ec04c22c3bb2f10ebf46274b96ee68efc825ab",
+      "pages": [
+        516
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "B4.5标题、先修蓝色链接、数列符号和正文完整；旧BW来源收尾正常。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-520.png",
+      "sha256": "94326671bc4ad7ffe1aefde4880a9f00220775a9d55d57acf10c49a3d3760c8b",
+      "pages": [
+        520
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "B4.5题7/8及来源说明中的路径换行正常，长文字未越界。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-522.png",
+      "sha256": "2a9c3beeb63ed1349acfe6ece7421f006381c283d758b050ad77bcd12eababfb",
+      "pages": [
+        522
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "第146章/B4.6标题、去心邻域、积点与量词公式清晰，无中文缺字。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-527.png",
+      "sha256": "968e96135a48d194f8cf488ab2ab11b70e19169b7742e6e2bc55e1cb2812b158",
+      "pages": [
+        527
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "B4.6题4—8及来源文本正常，B4.7标题、先修和阅读安排完整。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-531.png",
+      "sha256": "62c4f8408703cd5b89cc15f5233762cb55abe10ee29d0f5e1f6e8ed5cdc88355",
+      "pages": [
+        531
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "B4.7自然商域、倒数误差、多行分式及不等式完整可读。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-533.png",
+      "sha256": "453894a36365bc993a5bd1f3cdc4c5e90a25c50021e09da4c6359a1df1e72c3d",
+      "pages": [
+        533
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "B4.7题8、来源说明的完整提交号及许可文字在页面内，后接范围衔接段；下半留白。"
+    },
+    {
+      "path": "build/learning_batch/screenshots/batch-page-549.png",
+      "sha256": "0054d97b5b94446606f68507abf352884dec01125e5271969e45e56fee3e2906",
+      "pages": [
+        549
+      ],
+      "inspected": true,
+      "inspection_method": "functions.view_image original-detail single page",
+      "dimensions": [
+        765,
+        990
+      ],
+      "observation": "第2章题2-7英文字段名与中文混排正常，随后B1.1答案转换清楚。"
+    }
+  ],
+  "blocking_findings": [],
+  "nonblocking_observations": [
+    {
+      "pages": [
+        368
+      ],
+      "severity": "nonblocking",
+      "observation": "来源收尾仅占页顶短段，其后新章另起；放大确认内容完整，非空白漏页。"
+    },
+    {
+      "pages": [
+        494,
+        521
+      ],
+      "severity": "nonblocking",
+      "observation": "第28部分和第18部分标题/短导语结构页有较多留白；下一页正常进入章文。"
+    },
+    {
+      "pages": [
+        369
+      ],
+      "severity": "nonblocking",
+      "observation": "第526章长导语较密集，放大后未见重叠或越界。"
+    }
+  ],
+  "limits": [
+    "Only PDF pages337–672 reviewed here; no claim for the remaining pages or other PDF versions.",
+    "Contact sheets were inspected for layout; only the listed13 pages were individually enlarged. This is not word-by-word proof review.",
+    "No actual hyperlink clicking was performed.",
+    "The old automated_validation_before_visual.json sidecar was not used as current validation evidence.",
+    "No source, builder, PDF, existing acceptance or formal source ledger was changed by this visual review."
+  ]
+}

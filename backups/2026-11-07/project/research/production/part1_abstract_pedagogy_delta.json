@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/part1_build",
+  "reviewed_at": "2026-11-05T18:14:52.329865+00:00",
+  "status": "accepted",
+  "review_kind": "pedagogy_delta",
+  "new_full_read_claim": false,
+  "historical_full_review_inherited": true,
+  "historical_signature": {
+    "path": "research/production/history/batch33-before-abstract/research/production/part1_pedagogy_review.json",
+    "sha256": "c98ef169208d4c8fdea5383a1f6895205c71e83729bb8b87e9b623fdd341767b"
+  },
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "plan_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+  "changed_sources": [
+    "manuscript/review_ch01/appendices.md",
+    "manuscript/review_ch02/chapter.md"
+  ],
+  "checks": {
+    "only_two_of_eight_sources_changed": true,
+    "current_two_manuscripts_equal_reviewed_proposal": true,
+    "twenty_chapter1_and_seven_chapter2_questions_unchanged": true,
+    "both_answers_byte_identical": true,
+    "chapter2_all_anchors_and_math_fragments_unchanged": true,
+    "scope_only_00B05_source_status_changed": true,
+    "applied_source_ledger_only_application_metadata_changed": true,
+    "source_and_plan_bindings_exact": true,
+    "no_new_math_prerequisite": true,
+    "abstract_not_fulltext_or_proof": true,
+    "speaker_not_assumed_article_author": true,
+    "other_source_gaps_retained": true
+  },
+  "direct_cached_reading": {
+    "keynotes_lines": [
+      55,
+      75
+    ],
+    "README_full": true,
+    "imprint_full": true,
+    "sha256": {
+      "local-inputs/part1-jcon-event-followup-cache/site2025-keynotes.md": "d81fb8f7fbd041bbd8d5d8a890ffc4460fee40131db861a28950eeb855fa601b",
+      "local-inputs/part1-jcon-event-followup-cache/site-README.md": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+      "local-inputs/part1-jcon-event-followup-cache/site-imprint.md": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad"
+    },
+    "new_network_requests": 0,
+    "external_text_not_distributed": true
+  },
+  "evidence": [
+    {
+      "path": "research/production/part1_abstract_pedagogy_delta.md",
+      "sha256": "15fae321c97acbb30e046130e9ef215a51a13dc007cd86fd0e51f96bf43cf446"
+    },
+    {
+      "path": "research/production/part1_abstract_pedagogy_delta.diff",
+      "sha256": "be07ac9899693fad78541447f8d6c87644ad3f1f68523125e3e33b196274c346"
+    }
+  ],
+  "source_gate": "pending",
+  "G_verified": 8,
+  "G_pending": 10,
+  "full_scope_accepted": false,
+  "blocking_issues": []
+}

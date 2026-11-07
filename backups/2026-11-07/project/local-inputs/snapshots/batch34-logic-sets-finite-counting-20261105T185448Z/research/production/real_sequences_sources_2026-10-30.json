@@ -1,0 +1,819 @@
+{
+  "status": "batch30_source_conditions_and_final_reviewed_text_snapshot_verified_pending_integration",
+  "checked_at_utc": "2026-10-30T04:25:16.420743+00:00",
+  "reviewer": "/root/prepare22_build",
+  "original_source_audit": {
+    "checked_at_utc": "2026-10-30T04:02:12.793709+00:00",
+    "reviewer": "/root/plan_real_next",
+    "status": "independent concept and public source review only; no manuscript authored or final acceptance",
+    "new_http_requests": 1,
+    "sources": [
+      {
+        "id": "lebl_sequences",
+        "author": "Jiří Lebl",
+        "title": "Basic Analysis I, Sequences and Series",
+        "version": "6.3, fixed commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+        "cache_path": "/tmp/real-sequences-source-audit/lebl_sequences.tex",
+        "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+        "bytes": 165039,
+        "retrieved_at_utc": "2026-10-30T03:58:03.768311+00:00",
+        "http_status": 200,
+        "raw_http_record": "/tmp/real-sequences-source-audit/http.json",
+        "role": "Standard definitions and theorem conditions checked; independent original textbook proofs planned",
+        "actual_read_locators": [
+          "17-39 sequence function and boundedness",
+          "78-144 convergence quantifiers and threshold dependence",
+          "147-245 constant, reciprocal, alternating, uniqueness, boundedness",
+          "435-520 tail equivalence",
+          "990-1182 algebra including all-denominators-nonzero and nonzero limit",
+          "1184-1195 constant corollaries",
+          "1232-1252 absolute value and reverse triangle"
+        ]
+      },
+      {
+        "id": "lebl_front",
+        "title": "Basic Analysis I, front matter",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Version and licensing evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+        "access_status": "verified_http_200",
+        "actual_bytes": 18862,
+        "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained"
+      },
+      {
+        "id": "lebl_license",
+        "title": "Basic Analysis LICENSE.md",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Version and licensing evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+        "access_status": "verified_http_200",
+        "actual_bytes": 467,
+        "check_status": "reused fixed-commit cache; actual bytes and SHA rechecked 2026-10-30; original retrieval retained"
+      }
+    ],
+    "classification": {
+      "primary_chapter": 242,
+      "primary_code": "40A05",
+      "chapter_title_zh": "无穷极限过程的收敛与发散",
+      "leaf_title_zh": "级数与数列的收敛与发散",
+      "leaf_title_en": "Convergence and divergence of series and sequences",
+      "cross": [
+        "26A03",
+        "97I30"
+      ],
+      "module_id_actual": "single-analysis",
+      "module_title": "极限、连续、微分与积分",
+      "module_stage": "B4",
+      "module_current_status": "unwritten",
+      "module_prerequisites": [
+        "functions",
+        "induction-counting",
+        "number-systems"
+      ],
+      "scope": "Two introductory sequence units only; broad module and formal B3 prerequisites are not declared completed"
+    },
+    "rights": "No source prose, exercise solution or figure copied/adapted. Fixed commit and dual-license attribution retained; any later adaptation must satisfy chosen applicable attribution/share-alike license. Cache is not automatically redistributed.",
+    "differences_to_preserve": [
+      "Lebl indices begin at 1, textbook N starts at 0",
+      "Lebl finite maximum used without this books fixed-state recursive construction",
+      "Lebl leaves subtraction/absolute-value details to reader; textbook requires complete proof",
+      "No reference used to assume the current theorem or claim entire chapter read"
+    ],
+    "snapshot": [
+      {
+        "path": "/tmp/real_sequences_plan.md",
+        "sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+        "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/data/catalog_titles_zh.json",
+        "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/data/production/chapters.json",
+        "sha256": "4337270dde4427da24cd5a3dad43eb0a12e9499ae1a8931c75033280db666861"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/data/production/prerequisites.json",
+        "sha256": "5103220cc324b9e813ea7d696bf714d178cddf5558d761a30345242800b1611c"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/LEARNING_PATH.md",
+        "sha256": "c17bc63b3ca25de7b2ccc1b3b491d028818522e0773ac4796e6937dddbe4ef51"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_numbers.md",
+        "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+        "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_subtraction.md",
+        "sha256": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/division_remainder.md",
+        "sha256": "4cb1a890810f4ca4f073fe8e93d12505dc4c0e286e5f7f0fcc36c405fe544354"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+        "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+        "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_archimedean_density.md",
+        "sha256": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_division_field.md",
+        "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/real_absolute_distance.md",
+        "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823"
+      },
+      {
+        "path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_ring_order.md",
+        "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495"
+      }
+    ],
+    "report_path": "/tmp/real_sequences_concept_review.md",
+    "repository_mutations": false,
+    "plan_revision": {
+      "initial_sha256": "28278d3b07375a44bc27f5be662134d1095a6a11f86094d85d4dcaa8a4ae6ac9",
+      "final_sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca",
+      "changes": [
+        "exact Chinese leaf title",
+        "actual single-analysis module and incomplete B3 scope",
+        "fixed-state prefix-bound recursion"
+      ],
+      "approved_by": "root explicit instruction"
+    }
+  },
+  "original_sequence_http_record": {
+    "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-seq-ser.tex",
+    "status": 200,
+    "headers": {
+      "cache-control": "max-age=300",
+      "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+      "content-type": "text/plain; charset=utf-8",
+      "etag": "\"989bbfc05277c38a3488e495f2f77ebf90d4bd4f1a53c5b013c77c6cba9bbd9c\"",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-xss-protection": "1; mode=block",
+      "x-github-request-id": "F848:346D4C:5E754E:803F13:6AE415CB",
+      "x-github-edge-region": "westus3",
+      "accept-ranges": "bytes",
+      "date": "Fri, 30 Oct 2026 03:58:03 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-lax-kwhp1940046-LAX",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1793332684.581237,VS0,VE155",
+      "vary": "Authorization,Accept-Encoding",
+      "access-control-allow-origin": "*",
+      "cross-origin-resource-policy": "cross-origin",
+      "x-fastly-request-id": "801e255bd44e7efeef930b213ca1aeaa4a58664d",
+      "expires": "Fri, 30 Oct 2026 04:03:03 GMT",
+      "source-age": "0",
+      "content-length": "165039",
+      "x-envoy-upstream-service-time": "255",
+      "server": "envoy",
+      "connection": "close"
+    },
+    "retrieved_at_utc": "2026-10-30T03:58:03.768311+00:00",
+    "bytes": 165039,
+    "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+    "cache_path": "/tmp/real-sequences-source-audit/lebl_sequences.tex"
+  },
+  "cache_verification": [
+    {
+      "id": "lebl_sequences",
+      "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce",
+      "bytes": 165039,
+      "verified": true
+    },
+    {
+      "id": "lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "verified": true
+    },
+    {
+      "id": "lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "verified": true
+    }
+  ],
+  "new_http_requests": 0,
+  "formal_installation_verified": true,
+  "aggregate_acceptance_claimed": false,
+  "original_front_license_http_records": [
+    {
+      "request_id": "lebl_front",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "checked_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "access_status": "verified_http_200",
+      "bytes": 18862,
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front"
+    },
+    {
+      "request_id": "lebl_license",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "access_status": "verified_http_200",
+      "bytes": 467,
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+    }
+  ],
+  "original_log_binding": [
+    {
+      "path": "/tmp/real_sequences_sources.json",
+      "sha256": "3d257c4d99f86c9461120fe832cc0786906d5079956bb87e572ff96db94c5d21"
+    },
+    {
+      "path": "/tmp/real-sequences-source-audit/http.json",
+      "sha256": "6d2b9373b8adcb9a776fedd389b5cad5253c3ec75532c29f3c2770968a5eae87"
+    },
+    {
+      "path": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+      "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d"
+    }
+  ],
+  "manuscript_binding": {
+    "status": "current_tmp_files_match_final_freeze_and_report_hashes",
+    "checked_at_utc": "2026-10-30T04:25:16.420743+00:00",
+    "manuscripts": [
+      {
+        "observed_path": "/tmp/real_sequences_limits.md",
+        "sha256": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+        "bytes": 16047,
+        "intended_repository_path": "manuscript/foundations/real_sequences_limits.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_sequences_limits_answers.md",
+        "sha256": "64b0f32bb8c864fccc445828d3560e4bb2d268062996e2717a7f72be1a496e13",
+        "bytes": 12366,
+        "intended_repository_path": "manuscript/foundations/real_sequences_limits_answers.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_sequences_algebra.md",
+        "sha256": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89",
+        "bytes": 16539,
+        "intended_repository_path": "manuscript/foundations/real_sequences_algebra.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_sequences_algebra_answers.md",
+        "sha256": "17eecc0e37e89df0d966825b311d41149272f237f438b5c07e1da132f183ef31",
+        "bytes": 15631,
+        "intended_repository_path": "manuscript/foundations/real_sequences_algebra_answers.md",
+        "installation_status": "pending_root_integration"
+      }
+    ],
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_sequences_limits_math_review.md",
+        "sha256": "f77a4f34cab3857b753a197e938b57f39c87450e461b25b951ee0d41e8cc7e8b",
+        "bytes": 8323,
+        "intended_repository_path": "research/production/real_sequences_limits_math_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "review22",
+        "scope_as_reported": "SL1—SL4及8解独立全文数学审；实际读图脚本和PNG，未重产；初审来源锚待落点历史保留",
+        "current_manuscript_hashes_present": true
+      },
+      {
+        "observed_path": "/tmp/real_sequences_algebra_math_review.md",
+        "sha256": "27773ff0f0642b881b054b54e3a0c5f5a792271c3203289c140132cb7d91ef43",
+        "bytes": 7829,
+        "intended_repository_path": "research/production/real_sequences_algebra_math_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/plan_real_next",
+        "scope_as_reported": "SA1—SA4及8解独立全文数学审；DA4唯一精确先修增链实际逆差绑定；不代审其自著B4.1",
+        "current_manuscript_hashes_present": true
+      },
+      {
+        "observed_path": "/tmp/real_sequences_pedagogy_review.md",
+        "sha256": "2583e324b7ac0f1e6b8e8b3ea0003cb1ae161efc99d4fda7c7863543669520c0",
+        "bytes": 10095,
+        "intended_repository_path": "research/production/real_sequences_pedagogy_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "四稿1212行16解独立教学审；两项最小修复实际差分；候选源和完整函数真实定位，不代签源许可或PDF；此人也是图作者，图的独立审查另由root报告承担",
+        "current_manuscript_hashes_present": true
+      }
+    ],
+    "planning_evidence": [
+      {
+        "observed_path": "/tmp/real_sequences_plan.md",
+        "sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca",
+        "bytes": 6941,
+        "intended_repository_path": "research/production/real_sequences_plan.md",
+        "installation_status": "pending_root_integration"
+      },
+      {
+        "observed_path": "/tmp/real_sequences_concept_review.md",
+        "sha256": "21098a791cf8dc7c60b50feb71115b74e3ff1dcd20ab02933d7db88684e5b797",
+        "bytes": 12720,
+        "intended_repository_path": "research/production/real_sequences_concept_review.md",
+        "installation_status": "pending_root_integration",
+        "historical_scope": "Concept/source review before reviewer later authored B4.1; original statement of no manuscripts authored describes that time, not independent final review of his own manuscript."
+      }
+    ],
+    "formal_installation_verified": true,
+    "aggregate_approval_claim": false,
+    "note": "Actual byte bindings and original report authors/scopes only; no aggregate mathematical, build or PDF approval."
+  },
+  "figure_binding": {
+    "standalone_script": {
+      "observed_path": "/tmp/draw_real_sequence_epsilon.py",
+      "sha256": "37c506b8dd133cb76a4fd8237f335fbbae19f9a1876f4213a59f1d775053c427",
+      "bytes": 4485,
+      "intended_repository_path": "research/production/draw_real_sequence_epsilon_standalone.py",
+      "installation_status": "pending_root_integration"
+    },
+    "original_png": {
+      "observed_path": "/tmp/real-sequence-epsilon-figure/b2_real_sequence_epsilon.png",
+      "sha256": "9bf05e1f447c9ec0e0c55a5253b4ea7c16a9a632cc514e09c22d9d8287cfabc0"
+    },
+    "integration_recheck": {
+      "standalone_script_sha256": "37c506b8dd133cb76a4fd8237f335fbbae19f9a1876f4213a59f1d775053c427",
+      "candidate_draw_module_sha256": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65",
+      "function_source_sha256": "2edcbed898cbee3ba37f806b7b962fc067424d9b08c4806ec87cc3df23754133",
+      "complete_function_exact_match": true,
+      "function_ast_exact_match": true,
+      "png_sha256": "9bf05e1f447c9ec0e0c55a5253b4ea7c16a9a632cc514e09c22d9d8287cfabc0",
+      "png_matches_original_bytes": true,
+      "original_png_actually_viewed": true,
+      "formal_draw_module_installation_verified": false,
+      "scope": "Standalone function imported into candidate module without body changes;onlythis function executed in/tmp,all Fraction assertions pass;originalPNG viewed;no PDF acceptance."
+    },
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_sequence_epsilon_figure_review.md",
+        "sha256": "4ff6647991b8105b064af1a5dcee522f3fe7cc95410ee478cdf6de73f4b55a04",
+        "bytes": 4695,
+        "intended_repository_path": "research/production/real_sequence_epsilon_figure_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "Figure author self-check, actual execution and PNG view; two literal-string wraps verified with identical AST and PNG"
+      },
+      {
+        "observed_path": "/tmp/real_sequence_epsilon_figure_root_review.md",
+        "sha256": "26a61601b498a402fe9d2c05450e7c34777d4eed45d6386a7395b43097a4bc89",
+        "bytes": 2162,
+        "intended_repository_path": "research/production/real_sequence_epsilon_figure_root_review.md",
+        "installation_status": "pending_root_integration",
+        "reviewer_as_reported": "/root",
+        "scope_as_reported": "Independent full script/PNG review and actual exact-byte/pixel reproduction, then minimal wrap diff; not PDF acceptance"
+      }
+    ],
+    "integration_status": "candidate_function_source_identical_and_actual_isolated_png_reproduction_identical;formal_installation_pending"
+  },
+  "current_prerequisite_recheck": [
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_addition.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_addition.md",
+      "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+      "anchors_verified": [
+        "cutadd-rational"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_additive_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+      "anchors_verified": [
+        "cutgroup-laws",
+        "cutgroup-negation-subtraction",
+        "cutgroup-translation"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_cuts_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "anchors_verified": [
+        "cut-order-embedding"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_division_field.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "anchors_verified": [
+        "cutdiv-definition",
+        "cutdiv-equations",
+        "cutdiv-order"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_inverse.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_inverse.md",
+      "sha256": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a",
+      "anchors_verified": [
+        "cutinv-rational-identities"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_ring_order.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+      "anchors_verified": [
+        "cutring-distributive",
+        "cutring-multiplication-order"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/dedekind_signed_product.md",
+      "intended_repository_path": "manuscript/foundations/dedekind_signed_product.md",
+      "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+      "anchors_verified": [
+        "cutsigned-associative",
+        "cutsigned-rational-zero",
+        "cutsigned-signs"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/division_remainder.md",
+      "intended_repository_path": "manuscript/foundations/division_remainder.md",
+      "sha256": "4cb1a890810f4ca4f073fe8e93d12505dc4c0e286e5f7f0fcc36c405fe544354",
+      "anchors_verified": [
+        "div-quotient-remainder",
+        "div-theorem"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_composition.md",
+      "intended_repository_path": "manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+      "anchors_verified": [
+        "fc-composition"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/functions_definition.md",
+      "intended_repository_path": "manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "anchors_verified": [
+        "fun-definition",
+        "fun-pairs",
+        "fun-sets"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_numbers.md",
+      "intended_repository_path": "manuscript/foundations/natural_numbers.md",
+      "sha256": "709c9ebf1f580c8bf7af17b494ecd07505dd33f65ccfe49482675fe7712880f3",
+      "anchors_verified": [
+        "b1-add-one",
+        "b1-addition-associative",
+        "b1-addition-commutative",
+        "b1-addition-definition",
+        "b1-induction",
+        "b1-recursion-principle"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_order.md",
+      "intended_repository_path": "manuscript/foundations/natural_order.md",
+      "sha256": "4ad8e874bedda7f4c15739fd47344903ec71bd9a5b538c71bde0f9827b091435",
+      "anchors_verified": [
+        "ord-addition-order",
+        "ord-definition",
+        "ord-successor-comparison",
+        "ord-trichotomy"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/natural_subtraction.md",
+      "intended_repository_path": "manuscript/foundations/natural_subtraction.md",
+      "sha256": "92d1ac5e3cf6c07f61afd8f84e1e96d0556bf62d752e1d2a854121b66c412247",
+      "anchors_verified": [
+        "sub-definition"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/place_value.md",
+      "intended_repository_path": "manuscript/foundations/place_value.md",
+      "sha256": "93c1182d304b216a0a3b73cf4e4b2fd23dd370f31a9db8ffcd85c08eadf0fb45",
+      "anchors_verified": [
+        "b1-multiplication-commutative",
+        "b1-multiplication-units"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/real_absolute_distance.md",
+      "intended_repository_path": "manuscript/foundations/real_absolute_distance.md",
+      "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+      "anchors_verified": [
+        "realabs-definition-bounds",
+        "realabs-products-triangle"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/workspace/IntegratedMath-book/manuscript/foundations/real_archimedean_density.md",
+      "intended_repository_path": "manuscript/foundations/real_archimedean_density.md",
+      "sha256": "07c238327229f4b1ea5ce8eb5db9fe4ae90f434740f88230338fbc51546c996e",
+      "anchors_verified": [
+        "realarch-embedding",
+        "realarch-natural-bound"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    },
+    {
+      "observed_path": "/tmp/real_sequences_limits.md",
+      "intended_repository_path": "manuscript/foundations/real_sequences_limits.md",
+      "sha256": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8",
+      "anchors_verified": [
+        "seq-basic-limits",
+        "seq-definition",
+        "seq-tails",
+        "seq-uniqueness"
+      ],
+      "scope": "Current actual prerequisite byte and anchor check; original historical source snapshots unchanged."
+    }
+  ],
+  "classification": {
+    "primary_part_number": 28,
+    "primary_part_code": "40-XX",
+    "primary_chapter_number": 242,
+    "primary_chapter_code": "40Axx",
+    "primary_leaf": "40A05",
+    "cross_references_only": [
+      "26A03",
+      "97I30"
+    ],
+    "module": "single-analysis",
+    "induction_counting_status": "unwritten",
+    "actual_catalogue_titles": [
+      {
+        "code": "26A03",
+        "level": "subject_leaf",
+        "parent_code": "26Axx",
+        "title_en": "Foundations: limits and generalizations, elementary topology of the line",
+        "title_zh": "基础：极限及其推广、直线上的初等拓扑",
+        "translation_method": "analysis"
+      },
+      {
+        "code": "40-XX",
+        "level": "major",
+        "parent_code": null,
+        "title_en": "Sequences, series, summability",
+        "title_zh": "序列、级数与可和性",
+        "translation_method": "existing_chinese_major_name"
+      },
+      {
+        "code": "40Axx",
+        "level": "intermediate",
+        "parent_code": "40-XX",
+        "title_en": "Convergence and divergence of infinite limiting processes",
+        "title_zh": "无穷极限过程的收敛与发散",
+        "translation_method": "analysis"
+      },
+      {
+        "code": "40A05",
+        "level": "subject_leaf",
+        "parent_code": "40Axx",
+        "title_en": "Convergence and divergence of series and sequences",
+        "title_zh": "级数与数列的收敛与发散",
+        "translation_method": "analysis"
+      },
+      {
+        "code": "97I30",
+        "level": "subject_leaf",
+        "parent_code": "97Ixx",
+        "title_en": "Sequences and series (educational aspects)",
+        "title_zh": "数列与级数（教育方面）",
+        "translation_method": "root"
+      }
+    ]
+  },
+  "baseline": {
+    "status": "all_four_tools_and_two_metadata_match_current_installed29_bytes",
+    "checked_at_utc": "2026-10-30T04:25:16.420743+00:00",
+    "files": [
+      {
+        "path": "tools/validate_learning_batch.py",
+        "baseline_sha256": "81adde55f2f0be77a39853f0c66979f269ba74f357b42335da32a36f23b416ad",
+        "formal_observed_sha256": "81adde55f2f0be77a39853f0c66979f269ba74f357b42335da32a36f23b416ad",
+        "matches": true,
+        "basis": "frozen29candidate"
+      },
+      {
+        "path": "tools/draw_foundations_batch.py",
+        "baseline_sha256": "c36e107fa822fa3e19e64efc308e41dfe2885af786cd38cab563eaa6d7163479",
+        "formal_observed_sha256": "c36e107fa822fa3e19e64efc308e41dfe2885af786cd38cab563eaa6d7163479",
+        "matches": true,
+        "basis": "frozen29candidate"
+      },
+      {
+        "path": "tools/build_production_ledger.py",
+        "baseline_sha256": "271e0b4f1bd1594ddb2b100095ce518b5be4375a0a26d5d812706d42d45f23ec",
+        "formal_observed_sha256": "271e0b4f1bd1594ddb2b100095ce518b5be4375a0a26d5d812706d42d45f23ec",
+        "matches": true,
+        "basis": "frozen29candidate"
+      },
+      {
+        "path": "tools/build_learning_batch.py",
+        "baseline_sha256": "e0bb0e2c84b1ab02b0bcfcc8f806fa29cb2254f77ea4e5d2474074856d2df976",
+        "formal_observed_sha256": "e0bb0e2c84b1ab02b0bcfcc8f806fa29cb2254f77ea4e5d2474074856d2df976",
+        "matches": true,
+        "basis": "frozen29candidate"
+      },
+      {
+        "path": "README.md",
+        "baseline_sha256": "505754239229e7819c3888ce9b3be6bba8cfa5050597ad6771c40e09c0442ad1",
+        "formal_observed_sha256": "505754239229e7819c3888ce9b3be6bba8cfa5050597ad6771c40e09c0442ad1",
+        "matches": true,
+        "basis": "frozen29candidate"
+      },
+      {
+        "path": "LEARNING_PATH.md",
+        "baseline_sha256": "d7c5c1b6921d1ee62ca04c8431d3de603885e61455a6d385b23f37b3cb173530",
+        "formal_observed_sha256": "d7c5c1b6921d1ee62ca04c8431d3de603885e61455a6d385b23f37b3cb173530",
+        "matches": true,
+        "basis": "frozen29candidate"
+      }
+    ],
+    "formal30_installation_verified": false
+  },
+  "root_integration": {
+    "actor": "/root",
+    "checked_at_utc": "2026-10-30T04:37:54.763930+00:00",
+    "prior_commit": "3a86dfccf172dde4d1108e9efc2d9fd59e4c0c2d",
+    "prior_snapshot_manifest": "local-inputs/snapshots/3a86dfc/snapshot_manifest.json",
+    "candidate_json_sha256": "cb4cfc29126d9b58efa14fcf802c556122e61491b6a0187d8ec5fb57c062ce06",
+    "candidate_markdown_sha256": "9a3c72e1bfab0b44ec080e29c63bbc32713cefdd41cd4135b9bf7606be2f21c7",
+    "installed_files": [
+      {
+        "path": "tools/build_learning_batch.py",
+        "sha256": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353"
+      },
+      {
+        "path": "tools/validate_learning_batch.py",
+        "sha256": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c"
+      },
+      {
+        "path": "tools/build_production_ledger.py",
+        "sha256": "559c8c56aac5e584f083452b72a9e605307c889fb055c3d6cca16e67fe2d23b8"
+      },
+      {
+        "path": "tools/draw_foundations_batch.py",
+        "sha256": "6070c2d800c288ee402b0ae69a29cafa8ed0ba5fca3174f1d05ac6164dbcef65"
+      },
+      {
+        "path": "manuscript/foundations/real_sequences_limits.md",
+        "sha256": "a173da3ec3aff2a0427b7b8a9b85af76ce2d9fac92b27e1540f7089ceb7dbce8"
+      },
+      {
+        "path": "manuscript/foundations/real_sequences_limits_answers.md",
+        "sha256": "64b0f32bb8c864fccc445828d3560e4bb2d268062996e2717a7f72be1a496e13"
+      },
+      {
+        "path": "manuscript/foundations/real_sequences_algebra.md",
+        "sha256": "7d969189d3294eefdd12ad77233044cb63df63ab63789a5e64ee73f5fc2e4b89"
+      },
+      {
+        "path": "manuscript/foundations/real_sequences_algebra_answers.md",
+        "sha256": "17eecc0e37e89df0d966825b311d41149272f237f438b5c07e1da132f183ef31"
+      },
+      {
+        "path": "research/production/real_sequences_limits_math_review.md",
+        "sha256": "f77a4f34cab3857b753a197e938b57f39c87450e461b25b951ee0d41e8cc7e8b"
+      },
+      {
+        "path": "research/production/real_sequences_algebra_math_review.md",
+        "sha256": "27773ff0f0642b881b054b54e3a0c5f5a792271c3203289c140132cb7d91ef43"
+      },
+      {
+        "path": "research/production/real_sequences_pedagogy_review.md",
+        "sha256": "2583e324b7ac0f1e6b8e8b3ea0003cb1ae161efc99d4fda7c7863543669520c0"
+      },
+      {
+        "path": "research/production/real_sequences_plan.md",
+        "sha256": "79a2e82ab80cafecd49008afa4add8e5df9e4437100e208cbddd8fb32af82dca"
+      },
+      {
+        "path": "research/production/real_sequences_concept_review.md",
+        "sha256": "21098a791cf8dc7c60b50feb71115b74e3ff1dcd20ab02933d7db88684e5b797"
+      },
+      {
+        "path": "research/production/real_sequence_epsilon_figure_review.md",
+        "sha256": "4ff6647991b8105b064af1a5dcee522f3fe7cc95410ee478cdf6de73f4b55a04"
+      },
+      {
+        "path": "research/production/real_sequence_epsilon_figure_root_review.md",
+        "sha256": "26a61601b498a402fe9d2c05450e7c34777d4eed45d6386a7395b43097a4bc89"
+      },
+      {
+        "path": "README.md",
+        "sha256": "2c6bc0cdb003f3bd321b21191d8c058f026b45fce7a717fea1b79da3662e574e"
+      },
+      {
+        "path": "LEARNING_PATH.md",
+        "sha256": "8726b9458a1c4a3ef4b0c332609716ecb630ff47665d2c937728a6c9bc6badd3"
+      },
+      {
+        "path": "research/production/batch30_figure_integration_check.json",
+        "sha256": "bd6db8f556e56302087fcdb5391b8d9880ae1a0704e4c3c0d7c79ff2219953c8"
+      },
+      {
+        "path": "research/production/batch30_structural_check.json",
+        "sha256": "a8d807b88b16809225bce2b24f96d226249b680a4012a5b259f686eca30744b1"
+      },
+      {
+        "path": "research/production/batch30_DELIVERY.json",
+        "sha256": "85b81a2caa1895bac05e028ecacaec0458799791491ff247193d662fb867f235"
+      }
+    ],
+    "durable_local_evidence": [
+      {
+        "path": "local-inputs/pending-batch30/source-cache/lebl_sequences",
+        "sha256": "18657062b4a851fc7cd1ced849e7791e893e2e9968288850ac3c0a8a5c5bd1ce"
+      },
+      {
+        "path": "local-inputs/pending-batch30/source-cache/lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee"
+      },
+      {
+        "path": "local-inputs/pending-batch30/source-cache/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d"
+      },
+      {
+        "path": "local-inputs/pending-batch30/fetch-logs/1-real_sequences_sources.json",
+        "sha256": "3d257c4d99f86c9461120fe832cc0786906d5079956bb87e572ff96db94c5d21"
+      },
+      {
+        "path": "local-inputs/pending-batch30/fetch-logs/2-http.json",
+        "sha256": "6d2b9373b8adcb9a776fedd389b5cad5253c3ec75532c29f3c2770968a5eae87"
+      },
+      {
+        "path": "local-inputs/pending-batch30/fetch-logs/3-requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d"
+      },
+      {
+        "path": "local-inputs/pending-batch30/original_plan_source_record.json",
+        "sha256": "3d257c4d99f86c9461120fe832cc0786906d5079956bb87e572ff96db94c5d21"
+      },
+      {
+        "path": "local-inputs/pending-batch30/original-figure/draw_real_sequence_epsilon.py",
+        "sha256": "37c506b8dd133cb76a4fd8237f335fbbae19f9a1876f4213a59f1d775053c427"
+      },
+      {
+        "path": "local-inputs/pending-batch30/original-figure/b2_real_sequence_epsilon.png",
+        "sha256": "9bf05e1f447c9ec0e0c55a5253b4ea7c16a9a632cc514e09c22d9d8287cfabc0"
+      }
+    ],
+    "complete_draw_function_source_identical": true,
+    "new_network_requests": 0,
+    "scope": "Actual installation and byte verification only; no build or PDF acceptance. Original source-fetch history, retained unchanged, including earlier concept-review chronology."
+  }
+}

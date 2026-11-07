@@ -1,0 +1,27 @@
+{
+  "status": "proposed_only_semantic_checks_passed",
+  "old75_specs_preserved": true,
+  "old150_bridge_paths_preserved": true,
+  "old150_reviews_preserved": true,
+  "entire_MODULES_including_edges_unchanged": true,
+  "candidate_units": 76,
+  "candidate_foundation_pairs": 608,
+  "candidate_total_pairs": 635,
+  "candidate_text_reviews": 152,
+  "new_prerequisite_anchors": 23,
+  "all_new_prerequisite_units_precede_FSP": true,
+  "eight_pairs_and_six_proof_anchors_checked": true,
+  "source_records_hash_bound_to_original_tmp_files": true,
+  "actual_catalog_15A03_15Axx_15XX_and_chapter84_checked": true,
+  "existing_functions_changed": [
+    "prerequisite_data",
+    "build"
+  ],
+  "all_other_existing_functions_AST_unchanged": true,
+  "no_builder_or_validator_changes": true,
+  "formal_files_modified": false,
+  "formal_source_installation": false,
+  "build_or_ledger_generation_executed": false,
+  "FSP_text_reviews_only_no_build_acceptance": true,
+  "FLI_or_other_later_units_registered": false
+}

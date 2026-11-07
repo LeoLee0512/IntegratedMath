@@ -1,0 +1,278 @@
+{
+  "status": "static_integration_checks_passed_not_build_acceptance",
+  "formal_files_modified": false,
+  "build_or_ledger_run": false,
+  "old_units_preserved": 72,
+  "old_bridge_paths_preserved": 144,
+  "old_reviews_preserved": 144,
+  "candidate_units": 75,
+  "candidate_text_reviews": 150,
+  "expected_total_pairs": 627,
+  "baseline_files_rehashed": 40,
+  "new_units": [
+    {
+      "unit": "frc-unit",
+      "code": "B4.L1",
+      "number": 73,
+      "part_number": 11,
+      "chapter_number": 84,
+      "leaf": [
+        "15A03"
+      ],
+      "prerequisites": 24,
+      "source_records": [
+        {
+          "path": "research/production/finite_real_coordinates_next_plan.md",
+          "sha256": "0cae33fa49a4a1d2ae9682e8193703effe1804e70176e5bf61555685d337ede4"
+        },
+        {
+          "path": "research/production/finite_real_coordinates_sources.json",
+          "sha256": "947dd382c6a0d282b19e46256ecd1e96c23a3f7839db3313d9e8a700060f27b1"
+        },
+        {
+          "path": "research/production/finite_real_coordinates_source_reading.json",
+          "sha256": "43e3cbe8bf1d3e00b60a29c444c7e8690c78dfbdb955f09a7ecd2f7c27ec9f84"
+        },
+        {
+          "path": "research/production/finite_real_coordinates_math_review.md",
+          "sha256": "7a93a5ba403cca8b4b32f69f2a7d1008c0c3b11ef255956cc5bfc2171a4586d7"
+        },
+        {
+          "path": "research/production/finite_real_coordinates_pedagogy_review.md",
+          "sha256": "c7e857fccf44de772fdb9db3d0cbe9aa439e2d201d202e244be070e45af855b4"
+        }
+      ],
+      "reviews": [
+        {
+          "target_type": "unit",
+          "target_id": "frc-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+            "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_real_coordinates_math_review.md",
+              "sha256": "7a93a5ba403cca8b4b32f69f2a7d1008c0c3b11ef255956cc5bfc2171a4586d7"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "frc-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_real_coordinates.md": "d784f3ae8fe2cbcc4c297b9c11d573c72318231083a1d272dd264e448d41bbd3",
+            "manuscript/foundations/finite_real_coordinates_answers.md": "572112aaeba196b79d54eb0fb7035a6d1066c30d5fe0e86cb360ce5af937bafa"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_real_coordinates_pedagogy_review.md",
+              "sha256": "c7e857fccf44de772fdb9db3d0cbe9aa439e2d201d202e244be070e45af855b4"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅最终字节有限实数坐标正文及八题全解的真实独立文本审阅；报告所审/tmp稿与正式两稿逐字节同hash。原报告日期仅到日，不虚构时分。非整章/模块、来源全文或PDF/构建/视觉验收。"
+        }
+      ]
+    },
+    {
+      "unit": "rfs-unit",
+      "code": "B2.39",
+      "number": 74,
+      "part_number": 63,
+      "chapter_number": 528,
+      "leaf": [
+        "97H20"
+      ],
+      "prerequisites": 29,
+      "source_records": [
+        {
+          "path": "research/production/finite_real_sums_linear_combinations_plan.md",
+          "sha256": "9df4bf2d14592af4cb11fbe9e6422a664530954915c2b03bfba0ce3e81bdc1ce"
+        },
+        {
+          "path": "research/production/finite_real_sums_sources.json",
+          "sha256": "eaf16065a330d7190f8aaf1d14e2433258f750ed5932410ba8f968f07a1db955"
+        },
+        {
+          "path": "research/production/finite_real_sums_author_check.md",
+          "sha256": "91fb7cbb3f8a1999a99d0cdd69f8383ce8550da81efbd15b8b303fb252aebbab"
+        },
+        {
+          "path": "research/production/finite_real_sums_math_review.md",
+          "sha256": "d3ffed312cc15d15b3244e15e0db5e9e155c0ec3aa5762aed605e432be29f745"
+        },
+        {
+          "path": "research/production/finite_real_sums_pedagogy_review.md",
+          "sha256": "12c4f5ea5a58e9e4030f5d1b39d9a8893cc7a818e3d18a4616b01e48df25bf83"
+        }
+      ],
+      "reviews": [
+        {
+          "target_type": "unit",
+          "target_id": "rfs-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+            "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_real_sums_math_review.md",
+              "sha256": "d3ffed312cc15d15b3244e15e0db5e9e155c0ec3aa5762aed605e432be29f745"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "rfs-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_real_sums.md": "297dab2fc25bb32819ba662960ddd550a324d2594c8bf7a4e082c7b3f5ff573e",
+            "manuscript/foundations/finite_real_sums_answers.md": "36ef43e22726ddec1cb2d79028272f284004a4aeadb3dc53620b0c15f3cb838f"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_real_sums_pedagogy_review.md",
+              "sha256": "12c4f5ea5a58e9e4030f5d1b39d9a8893cc7a818e3d18a4616b01e48df25bf83"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅有限实数和最终两稿及八题全解的真实独立文字审阅；已审稿与正式安装稿hash一致。保留原报告日精度；非有限坐标线性组合、整章/模块、构建或视觉验收。"
+        }
+      ]
+    },
+    {
+      "unit": "flc-unit",
+      "code": "B4.L2",
+      "number": 75,
+      "part_number": 11,
+      "chapter_number": 84,
+      "leaf": [
+        "15A03"
+      ],
+      "prerequisites": 18,
+      "source_records": [
+        {
+          "path": "research/production/finite_coordinate_combinations_plan.md",
+          "sha256": "cd25ac54793f8e88dcfb8e86dcb96aa2a529dbaeac67f14cccf8f2d563c31ca0"
+        },
+        {
+          "path": "research/production/finite_coordinate_combinations_sources.json",
+          "sha256": "faa3f7d6f822ea73e4c98dda39c70591910c3503ee970fede717e5c20a4a3f13"
+        },
+        {
+          "path": "research/production/finite_coordinate_combinations_author_check.md",
+          "sha256": "18491ebf95c52f75fd4cbc940a2beb525cd7a7d7b06d455ce84bf4a34c712a91"
+        },
+        {
+          "path": "research/production/finite_coordinate_combinations_math_review.md",
+          "sha256": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155"
+        },
+        {
+          "path": "research/production/finite_coordinate_combinations_pedagogy_review.md",
+          "sha256": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42"
+        }
+      ],
+      "reviews": [
+        {
+          "target_type": "unit",
+          "target_id": "flc-unit",
+          "stage": "math-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root/part1_audit",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+            "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_coordinate_combinations_math_review.md",
+              "sha256": "cddfc789b18d1a80a8f792f7dc0be0a346bceb935fe621f0470263aeb8616155"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+        },
+        {
+          "target_type": "unit",
+          "target_id": "flc-unit",
+          "stage": "pedagogy-reviewed",
+          "scope": "unit",
+          "status": "accepted",
+          "reviewer": "/root",
+          "reviewed_at": "2026-11-05",
+          "source_sha256": {
+            "manuscript/foundations/finite_coordinate_combinations.md": "ca4a3c59579c94c587d520ee0b7f1333717de8b33d0969c1a4f96ccb7ae41cdd",
+            "manuscript/foundations/finite_coordinate_combinations_answers.md": "a1d9e1db6dd0dac684b7719863b54d12b6bcc46ea771cbc94dd1836bda2cad8e"
+          },
+          "evidence": [
+            {
+              "path": "research/production/finite_coordinate_combinations_pedagogy_review.md",
+              "sha256": "44eefc566c36c183a7a75d0c7d4a01850952b120288e1d68d3bb1cf300cb8b42"
+            }
+          ],
+          "blocking_issues": [],
+          "limits": "仅FLC最终两稿与八题全解的真实独立文本审阅；临时实读稿与正式安装稿字节一致。保留报告日精度；不授予分类叶/整章/模块完成或构建/视觉接受。"
+        }
+      ]
+    }
+  ],
+  "external_md_fragment_cases": {
+    "https://github.com/r/x/blob/abc/README.md#abstract": false,
+    "http://example.org/source.md#x": false,
+    "manuscript/chapter.md#x": true,
+    "../chapter.md#x": true,
+    "/workspace/chapter.md#x": true,
+    "file:///tmp/chapter.md#x": true,
+    "//example.org/source.md#x": true,
+    "https:///source.md#x": true,
+    "#valid-anchor": false
+  },
+  "changed_functions": {
+    "build_learning_batch.py": [
+      "source_hashes",
+      "check_batch34_prerequisites",
+      "compose_body",
+      "main"
+    ],
+    "validate_learning_batch.py": [
+      "render_contacts",
+      "main"
+    ],
+    "build_production_ledger.py": [
+      "prerequisite_data",
+      "build"
+    ]
+  },
+  "candidate_sha256": {
+    "/tmp/frc-rfs-flc75-registration/build_production_ledger.py": "dcae973168a9b5884a112b4d665ded3f1bb13ad9c6dece30874b022f58c53e1c",
+    "/tmp/frc-rfs-flc75-registration/accepted_reviews.json": "7b0d3f55bd9ac7e6efe724ac82bb562bfeb99599aa766090bc5011831f7e783a",
+    "/tmp/batch35-builder-candidate/build_learning_batch.py": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+    "/tmp/batch35-builder-candidate/validate_learning_batch.py": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58"
+  }
+}

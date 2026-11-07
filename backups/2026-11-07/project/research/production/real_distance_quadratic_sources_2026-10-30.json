@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "status": "batch27_source_conditions_and_final_reviewed_text_snapshot_verified_pending_integration",
+  "citation_anchor": "real-distance-quadratic-sources",
+  "checked_at_utc": "2026-10-30T03:24:32.765993+00:00",
+  "actor": "/root/prepare22_build",
+  "formal_repository_writes": false,
+  "new_network_requests": 0,
+  "scope": "B2.33 RAV1–RAV4 andB2.34 RQ1–RQ4 current reviewed snapshot: real absolute value, line metric, error bounds, real quadratic completion, all parameter solutions and attained bounds. RQ is independent ofRAV/RA; no external metric or quadratic source is asserted. No aggregate approval.",
+  "sources": [
+    {
+      "id": "lebl_reals",
+      "title": "Basic Analysis I, chapter The Real Numbers",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+      "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+      "bytes": 80337,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 80337,
+      "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request",
+      "batch27_recheck": "Actual existing public fixed-commit bytes and original HTTP record verified; no new request.",
+      "current_batch27_role": "Absolute-value definition, product, weak two-sided bounds, triangle and reverse triangle conditions only. No located external metric or quadratic source is claimed; previous role retained separately.",
+      "durable_local_cache_path": "local-inputs/pending-batch27/source-cache/lebl_reals"
+    },
+    {
+      "id": "lebl_front",
+      "title": "Basic Analysis I, front matter",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "Author, title/version and copyright evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+      "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+      "bytes": 18862,
+      "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 18862,
+      "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request",
+      "batch27_recheck": "Actual existing public fixed-commit bytes and original HTTP record verified; no new request.",
+      "durable_local_cache_path": "local-inputs/pending-batch27/source-cache/lebl_front"
+    },
+    {
+      "id": "lebl_license",
+      "title": "Basic Analysis LICENSE.md",
+      "author": "Jiří Lebl",
+      "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+      "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+      "role": "License evidence",
+      "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+      "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+      "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+      "bytes": 467,
+      "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+      "access_status": "verified_http_200",
+      "actual_bytes": 467,
+      "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request",
+      "batch27_recheck": "Actual existing public fixed-commit bytes and original HTTP record verified; no new request.",
+      "author_role_note": "Jiří Lebl is the attributed work author and repository notice owner; not asserted author of standard Creative Commons license text.",
+      "durable_local_cache_path": "local-inputs/pending-batch27/source-cache/lebl_license"
+    }
+  ],
+  "source_locators": {
+    "lebl_reals": [
+      "1123-1138 absolute value piecewise definition",
+      "1142-1209 prop:absbas and proof; nonnegative/zero, negation, product, square, two-sided weak bounds",
+      "1214-1228 triangle inequality by adding two-sided bounds",
+      "1232-1257 reverse triangle inequality and difference triangle"
+    ],
+    "lebl_front": [
+      "289 author Jiří Lebl; 401 copyright; 435-456 dual license and derivative conditions",
+      "382 version 6.3; author/title and copyright independently read again"
+    ],
+    "lebl_license": [
+      "full 13-line dual license declaration read"
+    ]
+  },
+  "source_recheck": {
+    "three_original_caches_verified": true,
+    "checks": [
+      {
+        "source_id": "lebl_reals",
+        "actual_sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "actual_bytes": 80337,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_front",
+        "actual_sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "actual_bytes": 18862,
+        "matches_original": true
+      },
+      {
+        "source_id": "lebl_license",
+        "actual_sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "actual_bytes": 467,
+        "matches_original": true
+      }
+    ],
+    "historical_request_logs": [
+      {
+        "path": "/tmp/rational-gaps-cuts-source-audit/requests.json",
+        "sha256": "6871ca7d69c3a7d195779b406c2d43b788a519d58b540af5dd3b5bf1fbe0368d",
+        "matching_original_source_records": [
+          {
+            "request_id": "lebl_reals",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "checked_at_utc": "2026-10-29T19:51:08.613314+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+            "access_status": "verified_http_200",
+            "bytes": 80337,
+            "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals"
+          },
+          {
+            "request_id": "lebl_front",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "checked_at_utc": "2026-10-29T19:51:54.424412+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+            "access_status": "verified_http_200",
+            "bytes": 18862,
+            "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front"
+          },
+          {
+            "request_id": "lebl_license",
+            "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "checked_at_utc": "2026-10-29T19:51:08.949458+00:00",
+            "http_status": 200,
+            "final_url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+            "access_status": "verified_http_200",
+            "bytes": 467,
+            "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+            "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license"
+          }
+        ]
+      }
+    ],
+    "note": "Original public HTTP200 dates are 2026-10-29; rechecking existing cache is not a new fetch."
+  },
+  "current_formal_prerequisite_recheck": [
+    {
+      "path": "manuscript/foundations/functions_definition.md",
+      "sha256": "1dee6ffb8bada53f6f09ea4ad908c0a03fd06c937fb685538566175cb9655650",
+      "anchors": [
+        "fun-definition",
+        "fun-pairs",
+        "fun-sets"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_cuts_order.md",
+      "sha256": "a244695551c88b167daac9ddf76c8becc5e70411ea5e30063af9cf8e7ce22ee4",
+      "anchors": [
+        "cut-order-embedding"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_addition.md",
+      "sha256": "1e1297d265344259094f503025d42f951dc0a9ce74025d582aeb6835226d8a24",
+      "anchors": [
+        "cutadd-definition",
+        "cutadd-rational"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_additive_order.md",
+      "sha256": "f46ce5d5c91060cbb0b76d84ab8cb9874bcde7a54214ae07619df0f6270eb003",
+      "anchors": [
+        "cutgroup-inverses",
+        "cutgroup-laws",
+        "cutgroup-negation-subtraction",
+        "cutgroup-translation"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_signed_product.md",
+      "sha256": "62211d16723a7ca83b2c38789191b265c74831a176bbca1afef4a0686cb07f09",
+      "anchors": [
+        "cutsigned-associative",
+        "cutsigned-rational-zero",
+        "cutsigned-signs"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_ring_order.md",
+      "sha256": "e15922d9102ed98bddb4077a6b88cc0e74ebff9e2fe8bcbed3c6df493bdf8495",
+      "anchors": [
+        "cutring-cancellation",
+        "cutring-distributive",
+        "cutring-multiplication-order"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/dedekind_division_field.md",
+      "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610",
+      "anchors": [
+        "cutdiv-definition",
+        "cutdiv-equations",
+        "cutdiv-order"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/rationals_absolute.md",
+      "sha256": "fe10f17f72f2128cd1ad9230b381fd3da2a000fb36b99c7bf097f9522b87b406",
+      "anchors": [
+        "rabs-definition"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/real_square_roots.md",
+      "sha256": "35d8419b09e136e278431b4584e3252080f4110bf9c2b649ede9a7001843afcf",
+      "anchors": [
+        "realsqrt-equations-irrational",
+        "realsqrt-existence",
+        "realsqrt-function",
+        "realsqrt-square-order"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/functions_composition.md",
+      "sha256": "806b32944f8253b2e2af3b2a551a25cc0ce6bf17ce51cc6b50216cf28e58a94a",
+      "anchors": [
+        "fc-composition",
+        "fc-equality"
+      ],
+      "reference_role": "actual_book_prerequisite_interfaces"
+    },
+    {
+      "path": "manuscript/foundations/rational_quadratic_equations.md",
+      "sha256": "b3ce2e17a3c46c2b461091c75a49543dfb2cfb6bc6cc490ea2b8dde6befb3779",
+      "anchors": [
+        "quad-completion"
+      ],
+      "reference_role": "structural_comparison_only_not_real_theorem_prerequisite"
+    }
+  ],
+  "classification": {
+    "units": [
+      {
+        "unit": "B2.33",
+        "chapter": 526,
+        "primary": "97F50",
+        "cross": [
+          "54E35"
+        ]
+      },
+      {
+        "unit": "B2.34",
+        "chapter": 528,
+        "primary": "97H30",
+        "cross": [
+          "97H20"
+        ]
+      }
+    ],
+    "verified_titles": [
+      {
+        "code": "54E35",
+        "parent_code": "54Exx",
+        "title_en": "Metric spaces, metrizability",
+        "title_zh": "度量空间、可度量化性"
+      },
+      {
+        "code": "97F50",
+        "parent_code": "97Fxx",
+        "title_en": "Real numbers, complex numbers (educational aspects)",
+        "title_zh": "实数与复数（教育方面）"
+      },
+      {
+        "code": "97H20",
+        "parent_code": "97Hxx",
+        "title_en": "Elementary algebra (educational aspects)",
+        "title_zh": "初等代数（教育方面）"
+      },
+      {
+        "code": "97H30",
+        "parent_code": "97Hxx",
+        "title_en": "Equations and inequalities (educational aspects)",
+        "title_zh": "方程与不等式（教育方面）"
+      }
+    ],
+    "evidence": [
+      {
+        "path": "data/msc_taxonomy.json",
+        "sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+      },
+      {
+        "path": "data/catalog_titles_zh.json",
+        "sha256": "00cae1c8d29e28d4d84a1fcfd2f54313abd7fdc5c11cd2ba79b061f0796d59d7"
+      }
+    ],
+    "coverage_note": "Cross-references do not add drafted leaves. New real-algebra-equations is a learning module, not a classification chapter/leaf; depends on functions and number-systems with no reverse edge.",
+    "chinese_label_note": "Actual catalogue54E35 title is 度量空间、可度量化性; manuscript/plan 度量空间、度量化 is a shortened label, not asserted exact catalogue wording."
+  },
+  "manuscript_binding": {
+    "status": "current_tmp_files_match_final_freeze_notifications_and_report_hashes",
+    "checked_at_utc": "2026-10-30T03:30:00.750165+00:00",
+    "manuscripts": [
+      {
+        "observed_path": "/tmp/real_absolute_distance.md",
+        "sha256": "476f6d37b1da5d7a611e573c131255382eddf0f27ac24ae0b6a77ad978e8f823",
+        "bytes": 17452,
+        "intended_repository_path": "manuscript/foundations/real_absolute_distance.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_absolute_distance_answers.md",
+        "sha256": "6936bdad3080d32277761c98efb4fdddc2b763a95748e88de1cad1c539339cc1",
+        "bytes": 14024,
+        "intended_repository_path": "manuscript/foundations/real_absolute_distance_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_quadratic_equations.md",
+        "sha256": "ebb2fcc25ecd46897a3b062e8c349d58ba142fa6e2c5fae92caa18513bac8f0f",
+        "bytes": 15124,
+        "intended_repository_path": "manuscript/foundations/real_quadratic_equations.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_quadratic_equations_answers.md",
+        "sha256": "b42037063b3a4b084e136cc86a7d4946008b651f2df705fa42aad3089c91bcb1",
+        "bytes": 13602,
+        "intended_repository_path": "manuscript/foundations/real_quadratic_equations_answers.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      }
+    ],
+    "review_reports": [
+      {
+        "observed_path": "/tmp/real_absolute_distance_math_review.md",
+        "sha256": "5d07a71ed8fec3ed81e477bb4335f68a4d12876daf2c308b10129951b910b9b7",
+        "bytes": 10917,
+        "intended_repository_path": "research/production/real_absolute_distance_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/plan_multiplication",
+        "scope_as_reported": "独立全文数学审RAV1—RAV4与八份完整解答；类型及先修小修实际逆差绑定，来源锚后续实际定位",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_quadratic_equations_math_review.md",
+        "sha256": "a919407a85c78f68a0c7e9a6c44983eae162c1583b3ae1ce0f2b7bbfe2099b19",
+        "bytes": 8814,
+        "intended_repository_path": "research/production/real_quadratic_equations_math_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "review22",
+        "scope_as_reported": "独立全文数学审RQ1—RQ4与八份完整解答；实际核教学审发现的题3非零条件补充及来源锚后续定位",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_distance_quadratic_pedagogy_review.md",
+        "sha256": "dbfe9b31849e3a2a5a362ce8f5fd5ee7d5bc8083e0f5c766f6c08c7109a4c177",
+        "bytes": 10711,
+        "intended_repository_path": "research/production/real_distance_quadratic_pedagogy_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "reviewer_as_reported": "/root/visual21_front",
+        "scope_as_reported": "独立全文教学审四稿及16解；发现34题3非零条件遗漏并核作者修复，实际Pandoc AST检查及来源候选锚定位，不代签源审或PDF",
+        "current_manuscript_hashes_present": true,
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      }
+    ],
+    "planning_evidence": [
+      {
+        "observed_path": "/tmp/real_distance_quadratic_plan.md",
+        "sha256": "6b3463eba8445492f1075789e18efb47bd67cbc50d104ad4c03af97b046a8da0",
+        "bytes": 9178,
+        "intended_repository_path": "research/production/real_distance_quadratic_plan.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      },
+      {
+        "observed_path": "/tmp/real_distance_quadratic_concept_review.md",
+        "sha256": "e5378bbf241eccd09b7804c4b51ddb02fe2c43b9464a5ac6d0dd062c2ec4fd13",
+        "bytes": 9628,
+        "intended_repository_path": "research/production/real_distance_quadratic_concept_review.md",
+        "installation_status": "root_verified_identical_formal_bytes",
+        "installed_at_utc": "2026-10-30T03:41:43.243764+00:00"
+      }
+    ],
+    "formal_installation_verified": true,
+    "aggregate_approval_claim": false,
+    "note": "Actual byte and original report-scope binding only. Named reports own their review decisions; no downstream build or visual approval is issued or bound."
+  },
+  "planning_snapshot": {
+    "path": "/tmp/real_distance_quadratic_plan.md",
+    "sha256": "6b3463eba8445492f1075789e18efb47bd67cbc50d104ad4c03af97b046a8da0"
+  },
+  "original_plan_source_record": {
+    "checked_at_utc": "2026-10-30T03:10:58.615362+00:00",
+    "reviewer": "/root/plan_real_next",
+    "status": "independent concept review/source check only; not final manuscript review or batch acceptance",
+    "new_http_requests": 0,
+    "sources": [
+      {
+        "id": "lebl_reals",
+        "title": "Basic Analysis I, chapter The Real Numbers",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Bounds definitions and modern lower-cut exercise; its ambient real completeness is explicitly not adopted",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/ch-real-nums.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_reals",
+        "sha256": "d492090591013b5845ddfa48f7dc0f15500180bf04aa8a0af10dd7d3919f01a3",
+        "bytes": 80337,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.613314+00:00",
+        "access_status": "verified_http_200",
+        "actual_bytes": 80337,
+        "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request"
+      },
+      {
+        "id": "lebl_front",
+        "title": "Basic Analysis I, front matter",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "Author, title/version and copyright evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/realanal.tex",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_front",
+        "sha256": "a355edf1ff287d98d13bfc50fa9cfcd541b42b8210f0172dfb5dadafb58a47ee",
+        "bytes": 18862,
+        "original_fetch_at_utc": "2026-10-29T19:51:54.424412+00:00",
+        "access_status": "verified_http_200",
+        "actual_bytes": 18862,
+        "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request"
+      },
+      {
+        "id": "lebl_license",
+        "title": "Basic Analysis LICENSE.md",
+        "author": "Jiří Lebl",
+        "version": "version 6.3; commit e21ec524ca7d54f800c693b948020c188d21d01f",
+        "license": "Dual CC-BY-SA-4.0 / CC-BY-NC-SA-4.0, as repository LICENSE states; no text/figure adaptation here",
+        "role": "License evidence",
+        "url": "https://raw.githubusercontent.com/jirilebl/ra/e21ec524ca7d54f800c693b948020c188d21d01f/LICENSE.md",
+        "cache_path": "/tmp/rational-gaps-cuts-source-audit/lebl_license",
+        "sha256": "682fedaab34d7d47962da7276284e608f43881c07c3c887cb66368688748c13d",
+        "bytes": 467,
+        "original_fetch_at_utc": "2026-10-29T19:51:08.949458+00:00",
+        "access_status": "verified_http_200",
+        "actual_bytes": 467,
+        "check_status": "reused public fixed-commit cache; bytes and SHA verified now; no new HTTP request"
+      }
+    ],
+    "actual_locators": {
+      "lebl_reals": [
+        "1123-1138 absolute value piecewise definition",
+        "1142-1209 prop:absbas and proof; nonnegative/zero, negation, product, square, two-sided weak bounds",
+        "1214-1228 triangle inequality by adding two-sided bounds",
+        "1232-1257 reverse triangle inequality and difference triangle"
+      ],
+      "lebl_front": [
+        "289 author Jiří Lebl; 401 copyright; 435-456 dual license and derivative conditions"
+      ],
+      "lebl_license": [
+        "full 13-line dual license declaration read"
+      ]
+    },
+    "not_checked": [
+      "No independently fetched Lebl metric chapter; existing real-number chapter cache does not provide a located metric-definition passage. No metric-source citation is claimed.",
+      "No mathlib absolute value source was read for this plan; no such source is asserted.",
+      "No external exercise or solution copied."
+    ],
+    "rights": "Lebl fixed commit e21ec524ca7d54f800c693b948020c188d21d01f; dual CC BY SA 4.0 / CC BY NC SA 4.0; mathematical definitions/conditions compared, original prose/proofs/problems to be written; cache is not automatically distributed. Preserve attribution and applicable share-alike conditions if any future adaptation occurs.",
+    "snapshot": [
+      {
+        "path": "/tmp/real_distance_quadratic_plan.md",
+        "sha256": "6b3463eba8445492f1075789e18efb47bd67cbc50d104ad4c03af97b046a8da0"
+      },
+      {
+        "path": "/tmp/real_square_roots.md",
+        "sha256": "4d840de177a34a67268987990bdfae0027c9285307f2618b89429fd32c98edf6"
+      },
+      {
+        "path": "/tmp/real_square_roots_answers.md",
+        "sha256": "adbad0b4afa618b712e798812882aa8e0eef63925ed85176395527e7cd16715d"
+      },
+      {
+        "path": "/tmp/dedekind_inverse.md",
+        "sha256": "c44af9a30044a893e4bab3b94ce6a2bb3f949eabd64dd3d51b36fb7d7f76627a"
+      },
+      {
+        "path": "/tmp/dedekind_division_field.md",
+        "sha256": "f69f9304027ec15fbeb50ebddc1198e203d1676e7bd014b721f146aa9b1db610"
+      }
+    ],
+    "classification": {
+      "b2.33": {
+        "primary": "97F50",
+        "chapter": 526,
+        "cross": "54E35",
+        "rationale": "absolute value arithmetic, order/triangle/error bounds and a real-line distance example; mere function declarations do not make general mapping education the primary task",
+        "recommendation_status": "recommendrootaccepted: root explicitly accepted 2026-10-30; plan updated before this final hash"
+      },
+      "b2.34": {
+        "primary": "97H30",
+        "chapter": 528,
+        "cross": "97H20"
+      },
+      "verified_titles": {
+        "97F50": "Real numbers, complex numbers (educational aspects)",
+        "97I20": "Mappings and functions (educational aspects)",
+        "54E35": "Metric spaces, metrizability",
+        "97H30": "Equations and inequalities (educational aspects)",
+        "97H20": "Elementary algebra (educational aspects)"
+      },
+      "source_file": "/workspace/IntegratedMath-book/data/msc_taxonomy.json",
+      "taxonomy_sha256": "472a0c2369b943772b0527eda596660cda5fb9fd605c8d1571ff4cb537f13572"
+    },
+    "repository_mutations": false
+  },
+  "original_source_record_files": [
+    {
+      "path": "/tmp/real_distance_quadratic_sources.json",
+      "sha256": "2766495cd5753662fbd8db5f1b7e09c6d3376d7e82488887fca8012ad50be57d"
+    }
+  ],
+  "historical_snapshot_note": "Original source object retains older32 manuscript hashes from its actual concept-read moment. Current installed32 prerequisites are separately rechecked here; no rewrite of history and no aggregate26 approval inferred.",
+  "not_checked": [
+    "No located external metric-definition passage or metric chapter read; book d properties proved independently.",
+    "No external real quadratic source or mathlib absolute-value file asserted. Old Q completion is a structural comparison, not an R theorem premise."
+  ],
+  "figures_and_code": {
+    "new_figures": 0,
+    "total_figures_expected": 18,
+    "new_numerical_code": false,
+    "new_numbered_code_appendix": false,
+    "numbered_appendices_expected": 25
+  },
+  "validation_boundary": "Source bytes, attribution, license, original HTTP history, conditions and actual manuscript/prerequisite binding only; no copied external prose/problems/images/code, mathematical approval, formal build or PDF acceptance.",
+  "current_batch27_obligations": [
+    {
+      "group": "RAV1",
+      "anchor": "realabs-definition-bounds",
+      "obligation": "在已构造R内按互斥全序分支定义非负目标函数；三符号核非负、零、取反、幂等与非负幅度唯一。对任意H逐负、零、正支证明弱与严格双侧界，有理嵌入相容不代替全R证明。"
+    },
+    {
+      "group": "RAV2",
+      "anchor": "realabs-products-triangle",
+      "obligation": "四种幅度符号覆盖含零输入，用非负幅度唯一性证乘积；Y非零先给|Y|正再由乘回和非零系数方程唯一性证商。三角逐次平移，反三角交换输入并用取反不变；等号条件XY非负覆盖零、同号及异号两个幅度支，含M=N。"
+    },
+    {
+      "group": "RAV3",
+      "anchor": "realabs-distance",
+      "obligation": "在R×R上定义d(X,Y)=|X−Y|后逐项证非负、零判据、对称与三角；三角先核差的群恒等式。共同平移与倍率含C=0，只有C非零才反射缩放后零距。称具体度量实例依靠已证四性质，未据外部未读metric段或几何直觉。"
+    },
+    {
+      "group": "RAV4",
+      "anchor": "realabs-error-root",
+      "obligation": "任意实半径H的负、零、正支分别给弱/严格距离条件解集；实区间重新作为条件子集定义，端点类型明确。平方非负、|X|非负及|X|²=X²后才用RS唯一性得sqrt(X²)=|X|。RS只用于末尾连接，不成为RAV1—3前提；距离值尚非二维几何长度。"
+    },
+    {
+      "group": "RQ1",
+      "anchor": "realquad-completion",
+      "obligation": "先a非零及2、4正核2a与4a非零；用商乘回、实数平方展开和分配得中间项。把(2ah)²重排为(4a)(ah²)，靠非零乘法方程唯一性识别b²/(4a)，不套未经证明的分式约分或旧Q恒等式。"
+    },
+    {
+      "group": "RQ2",
+      "anchor": "realquad-discriminant",
+      "obligation": "逐项展开(2aX+b)²−Δ=4aF(X)。方程反向需4a非零；题3明确a非零。T与G均R→R，两次乘回逐点给双侧复合恒等，保证平方解与原解对应，不直接平方原方程或除未知数。"
+    },
+    {
+      "group": "RQ3",
+      "anchor": "realquad-solutions",
+      "obligation": "先a=0时b非零、b=c=0、b=0而c非零三支；a非零再按Δ负零正分类。根函数只在非负域使用；候选存在、代回与全解穷尽分开。两根互异及大小按a正负核；有理像算例不排除一般候选，二的两根非有理像分别证明。"
+    },
+    {
+      "group": "RQ4",
+      "anchor": "realquad-bounds",
+      "obligation": "全R域内定义全局上下界与达到的最值，输入位置与输出分开。配方按a正负给下/上界，非零a、零积及平方零判据给等号iffX=h；合法h实际取得界。不声称微分、实形式多项式环或一般极值理论。"
+    }
+  ],
+  "remaining_integration": [
+    "Final build and current-artifact automatic validation; then independent actual PDF page inspection and packaging."
+  ],
+  "root_integration": {
+    "actor": "/root",
+    "checked_at_utc": "2026-10-30T03:41:43.243764+00:00",
+    "candidate_json_sha256": "1bdf4cbdcf217df4d7745a35d00b72428131bb74f5a513f3f45d4a738eab54a8",
+    "candidate_markdown_sha256": "5befdf45300cf20a5667e855365ee60ebcf7ca31764e065fc459ea975237807f",
+    "three_tools": {
+      "tools/build_learning_batch.py": "e487af0def68ebb5fa44bfb1b7f94a2c6e2c3c402c1b610f97706c9b4e93bfb7",
+      "tools/build_production_ledger.py": "4aef5e98bbbad127ac9a5f5d4f164458ee2543522b95bb4cd3fd7981b527dfd4",
+      "tools/validate_learning_batch.py": "a642fcff87a37561d3bffecdb0abf8e374f861121543a7fa29a321d20462e3ea"
+    },
+    "new_network_requests": 0,
+    "scope": "Actual formal installation and cache byte check; no build acceptance."
+  }
+}

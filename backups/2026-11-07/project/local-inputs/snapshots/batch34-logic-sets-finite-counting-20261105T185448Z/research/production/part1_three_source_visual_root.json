@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "target_type": "part",
+  "target_id": "00-XX",
+  "scope": "single_pdf_visual_review",
+  "status": "accepted",
+  "reviewer": "/root/part1_build",
+  "reviewed_at": "2026-11-05T17:13:13.759234+00:00",
+  "plan_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+  "source_sha256": {
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+    "manuscript/review_ch02/chapter.md": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56"
+  },
+  "artifact_sha256": {
+    "dist/part1/综合数学_第一部分审阅版.pdf": "20cfea1ce2bd74740af898dea9d306f31427387d6c6aeb990ba148fc599cbd75"
+  },
+  "pdf_page_counts": {
+    "dist/part1/综合数学_第一部分审阅版.pdf": 51
+  },
+  "pages": [
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-001.png",
+      "sha256": "4e1ac678c5b0961bc1361f58bb28af830a796c9ebd7e57557745125ec1d79d3b",
+      "inspected": true,
+      "inspection_method": "view_image_actual_contact_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-013.png",
+      "sha256": "031b044a51fed7db3ecfed0af1f7e6c29ddf3cfa86ea7d54747cc5882b0c1201",
+      "inspected": true,
+      "inspection_method": "view_image_actual_contact_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-025.png",
+      "sha256": "199706b2ef82851eec53c74469026a0ea171ce0d64164b6d79e03bb73db23d7c",
+      "inspected": true,
+      "inspection_method": "view_image_actual_contact_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-037.png",
+      "sha256": "1204d17bb2fe623091c2b283cfab04b556ec73a3a1fd26a3bc2a13bc6a89e207",
+      "inspected": true,
+      "inspection_method": "view_image_actual_contact_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        49,
+        50,
+        51
+      ],
+      "path": "build/part1/contacts/综合数学_第一部分审阅版/contact-049.png",
+      "sha256": "a481cfc6872c7f23dadfec7da19ccb9912c5cb9837dc878d26c7094df73402aa",
+      "inspected": true,
+      "inspection_method": "view_image_actual_contact_this_round"
+    }
+  ],
+  "detail_pages": [
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        4
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-004.png",
+      "sha256": "8bc8defcd2e209f1e6f8dc69bb6280e426c6663572e6176d059f9325f0006c63",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        5
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-005.png",
+      "sha256": "186d12b473ac6995764d8c2093ad6c7d9594a286f7e39bc7018057cc2fce93dc",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        14
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-014.png",
+      "sha256": "936f9806789b94f54ca72a92393716caeaae4a06087ce4e223e0c60665a0c12d",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        15
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-015.png",
+      "sha256": "bbea9e86c19af19f19c4d700ce3ac0b79700079f1894213ace48c00e766c1d11",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        17
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-017.png",
+      "sha256": "2752bfe055ee9f591eaecddf7964fff71a0bafe8be6ecffd48cf2e423be9ef6e",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        50
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-050.png",
+      "sha256": "3f951a9206f9c51f0a123e93ca97d70d013996065b83c724e9efa423559d3e53",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    },
+    {
+      "pdf": "dist/part1/综合数学_第一部分审阅版.pdf",
+      "pages": [
+        51
+      ],
+      "path": "build/part1/screenshots/综合数学_第一部分审阅版/page-051.png",
+      "sha256": "2bd5b4d2f68b065091b9389c775fd7e9194a14d9cccf6941677cdaaaf86e1a35",
+      "inspected": true,
+      "inspection_method": "view_image_actual_detail_this_round"
+    }
+  ],
+  "checks": {
+    "formulas": true,
+    "chinese": true,
+    "figures": true,
+    "toc": true,
+    "pagination": true
+  },
+  "blocking_issues": [],
+  "nonblocking_observations": [
+    "物理第5页两行续文后大留白；没有内容截断。"
+  ],
+  "evidence": [
+    {
+      "path": "research/production/part1_three_source_visual_root.md",
+      "sha256": "d763d31520f64117a0b442383bf3fb233e79bdd68a2e9e650666e48d6c97edba"
+    },
+    {
+      "path": "build/part1/manifest.json",
+      "sha256": "9d62db5030e915ba1a594978d2b7674a1d500030e6559d7ab8de99bfa00bd264"
+    },
+    {
+      "path": "build/part1/validation.json",
+      "sha256": "c65aa6df0cc6e02afa06bae58b36c952896ee7ab860f477dd9c9d61fac96afb1"
+    }
+  ],
+  "source_gate_status": "pending",
+  "full_scope_accepted": false
+}

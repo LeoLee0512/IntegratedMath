@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "validated_at": "2026-10-29T17:43:39.168508+00:00",
+  "oracle": "Python Fraction integer powers and standard exact sum of independently sliced records",
+  "scope": {
+    "rational_values": [
+      "-2",
+      "-1/2",
+      "0",
+      "1/3",
+      "2"
+    ],
+    "power_exponents": [
+      0,
+      9
+    ],
+    "law_exponents": [
+      0,
+      6
+    ],
+    "record_lengths": [
+      0,
+      4
+    ],
+    "pointwise_pair_lengths": [
+      0,
+      3
+    ],
+    "padding_lengths": [
+      0,
+      3
+    ]
+  },
+  "source_sha256": {
+    "tools/rational_powers_sums.py": "fad8cf2a22151b4d584ba09ea3464526668cf34d2737afdf0374f241f16cfda4",
+    "tools/validate_rational_powers_sums.py": "9318a2df81bf07d952cc8e5db1f6dd4f41b05a3ad67384719200267eec88ce0e",
+    "tools/linear_equation_solvers.py": "c3ec0ab4a892397d3d0af59a1acd367bf1f1cfea80e3e14bd6b2b6cd790b74c9"
+  },
+  "counts": {
+    "powers": 50,
+    "exponent_addition": 245,
+    "power_iteration": 245,
+    "product_power": 175,
+    "records": 781,
+    "prefix_values": 3711,
+    "segments": 10791,
+    "splits": 3711,
+    "padded_records": 3124,
+    "scaled_records": 3905,
+    "pointwise_sums": 16276,
+    "rejected_inputs": 68,
+    "input_immutability": 781
+  },
+  "examples": [
+    {
+      "case": "zero base zero exponent",
+      "result": "1"
+    },
+    {
+      "case": "negative fractional cube",
+      "result": "-8/27"
+    },
+    {
+      "case": "empty record prefixes",
+      "result": [
+        "0"
+      ]
+    },
+    {
+      "case": "four terms",
+      "result": [
+        "0",
+        "1/2",
+        "-1/2",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "case": "shifted last three terms",
+      "result": "4"
+    },
+    {
+      "case": "empty segment at end",
+      "result": "0"
+    }
+  ],
+  "limits": "Finite exact implementation checks, not proofs of universal exponent or sum laws. No negative exponent, infinite sum or arbitrary sequence callback."
+}

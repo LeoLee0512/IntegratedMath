@@ -1,0 +1,21 @@
+{
+  "status": "prepared_not_applied",
+  "old_specs_preserved": 69,
+  "two_prior_candidate_specs_preserved": 2,
+  "third_spec_added": "B3.3/fct-unit",
+  "old_bridge_paths_preserved": 138,
+  "two_prior_candidate_paths_preserved": 4,
+  "third_paths_added": 2,
+  "old_reviews_preserved": 138,
+  "two_prior_candidate_reviews_preserved": 4,
+  "third_reviews_added": 2,
+  "expected_units": 72,
+  "expected_pairs": 603,
+  "expected_text_reviews": 144,
+  "module_graph_plan_unchanged": true,
+  "prerequisite_anchors_checked": 19,
+  "formal_generation_executed": false,
+  "build_or_visual_signed": false,
+  "source_titles_modified": false,
+  "official_baselines_unchanged": true
+}

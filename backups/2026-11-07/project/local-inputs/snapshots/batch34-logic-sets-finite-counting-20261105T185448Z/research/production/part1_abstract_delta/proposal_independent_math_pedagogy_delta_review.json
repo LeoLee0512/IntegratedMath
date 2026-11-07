@@ -1,0 +1,57 @@
+{
+  "reviewer": "/root/part1_audit",
+  "reviewed_at": "2026-11-05T18:05:53.493593+00:00",
+  "status": "proposal_delta_passed_not_applied",
+  "formal_signature_written": false,
+  "scope": "independent mathematics and pedagogy exact delta only",
+  "checks": {
+    "four_baselines_equal_current_formal_bytes": true,
+    "supporting_evidence_hashes_match": true,
+    "scope_only_00B05_status_changes_all_objectives_unchanged": true,
+    "old_source_records_and_other32_section_states_unchanged": true,
+    "pending10_and_previous_history_preserved": true,
+    "eight_projected_source_bindings_match": true,
+    "mathematical_ch1_and_both_answer_files_unchanged": true,
+    "chapter2_all7_exercises_and_math_delimiters_byte_identical": true,
+    "appendix_plaintext_reference_adds_no_cross_chapter_anchor": true,
+    "current_math_ped_bound_baseline_and_evidence_valid": true
+  },
+  "artifacts": {
+    "manuscript/review_ch02/chapter.md": {
+      "base_sha256": "7ec07399dbc229f3938467c938abca23a2f543327f0cdfa0ad40823d348f05da",
+      "proposal_sha256": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a"
+    },
+    "manuscript/review_ch01/appendices.md": {
+      "base_sha256": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72",
+      "proposal_sha256": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b"
+    },
+    "research/production/part1_scope_plan.json": {
+      "base_sha256": "ad5113c1d34c24e17a637f2bc312f7ee96df86be9e09e68f30cfcdf4bf12d6a9",
+      "proposal_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de"
+    },
+    "research/production/part1_topic_sources.json": {
+      "base_sha256": "81bfe38d6738dae69d5ad374ad3009fad885eaccdb505c4f2df7331e93cff246",
+      "proposal_sha256": "e209568a667a3e7e95d697122044b6cdfb0e2e98911e2ffcf6dced2440cd7442"
+    },
+    "research/production/part1_math_review.json": {
+      "sha256": "eca44f6a6742d69831adfca5f0c68239879d12307f071ea9ee6017efdb544cd8",
+      "role": "current baseline evidence only; does not sign proposed change"
+    },
+    "research/production/part1_pedagogy_review.json": {
+      "sha256": "c98ef169208d4c8fdea5383a1f6895205c71e83729bb8b87e9b623fdd341767b",
+      "role": "current baseline evidence only; does not sign proposed change"
+    }
+  },
+  "proposal_manifest_sha256": "50dea5380318f3902a7adda2d3741001d164584a5c8d3a12d3b352fc1b8f332f",
+  "source_ids_added": [
+    "SRC-C2-JULIACON-2025-KEYNOTE-ABSTRACT"
+  ],
+  "blockers": [],
+  "counts_proposed": {
+    "G_topic_verified": 8,
+    "G_topic_pending": 10,
+    "T_S_original_work_reviewed_separately": 15
+  },
+  "full_part_status": "pending",
+  "author_review": "pending"
+}

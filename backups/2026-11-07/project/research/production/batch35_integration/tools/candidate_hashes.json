@@ -1,0 +1,11 @@
+{
+  "build_learning_batch.py": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+  "validate_learning_batch.py": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58",
+  "checks.json": "13354454a39b995c07213946f116bec21d28fe92bbf9671ce2be73495a597fb1",
+  "isolated_checks.json": "690a8456d97129368a26ee391058c8ca746313bccf1933f9770244e54cf9df82",
+  "build_learning_batch.py.diff": "57cdd89e966d1295a29f4fd5b56e550768b15fba09ef8ea17271aa6bd57cf7b5",
+  "validate_learning_batch.py.diff": "e9ace3ce032fca03856ac6d1767b9be1a4cf3e1d8033860a81e11edee34df43b",
+  "README.md": "a3d0c60e3be8b1121e9f37b0f863c9023a4b1c97bcb69590d5066f37ef490d9a",
+  "prepare.py": "67e4173778c332a5ef83f9baf6458c8bc821dd55dfe810b2513a5af2f080fb02",
+  "check_isolated.py": "c2b60b5506f6ff05a609ca0209548e20e07246a8a7d36ccb7ffbaa961f6c87ab"
+}

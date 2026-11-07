@@ -1,0 +1,10 @@
+{
+  "snapshot": "local-inputs/snapshots/batch34-logic-sets-finite-counting-20261105T185448Z",
+  "manifest_sha256": "6daf102f5bf8df56563e0643fab5c22e4d209a0710dd7bca393ac479e527b73d",
+  "snapshot_file_count": 2206,
+  "all_snapshot_hashes_match": true,
+  "current_sources": 306,
+  "current_outputs": 51,
+  "all_current_hashes_match": true,
+  "reviewer": "/root"
+}

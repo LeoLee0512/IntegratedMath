@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-05T16:58:52.476129+00:00",
+  "reviewer": "/root/part1_pedagogy",
+  "role": "author_source_check_not_independent_acceptance",
+  "requests": [
+    {
+      "id": "license",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "at": "2026-11-05T16:53:20.942674+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/LICENSE",
+      "bytes": 487,
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f",
+      "path": "/tmp/b3-logic-source-cache/license.txt",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/license.txt"
+    },
+    {
+      "id": "frontmatter",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+      "at": "2026-11-05T16:53:20.944167+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/frontmatter.ptx",
+      "bytes": 13015,
+      "sha256": "627888abb8f8c3765eb00e1ed8488433045abfd88e9e90ccadf07beb9f050d1a",
+      "path": "/tmp/b3-logic-source-cache/frontmatter.txt",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/frontmatter.txt"
+    },
+    {
+      "id": "contents",
+      "url": "https://api.github.com/repos/oscarlevin/discrete-book/contents/source?ref=master",
+      "at": "2026-11-05T16:53:20.945017+00:00",
+      "status": "failed",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "statements",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-statements.ptx",
+      "at": "2026-11-05T16:54:58.072354+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-statements.ptx",
+      "bytes": 50907,
+      "sha256": "147fdb79e8c6a4e6d6ca5d647a5e6a1f051d879671a21811e625eab94c1de43b",
+      "path": "/tmp/b3-logic-source-cache/statements.txt",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/statements.txt"
+    },
+    {
+      "id": "implications",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-implications.ptx",
+      "at": "2026-11-05T16:54:58.074396+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-implications.ptx",
+      "bytes": 38891,
+      "sha256": "7148deb45a74fd2dae8865bb1534e1fbb1dc6797e5ea2f6db71f1e5823b9ace6",
+      "path": "/tmp/b3-logic-source-cache/implications.txt",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/implications.txt"
+    }
+  ],
+  "readings": [
+    {
+      "path": "/tmp/part1-source-content-cache/s2-logic.txt",
+      "url": "https://raw.githubusercontent.com/oscarlevin/discrete-book/master/source/sec_logic-rules.ptx",
+      "sha256": "ce6bd7f034383c08bc8ae0edbafa78a406679c1f6129d829541be0df56f07438",
+      "ranges": [
+        [
+          293,
+          418
+        ],
+        [
+          558,
+          647
+        ],
+        [
+          810,
+          961
+        ],
+        [
+          1064,
+          1319
+        ],
+        [
+          1670,
+          1702
+        ]
+      ],
+      "mode": "existing_cache_read_no_new_request",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/rules.txt"
+    },
+    {
+      "path": "/tmp/b3-logic-source-cache/statements.txt",
+      "sha256": "147fdb79e8c6a4e6d6ca5d647a5e6a1f051d879671a21811e625eab94c1de43b",
+      "ranges": [
+        [
+          210,
+          240
+        ],
+        [
+          506,
+          580
+        ],
+        [
+          628,
+          774
+        ],
+        [
+          975,
+          1127
+        ],
+        [
+          1128,
+          1170
+        ]
+      ],
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/statements.txt"
+    },
+    {
+      "path": "/tmp/b3-logic-source-cache/license.txt",
+      "range": "full",
+      "finding": "Fourth edition onwards CC BY-NC-SA4.0; published third and earlier CC BY-SA4.0",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/license.txt",
+      "sha256": "f7fe48c7afa65daf02a807666fba06192f4f5f5ba5aaba5b9e4764792c98989f"
+    },
+    {
+      "path": "/tmp/b3-logic-source-cache/frontmatter.txt",
+      "ranges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "finding": "Oscar Levin; Fall2024; copyright2013–2025; actual active shortlicense NC-SA4",
+      "persistent_cache_path": "local-inputs/b3-logic-source-cache/frontmatter.txt",
+      "sha256": "627888abb8f8c3765eb00e1ed8488433045abfd88e9e90ccadf07beb9f050d1a"
+    }
+  ],
+  "retrieved_not_content_reviewed": [
+    "implications"
+  ],
+  "access_failure": "API source directory CONNECT403 once; no retry or bypass",
+  "scope": "definitions and semantics; independently authored exposition/examples/exercises; not formal soundness/completeness",
+  "cache_policy": {
+    "gitignored_by": ".gitignore line 4 /local-inputs/",
+    "distribution": "external source content must remain outside distributed manuscript/package",
+    "byte_identity": "persistent copies preserve actual response/cache hashes"
+  }
+}

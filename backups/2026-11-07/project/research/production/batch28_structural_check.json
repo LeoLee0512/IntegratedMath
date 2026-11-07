@@ -1,0 +1,58 @@
+{
+  "status": "isolated_structural_checks_passed",
+  "counts": {
+    "units": 57,
+    "foundation_exercises": 456,
+    "intro_exercises": 14,
+    "total_exercises": 470,
+    "figures": 19,
+    "numbered_appendices": 26,
+    "draft_chapters": 6,
+    "draft_leaves": 30,
+    "completed_chapters": 0
+  },
+  "html": {
+    "math_nodes": 28774,
+    "source_math_nodes": 28778,
+    "image_alt_math_nodes": 4,
+    "images": 19,
+    "exercise_pairs": 470,
+    "html_ids": 3020,
+    "html_internal_links": 3819
+  },
+  "new_units": [
+    {
+      "code": "B2.35",
+      "stage": "draft",
+      "prerequisites_verified": 27
+    },
+    {
+      "code": "B2.36",
+      "stage": "draft",
+      "prerequisites_verified": 26
+    }
+  ],
+  "input_sha256": {
+    "manuscript/foundations/real_plane_affine.md": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+    "manuscript/foundations/real_plane_affine_answers.md": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae",
+    "manuscript/foundations/real_plane_distance.md": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2",
+    "manuscript/foundations/real_plane_distance_answers.md": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+  },
+  "module_graph": "acyclic;new real-plane-geometry depends on functions and number-systems;no reverse edge",
+  "new_numerical_code": "only exact finite witnesses inside drawing function; no new numerical API",
+  "new_figures": 1,
+  "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal production build, acceptance registration or PDF visual acceptance. Separate source-binder transient formal write and exact restoration disclosed in accidental_write_recovery/report.json.",
+  "checked_candidate_tool_sha256": {
+    "build_learning_batch.py": "1c4e1f1403d97157de77749e09e36083d6d83bbd2e8889a1fe7172f4fec7a6df",
+    "build_production_ledger.py": "9aeada1a777559b3ddd7dba4eae9877b36daef1229f0da2e60ecca3c3e08f16f",
+    "draw_foundations_batch.py": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63",
+    "validate_learning_batch.py": "060ac73928a33a7b0b7ca865485028a74900966935058cb4eef12f45fe0b4e7b"
+  },
+  "source_audit_sha256": {
+    "md": "6f9c3742f6f4bde2619ba97c3192537621afe43d6178f446c8b2e45c6783951b",
+    "json": "4b2faca2a589ec6d5429024c988fdc2b81bb745b3064675d99a05e7dd5721528"
+  },
+  "all_57_unit_chapter_segment_placements_verified": true,
+  "original_source_object_preserved": true,
+  "final_source_binding_metadata_preserves_composed_bytes": true
+}

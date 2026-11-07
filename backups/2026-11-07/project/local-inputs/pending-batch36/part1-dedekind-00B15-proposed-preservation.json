@@ -1,0 +1,13 @@
+{
+  "original": "/tmp/part1-dedekind-00B15-proposed",
+  "preserved": "/workspace/IntegratedMath-book/local-inputs/pending-batch36/part1-dedekind-00B15-proposed",
+  "status": "local_preservation_not_registered_not_published",
+  "files": {
+    "prepare_integration.py": "ff6bca7818f0ee194c1b22c0370e0937c5bf295a82cfdf9c281f9718e1e19894",
+    "root_mapping_review.md": "bc5849dfd3a0e1c41f73e51638c358af16f993359a8e534293ba0eeeac7366d0",
+    "manifest.json": "de751a22a54066882886092ccc885e0db75ea5aee722c4d086606cf3c913bcf7",
+    "content_review.md": "4a85379ffba19d9003f3515ceb21d9361c4cd617f7f24b4f7e241ce8e5e775d3",
+    "evidence.json": "79903740ba3b79c4bb5faab58390969e05e2d96f465706ad09ea8da265201c0b",
+    "prepare_evidence.py": "d2643d4726fa2c6014e5e5e71a20f508409b2ec7cb6ada1406201e31f4676d80"
+  }
+}

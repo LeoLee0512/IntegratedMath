@@ -1,0 +1,280 @@
+{
+  "reviewer": "/root/part1_sources",
+  "reviewed_at_utc": "2026-11-05T18:14:04.235527+00:00",
+  "mode": "existing_cache_only_no_formal_change",
+  "network_requests": 0,
+  "objective": {
+    "code": "00B20",
+    "parent_code": "00Bxx",
+    "depth": "G",
+    "body_source": "manuscript/review_ch02/chapter.md",
+    "anchor": "sec-00B20",
+    "objectives": [
+      {
+        "id": "00B20-1",
+        "text": "区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容"
+      }
+    ],
+    "prerequisites": [
+      "manuscript/review_ch01/chapter.md#sec-00A15",
+      "manuscript/review_ch02/chapter.md#sec-00B05"
+    ],
+    "adopted_rules": [
+      "通常书目描述约定；所给格式仅作可核对记录示范"
+    ],
+    "excluded_topics": [
+      "保证同行评议状态",
+      "将DOI或ISBN当作数学正确性证明"
+    ],
+    "reference_entries": [
+      "manuscript/review_ch02/chapter.md#ch02-sources"
+    ],
+    "exercise_answer_pairs": [
+      {
+        "question": "manuscript/review_ch02/chapter.md#ch02-question-01",
+        "answer": "manuscript/review_ch02/answers.md#ch02-answer-01"
+      },
+      {
+        "question": "manuscript/review_ch02/chapter.md#ch02-question-02",
+        "answer": "manuscript/review_ch02/answers.md#ch02-answer-02"
+      }
+    ],
+    "source_requirements": [
+      {
+        "id": "00B20-topic-source",
+        "topic": "综合性会议论文集：区分会议日期、出版日期与单篇定位，分开核验发表身份和论证内容",
+        "objective_ids": [
+          "00B20-1"
+        ],
+        "relevance": "topic_specific"
+      }
+    ],
+    "topic_source_status": "pending"
+  },
+  "scope_sha256": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+  "findings": {
+    "paper_title": "Groups and smooth geometry using LieGroups.jl",
+    "authors": [
+      "Ronny Bergmann",
+      "Mateusz Baran"
+    ],
+    "doi": "10.21105/jcon.00195",
+    "publisher_xml_publication_date": "2026-01-13",
+    "xml_volume": "8",
+    "xml_issue": "79",
+    "xml_first_page": "195",
+    "pdf_first_printed_page": "1",
+    "paper_source_manuscript_date": "2025-11-15",
+    "official_2025_event_date": "2025-07-22/2025-07-26",
+    "specific_paper_to_event_link": "not_established",
+    "specific_paper_conference_date": null,
+    "proof_correctness_reviewed": false
+  },
+  "recommended_status": "pending",
+  "reason": "Actual publication and independent event date verified, but this paper has not been linked to that event by a specific accepted presentation record. A branch name is insufficient. Do not borrow Urschel abstract.",
+  "access_and_actual_reads": [
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-index.md",
+      "sha256": "732e383758f2e816c7c361692ebc9cd2ed94ad61b0f31a0f5e71e3fd65260172",
+      "actual_read": "full237lines; event dates8/67, separate Urschel50, schedule107",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/index.md",
+          "requested_at_utc": "2026-11-05T17:24:50.112281+00:00",
+          "status": 200,
+          "bytes": 13044,
+          "sha256": "732e383758f2e816c7c361692ebc9cd2ed94ad61b0f31a0f5e71e3fd65260172",
+          "cache": "/tmp/part1-jcon-event-followup/site2025-index.md",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-index.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-schedule.md",
+      "sha256": "2975c52cc64f6ed7a7ce2d5c07cff5c3ce352d99a3ad4e57f5e57d8f78356a9a",
+      "actual_read": "full3lines; pointer only, target not obtained",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/schedule.md",
+          "requested_at_utc": "2026-11-05T17:24:50.114248+00:00",
+          "status": 200,
+          "bytes": 98,
+          "sha256": "2975c52cc64f6ed7a7ce2d5c07cff5c3ce352d99a3ad4e57f5e57d8f78356a9a",
+          "cache": "/tmp/part1-jcon-event-followup/site2025-schedule.md",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-schedule.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site2025-minisymposia.md",
+      "sha256": "ab997d62ef2e4d6c886cae9ffcccc07174eafcd5cf9b78b53f312d3c44187efe",
+      "actual_read": "full87lines; themes not LieGroups identity",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/2025/minisymposia.md",
+          "requested_at_utc": "2026-11-05T17:26:32.689453+00:00",
+          "status": 200,
+          "bytes": 8655,
+          "sha256": "ab997d62ef2e4d6c886cae9ffcccc07174eafcd5cf9b78b53f312d3c44187efe",
+          "cache": "/tmp/part1-jcon-event-followup/site2025-minisymposia.md",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site2025-minisymposia.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-README.md",
+      "sha256": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+      "actual_read": "full; official site provenance",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/README.md",
+          "requested_at_utc": "2026-11-05T17:24:25.551548+00:00",
+          "status": 200,
+          "bytes": 938,
+          "sha256": "ca95d7b8984faf08367d567e0eeba485c19aef9f17451bc79f06ec38a9cdb5e5",
+          "cache": "/tmp/part1-jcon-event-followup/site-README.md",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site-README.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/site-imprint.md",
+      "sha256": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad",
+      "actual_read": "full; no general reuse grant located",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/www.juliacon.org/85ad651a4f9e3480f5d0753fd201f9019b14870e/imprint.md",
+          "requested_at_utc": "2026-11-05T17:26:32.692124+00:00",
+          "status": 200,
+          "bytes": 1263,
+          "sha256": "f8f34eab3a7c4ee9ca5bd6772fed5cf942db4b3481f12cacec84a2e8664765ad",
+          "cache": "/tmp/part1-jcon-event-followup/site-imprint.md",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/site-imprint.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.yml",
+      "sha256": "bbb555415882631be8dafd0d81148767b00d32786ae14037800b6f169a9c5e8b",
+      "actual_read": "full23lines; source-manuscript date22",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/paper/paper.yml",
+          "requested_at_utc": "2026-11-05T17:24:50.115020+00:00",
+          "status": 200,
+          "bytes": 666,
+          "sha256": "bbb555415882631be8dafd0d81148767b00d32786ae14037800b6f169a9c5e8b",
+          "cache": "/tmp/part1-jcon-event-followup/liegroups-paper.yml",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-paper.yml"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-jcon-event-followup-cache/liegroups-LICENSE",
+      "sha256": "da036d02034e90710be49e5e770b0510e4bd2711b58b64a4eaf3a93e518e0340",
+      "actual_read": "full; package MIT scope",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaManifolds/LieGroups.jl/414d7b61c4446dfefab894951109a2e79d83ff6f/LICENSE",
+          "requested_at_utc": "2026-11-05T17:24:50.117958+00:00",
+          "status": 200,
+          "bytes": 1197,
+          "sha256": "da036d02034e90710be49e5e770b0510e4bd2711b58b64a4eaf3a93e518e0340",
+          "cache": "/tmp/part1-jcon-event-followup/liegroups-LICENSE",
+          "persistent_cache": "local-inputs/part1-jcon-event-followup-cache/liegroups-LICENSE"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon195.crossref.xml",
+      "sha256": "e7ef7c419883538ec47d43cc07bf69398d682a28b1d32179ff3929947b7618f8",
+      "actual_read": "full97lines; title40,authors43-52,publication54-58,first_page60,license65-69,review76-77,DOI81",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/jcon.00195/10.21105.jcon.00195.crossref.xml",
+          "requested_at_utc": "2026-11-05T17:14:02.154483+00:00",
+          "status": 200,
+          "bytes": 4001,
+          "sha256": "e7ef7c419883538ec47d43cc07bf69398d682a28b1d32179ff3929947b7618f8",
+          "cache": "/tmp/part1-remaining-source-evidence/jcon195.crossref.xml"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon195.pdf",
+      "sha256": "9a7920ef8b1985569d2e899aa93966a173ba8cf9d8fee8e96240bbbc2b8d15f2",
+      "actual_read": "page1 newly rendered and visually read; title/authors,abstract,introduction,section2 opening,printed folio1; not full-paper proof audit",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/jcon.00195/10.21105.jcon.00195.pdf",
+          "requested_at_utc": "2026-11-05T17:14:02.153019+00:00",
+          "status": 200,
+          "bytes": 638986,
+          "sha256": "9a7920ef8b1985569d2e899aa93966a173ba8cf9d8fee8e96240bbbc2b8d15f2",
+          "cache": "/tmp/part1-remaining-source-evidence/jcon195.pdf"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon195.txt",
+      "sha256": "9bb660d2ad7af78411b33e521a45f061ace0eca950eb7bded447dc84cfe89f26",
+      "actual_read": "first105lines; page1 and page2 opening; not full-paper audit",
+      "original_request_matches": [],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon-index.md",
+      "sha256": "460231a5eacc078a466b138aca504fa21882e656a13c921f4b12eca4917c5551",
+      "actual_read": "full; general proceedings-presentation relationship, not specific event match",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-guide/cd7d6f3c7aac8068e6fddda2c23f772820ae272b/index.md",
+          "requested_at_utc": "2026-11-05T17:11:21.191541+00:00",
+          "status": 200,
+          "bytes": 1187,
+          "sha256": "460231a5eacc078a466b138aca504fa21882e656a13c921f4b12eca4917c5551",
+          "cache": "/tmp/part1-remaining-source-evidence/jcon-index.md"
+        }
+      ],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon195-content.json",
+      "sha256": "0dfc258dce01ed590fe624254215647eaab589e0518f40457b3aeb34bba655f4",
+      "actual_read": "first issue body fully reread; branch and version; targeted keyword matches across24entries are search evidence only",
+      "original_request_matches": [],
+      "new_request": false
+    },
+    {
+      "path": "local-inputs/part1-remaining-source-followup-cache/jcon-papers-README.md",
+      "sha256": "f99c9d30993f4034482855b02fc204d6e600253b52f2769f135a12af25a34323",
+      "actual_read": "full one-line repository title",
+      "original_request_matches": [
+        {
+          "url": "https://raw.githubusercontent.com/JuliaCon/proceedings-papers/3f1f2cc695d89fff22fa23e21519fb3915bff614/README.md",
+          "requested_at_utc": "2026-11-05T17:13:47.507674+00:00",
+          "status": 200,
+          "bytes": 21,
+          "sha256": "f99c9d30993f4034482855b02fc204d6e600253b52f2769f135a12af25a34323",
+          "cache": "/tmp/part1-remaining-source-evidence/jcon-papers-README.md"
+        }
+      ],
+      "new_request": false
+    }
+  ],
+  "rights": "Publisher XML explicitly supplies CC BY4 for vor/am/tdm; package MIT does not license the event website. Read site README/imprint supplies no general abstract/site redistribution license. Retain links and original factual overview; no external text reproduced.",
+  "new_page_visual": {
+    "path": "/tmp/jcon195-recheck-page1.png",
+    "sha256": "5f741fb327a91d5a747817fb0da99adca5c4714f019f869f80f28c366a77bf3e"
+  },
+  "build_or_formal_records_changed": false
+}

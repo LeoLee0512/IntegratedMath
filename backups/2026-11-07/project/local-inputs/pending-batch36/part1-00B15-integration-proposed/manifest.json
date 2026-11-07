@@ -1,0 +1,31 @@
+{
+  "status": "proposal_only_not_applied",
+  "prepared_at": "2026-11-05T19:00:44.543263+00:00",
+  "baseline_sha256": {
+    "manuscript/review_ch01/part_opening.md": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694",
+    "manuscript/review_ch01/chapter.md": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd",
+    "manuscript/review_ch01/answers.md": "9743c5146112dc3d885c12058dc9c40d6b7bb9c0f8279040f45b26a6ade10834",
+    "manuscript/review_ch01/appendices.md": "a196e6caff79147a73af6fa8e1b20871899483ba3f7f5e165479a221a3fcbf0b",
+    "manuscript/review_ch02/chapter.md": "f4eefe2882afe6916899d03f75a6591b87a0edad45d19b51b8122e89756c437a",
+    "manuscript/review_ch02/answers.md": "f9cfa932b5af0947ce7d62a9e0a787b5b7ffa10203f18e35ae0aa49e91464150",
+    "tools/ch01_simulation.py": "e3c8dc8c024d259c9fdc7524aca563dd219df3a5469d4e282b3d772ff72dcb24",
+    "tools/draw_ch01_figures.py": "efcdebda65f5d16287ab8478aead91a7353d1e09d81a724275fbc7f29cf6dc56",
+    "research/production/part1_scope_plan.json": "0f15545bb2a9a9a9e7f07a82fd0242f458a7d22da9670063f7175f66dd2a06de",
+    "research/production/part1_topic_sources.json": "a6fd1b499145de753c4fe2b0423655088b1422b9d3c21f9371ecbbec67cbfb5a",
+    "research/production/part1_math_review.json": "e3d71546fc5464a8a7c7a78c4d3e88b2a412bd00a1ba858166035d76817f66c3",
+    "research/production/part1_pedagogy_review.json": "b4840986d383bace0904a7eface67487dd1e4cce62e12dd77f98c4e603b612f4",
+    "research/production/part1_build_review.json": "a5f955d6d5712e4787cb30f9096b01e1cdc77d1e50d43171aa523373e438f52c",
+    "research/production/part1_visual_review.json": "bb63cb6e61e10f9a1f807ced0edb373736b67fd5065f85b469965af564863333"
+  },
+  "new_sha256": {
+    "manuscript/review_ch01/appendices.md": "89825d0974e73327f80b8512e69b8343d061966a0d455efd3ca1d3be534a4498",
+    "manuscript/review_ch02/chapter.md": "a9556bd93eae7277c66659359f7cbb0099eabecc08f9d5bcc0c0ec708bef067d",
+    "research/production/part1_dedekind_00B15_content_review.md": "4a85379ffba19d9003f3515ceb21d9361c4cd617f7f24b4f7e241ce8e5e775d3",
+    "research/production/part1_dedekind_00B15_evidence.json": "79903740ba3b79c4bb5faab58390969e05e2d96f465706ad09ea8da265201c0b",
+    "research/production/part1_dedekind_00B15_integration_review.md": "a96f12b250a41f7c445bea946b7c6a10855527e7dbb0a10d525737f71535599a",
+    "research/production/part1_dedekind_00B15_root_mapping_review.md": "bc5849dfd3a0e1c41f73e51638c358af16f993359a8e534293ba0eeeac7366d0",
+    "research/production/part1_scope_plan.json": "6a7d8a6f019a678b02faffe064fda298b630996d30a9460004a674ea19c96ba5",
+    "research/production/part1_topic_sources.json": "717824c5f0ad47c6b23be6f965acec7097400e48d6083fa74e59d140818a697b"
+  },
+  "diff_sha256": "e2de346213189bd9068495f1ba3426b1ad83f84c966b96445a8b9493607b3864"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "local_package_verified",
+  "path": "dist/综合数学_基础续写_伴生文件.zip",
+  "file_count": 2093,
+  "bytes": 255061912,
+  "sha256": "816833280614d6803b1e3d971389639f78863759649d2f545dd032b599c8a238",
+  "network_operations": 0,
+  "verified_at_utc": "2026-11-05T18:09:09.473150+00:00",
+  "source_count": 283,
+  "artifact_count": 51,
+  "draft_files": 6,
+  "actual_visual_images": 142,
+  "extra_evidence_inventory": {
+    "path": "research/production/batch33_package_evidence_inventory.json",
+    "sha256": "04ed39e9c2f1a3520f8e70b6587b6bf1a867306b0015aaaedb5316eaac6311a2"
+  },
+  "excluded_files": [
+    "research/production/finite_real_coordinates_math_review.md"
+  ],
+  "nested_historical_delta_evidence_included": true,
+  "every_package_member_hash_verified": true,
+  "every_packaged_file_equal_current_bytes": true
+}

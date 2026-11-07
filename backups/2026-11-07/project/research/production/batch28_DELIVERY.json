@@ -1,0 +1,100 @@
+{
+  "status": "READY_for_root_review_and_integration",
+  "checked_at_utc": "2026-10-30T03:58:06.909174+00:00",
+  "files": {
+    "tools/build_learning_batch.py": "1c4e1f1403d97157de77749e09e36083d6d83bbd2e8889a1fe7172f4fec7a6df",
+    "tools/build_production_ledger.py": "9aeada1a777559b3ddd7dba4eae9877b36daef1229f0da2e60ecca3c3e08f16f",
+    "tools/draw_foundations_batch.py": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63",
+    "tools/validate_learning_batch.py": "060ac73928a33a7b0b7ca865485028a74900966935058cb4eef12f45fe0b4e7b",
+    "LEARNING_PATH.md.patch": "e215cd000640305f550dc8d8eca2aa5db435268d62876df8e243f60c7c092651",
+    "README.md.patch": "6b0c02aaf9b028ed3c2a7d12c5b1ccd5bb80cfcadc71cede5910776fd28c35b1",
+    "build_learning_batch.py.patch": "e501a4664d351c2ec68ec8ce40ec34f37296e8d8143130d854178f3a0bcafc70",
+    "build_production_ledger.py.patch": "8748ea7f8ab6a38072ad145869d3eee4ef1b6d387f273347265687bad893a34e",
+    "draw_foundations_batch.py.patch": "d989d1f315f1af5ea6e34fd1796c203a02df08df99758c105ebb8f8c07b79735",
+    "validate_learning_batch.py.patch": "04ec2e865750bf0091c996510235cc6ef0564e981d2d7d4f0289cb70121ba6b3",
+    "research/production/real_plane_metric_sources_2026-10-30.json": "4b2faca2a589ec6d5429024c988fdc2b81bb745b3064675d99a05e7dd5721528",
+    "research/production/real_plane_metric_sources_2026-10-30.md": "6f9c3742f6f4bde2619ba97c3192537621afe43d6178f446c8b2e45c6783951b",
+    "structural_check.json": "975d772c98377543145c711d68b113ce9332d9c64a4ee1cb4814c11df13bb527",
+    "baseline_tools_sha256.json": "438b699113ed261483cdf06840afac6124e193fc2e67a3720ec24b4882d40c0b",
+    "metadata/LEARNING_PATH.md": "332d3b7a57cded5754dda16dbe36e41aaf4ac458e72fb4e91accbeefc0d7781e",
+    "metadata/README.md": "0831d98e9190fc96912f6f85b01b4243ee71f6800bec3085093820d0e5630192",
+    "metadata_baseline_sha256.json": "143be2d8018233bef15030ad3e785ba538b941f9cc57d01710b7715610b34a0b",
+    "freeze_inputs.json": "18d31514d762aab0c221dd4d581af77e4234e277731b1cba64de41ea4b03d534",
+    "figure_integration_check.json": "cd5ad0e4355f130f45bf64ec93eea278ac88d511858d1877293877161b5db0f7",
+    "real_plane_figure_appendix_preview.md": "fab505b00f35c482edff11b33d68f6ca932c4bcd6761394ffdcef89a0c16def9",
+    "review_only/root_two_scope_corrections.diff": "396d1090d79c24aa560505310d9cef68a6c7860ed97106b1483fff16cea6b8b8",
+    "accidental_write_recovery/report.json": "1bb50f2f89c8657c94ed6ac23489efd6c9e195cac5d00316f489e7ef0a0879a3"
+  },
+  "structural_result": {
+    "status": "isolated_structural_checks_passed",
+    "counts": {
+      "units": 57,
+      "foundation_exercises": 456,
+      "intro_exercises": 14,
+      "total_exercises": 470,
+      "figures": 19,
+      "numbered_appendices": 26,
+      "draft_chapters": 6,
+      "draft_leaves": 30,
+      "completed_chapters": 0
+    },
+    "html": {
+      "math_nodes": 28774,
+      "source_math_nodes": 28778,
+      "image_alt_math_nodes": 4,
+      "images": 19,
+      "exercise_pairs": 470,
+      "html_ids": 3020,
+      "html_internal_links": 3819
+    },
+    "new_units": [
+      {
+        "code": "B2.35",
+        "stage": "draft",
+        "prerequisites_verified": 27
+      },
+      {
+        "code": "B2.36",
+        "stage": "draft",
+        "prerequisites_verified": 26
+      }
+    ],
+    "input_sha256": {
+      "manuscript/foundations/real_plane_affine.md": "109fca79b231763511ec4142ef83cb09910f9fe43432de277d1cee3a78d69383",
+      "manuscript/foundations/real_plane_affine_answers.md": "bdd3fd784275c1f17cd35f9f861cfc3095f987971f7bee72d808124c0231afae",
+      "manuscript/foundations/real_plane_distance.md": "0899b356cd58f068a178113b862e30cf419cbd6f43589e2468ca26e6a1adf7e2",
+      "manuscript/foundations/real_plane_distance_answers.md": "054b07f6259ef0f739348ac8b11f3f40e2d1bf5f9dfd99a5d6d64c51f6ca2159"
+    },
+    "module_graph": "acyclic;new real-plane-geometry depends on functions and number-systems;no reverse edge",
+    "new_numerical_code": "only exact finite witnesses inside drawing function; no new numerical API",
+    "new_figures": 1,
+    "limits": "Isolated composition, existing Pandoc/HTML audit and isolated ledger only. No formal production build, acceptance registration or PDF visual acceptance. Separate source-binder transient formal write and exact restoration disclosed in accidental_write_recovery/report.json.",
+    "checked_candidate_tool_sha256": {
+      "build_learning_batch.py": "1c4e1f1403d97157de77749e09e36083d6d83bbd2e8889a1fe7172f4fec7a6df",
+      "build_production_ledger.py": "9aeada1a777559b3ddd7dba4eae9877b36daef1229f0da2e60ecca3c3e08f16f",
+      "draw_foundations_batch.py": "17146ae8432bf79b27a37c286a3ba1f6f8a2c6d73f0eb6c3542516692907ea63",
+      "validate_learning_batch.py": "060ac73928a33a7b0b7ca865485028a74900966935058cb4eef12f45fe0b4e7b"
+    },
+    "source_audit_sha256": {
+      "md": "6f9c3742f6f4bde2619ba97c3192537621afe43d6178f446c8b2e45c6783951b",
+      "json": "4b2faca2a589ec6d5429024c988fdc2b81bb745b3064675d99a05e7dd5721528"
+    },
+    "all_57_unit_chapter_segment_placements_verified": true,
+    "original_source_object_preserved": true,
+    "final_source_binding_metadata_preserves_composed_bytes": true
+  },
+  "formal_installation_verified": false,
+  "approval_registered": false,
+  "baseline27_vs_formal": "Four tools plus README and LEARNING_PATH all currently byte-identical to exact baseline; three book tools/metadata originated in frozen27 candidates, drawing module from unchanged formal version.",
+  "notes": [
+    "Four exact incremental tool patches; no weakened existing validator checks. New function is the complete unchanged standalone drawing function; appendix26 dynamically extracts it.",
+    "B2.35/36 enter chapter527 /97G70, cross51N10 and54E35. New primary chapter/leaf gives6draftchapters30draftleaves,0complete.57units470questions(456+14),19figures26numberedappendices.",
+    "New real-plane-geometry module depends on functions and number-systems; no reverse edge.35/36 prerequisites27/26 exact anchors;36 uses35+33, neither needs31/34.",
+    "All57 chapter placements,470 paired exercise backlinks,19embeddedPNG,26appendices,source/code anchors, complete current drawing source and original HTML audit passed in isolated staging. No formal production build or PDF acceptance performed.",
+    "Six public caches and originalHTTP200 history preserved and rechecked;2historical new requests by source author,0by integration agent. Source assumedR/C contexts contrasted with independent bookR² proofs.",
+    "Final4manuscripts,3actual signed reports,plan/concept and2figure reports bound. Mathematical/source/visual scope not conflated; downstream aggregate acceptance not registered.",
+    "Root requested scope corrections shown separately in review_only/root_two_scope_corrections.diff: final manifest complete Euclidean axiom-system boundary; LEARNING_PATH paragraph147 distinguishes saved draft and acceptance state.",
+    "Accident disclosed: source-binding variable reuse transiently overwrote formal real_square_roots.md. Restored exact35d8419b… bytes; gitdiff empty;219formal sources match build+QA and artifacts matchQA. Fixed explicit guarded audit path; independent incident record included. No remaining formal difference from this accident.",
+    "Root must install final candidate bytes, record actual installation separately if desired, then run normal production/PDF workflow. Original28source stays independent of prior batch audits."
+  ]
+}

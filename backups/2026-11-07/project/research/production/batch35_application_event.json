@@ -1,0 +1,23 @@
+{
+  "applied_at": "2026-11-05T18:57:05.697607+00:00",
+  "status": "reviewed_sources_registered_build_pending",
+  "snapshot34": "local-inputs/snapshots/batch34-logic-sets-finite-counting-20261105T185448Z",
+  "before": {
+    "tools/build_production_ledger.py": "5f7e554207ba99ed089941c5ef46e74dae52e3e6b8e3c8daeff15befd2a7114f",
+    "research/production/accepted_reviews.json": "f65c40b79f14f718dfebed26f6e927dcd3bd8c67ce932a78509aa3e364a8969d",
+    "tools/build_learning_batch.py": "efa3639ac6753e7b6fa45a5f3778121ce67b07962bc70f82329c7adbdb80efb1",
+    "tools/validate_learning_batch.py": "14a36b325d52d9d1d8f3e3e597734aea399fa5f2969dd84cb8be85b14756ebaf"
+  },
+  "after": {
+    "tools/build_production_ledger.py": "dcae973168a9b5884a112b4d665ded3f1bb13ad9c6dece30874b022f58c53e1c",
+    "research/production/accepted_reviews.json": "7b0d3f55bd9ac7e6efe724ac82bb562bfeb99599aa766090bc5011831f7e783a",
+    "tools/build_learning_batch.py": "da78349c3fcb72a4c232ac452e7ee9ce8d45ca0d9c938ac6a45d002c44d8bf17",
+    "tools/validate_learning_batch.py": "be68563984a52cd7474d954f3ae4a76947aa55abea5fe7afd6688c09bbefde58"
+  },
+  "unit_count": 75,
+  "exercise_answer_pairs": 627,
+  "text_review_count": 150,
+  "part1_pending_sources": 10,
+  "complete_parts": 0,
+  "limits": "Text review only; fresh build/link/visual validation required. No push."
+}

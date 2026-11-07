@@ -1,0 +1,21 @@
+{
+  "status": "local_package_verified",
+  "path": "dist/综合数学_基础续写_伴生文件.zip",
+  "file_count": 2204,
+  "bytes": 261592708,
+  "sha256": "1f5abfe7bb27b15d27c55307d9b38e2786dc8253fc88976777e5c6764650b131",
+  "network_operations": 0,
+  "verified_at_utc": "2026-11-05T18:52:32.474815+00:00",
+  "source_count": 306,
+  "artifact_count": 51,
+  "draft_files": 6,
+  "actual_visual_images": 133,
+  "extra_evidence_inventory": {
+    "path": "research/production/batch34_package_evidence_inventory.json",
+    "sha256": "9f7aa076cf15043b479f39c2c206b8019a73d3846debedb860486142cf0ddbbf"
+  },
+  "excluded_files": [],
+  "nested_historical_delta_evidence_included": true,
+  "every_package_member_hash_verified": true,
+  "every_packaged_file_equal_current_bytes": true
+}

@@ -1,0 +1,496 @@
+{
+  "schema_version": 1,
+  "status": "source_audit_not_manuscript_review",
+  "checked_at_utc": "2026-10-29T16:51:58.633487+00:00",
+  "scope": "B2.7一次不等式与有理区间；B2.8绝对值条件与有理距离范围。",
+  "network_context": {
+    "skill_and_network_reference_previously_read": true,
+    "policy_version": 1,
+    "vpn_configured": false,
+    "mode": "restricted",
+    "observations_current": true,
+    "final_network_state": "enforced",
+    "initial_state_note": "首次查询state=unknown；再次查询恢复enforced后才进行网络抓取",
+    "hosts_used": [
+      "raw.githubusercontent.com"
+    ],
+    "method": "继承代理、验证TLS、公开只读；无认证/凭据/远程git操作。"
+  },
+  "requests": [
+    {
+      "request_id": "openstax_inequalities",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82470/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:11.958056+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82470/index.cnxml",
+      "bytes": 280643,
+      "sha256": "e0c457e6b1fb1da6d93a1ffca68347b7afb1bd73683ed9575a10672b4aef13c9",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_license",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "checked_at_utc": "2026-10-29T16:45:11.958785+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/LICENSE",
+      "bytes": 21442,
+      "sha256": "ab1a44bbba58252630134574d7b2534813339240eb645825ffcc2487dbe8114a",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_abs",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Group/Abs.lean",
+      "checked_at_utc": "2026-10-29T16:45:11.959253+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Group/Abs.lean",
+      "bytes": 10782,
+      "sha256": "d812d00741eb090f6618d578c99b68ac47c4c6f6e219d0f9a213d4fe3d39a4ce",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_field",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "checked_at_utc": "2026-10-29T16:45:11.959692+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean",
+      "bytes": 31120,
+      "sha256": "7a0a7285fa3a0adad6ffeaae3dc254d68d1cb8573b0932507178b2ea111d8197",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_intervals",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/Interval/Set/Defs.lean",
+      "checked_at_utc": "2026-10-29T16:45:11.960431+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Order/Interval/Set/Defs.lean",
+      "bytes": 3357,
+      "sha256": "ed754c62df069600df825e2e08f005d51826935d1af21d4829e967d0b5474943",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_license",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "checked_at_utc": "2026-10-29T16:45:12.274952+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_intermediate_collection",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "checked_at_utc": "2026-10-29T16:45:41.186472+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/intermediate-algebra-2e.collection.xml",
+      "bytes": 5642,
+      "sha256": "993990c353220be879928579c1393ced90c8b54764b4ba1182ba660b54e8ce32",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82630/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:41.187072+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82630/index.cnxml",
+      "bytes": 22483,
+      "sha256": "d9f45fb31f4cb399c009c2be25eca1a99132b4b6882fb07f8649c2d56974f90b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_abs_unbundled",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Group/Unbundled/Abs.lean",
+      "checked_at_utc": "2026-10-29T16:45:41.187450+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/Group/Unbundled/Abs.lean",
+      "bytes": 12345,
+      "sha256": "9d6021a8a1652344fc4658d0df22b455407c7721a88ef23a1c1a5f44956603fe",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_compound",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81367/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:56.623004+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81367/index.cnxml",
+      "bytes": 107437,
+      "sha256": "2f2555e68613594644448118cfb3aae8579b7b62b745c0746fb55e7fd47c253c",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_absolute",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:56.623449+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml",
+      "bytes": 201991,
+      "sha256": "c28f41e7872c3d657b13688e08f5166ddb166efcb7b0a7b182ef93ac22ce706c",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_linear_intermediate",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81366/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:56.623842+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81366/index.cnxml",
+      "bytes": 182854,
+      "sha256": "047a8f21086255a49fccbbfeaeadb74162301abe77a68aea5d821e0b35ebf290",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "openstax_intermediate_preface",
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "checked_at_utc": "2026-10-29T16:45:56.624134+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/openstax/osbooks-prealgebra-bundle/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81357/index.cnxml",
+      "bytes": 23553,
+      "sha256": "f4d01bced59370e726f637a3d5b846ad77aa3536dba5a838cb00ceeadebd3033",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_div_positive",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean",
+      "checked_at_utc": "2026-10-29T16:46:38.394285+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean",
+      "bytes": 61598,
+      "sha256": "fabe4035571efdafb4e0320f1ae1d2a7f423472e86de49f35e0afa4b010a457b",
+      "access_status": "verified_http_200"
+    },
+    {
+      "request_id": "mathlib_zero_convention",
+      "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean",
+      "checked_at_utc": "2026-10-29T16:51:41.483599+00:00",
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean",
+      "bytes": 13280,
+      "sha256": "3a89c91ad2f605c40378e23926fe4046668b6a1d5a00109f6472397d948ce00e",
+      "access_status": "verified_http_200"
+    }
+  ],
+  "request_summary": {
+    "total": 15,
+    "http200": 15,
+    "independent_source_series": 2
+  },
+  "sources": [
+    {
+      "id": "INEQ-OPENSTAX",
+      "title": "Elementary Algebra 2e; Intermediate Algebra 2e",
+      "authors_by_title": {
+        "Elementary Algebra 2e": [
+          "Lynn Marecek",
+          "MaryAnne Anthony-Smith",
+          "Andrea Honeycutt Mathis"
+        ],
+        "Intermediate Algebra 2e": [
+          "Lynn Marecek",
+          "Andrea Honeycutt Mathis"
+        ]
+      },
+      "version": "osbooks-prealgebra-bundle commit ad40c7e3c9a909cde81a24c526f52fe26a51fb14",
+      "license": {
+        "name": "CC-BY-NC-SA-4.0",
+        "evidence": [
+          "openstax_license",
+          "openstax_preface",
+          "openstax_intermediate_collection",
+          "openstax_intermediate_preface"
+        ],
+        "use": "只核事实条件和证明边界，不复制例题题干、连续段落、表格或图像；NC/SA许可不误写CC BY。"
+      },
+      "checks": [
+        {
+          "request_id": "openstax_inequalities",
+          "location": "modules/m82470/index.cnxml，行66–81",
+          "locator": "m82470：解与开闭端点",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m82470/index.cnxml#L66",
+          "finding": "严格大于排除端点，非严格大于包含端点；原文实数数轴图不能直接视作全体有理数图。"
+        },
+        {
+          "request_id": "openstax_linear_intermediate",
+          "location": "modules/m81366/index.cnxml，行388–435",
+          "locator": "m81366：加减、正负乘除性质",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81366/index.cnxml#L388",
+          "finding": "同加减保向；正倍乘除保向、负倍乘除反向。教材列性质及实例，本书须用RO4/RO6/RO8作双向证明，并补a=0分支。"
+        },
+        {
+          "request_id": "openstax_compound",
+          "location": "modules/m81367/index.cnxml，行40–50",
+          "locator": "m81367：compound inequalities",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81367/index.cnxml#L40",
+          "finding": "and要求两条件同时成立；or要求至少一个成立，不能把or误作排他或。集合交并符号如未教须先定义。"
+        },
+        {
+          "request_id": "openstax_absolute",
+          "location": "modules/m81426/index.cnxml，行54–58",
+          "locator": "m81426：绝对值非负",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml#L54",
+          "finding": "绝对值≥0，不是总严格为正。采用前文RAB1/RAB7的代数定义和距离，不能用未建立的实数数轴作证明。"
+        },
+        {
+          "request_id": "openstax_absolute",
+          "location": "modules/m81426/index.cnxml，行108–146",
+          "locator": "m81426：负值与零值例子的措辞核查",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml#L108",
+          "finding": "行122 incorrectly says always positive；同节57–58明为非负，128–146把零等式归为唯一解零。记为局部措辞错误，不能照用，r=0必须单列。"
+        },
+        {
+          "request_id": "openstax_absolute",
+          "location": "modules/m81426/index.cnxml，行433–439",
+          "locator": "m81426：fs-id1167835331002",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml#L433",
+          "finding": "正实数半径时小于/不大于绝对值界分别转为严格/非严格两侧界，连接词为且。书稿须证明两个方向并另外处理有理r≤0。"
+        },
+        {
+          "request_id": "openstax_absolute",
+          "location": "modules/m81426/index.cnxml，行603–608",
+          "locator": "m81426：fs-id1167834423855",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml#L603",
+          "finding": "正实数半径时大于/不小于条件转为两侧外部，连接词为或；不含/包含两个边界。书稿补r=0与r<0，不能直接套只声明正半径的来源公式。"
+        },
+        {
+          "request_id": "openstax_absolute",
+          "location": "modules/m81426/index.cnxml，行438–439",
+          "locator": "m81426：抽样检查边界",
+          "browse_url": "https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/modules/m81426/index.cnxml#L438",
+          "finding": "原文明确选若干测试点不是complete check；本书一般证明与有限核算分开。"
+        }
+      ]
+    },
+    {
+      "id": "INEQ-MATHLIB",
+      "title": "mathlib ordered-field inequalities, absolute values and generic intervals",
+      "authors_by_file": {
+        "mathlib_div_positive": [
+          "Damiano Testa",
+          "Yuyang Zhao"
+        ],
+        "mathlib_field": [
+          "Robert Y. Lewis",
+          "Leonardo de Moura",
+          "Mario Carneiro",
+          "Floris van Doorn"
+        ],
+        "mathlib_abs": [
+          "Jeremy Avigad",
+          "Leonardo de Moura",
+          "Mario Carneiro",
+          "Johannes Hölzl"
+        ],
+        "mathlib_intervals": [
+          "Johannes Hölzl"
+        ],
+        "mathlib_abs_unbundled": [
+          "Jeremy Avigad",
+          "Leonardo de Moura",
+          "Mario Carneiro",
+          "Johannes Hölzl"
+        ],
+        "mathlib_zero_convention": [
+          "Johan Commelin"
+        ]
+      },
+      "version": "mathlib4 v4.24.0",
+      "license": {
+        "name": "Apache-2.0",
+        "evidence": [
+          "mathlib_license"
+        ],
+        "use": "源码阅读与逻辑条件对照；不复制实现，未编译Lean也未形式化本书。"
+      },
+      "checks": [
+        {
+          "request_id": "mathlib_zero_convention",
+          "location": "Mathlib/Algebra/GroupWithZero/Defs.lean，行199–212",
+          "locator": "GroupWithZero.inv_zero / inv_zero",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/GroupWithZero/Defs.lean#L199",
+          "finding": "该库约定零的逆为零，除法按乘逆元总定义；本书把除零排除。因此只借用显式正/负除数的等价，不能把库中零除数计算带入书稿。"
+        },
+        {
+          "request_id": "mathlib_div_positive",
+          "location": "Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean，行1095–1109",
+          "locator": "le_div_iff₀ / div_le_iff₀ / lt_div_iff₀ / div_lt_iff₀",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/GroupWithZero/Unbundled/Basic.lean#L1095",
+          "finding": "严格正除数条件下四种比较等价；源声明带显式0<c，不允许忽略符号。"
+        },
+        {
+          "request_id": "mathlib_field",
+          "location": "Mathlib/Algebra/Order/Field/Basic.lean，行289–348",
+          "locator": "div_le_iff_of_neg / le_div_iff_of_neg / div_lt_iff_of_neg / lt_div_iff_of_neg",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Field/Basic.lean#L289",
+          "finding": "有序域背景下c<0时比较方向反转；证明使用非零倒数与负因子反序。"
+        },
+        {
+          "request_id": "mathlib_intervals",
+          "location": "Mathlib/Order/Interval/Set/Defs.lean，行28–76",
+          "locator": "Set.Ioo / Ico / Ioc / Icc / Iio / Iic / Ioi / Ici",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Order/Interval/Set/Defs.lean#L28",
+          "finding": "在任意预序类型α上按成员条件定义区间；取α=Q时是有理区间，不需要实数或完备性，∞只是无界记号。"
+        },
+        {
+          "request_id": "mathlib_abs",
+          "location": "Mathlib/Algebra/Order/Group/Abs.lean，行59–63",
+          "locator": "mabs_le / le_mabs'，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Group/Abs.lean#L59",
+          "finding": "源直接写乘法版本，to_additive产生加法绝对值版本；对应|u|≤r iff −r≤u且u≤r，以及外侧析取。未运行Lean，不能声称已编译检验生成定理。"
+        },
+        {
+          "request_id": "mathlib_abs_unbundled",
+          "location": "Mathlib/Algebra/Order/Group/Unbundled/Abs.lean，行102–107",
+          "locator": "one_le_mabs，显式to_additive abs_nonneg",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Group/Unbundled/Abs.lean#L102",
+          "finding": "非负性生成声明用于交叉核查r负值情形；集合数系的前提仍由本书既有有理数证明提供。"
+        },
+        {
+          "request_id": "mathlib_abs_unbundled",
+          "location": "Mathlib/Algebra/Order/Group/Unbundled/Abs.lean，行191–199",
+          "locator": "le_mabs / lt_mabs，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Group/Unbundled/Abs.lean#L191",
+          "finding": "有序max对应r≤|u| iff r≤u或r≤−u，严格版本同理；外侧是析取，不是两条件同时满足。"
+        },
+        {
+          "request_id": "mathlib_abs_unbundled",
+          "location": "Mathlib/Algebra/Order/Group/Unbundled/Abs.lean，行247–260",
+          "locator": "mabs_eq_one / mabs_le_one / mabs_lt，@[to_additive]",
+          "browse_url": "https://github.com/leanprover-community/mathlib4/blob/v4.24.0/Mathlib/Algebra/Order/Group/Unbundled/Abs.lean#L247",
+          "finding": "对应|u|=0 iff u=0、|u|≤0 iff u=0、|u|<r iff −r<u且u<r；支持严格/非严格零界区别。"
+        }
+      ]
+    }
+  ],
+  "classification": {
+    "primary_leaf": "97H30",
+    "cross_tags_only": [
+      "97H20"
+    ],
+    "parent_code": "97Hxx",
+    "parent_number": 528,
+    "part": "97-XX",
+    "part_number": 63,
+    "taxonomy_rows": [
+      {
+        "code": "97Hxx",
+        "level": "intermediate",
+        "parent_code": "97-XX",
+        "title_en": "Algebra education",
+        "title_zh": "代数教育",
+        "translation_method": "root"
+      },
+      {
+        "code": "97H20",
+        "level": "subject_leaf",
+        "parent_code": "97Hxx",
+        "title_en": "Elementary algebra (educational aspects)",
+        "title_zh": "初等代数（教育方面）",
+        "translation_method": "root"
+      },
+      {
+        "code": "97H30",
+        "level": "subject_leaf",
+        "parent_code": "97Hxx",
+        "title_en": "Equations and inequalities (educational aspects)",
+        "title_zh": "方程与不等式（教育方面）",
+        "translation_method": "root"
+      }
+    ],
+    "not_assigned": [
+      "26A03",
+      "26Dxx",
+      "54-XX"
+    ],
+    "reason": "有限初等方程不等式教育目标；有理区间不等于实数基础/极限/拓扑完整教学。",
+    "completed": false,
+    "unit_codes": [
+      "B2.7",
+      "B2.8"
+    ],
+    "ledger_unit_numbers": [
+      28,
+      29
+    ],
+    "module": "functions"
+  },
+  "linear_branch_table": [
+    {
+      "coefficient": "a>0",
+      "le_solution": "{x∈Q:x≤(c−b)/a}",
+      "lt_solution": "{x∈Q:x<(c−b)/a}",
+      "reason": "先减b，再按正除数保向"
+    },
+    {
+      "coefficient": "a<0",
+      "le_solution": "{x∈Q:x≥(c−b)/a}",
+      "lt_solution": "{x∈Q:x>(c−b)/a}",
+      "reason": "先减b，再按负除数反向"
+    },
+    {
+      "coefficient": "a=0",
+      "le_solution": "Q if b≤c else ∅",
+      "lt_solution": "Q if b<c else ∅",
+      "reason": "直接判断常数比较，不形成(c−b)/0"
+    }
+  ],
+  "absolute_branch_table": [
+    {
+      "radius": "r<0",
+      "lt": "∅",
+      "le": "∅",
+      "eq": "∅",
+      "ge": "Q",
+      "gt": "Q"
+    },
+    {
+      "radius": "r=0",
+      "lt": "∅",
+      "le": "{a}",
+      "eq": "{a}",
+      "ge": "Q",
+      "gt": "Q\\{a}"
+    },
+    {
+      "radius": "r>0",
+      "lt": "(a−r,a+r)_Q",
+      "le": "[a−r,a+r]_Q",
+      "eq": "{a−r,a+r}",
+      "ge": "(−∞,a−r]_Q ∪ [a+r,+∞)_Q",
+      "gt": "(−∞,a−r)_Q ∪ (a+r,+∞)_Q"
+    }
+  ],
+  "common_domain_note": "两表先按全Q陈述；原允许范围D⊆Q时取所列集合与D的交。所有区间下标Q不可省略为暗示全体实数。",
+  "independent_derivation_checks": [
+    "不等式问题连同D⊆Q及L,R:D→Q给出。解集为{x∈D:L(x)≤R(x)}等；等价要求同一D上逐输入双向。若给出的结果先在Q上求出，再与D取交；D空时所有解集为空。",
+    "对ax+b≤c，先按RO4同减b；a>0用RO8保向、a<0用RO8反向、a=0直接判b≤c。严格版本将≤替换为<，但零系数仍必须判断b<c，不能沿用非严格条件。≥、>可先交换两侧，严格/非严格转换不改变端点含义。",
+    "两边含未知数时合并为(a−d)x≤e−b等，先对新系数a−d分类，不根据原a的符号决定方向；任何除法都只在已证非零分支。",
+    "定义[p,q]_Q={x∈Q:p≤x且x≤q}，其余三种组合按严格/非严格改写。p>q时均为空；p=q仅全闭区间为{p}，其余为空。单侧无界区间用x≤q等成员条件定义；±∞不是有理端点。",
+    "首次定义S∩T={x:x∈S且x∈T}、S∪T={x:x∈S或x∈T}；或表示至少一边，可同时属于。每次交并结论以成员等价证明，不凭图像填色。",
+    "令u=x−a。已有RAB3给|u|≤r iff −r≤u≤r；同加a得a−r≤x≤a+r。严格版本以u≥0或u<0的绝对值定义分支证明|u|<r iff −r<u<r，而不能只把符号机械替换。",
+    "外部条件由全序和绝对值分支得|u|≥r iff u≤−r或u≥r，|u|>r iff u<−r或u>r。平移后是两条外侧射线的并；例如r>0时要求同时x≤a−r且x≥a+r反而无解，故连接词不可写且。",
+    "先以|x−a|≥0处理r<0，五种关系见分支表；r=0由RAB1的零判据得内闭/等号为{a}，内严格为空，外非严格全Q，外严格Q\\{a}；r>0再按端点得到正常内外区间。等号r>0为两点，r=0重合为一点，r<0无解。",
+    "RAB7的d(x,a)=|x−a|是有理数值距离；本批半径r∈Q。用“距离小于半径”描述相同条件，不借未写的实数完备性、连续线段、拓扑球或实距离空间定理。",
+    "前文已有序律和绝对值双向界，这两单元应做明确复用、参数分支及解集教学，不重复构造有理数或把已证RAB3冒充新定理。",
+    "实际B2.8还把|ax+b|与r的比较归约为距离条件：a=0先比较常数|b|与r；a≠0时令c=−b/a、ρ=r/|a|，RAB1给|a|>0，RAB4给|ax+b|=|a||x−c|，按正除数规则保持四种比较。负a也用正数|a|缩放，不误翻向；ρ正负零与r一致，最后与D取交。此为既有有理数定理的独立复核，不新增外部访问。"
+  ],
+  "finite_crosscheck": {
+    "inputs": "a,b,c,r,x∈{n/2:n=−4,…,4}，Python Fraction精确值",
+    "affine_comparisons": 13122,
+    "absolute_comparisons": 3645,
+    "status": "passed",
+    "limitation": "有限检查只查分支表实现和边界，不代替逐步一般证明。"
+  },
+  "distribution_boundary": "只交付本原创计划与来源元数据；公开教材/源码全文及外部题目不入仓库或伴生包。",
+  "citation_anchor": "linear-inequalities-sources",
+  "promotion": {
+    "promoted_at_utc": "2026-10-29T16:56:08.655741+00:00",
+    "origin": "/tmp/inequalities-sources-plan.json",
+    "origin_sha256": "434770ba2223441b01e4f0ef91e7f5b0e905162e651556c96723ee1a9e0cd3ff",
+    "source_requests_repeated_during_promotion": false,
+    "note": "将先前实际抓取的审计转入正式来源记录，保留原访问时间、响应哈希与许可。推广时间不是重新访问来源的时间。"
+  },
+  "not_established": [
+    "本记录仅审核来源与符号条件，不代替当前两正文及16题全解的独立数学/教学审阅。",
+    "未编译Lean，也未将书稿形式化。@[to_additive]注解与对应加法结论的阅读不是编译结果。",
+    "有理区间不构成实数构造、连续数轴、完备性或拓扑教学；不授予分类章、部分完成。",
+    "Finite Fraction checks核分支表，不代替一般证明；外部题目与图片不复制。"
+  ]
+}

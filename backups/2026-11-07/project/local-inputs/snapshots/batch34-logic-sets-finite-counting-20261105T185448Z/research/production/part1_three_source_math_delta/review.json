@@ -1,0 +1,36 @@
+{
+  "status": "proposed_delta_review_passed_not_current_signature",
+  "reviewer": "/root/part1_audit",
+  "reviewed_at": "2026-11-05T17:00:09.336454+00:00",
+  "independent_of_authors": true,
+  "blocking_issues": [],
+  "changed_files": [
+    {
+      "path": "manuscript/review_ch01/part_opening.md",
+      "old_sha256": "851463b6b8062e1af4a57e645eb65060636ccadf458ace20e35956cf4a247ffc",
+      "proposed_sha256": "83753d710b7d64f77bacc5e31368d57c387185ced327d896f5d56e1075e2d694"
+    },
+    {
+      "path": "manuscript/review_ch01/chapter.md",
+      "old_sha256": "a1e669471959aa04c677b458d42e87f077f80ab392da896ad408ae6db2c59a63",
+      "proposed_sha256": "1e864122463b8a1bcd8b758491c43ef733243d53f30995eeca816388cedd95fd"
+    },
+    {
+      "path": "manuscript/review_ch01/appendices.md",
+      "old_sha256": "68fd1f27e531edcb078b0ec79192ba56eaa6bf17a97660325f8b9bbb39066783",
+      "proposed_sha256": "dbdd8734e5f18bfd94a2b9c0c343abb090d6abb011864809e2af9182dc759b72"
+    }
+  ],
+  "old_review_sha256": "57e4a70201481a907a9be32866993d0e7919f45eb4d17eec20dfb6087da57c4e",
+  "old_plan_sha256": "9d542b4dba6cdbefed6a8529a2f3d4b3562dff9d62f3800d692e64435ade21de",
+  "all_eight_current_source_hashes_match_old_signature": true,
+  "old_substantive_report_hash_matches": true,
+  "scope_targets": [
+    "00-02-1",
+    "00A30-1",
+    "00A64-1"
+  ],
+  "current_json_signed": false,
+  "formal_files_modified": false,
+  "delta_sha256": "c1dc606697ea300cfca62063004d81d958bc3a4987a0e581f5484f255ad5868d"
+}

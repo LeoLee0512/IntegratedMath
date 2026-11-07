@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-30T04:47:15.162571+00:00",
+  "reviewer": "root",
+  "old_builder_sha256": "c0e95e4a3585e7ae24f2e39a799d5b5a4505efce86ff6fa0c5fe55c0ef520353",
+  "new_builder_sha256": "d18da64c7a6a984d09ec2557e0f4fd2cffa9f99d54f269c99f29874d1330ec05",
+  "changed_functions": [
+    "real_sequences_reference_addition",
+    "real_sequence_epsilon_figure_appendix"
+  ],
+  "findings": [
+    "First build reference paragraph exceeds page right edge at review858/full1072",
+    "Appendix28 output/call paragraph exceeds right edge at review918/full1132",
+    "Actual image showed Unicode subscript squares in appendix28 despite zero missing-glyph log count"
+  ],
+  "repair": "Split citation and output paragraphs; replace prose math Unicode with Pandoc math. Drawing function and four mathematical manuscripts unchanged. Actual minimal diff read by root. Rebuild and visual verification pending.",
+  "failed_evidence": "local-inputs/pending-batch30/layout-failure",
+  "scope_validation_repair": {
+    "time": "2026-10-30T04:48:31.428621+00:00",
+    "old_validator_sha256": "8a5ce994c3d3245b193831c5b6a636b17702160a08ff581c12d4b0c3d89fc69c",
+    "new_validator_sha256": "3793778d12cbbc69953f0a47aac3b1063a786314aa370a3d94d320ae0a8d558a",
+    "reason": "Old exact-string guard did not include newly introduced chapter242. Actual scope sentence explicitly keeps both chapters partial. Guard updated to require that full two-chapter phrase; no assertion removed or PDF changed."
+  }
+}
